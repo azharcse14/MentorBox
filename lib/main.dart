@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'data/content_seeder.dart';
 import 'l10n/app_localizations.dart';
 import 'pages/home_page.dart';
 import 'theme.dart';
@@ -15,14 +16,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // The app follows the device language (English or Bangla).
-    return MaterialApp(
-      onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: const HomeScreen(),
+    // The app follows the device language (English or Bangla) unless one is
+    // picked in the app.
+    return ValueListenableBuilder<Locale?>(
+      valueListenable: ContentSeeder.appLocale,
+      builder: (context, locale, _) => MaterialApp(
+        onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,
+        locale: locale,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: const HomeScreen(),
+      ),
     );
   }
 }

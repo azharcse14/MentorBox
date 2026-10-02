@@ -87,6 +87,41 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  Future<void> _pickLanguage() async {
+    final l = AppLocalizations.of(context);
+    final current = _repo.language;
+    // Wrapped so "phone's language" (null) is not the same as dismissing.
+    final picked = await showDialog<({String? code})>(
+      context: context,
+      builder: (context) => SimpleDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.language, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        children: [
+          for (final (code, label) in [(null, l.deviceLanguage), ('en', 'English'), ('bn', 'বাংলা')])
+            ListTile(
+              title: Text(label, style: AppTheme.body(16)),
+              trailing: code == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
+              onTap: () => Navigator.of(context).pop((code: code)),
+            ),
+        ],
+      ),
+    );
+    if (!mounted || picked == null || picked.code == current) return;
+    setState(() => _loading = true);
+    try {
+      await _repo.setLanguage(picked.code);
+    } catch (e) {
+      // The reseed runs in one transaction, so the old content is still intact.
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _error = '$e';
+      });
+      return;
+    }
+    await _load();
+  }
+
   Future<void> _push(Widget page) async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => page));
     await _load();
@@ -109,6 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onNameTap: _editName,
         onSavedTap: () => _push(const SavedPage()),
         onTodayTap: () => _push(const TodayPage()),
+        onLanguageTap: _pickLanguage,
       ),
       body: SafeArea(top: false, child: _buildBody(inProgress)),
     );

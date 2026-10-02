@@ -116,6 +116,18 @@ abstract class AppLocalizations {
   /// **'Saved lessons'**
   String get savedLessons;
 
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @deviceLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone\'s language'**
+  String get deviceLanguage;
+
   /// No description provided for @todaysMissions.
   ///
   /// In en, this message translates to:

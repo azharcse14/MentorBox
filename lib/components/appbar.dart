@@ -9,6 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onNameTap;
   final VoidCallback onSavedTap;
   final VoidCallback onTodayTap;
+  final VoidCallback onLanguageTap;
 
   const CustomAppBar({
     super.key,
@@ -17,6 +18,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.onNameTap,
     required this.onSavedTap,
     required this.onTodayTap,
+    required this.onLanguageTap,
   });
 
   @override
@@ -57,6 +59,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
             ),
+            IconButton(
+              tooltip: l.language,
+              onPressed: onLanguageTap,
+              icon: const Icon(Icons.translate, size: 26, color: AppTheme.kGreyShade800),
+            ),
+            const SizedBox(width: 6),
             IconButton(
               tooltip: l.savedLessons,
               onPressed: onSavedTap,

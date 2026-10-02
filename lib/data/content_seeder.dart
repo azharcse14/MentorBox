@@ -1,6 +1,7 @@
 import 'dart:convert';
-import 'dart:ui' show PlatformDispatcher;
+import 'dart:ui' show Locale, PlatformDispatcher;
 
+import 'package:flutter/foundation.dart' show ValueNotifier;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sqflite/sqflite.dart';
 
@@ -8,7 +9,7 @@ import 'package:sqflite/sqflite.dart';
 ///
 /// It runs on every app start but only writes when the JSON's
 /// "content_version" is higher than the version already stored, or when the
-/// device language changed. To ship new lessons, edit both JSON files
+/// app language changed. To ship new lessons, edit both JSON files
 /// (English and Bangla, same ids) and increase content_version by one.
 class ContentSeeder {
   static const Map<String, String> contentAssets = {
@@ -17,6 +18,12 @@ class ContentSeeder {
   };
   static const String _versionKey = 'content_version';
   static const String _languageKey = 'content_language';
+  /// The language picked in the app; missing means "follow the device".
+  static const String appLanguageKey = 'app_language';
+
+  /// The language picked in the app (null = device language). Set on every
+  /// seed so MaterialApp switches before the home screen shows content.
+  static final ValueNotifier<Locale?> appLocale = ValueNotifier(null);
 
   /// The first device language we have content for, like MaterialApp does.
   // ponytail: read once at startup; a language change while the app is
@@ -29,14 +36,17 @@ class ContentSeeder {
   }
 
   static Future<void> seedIfNeeded(Database db) async {
-    final language = deviceLanguage();
+    final meta = {
+      for (final row in await db.query('meta')) row['key'] as String: row['value'] as String,
+    };
+    final picked = contentAssets.containsKey(meta[appLanguageKey]) ? meta[appLanguageKey] : null;
+    appLocale.value = picked == null ? null : Locale(picked);
+    final language = picked ?? deviceLanguage();
+
     final raw = await rootBundle.loadString(contentAssets[language]!);
     final json = jsonDecode(raw) as Map<String, dynamic>;
     final newVersion = json['content_version'] as int;
 
-    final meta = {
-      for (final row in await db.query('meta')) row['key'] as String: row['value'] as String,
-    };
     final currentVersion = int.tryParse(meta[_versionKey] ?? '') ?? 0;
     if (currentVersion >= newVersion && meta[_languageKey] == language) return;
 

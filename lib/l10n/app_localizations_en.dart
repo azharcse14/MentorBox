@@ -18,6 +18,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get savedLessons => 'Saved lessons';
 
   @override
+  String get language => 'Language';
+
+  @override
+  String get deviceLanguage => 'Phone\'s language';
+
+  @override
   String get todaysMissions => 'Today\'s missions';
 
   @override

@@ -18,6 +18,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get savedLessons => 'সেভ করা লেসন';
 
   @override
+  String get language => 'ভাষা';
+
+  @override
+  String get deviceLanguage => 'ফোনের ভাষা';
+
+  @override
   String get todaysMissions => 'আজকের মিশন';
 
   @override

@@ -2,6 +2,7 @@ import 'package:sqflite/sqflite.dart';
 
 import '../logic/mentor_engine.dart';
 import 'app_database.dart';
+import 'content_seeder.dart';
 import 'models.dart';
 
 /// The only place the UI talks to the database.
@@ -29,6 +30,25 @@ class MentorRepository {
       {'key': 'user_name', 'value': name.trim()},
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
+  }
+
+  /// 'en', 'bn', or null to follow the device language.
+  String? get language => ContentSeeder.appLocale.value?.languageCode;
+
+  /// Saves the choice and reloads lesson content in that language.
+  /// The app switches language through [ContentSeeder.appLocale].
+  Future<void> setLanguage(String? code) async {
+    final db = await _db;
+    if (code == null) {
+      await db.delete('meta', where: 'key = ?', whereArgs: [ContentSeeder.appLanguageKey]);
+    } else {
+      await db.insert(
+        'meta',
+        {'key': ContentSeeder.appLanguageKey, 'value': code},
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+    }
+    await ContentSeeder.seedIfNeeded(db);
   }
 
   // ---------------------------------------------------------------- content
