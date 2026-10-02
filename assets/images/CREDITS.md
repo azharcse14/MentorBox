@@ -13,3 +13,4 @@ free for commercial use, no attribution required. Cropped to squares.
 - `leadership.jpg`: https://stocksnap.io/photo/business-presenting-XDAR6MIG75
 - `study.jpg`: https://stocksnap.io/photo/guy-man-H0VXBZUZP3
 - `creativity.jpg`: https://stocksnap.io/photo/camera-lens-W7RWLHPKX4
+- `cse.jpg`: https://commons.wikimedia.org/wiki/File:Electronics_PCB_circuit_board_002_(51131186557).jpg (Wikimedia Commons, CC0)
