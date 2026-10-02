@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -20,6 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     return AppBar(
       toolbarHeight: 110,
       elevation: 0,
@@ -39,7 +41,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Welcome back',
+                      l.welcomeBack,
                       style: AppTheme.mono(18, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
                     ),
                     Padding(
@@ -56,13 +58,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             IconButton(
-              tooltip: 'Saved lessons',
+              tooltip: l.savedLessons,
               onPressed: onSavedTap,
               icon: const Icon(Icons.favorite_border, size: 26, color: AppTheme.kGreyShade800),
             ),
             const SizedBox(width: 6),
             IconButton(
-              tooltip: "Today's missions",
+              tooltip: l.todaysMissions,
               onPressed: onTodayTap,
               icon: Stack(
                 clipBehavior: Clip.none,

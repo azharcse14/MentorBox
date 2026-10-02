@@ -4,6 +4,7 @@ import '../components/appbar.dart';
 import '../components/mentor_card.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
+import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
 import '../theme.dart';
 import 'lesson_page.dart';
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   bool _loading = true;
   String? _error;
-  String _userName = 'Learner';
+  String? _userName;
   bool _hasName = true;
   bool _askedForName = false;
   List<CategoryOverview> _overviews = [];
@@ -50,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
       final days = await _repo.getActivityDays();
       if (!mounted) return;
       setState(() {
-        _userName = name ?? 'Learner';
+        _userName = name;
         _hasName = name != null;
         _overviews = overviews;
         _streak = MentorEngine.streak(days);
@@ -74,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final name = await showDialog<String>(
       context: context,
       barrierDismissible: _hasName,
-      builder: (_) => _NameDialog(initial: _hasName ? _userName : '', firstTime: !_hasName),
+      builder: (_) => _NameDialog(initial: _hasName ? _userName ?? '' : '', firstTime: !_hasName),
     );
     final trimmed = name?.trim() ?? '';
     if (trimmed.isEmpty) return;
@@ -93,9 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Categories the learner has started and not finished, most recent first.
   List<CategoryOverview> get _inProgress {
-    final list = _overviews
-        .where((o) => o.started && !o.finished && o.nextLesson != null)
-        .toList();
+    final list = _overviews.where((o) => o.started && !o.finished && o.nextLesson != null).toList();
     list.sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
     return list;
   }
@@ -105,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final inProgress = _inProgress;
     return Scaffold(
       appBar: CustomAppBar(
-        userName: _userName,
+        userName: _userName ?? AppLocalizations.of(context).defaultName,
         hasMissions: inProgress.isNotEmpty,
         onNameTap: _editName,
         onSavedTap: () => _push(const SavedPage()),
@@ -116,6 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildBody(List<CategoryOverview> inProgress) {
+    final l = AppLocalizations.of(context);
     if (_loading) {
       return const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor));
     }
@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: Text(
-            'The lessons could not be loaded. Check that assets/content/mentors.json is valid JSON and listed in pubspec.yaml.\n\n$_error',
+            l.loadError(_error!),
             textAlign: TextAlign.center,
             style: AppTheme.body(14),
           ),
@@ -163,11 +163,11 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
-                  'Explore :',
+                  l.exploreLabel,
                   style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
                 ),
                 Text(
-                  'Pick a mentor,\ngrow one skill a day',
+                  l.exploreTagline,
                   textAlign: TextAlign.right,
                   style: AppTheme.body(14, weight: FontWeight.w600, height: 1.35),
                 ),
@@ -206,6 +206,7 @@ class _Hero extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -213,12 +214,12 @@ class _Hero extends StatelessWidget {
           text: TextSpan(
             style: AppTheme.mono(35, weight: FontWeight.w600),
             children: [
-              const TextSpan(text: 'Your Personal\n'),
+              TextSpan(text: l.heroBefore),
               TextSpan(
-                text: 'Mentors',
+                text: l.heroHighlight,
                 style: AppTheme.display(42, color: AppTheme.kPrimaryColor),
               ),
-              const TextSpan(text: ' For\nEvery Skill'),
+              TextSpan(text: l.heroAfter),
             ],
           ),
         ),
@@ -259,7 +260,7 @@ class _StreakChip extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            active ? '$streak day streak' : 'No streak yet',
+            active ? AppLocalizations.of(context).streakDays(streak) : AppLocalizations.of(context).noStreak,
             style: AppTheme.mono(15, color: active ? Colors.white : AppTheme.kGreyShade800),
           ),
         ],
@@ -280,8 +281,7 @@ class _OverlappingAvatars extends StatefulWidget {
   State<_OverlappingAvatars> createState() => _OverlappingAvatarsState();
 }
 
-class _OverlappingAvatarsState extends State<_OverlappingAvatars>
-    with SingleTickerProviderStateMixin {
+class _OverlappingAvatarsState extends State<_OverlappingAvatars> with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _pop;
 
@@ -352,7 +352,7 @@ class _ContinueCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Continue with ${category.mentorName}',
+                      AppLocalizations.of(context).continueWith(category.mentorName),
                       style: AppTheme.mono(14, color: category.color, weight: FontWeight.w700),
                     ),
                     const SizedBox(height: 2),
@@ -434,10 +434,11 @@ class _NameDialogState extends State<_NameDialog> {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     return AlertDialog(
       backgroundColor: AppTheme.kSurface,
       title: Text(
-        widget.firstTime ? 'Hi! What should your mentors call you?' : 'Change your name',
+        widget.firstTime ? l.nameDialogFirstTitle : l.nameDialogChangeTitle,
         style: AppTheme.mono(22, weight: FontWeight.w700),
       ),
       content: TextField(
@@ -445,15 +446,15 @@ class _NameDialogState extends State<_NameDialog> {
         autofocus: true,
         textCapitalization: TextCapitalization.words,
         onSubmitted: (_) => _save(),
-        decoration: const InputDecoration(hintText: 'Your name'),
+        decoration: InputDecoration(hintText: l.nameHint),
       ),
       actions: [
         if (!widget.firstTime)
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
           ),
-        FilledButton(onPressed: _save, child: const Text('Save name')),
+        FilledButton(onPressed: _save, child: Text(l.saveName)),
       ],
     );
   }

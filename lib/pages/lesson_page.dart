@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 import '../theme.dart';
 import 'quiz_page.dart';
 
@@ -84,7 +85,9 @@ class _LessonPageState extends State<LessonPage> {
     final value = !progress.bookmarked;
     await _repo.setBookmarked(progress.lessonId, value);
     await _refreshProgress();
-    _toast(value ? 'Lesson saved' : 'Lesson removed from saved');
+    if (!mounted) return;
+    final l = AppLocalizations.of(context);
+    _toast(value ? l.lessonSaved : l.lessonUnsaved);
   }
 
   Future<void> _setTaskDone(bool? value) async {
@@ -101,7 +104,8 @@ class _LessonPageState extends State<LessonPage> {
     await _repo.saveNotes(lesson.id, _notesController.text.trim());
     _notesDirty = false;
     await _refreshProgress();
-    _toast('Note saved');
+    if (!mounted) return;
+    _toast(AppLocalizations.of(context).noteSaved);
   }
 
   Future<void> _openQuiz() async {
@@ -130,11 +134,12 @@ class _LessonPageState extends State<LessonPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     if (_missing) {
       return Scaffold(
         appBar: AppBar(),
         body: Center(
-          child: Text('This lesson is no longer available.', style: AppTheme.body(15)),
+          child: Text(l.lessonMissing, style: AppTheme.body(15)),
         ),
       );
     }
@@ -154,7 +159,7 @@ class _LessonPageState extends State<LessonPage> {
         title: Text(category.mentorName, style: AppTheme.mono(22, weight: FontWeight.w700)),
         actions: [
           IconButton(
-            tooltip: progress.bookmarked ? 'Remove from saved' : 'Save lesson',
+            tooltip: progress.bookmarked ? l.removeFromSaved : l.saveLesson,
             onPressed: _toggleBookmark,
             icon: Icon(
               progress.bookmarked ? Icons.bookmark : Icons.bookmark_border,
@@ -172,8 +177,8 @@ class _LessonPageState extends State<LessonPage> {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               _Tag(text: category.name, color: accent),
-              _Tag(text: '${lesson.durationMin} min read', color: AppTheme.kSubheadingColor),
-              if (progress.completed) const _Tag(text: 'Completed', color: AppTheme.kSuccess),
+              _Tag(text: l.minutesRead(lesson.durationMin), color: AppTheme.kSubheadingColor),
+              if (progress.completed) _Tag(text: l.completed, color: AppTheme.kSuccess),
             ],
           ),
           const SizedBox(height: 14),
@@ -187,7 +192,7 @@ class _LessonPageState extends State<LessonPage> {
           const SizedBox(height: 8),
           if (lesson.keyPoints.isNotEmpty)
             SectionCard(
-              title: 'Key points',
+              title: l.keyPoints,
               icon: Icons.check,
               color: accent,
               child: Column(
@@ -215,7 +220,7 @@ class _LessonPageState extends State<LessonPage> {
             ),
           if (lesson.mentorTip.isNotEmpty)
             SectionCard(
-              title: 'Mentor tip',
+              title: l.mentorTip,
               icon: Icons.lightbulb_outline,
               color: accent,
               child: Text(
@@ -225,7 +230,7 @@ class _LessonPageState extends State<LessonPage> {
             ),
           if (lesson.task.isNotEmpty)
             SectionCard(
-              title: 'Your task',
+              title: l.yourTask,
               icon: Icons.task_alt,
               color: accent,
               child: Column(
@@ -239,13 +244,13 @@ class _LessonPageState extends State<LessonPage> {
                     activeColor: accent,
                     contentPadding: EdgeInsets.zero,
                     controlAffinity: ListTileControlAffinity.leading,
-                    title: Text('I did this task', style: AppTheme.body(14, weight: FontWeight.w600)),
+                    title: Text(l.iDidTask, style: AppTheme.body(14, weight: FontWeight.w600)),
                   ),
                 ],
               ),
             ),
           SectionCard(
-            title: 'My notes',
+            title: l.myNotes,
             icon: Icons.notes,
             color: accent,
             child: Column(
@@ -258,7 +263,7 @@ class _LessonPageState extends State<LessonPage> {
                   onChanged: (_) => _notesDirty = true,
                   style: AppTheme.body(14),
                   decoration: InputDecoration(
-                    hintText: 'What did you learn? Where will you use it this week?',
+                    hintText: l.notesHint,
                     hintStyle: AppTheme.body(14, color: AppTheme.kSubheadingColor),
                     filled: true,
                     fillColor: Colors.white,
@@ -269,7 +274,7 @@ class _LessonPageState extends State<LessonPage> {
                   ),
                 ),
                 const SizedBox(height: 4),
-                TextButton(onPressed: _saveNotes, child: const Text('Save note')),
+                TextButton(onPressed: _saveNotes, child: Text(l.saveNote)),
               ],
             ),
           ),
@@ -286,12 +291,13 @@ class _LessonPageState extends State<LessonPage> {
   }
 
   Widget _bottomAction(LessonProgress progress) {
+    final l = AppLocalizations.of(context);
     if (!progress.completed) {
       if (_quizCount == 0) {
-        return PrimaryButton(label: 'Mark lesson as complete', onTap: _markComplete);
+        return PrimaryButton(label: l.markComplete, onTap: _markComplete);
       }
       return PrimaryButton(
-        label: progress.attempts == 0 ? 'Take the quiz' : 'Retake the quiz',
+        label: progress.attempts == 0 ? l.takeQuiz : l.retakeQuiz,
         onTap: _openQuiz,
       );
     }
@@ -301,11 +307,10 @@ class _LessonPageState extends State<LessonPage> {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (next != null)
-          PrimaryButton(label: 'Next lesson: ${next.title}', onTap: _goToNext)
+          PrimaryButton(label: l.nextLesson(next.title), onTap: _goToNext)
         else
-          PrimaryButton(label: 'Back to your mentor', onTap: () => Navigator.of(context).pop()),
-        if (_quizCount > 0)
-          TextButton(onPressed: _openQuiz, child: const Text('Practice the quiz again')),
+          PrimaryButton(label: l.backToMentor, onTap: () => Navigator.of(context).pop()),
+        if (_quizCount > 0) TextButton(onPressed: _openQuiz, child: Text(l.practiceQuizAgain)),
       ],
     );
   }

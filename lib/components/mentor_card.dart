@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
 import '../theme.dart';
 import 'widgets.dart';
@@ -16,6 +17,7 @@ class MentorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final category = overview.category;
     final percent = (overview.ratio * 100).round();
+    final l = AppLocalizations.of(context);
 
     return GestureDetector(
       onTap: onTap,
@@ -44,7 +46,7 @@ class MentorCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          overview.finished ? 'Finished' : '$percent% done',
+                          overview.finished ? l.finished : l.percentDone(percent),
                           style: AppTheme.mono(13, color: Colors.white),
                         ),
                       ),
@@ -74,7 +76,7 @@ class MentorCard extends StatelessWidget {
                   ProgressBar(value: overview.ratio, color: Colors.white),
                   const SizedBox(height: 6),
                   Text(
-                    '${overview.completedCount} of ${overview.total} lessons, ${overview.levels.length} levels',
+                    l.cardStats(overview.completedCount, overview.total, overview.levels.length),
                     style: AppTheme.mono(12, color: Colors.white70),
                   ),
                 ],

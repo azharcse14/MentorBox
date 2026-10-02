@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'l10n/app_localizations.dart';
 import 'pages/home_page.dart';
 import 'theme.dart';
 
@@ -14,10 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // The app follows the device language (English or Bangla).
     return MaterialApp(
-      title: 'Mentor',
+      onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const HomeScreen(),
     );
   }

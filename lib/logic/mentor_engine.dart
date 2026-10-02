@@ -1,4 +1,5 @@
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 
 enum LessonState { locked, available, completed }
 
@@ -47,8 +48,7 @@ class CategoryOverview {
     return null;
   }
 
-  List<Lesson> lessonsOf(Level level) =>
-      lessons.where((l) => l.levelId == level.id).toList();
+  List<Lesson> lessonsOf(Level level) => lessons.where((l) => l.levelId == level.id).toList();
 
   bool isLevelUnlocked(Level level) {
     final levelLessons = lessonsOf(level);
@@ -114,12 +114,12 @@ class MentorEngine {
   }
 
   /// What the mentor says when you open a category.
-  static String greeting(CategoryOverview overview, [DateTime? now]) {
+  static String greeting(CategoryOverview overview, AppLocalizations l, [DateTime? now]) {
     final category = overview.category;
     if (overview.finished) {
       return category.message(
         'finished',
-        fallback: 'You finished every lesson here. Explain one idea to a friend this week. Teaching it is the final test.',
+        fallback: l.greetFinished,
       );
     }
 
@@ -127,7 +127,7 @@ class MentorEngine {
     if (lastActive == null) {
       return category.message(
         'welcome',
-        fallback: 'Let\'s start small. One short lesson, one small task. That is how every skill begins.',
+        fallback: l.greetWelcome,
       );
     }
 
@@ -135,29 +135,34 @@ class MentorEngine {
     if (daysAway >= comebackAfterDays) {
       return category.message(
         'comeback',
-        fallback: 'Good to have you back. Skip the guilt and do one lesson today.',
+        fallback: l.greetComeback,
       );
     }
 
     final next = overview.nextLesson;
-    if (next == null) return category.message('welcome');
-    return 'You are ${overview.completedCount} of ${overview.total} lessons in. Next up is "${next.title}".';
+    if (next == null) return category.message('welcome', fallback: l.greetWelcome);
+    return l.greetProgress(overview.completedCount, overview.total, next.title);
   }
 
   /// What the mentor says after a quiz.
-  static String quizFeedback(MentorCategory category, QuizResult result, int attempts) {
+  static String quizFeedback(
+    MentorCategory category,
+    QuizResult result,
+    int attempts,
+    AppLocalizations l,
+  ) {
     if (result.perfect) {
-      return '${category.message('pass', fallback: 'Well done.')} And a perfect score.';
+      return l.quizPerfect(category.message('pass', fallback: l.quizPassShort));
     }
     if (result.passed) {
-      return category.message('pass', fallback: 'Well done, you passed this lesson.');
+      return category.message('pass', fallback: l.quizPassed);
     }
     if (attempts >= 3) {
-      return 'This one is tricky, and that is normal. Read only the key points again, then try once more. Slow progress is still progress.';
+      return l.quizTricky;
     }
     return category.message(
       'fail',
-      fallback: 'Not yet. Read the explanations above, review the lesson, and try again.',
+      fallback: l.quizFail,
     );
   }
 }

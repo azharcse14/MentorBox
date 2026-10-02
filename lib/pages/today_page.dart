@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
+import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
 import '../theme.dart';
 import 'lesson_page.dart';
@@ -48,20 +50,17 @@ class _TodayPageState extends State<TodayPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Today', style: AppTheme.display(32))),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
-          : _content(),
+      appBar: AppBar(title: Text(AppLocalizations.of(context).todayTitle, style: AppTheme.display(32))),
+      body: _loading ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor)) : _content(),
     );
   }
 
   Widget _content() {
-    final missions = _overviews
-        .where((o) => o.started && !o.finished && o.nextLesson != null)
-        .toList()
+    final missions = _overviews.where((o) => o.started && !o.finished && o.nextLesson != null).toList()
       ..sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
     final notStarted = _overviews.where((o) => !o.started).take(2).toList();
     final todayDone = _days.contains(MentorEngine.dayKey(DateTime.now()));
+    final l = AppLocalizations.of(context);
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
@@ -69,7 +68,7 @@ class _TodayPageState extends State<TodayPage> {
         _WeekCard(days: _days, streak: MentorEngine.streak(_days), todayDone: todayDone),
         const SizedBox(height: 24),
         Text(
-          "Today's missions",
+          l.todaysMissions,
           style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
         ),
         const SizedBox(height: 10),
@@ -81,7 +80,7 @@ class _TodayPageState extends State<TodayPage> {
               borderRadius: BorderRadius.circular(14),
             ),
             child: Text(
-              'You have no missions yet. Pick a mentor below or on the home screen and start the first lesson.',
+              l.noMissions,
               style: AppTheme.body(14, color: AppTheme.kSubheadingColor),
             ),
           ),
@@ -90,14 +89,14 @@ class _TodayPageState extends State<TodayPage> {
             lesson: overview.nextLesson!,
             category: overview.category,
             subtitle: overview.nextLesson!.task.isEmpty
-                ? '${overview.completedCount} of ${overview.total} lessons done'
-                : 'Task: ${overview.nextLesson!.task}',
+                ? l.lessonsDone(overview.completedCount, overview.total)
+                : l.taskPrefix(overview.nextLesson!.task),
             onTap: () => _push(LessonPage(lessonId: overview.nextLesson!.id)),
           ),
         if (notStarted.isNotEmpty) ...[
           const SizedBox(height: 24),
           Text(
-            'Try a new mentor',
+            l.tryNewMentor,
             style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
           ),
           const SizedBox(height: 10),
@@ -122,11 +121,11 @@ class _WeekCard extends StatelessWidget {
 
   const _WeekCard({required this.days, required this.streak, required this.todayDone});
 
-  static const _letters = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-
   @override
   Widget build(BuildContext context) {
     final week = MentorEngine.lastSevenDays();
+    final l = AppLocalizations.of(context);
+    final weekdayLetter = DateFormat('EEEEE', l.localeName);
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
@@ -141,16 +140,14 @@ class _WeekCard extends StatelessWidget {
               const Icon(Icons.local_fire_department, color: AppTheme.kPrimaryColor, size: 34),
               const SizedBox(width: 8),
               Text(
-                streak == 1 ? '1 day streak' : '$streak day streak',
+                l.streakDays(streak),
                 style: AppTheme.display(32, color: Colors.white),
               ),
             ],
           ),
           const SizedBox(height: 4),
           Text(
-            todayDone
-                ? 'You learned something today. See you tomorrow.'
-                : 'Finish a task or a quiz today to keep your streak going.',
+            todayDone ? l.todayDone : l.keepStreak,
             style: AppTheme.body(13, color: Colors.white70, height: 1.4),
           ),
           const SizedBox(height: 16),
@@ -165,16 +162,15 @@ class _WeekCard extends StatelessWidget {
                       height: 30,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: days.contains(MentorEngine.dayKey(day))
-                            ? AppTheme.kPrimaryColor
-                            : const Color(0x22FFFFFF),
+                        color:
+                            days.contains(MentorEngine.dayKey(day)) ? AppTheme.kPrimaryColor : const Color(0x22FFFFFF),
                       ),
                       child: days.contains(MentorEngine.dayKey(day))
                           ? const Icon(Icons.check, size: 18, color: Colors.white)
                           : null,
                     ),
                     const SizedBox(height: 4),
-                    Text(_letters[day.weekday - 1], style: AppTheme.mono(13, color: Colors.white54)),
+                    Text(weekdayLetter.format(day), style: AppTheme.mono(13, color: Colors.white54)),
                   ],
                 ),
             ],

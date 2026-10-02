@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 import '../theme.dart';
 import 'lesson_page.dart';
 
@@ -56,16 +57,16 @@ class _SavedPageState extends State<SavedPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text('Saved', style: AppTheme.display(32))),
+      appBar: AppBar(title: Text(l.savedTitle, style: AppTheme.display(32))),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
           : ListView(
               padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
               children: [
-                const _Heading('Saved lessons'),
-                if (_saved.isEmpty)
-                  const _Empty('Tap the bookmark on any lesson to keep it here for later.'),
+                _Heading(l.savedLessons),
+                if (_saved.isEmpty) _Empty(l.savedEmpty),
                 for (final lesson in _saved)
                   LessonRow(
                     lesson: lesson,
@@ -73,9 +74,8 @@ class _SavedPageState extends State<SavedPage> {
                     onTap: () => _open(lesson),
                   ),
                 const SizedBox(height: 20),
-                const _Heading('Your notes'),
-                if (_withNotes.isEmpty)
-                  const _Empty('Notes you write at the end of a lesson show up here.'),
+                _Heading(l.yourNotes),
+                if (_withNotes.isEmpty) _Empty(l.notesEmpty),
                 for (final lesson in _withNotes)
                   LessonRow(
                     lesson: lesson,

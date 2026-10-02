@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui' show PlatformDispatcher;
 
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sqflite/sqflite.dart';
@@ -6,21 +7,38 @@ import 'package:sqflite/sqflite.dart';
 /// Copies the mentoring content from assets/content/mentors.json into SQLite.
 ///
 /// It runs on every app start but only writes when the JSON's
-/// "content_version" is higher than the version already stored. To ship new
-/// lessons, edit the JSON and increase content_version by one.
+/// "content_version" is higher than the version already stored, or when the
+/// device language changed. To ship new lessons, edit both JSON files
+/// (English and Bangla, same ids) and increase content_version by one.
 class ContentSeeder {
-  static const String contentAsset = 'assets/content/mentors.json';
+  static const Map<String, String> contentAssets = {
+    'en': 'assets/content/mentors.json',
+    'bn': 'assets/content/mentors_bn.json',
+  };
   static const String _versionKey = 'content_version';
+  static const String _languageKey = 'content_language';
+
+  /// The first device language we have content for, like MaterialApp does.
+  // ponytail: read once at startup; a language change while the app is
+  // running shows up after the next restart.
+  static String deviceLanguage() {
+    for (final locale in PlatformDispatcher.instance.locales) {
+      if (contentAssets.containsKey(locale.languageCode)) return locale.languageCode;
+    }
+    return 'en';
+  }
 
   static Future<void> seedIfNeeded(Database db) async {
-    final raw = await rootBundle.loadString(contentAsset);
+    final language = deviceLanguage();
+    final raw = await rootBundle.loadString(contentAssets[language]!);
     final json = jsonDecode(raw) as Map<String, dynamic>;
     final newVersion = json['content_version'] as int;
 
-    final rows = await db.query('meta', where: 'key = ?', whereArgs: [_versionKey]);
-    final currentVersion =
-        rows.isEmpty ? 0 : int.tryParse(rows.first['value'] as String) ?? 0;
-    if (currentVersion >= newVersion) return;
+    final meta = {
+      for (final row in await db.query('meta')) row['key'] as String: row['value'] as String,
+    };
+    final currentVersion = int.tryParse(meta[_versionKey] ?? '') ?? 0;
+    if (currentVersion >= newVersion && meta[_languageKey] == language) return;
 
     await db.transaction((txn) async {
       // Only content tables are cleared. Learner progress is keyed by lesson
@@ -98,6 +116,11 @@ class ContentSeeder {
       batch.insert(
         'meta',
         {'key': _versionKey, 'value': '$newVersion'},
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+      batch.insert(
+        'meta',
+        {'key': _languageKey, 'value': language},
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
       await batch.commit(noResult: true);

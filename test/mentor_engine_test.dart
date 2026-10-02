@@ -1,8 +1,9 @@
 import 'dart:math' show Random;
-import 'dart:ui' show Color;
+import 'dart:ui' show Color, Locale;
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mentor_app_flutter/data/models.dart';
+import 'package:mentor_app_flutter/l10n/app_localizations.dart';
 import 'package:mentor_app_flutter/logic/mentor_engine.dart';
 
 const _category = MentorCategory(
@@ -83,8 +84,15 @@ void main() {
     });
 
     test('feedback uses the mentor voice', () {
-      expect(MentorEngine.quizFeedback(_category, const QuizResult(2, 3), 1), 'Nice.');
-      expect(MentorEngine.quizFeedback(_category, const QuizResult(0, 3), 1), 'Again.');
+      final l = lookupAppLocalizations(const Locale('en'));
+      expect(MentorEngine.quizFeedback(_category, const QuizResult(2, 3), 1, l), 'Nice.');
+      expect(MentorEngine.quizFeedback(_category, const QuizResult(0, 3), 1, l), 'Again.');
+    });
+
+    test('bangla fallbacks and digits', () {
+      final l = lookupAppLocalizations(const Locale('bn'));
+      expect(MentorEngine.quizFeedback(_category, const QuizResult(3, 3), 1, l), 'Nice. আর একদম পুরো নম্বর!');
+      expect(l.streakDays(3), '৩ দিনের স্ট্রিক');
     });
 
     test('shuffling keeps the right answer', () {

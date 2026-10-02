@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
 import '../theme.dart';
 
@@ -57,8 +58,7 @@ class _QuizPageState extends State<QuizPage> {
     });
   }
 
-  List<QuizQuestion> _shuffle(List<QuizQuestion> questions) =>
-      questions.map((q) => q.shuffled(_random)).toList();
+  List<QuizQuestion> _shuffle(List<QuizQuestion> questions) => questions.map((q) => q.shuffled(_random)).toList();
 
   void _select(int option) {
     if (_checked) return;
@@ -102,7 +102,12 @@ class _QuizPageState extends State<QuizPage> {
     if (!mounted) return;
     setState(() {
       _result = result;
-      _feedback = MentorEngine.quizFeedback(category, result, progress.attempts);
+      _feedback = MentorEngine.quizFeedback(
+        category,
+        result,
+        progress.attempts,
+        AppLocalizations.of(context),
+      );
       _saving = false;
     });
   }
@@ -129,21 +134,20 @@ class _QuizPageState extends State<QuizPage> {
       );
     }
 
+    final l = AppLocalizations.of(context);
     if (_questions.isEmpty) {
       return Scaffold(
         appBar: AppBar(),
-        body: Center(child: Text('This lesson has no quiz.', style: AppTheme.body(15))),
+        body: Center(child: Text(l.noQuiz, style: AppTheme.body(15))),
       );
     }
 
     final result = _result;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz', style: AppTheme.mono(22, weight: FontWeight.w700)),
+        title: Text(l.quizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
       ),
-      body: result == null
-          ? _questionView(category)
-          : _resultView(category, lesson, result),
+      body: result == null ? _questionView(category) : _resultView(category, lesson, result),
       bottomNavigationBar: SafeArea(
         top: false,
         child: Padding(
@@ -158,12 +162,13 @@ class _QuizPageState extends State<QuizPage> {
     final question = _questions[_index];
     final answeredCount = _index + (_checked ? 1 : 0);
     final wasRight = _selected == question.answerIndex;
+    final l = AppLocalizations.of(context);
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(24, 4, 24, 24),
       children: [
         Text(
-          'Question ${_index + 1} of ${_questions.length}',
+          l.questionProgress(_index + 1, _questions.length),
           style: AppTheme.mono(16, color: AppTheme.kSubheadingColor),
         ),
         const SizedBox(height: 8),
@@ -193,7 +198,7 @@ class _QuizPageState extends State<QuizPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  wasRight ? 'Correct' : 'Not quite',
+                  wasRight ? l.answerCorrect : l.answerWrong,
                   style: AppTheme.mono(
                     18,
                     color: wasRight ? AppTheme.kSuccess : AppTheme.kDanger,
@@ -222,17 +227,19 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   Widget _questionAction() {
+    final l = AppLocalizations.of(context);
     if (!_checked) {
-      return PrimaryButton(label: 'Check answer', onTap: _selected == null ? null : _check);
+      return PrimaryButton(label: l.checkAnswer, onTap: _selected == null ? null : _check);
     }
     final last = _index + 1 >= _questions.length;
     return PrimaryButton(
-      label: last ? 'See my result' : 'Next question',
+      label: last ? l.seeResult : l.nextQuestion,
       onTap: _saving ? null : _next,
     );
   }
 
   Widget _resultView(MentorCategory category, Lesson lesson, QuizResult result) {
+    final l = AppLocalizations.of(context);
     return ListView(
       padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
       children: [
@@ -243,13 +250,11 @@ class _QuizPageState extends State<QuizPage> {
         ),
         const SizedBox(height: 8),
         Center(
-          child: Text('${result.correct} / ${result.total}', style: AppTheme.display(68)),
+          child: Text(l.score(result.correct, result.total), style: AppTheme.display(68)),
         ),
         Center(
           child: Text(
-            result.passed
-                ? 'You completed "${lesson.title}"'
-                : 'You need ${result.required} right answers to pass',
+            result.passed ? l.youCompleted(lesson.title) : l.needToPass(result.required),
             textAlign: TextAlign.center,
             style: AppTheme.mono(18, color: AppTheme.kGreyShade800),
           ),
@@ -261,14 +266,15 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   Widget _resultAction(QuizResult result) {
+    final l = AppLocalizations.of(context);
     if (result.passed) {
-      return PrimaryButton(label: 'Continue', onTap: () => Navigator.of(context).pop(true));
+      return PrimaryButton(label: l.continueButton, onTap: () => Navigator.of(context).pop(true));
     }
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        PrimaryButton(label: 'Review the lesson', onTap: () => Navigator.of(context).pop(false)),
-        TextButton(onPressed: _restart, child: const Text('Try the quiz again')),
+        PrimaryButton(label: l.reviewLesson, onTap: () => Navigator.of(context).pop(false)),
+        TextButton(onPressed: _restart, child: Text(l.tryQuizAgain)),
       ],
     );
   }

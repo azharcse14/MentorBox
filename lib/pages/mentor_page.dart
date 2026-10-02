@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
 import '../theme.dart';
 import 'lesson_page.dart';
@@ -28,8 +29,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _zoom = AnimationController(vsync: this, duration: const Duration(seconds: 6))
-      ..repeat(reverse: true);
+    _zoom = AnimationController(vsync: this, duration: const Duration(seconds: 6))..repeat(reverse: true);
     _scale = Tween<double>(begin: 1.0, end: 1.06).animate(
       CurvedAnimation(parent: _zoom, curve: Curves.easeInOut),
     );
@@ -59,7 +59,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
     ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
       ..showSnackBar(
-        const SnackBar(content: Text('Finish the lesson before this one to unlock it.')),
+        SnackBar(content: Text(AppLocalizations.of(context).lockedLessonHint)),
       );
   }
 
@@ -102,6 +102,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
   Widget _content(CategoryOverview overview) {
     final category = overview.category;
     final percent = (overview.ratio * 100).round();
+    final l = AppLocalizations.of(context);
 
     return ListView(
       padding: EdgeInsets.fromLTRB(20, kToolbarHeight + MediaQuery.of(context).size.height * 0.12, 20, 24),
@@ -110,7 +111,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
         const SizedBox(height: 6),
         Text(category.tagline, style: AppTheme.body(16, color: AppTheme.kScaffoldBackgroundColor, height: 1.4)),
         const SizedBox(height: 20),
-        MentorBubble(category: category, message: MentorEngine.greeting(overview), dark: true),
+        MentorBubble(category: category, message: MentorEngine.greeting(overview, l), dark: true),
         const SizedBox(height: 24),
         Container(
           padding: const EdgeInsets.all(12),
@@ -123,7 +124,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
               Row(
                 children: [
                   Text(
-                    'Progress : ',
+                    l.progressLabel,
                     style: AppTheme.mono(20, color: Colors.grey.shade500, weight: FontWeight.w700),
                   ),
                   // Counts up once, like the price animation in the original design.
@@ -132,13 +133,13 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
                     duration: const Duration(milliseconds: 900),
                     curve: Curves.easeOut,
                     builder: (context, value, _) => Text(
-                      '${value.round()}%',
+                      l.percent(value.round()),
                       style: AppTheme.display(35, color: Colors.white70),
                     ),
                   ),
                   const Spacer(),
                   Text(
-                    '${overview.completedCount} of ${overview.total} lessons',
+                    l.lessonsOf(overview.completedCount, overview.total),
                     style: AppTheme.mono(15, color: Colors.white70),
                   ),
                 ],
@@ -166,16 +167,17 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
   Widget _bottomAction(CategoryOverview overview) {
     if (overview.lessons.isEmpty) return const SizedBox.shrink();
 
+    final l = AppLocalizations.of(context);
     final String label;
     final Lesson target;
     if (overview.finished) {
-      label = 'Review from the first lesson';
+      label = l.reviewFromFirst;
       target = overview.lessons.first;
     } else if (overview.completedCount == 0) {
-      label = 'Start mentoring';
+      label = l.startMentoring;
       target = overview.nextLesson!;
     } else {
-      label = 'Continue: ${overview.nextLesson!.title}';
+      label = l.continueLesson(overview.nextLesson!.title);
       target = overview.nextLesson!;
     }
 
@@ -212,6 +214,7 @@ class _LevelSection extends StatelessWidget {
     final lessons = overview.lessonsOf(level);
     final unlocked = overview.isLevelUnlocked(level);
     final done = overview.completedIn(level);
+    final l = AppLocalizations.of(context);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 24),
@@ -221,7 +224,7 @@ class _LevelSection extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Level $number',
+                l.levelNumber(number),
                 style: AppTheme.display(24, color: unlocked ? AppTheme.kPrimaryColor : Colors.white38),
               ),
               const SizedBox(width: 10),
@@ -232,7 +235,7 @@ class _LevelSection extends StatelessWidget {
                 ),
               ),
               Text(
-                unlocked ? '$done/${lessons.length}' : 'Locked',
+                unlocked ? l.fraction(done, lessons.length) : l.locked,
                 style: AppTheme.mono(14, color: Colors.white54),
               ),
             ],
@@ -284,11 +287,12 @@ class _LessonTile extends StatelessWidget {
 
     final locked = state == LessonState.locked;
     final p = progress;
+    final l = AppLocalizations.of(context);
     final String detail;
     if (state == LessonState.completed && p != null) {
-      detail = '${lesson.durationMin} min, best quiz score ${p.bestScore}';
+      detail = l.minutesWithScore(lesson.durationMin, p.bestScore);
     } else {
-      detail = '${lesson.durationMin} min';
+      detail = l.minutes(lesson.durationMin);
     }
 
     return Padding(
@@ -323,8 +327,7 @@ class _LessonTile extends StatelessWidget {
                     ],
                   ),
                 ),
-                if (p != null && p.bookmarked)
-                  const Icon(Icons.bookmark, color: AppTheme.kPrimaryColor, size: 20),
+                if (p != null && p.bookmarked) const Icon(Icons.bookmark, color: AppTheme.kPrimaryColor, size: 20),
               ],
             ),
           ),
