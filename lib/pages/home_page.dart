@@ -1,9 +1,15 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mentor_app_flutter/components/appbar.dart';
-import 'package:mentor_app_flutter/components/swipable_card.dart';
 import 'package:flutter/material.dart';
+
+import '../components/appbar.dart';
+import '../components/mentor_card.dart';
+import '../components/widgets.dart';
+import '../data/mentor_repository.dart';
+import '../logic/mentor_engine.dart';
 import '../theme.dart';
+import 'lesson_page.dart';
+import 'mentor_page.dart';
+import 'saved_page.dart';
+import 'today_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,183 +19,280 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final _repo = MentorRepository.instance;
+  final _pageController = PageController(viewportFraction: 0.86);
+
+  bool _loading = true;
+  String? _error;
+  String _userName = 'Learner';
+  bool _hasName = true;
+  bool _askedForName = false;
+  List<CategoryOverview> _overviews = [];
+  int _streak = 0;
+  int _page = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _load() async {
+    try {
+      final name = await _repo.getUserName();
+      final overviews = await _repo.getAllOverviews();
+      final days = await _repo.getActivityDays();
+      if (!mounted) return;
+      setState(() {
+        _userName = name ?? 'Learner';
+        _hasName = name != null;
+        _overviews = overviews;
+        _streak = MentorEngine.streak(days);
+        _loading = false;
+        _error = null;
+      });
+      if (name == null && !_askedForName) {
+        _askedForName = true;
+        WidgetsBinding.instance.addPostFrameCallback((_) => _editName());
+      }
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _error = '$e';
+      });
+    }
+  }
+
+  Future<void> _editName() async {
+    final name = await showDialog<String>(
+      context: context,
+      barrierDismissible: _hasName,
+      builder: (_) => _NameDialog(initial: _hasName ? _userName : '', firstTime: !_hasName),
+    );
+    final trimmed = name?.trim() ?? '';
+    if (trimmed.isEmpty) return;
+    await _repo.setUserName(trimmed);
+    if (!mounted) return;
+    setState(() {
+      _userName = trimmed;
+      _hasName = true;
+    });
+  }
+
+  Future<void> _push(Widget page) async {
+    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => page));
+    await _load();
+  }
+
+  /// Categories the learner has started and not finished, most recent first.
+  List<CategoryOverview> get _inProgress {
+    final list = _overviews
+        .where((o) => o.started && !o.finished && o.nextLesson != null)
+        .toList();
+    list.sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
+    return list;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final mqh = MediaQuery.of(context).size.height;
-    final mqw = MediaQuery.of(context).size.width;
+    final inProgress = _inProgress;
+    return Scaffold(
+      appBar: CustomAppBar(
+        userName: _userName,
+        hasMissions: inProgress.isNotEmpty,
+        onNameTap: _editName,
+        onSavedTap: () => _push(const SavedPage()),
+        onTodayTap: () => _push(const TodayPage()),
+      ),
+      body: SafeArea(top: false, child: _buildBody(inProgress)),
+    );
+  }
 
-    return SafeArea(
-      child: Scaffold(
-        appBar: const CustomAppBar(),
-        body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: mqw * 0.1),
-          child: Column(
-            children: [
-              SizedBox(
-                height: mqh * 0.20,
-                width: mqw,
-                child: Stack(
-                  children: [
-                    RichText(
-                      text: TextSpan(
-                        style: GoogleFonts.shareTech(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 35.0,
-                          color: AppTheme.kGreyShade800,
-                        ),
-                        children: [
-                          const TextSpan(
-                            text: 'Find Best\n',
-                          ),
-                          TextSpan(
-                            text: 'Mentors',
-                            style: GoogleFonts.bebasNeue(
-                                color: AppTheme.kPrimaryColor,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 40),
-                          ),
-                          const TextSpan(text: ' For\n'),
-                          const TextSpan(
-                            text: 'You',
-                          ),
-                        ],
-                      ),
-                    ),
-                    Positioned(
-                      top: 80.0,
-                      left: 70.0,
-                      child: LayoutBuilder(
-                        builder:
-                            (BuildContext context, BoxConstraints constraints) {
-                          return const OverlappingWidget(
-                            images: [
-                              'https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg',
-                              'https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg',
-                              'https://i0.wp.com/thatrandomagency.com/wp-content/uploads/2021/06/headshot.png?resize=618%2C617&ssl=1',
-                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOjCZSoaBhZyODYeQMDCOTICHfz_tia5ay8I_k3k&s',
-                            ],
-                          );
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  RichText(
-                    text: TextSpan(
-                      style: GoogleFonts.shareTech(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20.0,
-                        color: AppTheme.kSubheadingColor,
-                      ),
-                      children: const [
-                        TextSpan(
-                          text: 'Explore :',
-                        ),
-                      ],
-                    ),
-                  ),
-                  RichText(
-                    text: TextSpan(
-                      style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 15.0,
-                        color: AppTheme.kGreyShade800,
-                      ),
-                      children: const [
-                        TextSpan(
-                          text:
-                              'Find Perfect Match For You,\n Meet Your Dream Skills ',
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: mqh * 0.05,
-              ),
-              SwipableCardStackWidget(
-                cardDataList: [
-                  CardData(
-                      imagePath: 'assets/images/1.jpg',
-                      subHeading: 'UI UX Designer',
-                      heading: 'Keol Risen',
-                      description: '5 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/2.jpg',
-                      subHeading: 'Penetration Expert',
-                      heading: 'Perter Panter',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/3.jpg',
-                      subHeading: 'Professional Photographer',
-                      heading: 'Tommy Styles',
-                      description: '2 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/4.jpg',
-                      subHeading: 'Graphics Designer',
-                      heading: 'Kenny Parse',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/5.jpg',
-                      subHeading: 'React Developer',
-                      heading: 'Harry Parker',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/6.jpg',
-                      subHeading: 'Mongo-DB Expert',
-                      heading: 'Deneal Parker',
-                      description: '6 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/7.jpg',
-                      subHeading: 'UI UX Designer',
-                      heading: 'Zore Kaido',
-                      description: '4 Years of Experience'),
-                ],
-              )
-            ],
+  Widget _buildBody(List<CategoryOverview> inProgress) {
+    if (_loading) {
+      return const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor));
+    }
+    if (_error != null) {
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Text(
+            'The lessons could not be loaded. Check that assets/content/mentors.json is valid JSON and listed in pubspec.yaml.\n\n$_error',
+            textAlign: TextAlign.center,
+            style: AppTheme.body(14),
           ),
         ),
+      );
+    }
+
+    final current = inProgress.isEmpty ? null : inProgress.first;
+
+    return RefreshIndicator(
+      color: AppTheme.kPrimaryColor,
+      onRefresh: _load,
+      child: ListView(
+        padding: const EdgeInsets.only(bottom: 32),
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: _Hero(
+              avatars: _overviews.map((o) => o.category.image).toList(),
+              streak: _streak,
+            ),
+          ),
+          const SizedBox(height: 24),
+          if (current != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              child: _ContinueCard(
+                overview: current,
+                onTap: () => _push(LessonPage(lessonId: current.nextLesson!.id)),
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  'Explore :',
+                  style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
+                ),
+                Text(
+                  'Pick a mentor,\ngrow one skill a day',
+                  textAlign: TextAlign.right,
+                  style: AppTheme.body(14, weight: FontWeight.w600, height: 1.35),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            height: 400,
+            child: PageView.builder(
+              controller: _pageController,
+              itemCount: _overviews.length,
+              onPageChanged: (index) => setState(() => _page = index),
+              itemBuilder: (context, index) {
+                final overview = _overviews[index];
+                return MentorCard(
+                  overview: overview,
+                  onTap: () => _push(MentorPage(categoryId: overview.category.id)),
+                );
+              },
+            ),
+          ),
+          const SizedBox(height: 14),
+          _PageDots(count: _overviews.length, index: _page),
+        ],
       ),
     );
   }
 }
 
-class OverlappingWidget extends StatefulWidget {
-  final List<String> images;
+class _Hero extends StatelessWidget {
+  final List<String> avatars;
+  final int streak;
 
-  const OverlappingWidget({Key? key, required this.images}) : super(key: key);
+  const _Hero({required this.avatars, required this.streak});
 
   @override
-  _OverlappingWidgetState createState() => _OverlappingWidgetState();
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        RichText(
+          text: TextSpan(
+            style: AppTheme.mono(35, weight: FontWeight.w600),
+            children: [
+              const TextSpan(text: 'Your Personal\n'),
+              TextSpan(
+                text: 'Mentors',
+                style: AppTheme.display(42, color: AppTheme.kPrimaryColor),
+              ),
+              const TextSpan(text: ' For\nEvery Skill'),
+            ],
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          children: [
+            _OverlappingAvatars(images: avatars.take(4).toList()),
+            const Spacer(),
+            _StreakChip(streak: streak),
+          ],
+        ),
+      ],
+    );
+  }
 }
 
-class _OverlappingWidgetState extends State<OverlappingWidget>
+class _StreakChip extends StatelessWidget {
+  final int streak;
+
+  const _StreakChip({required this.streak});
+
+  @override
+  Widget build(BuildContext context) {
+    final active = streak > 0;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: active ? AppTheme.kPrimaryColor : AppTheme.kSurface,
+        borderRadius: BorderRadius.circular(30),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            Icons.local_fire_department,
+            size: 20,
+            color: active ? Colors.white : AppTheme.kSubheadingColor,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            active ? '$streak day streak' : 'No streak yet',
+            style: AppTheme.mono(15, color: active ? Colors.white : AppTheme.kGreyShade800),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// The round mentor photos that pop in once when the home screen opens.
+/// (The original version never rebuilt during the animation, so the photos
+/// could stay invisible. ScaleTransition listens to the animation itself.)
+class _OverlappingAvatars extends StatefulWidget {
+  final List<String> images;
+
+  const _OverlappingAvatars({required this.images});
+
+  @override
+  State<_OverlappingAvatars> createState() => _OverlappingAvatarsState();
+}
+
+class _OverlappingAvatarsState extends State<_OverlappingAvatars>
     with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _popAnimation;
-  late Animation<double> _fadeAnimation;
+  late final AnimationController _controller;
+  late final Animation<double> _pop;
 
   @override
   void initState() {
     super.initState();
-
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
     );
-
-    _popAnimation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOutBack,
-    );
-
-    _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(_controller);
-
+    _pop = CurvedAnimation(parent: _controller, curve: Curves.easeOutBack);
     _controller.forward();
   }
 
@@ -201,32 +304,99 @@ class _OverlappingWidgetState extends State<OverlappingWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        for (int i = 0; i < widget.images.length; i++)
-          Padding(
-            padding: const EdgeInsets.only(right: 10.0),
-            child: Transform.scale(
-              scale: _popAnimation.value,
-              child: FadeTransition(
-                opacity: _fadeAnimation,
-                child: CachedNetworkImage(
-                  imageUrl: widget.images[i],
-                  imageBuilder: (context, imageProvider) => Container(
-                    margin: const EdgeInsets.symmetric(vertical: 0),
-                    child: Align(
-                      widthFactor: 0.5,
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Colors.white,
-                        backgroundImage: imageProvider,
-                      ),
+    return ScaleTransition(
+      scale: _pop,
+      alignment: Alignment.centerLeft,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (final image in widget.images)
+            Align(
+              widthFactor: 0.62,
+              child: Container(
+                padding: const EdgeInsets.all(2),
+                decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                child: CircleAvatar(radius: 22, backgroundImage: AssetImage(image)),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ContinueCard extends StatelessWidget {
+  final CategoryOverview overview;
+  final VoidCallback onTap;
+
+  const _ContinueCard({required this.overview, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final category = overview.category;
+    final next = overview.nextLesson!;
+    return Material(
+      color: AppTheme.kGreyShade800,
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(18),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              CircleAvatar(radius: 26, backgroundImage: AssetImage(category.image)),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Continue with ${category.mentorName}',
+                      style: AppTheme.mono(14, color: category.color, weight: FontWeight.w700),
                     ),
-                  ),
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                    const SizedBox(height: 2),
+                    Text(
+                      next.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTheme.body(16, color: Colors.white, weight: FontWeight.w600, height: 1.3),
+                    ),
+                    const SizedBox(height: 8),
+                    ProgressBar(value: overview.ratio, color: category.color, height: 5),
+                  ],
                 ),
               ),
+              const SizedBox(width: 10),
+              const Icon(Icons.play_circle_fill, color: AppTheme.kPrimaryColor, size: 40),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _PageDots extends StatelessWidget {
+  final int count;
+  final int index;
+
+  const _PageDots({required this.count, required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < count; i++)
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 250),
+            margin: const EdgeInsets.symmetric(horizontal: 3),
+            width: i == index ? 22 : 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: i == index ? AppTheme.kPrimaryColor : const Color(0x33000000),
+              borderRadius: BorderRadius.circular(8),
             ),
           ),
       ],
@@ -234,4 +404,57 @@ class _OverlappingWidgetState extends State<OverlappingWidget>
   }
 }
 
-// ... (other classes and imports)
+/// Asks for the learner's name the first time, and lets them change it later.
+class _NameDialog extends StatefulWidget {
+  final String initial;
+  final bool firstTime;
+
+  const _NameDialog({required this.initial, required this.firstTime});
+
+  @override
+  State<_NameDialog> createState() => _NameDialogState();
+}
+
+class _NameDialogState extends State<_NameDialog> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController(text: widget.initial);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _save() => Navigator.of(context).pop(_controller.text);
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      backgroundColor: AppTheme.kSurface,
+      title: Text(
+        widget.firstTime ? 'Hi! What should your mentors call you?' : 'Change your name',
+        style: AppTheme.mono(22, weight: FontWeight.w700),
+      ),
+      content: TextField(
+        controller: _controller,
+        autofocus: true,
+        textCapitalization: TextCapitalization.words,
+        onSubmitted: (_) => _save(),
+        decoration: const InputDecoration(hintText: 'Your name'),
+      ),
+      actions: [
+        if (!widget.firstTime)
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+        FilledButton(onPressed: _save, child: const Text('Save name')),
+      ],
+    );
+  }
+}

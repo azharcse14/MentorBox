@@ -1,0 +1,977 @@
+{
+  "content_version": 1,
+  "categories": [
+    {
+      "id": "programming",
+      "name": "Programming",
+      "mentor": "Code Mentor",
+      "tagline": "Learn to think in steps and write your first real logic.",
+      "description": "No setup needed. These lessons teach how programmers think, with examples you can try later in any language.",
+      "image": "assets/images/5.jpg",
+      "color": "#5E8C8A",
+      "messages": {
+        "welcome": "Every programmer started exactly where you are. We will go one idea at a time, and you will be writing logic before you know it.",
+        "comeback": "Code waits patiently. Open the next lesson and read just the first paragraph. Momentum will do the rest.",
+        "pass": "Clean work. That idea is now part of your toolkit.",
+        "fail": "Bugs are normal, even in answers. Read the explanations, review the lesson and run it again.",
+        "finished": "You can now think in steps, store data, make decisions and repeat work. Pick a language and build something tiny this week."
+      },
+      "levels": [
+        {
+          "id": "prog-1",
+          "title": "Think like a programmer",
+          "lessons": [
+            {
+              "id": "prog-1-1",
+              "title": "What programming really is",
+              "minutes": 5,
+              "content": "A program is a list of precise instructions that a computer follows exactly. Computers are fast but not smart. They do what you say, not what you mean, so the real skill of programming is describing a solution clearly.\n\nThat description is called an algorithm: a finite sequence of steps that solves a problem. Recipes, directions to a friend's house and the rules of a board game are all algorithms written for humans.\n\nProgrammers solve big problems by breaking them into smaller ones until each piece is simple enough to write as a step. This habit, called decomposition, matters more than any programming language.",
+              "key_points": [
+                "A program is a precise set of instructions.",
+                "An algorithm is a step-by-step solution to a problem.",
+                "Break big problems into small, simple steps."
+              ],
+              "tip": "When you get stuck, explain the problem out loud in plain words. If you cannot describe the steps, the code will not appear by itself.",
+              "task": "Write the algorithm for making a cup of tea in at least 8 numbered steps. Then read it as if you were a robot that knows nothing, and fix any step that is vague.",
+              "quiz": [
+                {
+                  "q": "What is an algorithm?",
+                  "options": ["A type of computer chip", "A step-by-step set of instructions that solves a problem", "A programming language", "A bug in the code"],
+                  "answer": 1,
+                  "explain": "An algorithm is a finite sequence of clear steps. Programming languages are just ways to write algorithms down for a computer."
+                },
+                {
+                  "q": "Why do computers need very precise instructions?",
+                  "options": ["They understand what you mean even if you are vague", "They follow instructions exactly, without guessing your intent", "They are slow", "They only read English"],
+                  "answer": 1,
+                  "explain": "A computer does exactly what it is told. Vague instructions lead to wrong results, which is why clarity is the core skill."
+                },
+                {
+                  "q": "Breaking a big problem into smaller parts is called...",
+                  "options": ["Decomposition", "Compilation", "Encryption", "Debugging"],
+                  "answer": 0,
+                  "explain": "Decomposition means splitting a problem into smaller pieces until each piece is easy to solve."
+                }
+              ]
+            },
+            {
+              "id": "prog-1-2",
+              "title": "Variables and data types",
+              "minutes": 6,
+              "content": "Programs need to remember things: a name, a score, a price. A variable is a named box that holds a value. When you write score = 10, you create a box called score and put 10 inside. Later you can read it or replace it, for example score = score + 5.\n\nEvery value has a type, and the type decides what you can do with it. Common types are integers (whole numbers like 42), decimals (like 3.14), strings (text like \"Dhaka\") and booleans (only true or false).\n\nMixing types carelessly causes bugs. The text \"5\" and the number 5 look similar to us, but \"5\" + \"5\" joins the text into \"55\" while 5 + 5 adds up to 10.",
+              "key_points": [
+                "A variable is a named place to store a value.",
+                "Common types are integers, decimals, strings and booleans.",
+                "The type decides which operations make sense."
+              ],
+              "tip": "Give variables names that explain themselves. totalPrice is better than tp, because you will read your code far more often than you write it.",
+              "task": "List 5 pieces of information a shopping app must remember (for example, the cart total). For each one, write a clear variable name and its type.",
+              "quiz": [
+                {
+                  "q": "What is a variable?",
+                  "options": ["A named storage place for a value", "A value that can never change", "A kind of loop", "An error message"],
+                  "answer": 0,
+                  "explain": "A variable is a named box that holds a value you can read and update later."
+                },
+                {
+                  "q": "Which type fits the value true?",
+                  "options": ["String", "Integer", "Boolean", "Decimal"],
+                  "answer": 2,
+                  "explain": "Booleans hold only two values, true or false. They answer yes-or-no questions in code."
+                },
+                {
+                  "q": "In most languages, what does \"5\" + \"5\" produce?",
+                  "options": ["10", "\"55\"", "An error in every language", "0"],
+                  "answer": 1,
+                  "explain": "Both values are strings, so + joins the text together. Only numbers are added mathematically."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prog-2",
+          "title": "Control the flow",
+          "lessons": [
+            {
+              "id": "prog-2-1",
+              "title": "Making decisions with if and else",
+              "minutes": 6,
+              "content": "Real programs react to situations. A condition is a question that is either true or false, such as age >= 18 or balance > price. An if statement runs a block of code only when its condition is true.\n\nelse gives an alternative path for when the condition is false, and else if lets you check several conditions in order. The program checks them from top to bottom and runs only the first block whose condition is true.\n\nConditions can be combined. and requires both parts to be true, or requires at least one, and not flips true to false. For example: if it is raining and you have an umbrella, take it.",
+              "key_points": [
+                "A condition evaluates to true or false.",
+                "if runs code only when its condition is true; else handles the other case.",
+                "Combine conditions with and, or and not."
+              ],
+              "tip": "Before writing an if, list every possible case on paper. Most decision bugs come from a case nobody thought about, like a score of exactly 60.",
+              "task": "Write a grading rule in plain words using if, else if and else: 80 or more is A, 60 to 79 is B, 40 to 59 is C, below 40 is F. Test it on 85, 60, 40 and 12.",
+              "quiz": [
+                {
+                  "q": "When does the code inside an if block run?",
+                  "options": ["Always", "Only when its condition is true", "Only when its condition is false", "Only once per program"],
+                  "answer": 1,
+                  "explain": "The if block runs only when its condition evaluates to true. Otherwise it is skipped."
+                },
+                {
+                  "q": "With 'if score >= 80 ... else if score >= 60 ...', what happens for a score of 90?",
+                  "options": ["Both blocks run", "Only the first block runs", "Only the second block runs", "Neither block runs"],
+                  "answer": 1,
+                  "explain": "Conditions are checked from top to bottom and only the first true one runs. 90 >= 80 is true, so the else if is skipped."
+                },
+                {
+                  "q": "Which expression is true only when both parts are true?",
+                  "options": ["A or B", "not A", "A and B", "A else B"],
+                  "answer": 2,
+                  "explain": "and needs both sides to be true. or needs just one of them."
+                }
+              ]
+            },
+            {
+              "id": "prog-2-2",
+              "title": "Loops: repeating work",
+              "minutes": 6,
+              "content": "Computers are great at repetition. A loop runs the same block of code many times so you do not have to copy it. Printing the numbers 1 to 100 takes three lines with a loop instead of a hundred.\n\nA for loop is used when you know how many times to repeat, or when you want to go through every item in a list. A while loop repeats as long as a condition stays true, which is useful when you do not know the count in advance, like asking for a password until it is correct.\n\nEvery loop needs a way to stop. If the condition of a while loop never becomes false, you get an infinite loop and the program freezes. Always make sure something inside the loop moves it toward the end.",
+              "key_points": [
+                "Loops repeat a block of code.",
+                "for loops suit a known count or a list; while loops repeat while a condition is true.",
+                "Make sure every loop can end."
+              ],
+              "tip": "Trace a loop by hand for the first two or three rounds, writing down each variable's value. This one habit finds most loop bugs.",
+              "task": "Write in plain steps a loop that adds up the numbers 1 to 10. Trace it by hand and check that the total is 55.",
+              "quiz": [
+                {
+                  "q": "Which loop fits going through every item in a list?",
+                  "options": ["A for loop", "An if statement", "A variable", "A boolean"],
+                  "answer": 0,
+                  "explain": "A for loop naturally visits each item in a list, or runs a known number of times."
+                },
+                {
+                  "q": "What causes an infinite loop?",
+                  "options": ["Using a for loop", "A condition that never becomes false", "Adding comments", "Using too many variables"],
+                  "answer": 1,
+                  "explain": "If the loop's condition stays true forever, it never stops. Something inside the loop must move it toward ending."
+                },
+                {
+                  "q": "You want to keep asking for a password until it is correct. Which loop fits best?",
+                  "options": ["A for loop that runs exactly 3 times", "A while loop", "No loop is needed", "An else statement"],
+                  "answer": 1,
+                  "explain": "You do not know how many tries it will take, so a while loop that repeats while the password is wrong fits best."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "name": "Career Growth",
+      "mentor": "Career Mentor",
+      "tagline": "Understand your strengths, set clear goals and get noticed.",
+      "description": "Practical lessons on planning your career, writing a resume and building a network, whether you are a student or already working.",
+      "image": "assets/images/6.jpg",
+      "color": "#C98B4F",
+      "messages": {
+        "welcome": "Careers are built in small, deliberate moves. Let's start by understanding you, then make a plan.",
+        "comeback": "Welcome back. Your career did not pause while you were away, so let's take one useful step today.",
+        "pass": "Good. You just thought through something most people never do.",
+        "fail": "Not yet. Look at the explanations, revisit the lesson and give it another go.",
+        "finished": "You now have a clearer picture of your strengths, goals, resume and network. Act on it: send one message or one application this week."
+      },
+      "levels": [
+        {
+          "id": "career-1",
+          "title": "Know yourself",
+          "lessons": [
+            {
+              "id": "career-1-1",
+              "title": "Find your strengths",
+              "minutes": 5,
+              "content": "Many people pick careers based on job titles or salaries, then feel stuck. A stronger starting point is your strengths: the things you do well that also give you energy instead of draining it.\n\nTo find them, look at evidence, not guesses. Which tasks do people ask you to help with? When did time fly because you were absorbed? What did you do better than classmates or colleagues with similar effort?\n\nAsk three people who know you well what they think you are good at. Others often notice strengths we take for granted, because what feels easy to us does not feel special.",
+              "key_points": [
+                "Strengths are skills you do well that also give you energy.",
+                "Use evidence from your past, not guesses.",
+                "Ask others, because they see strengths you take for granted."
+              ],
+              "tip": "Write strengths as verbs, like explaining, organizing or persuading. Verbs travel across jobs better than job titles do.",
+              "task": "Ask three people what they think you are good at. Write their answers next to your own list and circle what appears more than once.",
+              "quiz": [
+                {
+                  "q": "Which best describes a strength?",
+                  "options": ["Anything you are paid to do", "Something you do well that also energizes you", "A skill listed in a job ad", "A hobby"],
+                  "answer": 1,
+                  "explain": "A real strength combines ability and energy. Being good at something that drains you is a skill, but not a strength to build a career on."
+                },
+                {
+                  "q": "Why ask other people about your strengths?",
+                  "options": ["To get compliments", "They notice strengths that feel too easy for you to see", "Your own opinion does not matter", "Employers require it"],
+                  "answer": 1,
+                  "explain": "Things that come naturally feel ordinary to us, so outside views help reveal them."
+                },
+                {
+                  "q": "What is the best evidence of a strength?",
+                  "options": ["A personality quiz result", "Moments when you did well and lost track of time", "A job title you want", "What your friends are studying"],
+                  "answer": 1,
+                  "explain": "Real past experiences are stronger evidence than labels or wishes."
+                }
+              ]
+            },
+            {
+              "id": "career-1-2",
+              "title": "Set goals that actually work",
+              "minutes": 6,
+              "content": "\"I want a good job\" is a wish, not a goal. A useful goal tells you what to do next. The SMART method helps: a goal should be Specific, Measurable, Achievable, Relevant and Time-bound.\n\nCompare \"get better at design\" with \"finish two portfolio projects and apply to five UI design internships by 31 March\". The second tells you exactly what to work on and when you have succeeded.\n\nBig goals feel heavy, so split them into milestones and weekly actions. A one-year goal becomes three-month milestones, and each milestone becomes things you can do this week.",
+              "key_points": [
+                "SMART means Specific, Measurable, Achievable, Relevant and Time-bound.",
+                "A good goal tells you what to do next.",
+                "Split big goals into milestones and weekly actions."
+              ],
+              "tip": "Review your goal every Sunday for five minutes. Goals that nobody looks at quietly die.",
+              "task": "Rewrite one vague career wish as a SMART goal. Then write the three actions you will take this week toward it.",
+              "quiz": [
+                {
+                  "q": "What does the T in SMART stand for?",
+                  "options": ["Tough", "Time-bound", "Targeted", "Tested"],
+                  "answer": 1,
+                  "explain": "Time-bound means the goal has a deadline, which creates urgency and a clear finish line."
+                },
+                {
+                  "q": "Which is the best SMART goal?",
+                  "options": ["Become successful", "Learn coding someday", "Complete an online SQL course and build one project by 30 June", "Work harder at my job"],
+                  "answer": 2,
+                  "explain": "It is specific and measurable (a course and a project) and it has a deadline."
+                },
+                {
+                  "q": "Why break a big goal into weekly actions?",
+                  "options": ["It makes the goal sound bigger", "It turns a heavy goal into clear next steps", "Managers require it", "It is not useful"],
+                  "answer": 1,
+                  "explain": "Small, concrete actions are easier to start and track than a distant big goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "career-2",
+          "title": "Get noticed",
+          "lessons": [
+            {
+              "id": "career-2-1",
+              "title": "A resume that gets read",
+              "minutes": 6,
+              "content": "Recruiters often scan a resume for only a few seconds before deciding whether to read more. Your resume's job is not to tell your life story. It is to show quickly that you can do this specific job.\n\nLead with results, not duties. \"Responsible for social media\" says little. \"Grew the page from 2,000 to 9,000 followers in six months\" proves impact. Start each bullet with a strong action verb and add numbers where you can.\n\nTailor the resume for each role. Read the job description, note the skills it repeats, and make sure your most relevant experience appears near the top using similar words. Keep it to one or two clean pages.",
+              "key_points": [
+                "Show results with numbers, not just duties.",
+                "Start bullets with action verbs.",
+                "Tailor your resume to each job description."
+              ],
+              "tip": "For every bullet, ask yourself 'so what?'. If the answer is not on the page, add it.",
+              "task": "Pick one bullet from your resume, or one thing you did in a project, and rewrite it as action verb + what you did + a measurable result.",
+              "quiz": [
+                {
+                  "q": "Which resume line is strongest?",
+                  "options": ["Responsible for customer emails", "Handled emails", "Cut average email reply time from 2 days to 4 hours", "Good at communication"],
+                  "answer": 2,
+                  "explain": "It shows a concrete result with numbers, which proves impact."
+                },
+                {
+                  "q": "Why tailor your resume for each job?",
+                  "options": ["To make it longer", "So your most relevant experience matches what the role asks for", "Because it is the law", "To add more hobbies"],
+                  "answer": 1,
+                  "explain": "Matching the role's needs helps recruiters and screening software see your fit quickly."
+                },
+                {
+                  "q": "What should most resume bullets start with?",
+                  "options": ["The word I", "An action verb", "A date", "The company name"],
+                  "answer": 1,
+                  "explain": "Action verbs like built, led or reduced make your contribution clear."
+                }
+              ]
+            },
+            {
+              "id": "career-2-2",
+              "title": "Network without feeling fake",
+              "minutes": 6,
+              "content": "Many opportunities come through people, not job boards. Networking simply means building real relationships with people in fields you care about. It is not about collecting contacts or asking strangers for jobs.\n\nStart with curiosity. Ask for a 15-minute conversation to learn about someone's work: what they do day to day, how they got there and what they wish they had known earlier. Most people enjoy talking about their experience when the request is small and specific.\n\nGive before you ask. Share a useful article, congratulate someone on a milestone or introduce two people who could help each other. Follow up with a thank-you, and stay in touch every few months.",
+              "key_points": [
+                "Networking means building real relationships.",
+                "Ask small, specific questions to learn, not to get a job.",
+                "Give value first and follow up."
+              ],
+              "tip": "Keep a simple list of people you have met, what you talked about and when to check in next. Relationships fade without a little system.",
+              "task": "Write a short, polite message asking one person in a field you like for a 15-minute chat about their work. Send it if you feel ready.",
+              "quiz": [
+                {
+                  "q": "What is the main goal of networking?",
+                  "options": ["Collecting as many contacts as possible", "Building real relationships", "Asking everyone for a job", "Selling a product"],
+                  "answer": 1,
+                  "explain": "Real relationships lead to trust, advice and opportunities over time."
+                },
+                {
+                  "q": "Which first message is best?",
+                  "options": ["Can you give me a job?", "Hi, could I ask you three quick questions about your work as a data analyst? 15 minutes would be great.", "Please check my resume.", "Follow me back."],
+                  "answer": 1,
+                  "explain": "It is small, specific and about learning, so it is easy to say yes to."
+                },
+                {
+                  "q": "What should you do after a helpful conversation?",
+                  "options": ["Nothing", "Send a thank-you and stay in touch", "Ask for money", "Delete the contact"],
+                  "answer": 1,
+                  "explain": "A thank-you and occasional check-ins turn one chat into a relationship."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "mentor": "Speak Mentor",
+      "tagline": "Listen better, speak clearly and present with confidence.",
+      "description": "Communication is the skill behind every other skill. These lessons cover listening, asking questions, structuring your message and handling nerves.",
+      "image": "assets/images/4.jpg",
+      "color": "#D07A5F",
+      "messages": {
+        "welcome": "Great communicators are made, not born. We start with the most underrated part: listening.",
+        "comeback": "Good to hear from you again. Let's warm up with one short lesson.",
+        "pass": "Clear and confident. Nicely done.",
+        "fail": "Not quite there. Re-read the explanations and try again. Repetition is how communication skills stick.",
+        "finished": "You now have tools to listen, ask, structure and present. Use one of them in your next real conversation."
+      },
+      "levels": [
+        {
+          "id": "comm-1",
+          "title": "Listen first",
+          "lessons": [
+            {
+              "id": "comm-1-1",
+              "title": "Active listening",
+              "minutes": 5,
+              "content": "Most of us listen while preparing our reply. Active listening means giving your full attention so you understand the other person before you respond.\n\nIt has three parts. First, attend: put the phone away, look at the person and let them finish. Second, reflect: briefly repeat what you heard in your own words, like \"So the main problem is the deadline, not the budget?\" Third, ask: follow up with a question that goes deeper.\n\nReflecting feels strange at first, but it does two powerful things. It catches misunderstandings early, and it makes the other person feel heard, which builds trust faster than any clever reply.",
+              "key_points": [
+                "Listen to understand, not to reply.",
+                "Attend, reflect, ask.",
+                "Reflecting catches misunderstandings and builds trust."
+              ],
+              "tip": "Count to two after someone stops talking. That small pause often makes them add the most important part.",
+              "task": "In your next conversation, reflect back what the other person said at least twice. Notice how they react.",
+              "quiz": [
+                {
+                  "q": "What is the main aim of active listening?",
+                  "options": ["To prepare a smart reply", "To understand the other person before responding", "To end the conversation quickly", "To give advice"],
+                  "answer": 1,
+                  "explain": "Active listening puts understanding first. Good replies follow naturally."
+                },
+                {
+                  "q": "Which is an example of reflecting?",
+                  "options": ["That's wrong.", "So you feel the deadline is the real problem?", "Let me tell you about my day.", "Okay."],
+                  "answer": 1,
+                  "explain": "Reflecting restates what you heard so the speaker can confirm or correct it."
+                },
+                {
+                  "q": "Why pause briefly after someone finishes speaking?",
+                  "options": ["To look thoughtful", "They often add something important", "It is polite to wait ten seconds", "To think about lunch"],
+                  "answer": 1,
+                  "explain": "A short pause gives the speaker space to continue, often with the key point."
+                }
+              ]
+            },
+            {
+              "id": "comm-1-2",
+              "title": "Ask better questions",
+              "minutes": 5,
+              "content": "Questions shape conversations. Closed questions, answered with yes or no, are useful for confirming facts: \"Is the meeting at 3?\" Open questions invite people to explain: \"How did the meeting go?\"\n\nTo get deeper answers, use follow-ups like \"What makes you say that?\" or \"Can you give me an example?\" Specific questions also beat general ones. \"What was the hardest part of the project?\" gets a better answer than \"How was the project?\"\n\nAvoid stacking several questions at once, and avoid leading questions that hide an opinion, such as \"Don't you think this plan is risky?\" Ask one clear question, then listen.",
+              "key_points": [
+                "Closed questions confirm facts; open questions invite explanation.",
+                "Follow-ups and specific questions get deeper answers.",
+                "Ask one question at a time and avoid leading questions."
+              ],
+              "tip": "Start many questions with what or how. Why can sound like an accusation, so use it gently.",
+              "task": "Turn these into open questions: 'Did you like the course?', 'Was the trip good?' and 'Is your job hard?'",
+              "quiz": [
+                {
+                  "q": "Which is an open question?",
+                  "options": ["Did you finish?", "Is it raining?", "What did you learn from the project?", "Are you coming?"],
+                  "answer": 2,
+                  "explain": "It invites a full explanation instead of a yes or no."
+                },
+                {
+                  "q": "What is wrong with 'Don't you think this idea is bad?'",
+                  "options": ["It is too short", "It is a leading question that pushes an opinion", "It is an open question", "Nothing"],
+                  "answer": 1,
+                  "explain": "Leading questions steer the answer, so you hear what you suggested instead of what they think."
+                },
+                {
+                  "q": "Which is a good follow-up question?",
+                  "options": ["Anyway, moving on.", "Can you give me an example?", "Why are you wrong?", "Okay, next."],
+                  "answer": 1,
+                  "explain": "Asking for an example turns a vague answer into something concrete."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comm-2",
+          "title": "Speak with confidence",
+          "lessons": [
+            {
+              "id": "comm-2-1",
+              "title": "Structure your message with PREP",
+              "minutes": 5,
+              "content": "When people ramble, listeners lose the point. A simple structure keeps you clear, even when you speak without preparation. One of the easiest is PREP: Point, Reason, Example, Point.\n\nStart with your point in one sentence. Give the main reason. Back it with a short example or fact. Then repeat the point to close. For instance: \"We should launch on Friday. Most of our users are active at the weekend. Last month's Friday launch got twice the sign-ups. So let's go with Friday.\"\n\nPREP works in meetings, interviews and even text messages. Leading with the point respects your listener's time, and the example makes it believable.",
+              "key_points": [
+                "PREP means Point, Reason, Example, Point.",
+                "Lead with the point, not the background.",
+                "An example makes your point believable."
+              ],
+              "tip": "In interviews, answer the question in your first sentence. Then use PREP to support it.",
+              "task": "Answer this question using PREP, out loud or in writing: 'Should students learn to code?'",
+              "quiz": [
+                {
+                  "q": "What does PREP stand for?",
+                  "options": ["Plan, Research, Explain, Present", "Point, Reason, Example, Point", "Practice, Repeat, Edit, Perform", "Prepare, Read, Engage, Pause"],
+                  "answer": 1,
+                  "explain": "PREP is Point, Reason, Example, then the Point again."
+                },
+                {
+                  "q": "Where does your main point go in PREP?",
+                  "options": ["Only at the end", "At the start, and again at the end", "In the middle", "It should be hidden"],
+                  "answer": 1,
+                  "explain": "You state the point first and repeat it to close, so the listener cannot miss it."
+                },
+                {
+                  "q": "Why include an example?",
+                  "options": ["To make the talk longer", "To make the point concrete and believable", "Because it is polite", "To change the topic"],
+                  "answer": 1,
+                  "explain": "Examples turn claims into something the listener can picture and trust."
+                }
+              ]
+            },
+            {
+              "id": "comm-2-2",
+              "title": "Handle nerves when presenting",
+              "minutes": 6,
+              "content": "Feeling nervous before speaking is normal. Your body is getting ready to perform. The goal is not to remove nerves completely, but to stop them from controlling you.\n\nPreparation is the biggest calm-maker. Know your opening lines by heart, practice the whole talk out loud at least twice and time it. Rehearsing in your head is not the same, because your mouth needs practice too.\n\nRight before you start, take a few slow breaths, breathing out longer than you breathe in. While speaking, find two or three friendly faces and talk to them. If you lose your place, pause, look at your notes and continue. The audience rarely notices a pause as much as you do.",
+              "key_points": [
+                "Nerves are normal; aim to manage them, not remove them.",
+                "Practice out loud and memorize your opening.",
+                "Slow breathing and friendly faces help in the moment."
+              ],
+              "tip": "Record yourself practicing on your phone once. It is uncomfortable, and it improves you faster than anything else.",
+              "task": "Prepare a one-minute talk about something you like. Practice it out loud twice and record at least one try.",
+              "quiz": [
+                {
+                  "q": "What is the realistic goal with presentation nerves?",
+                  "options": ["Never feel nervous", "Manage nerves so they do not control you", "Avoid presenting", "Speak faster to finish sooner"],
+                  "answer": 1,
+                  "explain": "Some nervousness is normal and even helpful. Managing it is the goal."
+                },
+                {
+                  "q": "Which preparation helps most?",
+                  "options": ["Reading the slides silently", "Practicing out loud and timing yourself", "Writing every word on the slides", "Staying up late the night before"],
+                  "answer": 1,
+                  "explain": "Speaking out loud trains your actual delivery, which silent reading does not."
+                },
+                {
+                  "q": "You lose your place in the middle of a talk. What should you do?",
+                  "options": ["Apologize again and again", "Pause, check your notes and continue", "Stop the presentation", "Start over from the beginning"],
+                  "answer": 1,
+                  "explain": "A calm pause looks normal to the audience. Then simply continue."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "mentor": "Focus Mentor",
+      "tagline": "Do the important work first and build habits that last.",
+      "description": "Tools for prioritizing, protecting your focus and building routines, so your days move you toward your goals instead of only filling up.",
+      "image": "assets/images/2.jpg",
+      "color": "#6F7FA6",
+      "messages": {
+        "welcome": "Being busy is easy. Being effective is a skill. Let's train it, one lesson at a time.",
+        "comeback": "No lecture about the gap. Start a 10-minute timer and do the next lesson. That is all.",
+        "pass": "Focused and correct. Well done.",
+        "fail": "You missed a few. Review the lesson calmly and try again, distraction-free this time.",
+        "finished": "You have the tools. The real test is next Monday, so plan your week with them."
+      },
+      "levels": [
+        {
+          "id": "prod-1",
+          "title": "Own your time",
+          "lessons": [
+            {
+              "id": "prod-1-1",
+              "title": "Prioritize with the Eisenhower matrix",
+              "minutes": 5,
+              "content": "Not every task deserves your time equally. The Eisenhower matrix sorts tasks with two questions: is it urgent, and is it important?\n\nUrgent and important tasks, like a deadline today, you do now. Important but not urgent tasks, like learning a skill, exercising or planning, you schedule. Urgent but not important tasks, like many messages and small requests, you delegate or keep short. Tasks that are neither, like endless scrolling, you drop.\n\nThe quadrant that changes lives is important but not urgent. These tasks never shout for attention, so they get pushed aside. Protect time for them before urgent things fill your day.",
+              "key_points": [
+                "Sort tasks by urgent and important.",
+                "Do, schedule, delegate or drop.",
+                "Protect time for important but not urgent work."
+              ],
+              "tip": "Each morning, pick one important-but-not-urgent task and do it before opening your messages.",
+              "task": "List 10 things on your mind. Place each one in a quadrant of the matrix, then schedule one important-but-not-urgent task this week.",
+              "quiz": [
+                {
+                  "q": "What should you do with important but not urgent tasks?",
+                  "options": ["Ignore them", "Schedule them", "Delegate them", "Do them only when bored"],
+                  "answer": 1,
+                  "explain": "Scheduling them protects time for the work that matters most in the long run."
+                },
+                {
+                  "q": "Endless scrolling usually belongs in which quadrant?",
+                  "options": ["Urgent and important", "Important, not urgent", "Urgent, not important", "Neither urgent nor important"],
+                  "answer": 3,
+                  "explain": "It is rarely urgent or important, so it is the first thing to drop."
+                },
+                {
+                  "q": "Why do important-but-not-urgent tasks get neglected?",
+                  "options": ["They are too easy", "They do not demand attention, so urgent tasks crowd them out", "They are not useful", "Nobody knows about them"],
+                  "answer": 1,
+                  "explain": "Urgent tasks feel pressing while important ones are quiet. That is why you must schedule them."
+                }
+              ]
+            },
+            {
+              "id": "prod-1-2",
+              "title": "Focus blocks and the Pomodoro method",
+              "minutes": 5,
+              "content": "Switching between tasks has a cost. Every time you check a message in the middle of work, your mind needs time to get back into the task. Doing one thing at a time is faster than it feels.\n\nThe Pomodoro method makes focus easier. Choose one task, set a timer for 25 minutes and work only on that task. Then take a 5-minute break. After four rounds, take a longer break of 15 to 30 minutes.\n\nPrepare your environment before you start. Put your phone in another room or turn on do-not-disturb, close unrelated tabs and keep a notepad nearby. When a distracting thought appears, write it down and return to the task.",
+              "key_points": [
+                "Task switching costs time and attention.",
+                "Pomodoro: 25 minutes of focus, 5 minutes of rest, and a longer break after four rounds.",
+                "Remove distractions before you start."
+              ],
+              "tip": "The timer length is flexible. If 25 minutes feels too long, start with 15. The habit matters more than the number.",
+              "task": "Do two Pomodoros today on one important task, with your phone out of reach. Write down how much you finished.",
+              "quiz": [
+                {
+                  "q": "In the classic Pomodoro method, how long is one focus session?",
+                  "options": ["5 minutes", "25 minutes", "60 minutes", "2 hours"],
+                  "answer": 1,
+                  "explain": "A standard Pomodoro is 25 minutes of focused work followed by a short break."
+                },
+                {
+                  "q": "Why is task switching costly?",
+                  "options": ["It uses more electricity", "Your mind needs time to refocus after each switch", "It is against the rules", "It is not costly"],
+                  "answer": 1,
+                  "explain": "Each switch forces your attention to reload the task, which wastes time and energy."
+                },
+                {
+                  "q": "A random thought pops up during a focus block. What should you do?",
+                  "options": ["Act on it immediately", "Write it down and return to your task", "Stop the session", "Check your phone"],
+                  "answer": 1,
+                  "explain": "Writing it down frees your mind without breaking your focus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prod-2",
+          "title": "Build systems",
+          "lessons": [
+            {
+              "id": "prod-2-1",
+              "title": "Habits that stick",
+              "minutes": 6,
+              "content": "Motivation comes and goes, so lasting change comes from habits. A habit works like a loop: a cue triggers a routine, and a reward makes your brain want to repeat it.\n\nMake new habits tiny. \"Read for an hour\" fails on busy days, while \"read one page\" almost never fails, and you often do more once you start. Then attach the habit to something you already do, a trick called habit stacking: \"After I pour my morning tea, I will read one page.\"\n\nTrack your habit on a calendar and try not to break the chain. If you miss a day, that is normal. The rule is simple: never miss twice in a row.",
+              "key_points": [
+                "A habit loop has a cue, a routine and a reward.",
+                "Start tiny and stack the habit onto an existing one.",
+                "Missing once is fine; avoid missing twice."
+              ],
+              "tip": "Make good habits easy and bad habits hard. Put the book on your pillow and the phone charger in another room.",
+              "task": "Choose one tiny habit and write it as 'After I [current habit], I will [new habit].' Do it every day this week.",
+              "quiz": [
+                {
+                  "q": "What are the parts of a habit loop?",
+                  "options": ["Goal, plan, result", "Cue, routine, reward", "Morning, noon, night", "Start, pause, stop"],
+                  "answer": 1,
+                  "explain": "A cue triggers the routine, and the reward makes you want to repeat it."
+                },
+                {
+                  "q": "Which new habit is most likely to stick?",
+                  "options": ["Exercise two hours every day", "Read one page after morning tea", "Learn three languages this month", "Wake up at 4 a.m. starting tomorrow"],
+                  "answer": 1,
+                  "explain": "It is tiny and attached to an existing routine, so it is easy to start every day."
+                },
+                {
+                  "q": "You missed your habit yesterday. What is the best rule to follow?",
+                  "options": ["Give up", "Never miss twice in a row", "Do double tomorrow", "Wait until next month"],
+                  "answer": 1,
+                  "explain": "Missing once is normal. Getting back on track the next day keeps the habit alive."
+                }
+              ]
+            },
+            {
+              "id": "prod-2-2",
+              "title": "The weekly review",
+              "minutes": 5,
+              "content": "Without a regular check-in, plans drift and small tasks pile up. A weekly review takes 20 to 30 minutes, once a week, to look back, clean up and plan ahead.\n\nLook back: what went well, what did not, and what did you learn? Clean up: move everything from your notes and messages into a single task list, and remove tasks that no longer matter. Plan ahead: look at next week's calendar and choose your three most important outcomes.\n\nPick a fixed time, such as Friday afternoon or Sunday evening, and treat it like an appointment. This small ritual gives you a feeling of control that a daily to-do list alone cannot.",
+              "key_points": [
+                "A weekly review is a short, regular planning session.",
+                "Look back, clean up, plan ahead.",
+                "Choose three key outcomes for next week."
+              ],
+              "tip": "Use the same simple checklist for every review. Fewer decisions make the habit easier to keep.",
+              "task": "Do your first weekly review today: three wins, one lesson learned and three outcomes for next week.",
+              "quiz": [
+                {
+                  "q": "What are the three parts of the weekly review in this lesson?",
+                  "options": ["Wake, work, sleep", "Look back, clean up, plan ahead", "Read, write, repeat", "Plan, panic, push"],
+                  "answer": 1,
+                  "explain": "Reflecting, organizing and planning together give the next week a clear start."
+                },
+                {
+                  "q": "How many key outcomes should you pick for next week?",
+                  "options": ["About three", "Twenty", "None", "As many as possible"],
+                  "answer": 0,
+                  "explain": "A few clear priorities are easier to achieve than a long list."
+                },
+                {
+                  "q": "Why schedule the review at a fixed time?",
+                  "options": ["It is a legal requirement", "Treating it like an appointment makes it more likely to happen", "It does not matter", "To make it longer"],
+                  "answer": 1,
+                  "explain": "A fixed slot turns the review into a habit instead of something you hope to remember."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Personal Finance",
+      "mentor": "Money Mentor",
+      "tagline": "Track your money, budget with purpose and let savings grow.",
+      "description": "The clear basics of managing money: tracking, budgeting, emergency savings and compound growth. This is general education, not personal financial advice.",
+      "image": "assets/images/1.jpg",
+      "color": "#7C9A5C",
+      "messages": {
+        "welcome": "Money gets simpler once you can see it. First we track, then we decide. No judgment here.",
+        "comeback": "Welcome back. Even five minutes on your money today is a good investment.",
+        "pass": "Smart thinking. Your future self says thank you.",
+        "fail": "That's okay. Money ideas often need a second look. Check the explanations and try again.",
+        "finished": "You know how to track, budget, build a safety net and use compounding. Start with one automatic saving this month."
+      },
+      "levels": [
+        {
+          "id": "fin-1",
+          "title": "Money basics",
+          "lessons": [
+            {
+              "id": "fin-1-1",
+              "title": "Know where your money goes",
+              "minutes": 5,
+              "content": "You cannot manage what you cannot see. Most people underestimate their small, frequent spending: snacks, rides, subscriptions and in-app purchases add up quickly.\n\nFor the next 30 days, write down every expense, no matter how small. Use a notebook, a notes app or a spreadsheet. Note the amount, what it was for and whether it was a need or a want.\n\nAt the end of the month, group your spending into categories like food, transport, bills and fun. Many people are surprised by at least one category. That surprise is valuable, because it shows exactly where change will be easiest.",
+              "key_points": [
+                "Small, frequent spending adds up.",
+                "Track every expense for 30 days.",
+                "Group spending into categories to see patterns."
+              ],
+              "tip": "Do not try to cut spending in the first month of tracking. Just observe. Honest data first, decisions later.",
+              "task": "Start tracking today. Write down every expense for the next 7 days and mark each one as a need or a want.",
+              "quiz": [
+                {
+                  "q": "Why track every small expense?",
+                  "options": ["Small purchases add up and are easy to underestimate", "Banks require it", "To feel guilty", "It is not useful"],
+                  "answer": 0,
+                  "explain": "Frequent small spending is often the biggest surprise once you add it up."
+                },
+                {
+                  "q": "What should you mainly do in the first month of tracking?",
+                  "options": ["Cut all spending", "Observe and record honestly", "Take a loan", "Stop eating out completely"],
+                  "answer": 1,
+                  "explain": "Honest observation first shows you where change is realistic."
+                },
+                {
+                  "q": "Which is usually a want rather than a need?",
+                  "options": ["Rent", "Basic groceries", "A new streaming subscription", "The electricity bill"],
+                  "answer": 2,
+                  "explain": "Wants are nice to have. Needs keep you safe, housed and fed."
+                }
+              ]
+            },
+            {
+              "id": "fin-1-2",
+              "title": "Build a simple budget",
+              "minutes": 6,
+              "content": "A budget is a plan for your money before you spend it. One easy starting point is the 50/30/20 rule: about 50% of income for needs, 30% for wants and 20% for savings or paying off debt.\n\nThese numbers are a guide, not a law. If rent is expensive where you live, needs may take more than half. What matters is deciding on purpose instead of discovering at the end of the month that nothing is left.\n\nThe most powerful trick is to pay yourself first: move your savings amount aside as soon as income arrives, ideally automatically. What remains is what you can spend, guilt free.",
+              "key_points": [
+                "A budget plans spending before it happens.",
+                "50/30/20 means needs, wants and savings.",
+                "Pay yourself first by saving as soon as income arrives."
+              ],
+              "tip": "If saving 20% feels impossible, start with 5% and raise it a little every few months. The habit matters more than the size.",
+              "task": "Using your tracked spending, split your income into needs, wants and savings. Choose an amount to save first next month.",
+              "quiz": [
+                {
+                  "q": "In the 50/30/20 rule, what is the 20% for?",
+                  "options": ["Wants", "Needs", "Savings or paying off debt", "Taxes"],
+                  "answer": 2,
+                  "explain": "The 20% goes to savings or debt repayment, building your financial future."
+                },
+                {
+                  "q": "What does 'pay yourself first' mean?",
+                  "options": ["Buy something nice on payday", "Move savings aside as soon as income arrives", "Pay all bills late", "Spend first and save what is left"],
+                  "answer": 1,
+                  "explain": "Saving first makes it automatic, instead of hoping something remains at the end."
+                },
+                {
+                  "q": "Your rent takes 60% of your income. What does that mean for 50/30/20?",
+                  "options": ["Budgeting is impossible", "Adjust the percentages to fit your situation", "Stop paying rent", "Ignore savings forever"],
+                  "answer": 1,
+                  "explain": "The rule is a guide. Adapt it to your real costs while still saving something."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fin-2",
+          "title": "Grow and protect",
+          "lessons": [
+            {
+              "id": "fin-2-1",
+              "title": "Your emergency fund",
+              "minutes": 5,
+              "content": "Life brings surprises: a medical bill, a broken phone, a lost job. Without savings, these surprises often turn into debt. An emergency fund is money set aside only for unexpected, necessary costs.\n\nA common target is three to six months of essential expenses. That can feel huge, so start with a smaller first milestone, such as one month of expenses, and build from there.\n\nKeep this money separate from your everyday account so you are not tempted to spend it, but easy to reach when a real emergency happens. A sale, a holiday or a new gadget is not an emergency.",
+              "key_points": [
+                "An emergency fund covers unexpected, necessary costs.",
+                "Aim for 3 to 6 months of essential expenses, starting with a smaller milestone.",
+                "Keep it separate but easy to reach."
+              ],
+              "tip": "Give the account a name like 'Peace of mind'. A name makes it harder to raid for things that are not emergencies.",
+              "task": "Calculate one month of your essential expenses. That is your first emergency fund milestone. Decide how much you will add each month.",
+              "quiz": [
+                {
+                  "q": "What is an emergency fund for?",
+                  "options": ["Holidays", "Unexpected, necessary costs", "Buying shares", "Weekend shopping"],
+                  "answer": 1,
+                  "explain": "It protects you from turning surprises into debt."
+                },
+                {
+                  "q": "What is a common long-term target?",
+                  "options": ["One week of expenses", "3 to 6 months of essential expenses", "Ten years of income", "No target is needed"],
+                  "answer": 1,
+                  "explain": "Three to six months of essential expenses is a widely used guideline."
+                },
+                {
+                  "q": "Where should you keep it?",
+                  "options": ["Nowhere, spend it", "Separate from everyday money but easy to reach", "In risky investments", "Lent to friends"],
+                  "answer": 1,
+                  "explain": "Separate prevents casual spending, and easy to reach means it is there when you need it."
+                }
+              ]
+            },
+            {
+              "id": "fin-2-2",
+              "title": "The power of compound growth",
+              "minutes": 6,
+              "content": "Compounding means earning returns on your returns. If your savings grow, next year's growth is calculated on a bigger amount, so growth speeds up over time.\n\nA handy shortcut is the rule of 72: divide 72 by the yearly growth rate to estimate how many years it takes money to double. At 8% a year, money roughly doubles in 9 years. At 6%, it takes about 12 years.\n\nThe biggest factor you control is time. Someone who starts saving small amounts early can end up with more than someone who saves larger amounts but starts much later. Remember that investments that can grow can also lose value, so learn the risks before you invest and spread your money instead of betting on one thing.",
+              "key_points": [
+                "Compounding is growth on top of growth.",
+                "Rule of 72: years to double is about 72 divided by the yearly rate.",
+                "Starting early matters; understand risk before investing."
+              ],
+              "tip": "Compounding also works against you with debt. High-interest debt grows the same way, so paying it off comes first.",
+              "task": "Use the rule of 72 to estimate how long money takes to double at 4%, 6% and 9%. Then write down one small amount you could start saving every month.",
+              "quiz": [
+                {
+                  "q": "What is compound growth?",
+                  "options": ["Growth only on the original amount", "Earning returns on previous returns", "A type of bank fee", "Spending interest immediately"],
+                  "answer": 1,
+                  "explain": "Returns are added to the balance, so future growth is calculated on a bigger amount."
+                },
+                {
+                  "q": "Using the rule of 72, at 8% per year money doubles in about...",
+                  "options": ["4 years", "9 years", "20 years", "72 years"],
+                  "answer": 1,
+                  "explain": "72 divided by 8 is 9, so roughly 9 years."
+                },
+                {
+                  "q": "Why does starting early matter so much?",
+                  "options": ["Banks prefer young people", "More time lets compounding work longer", "Prices never rise", "It does not matter"],
+                  "answer": 1,
+                  "explain": "Time is the engine of compounding. Extra years can matter more than bigger deposits."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mindset",
+      "name": "Mindset & Wellbeing",
+      "mentor": "Mind Mentor",
+      "tagline": "Grow from setbacks and keep your energy steady.",
+      "description": "Lessons on growth mindset, learning from failure, handling stress and protecting your sleep. This is general wellbeing education, not medical advice.",
+      "image": "assets/images/7.jpg",
+      "color": "#A07093",
+      "messages": {
+        "welcome": "This is a calm space. We will work on how you think about challenges and how you look after your energy.",
+        "comeback": "Welcome back. Be kind to yourself about the break, and let's do one small lesson.",
+        "pass": "Well done. Notice how it feels to understand this.",
+        "fail": "That's alright. Struggling is part of learning, which is exactly what this mentor teaches. Try again.",
+        "finished": "You have built a stronger mindset and better energy habits. Come back to these lessons whenever life feels heavy."
+      },
+      "levels": [
+        {
+          "id": "mind-1",
+          "title": "Growth mindset",
+          "lessons": [
+            {
+              "id": "mind-1-1",
+              "title": "Fixed vs growth mindset",
+              "minutes": 5,
+              "content": "Psychologist Carol Dweck described two ways people think about ability. With a fixed mindset, you believe talent is set: you are either good at something or you are not. With a growth mindset, you believe abilities can be developed through effort, good strategies and help from others.\n\nThe mindset you hold changes how you act. Someone with a fixed mindset may avoid challenges so they do not look bad. Someone with a growth mindset sees challenges as the way to improve.\n\nA simple tool is the word yet. \"I can't do this\" becomes \"I can't do this yet.\" One word turns a verdict into a stage of learning. Growth mindset is not only effort, though: if something is not working, change the strategy, not just the hours.",
+              "key_points": [
+                "Fixed mindset: ability is set. Growth mindset: ability can be developed.",
+                "Mindset affects whether you avoid or welcome challenges.",
+                "Add 'yet', and change strategies, not just effort."
+              ],
+              "tip": "Notice your inner voice when something is hard. Write down one fixed thought and rewrite it as a growth thought.",
+              "task": "Catch yourself saying 'I can't' or 'I'm not a ___ person' this week. Rewrite each one using 'yet' and one new strategy.",
+              "quiz": [
+                {
+                  "q": "What does a growth mindset believe?",
+                  "options": ["Talent is fixed at birth", "Abilities can be developed with effort, strategies and help", "Effort is pointless", "Only geniuses succeed"],
+                  "answer": 1,
+                  "explain": "A growth mindset sees ability as something you can build."
+                },
+                {
+                  "q": "Which statement shows a growth mindset?",
+                  "options": ["I'm just bad at maths.", "I can't do this yet, so I'll try a different method.", "Some people are born smart.", "I'll avoid hard subjects."],
+                  "answer": 1,
+                  "explain": "It includes 'yet' and a change of strategy, which are at the core of a growth mindset."
+                },
+                {
+                  "q": "If hard work is not improving your results, what should you do?",
+                  "options": ["Quit", "Change your strategy and ask for help", "Keep working the same way for longer", "Blame others"],
+                  "answer": 1,
+                  "explain": "A growth mindset means effort plus better strategies, not just more hours."
+                }
+              ]
+            },
+            {
+              "id": "mind-1-2",
+              "title": "Learning from failure",
+              "minutes": 5,
+              "content": "Failure feels personal, but it is information. Every failed attempt shows you something that does not work yet, and it often points to what might.\n\nAfter a setback, try a short review with three questions. What happened, described as facts without blame? What did I learn? What will I do differently next time? Writing the answers turns a painful moment into a plan.\n\nSeparate what you did from who you are. \"My presentation was poorly prepared\" can be fixed. \"I am a failure\" cannot, and it is not true. Talk to yourself the way you would talk to a good friend who had the same setback.",
+              "key_points": [
+                "Failure is information, not identity.",
+                "Review: what happened, what I learned, what I will change.",
+                "Speak to yourself as you would to a friend."
+              ],
+              "tip": "Keep a 'lessons learned' note. Reading it later shows how much you have grown.",
+              "task": "Think of a recent setback and answer the three review questions in writing.",
+              "quiz": [
+                {
+                  "q": "How should you view failure?",
+                  "options": ["As proof you are not capable", "As information about what to change", "As something to hide", "As bad luck only"],
+                  "answer": 1,
+                  "explain": "Failure shows what does not work yet, which guides your next attempt."
+                },
+                {
+                  "q": "Which self-talk is most helpful after a setback?",
+                  "options": ["I am a failure.", "I'll never be good at this.", "My preparation was weak, so next time I'll practice twice.", "Nothing ever works for me."],
+                  "answer": 2,
+                  "explain": "It focuses on a fixable action, not on your identity."
+                },
+                {
+                  "q": "What is the first question in the review?",
+                  "options": ["Whose fault was it?", "What happened, described as facts?", "Should I give up?", "Why am I always unlucky?"],
+                  "answer": 1,
+                  "explain": "Starting with facts instead of blame keeps the review calm and useful."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mind-2",
+          "title": "Stay balanced",
+          "lessons": [
+            {
+              "id": "mind-2-1",
+              "title": "Managing everyday stress",
+              "minutes": 6,
+              "content": "Some stress helps you rise to a challenge. Long-lasting stress without recovery, however, drains energy, focus and mood. The aim is not a life without stress, but a rhythm of effort and recovery.\n\nA quick tool for tense moments is slow breathing. Try box breathing: breathe in for 4 counts, hold for 4, breathe out for 4, hold for 4, and repeat a few times. Slow, steady breathing can help your body settle.\n\nIt also helps to sort worries into what you can control and what you cannot. Act on the first group with one small step. For the second, practice letting go, or talk it through with someone you trust. If stress or low mood feels heavy for weeks, reach out to a doctor or counselor. Asking for help is a strong move, not a weak one.",
+              "key_points": [
+                "Stress is normal; recovery matters as much as effort.",
+                "Box breathing: in for 4, hold for 4, out for 4, hold for 4.",
+                "Act on what you can control, and seek support when stress stays heavy."
+              ],
+              "tip": "Schedule small recovery moments into your day, like a short walk after lunch, before you feel exhausted.",
+              "task": "Try box breathing for one minute today. Then list three current worries and mark each one as 'can control' or 'cannot control'.",
+              "quiz": [
+                {
+                  "q": "What is the healthy goal with stress?",
+                  "options": ["Remove all stress forever", "Balance effort with recovery", "Ignore it", "Push through without rest"],
+                  "answer": 1,
+                  "explain": "Some stress is useful. Recovery stops it from wearing you down."
+                },
+                {
+                  "q": "What is box breathing?",
+                  "options": ["Breathing into a box", "In for 4, hold for 4, out for 4, hold for 4", "Holding your breath as long as possible", "Breathing fast to wake up"],
+                  "answer": 1,
+                  "explain": "Box breathing has four equal steps of four counts each, which slows your breathing down."
+                },
+                {
+                  "q": "Stress has felt heavy for several weeks. What is a good step?",
+                  "options": ["Keep it to yourself", "Talk to a doctor, a counselor or someone you trust", "Work longer hours", "Sleep less"],
+                  "answer": 1,
+                  "explain": "Reaching out for support is a healthy and strong choice."
+                }
+              ]
+            },
+            {
+              "id": "mind-2-2",
+              "title": "Sleep and energy",
+              "minutes": 5,
+              "content": "Sleep is when your body recovers and your brain organizes what you learned during the day. Most adults need around 7 to 9 hours a night, and short sleep makes focus, mood and decision-making worse.\n\nConsistency is one of the most helpful habits: go to bed and wake up at roughly the same time every day, including weekends. Get daylight in the morning, and reduce bright screens and heavy meals close to bedtime. Caffeine can stay in your body for many hours, so avoid it in the late afternoon and evening.\n\nIf you cannot fall asleep, do not fight it for hours in bed. Get up, do something calm in dim light and return when you feel sleepy. If sleep problems continue for weeks, talk to a doctor.",
+              "key_points": [
+                "Most adults need about 7 to 9 hours of sleep.",
+                "Keep consistent sleep and wake times.",
+                "Morning light, fewer late screens and no late caffeine help."
+              ],
+              "tip": "Set an alarm for going to bed, not only for waking up. It reminds you to start winding down.",
+              "task": "Choose a fixed bedtime and wake time for the next 7 days. Each morning, write down how rested you feel.",
+              "quiz": [
+                {
+                  "q": "About how much sleep do most adults need?",
+                  "options": ["4 to 5 hours", "7 to 9 hours", "12 hours", "It does not matter"],
+                  "answer": 1,
+                  "explain": "Most adults function best with roughly 7 to 9 hours."
+                },
+                {
+                  "q": "Which habit supports better sleep?",
+                  "options": ["A different bedtime every night", "Consistent sleep and wake times", "Coffee in the evening", "Scrolling in bed until late"],
+                  "answer": 1,
+                  "explain": "A steady schedule helps your body clock know when to feel sleepy."
+                },
+                {
+                  "q": "You cannot fall asleep. What is recommended?",
+                  "options": ["Stay in bed and force it for hours", "Get up, do something calm in dim light, then return", "Drink coffee", "Start answering emails"],
+                  "answer": 1,
+                  "explain": "A calm activity until you feel sleepy stops your bed from becoming linked with frustration."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
