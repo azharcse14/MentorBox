@@ -1,5 +1,5 @@
 {
-  "content_version": 6,
+  "content_version": 7,
   "categories": [
     {
       "id": "programming",
@@ -8245,6 +8245,55 @@
                   "explain": "Feasibility looks at technical, economic and practical sides before committing to a project."
                 }
               ]
+            },
+            {
+              "id": "cse-4-7",
+              "title": "Management Information Systems",
+              "minutes": 7,
+              "content": "What is it? A Management Information System, or MIS, is a computer system that collects a company's data and turns it into reports that help managers make decisions. Think of it as the company's dashboard. Sales, stock, salaries, customers: it gathers all of it and shows the boss what is going on.\n\nWhy learn it? Every big organisation runs on information. A shop owner with one store can remember everything in their head, but a company with 500 branches cannot. Without an MIS, managers guess. With one, they decide using real numbers. This course also teaches you to talk with business people, which is a big plus for any software engineer.\n\nHow does it work? First, data is collected from everyday work, like every sale at the counter. This part is called a Transaction Processing System (TPS). Then the MIS summarises that data into daily, weekly or monthly reports. A Decision Support System (DSS) goes one step further and answers \"what if\" questions, like \"what happens if we drop the price by 10%?\". Big companies connect all their departments in one system called ERP (Enterprise Resource Planning). You also learn how data quality, security and the people using the system matter as much as the software.\n\nReal life example: think of a big superstore chain like Shwapno. Every time a cashier scans a packet of rice, the TPS records it. At night the MIS adds up sales from every branch. Next morning the manager sees \"Rice is selling fast in Mirpur but sitting unsold in Uttara\" and moves stock around. No one counted by hand, the system did it.\n\nAfter this course you will understand how software helps a business run, and you can design systems that give managers the right report at the right time. Next, look at Database Management Systems and Data Mining to go deeper.",
+              "key_points": [
+                "An MIS turns a company's raw data into reports for decision making.",
+                "TPS records daily work, MIS summarises it, DSS answers 'what if' questions.",
+                "ERP connects all departments of a company in one system.",
+                "Good information is accurate, on time and useful to the person reading it."
+              ],
+              "tip": "For every topic, picture a real business you know, like a pharmacy or a superstore, and ask: what report would the owner want every morning?",
+              "task": "Pick a small shop near you. Write down 3 things the owner records every day and 2 reports a monthly summary of those records could give them.",
+              "quiz": [
+                {
+                  "q": "What is the main job of an MIS?",
+                  "options": [
+                    "Designing the company logo",
+                    "Turning business data into reports that help managers decide",
+                    "Repairing office computers",
+                    "Writing the company's software code"
+                  ],
+                  "answer": 1,
+                  "explain": "An MIS collects data and summarises it so managers can make decisions based on real numbers."
+                },
+                {
+                  "q": "Which system records each sale at the counter?",
+                  "options": [
+                    "Decision Support System",
+                    "ERP",
+                    "Transaction Processing System",
+                    "Expert System"
+                  ],
+                  "answer": 2,
+                  "explain": "A Transaction Processing System records daily transactions like sales. The MIS then summarises them."
+                },
+                {
+                  "q": "\"What happens to profit if we cut the price by 10%?\" Which system is built for this kind of question?",
+                  "options": [
+                    "Decision Support System",
+                    "Transaction Processing System",
+                    "Operating System",
+                    "File System"
+                  ],
+                  "answer": 0,
+                  "explain": "A Decision Support System helps answer 'what if' questions by playing with the data."
+                }
+              ]
             }
           ]
         },
@@ -8843,6 +8892,55 @@
                   ],
                   "answer": 0,
                   "explain": "Copyright gives creators legal rights over their original work."
+                }
+              ]
+            },
+            {
+              "id": "cse-6-8",
+              "title": "Technical Writing",
+              "minutes": 7,
+              "content": "What is it? Technical writing means explaining technical things in writing so clearly that the reader gets it on the first read. Reports, user manuals, project proposals, README files, emails to your team, research papers: all of these are technical writing.\n\nWhy learn it? Engineers write a lot more than people think. Your code might be brilliant, but if nobody understands your report, your proposal gets rejected and your thesis gets marks cut. In jobs, the person who explains clearly gets trusted with bigger work. And your final year thesis is basically one big piece of technical writing.\n\nHow does it work? First, know your reader: a teacher, a customer or another programmer each need different words. Then plan a structure before you write: for a report that is usually title, abstract, introduction, method, results, conclusion and references. Write short sentences and use simple words. One paragraph should carry one idea. Use figures, tables and numbered steps where they help. Always cite where your facts come from, because copying without credit is plagiarism. Finally, revise: read it again, cut extra words and fix mistakes.\n\nReal life example: think of the instructions on a bKash app screen, \"Enter your PIN to confirm\". It is short, clear and impossible to misread. Now imagine it said \"Kindly proceed to furnish your personal identification number for the purpose of transaction verification\". Same meaning, but much harder to follow. Technical writing is choosing the first version every time.\n\nAfter this course you can write lab reports, project documentation, proposals and your thesis without fear, and people will actually enjoy reading them. Start practising today with your next lab report, and check Research Methodology later for the MSc side of writing.",
+              "key_points": [
+                "Technical writing explains technical things so the reader gets it on the first read.",
+                "Know your reader before you write.",
+                "Plan the structure first: title, abstract, introduction, method, results, conclusion, references.",
+                "Short sentences, simple words, cite your sources, then revise."
+              ],
+              "tip": "After writing, read it out loud. Wherever you run out of breath or stumble, the sentence is too long or unclear.",
+              "task": "Write the steps to send money with bKash in 6 numbered lines or fewer, for someone who has never used it. Give it to a family member and see if they can follow it without asking you anything.",
+              "quiz": [
+                {
+                  "q": "What should you think about first before writing a technical document?",
+                  "options": [
+                    "Using as many big words as possible",
+                    "Making it as long as possible",
+                    "Who the reader is and what they need",
+                    "Which font looks coolest"
+                  ],
+                  "answer": 2,
+                  "explain": "Knowing your reader decides your words, your detail level and your structure."
+                },
+                {
+                  "q": "Using someone else's words or results without giving credit is called...",
+                  "options": [
+                    "Citation",
+                    "Plagiarism",
+                    "Abstract",
+                    "Revision"
+                  ],
+                  "answer": 1,
+                  "explain": "Plagiarism means using others' work without credit. Citing your sources avoids it."
+                },
+                {
+                  "q": "Which sentence is better technical writing?",
+                  "options": [
+                    "Click Save to keep your changes.",
+                    "It is hereby requested that the user kindly proceed to click upon the Save button.",
+                    "Saving may or may not be required, depending.",
+                    "Changes, if desired to be kept, require saving activity."
+                  ],
+                  "answer": 0,
+                  "explain": "Short, direct and clear wins. The reader knows exactly what to do."
                 }
               ]
             },
