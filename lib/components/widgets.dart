@@ -96,8 +96,8 @@ class MentorBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final background = dark ? const Color(0x26FFFFFF) : Colors.white;
-    final textColor = dark ? AppTheme.kScaffoldBackgroundColor : AppTheme.kGreyShade800;
+    final background = dark ? const Color(0x26FFFFFF) : AppTheme.kCard;
+    final textColor = dark ? AppTheme.kScaffoldBackgroundColor : AppTheme.kText;
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -199,7 +199,7 @@ class LessonRow extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Material(
-        color: Colors.white,
+        color: AppTheme.kCard,
         borderRadius: BorderRadius.circular(14),
         child: InkWell(
           onTap: onTap,

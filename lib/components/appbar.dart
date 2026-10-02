@@ -10,6 +10,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onSavedTap;
   final VoidCallback onTodayTap;
   final VoidCallback onLanguageTap;
+  final VoidCallback onThemeTap;
 
   const CustomAppBar({
     super.key,
@@ -19,6 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.onSavedTap,
     required this.onTodayTap,
     required this.onLanguageTap,
+    required this.onThemeTap,
   });
 
   @override
@@ -28,7 +30,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: 110,
       elevation: 0,
       automaticallyImplyLeading: false,
-      backgroundColor: AppTheme.kScaffoldBackgroundColor,
       titleSpacing: 0,
       title: Padding(
         padding: const EdgeInsets.only(left: 24, right: 12),
@@ -60,15 +61,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             IconButton(
+              tooltip: l.theme,
+              onPressed: onThemeTap,
+              icon: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined,
+                  size: 26, color: AppTheme.kText),
+            ),
+            IconButton(
               tooltip: l.language,
               onPressed: onLanguageTap,
-              icon: const Icon(Icons.translate, size: 26, color: AppTheme.kGreyShade800),
+              icon: Icon(Icons.translate, size: 26, color: AppTheme.kText),
             ),
             const SizedBox(width: 6),
             IconButton(
               tooltip: l.savedLessons,
               onPressed: onSavedTap,
-              icon: const Icon(Icons.favorite_border, size: 26, color: AppTheme.kGreyShade800),
+              icon: Icon(Icons.favorite_border, size: 26, color: AppTheme.kText),
             ),
             const SizedBox(width: 6),
             IconButton(
@@ -77,7 +84,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               icon: Stack(
                 clipBehavior: Clip.none,
                 children: [
-                  const Icon(Icons.notifications_none, size: 26, color: AppTheme.kGreyShade800),
+                  Icon(Icons.notifications_none, size: 26, color: AppTheme.kText),
                   if (hasMissions)
                     Positioned(
                       right: -2,

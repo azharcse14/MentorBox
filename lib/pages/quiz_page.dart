@@ -175,7 +175,7 @@ class _QuizPageState extends State<QuizPage> {
         ProgressBar(
           value: answeredCount / _questions.length,
           color: category.color,
-          background: const Color(0x22000000),
+          background: AppTheme.kSubheadingColor.withAlpha(0x44),
         ),
         const SizedBox(height: 24),
         Text(question.question, style: AppTheme.body(19, weight: FontWeight.w600, height: 1.4)),
@@ -256,7 +256,7 @@ class _QuizPageState extends State<QuizPage> {
           child: Text(
             result.passed ? l.youCompleted(lesson.title) : l.needToPass(result.required),
             textAlign: TextAlign.center,
-            style: AppTheme.mono(18, color: AppTheme.kGreyShade800),
+            style: AppTheme.mono(18),
           ),
         ),
         const SizedBox(height: 28),
@@ -292,8 +292,8 @@ class _OptionTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color border = Colors.transparent;
-    Color background = Colors.white;
-    Color textColor = AppTheme.kGreyShade800;
+    Color background = AppTheme.kCard;
+    Color textColor = AppTheme.kText;
     IconData? icon;
 
     switch (look) {

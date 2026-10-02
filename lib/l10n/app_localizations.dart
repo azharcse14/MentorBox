@@ -128,6 +128,30 @@ abstract class AppLocalizations {
   /// **'Phone\'s language'**
   String get deviceLanguage;
 
+  /// No description provided for @theme.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get theme;
+
+  /// No description provided for @deviceTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone\'s theme'**
+  String get deviceTheme;
+
+  /// No description provided for @lightTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get lightTheme;
+
+  /// No description provided for @darkTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get darkTheme;
+
   /// No description provided for @todaysMissions.
   ///
   /// In en, this message translates to:

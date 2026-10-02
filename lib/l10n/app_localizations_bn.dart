@@ -24,6 +24,18 @@ class AppLocalizationsBn extends AppLocalizations {
   String get deviceLanguage => 'ফোনের ভাষা';
 
   @override
+  String get theme => 'থিম';
+
+  @override
+  String get deviceTheme => 'ফোনের থিম';
+
+  @override
+  String get lightTheme => 'লাইট';
+
+  @override
+  String get darkTheme => 'ডার্ক';
+
+  @override
   String get todaysMissions => 'আজকের মিশন';
 
   @override

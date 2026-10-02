@@ -24,6 +24,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deviceLanguage => 'Phone\'s language';
 
   @override
+  String get theme => 'Theme';
+
+  @override
+  String get deviceTheme => 'Phone\'s theme';
+
+  @override
+  String get lightTheme => 'Light';
+
+  @override
+  String get darkTheme => 'Dark';
+
+  @override
   String get todaysMissions => 'Today\'s missions';
 
   @override

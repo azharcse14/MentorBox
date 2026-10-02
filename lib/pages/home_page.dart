@@ -122,6 +122,29 @@ class _HomeScreenState extends State<HomeScreen> {
     await _load();
   }
 
+  Future<void> _pickTheme() async {
+    final l = AppLocalizations.of(context);
+    final current = _repo.theme;
+    // Wrapped so "phone's theme" (null) is not the same as dismissing.
+    final picked = await showDialog<({String? mode})>(
+      context: context,
+      builder: (context) => SimpleDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.theme, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        children: [
+          for (final (mode, label) in [(null, l.deviceTheme), ('light', l.lightTheme), ('dark', l.darkTheme)])
+            ListTile(
+              title: Text(label, style: AppTheme.body(16)),
+              trailing: mode == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
+              onTap: () => Navigator.of(context).pop((mode: mode)),
+            ),
+        ],
+      ),
+    );
+    if (picked == null || picked.mode == current) return;
+    await _repo.setTheme(picked.mode);
+  }
+
   Future<void> _push(Widget page) async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => page));
     await _load();
@@ -145,6 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onSavedTap: () => _push(const SavedPage()),
         onTodayTap: () => _push(const TodayPage()),
         onLanguageTap: _pickLanguage,
+        onThemeTap: _pickTheme,
       ),
       body: SafeArea(top: false, child: _buildBody(inProgress)),
     );
@@ -297,7 +321,7 @@ class _StreakChip extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             active ? AppLocalizations.of(context).streakDays(streak) : AppLocalizations.of(context).noStreak,
-            style: AppTheme.mono(15, color: active ? Colors.white : AppTheme.kGreyShade800),
+            style: AppTheme.mono(15, color: active ? Colors.white : AppTheme.kText),
           ),
         ],
       ),
@@ -431,7 +455,7 @@ class _PageDots extends StatelessWidget {
             width: i == index ? 22 : 8,
             height: 8,
             decoration: BoxDecoration(
-              color: i == index ? AppTheme.kPrimaryColor : const Color(0x33000000),
+              color: i == index ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor.withAlpha(0x55),
               borderRadius: BorderRadius.circular(8),
             ),
           ),

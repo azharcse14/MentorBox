@@ -38,17 +38,26 @@ class MentorRepository {
   /// Saves the choice and reloads lesson content in that language.
   /// The app switches language through [ContentSeeder.appLocale].
   Future<void> setLanguage(String? code) async {
+    await _setMeta(ContentSeeder.appLanguageKey, code);
+    await ContentSeeder.seedIfNeeded(await _db);
+  }
+
+  /// 'light', 'dark', or null to follow the device.
+  String? get theme => ContentSeeder.appTheme.value;
+
+  Future<void> setTheme(String? mode) async {
+    await _setMeta(ContentSeeder.appThemeKey, mode);
+    ContentSeeder.appTheme.value = mode;
+  }
+
+  /// Stores [value] under [key], or removes the key when [value] is null.
+  Future<void> _setMeta(String key, String? value) async {
     final db = await _db;
-    if (code == null) {
-      await db.delete('meta', where: 'key = ?', whereArgs: [ContentSeeder.appLanguageKey]);
+    if (value == null) {
+      await db.delete('meta', where: 'key = ?', whereArgs: [key]);
     } else {
-      await db.insert(
-        'meta',
-        {'key': ContentSeeder.appLanguageKey, 'value': code},
-        conflictAlgorithm: ConflictAlgorithm.replace,
-      );
+      await db.insert('meta', {'key': key, 'value': value}, conflictAlgorithm: ConflictAlgorithm.replace);
     }
-    await ContentSeeder.seedIfNeeded(db);
   }
 
   // ---------------------------------------------------------------- content

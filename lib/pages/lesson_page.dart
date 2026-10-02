@@ -266,7 +266,7 @@ class _LessonPageState extends State<LessonPage> {
                     hintText: l.notesHint,
                     hintStyle: AppTheme.body(14, color: AppTheme.kSubheadingColor),
                     filled: true,
-                    fillColor: Colors.white,
+                    fillColor: AppTheme.kCard,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide.none,

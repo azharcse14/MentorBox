@@ -25,6 +25,10 @@ class ContentSeeder {
   /// seed so MaterialApp switches before the home screen shows content.
   static final ValueNotifier<Locale?> appLocale = ValueNotifier(null);
 
+  /// 'light' or 'dark' picked in the app; missing means "follow the device".
+  static const String appThemeKey = 'app_theme';
+  static final ValueNotifier<String?> appTheme = ValueNotifier(null);
+
   /// The first device language we have content for, like MaterialApp does.
   // ponytail: read once at startup; a language change while the app is
   // running shows up after the next restart.
@@ -41,6 +45,7 @@ class ContentSeeder {
     };
     final picked = contentAssets.containsKey(meta[appLanguageKey]) ? meta[appLanguageKey] : null;
     appLocale.value = picked == null ? null : Locale(picked);
+    appTheme.value = meta[appThemeKey];
     final language = picked ?? deviceLanguage();
 
     final raw = await rootBundle.loadString(contentAssets[language]!);
