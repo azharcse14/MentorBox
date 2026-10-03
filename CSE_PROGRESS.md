@@ -39,7 +39,7 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 6 | cse-2-1 | Object Oriented Programming | done |
 | 7 | cse-2-2 | Data Structures | done |
 | 8 | cse-2-3 | Digital Logic Design | done |
-| 9 | cse-2-4 | Electronic Devices & Circuits | in progress |
+| 9 | cse-2-4 | Electronic Devices & Circuits | done |
 | 10 | cse-2-5 | Linear Algebra | done |
 | 11 | cse-2-6 | Probability & Statistics | done |
 | 12 | cse-2-7 | Complex Variables, Fourier & Laplace Transforms (Math III) | done |
