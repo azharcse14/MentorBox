@@ -20,193 +20,197 @@
       "lessons": [
         {
           "id": "prod-1-1",
-          "title": "Prioritize with the Eisenhower matrix",
-          "minutes": 5,
-          "content": "Not every task deserves your time equally. The Eisenhower matrix sorts tasks with two questions: is it urgent, and is it important?\n\nUrgent and important tasks, like a deadline today, you do now. Important but not urgent tasks, like learning a skill, exercising or planning, you schedule. Urgent but not important tasks, like many messages and small requests, you delegate or keep short. Tasks that are neither, like endless scrolling, you drop.\n\nThe quadrant that changes lives is important but not urgent. These tasks never shout for attention, so they get pushed aside. Protect time for them before urgent things fill your day.",
+          "title": "Pick what matters with the Eisenhower box",
+          "minutes": 6,
+          "content": "Imagine your schoolbag is too full to close. You have to take some things out. But which ones? The Eisenhower box helps you do the same with your tasks. You ask two questions about every task. Is it urgent, meaning it must happen soon? Is it important, meaning it really helps you or someone you care about? Two questions give you four boxes.\n\nWithout this, you just do whatever is loudest. A friend's message, a game notification, a small favour. At night you feel busy but nothing big got done. With the box, you spend your best time on what actually moves your life forward, and you stop feeling guilty about the stuff you skip.\n\nHere's how the four boxes work. Box 1 is urgent and important, like homework due tomorrow. Do it now. Box 2 is important but not urgent, like practising English every day or revising for an exam that is a month away. Put it on your calendar with a time. Box 3 is urgent but not important, like a friend asking you to check their Facebook post right now. Keep it short or hand it to someone else. Box 4 is neither, like watching random videos. Drop it.\n\nTo try it, write 8 to 10 tasks on paper. Draw a big plus sign to make four boxes. Put each task in one box. Then do Box 1 first, give Box 2 a fixed time, make Box 3 quick, and cross out Box 4. Box 2 is the secret. Those tasks never shout at you, so they get pushed aside forever unless you give them a time.\n\nTake Rafi, class 8. Every evening he answered group chats, helped his cousin with a game and watched cricket clips. His maths test was in three weeks, so it never felt urgent. He drew the box. Maths revision went into Box 2, so he gave it 30 minutes every day at 7 pm. Cricket clips went into Box 4. Three weeks later he walked into the test calm instead of cramming the night before.\n\nThe common mistake is thinking urgent means important. A ringing phone feels important because it is loud, but most of the time it is Box 3. Before you jump on something, ask: if I do this an hour later, will anything bad happen? If not, it is not Box 1.\n\nRemember: do Box 1, schedule Box 2, shrink Box 3, drop Box 4.",
           "key_points": [
-            "Sort tasks by urgent and important.",
-            "Do, schedule, delegate or drop.",
-            "Protect time for important but not urgent work."
+            "Ask two questions about each task: is it urgent, and is it important?",
+            "Do urgent and important tasks now, and give important but not urgent tasks a fixed time.",
+            "Keep urgent but unimportant tasks short, and drop tasks that are neither.",
+            "Loud does not mean important, so check before you jump."
           ],
-          "tip": "Each morning, pick one important-but-not-urgent task and do it before opening your messages.",
-          "task": "List 10 things on your mind. Place each one in a quadrant of the matrix, then schedule one important-but-not-urgent task this week.",
+          "tip": "Pick one Box 2 task tonight and write the exact time you will do it tomorrow, like \"English practice, 5:00 pm\".",
+          "task": "Write 8 things on your mind, draw the four boxes, and put each thing in a box. Circle one Box 2 task and give it a time this week.",
           "quiz": [
             {
-              "q": "What should you do with important but not urgent tasks?",
+              "q": "Rafi's maths test is three weeks away. Which box does revising for it go in?",
               "options": [
-                "Ignore them",
-                "Schedule them",
-                "Delegate them",
-                "Do them only when bored"
+                "Important but not urgent, so he schedules it",
+                "Urgent and important, so he does it all tonight",
+                "Urgent but not important, so he keeps it short",
+                "Neither, so he drops it"
               ],
-              "answer": 1,
-              "explain": "Scheduling them protects time for the work that matters most in the long run."
+              "answer": 0,
+              "explain": "The test matters but is not due yet. That is Box 2, so you give it a fixed time."
             },
             {
-              "q": "Endless scrolling usually belongs in which quadrant?",
+              "q": "What should you do with a task that is urgent but not important?",
               "options": [
-                "Urgent and important",
-                "Important, not urgent",
-                "Urgent, not important",
-                "Neither urgent nor important"
-              ],
-              "answer": 3,
-              "explain": "It is rarely urgent or important, so it is the first thing to drop."
-            },
-            {
-              "q": "Why do important-but-not-urgent tasks get neglected?",
-              "options": [
-                "They are too easy",
-                "They do not demand attention, so urgent tasks crowd them out",
-                "They are not useful",
-                "Nobody knows about them"
+                "Drop it completely without thinking",
+                "Keep it short or hand it to someone else",
+                "Put it on your calendar for next month",
+                "Do it before everything else"
               ],
               "answer": 1,
-              "explain": "Urgent tasks feel pressing while important ones are quiet. That is why you must schedule them."
+              "explain": "Box 3 tasks need a quick reply or someone else, not your best time."
+            },
+            {
+              "q": "Which question helps you check if a task is really Box 1?",
+              "options": [
+                "Is this task the loudest one right now?",
+                "Will this task take less than five minutes?",
+                "If I do this an hour later, will anything bad happen?",
+                "Did a friend ask me to do this?"
+              ],
+              "answer": 2,
+              "explain": "If nothing bad happens when you wait, the task only feels urgent. It is not Box 1."
             }
           ]
         },
         {
           "id": "prod-1-2",
-          "title": "Focus blocks and the Pomodoro method",
-          "minutes": 5,
-          "content": "Switching between tasks has a cost. Every time you check a message in the middle of work, your mind needs time to get back into the task. Doing one thing at a time is faster than it feels.\n\nThe Pomodoro method makes focus easier. Choose one task, set a timer for 25 minutes and work only on that task. Then take a 5-minute break. After four rounds, take a longer break of 15 to 30 minutes.\n\nPrepare your environment before you start. Put your phone in another room or turn on do-not-disturb, close unrelated tabs and keep a notepad nearby. When a distracting thought appears, write it down and return to the task.",
+          "title": "Focus blocks and the Pomodoro timer",
+          "minutes": 6,
+          "content": "Think of your focus like a phone battery. It runs down as you use it, and it needs short charging breaks. The Pomodoro method uses this idea. You work on one thing for 25 minutes with a timer, then rest for 5 minutes. One 25-minute round is called a pomodoro, which is Italian for tomato, because the man who invented it used a tomato-shaped kitchen timer.\n\nWithout a timer, studying turns into \"sitting with the book open\". You read a line, check your phone, read another line, get a snack. Two hours pass and you did maybe 30 real minutes. With a timer, starting is easier because 25 minutes feels small, and the break stops your brain from getting tired and bored.\n\nHere's how to do one round. First, pick exactly one task, like \"solve 10 maths problems\", not \"study\". Second, put your phone in another room or face down on silent. Third, set a timer for 25 minutes and work only on that task. If a thought pops up, like \"I need to text Nusrat\", write it on a scrap paper and go back to work. Fourth, when the timer rings, stop and take 5 minutes to stand, drink water or stretch. No phone scrolling in the break, because 5 minutes of scrolling easily becomes 20.\n\nAfter four rounds, take a longer break of 15 to 30 minutes. So two hours of study looks like four rounds of 25 minutes with short breaks in between. If 25 minutes feels too long at first, start with 15 and add 5 minutes each week. The number is not magic. The rule is: one task, no distractions, then a real rest.\n\nNusrat, class 9, had to learn a long biology chapter. She kept opening Facebook every few minutes and finished only two pages in an evening. She tried pomodoros. Round one: read pages 1 to 3. Round two: pages 4 to 6. In the breaks she drank water and looked out of the window. After four rounds she had finished the chapter and still had time to watch a drama with her mother.\n\nThe common mistake is skipping the break because you feel you are \"on a roll\". It feels good for a while, but your focus drops later and you burn out by round three. Take the break even when you don't want to.\n\nRemember: one task, 25 minutes, phone away, then 5 minutes of real rest.",
           "key_points": [
-            "Task switching costs time and attention.",
-            "Pomodoro: 25 minutes of focus, 5 minutes of rest, and a longer break after four rounds.",
-            "Remove distractions before you start."
+            "A pomodoro is 25 minutes of work on one task, then a 5-minute break.",
+            "After four rounds, take a longer 15 to 30 minute break.",
+            "Write down distracting thoughts on paper instead of acting on them.",
+            "Breaks should rest your brain, so skip phone scrolling during them."
           ],
-          "tip": "The timer length is flexible. If 25 minutes feels too long, start with 15. The habit matters more than the number.",
-          "task": "Do two Pomodoros today on one important task, with your phone out of reach. Write down how much you finished.",
+          "tip": "Keep a small scrap paper next to you during a pomodoro and write every \"I should also...\" thought on it, then deal with them after the round.",
+          "task": "Pick one small study task, put your phone in another room, and do one 25-minute pomodoro right now, followed by a 5-minute break without your phone.",
           "quiz": [
             {
-              "q": "In the classic Pomodoro method, how long is one focus session?",
+              "q": "How long is one normal pomodoro work round?",
               "options": [
-                "5 minutes",
                 "25 minutes",
-                "60 minutes",
-                "2 hours"
+                "5 minutes",
+                "45 minutes",
+                "60 minutes"
               ],
-              "answer": 1,
-              "explain": "A standard Pomodoro is 25 minutes of focused work followed by a short break."
+              "answer": 0,
+              "explain": "The classic round is 25 minutes of focused work followed by a 5-minute break."
             },
             {
-              "q": "Why is task switching costly?",
+              "q": "During a round, you suddenly remember you need to text Nusrat. What should you do?",
               "options": [
-                "It uses more electricity",
-                "Your mind needs time to refocus after each switch",
-                "It is against the rules",
-                "It is not costly"
+                "Text her quickly, it only takes a minute",
+                "Stop the timer and start over later",
+                "Write it on scrap paper and get back to work",
+                "Keep thinking about it until the round ends"
               ],
-              "answer": 1,
-              "explain": "Each switch forces your attention to reload the task, which wastes time and energy."
+              "answer": 2,
+              "explain": "Writing it down clears your mind without breaking your focus."
             },
             {
-              "q": "A random thought pops up during a focus block. What should you do?",
+              "q": "Why is scrolling a bad idea during the 5-minute break?",
               "options": [
-                "Act on it immediately",
-                "Write it down and return to your task",
-                "Stop the session",
-                "Check your phone"
+                "Scrolling uses up your phone's battery",
+                "Five minutes of scrolling easily turns into 20 and doesn't rest your brain",
+                "You are not allowed to touch the phone all day",
+                "The break should be used for more studying"
               ],
               "answer": 1,
-              "explain": "Writing it down frees your mind without breaking your focus."
+              "explain": "The break is for real rest, like water and stretching. Scrolling steals time and attention."
             }
           ]
         },
         {
           "id": "prod-1-3",
           "title": "Find out where your time goes",
-          "minutes": 5,
-          "content": "Most people guess badly about how they spend their time. We remember the hours of focused work and forget the twenty minutes here and there lost to small things. You cannot manage time you cannot see.\n\nA time audit fixes this. For two or three normal days, write down what you are doing every 30 minutes, in a notebook or a simple note on your phone. Be honest and keep it short, like \"emails\", \"meeting\" or \"scrolling\". Do not try to behave better while you track. The goal is a true picture, not a good-looking one.\n\nAt the end, group the entries and add up the hours. Compare them with what matters most to you. Usually you will find one or two big leaks, such as long lunches that turn into scrolling, or an hour lost every morning before you really start. Fix the biggest leak first, not everything at once.",
+          "minutes": 6,
+          "content": "Say your pocket money keeps disappearing and you don't know how. The easy fix is to write down every taka you spend for a few days. Time works the same way. A time log means writing down what you actually did, every hour or so, for a few days. Then you can see where your hours really go, not where you think they go.\n\nMost people guess wrong. You might think you study 3 hours a day, but your log shows 1 hour of study and 2 hours of \"quick checks\" on your phone. Without a log, you try to fix the wrong thing. With a log, you find the real leak, and even saving one hour a day gives you 7 extra hours a week.\n\nHere's how to do it. Take a small notebook or the notes app. Every hour, or whenever you switch activities, write the time and what you did, like \"4:00 to 4:40, tuition homework\" or \"4:40 to 5:30, YouTube\". Be honest. Nobody else will see it. Do this for 3 days, including one holiday, because weekends often look very different.\n\nAt the end, add up the time in a few groups: study, sleep, eating, travel, phone or TV, family, play. Look for two things. First, the biggest surprise, the group that is much bigger than you expected. Second, small gaps, like 20 minutes waiting for the school bus, that you could use for revision cards. Pick just one change to make, not ten.\n\nSabbir, class 10, felt he never had time for his SSC prep. He logged three days. The result shocked him: about 2.5 hours a day on his phone, mostly in small 10-minute chunks after every meal. He also spent 40 minutes daily stuck in traffic going to coaching. His change: no phone at the dinner table, and vocabulary cards in the car. In a week he found nearly an hour a day without giving up anything he loved.\n\nThe common mistake is filling the log at night from memory. You will forget the small chunks, and the small chunks are exactly where time hides. Write it during the day, right when you switch.\n\nRemember: you can't fix your time until you see it, so log it honestly for three days.",
           "key_points": [
-            "Your memory of how you spend time is usually wrong.",
-            "Log what you do every 30 minutes for a few normal days.",
-            "Add up the hours, find the biggest leak and fix that first."
+            "A time log is a simple record of what you actually did through the day.",
+            "Log for 3 days, including a holiday, and write it as you go, not at night.",
+            "Add the time into groups and look for the biggest surprise.",
+            "Make one change based on what you find, not ten."
           ],
-          "tip": "Set a gentle repeating reminder every 30 minutes so you log as you go, instead of trying to remember at night.",
-          "task": "Start a time log right now. Write down what you do every 30 minutes until the end of today, then circle the block that surprised you most.",
+          "tip": "Set a quiet alarm every hour for the three days. When it buzzes, write one line in your log and get back to what you were doing.",
+          "task": "Start your time log now: write what you did in each hour since you woke up today, as honestly as you can, and keep it going until bedtime.",
           "quiz": [
             {
-              "q": "Why is a time audit useful?",
+              "q": "Why should you write the time log during the day instead of at night?",
               "options": [
-                "It makes you work longer hours",
-                "It replaces your to-do list",
-                "It shows where your time really goes, not where you think it goes",
-                "It is only for managers"
+                "Writing at night keeps you awake too long",
+                "The log only counts if it is written in the morning",
+                "You forget the small chunks, and that's where time hides",
+                "Nobody can check a log written at night"
               ],
               "answer": 2,
-              "explain": "Memory is unreliable. A written log gives you a true picture to make decisions from."
+              "explain": "Memory skips the 10-minute bits, but those add up to hours."
             },
             {
-              "q": "How should you behave while tracking your time?",
+              "q": "What did Sabbir find when he logged his time?",
               "options": [
-                "Normally, so the log shows a true picture",
-                "Extra productive, so the results look good",
-                "Only track your best days",
-                "Skip the boring parts"
+                "About 2.5 hours a day on his phone in small chunks",
+                "He was studying too much and needed rest",
+                "He was sleeping 12 hours a day",
+                "His coaching classes were too long"
               ],
               "answer": 0,
-              "explain": "If you change your behavior while tracking, the log hides the real leaks you want to find."
+              "explain": "His log showed small phone checks after meals adding up to a lot."
             },
             {
-              "q": "After the audit, what should you fix first?",
+              "q": "After adding up your log, what should you do next?",
               "options": [
-                "Everything at once",
-                "Nothing, the log is enough",
-                "The smallest habit",
-                "The biggest time leak"
+                "Pick one change to make based on the biggest surprise",
+                "Change ten habits at once to fix everything",
+                "Throw the log away, it has done its job",
+                "Log for another month before changing anything"
               ],
-              "answer": 3,
-              "explain": "One big fix gives you the most time back and is easier to keep than many small changes."
+              "answer": 0,
+              "explain": "One focused change is easier to keep than many at once."
             }
           ]
         },
         {
           "id": "prod-1-4",
           "title": "A to-do list that actually works",
-          "minutes": 5,
-          "content": "Most to-do lists fail for the same reasons. They are too long, so you never finish and feel behind every evening. They are vague, with items like \"project\" or \"mom\" that do not tell you what to actually do. And everything looks equally important, so you pick the easiest task instead of the right one.\n\nWrite every task as a clear action that starts with a verb. \"Thesis\" becomes \"Write the outline for chapter 2\". \"Mom\" becomes \"Call mom about Friday dinner\". If a task would take more than an hour or two, break it into a smaller next step you can finish in one sitting. A good list for one day is short, usually five to eight items, not twenty.\n\nThen choose your top three the evening before. Look at tomorrow's list, star the three tasks that matter most and put them at the top. In the morning you do not waste energy deciding, you just start with number one. If you finish your top three, the day is a success, even if other items are still left.",
+          "minutes": 6,
+          "content": "A to-do list is like a shopping list for your day. You write what you need to get done so your brain doesn't have to remember it all. But a messy list is like a shopping list that says \"food\". You reach the bazar and still don't know what to buy. A good to-do list is short, clear, and tells you exactly what to do next.\n\nWithout a good list, you either forget things, like the science project due Thursday, or you write 25 tasks, finish 4, and feel like a failure. A good list makes starting easy, because every item is a clear action, and it makes you feel good at night because you actually finished what you planned.\n\nHere are the rules. Rule one: start each task with a verb and make it small. Not \"science project\" but \"find 3 pictures of the water cycle\". If a task takes more than an hour, break it into smaller pieces. Rule two: keep today's list to 3 to 5 items. Put everything else on a separate \"later\" list so it doesn't crowd your day.\n\nRule three: star your top 1 task, the one that matters most if you only finish one thing. Do it first, before the easy stuff. Rule four: write tomorrow's list the night before, in 5 minutes. When you wake up, you already know where to start, so you don't waste the morning deciding. At night, move unfinished tasks to tomorrow or the later list, and cross out anything that no longer matters.\n\nTania, class 7, wrote lists like \"Bangla, English, project, tuition, clean room, call Nanu\". Every day half of it stayed undone. She rewrote it: star task \"write the first paragraph of the Bangla essay\", then \"do English exercise 4\", \"call Nanu after Maghrib\". Only three items, each one clear. She finished them by evening and the rest waited on her later list without bothering her.\n\nThe common mistake is writing vague, giant tasks like \"study for exams\". Your brain doesn't know where to begin, so it picks something easier, like your phone. If you look at a task and don't know the first step, rewrite it until you do.\n\nRemember: short list, clear verbs, star one task, and do the star first.",
           "key_points": [
-            "Long, vague lists make you feel behind and push you toward easy tasks.",
-            "Start every task with a verb and keep it small enough to finish in one sitting.",
-            "Pick your top three the evening before and start with number one."
+            "Start every task with a verb and make it small enough to finish in under an hour.",
+            "Keep today's list to 3 to 5 items and park the rest on a later list.",
+            "Star your most important task and do it first.",
+            "Write tomorrow's list the night before so the morning starts fast."
           ],
-          "tip": "If an item has sat on your list for a week, it is either too vague or not important. Rewrite it as a clear next step or delete it.",
-          "task": "Tonight, rewrite tomorrow's to-do list so every item starts with an action verb, keep it to eight items or fewer, and star your top three.",
+          "tip": "If a task has sat on your list for three days, ask \"what is the very first 10-minute step?\" and replace the task with that step.",
+          "task": "Write tomorrow's to-do list now: 3 to 5 items, each starting with a verb, with one starred task you will do first.",
           "quiz": [
             {
-              "q": "Which to-do item is written the best way?",
+              "q": "Which of these is the best to-do list item?",
               "options": [
-                "Thesis",
-                "Work on stuff for the thesis",
-                "Write the outline for chapter 2",
-                "Thesis, be productive!"
-              ],
-              "answer": 2,
-              "explain": "It starts with a verb and names one specific action, so you know exactly what to do."
-            },
-            {
-              "q": "When is the best time to choose your top three tasks?",
-              "options": [
-                "The evening before",
-                "Whenever you feel motivated",
-                "At the end of the week",
-                "After checking all your messages in the morning"
-              ],
-              "answer": 0,
-              "explain": "Deciding the night before means you can start the morning with action instead of decisions."
-            },
-            {
-              "q": "Why do long to-do lists often backfire?",
-              "options": [
-                "They use too much paper",
-                "They are against the rules of productivity",
-                "They make tasks more specific",
-                "You rarely finish them, feel behind and pick easy tasks instead of important ones"
+                "Science project",
+                "Study",
+                "Work on school stuff",
+                "Find 3 pictures of the water cycle"
               ],
               "answer": 3,
-              "explain": "A list you can never finish drains motivation and hides what really matters."
+              "explain": "It starts with a verb and is small and clear, so you know exactly what to do."
+            },
+            {
+              "q": "How many items should today's list usually have?",
+              "options": [
+                "3 to 5",
+                "1 at most",
+                "10 to 15",
+                "As many as you can think of"
+              ],
+              "answer": 0,
+              "explain": "A short list is doable and keeps you from feeling like you failed."
+            },
+            {
+              "q": "What did Tania change to finish her list?",
+              "options": [
+                "She added more tasks to stay busy",
+                "She stopped writing lists altogether",
+                "She did the easy tasks first to warm up",
+                "She made each item small and clear and kept only three"
+              ],
+              "answer": 3,
+              "explain": "Clear, small items and a short list made her day finishable."
             }
           ]
         }
@@ -220,95 +224,97 @@
           "id": "prod-2-1",
           "title": "Habits that stick",
           "minutes": 6,
-          "content": "Motivation comes and goes, so lasting change comes from habits. A habit works like a loop: a cue triggers a routine, and a reward makes your brain want to repeat it.\n\nMake new habits tiny. \"Read for an hour\" fails on busy days, while \"read one page\" almost never fails, and you often do more once you start. Then attach the habit to something you already do, a trick called habit stacking: \"After I pour my morning tea, I will read one page.\"\n\nTrack your habit on a calendar and try not to break the chain. If you miss a day, that is normal. The rule is simple: never miss twice in a row.",
+          "content": "A habit is something you do almost without thinking, like brushing your teeth after waking up. You don't sit and decide every morning. Your brain just does it. Imagine if reading 10 pages or doing 5 maths problems worked the same way. That's what building a habit means: turning a good action into something automatic.\n\nWithout habits, every good thing needs willpower, and willpower runs out by evening. That's why \"I'll study daily from tomorrow\" usually lasts three days. With a habit, the action happens on autopilot, and small actions repeated daily add up. Ten new English words a day is over 3,600 words in a year.\n\nHere's the trick: tie the new habit to something you already do every day. Use this sentence: \"After I [old habit], I will [new habit].\" For example, \"After I eat lunch, I will read 2 pages\" or \"After Fajr, I will do 10 push-ups.\" The old habit acts like an alarm that reminds you.\n\nNext, make the habit tiny at first, so small that you can't say no. Not \"study 2 hours\" but \"open the maths book and do 1 problem\". Once you start, you often do more, but even 1 problem counts. Make it easy to start by keeping the book on your table, already open. Then track it: put a tick on a calendar each day. Seeing a row of ticks makes you not want to break the chain.\n\nRafi wanted to read more storybooks, but he kept forgetting. He wrote: \"After I finish dinner, I will read 2 pages.\" He kept the book on his pillow so he would see it. Some nights he read 2 pages, some nights 20. He put a tick on the wall calendar each night. After a month he had 28 ticks and had finished three books, more than he read in the whole previous year.\n\nThe common mistake is starting too big. People decide to wake at 5, run, study 3 hours and quit sugar, all on the same day. By day four everything collapses. Start with one tiny habit, keep it for two or three weeks, then add the next one. And if you miss a day, never miss two in a row.\n\nRemember: after an old habit, do a tiny new one, make it easy, and tick it every day.",
           "key_points": [
-            "A habit loop has a cue, a routine and a reward.",
-            "Start tiny and stack the habit onto an existing one.",
-            "Missing once is fine; avoid missing twice."
+            "Link a new habit to an old one: \"After I ___, I will ___.\"",
+            "Start so small you can't say no, like 1 problem or 2 pages.",
+            "Make it easy to start and tick a calendar each day you do it.",
+            "If you miss a day, never miss two in a row."
           ],
-          "tip": "Make good habits easy and bad habits hard. Put the book on your pillow and the phone charger in another room.",
-          "task": "Choose one tiny habit and write it as 'After I [current habit], I will [new habit].' Do it every day this week.",
+          "tip": "Put the thing you need for your habit where you'll trip over it: the book on your pillow, the skipping rope by the door.",
+          "task": "Write one sentence: \"After I ___, I will ___\" with a habit that takes under 2 minutes, then set up the thing you need for it right now.",
           "quiz": [
             {
-              "q": "What are the parts of a habit loop?",
+              "q": "Which habit sentence follows the method in this lesson?",
               "options": [
-                "Goal, plan, result",
-                "Cue, routine, reward",
-                "Morning, noon, night",
-                "Start, pause, stop"
+                "After I eat lunch, I will read 2 pages",
+                "I will read more books this year",
+                "I will study whenever I feel motivated",
+                "I will read 50 pages every single day"
               ],
-              "answer": 1,
-              "explain": "A cue triggers the routine, and the reward makes you want to repeat it."
+              "answer": 0,
+              "explain": "It links the new habit to an old one and keeps it tiny."
             },
             {
-              "q": "Which new habit is most likely to stick?",
+              "q": "Why should a new habit start tiny?",
               "options": [
-                "Exercise two hours every day",
-                "Read one page after morning tea",
-                "Learn three languages this month",
-                "Wake up at 4 a.m. starting tomorrow"
+                "Because big habits are not allowed",
+                "So it's too easy to say no to, and you keep doing it",
+                "Because small habits don't count for anything",
+                "So you can finish it in one day and stop"
               ],
               "answer": 1,
-              "explain": "It is tiny and attached to an existing routine, so it is easy to start every day."
+              "explain": "A tiny habit doesn't need willpower, so it survives on tired days."
             },
             {
-              "q": "You missed your habit yesterday. What is the best rule to follow?",
+              "q": "Rafi missed one night of reading. What does the lesson say to do?",
               "options": [
-                "Give up",
-                "Never miss twice in a row",
-                "Do double tomorrow",
-                "Wait until next month"
+                "Start the whole habit again from zero",
+                "Read 40 pages next night to make up for it",
+                "Give up, the chain is broken",
+                "Read the next night and never miss two in a row"
               ],
-              "answer": 1,
-              "explain": "Missing once is normal. Getting back on track the next day keeps the habit alive."
+              "answer": 3,
+              "explain": "One miss is normal. Two in a row is how habits die."
             }
           ]
         },
         {
           "id": "prod-2-2",
           "title": "The weekly review",
-          "minutes": 5,
-          "content": "Without a regular check-in, plans drift and small tasks pile up. A weekly review takes 20 to 30 minutes, once a week, to look back, clean up and plan ahead.\n\nLook back: what went well, what did not, and what did you learn? Clean up: move everything from your notes and messages into a single task list, and remove tasks that no longer matter. Plan ahead: look at next week's calendar and choose your three most important outcomes.\n\nPick a fixed time, such as Friday afternoon or Sunday evening, and treat it like an appointment. This small ritual gives you a feeling of control that a daily to-do list alone cannot.",
+          "minutes": 6,
+          "content": "A cricket team doesn't just play match after match. After each game, the coach sits with the players and asks: what went well, what went wrong, what do we change next time? A weekly review is that coach meeting, but for your own week. Once a week, you spend 15 to 20 minutes looking back at the last seven days and planning the next seven.\n\nWithout it, weeks just happen to you. The same problems repeat, like always running late on Monday or forgetting tuition homework, and you never notice the pattern. Tasks you wrote down get lost. With a review, you catch problems early, you start each week knowing your top goals, and you feel in control instead of chasing things.\n\nHere's how to run it. Pick a fixed time, like Friday after Jumma or Saturday evening. Step one, look back: open your to-do list, calendar and notes. Tick what got done. Ask three questions and write short answers: What went well? What went badly? What will I do differently? Step two, clear up: move unfinished tasks to next week or delete them, and empty any notes or papers you collected into your list.\n\nStep three, look ahead: check next week's calendar for tests, deadlines, birthdays and family events. Then choose your top 3 goals for the week, like \"finish chemistry chapter 4\", \"submit art project\", \"practise bowling three times\". Write them at the top of your list. During the week, whenever you're unsure what to do next, look at those three.\n\nNusrat kept getting surprised by class tests. Every Saturday evening she started a 15-minute review with a cup of tea. On the first Saturday she noticed she'd forgotten two homework tasks because they were written on random pages. She moved everything into one list. When she looked ahead, she spotted a physics test on Wednesday and planned 30 minutes for it on Monday and Tuesday. No more panic on Tuesday nights.\n\nThe common mistake is turning the review into a guilt session, where you only list what you failed at and feel bad. That makes you skip it next week. Spend equal time on what went well, keep it short, and focus on one thing to change.\n\nRemember: once a week, look back, clear up, and pick your top 3 for next week.",
           "key_points": [
-            "A weekly review is a short, regular planning session.",
-            "Look back, clean up, plan ahead.",
-            "Choose three key outcomes for next week."
+            "A weekly review is 15 to 20 minutes to look back and plan ahead.",
+            "Ask: what went well, what went badly, what will I change?",
+            "Move or delete unfinished tasks and check next week's calendar.",
+            "Choose your top 3 goals for the coming week."
           ],
-          "tip": "Use the same simple checklist for every review. Fewer decisions make the habit easier to keep.",
-          "task": "Do your first weekly review today: three wins, one lesson learned and three outcomes for next week.",
+          "tip": "Tie your review to something you already do weekly, like after Jumma prayer or after Friday family lunch, so you don't forget it.",
+          "task": "Do a mini review now: write what went well this week, one thing that went badly, and your top 3 goals for next week.",
           "quiz": [
             {
-              "q": "What are the three parts of the weekly review in this lesson?",
+              "q": "What are the three steps of the weekly review in this lesson?",
               "options": [
-                "Wake, work, sleep",
-                "Look back, clean up, plan ahead",
-                "Read, write, repeat",
-                "Plan, panic, push"
+                "Wake up, study, sleep",
+                "Plan, panic, catch up",
+                "Write, delete, forget",
+                "Look back, clear up, look ahead"
               ],
-              "answer": 1,
-              "explain": "Reflecting, organizing and planning together give the next week a clear start."
+              "answer": 3,
+              "explain": "You review the past week, tidy loose tasks, then plan the next week."
             },
             {
-              "q": "How many key outcomes should you pick for next week?",
+              "q": "How did Nusrat stop getting surprised by tests?",
               "options": [
-                "About three",
-                "Twenty",
-                "None",
-                "As many as possible"
-              ],
-              "answer": 0,
-              "explain": "A few clear priorities are easier to achieve than a long list."
-            },
-            {
-              "q": "Why schedule the review at a fixed time?",
-              "options": [
-                "It is a legal requirement",
-                "Treating it like an appointment makes it more likely to happen",
-                "It does not matter",
-                "To make it longer"
+                "She studied every subject every night",
+                "She checked next week's calendar during her review and planned time early",
+                "She asked her friends the night before each test",
+                "She stopped writing anything down"
               ],
               "answer": 1,
-              "explain": "A fixed slot turns the review into a habit instead of something you hope to remember."
+              "explain": "Looking ahead showed her the Wednesday test early enough to plan."
+            },
+            {
+              "q": "What is the common mistake people make with weekly reviews?",
+              "options": [
+                "Spending too long on what went well",
+                "Doing it on the same day every week",
+                "Choosing only three goals",
+                "Only listing failures, which makes them want to skip it"
+              ],
+              "answer": 3,
+              "explain": "A guilt session feels bad, so people stop doing it. Balance it."
             }
           ]
         },
@@ -316,47 +322,48 @@
           "id": "prod-2-3",
           "title": "Turn repeated work into templates",
           "minutes": 6,
-          "content": "Many tasks come back again and again: a monthly report, a client email, packing for a trip, setting up a new project. If you start each one from zero, you waste time and energy deciding the same things every time, and you often forget a step.\n\nThe fix is to build the task once and reuse it. The next time you do a repeated task, write down the steps as you go. That list becomes a checklist. For writing you repeat, save a template with the fixed parts filled in and blanks for the parts that change. Keep checklists and templates in one place where you can find them in seconds.\n\nThen look for what you can automate. Saved replies, calendar repeats, auto-payments and simple phone shortcuts can take small tasks off your plate completely. Improve the template a little each time you use it. Over months, these small systems free up hours and make your work more reliable.",
+          "content": "Think about how your mother makes rice. She doesn't invent a new method every day. She knows the steps: wash, add water, boil, lower the heat. A template is the same idea for your own repeated work. It's a ready-made pattern or checklist you reuse, so you don't start from zero every time.\n\nWithout templates, you waste time and energy redoing the same thinking. Every time you pack for school, you try to remember everything and forget your geometry box. Every essay starts with a blank page and ten minutes of staring. With templates, repeated jobs get faster, you make fewer mistakes, and your brain is free for the parts that actually need thinking.\n\nHere's how to make one. First, notice what you do again and again, like packing your school bag, writing an essay, preparing for a test, or sending a message to your tuition teacher. Second, the next time you do it, write the steps down as you go. Third, save that list somewhere easy, like a page in your notebook or a note on your phone, and give it a clear name, like \"School bag checklist\".\n\nA few examples. School bag checklist: timetable books, homework copies, geometry box, water bottle, tiffin, ID card. Essay template: opening line that answers the question, three paragraphs each with one point and one example, a short ending. Test prep template: list chapters, mark weak topics, solve 10 past questions, review mistakes. Each time you use a template, fix anything that was missing.\n\nSabbir forgot something almost every morning, his ID card one day, his calculator the next. His teacher made him stand outside class twice. He wrote a six-item checklist on a card and stuck it near the door. Every night he packed while reading the card. In a month he didn't forget a single thing, and packing took 3 minutes instead of a frantic 10 in the morning.\n\nThe common mistake is making templates too long and fancy, with 30 steps for packing a bag. Nobody uses those. Keep a template to the steps you actually forget or repeat, usually 5 to 8 lines, and keep it where you'll see it while doing the job.\n\nRemember: if you do something more than twice, write the steps once and reuse them.",
           "key_points": [
-            "Repeated tasks started from zero waste time and invite mistakes.",
-            "Write the steps once and turn them into a checklist or template.",
-            "Automate what you can and improve the template each time."
+            "A template is a ready-made checklist or pattern for work you repeat.",
+            "Write the steps the next time you do the job, then save and name it.",
+            "Keep templates short, 5 to 8 lines, and put them where you'll see them.",
+            "Improve the template each time you notice something missing."
           ],
-          "tip": "A task you have done three times is a sign: it deserves a checklist or a template.",
-          "task": "Pick one task you repeat every week or month. Write its steps as a checklist or save a reusable template for it today.",
+          "tip": "Stick your checklist exactly where the job happens: the bag list by the door, the study list inside your desk drawer.",
+          "task": "Pick one thing you do every day or week, like packing your bag, and write a 5 to 8 line checklist for it right now.",
           "quiz": [
             {
-              "q": "What is the main problem with starting repeated tasks from zero?",
+              "q": "What is a template in this lesson?",
               "options": [
-                "It is more creative",
-                "You waste time on the same decisions and may forget steps",
-                "It is faster",
-                "There is no problem"
+                "A new plan you make from scratch each time",
+                "A list of everything you must do in your life",
+                "A ready-made checklist or pattern you reuse for repeated work",
+                "A timer that tells you when to stop working"
               ],
-              "answer": 1,
-              "explain": "Each fresh start repeats decisions you already made and makes it easy to skip a step."
+              "answer": 2,
+              "explain": "It saves you from re-thinking the same steps every time."
             },
             {
-              "q": "What is the easiest way to build a checklist?",
+              "q": "How did Sabbir stop forgetting things for school?",
               "options": [
-                "Copy one from the internet without changes",
-                "Wait until you have free time",
-                "Ask someone else to do the task",
-                "Write the steps down the next time you do the task"
+                "He packed his bag in the morning in a hurry",
+                "He asked his mother to pack for him",
+                "He carried every book every day",
+                "He used a six-item checklist near the door each night"
               ],
               "answer": 3,
-              "explain": "Recording the steps while you work captures exactly how you really do it."
+              "explain": "A short checklist in the right place fixed the problem."
             },
             {
-              "q": "Which is an example of automating a small task?",
+              "q": "Why should a template stay short, around 5 to 8 lines?",
               "options": [
-                "Doing it faster by hand",
-                "Setting up an automatic bill payment",
-                "Writing it on a sticky note",
-                "Putting it off until next week"
+                "Short templates look nicer",
+                "Teachers only allow short lists",
+                "Long fancy templates don't get used",
+                "Long templates are hard to print"
               ],
-              "answer": 1,
-              "explain": "Automation takes the task off your plate completely, so it no longer needs your time or memory."
+              "answer": 2,
+              "explain": "Keep only the steps you forget or repeat, so it's quick to follow."
             }
           ]
         },
@@ -364,47 +371,48 @@
           "id": "prod-2-4",
           "title": "Capture everything in one trusted inbox",
           "minutes": 6,
-          "content": "Your brain is great at having ideas but bad at storing them. When you try to remember every task, promise and idea, they keep popping up at the wrong times, like a reminder to buy milk in the middle of studying. This open loop of worries drains focus, and things still get forgotten.\n\nThe fix is a single capture place, your inbox. It can be a small notebook or one notes app on your phone, but it must be only one. Whenever something comes to mind, a task, an idea, something you promised a friend, write it down in a few words right away. Do not sort or plan while capturing. The only job is to get it out of your head quickly.\n\nAn inbox only works if you trust it, and you only trust it if you empty it. Once a day, or at least during your weekly review, go through each item and decide: is it a task, then add it to your to-do list; does it have a date, then put it on your calendar; is it not needed, then delete it. When the inbox is empty, your mind can finally relax, because nothing is lost.",
+          "content": "Imagine you had five piggy banks hidden around the house and you put coins in whichever was closest. You'd never know how much you have, and some coins would be lost forever. That's what happens when your tasks and ideas are scattered across your head, sticky notes, WhatsApp chats and the back of your copy. An inbox is one single place where every task, idea and reminder goes first.\n\nWithout one inbox, things slip. Your teacher says \"bring a chart paper on Sunday\", you think you'll remember, and on Sunday you don't. Your brain also stays busy trying to hold everything, which makes you anxious and tired. With one trusted inbox, you write it down and let it go, because you know you'll see it later.\n\nHere's how to set it up. Choose one place you always have with you: a small notebook in your bag, or one note on your phone called \"Inbox\". The rule is simple: the moment something comes up, a task, a date, an idea, write it there in a few words. \"Chart paper Sunday.\" \"Ask Abbu about bKash for exam fee.\" Don't organize it yet. Just catch it.\n\nThe second half matters just as much: empty the inbox once a day, for example in the evening for 5 minutes. Go through each line and decide. If it takes under 2 minutes, do it now. If it has a date, put it on your calendar. If it's a task, move it to your to-do list. If it's just an idea, move it to an ideas page or delete it. Then cross it out of the inbox.\n\nTania kept missing small things: a friend's birthday, a form her mother had to sign, a book to return to the library. They were all in her head or in random chats. She made a phone note called Inbox and wrote everything in it the moment she heard it. Each night after dinner she cleared it in 5 minutes. That month she didn't miss a single form, and she said her head felt lighter.\n\nThe common mistake is having two or three inboxes, like one notebook, one phone note and some sticky notes. Then you're back to hidden piggy banks. Pick one, and if something lands somewhere else, copy it into your one inbox that day.\n\nRemember: catch everything in one place right away, and empty it every day.",
           "key_points": [
-            "Your brain is for having ideas, not for storing them.",
-            "Use one capture place only, and write things down the moment they appear.",
-            "Empty the inbox on a schedule: turn each item into a task, a calendar entry or trash."
+            "An inbox is one single place where every task, date and idea goes first.",
+            "Write things down the moment they come up, in a few words.",
+            "Empty the inbox once a day: do it, schedule it, move it or delete it.",
+            "Use only one inbox, not several."
           ],
-          "tip": "Keep your inbox one tap or one reach away. If capturing takes more than a few seconds, you will stop doing it.",
-          "task": "Pick your one inbox. Spend 10 minutes dumping everything on your mind into it, then process every item into a task, a calendar item or the trash.",
+          "tip": "If a task takes less than 2 minutes, like replying \"yes\" to your tuition teacher, do it right when you clear your inbox instead of writing it anywhere else.",
+          "task": "Create your one inbox now, a notebook page or a phone note named \"Inbox\", and write down every task or idea currently in your head.",
           "quiz": [
             {
-              "q": "Why should you capture ideas and tasks instead of trying to remember them?",
+              "q": "What should you do the moment a new task comes up?",
               "options": [
-                "Writing is good handwriting practice",
-                "Unwritten tasks keep popping up, drain focus and still get forgotten",
-                "Remembering things is bad for your brain",
-                "It is only useful for very busy people"
+                "Try hard to remember it",
+                "Organize it into your calendar right away",
+                "Tell a friend so they can remind you",
+                "Write it in your one inbox in a few words"
               ],
-              "answer": 1,
-              "explain": "Getting things out of your head frees your attention and makes sure nothing slips."
+              "answer": 3,
+              "explain": "Catching it fast means you don't have to hold it in your head."
             },
             {
-              "q": "How many capture places should you use?",
+              "q": "While clearing the inbox, a task takes about one minute. What do you do?",
               "options": [
-                "As many as possible",
-                "One for every app you use",
-                "One trusted inbox",
-                "None, memory is enough"
-              ],
-              "answer": 2,
-              "explain": "With one inbox you always know where to write things and where to find them later."
-            },
-            {
-              "q": "What should you do when you process your inbox?",
-              "options": [
-                "Decide for each item: task, calendar or trash",
-                "Read it and leave everything there",
-                "Copy everything into a second notebook",
-                "Only look at the newest item"
+                "Do it right now",
+                "Move it to next week's list",
+                "Delete it because it's too small",
+                "Copy it into a second inbox"
               ],
               "answer": 0,
-              "explain": "Moving every item to its right place empties the inbox, which is what makes you trust it."
+              "explain": "Under-2-minute tasks are faster to do than to file."
+            },
+            {
+              "q": "What is the common mistake with inboxes?",
+              "options": [
+                "Emptying it every day",
+                "Writing tasks in only a few words",
+                "Having two or three inboxes in different places",
+                "Keeping it on your phone"
+              ],
+              "answer": 2,
+              "explain": "Several inboxes bring back the problem of scattered tasks."
             }
           ]
         }
@@ -418,191 +426,195 @@
           "id": "prod-3-1",
           "title": "Beat procrastination",
           "minutes": 6,
-          "content": "Procrastination is rarely laziness. Usually a task feels unclear, too big or uncomfortable, and your brain avoids that feeling by choosing something easier. Knowing this helps you fix the real problem instead of blaming yourself.\n\nMake the first step tiny and specific. \"Write the report\" is vague and heavy, while \"open the file and write the title\" takes one minute. Use the two-minute rule: if a task takes less than two minutes, do it now. For bigger tasks, promise yourself only five minutes of work. Starting is the hardest part, and once you start, you usually keep going.\n\nPlan when and where you will do it, not just what. \"At 9 a.m. at my desk, I will write the first paragraph\" is far more likely to happen than \"I will work on it today.\" Done is better than perfect, so aim for a rough first version.",
+          "content": "Procrastination means putting off something you know you should do, and doing something easier instead. It's like standing at the edge of a cold pond. The water isn't that bad once you're in, but the first step feels awful, so you keep standing there. Most of the time, we don't avoid the task. We avoid the bad feeling at the start of it.\n\nPutting things off feels nice for an hour, but it costs a lot later. The work doesn't go away, it just gets squeezed into the last night, so you sleep late, make silly mistakes and feel guilty the whole time you're \"relaxing\". When you learn to start early, the same work takes less time and you actually enjoy your free time.\n\nHere are three tricks to get into the water. Trick one: the 5-minute rule. Tell yourself, \"I'll do just 5 minutes, then I can stop.\" Starting is the hardest part, and after 5 minutes most people keep going. Trick two: make the first step tiny and exact. Not \"write the essay\" but \"write the title and the first sentence\". A small step feels less scary.\n\nTrick three: remove the easy escape. If your phone is the place you run to, put it in another room before you start. Also notice your excuses. \"I'll do it when I feel ready\" is a trap, because the feeling of being ready usually comes after you start, not before. And when you finish a hard task, give yourself a small reward, like a cup of tea or one episode of your favourite show.\n\nSabbir had a history assignment due Thursday. On Monday and Tuesday he kept saying \"later\" and played games instead. On Wednesday he tried the 5-minute rule: phone in the drawing room, timer set, first step \"write three facts about the Language Movement\". After 5 minutes he didn't want to stop. He finished in 70 minutes, slept on time, and submitted it calmly. Next time he started on day one.\n\nThe common mistake is thinking procrastination means you are lazy. It usually means the task feels confusing or too big. Instead of blaming yourself, ask: \"What's the very next small step?\" Shrinking the task works far better than scolding yourself.\n\nRemember: you don't need to feel ready, just start for 5 minutes with a tiny first step.",
           "key_points": [
-            "Procrastination is avoiding a feeling, not a lack of character.",
-            "Shrink the first step and commit to just five minutes.",
-            "Decide when and where, and aim for done over perfect."
+            "Procrastination is mostly avoiding the bad feeling at the start of a task.",
+            "Use the 5-minute rule: start for just 5 minutes, then decide.",
+            "Make the first step tiny and exact, and remove easy escapes like the phone.",
+            "Feeling ready comes after you start, not before."
           ],
-          "tip": "When you notice yourself avoiding a task, ask: what is the very next physical action? Then do only that.",
-          "task": "Pick the task you have been putting off the longest. Write its first tiny step, set a 5-minute timer and do it right now.",
+          "tip": "When you catch yourself saying \"later\", say out loud the next tiny step, like \"open the copy and write the date\", and do only that.",
+          "task": "Pick one task you've been putting off, write its tiny first step, put your phone away, and work on it for just 5 minutes now.",
           "quiz": [
             {
-              "q": "What is usually behind procrastination?",
+              "q": "What is the 5-minute rule?",
               "options": [
-                "Avoiding a task that feels unclear, big or uncomfortable",
-                "Having too much free time",
-                "Being a lazy person",
-                "Not owning a planner"
-              ],
-              "answer": 0,
-              "explain": "Your brain avoids the uncomfortable feeling. Making the task clearer and smaller removes that feeling."
-            },
-            {
-              "q": "Which first step is easiest to start?",
-              "options": [
-                "Finish the whole project",
-                "Work on the report today",
-                "Open the file and write the title",
-                "Become more disciplined"
+                "Take a 5-minute break after every page",
+                "Finish any task within 5 minutes",
+                "Tell yourself you'll work only 5 minutes, then you can stop",
+                "Wait 5 minutes before starting anything"
               ],
               "answer": 2,
-              "explain": "It is small, specific and takes a minute, so there is nothing to resist."
+              "explain": "Starting is the hardest part, and 5 minutes makes it feel easy."
             },
             {
-              "q": "What does the five-minute promise help with?",
+              "q": "What was Sabbir's tiny first step?",
               "options": [
-                "Finishing every task in five minutes",
-                "Getting past the hardest part, which is starting",
-                "Avoiding the task for five more minutes",
-                "Taking more breaks"
+                "Finish the whole assignment in one go",
+                "Watch a documentary first",
+                "Write three facts about the Language Movement",
+                "Clean his whole room before starting"
               ],
-              "answer": 1,
-              "explain": "Once you have started, continuing feels much easier than starting did."
+              "answer": 2,
+              "explain": "A small, exact first step made it easy to begin."
+            },
+            {
+              "q": "According to the lesson, procrastination usually means what?",
+              "options": [
+                "The task feels confusing or too big",
+                "You are a lazy person",
+                "You don't care about school",
+                "You need more sleep every night"
+              ],
+              "answer": 0,
+              "explain": "Shrinking the task works better than blaming yourself."
             }
           ]
         },
         {
           "id": "prod-3-2",
           "title": "Tame digital distractions",
-          "minutes": 5,
-          "content": "Your phone and apps are designed to grab your attention. Every notification, badge and endless feed pulls you away from your work, and many of us check our phones dozens of times a day without deciding to.\n\nTurn off all notifications that do not come from real people who need you. Move social media and games off your home screen, or log out after using them, so opening them takes effort. Use your phone's focus mode or screen-time limits to block distracting apps during work hours.\n\nCheck messages and email in batches, for example three or four times a day, instead of answering each one as it arrives. Most messages can wait an hour. Notice your triggers too: if you reach for the phone when bored or stuck, take a breath and return to the task first.",
+          "minutes": 6,
+          "content": "Your phone is like a friend who taps your shoulder every two minutes saying \"look at this!\" Each tap seems small. But every time you look, your brain has to climb back into the work, and that takes time. Digital distractions are all the pings, notifications and \"just a quick check\" moments from your phone, computer and TV that pull your attention away.\n\nHere's why it matters. After an interruption, it can take several minutes to get your full focus back. If your phone buzzes 20 times in an evening, you never reach deep focus at all. Your study becomes slow and shallow, you remember less, and the work stretches late into the night. With distractions under control, one hour of real focus can beat three hours of interrupted work.\n\nThe trick is to make distractions harder to reach, instead of relying on willpower. Step one: turn off notifications for every app that isn't about people who really need you, like games, shopping and social media. Keep calls from family on. Step two: while studying, put your phone in another room, or at least face down and out of reach. Out of sight really helps.\n\nStep three: give your phone a fixed time. For example, check messages only in your breaks, or for 15 minutes after each hour of study. Step four: move tempting apps off your home screen into a folder, so opening them takes an extra moment of thought. If you study on a computer, close every tab except the one you need. Small hurdles stop the automatic reach.\n\nNusrat studied with her phone next to her book. Messenger, Facebook and a game all sent alerts. She'd sit for 2 hours and finish one exercise. She turned off all notifications except calls, kept the phone in her mother's room while studying, and allowed herself 10 minutes of phone time after each pomodoro set. The same homework now took 50 minutes, and she had her evening free.\n\nThe common mistake is keeping the phone on the desk \"just in case\" and promising not to look. Even a silent phone in view pulls at your attention, because part of your brain keeps wondering what's on it. Distance beats promises.\n\nRemember: notifications off, phone out of sight, and check it only at set times.",
           "key_points": [
-            "Apps are built to steal attention, so add friction.",
-            "Turn off non-essential notifications and use focus mode.",
-            "Check messages in batches, not all day long."
+            "Every interruption costs you minutes of getting your focus back.",
+            "Turn off notifications for apps that don't really need you.",
+            "Keep your phone out of sight while studying, not just silent.",
+            "Give phone checking fixed times, like during breaks."
           ],
-          "tip": "Check your screen-time report once a week. Seeing the real numbers is often enough to change the habit.",
-          "task": "Turn off notifications for at least five apps today and move your most distracting app off your home screen.",
+          "tip": "Open your phone settings today and switch off notifications for every game and social app. It takes 5 minutes and saves hours.",
+          "task": "Go through your phone right now and turn off notifications for at least 3 apps, then move your most tempting app off the home screen.",
           "quiz": [
             {
-              "q": "Why does moving an app off your home screen help?",
+              "q": "Why is a phone that buzzes 20 times an evening a problem even if you only look for a second?",
               "options": [
-                "It makes the phone faster",
-                "It deletes your account",
-                "It saves battery",
-                "It adds friction, so you open it less without thinking"
+                "The phone battery runs out faster",
+                "After each interruption it takes minutes to get your full focus back",
+                "Your parents will be angry",
+                "It makes the phone slower"
               ],
-              "answer": 3,
-              "explain": "Small barriers break the automatic habit of opening the app."
+              "answer": 1,
+              "explain": "The real cost is climbing back into focus, not the second you looked."
             },
             {
-              "q": "Which notifications are worth keeping on?",
+              "q": "Which change did Nusrat NOT make?",
               "options": [
-                "Messages from real people who need you",
-                "Every social media like",
-                "Game rewards",
-                "Shopping app offers"
+                "She turned off all notifications except calls",
+                "She kept the phone on her desk and promised not to look",
+                "She kept the phone in her mother's room while studying",
+                "She allowed 10 minutes of phone time after each set"
               ],
-              "answer": 0,
-              "explain": "Keep only what truly needs your attention. Everything else can wait until you check."
+              "answer": 1,
+              "explain": "She used distance, not promises. A phone in view still pulls your attention."
             },
             {
-              "q": "What is batching messages?",
+              "q": "What is better than promising yourself not to look at your phone?",
               "options": [
-                "Answering every message instantly",
-                "Never reading messages",
-                "Checking and replying at a few set times a day",
-                "Forwarding messages to friends"
+                "Turning the brightness down",
+                "Putting the phone out of sight, in another room",
+                "Keeping it face up so you see it's quiet",
+                "Holding it in your hand while you read"
               ],
-              "answer": 2,
-              "explain": "Handling messages together protects your focus for the rest of the day."
+              "answer": 1,
+              "explain": "Distance beats promises because out of sight really is out of mind."
             }
           ]
         },
         {
           "id": "prod-3-3",
           "title": "Say no to protect your yes",
-          "minutes": 5,
-          "content": "Every time you say yes to something, you say no to something else, often your own priorities, rest or family time. If you agree to every request, your day belongs to other people.\n\nBefore you answer, pause. Say \"Let me check and get back to you\" instead of an automatic yes. Then ask yourself: does this fit my goals, and do I really have the time? If the answer is no, decline politely and clearly: \"Thank you for asking, but I can't take this on right now.\" You do not need a long excuse.\n\nSaying no does not have to be cold. You can offer a smaller yes, like \"I can't join the project, but I can review it for 15 minutes,\" or suggest a later time. People respect clear limits more than a yes that you deliver late or half-hearted.",
+          "minutes": 6,
+          "content": "Your time is like a plate at a wedding buffet. It can only hold so much. If you say yes to every dish someone offers, there's no room left for the biryani you actually came for. Saying no politely is how you keep space on your plate for the things that matter most to you.\n\nWithout saying no, your day fills up with other people's plans. You agree to join every game, help with every favour, go to every hangout, and then your own homework, practice or rest gets squeezed into late night. You end up tired, behind and a bit annoyed with everyone. When you can say a kind no, your yes means more, and you have time for your own goals.\n\nHere's how to do it. First, know your yes: what are your 1 to 3 priorities this week, like exams, cricket practice or helping at home? Anything that clashes with those needs a careful look. Second, don't answer instantly. Say, \"Let me check and tell you in an hour.\" This pause stops you from saying yes just because it's awkward to refuse.\n\nThird, say no kindly and clearly, with a short reason if you like, and no long excuses. \"Thanks for asking! I can't come today, I have a test tomorrow.\" Fourth, offer a smaller yes or another time if you genuinely want to help: \"I can't play this evening, but I'm free Friday afternoon.\" With adults like parents and teachers, don't just refuse. Explain your plan politely and ask, for example, \"Can I do this after my test on Thursday?\"\n\nTania was the person everyone asked for help. In one week she agreed to design a friend's poster, join two group chats' events and help her cousin with homework. Her own science project was left until the night before. Next week she tried: \"I'd love to help, but I can't this week. Next Saturday I can.\" Her friends were fine with it. She finished her project on time and still helped her cousin on Saturday.\n\nThe common mistake is giving a long, guilty explanation. The longer your excuse, the more it sounds like you can be talked into it. A short, warm no is kinder and clearer for everyone.\n\nRemember: know your priorities, pause before you answer, and say a short, kind no.",
           "key_points": [
-            "Every yes is a no to something else.",
-            "Pause before answering, then check it against your goals.",
-            "Decline politely and briefly, or offer a smaller yes."
+            "Saying no to some things keeps time for what matters most to you.",
+            "Know your 1 to 3 priorities, and pause before answering a request.",
+            "Say no kindly and clearly, with a short reason, not long excuses.",
+            "Offer a smaller yes or another time when you want to help."
           ],
-          "tip": "Keep one ready-made sentence for declining. Having the words ready makes saying no much easier.",
-          "task": "Write your own polite 'no' sentence. Then look at your commitments this week and decline or reduce one that does not fit your priorities.",
+          "tip": "Practise one line you can use anywhere: \"Thanks for asking! I can't this time, but I hope it goes great.\" Say it out loud a few times so it comes easily.",
+          "task": "Write your top 3 priorities for this week, then write one polite no sentence and one \"smaller yes\" sentence you could use for a request you often get.",
           "quiz": [
             {
-              "q": "What is a good first response to an unexpected request?",
+              "q": "Someone asks you to join something. What does the lesson suggest before answering?",
               "options": [
-                "Yes, immediately",
-                "Let me check and get back to you",
-                "Ignore it",
-                "A long excuse"
+                "Say yes right away so they're not upset",
+                "Ignore the message completely",
+                "Pause and say you'll check and reply soon",
+                "Say no to everything without thinking"
+              ],
+              "answer": 2,
+              "explain": "A short pause stops you from saying yes only because refusing feels awkward."
+            },
+            {
+              "q": "Which reply is the best kind of no?",
+              "options": [
+                "Sorry sorry sorry, it's just that my mother might maybe need me and also I have so much...",
+                "Thanks for asking! I can't come today, I have a test tomorrow.",
+                "No.",
+                "Maybe, I'll see, ask me again later."
               ],
               "answer": 1,
-              "explain": "Pausing gives you time to decide if the request fits your goals and time."
+              "explain": "It is short, warm and clear, with one simple reason."
             },
             {
-              "q": "What does 'every yes is a no to something else' mean?",
+              "q": "What did Tania offer instead of a full yes?",
               "options": [
-                "You should never say yes",
-                "Saying yes is always wrong",
-                "Others always come first",
-                "Your time is limited, so each yes takes time from something else"
+                "Money instead of time",
+                "Help next Saturday instead of this week",
+                "To do everyone's work at night",
+                "To quit her science project"
               ],
-              "answer": 3,
-              "explain": "Time is limited. Saying yes to one thing means less time for your own priorities."
-            },
-            {
-              "q": "Which is an example of a 'smaller yes'?",
-              "options": [
-                "I can't join the project, but I can review it for 15 minutes",
-                "Sure, I will do everything",
-                "Maybe, ask me later",
-                "No, never ask me again"
-              ],
-              "answer": 0,
-              "explain": "It helps the other person while still protecting most of your time."
+              "answer": 1,
+              "explain": "A smaller yes or a different time lets you help without losing your own priorities."
             }
           ]
         },
         {
           "id": "prod-3-4",
-          "title": "Single-tasking and batching small tasks",
-          "minutes": 5,
-          "content": "Multitasking feels efficient, but your brain cannot focus on two thinking tasks at once. It switches back and forth, and each switch leaves part of your attention stuck on the last task. Researchers call this attention residue. Ten quick switches in an hour can quietly eat a big part of that hour and make mistakes more likely.\n\nSingle-tasking means one task until a natural stopping point, then the next. But small tasks do not disappear: replies, emails, forms, payments, errands. The trick is to stop doing them the moment they appear and instead group them into batches. Similar tasks done together go faster, because your mind stays in the same mode.\n\nSet fixed times for messages, for example once around midday and once in the late afternoon. Collect other shallow tasks, like booking an appointment or printing a form, on a short list during the day. Then clear the whole list in one 30-minute slot. Your deep work gets long, unbroken stretches, and the small things still get done.",
+          "title": "One thing at a time, small tasks in a batch",
+          "minutes": 6,
+          "content": "Try patting your head and rubbing your tummy while reciting a poem. You'll mess up at least one. Your brain can't truly do two thinking tasks at once. When you \"multitask\", it actually switches back and forth very fast, and each switch costs a little time and attention. Single-tasking means doing one thing until it's done or until a planned stop. Batching means grouping small similar tasks and doing them together in one go.\n\nSwitching makes you slower and sloppier. If you write an essay while replying to chats, the essay takes longer and has more mistakes, and the replies are half-hearted too. Small tasks scattered through the day, like replying to messages or tidying your desk, each break your focus. Single-tasking gives you deeper, faster work. Batching clears the small stuff quickly without wrecking your big tasks.\n\nHere's how to single-task. Before you start, decide the one task and write it on top of a page. Close everything not needed for it, books, tabs, apps. If you remember something else, jot it down and continue. Work until a natural stopping point, like the end of the exercise or the end of a 25-minute timer, before switching.\n\nHere's how to batch. Make a list of small tasks that come up again and again: replying to messages, sharpening pencils and refilling your water bottle, asking parents to sign things, quick tidying. Instead of doing each one when it pops up, do them all in one 15 to 20 minute slot, for example right after school or after dinner. Batch similar things together, like all replies in one go, all errands in one trip to the shop.\n\nRafi did homework while watching cricket and replying to his friends. Maths took 2 hours and he still got three sums wrong. He changed it: TV off, phone away, one subject at a time. All his chat replies and small chores went into one 20-minute slot after dinner. Maths took 45 minutes with no mistakes, and he still caught the last overs of the match.\n\nThe common mistake is thinking you're good at multitasking because you feel busy. Feeling busy is not the same as getting things done. Test it: time yourself doing one homework page with your phone nearby, then without it. The difference usually surprises people.\n\nRemember: big tasks one at a time, small tasks together in a batch.",
           "key_points": [
-            "Each task switch leaves attention behind and costs time.",
-            "Do one task at a time until a natural stopping point.",
-            "Group small, similar tasks into fixed batches instead of doing them as they come."
+            "Your brain switches between tasks, it doesn't truly do two at once.",
+            "Single-tasking: pick one task, close everything else, work to a stopping point.",
+            "Batching: group small similar tasks and do them in one 15 to 20 minute slot.",
+            "Feeling busy is not the same as getting things done."
           ],
-          "tip": "When a small task pops up during deep work, add it to your batch list in five words and keep going.",
-          "task": "Set two fixed message-checking times for tomorrow, and collect all small tasks on one list to clear in a single 30-minute slot.",
+          "tip": "Pick a fixed \"small stuff\" time each day, like 8:30 pm, and whenever a tiny task pops up earlier, add it to that slot's list instead of doing it right away.",
+          "task": "Write down all the small tasks waiting for you right now, like replies, chores and quick favours, and finish them all in one 15-minute batch.",
           "quiz": [
             {
-              "q": "What is attention residue?",
+              "q": "What does your brain actually do when you \"multitask\"?",
               "options": [
-                "Dust that builds up on your desk",
-                "A type of reminder app",
-                "Feeling tired after lunch",
-                "Part of your attention staying on the last task after you switch"
-              ],
-              "answer": 3,
-              "explain": "After a switch, your mind keeps thinking about the old task, so the new one gets less focus."
-            },
-            {
-              "q": "What does batching small tasks mean?",
-              "options": [
-                "Doing each small task the moment it appears",
-                "Grouping similar small tasks and doing them together at a set time",
-                "Ignoring small tasks forever",
-                "Doing small tasks during deep work"
-              ],
-              "answer": 1,
-              "explain": "Doing similar tasks together keeps your mind in one mode and protects your focus time."
-            },
-            {
-              "q": "A small errand pops into your head during deep work. What is the best move?",
-              "options": [
-                "Add it to your batch list and keep working",
-                "Stop and do it immediately",
-                "Try to remember it until evening",
-                "Switch to checking messages too"
+                "It switches back and forth very fast, losing time each switch",
+                "It does both tasks fully at the same time",
+                "It shuts down one side of the brain",
+                "It finishes the easier task automatically"
               ],
               "answer": 0,
-              "explain": "Writing it down keeps the errand safe without breaking your focus."
+              "explain": "Each switch costs time and attention, which is why multitasking is slower."
+            },
+            {
+              "q": "Which is an example of batching?",
+              "options": [
+                "Replying to each message the moment it arrives",
+                "Studying maths while watching cricket",
+                "Replying to all your messages in one 20-minute slot after dinner",
+                "Doing one subject at a time with your phone away"
+              ],
+              "answer": 2,
+              "explain": "Batching groups small similar tasks into one block of time."
+            },
+            {
+              "q": "What happened when Rafi single-tasked his maths?",
+              "options": [
+                "It took 2 hours with three mistakes",
+                "He missed the whole cricket match",
+                "He had to stay up past midnight",
+                "It took 45 minutes with no mistakes"
+              ],
+              "answer": 3,
+              "explain": "Removing switches made his work faster and more accurate."
             }
           ]
         }
@@ -616,95 +628,97 @@
           "id": "prod-4-1",
           "title": "Break big projects into milestones",
           "minutes": 6,
-          "content": "Big goals like a thesis, a semester project or a season of job applications feel scary because they are too large to start. \"Finish the thesis\" is not something you can do on a Tuesday afternoon, so it sits untouched until the deadline is close and panic takes over.\n\nBreak the project into milestones, the clear checkpoints along the way. Start from the deadline and work backward. For a thesis, that might be: topic approved, research done, first draft written, feedback received, final version submitted. Give each milestone a date. Three to five milestones are enough for most projects, and the dates show you early if you are falling behind.\n\nMilestones are still too big to act on, so each one needs a next action, the very first physical step. For \"research done\" the next action might be \"search the library database for five papers on my topic\". You only need the next action for the current milestone. When it is done, write the next one. Big projects get finished one small, concrete step at a time.",
+          "content": "Imagine climbing a long staircase to the tenth floor. If you stare at the top, it feels impossible. But you never climb ten floors at once. You climb one step, then the next, and you rest at each landing. A milestone is a landing: a clear checkpoint in a big project. Breaking a project into milestones turns one scary mountain into a few small hills.\n\nWithout milestones, big projects get left until the end, because \"science fair project\" is too big to know where to start. Then everything happens in a panic in the last two days. With milestones, you always know the next step, you can see if you're falling behind early, and each finished checkpoint gives you a little boost to keep going.\n\nHere's how. Step one: write the final result clearly. Not \"science fair\" but \"a working water filter model with a poster, ready by 20 March\". Step two: list the 3 to 6 big chunks needed to get there, for example: pick the idea, collect materials, build the model, test it, make the poster. Each chunk is a milestone.\n\nStep three: give every milestone a date, working backwards from the deadline. If the fair is on 20 March, maybe the poster is due 18 March, testing 15 March, building done by 12 March, materials by 7 March, idea by 3 March. Step four: break only the first milestone into small tasks you can do this week, like \"look at 3 water filter videos\" and \"ask Abbu for an empty bottle\". You'll break the next milestone when you reach it.\n\nTania had a month to do a solo science project on plants. Last year she had started three days before and cried over a half-done poster. This time she wrote five milestones with dates on a sheet stuck to her wall: choose plant experiment, set up pots, record growth for two weeks, make graph, write poster. She ticked each one off. She finished two days early and won second place in her class.\n\nThe common mistake is planning every tiny task for the whole project on day one. Plans change once you start, so detailed lists for week four will be wrong anyway. Plan milestones for the whole project, but small tasks only for the next one.\n\nRemember: define the finish, split it into dated milestones, and plan small steps only for the next one.",
           "key_points": [
-            "Big projects feel scary because they are too large to start.",
-            "Work backward from the deadline to set three to five dated milestones.",
-            "Always know the concrete next action for the current milestone."
+            "A milestone is a clear checkpoint inside a big project.",
+            "Write the final result clearly, then split it into 3 to 6 milestones.",
+            "Give each milestone a date, working backwards from the deadline.",
+            "Break only the next milestone into small tasks for this week."
           ],
-          "tip": "Put each milestone date in your calendar with a reminder one week before, so deadlines never sneak up on you.",
-          "task": "Choose one big project. List 3 to 5 milestones working backward from the deadline, give each a date, and write the next action for the first one.",
+          "tip": "Leave a buffer: set your last milestone at least two days before the real deadline, because something always takes longer than expected.",
+          "task": "Pick one big project or exam coming up, write its final result in one sentence, and list 3 to 6 milestones with dates.",
           "quiz": [
             {
-              "q": "Why do big projects often get left until the last minute?",
+              "q": "What is a milestone?",
               "options": [
-                "They are not important",
-                "They feel too large and unclear to start",
-                "People enjoy panic",
-                "Deadlines are always too far away"
+                "A clear checkpoint inside a big project",
+                "The final deadline of a project",
+                "A tiny 5-minute task",
+                "A reward you get after finishing"
               ],
-              "answer": 1,
-              "explain": "When a goal is too big to act on today, it is easy to keep postponing it."
+              "answer": 0,
+              "explain": "Milestones are the landings on the staircase between start and finish."
             },
             {
-              "q": "What is the best way to set milestones?",
+              "q": "How should you set milestone dates?",
               "options": [
-                "Pick random dates",
-                "Wait until you feel ready",
-                "Work backward from the deadline",
-                "Set one milestone: the deadline"
-              ],
-              "answer": 2,
-              "explain": "Starting from the deadline shows how much time each stage really has."
-            },
-            {
-              "q": "Which is a good next action for the milestone \"research done\"?",
-              "options": [
-                "Do research",
-                "Become an expert",
-                "Think about the thesis",
-                "Search the library database for five papers on my topic"
+                "Start from today and guess forwards",
+                "Put them all on the deadline day",
+                "Don't give milestones dates at all",
+                "Work backwards from the deadline"
               ],
               "answer": 3,
-              "explain": "It is a specific physical step you can start right away."
+              "explain": "Working backwards makes sure everything fits before the deadline."
+            },
+            {
+              "q": "Why plan small tasks only for the next milestone?",
+              "options": [
+                "Small tasks are not useful",
+                "Teachers don't allow detailed plans",
+                "It's faster to plan nothing at all",
+                "Plans change once you start, so far-off details will be wrong anyway"
+              ],
+              "answer": 3,
+              "explain": "Plan the big shape for everything, but details only for what's next."
             }
           ]
         },
         {
           "id": "prod-4-2",
           "title": "Estimate time honestly",
-          "minutes": 5,
-          "content": "Almost everyone thinks tasks will take less time than they really do. This is called the planning fallacy. Even when we know our last assignment took twice as long as expected, we plan the next one as if everything will go perfectly. That is why days overflow and deadlines feel tight.\n\nIt happens because we imagine the best case. We picture the work itself but forget the small things around it: finding files, getting stuck, interruptions, checking and fixing mistakes. Optimism is not a bad thing, but it makes a poor calendar.\n\nUse data instead of hope. For a while, write your estimate before each task and the actual time after. Soon you will see your personal pattern, for example that you usually take about one and a half times your guess. Until you have your own numbers, add a buffer of about 50 percent: if you think a task takes two hours, plan for three. If you finish early, you have free time, which feels much better than always running late.",
+          "minutes": 6,
+          "content": "Ever said \"I'll be ready in 5 minutes\" and then taken 20? Almost everyone does it. Estimating time means guessing how long a task will really take before you start. Most people guess too short, because they imagine everything going perfectly: no interruptions, no confusion, no searching for a pen.\n\nBad estimates break your whole day. You plan homework from 4 to 5 and cricket at 5, but homework takes until 6, so you either miss cricket or rush the homework. You start the project \"with plenty of time\" and end up pulling an all-nighter. Honest estimates let you plan a day that actually works, keep promises to others, and stop feeling always behind.\n\nHere's how to estimate better. Step one: break the task into parts and guess each part, because smaller guesses are more accurate. \"Biology homework\" becomes \"read the section 15 minutes, answer 5 questions 20 minutes, draw the diagram 15 minutes\", so 50 minutes. Step two: add a buffer of about half again for surprises. 50 minutes becomes about 75. It feels like too much, but surprises always come.\n\nStep three: learn from reality. Write your guess before you start and the real time after you finish. Do this for a week. You'll notice your personal pattern, for example \"I always take about twice as long as I think for writing tasks\". Then use that number: if you guess 30 minutes for an essay, plan 60. The more you compare, the better your guesses get.\n\nSabbir always told his tuition teacher he'd finish practice sheets \"in half an hour\", and always came to class with them half done. He started writing his guess and the real time in the corner of each sheet. After a week, his guesses were 30 minutes and the real times were about 55. Now he plans an hour for each sheet, starts earlier, and brings complete work every time.\n\nThe common mistake is ignoring what happened last time. People think \"this time will be faster\" again and again. It usually isn't. Trust your record of past times more than your hopeful feeling today.\n\nRemember: break it into parts, add a buffer, and check your guesses against reality.",
           "key_points": [
-            "The planning fallacy makes us underestimate how long tasks take.",
-            "We imagine the best case and forget interruptions and small steps.",
-            "Compare estimates with real times, and add about 50 percent as a buffer."
+            "Most people guess too short because they imagine no problems.",
+            "Break a task into parts and estimate each part.",
+            "Add a buffer of about half again for surprises.",
+            "Write your guess and the real time to learn your own pattern."
           ],
-          "tip": "Break a task into parts before estimating. Small parts are easier to guess, and the total is usually more honest.",
-          "task": "Estimate how long three of tomorrow's tasks will take and write the numbers down. Record the actual time each one takes, then compare.",
+          "tip": "Write your time guess in the margin before starting any homework, and the real time when you finish. After a week you'll know your personal multiplier.",
+          "task": "Pick a task you'll do today, break it into parts, write a time guess for each, add a buffer, then note how long it really took.",
           "quiz": [
             {
-              "q": "What is the planning fallacy?",
+              "q": "Why do most people guess too short?",
               "options": [
-                "The habit of underestimating how long tasks will take",
-                "Planning too far ahead",
-                "Refusing to make any plans",
-                "Using the wrong calendar app"
+                "They imagine everything going perfectly with no problems",
+                "They are bad at maths",
+                "Clocks are usually wrong",
+                "Tasks get shorter over time"
               ],
               "answer": 0,
-              "explain": "We tend to plan for the best case, so tasks usually take longer than we expect."
+              "explain": "Real life has interruptions and confusion that we forget to count."
             },
             {
-              "q": "You think a task will take two hours. With a 50 percent buffer, how long should you plan for?",
+              "q": "Your parts add up to 40 minutes. Using the buffer rule, how long should you plan?",
               "options": [
-                "Two hours",
-                "Two and a half hours",
-                "Four hours",
-                "Three hours"
+                "Exactly 40 minutes",
+                "About 20 minutes",
+                "About 4 hours",
+                "About 60 minutes"
               ],
               "answer": 3,
-              "explain": "Fifty percent of two hours is one hour, so you plan for three hours."
+              "explain": "Add about half again for surprises: 40 plus 20 is about 60."
             },
             {
-              "q": "What is the best way to improve your estimates over time?",
+              "q": "How did Sabbir improve his estimates?",
               "options": [
-                "Try to work faster",
-                "Write down estimates and actual times, then compare",
-                "Stop estimating completely",
-                "Ask others to guess for you"
+                "He worked faster without checking anything",
+                "He told his teacher a shorter time",
+                "He wrote his guess and the real time on each sheet for a week",
+                "He stopped doing practice sheets"
               ],
-              "answer": 1,
-              "explain": "Real data shows your personal pattern, so your next guesses become more accurate."
+              "answer": 2,
+              "explain": "Comparing guesses to real times showed his pattern, so he planned better."
             }
           ]
         },
@@ -712,47 +726,48 @@
           "id": "prod-4-3",
           "title": "Time-block your week",
           "minutes": 6,
-          "content": "A to-do list tells you what to do, but not when. Without a time, important tasks wait for a free moment that never comes. Time blocking fixes this by giving each important task its own slot on the calendar, like an appointment with yourself.\n\nStart with what is fixed: classes, work hours, travel and sleep. Next, place your milestones and top priorities, ideally as one or two deep-work blocks of 60 to 90 minutes a day. Then add smaller blocks for messages, errands and chores, and protect real rest, such as meals, exercise and time with family.\n\nDo not fill every minute. Things run late and surprises appear, so leave empty buffer blocks of 30 to 60 minutes each day. When something moves a block, do not delete the task. Drag it to a new slot. A plan that bends is far better than a perfect plan you abandon by Tuesday.",
+          "content": "Think of your week like a train timetable. Each train has a fixed slot, so trains don't crash and everyone knows when to be at the station. Time-blocking means giving your important tasks fixed slots on your calendar, like \"Monday 5 to 6 pm: chemistry\", instead of just hoping you'll find time for them.\n\nA to-do list says what to do, but not when. So tasks float around, and the day fills up with whatever comes first. Without blocks, the important but not urgent work, like revision or practice, keeps getting pushed to tomorrow. With blocks, every important task has a home, you can see if your week is overloaded before it starts, and you stop wasting time deciding what to do next.\n\nHere's how to block a week, ideally during your weekly review. Step one: put in the fixed things first, the ones you can't move: school hours, tuition, coaching, prayer times, family dinner, sleep. Step two: add your top priorities into the empty spaces, using your honest time estimates. For example, \"Sunday 4:30 to 5:30, maths chapter 6\" and \"Tuesday 4:30 to 5:30, English essay\".\n\nStep three: add blocks for small stuff batches and for rest and play. Fun goes on the calendar too: cricket, drawing, time with friends. Step four: leave some empty space, roughly an hour on busy days, for things that run late or pop up. Use a paper weekly planner, a table drawn in your copy, or a free calendar app. When a block arrives, do what it says. If something ruins a block, move the task to another slot instead of dropping it.\n\nNusrat had SSC test exams in three weeks and felt lost. On Saturday she drew a table with days across and hours down. She filled in school, coaching and Maghrib, then put two 50-minute study blocks each weekday, one subject per block, and kept Friday afternoon free for her cousins. When a family wedding ate Tuesday evening, she moved those blocks to Friday morning. She covered every subject before the test.\n\nThe common mistake is packing every minute with no breaks or empty space. The first delay knocks over the whole week like dominoes and you give up. A good block plan has gaps on purpose.\n\nRemember: fixed things first, then priorities, then fun, and leave some empty space.",
           "key_points": [
-            "Give each important task a specific slot, not just a place on a list.",
-            "Place fixed commitments first, then deep work and priorities, then small tasks and rest.",
-            "Leave buffer time and move blocks instead of deleting them."
+            "Time-blocking gives important tasks fixed slots on your calendar.",
+            "Fill in fixed things first, then your top priorities.",
+            "Put rest and fun on the calendar too.",
+            "Leave empty space for delays, and move ruined blocks instead of dropping them."
           ],
-          "tip": "Color your blocks by type, such as deep work, classes, admin and rest. One glance at the week shows if it is balanced.",
-          "task": "Open a calendar and block out next week. Place your milestones and top priorities first, then fixed commitments, rest and at least one buffer block each day.",
+          "tip": "Give each block a specific job, like \"maths exercise 6.2\", not just \"study\", so you can start the moment the block begins.",
+          "task": "Draw a simple table for tomorrow with hours down the side, fill in the fixed things, then add two blocks for your most important tasks and one for fun.",
           "quiz": [
             {
-              "q": "What does time blocking add that a to-do list does not?",
+              "q": "What goes on the weekly plan first?",
               "options": [
-                "More tasks",
-                "A specific time for each important task",
-                "Colorful stickers",
-                "A longer deadline"
+                "Fun activities like cricket",
+                "Small tasks like replying to messages",
+                "Fixed things you can't move, like school, tuition and sleep",
+                "Whatever you feel like on the day"
               ],
-              "answer": 1,
-              "explain": "A task with a time slot has a real chance to happen instead of waiting for a free moment."
+              "answer": 2,
+              "explain": "Fixed things decide which spaces are left for everything else."
             },
             {
-              "q": "Why should you leave buffer blocks in your week?",
+              "q": "A family wedding takes over Nusrat's Tuesday study blocks. What did she do?",
               "options": [
-                "To have time to scroll",
-                "Because planning is pointless",
-                "To make the calendar look full",
-                "Things run late and surprises appear, so the plan needs room to bend"
+                "Dropped those subjects for the week",
+                "Studied during the wedding",
+                "Gave up on the whole plan",
+                "Moved those blocks to Friday morning"
               ],
               "answer": 3,
-              "explain": "Buffers absorb delays so one late task does not break the whole day."
+              "explain": "Move a ruined block to another slot instead of dropping the task."
             },
             {
-              "q": "A meeting takes over your writing block. What is the best move?",
+              "q": "What is the common mistake with time-blocking?",
               "options": [
-                "Move the writing block to another free slot",
-                "Delete the writing task",
-                "Give up on the plan for the week",
-                "Skip sleep to catch up"
+                "Putting fun on the calendar",
+                "Packing every minute with no empty space",
+                "Planning during the weekly review",
+                "Giving each block a specific job"
               ],
-              "answer": 0,
-              "explain": "Moving the block keeps the task alive. The plan is a tool, not a promise you either keep or break."
+              "answer": 1,
+              "explain": "Without gaps, one delay knocks the whole week over."
             }
           ]
         },
@@ -760,47 +775,48 @@
           "id": "prod-4-4",
           "title": "Get group work done",
           "minutes": 6,
-          "content": "Group work often stalls for one simple reason: everyone thinks someone else is doing it. When a task belongs to \"the team\", it usually belongs to nobody. Shared work moves when every task has one clear owner and a date.\n\nAt the start, split the work into tasks and write one name next to each, even if others help. Add a deadline for each task, written down, not just said in a meeting. Keep everything in one simple shared tracker, such as a group chat pinned message, a shared document or a spreadsheet with three columns: task, owner, due date. Everyone can see what is done and what is waiting.\n\nDo not wait silently when something is late. A short, friendly follow-up works better than hoping: \"Hi, how is the survey going? Do you need anything to finish by Thursday?\" Hold quick check-ins, five to ten minutes, once or twice a week. Small, early nudges prevent big last-minute panics.",
+          "content": "Group work is like a cricket team. If all eleven players run for the same ball, the other side scores easily. Each player needs a position: bowler, keeper, slip, deep fine leg. A group project works the same way. It goes well when everyone knows their job, the deadline for it, and how the team will talk.\n\nWithout a plan, group work goes wrong in familiar ways. One person does everything and feels angry. Two people do the same part and nobody does another. The group chat fills with \"so what are we doing?\" until the night before submission. With a simple plan, the work gets shared fairly, nothing gets missed, and you actually finish early.\n\nHere's how to set it up in the first meeting, which can be 15 minutes at tiffin break. Step one: agree on the final result together. What exactly are you submitting, how long, and by when? Step two: split the work into clear parts and give each part one owner by name. For example: \"Rafi, research and 3 facts by Tuesday. Tania, poster design by Thursday. Sabbir, the speech by Thursday. Nusrat, putting it all together on Saturday.\"\n\nStep three: write the plan down where everyone can see it, like a pinned message in the group chat, with names and dates. Step four: agree on short check-ins, for example a 5-minute talk every second day at school, or one message each evening: \"done, doing, stuck\". If someone is stuck, help early instead of waiting. If someone isn't doing their part, talk to them kindly first, and if that fails, tell your teacher early, not on the last day.\n\nLast year Sabbir's group of four had a social science project. Nobody planned, so he ended up doing almost all of it at 1 am. This year he suggested a 15-minute tiffin meeting. They split the work into four parts, each with a name and a date, and pinned it in the group chat. Every evening each person sent one line. They finished a day early, and for once nobody was angry.\n\nThe common mistake is splitting work as \"everyone does a bit of everything\" or leaving owners vague, like \"we'll all do research\". When a job belongs to everybody, it belongs to nobody. Every part needs exactly one name.\n\nRemember: agree on the goal, give every part one owner and a date, write it down, and check in often.",
           "key_points": [
-            "A task owned by everyone is owned by nobody, so give each one a single owner.",
-            "Write deadlines down and keep tasks in one shared tracker.",
-            "Follow up early and briefly instead of waiting."
+            "Agree together on what you're submitting and by when.",
+            "Split the work into parts and give each part one named owner and a date.",
+            "Write the plan where everyone can see it, like a pinned group chat message.",
+            "Do short check-ins, and raise problems early, not on the last day."
           ],
-          "tip": "End every group meeting by reading the list aloud: who does what, by when. It takes one minute and prevents most confusion.",
-          "task": "For a current group project or team task, write a simple list of who owns what and by when, then share it with the group today.",
+          "tip": "End every group meeting by having each person say out loud what they'll do and by when, then pin those lines in the group chat.",
+          "task": "Think of a current or recent group task and write a plan for it: the final result, 3 to 5 parts, one name and one date for each part.",
           "quiz": [
             {
-              "q": "Why do shared tasks often stall?",
+              "q": "In a group plan, how many owners should each part have?",
               "options": [
-                "Groups are always lazy",
-                "The tasks are too hard",
-                "Everyone assumes someone else is doing it",
-                "There are too many deadlines"
+                "Everyone in the group",
+                "Nobody, people choose on the day",
+                "Exactly one named person",
+                "Two people who share it equally"
               ],
               "answer": 2,
-              "explain": "Without one named owner, each person can assume the task is someone else's job."
+              "explain": "When a job belongs to everybody, it belongs to nobody."
             },
             {
-              "q": "What should a simple shared tracker show?",
+              "q": "What did Sabbir's group do differently this year?",
               "options": [
-                "Task, owner and due date",
-                "Only the final deadline",
-                "Everyone's grades",
-                "Meeting jokes"
+                "Let Sabbir do all the work again",
+                "Held a short tiffin meeting and pinned a plan with names and dates",
+                "Started the night before submission",
+                "Worked without talking to each other"
+              ],
+              "answer": 1,
+              "explain": "A short meeting and a visible plan shared the work fairly."
+            },
+            {
+              "q": "A teammate isn't doing their part. What does the lesson suggest?",
+              "options": [
+                "Talk to them kindly first, then tell the teacher early if needed",
+                "Quietly do their part yourself at night",
+                "Tell the teacher on the last day",
+                "Remove them from the group chat"
               ],
               "answer": 0,
-              "explain": "These three columns make it clear what is done, what is waiting and who to ask."
-            },
-            {
-              "q": "A teammate's part is two days late. What is the best first step?",
-              "options": [
-                "Wait and hope it arrives",
-                "Do their part yourself without saying anything",
-                "Complain to everyone else",
-                "Send a short, friendly follow-up and ask if they need help"
-              ],
-              "answer": 3,
-              "explain": "An early, kind nudge usually solves the problem before it becomes a crisis."
+              "explain": "Raise the problem early, kindly first, while there is still time to fix it."
             }
           ]
         }
@@ -814,47 +830,48 @@
           "id": "prod-5-1",
           "title": "Match tasks to your peak hours",
           "minutes": 6,
-          "content": "Your attention is not the same all day. Most people have a few hours when their mind is sharp, a slump when it feels heavy, and a period that is in between. An hour of hard thinking in your best window can produce more than three hours in your slump.\n\nFind your pattern by noticing it, not guessing. For three normal days, rate your focus from 1 to 5 every two hours and write a word about how you feel. Many people peak in the late morning, but some are sharpest early or late at night. Your log will show your real pattern, and it may differ on weekdays and weekends.\n\nThen match the work to the energy. Put your hardest thinking, like writing, studying or problem solving, in your peak window and protect it from meetings and messages. Save routine tasks, such as email, admin and tidying, for low-energy times. You are not working more hours. You are using the same hours better.",
+          "content": "Your energy is like the tide at Cox's Bazar. It goes up and down through the day in a pattern. Most people have a time when their brain is sharpest, often a few hours after waking, and a slump, often after lunch. Matching tasks to your peak hours means doing your hardest thinking when your energy is high, and saving easy jobs for when it's low.\n\nIf you get this backwards, you waste your best hours. Many students spend their fresh morning on easy things like scrolling or chatting, then try to learn tough maths at 11 pm when their brain is half asleep. It takes twice as long and still doesn't stick. When you put hard work in your peak time, the same task feels easier and goes faster.\n\nHere's how to find your peak. For 3 to 5 days, rate your energy from 1 to 5 every two hours or so, and jot it in a note: \"8 am: 3, 10 am: 5, 2 pm: 2, 5 pm: 4, 9 pm: 2\". Pay attention to when focusing feels easy and when your eyes start drooping. Look for your highest and lowest numbers. Many people find a high in the morning and another, smaller high in the late afternoon.\n\nThen sort your tasks into three types. Hard thinking tasks, like new maths, physics problems or writing an essay, go in your peak hours. Medium tasks, like revision or reading, go in the medium hours. Easy tasks, like packing your bag, copying notes, tidying or replying to messages, go in the slump. On school days, your peak may be in class, so use your best free slot, for example straight after an afternoon snack. Also protect your sleep, because a tired brain has no real peak.\n\nRafi always did his hardest homework at 10 pm after watching TV, and kept making silly mistakes. He tracked his energy for four days and found his afternoon high was at 4:30 to 6 pm, after a snack and a short rest. He moved maths to 4:30 and left easy stuff like copying notes for after dinner. His mistakes dropped and he went to bed an hour earlier.\n\nThe common mistake is copying someone else's schedule, like \"successful people wake at 5 am\". Your peak is yours. Some people are sharp early, others later. Track your own energy and plan around it, while still getting enough sleep.\n\nRemember: find your sharpest hours, and put your hardest task there.",
           "key_points": [
-            "Focus rises and falls through the day in a pattern.",
-            "Rate your focus every two hours for three days to find your peak.",
-            "Do hard thinking in the peak and routine tasks in the slump."
+            "Your energy goes up and down through the day in a pattern.",
+            "Track your energy from 1 to 5 for a few days to find your peak and slump.",
+            "Do hard thinking tasks in your peak and easy tasks in your slump.",
+            "Your peak is personal, so don't just copy someone else's routine."
           ],
-          "tip": "Guard your peak window like a meeting. Do not spend it on email just because email feels urgent.",
-          "task": "For the next three days, rate your focus from 1 to 5 every two hours. Then move your hardest task into your best window.",
+          "tip": "Save a list of easy \"slump tasks\", like sharpening pencils or sorting notes, so when your energy drops you still get something useful done.",
+          "task": "Start an energy log today: write your energy from 1 to 5 right now and set a reminder to rate it again every two hours until bedtime.",
           "quiz": [
             {
-              "q": "How should you find your peak hours?",
+              "q": "Which task belongs in your peak energy hours?",
               "options": [
-                "Guess based on how you feel today",
-                "Rate your focus regularly for a few days and look for the pattern",
-                "Copy a famous person's schedule",
-                "Assume everyone peaks at 6 a.m."
-              ],
-              "answer": 1,
-              "explain": "A short log shows your real pattern instead of what you imagine it to be."
-            },
-            {
-              "q": "What kind of task belongs in your low-energy time?",
-              "options": [
-                "Writing a difficult report",
-                "Studying for a hard exam",
-                "Solving a tricky problem",
-                "Answering routine emails"
+                "Packing your school bag",
+                "Replying to messages",
+                "Tidying your desk",
+                "Learning a new maths chapter"
               ],
               "answer": 3,
-              "explain": "Routine work needs little deep focus, so it fits the hours when your mind is tired."
+              "explain": "Hard thinking tasks need your sharpest brain."
             },
             {
-              "q": "What is the main idea of matching tasks to energy?",
+              "q": "How do you find your peak hours?",
               "options": [
-                "Using the same hours better, not working more hours",
-                "Working only when you feel like it",
-                "Sleeping more during the day",
-                "Doing easy tasks first so the day feels productive"
+                "Ask a friend when they study best",
+                "Rate your energy from 1 to 5 every couple of hours for a few days",
+                "Always study at 5 am like successful people",
+                "Study only when you feel like it"
               ],
-              "answer": 0,
-              "explain": "The right task at the right time gets better results from the time you already have."
+              "answer": 1,
+              "explain": "Your own record shows your real pattern."
+            },
+            {
+              "q": "What did Rafi change after tracking his energy?",
+              "options": [
+                "He started studying at midnight",
+                "He stopped doing homework on weekdays",
+                "He drank more tea at 10 pm",
+                "He moved maths to 4:30 pm and easy tasks to after dinner"
+              ],
+              "answer": 3,
+              "explain": "Putting hard work in his afternoon high cut his mistakes."
             }
           ]
         },
@@ -862,143 +879,146 @@
           "id": "prod-5-2",
           "title": "The 80/20 rule and good enough",
           "minutes": 6,
-          "content": "The Pareto principle, often called the 80/20 rule, says that a small part of what you do creates most of your results. The numbers are not exact, but the pattern shows up everywhere: a few study topics carry most of the exam marks, a few clients bring most of the income, a few habits drive most of your health.\n\nFind your vital few. List what you spend your week on, then ask of each item: if I stopped this, what would really change? Mark the 20 percent that drive most of your results and give them your best time. The rest you can shrink, batch, hand off or drop.\n\nThe same rule applies inside a task. The first 80 percent of quality often comes quickly, while the last 20 percent of polishing takes most of the time and few people notice it. Before you start, decide what \"done\" looks like. When you reach that standard, stop and move on. Perfection on small things steals time from big things.",
+          "content": "Imagine you're cleaning your room before guests arrive in 15 minutes. Clearing the bed and the floor makes the room look mostly clean. Polishing every shelf would take an hour and barely anyone would notice. That's the 80/20 rule: often, a small part of the effort, roughly 20 percent, gives most of the result, roughly 80 percent. The numbers are not exact. The idea is that some work matters much more than the rest.\n\nWithout this idea, you spend hours on the parts that don't matter much, like decorating a title for 40 minutes, and run out of time for the part that gets the marks. Or you keep polishing one thing forever because it isn't perfect. With 80/20 thinking, you put your effort where it pays off, finish on time, and stop wearing yourself out chasing perfect.\n\nHere's how to use it. Before a task, ask: which few parts give most of the result? For an exam, that's usually the topics that come up most often and carry the most marks. Check past papers and your syllabus to find them. For a project, it's the parts the teacher grades, not the fancy borders. Do those parts first and do them well.\n\nThen decide what \"good enough\" looks like before you start. Write it down: \"Poster has a clear title, 3 key facts, 1 diagram, no spelling mistakes.\" When you reach that, you're done, or you add extras only if you have spare time. Good enough doesn't mean sloppy. It means meeting the real standard without wasting hours on tiny improvements nobody asked for.\n\nNusrat used to spend most of her revision time making beautiful colourful notes for every chapter, and ran out of time to practise questions. Before her final exam, she looked at the last five years' papers and noticed that four chapters carried most of the marks. She practised questions from those first, kept her notes simple, and covered the rest lightly. Her marks went up, and she slept properly the night before.\n\nThe common mistake is using 80/20 as an excuse to skip things completely. The other 20 percent of results still matters, especially in exams where any chapter can appear. The rule tells you what to do first and best, not what to ignore forever.\n\nRemember: find the few parts that matter most, do them first, and stop at good enough.",
           "key_points": [
-            "A small share of your activities produces most of your results.",
-            "Find your vital few and give them your best time.",
-            "Set a 'done' standard before you start and stop when you reach it."
+            "A small part of the work often gives most of the result.",
+            "Find the high-value parts first, like exam topics that carry the most marks.",
+            "Decide what \"good enough\" looks like before you start.",
+            "80/20 decides what to do first, not what to skip forever."
           ],
-          "tip": "Ask: who will notice the difference? If nobody will, the task is already good enough.",
-          "task": "List your weekly activities and mark the 20 percent that drive most of your results. Then pick one task you tend to over-polish and write its 'done' standard.",
+          "tip": "Before you start any project, write one line: \"Done means...\" and list 3 to 4 things it needs. Stop polishing when they're all there.",
+          "task": "Take one subject's syllabus or past paper and circle the 3 topics that carry the most marks, then plan to revise those first this week.",
           "quiz": [
             {
-              "q": "What does the 80/20 rule suggest?",
+              "q": "What does the 80/20 rule say?",
               "options": [
-                "Work 80 hours a week",
-                "Spend 20 percent of your time resting",
-                "A small part of your work creates most of your results",
-                "Every task matters equally"
+                "You should work 80 hours and rest 20",
+                "Always finish 80 percent of tasks and skip 20 percent",
+                "A small part of the effort often gives most of the result",
+                "Work 20 minutes and rest 80 minutes"
               ],
               "answer": 2,
-              "explain": "Spotting that small, powerful part lets you focus your best effort where it pays off."
+              "explain": "The numbers are rough, but some work matters much more than the rest."
             },
             {
-              "q": "How can you find your vital few activities?",
+              "q": "How did Nusrat find which chapters mattered most?",
               "options": [
-                "Ask of each one: if I stopped this, what would really change?",
-                "Pick the ones you enjoy most",
-                "Pick the ones that take the longest",
-                "Do whatever others are doing"
+                "She picked the shortest chapters",
+                "She asked which chapters were easiest",
+                "She looked at the last five years' exam papers",
+                "She made colourful notes for every chapter"
+              ],
+              "answer": 2,
+              "explain": "Past papers showed which chapters carried most of the marks."
+            },
+            {
+              "q": "What is the common mistake with the 80/20 rule?",
+              "options": [
+                "Using it as an excuse to skip the rest completely",
+                "Doing the high-value parts first",
+                "Deciding what good enough means",
+                "Checking past papers"
               ],
               "answer": 0,
-              "explain": "Activities whose absence would hurt your results the most are the ones that truly matter."
-            },
-            {
-              "q": "Why set a 'done' standard before starting a task?",
-              "options": [
-                "So you can start later",
-                "To make the task harder",
-                "So others can finish it",
-                "So you know when to stop instead of polishing forever"
-              ],
-              "answer": 3,
-              "explain": "A clear finish line stops the last, low-value polishing from eating your time."
+              "explain": "The rule sets your order, but the rest still matters, especially in exams."
             }
           ]
         },
         {
           "id": "prod-5-3",
           "title": "Get back on track after a bad week",
-          "minutes": 5,
-          "content": "Every system breaks sometimes. You get sick, a family event takes over, or you simply lose a week to stress and scrolling. This is not proof that you have failed. It is a normal part of being human. What matters is how quickly and calmly you restart.\n\nGuilt makes restarting harder, because it makes the plan feel heavy. Skip the long self-criticism and use a quick reset instead. In 15 minutes, empty your inbox onto paper, check your calendar for the next few days and choose just one or two tasks for today. Make the first plan smaller than usual. A small win rebuilds momentum faster than an ambitious plan you cannot meet.\n\nThen use the \"never miss twice\" rule. Missing one day or one weekly review is an accident. Missing twice is the start of a new habit. So the day after a slip, do something, even a tiny version: one Pomodoro, one page, a five-minute review. Showing up small is what keeps a system alive.",
+          "minutes": 6,
+          "content": "Imagine you're riding a bicycle and you wobble off the path into the grass. You don't throw the bicycle away. You stop, steer back onto the path and keep riding. A bad week is that wobble. Maybe you were sick, there was a wedding, or you just lost motivation and your routine fell apart. Getting back on track means restarting quickly and calmly, without trying to fix everything at once.\n\nThe real damage of a bad week isn't the week itself. It's what comes after: \"I've already ruined it, so what's the point?\" One missed week turns into a missed month. Or you panic and try to catch up on everything in one night, burn out and fall behind again. If you know how to restart, a bad week is just a small bump.\n\nHere's a simple restart plan. Step one: don't punish yourself. Say, \"That week went badly. That's normal. I'm restarting today.\" Step two: do a quick reset, 15 minutes. Write every pending task on one list, check what's actually due soon, and delete or postpone anything that no longer matters. Usually the list is shorter than it felt.\n\nStep three: pick just the top 3 things that are most urgent and important, like the assignment due Monday and the test on Wednesday. Ignore the rest for now. Step four: restart your habits at a smaller size. If you used to study 2 hours, start with 30 minutes today. If you did 20 push-ups, do 5. Getting back into motion matters more than the amount. Over the next few days, grow it back to normal.\n\nSabbir got dengue and missed nine days of school. When he recovered, he looked at his pile of missed work and felt like giving up. His mother helped him make one list. He asked a friend for class notes, checked dates, and found only three things due soon. He did those first, studying 40 minutes a day at the start, then back to his normal 90 minutes by the second week. Within three weeks he had caught up.\n\nThe common mistake is waiting for a \"fresh start\" like next Monday or the first of the month. Waiting adds more days to the bad stretch. The best day to restart is today, with a small step.\n\nRemember: no guilt, one list, top 3 tasks, and restart small today.",
           "key_points": [
-            "Every system breaks sometimes; slipping is normal, not failure.",
-            "Use a quick 15-minute reset and start with a smaller plan.",
-            "Never miss twice: the day after a slip, do a tiny version."
+            "A bad week is normal, and the danger is giving up afterwards.",
+            "Do a 15-minute reset: one list, check due dates, delete what no longer matters.",
+            "Pick only the top 3 urgent and important tasks to start.",
+            "Restart habits at a smaller size, today, not next Monday."
           ],
-          "tip": "Write your reset routine down now, while things are calm. On a bad day, you will not want to think, only to follow steps.",
-          "task": "Write your personal 15-minute reset routine as a short checklist of 3 to 5 steps, and use it the next time a day or week goes off plan.",
+          "tip": "Keep a \"minimum day\" plan for hard times, like 20 minutes of study and 5 push-ups. On bad days, doing just the minimum keeps the chain alive.",
+          "task": "Write your own minimum day plan: the smallest version of your study and other habits that you could do even on your worst day.",
           "quiz": [
             {
-              "q": "Your plan fell apart last week. What is the best way to see it?",
+              "q": "According to the lesson, what is the real danger of a bad week?",
               "options": [
-                "Proof that planning does not work for you",
-                "A normal event that you can restart from calmly",
-                "A reason to start over next month",
-                "A sign you need a stricter plan"
+                "Thinking \"it's ruined anyway\" and giving up afterwards",
+                "Losing all your friends",
+                "Being punished at school",
+                "Forgetting how to study forever"
               ],
-              "answer": 1,
-              "explain": "Every system slips sometimes. Seeing it calmly makes restarting quick and easy."
+              "answer": 0,
+              "explain": "The week is a bump. Giving up after it is what turns it into a long fall."
             },
             {
-              "q": "Why should your first plan after a bad week be smaller?",
+              "q": "After nine sick days, what did Sabbir do first?",
               "options": [
-                "Small plans are always better",
-                "So you can rest all week",
-                "A small win rebuilds momentum faster",
-                "Big plans are not allowed"
-              ],
-              "answer": 2,
-              "explain": "Meeting a small plan gives you confidence and energy to build back up."
-            },
-            {
-              "q": "What does the 'never miss twice' rule mean after a slip?",
-              "options": [
-                "Do double the work the next day",
-                "Wait until Monday to restart",
-                "Never make a mistake again",
-                "Do at least a tiny version the very next day"
+                "Tried to finish all missed work in one night",
+                "Waited for the first of the next month",
+                "Skipped all the missed work",
+                "Made one list, checked dates, and did the three tasks due soon"
               ],
               "answer": 3,
-              "explain": "One miss is an accident. Showing up small the next day stops it from becoming a new habit."
+              "explain": "One list and the top few tasks made the pile manageable."
+            },
+            {
+              "q": "When is the best time to restart after a bad week?",
+              "options": [
+                "Next Monday",
+                "Today, with a small step",
+                "The first day of next month",
+                "When you feel fully motivated"
+              ],
+              "answer": 1,
+              "explain": "Waiting for a fresh start just adds more lost days."
             }
           ]
         },
         {
           "id": "prod-5-4",
-          "title": "Design your personal productivity system",
+          "title": "Build your own productivity system",
           "minutes": 7,
-          "content": "You have learned many tools: one trusted inbox, a short daily list, priorities, focus blocks, habits, time blocks and the weekly review. Used one by one, they help a little. Joined into one simple system, they run your week almost on their own.\n\nKeep it simple and fit it to your life. Daily: capture everything in your inbox, pick your top three, and do your hardest task in your peak hours. Weekly: empty your inbox, review last week, choose three outcomes and time-block the next week. Monthly: check your big projects and milestones, and ask what to start, stop or change. Use as few tools as possible, such as one notes app and one calendar.\n\nWrite it down as a one-page personal operating manual, so you follow steps instead of deciding each time. Then test it for two weeks. Notice which parts help and which feel like a chore, and adjust in your weekly review. The best system is not the most clever one. It is the one you actually use.",
+          "content": "Think of the tools from this course like the parts of a bicycle: wheels, chain, brakes, handlebar. Each part is useful, but you only go somewhere when they're put together. A personal productivity system is your own simple set of habits and tools that work together: where you catch tasks, how you choose what matters, when you plan, and how you protect your focus.\n\nWithout a system, you use a trick for a few days, then forget it and go back to chaos. You keep starting over. With a simple system, these tools run every day and every week without much thinking, so you stay on top of school, home and your own goals, even in busy or stressful weeks.\n\nHere's a simple system you can build from what you've learned. Daily: catch everything in one inbox as it comes up. Each evening, take 10 minutes to clear the inbox and write tomorrow's list of 3 to 5 tasks with one starred task. During the day, do your starred task in your peak hours, use pomodoros for focus, keep your phone out of sight, and batch small tasks into one slot.\n\nWeekly: once a week, do your 15 to 20 minute review. Look back, clear up, check next week's calendar, pick your top 3 goals, and time-block the main study sessions, fun and empty space. For big projects, set milestones with dates and break only the next one into tasks. Keep your tools few: one notebook or one notes app, one calendar, one inbox. More tools means more places for things to get lost.\n\nTania tried a new app every month and never stuck with any. She decided to keep it simple: one small notebook with an inbox page at the back, a daily list at the front, and a weekly review every Friday after Jumma using a paper calendar. At first she forgot the evening routine twice a week, so she linked it to after-dinner tea. Three months later, she rarely missed deadlines and felt calmer before exams.\n\nThe common mistake is building a giant, perfect system on day one, with colour codes, five apps and a two-hour weekly plan. It collapses within a week. Start with just two pieces, an inbox and a daily list, use them for two weeks, then add the weekly review, then time-blocking. A small system you use beats a perfect one you don't.\n\nRemember: one inbox, a daily list, a weekly review, and add more only when those stick.",
           "key_points": [
-            "Join your tools into one simple daily, weekly and monthly routine.",
-            "Use as few apps and steps as possible, fitted to your own life.",
-            "Write it on one page, test it for two weeks and adjust it."
+            "A productivity system is a simple set of habits and tools that work together.",
+            "Daily: one inbox, a 10-minute evening plan, the starred task in your peak hours.",
+            "Weekly: a 15 to 20 minute review, top 3 goals and time blocks.",
+            "Start with two pieces and add more only when they stick."
           ],
-          "tip": "If a step feels like a chore for two weeks in a row, cut it or make it smaller. A lighter system you keep beats a perfect one you drop.",
-          "task": "Write a one-page personal operating manual with your daily, weekly and monthly routines. Put it where you will see it and follow it for the next two weeks.",
+          "tip": "Keep everything in as few tools as possible: one notebook or notes app, one calendar. If you find yourself checking four places, merge them.",
+          "task": "Write your system on one page: where your inbox is, when you'll do your 10-minute evening plan, and which day and time you'll do your weekly review.",
           "quiz": [
             {
-              "q": "What makes a personal productivity system work best?",
+              "q": "What should you start with when building your system?",
               "options": [
-                "Using as many apps as possible",
-                "Copying an expert's system exactly",
-                "Keeping it simple enough that you actually use it",
-                "Changing it every day"
+                "Five apps with colour codes",
+                "Just two pieces, an inbox and a daily list",
+                "A two-hour weekly plan",
+                "Every tool from the course on day one"
               ],
-              "answer": 2,
-              "explain": "A system only helps if you follow it, and simple systems are the ones people keep."
+              "answer": 1,
+              "explain": "A small system you actually use beats a perfect one that collapses."
             },
             {
-              "q": "Which routine belongs in the weekly part of your system?",
+              "q": "How did Tania stop forgetting her evening routine?",
               "options": [
-                "Empty your inbox, review the week and time-block the next one",
-                "Check your big projects once a year",
-                "Capture a single idea",
-                "Do nothing until Monday"
+                "She downloaded a new app",
+                "She linked it to her after-dinner tea",
+                "She did it only on weekends",
+                "She gave up the evening routine"
+              ],
+              "answer": 1,
+              "explain": "Linking it to an existing habit, like in the habits lesson, made it stick."
+            },
+            {
+              "q": "Why does the lesson say to keep your tools few?",
+              "options": [
+                "More tools means more places for things to get lost",
+                "Tools are expensive",
+                "Teachers check your tools",
+                "Fewer tools look neater"
               ],
               "answer": 0,
-              "explain": "The weekly review keeps your inbox clean and your next week planned."
-            },
-            {
-              "q": "Why write your system down as a one-page manual?",
-              "options": [
-                "To show it to others",
-                "Because long documents are better",
-                "So you never need to change it",
-                "So you follow steps instead of deciding each time"
-              ],
-              "answer": 3,
-              "explain": "Written steps remove daily decisions, which makes the system easier to follow on busy days."
+              "explain": "One notebook, one calendar and one inbox keep everything in sight."
             }
           ]
         }
