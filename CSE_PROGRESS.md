@@ -11,23 +11,23 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | # | Id | Course | Status |
 |---|---|---|---|
 | 1 | cse-1-1 | Introduction to Computer Systems | done |
-| 2 | cse-1-2 | Structured Programming (C) | in progress |
-| 3 | cse-1-3 | Discrete Mathematics | in progress |
-| 4 | cse-1-4 | Calculus & Differential Equations | in progress |
-| 5 | cse-1-5 | Electrical Circuits | in progress |
+| 2 | cse-1-2 | Structured Programming (C) | done |
+| 3 | cse-1-3 | Discrete Mathematics | done |
+| 4 | cse-1-4 | Calculus & Differential Equations | done |
+| 5 | cse-1-5 | Electrical Circuits | done |
 
 ## 2nd Year
 
 | # | Id | Course | Status |
 |---|---|---|---|
-| 6 | cse-2-1 | Object Oriented Programming | in progress |
-| 7 | cse-2-2 | Data Structures | in progress |
-| 8 | cse-2-3 | Digital Logic Design | todo |
-| 9 | cse-2-4 | Electronic Devices & Circuits | todo |
-| 10 | cse-2-5 | Linear Algebra | todo |
-| 11 | cse-2-6 | Probability & Statistics | todo |
-| 12 | cse-2-7 | Complex Variables, Fourier & Laplace Transforms (Math III) | todo |
-| 13 | cse-3-1 | Algorithms (Design & Analysis) | todo |
+| 6 | cse-2-1 | Object Oriented Programming | done |
+| 7 | cse-2-2 | Data Structures | done |
+| 8 | cse-2-3 | Digital Logic Design | in progress |
+| 9 | cse-2-4 | Electronic Devices & Circuits | in progress |
+| 10 | cse-2-5 | Linear Algebra | in progress |
+| 11 | cse-2-6 | Probability & Statistics | in progress |
+| 12 | cse-2-7 | Complex Variables, Fourier & Laplace Transforms (Math III) | in progress |
+| 13 | cse-3-1 | Algorithms (Design & Analysis) | in progress |
 | 14 | cse-3-2 | Computer Architecture & Organization | todo |
 | 15 | cse-3-3 | Microprocessors & Assembly Language | todo |
 | 16 | cse-3-4 | Numerical Methods | todo |
