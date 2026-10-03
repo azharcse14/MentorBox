@@ -167,7 +167,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadError.
   ///
   /// In en, this message translates to:
-  /// **'The lessons could not be loaded. Check that assets/content/mentors.json is valid JSON and listed in pubspec.yaml.\n\n{error}'**
+  /// **'The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n{error}'**
   String loadError(String error);
 
   /// No description provided for @exploreLabel.

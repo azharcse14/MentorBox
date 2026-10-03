@@ -36,14 +36,15 @@ The database uses `sqflite`, which supports Android, iOS and macOS. Web, Windows
 ## Project structure
 
 ```
-assets/content/mentors.json   all mentoring content (edit this to add lessons)
+assets/content/index.json     content_version and category order
+assets/content/en/, bn/       one file per category and language (edit these to add lessons)
 assets/fonts/                 bundled fonts (SIL Open Font License)
 lib/
   main.dart
   theme.dart                  colors and text styles
   data/
     app_database.dart         SQLite schema
-    content_seeder.dart       copies mentors.json into the database
+    content_seeder.dart       copies assets/content/ into the database
     mentor_repository.dart    every database read and write
     models.dart               MentorCategory, Level, Lesson, QuizQuestion, LessonProgress
   logic/
@@ -55,9 +56,9 @@ test/mentor_engine_test.dart  tests for the mentor logic
 
 ## Adding or changing content
 
-1. Open `assets/content/mentors.json`.
-2. Add a category, a level or a lesson following the existing ones. Each lesson needs a unique `id`, a `title`, `minutes`, `content` (paragraphs separated by a blank line, written as `\n\n`), `key_points`, `tip`, `task` and a `quiz`. In each quiz question, `answer` is the position of the correct option, starting at 0.
-3. Increase `content_version` by 1. On the next launch the app reloads the content.
+1. Open the category's file in both `assets/content/en/` and `assets/content/bn/` (same ids in both). A new category gets a new `<id>.json` in each folder and its id in the `categories` list of `assets/content/index.json`, in display order.
+2. Add a level or a lesson following the existing ones. Each lesson needs a unique `id`, a `title`, `minutes`, `content` (paragraphs separated by a blank line, written as `\n\n`), `key_points`, `tip`, `task` and a `quiz`. In each quiz question, `answer` is the position of the correct option, starting at 0.
+3. Increase `content_version` in `assets/content/index.json` by 1. On the next launch the app reloads the content.
 
 Progress is stored by lesson `id`, so keep existing ids unchanged or learners will lose progress on those lessons. A new category needs an image in `assets/images/` and a `color` like `"#5E8C8A"`.
 

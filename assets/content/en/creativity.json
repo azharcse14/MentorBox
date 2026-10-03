@@ -1,0 +1,1008 @@
+{
+  "id": "creativity",
+  "name": "Creativity",
+  "mentor": "Create Mentor",
+  "tagline": "Find more ideas, beat creative block and make things people want to see.",
+  "description": "Creativity is a skill you can practise, not a gift you either have or lack. These lessons cover generating ideas, getting unstuck, seeing like a photographer, telling stories, sharing your work and building a steady creative practice.",
+  "image": "assets/images/creativity.jpg",
+  "color": "#C2A04A",
+  "messages": {
+    "welcome": "You are more creative than you think. We will start small: one idea, one sketch, one photo at a time.",
+    "comeback": "Welcome back. No masterpiece needed today. Make one small, messy thing and the rest will follow.",
+    "pass": "Nicely done. You are starting to see the world like a maker.",
+    "fail": "First drafts are supposed to be rough. Read the explanations, look at the lesson again and give it another try.",
+    "finished": "You can now generate ideas on demand, push through creative block, compose a strong photo, shape a story, share your work and keep a practice going. Pick one small project and finish it this week."
+  },
+  "levels": [
+    {
+      "id": "create-1",
+      "title": "Spark ideas",
+      "lessons": [
+        {
+          "id": "create-1-1",
+          "title": "Creativity is a skill, not a talent",
+          "minutes": 5,
+          "content": "Many people say \"I am just not creative\", as if creativity were something you are born with or without. In reality, creativity is mostly about combining things that already exist in new ways. A new recipe mixes familiar ingredients, and a new song reuses notes everyone already knows.\n\nBecause it is about combining, creativity grows with practice and input. The more you notice, try and make, the more pieces you have to connect. People who seem naturally creative usually just have more practice and give themselves permission to try odd ideas.\n\nSo instead of asking \"Am I creative?\", ask \"How can I practise?\" Small daily habits, like looking at ordinary objects and asking what else they could be, train the same muscle that artists, designers and inventors use every day.",
+          "key_points": [
+            "Creativity means combining existing ideas in new ways.",
+            "It grows with practice and varied input, not with luck at birth.",
+            "Ask how you can practise, not whether you are creative."
+          ],
+          "tip": "When you catch yourself thinking \"I am not creative\", replace it with \"I have not practised this yet\". The second sentence leaves room to grow.",
+          "task": "Look around and list 5 everyday things near you, like a bucket, a spoon or an old newspaper. For each one, write down one new use it was never designed for.",
+          "quiz": [
+            {
+              "q": "According to this lesson, what is creativity mostly about?",
+              "options": [
+                "Being born with a special gift",
+                "Inventing things from nothing",
+                "Combining existing ideas in new ways",
+                "Being good at drawing"
+              ],
+              "answer": 2,
+              "explain": "Most new ideas are fresh combinations of things that already exist, which is why anyone can learn to make them."
+            },
+            {
+              "q": "Why do some people seem naturally creative?",
+              "options": [
+                "They usually have more practice and let themselves try odd ideas",
+                "They have a creative gene",
+                "They never make mistakes",
+                "They only work when inspired"
+              ],
+              "answer": 0,
+              "explain": "What looks like talent is usually the result of many small attempts and a willingness to try strange ideas."
+            },
+            {
+              "q": "Which question helps you grow your creativity?",
+              "options": [
+                "Am I creative enough?",
+                "Who is more creative than me?",
+                "Why can't I be like an artist?",
+                "How can I practise today?"
+              ],
+              "answer": 3,
+              "explain": "Asking how to practise turns creativity into an action you can take, instead of a fixed label you either have or lack."
+            }
+          ]
+        },
+        {
+          "id": "create-1-2",
+          "title": "Quantity first, quality later",
+          "minutes": 6,
+          "content": "Your first few ideas are usually the obvious ones, the same ideas everyone else would have. Better, more surprising ideas tend to appear only after you have pushed past those. That is why creative people aim for many ideas first and worry about good ideas later.\n\nThe trap is judging each idea the moment it appears. When you criticise while generating, your brain gets cautious and stops offering anything unusual. Treat idea-making and idea-picking as two separate steps: first collect without judging, then step back and choose.\n\nSet a number and a time limit, like 20 ideas in 10 minutes. Silly, impractical and half-formed ideas all count. When the list is done, take a short break, then circle the two or three most promising ones and build on those.",
+          "key_points": [
+            "Your first ideas are usually the most obvious ones.",
+            "Generate first, judge later, as two separate steps.",
+            "A target number and a time limit push you past the obvious."
+          ],
+          "tip": "When you get stuck in the middle of a list, write a deliberately silly idea. It often unlocks a useful one right after it.",
+          "task": "Pick one simple prompt, like \"ways to make a rainy day fun\". Set a timer for 10 minutes and write 20 ideas without crossing any out. Then circle your favourite three.",
+          "quiz": [
+            {
+              "q": "Why aim for many ideas before choosing one?",
+              "options": [
+                "Because a long list looks impressive",
+                "Because better ideas often appear after the obvious ones",
+                "Because every idea on the list will be used",
+                "Because judging ideas is never useful"
+              ],
+              "answer": 1,
+              "explain": "The first ideas are the common ones. Pushing for quantity gets you past them to more original options."
+            },
+            {
+              "q": "What happens when you judge each idea as it appears?",
+              "options": [
+                "You save time overall",
+                "You get more unusual ideas",
+                "Your ideas become more original",
+                "Your brain gets cautious and stops offering unusual ideas"
+              ],
+              "answer": 3,
+              "explain": "Criticism during generation makes you play safe. Keep making and choosing as separate steps."
+            },
+            {
+              "q": "During the 20-ideas exercise, what should you do with a silly idea?",
+              "options": [
+                "Write it down, because it still counts",
+                "Cross it out right away",
+                "Stop and start again",
+                "Only write it if it is practical"
+              ],
+              "answer": 0,
+              "explain": "Silly ideas keep the flow going and often lead to useful ones. Judging comes after the list is finished."
+            }
+          ]
+        },
+        {
+          "id": "create-1-3",
+          "title": "Mix and remix: combining ideas",
+          "minutes": 6,
+          "content": "Many fresh ideas come from connecting two things that do not normally go together. A phone plus a camera became the smartphone camera. Rickshaw art took a vehicle and turned it into a moving gallery. Your job is to make these unexpected connections on purpose.\n\nOne simple method is random-word pairing. Pick your topic, then pick a random word, for example by opening a book to any page. Ask how that word could change your topic. A \"school bag\" and \"umbrella\" might lead to a bag with a pop-out rain cover.\n\nAnother tool is SCAMPER, a list of prompts: Substitute, Combine, Adapt, Modify, Put to another use, Eliminate and Reverse. Run an object through a few of these questions, like \"What could I remove?\" or \"What if I flipped it?\", and new versions start to appear.",
+          "key_points": [
+            "New ideas often come from connecting unrelated things.",
+            "Random-word pairing forces unexpected connections.",
+            "SCAMPER gives you seven prompts to remix any object or idea."
+          ],
+          "tip": "You do not need all seven SCAMPER prompts every time. Two or three good questions are often enough to spark something new.",
+          "task": "Take an everyday object like a tiffin box. Use three SCAMPER prompts, for example Combine, Eliminate and Reverse, and sketch or describe one redesign for each.",
+          "quiz": [
+            {
+              "q": "What does random-word pairing help you do?",
+              "options": [
+                "Find the correct answer faster",
+                "Memorise new vocabulary",
+                "Avoid thinking about your topic",
+                "Make unexpected connections between unrelated things"
+              ],
+              "answer": 3,
+              "explain": "Pairing your topic with a random word pushes your mind to link things it would not normally connect."
+            },
+            {
+              "q": "In SCAMPER, what does the \"E\" stand for?",
+              "options": [
+                "Explain",
+                "Eliminate",
+                "Expand",
+                "Evaluate"
+              ],
+              "answer": 1,
+              "explain": "E is Eliminate: ask what you could remove or simplify. Taking something away can create a surprisingly new version."
+            },
+            {
+              "q": "Which is an example of the \"Combine\" prompt?",
+              "options": [
+                "Making a tiffin box smaller",
+                "Using a tiffin box as a plant pot",
+                "Adding a small cooler compartment to a tiffin box",
+                "Turning a tiffin box upside down"
+              ],
+              "answer": 2,
+              "explain": "Combine means joining two things or functions into one, like a lunch box and a cooler."
+            }
+          ]
+        },
+        {
+          "id": "create-1-4",
+          "title": "Capture ideas before they vanish",
+          "minutes": 5,
+          "content": "Ideas rarely arrive when you sit down and wait for them. They show up in the shower, on a bus, during a walk or just before sleep, when your mind is relaxed and wandering. The problem is that they leave just as quickly, often within minutes.\n\nThe fix is simple: always have one capture place. It can be a small notebook in your bag or a single note on your phone. What matters is that it is always within reach and that you use only one, so you never have to wonder where an idea went.\n\nCapture fast and rough. A few words or a quick sketch is enough to bring the idea back later. Once a week, read through your notes. Some ideas will look weak, but a few will connect with each other or with a new problem, and that is where real projects begin.",
+          "key_points": [
+            "Ideas often come at odd, relaxed moments and fade quickly.",
+            "Keep one capture place that is always within reach.",
+            "Write ideas quickly and review them once a week."
+          ],
+          "tip": "Pin your idea note to the top of your phone's notes app, or keep a pen clipped to your notebook, so capturing takes less than ten seconds.",
+          "task": "Choose one capture place today, a notebook or a phone note. For the next three days, write down every idea that comes to you, however small or strange.",
+          "quiz": [
+            {
+              "q": "Why do you need a capture system for ideas?",
+              "options": [
+                "Ideas often arrive at odd moments and fade within minutes",
+                "Ideas only come when you sit at a desk",
+                "Writing ideas down makes them perfect",
+                "It is required before you can start any project"
+              ],
+              "answer": 0,
+              "explain": "Ideas show up when your mind wanders and disappear fast, so you need a quick way to keep them."
+            },
+            {
+              "q": "What makes a good capture place?",
+              "options": [
+                "Many different notebooks for different moods",
+                "A beautiful journal you only use at home",
+                "One place that is always within reach",
+                "Your memory, if you try hard enough"
+              ],
+              "answer": 2,
+              "explain": "One place that is always nearby means you capture ideas quickly and always know where to find them."
+            },
+            {
+              "q": "Why review your idea notes once a week?",
+              "options": [
+                "To delete everything and start fresh",
+                "To spot ideas that connect or fit a new problem",
+                "To check your handwriting",
+                "To count how many ideas you had"
+              ],
+              "answer": 1,
+              "explain": "Looking back helps you notice links between ideas, and those links often turn into real projects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create-2",
+      "title": "Get unstuck",
+      "lessons": [
+        {
+          "id": "create-2-1",
+          "title": "Why creative block happens",
+          "minutes": 5,
+          "content": "Creative block is not a sign that you have run out of talent. It is usually a signal that something specific is in the way. Once you can name the cause, you can usually work around it, and the block shrinks from a wall into a small hurdle.\n\nFour causes show up again and again. Perfectionism makes every first attempt feel not good enough, so you never start. Fear of judgment makes you imagine what others will say before you have made anything. An empty input tank means you have not seen, read or heard anything new in a while, so there is little to combine. And too many options leave you frozen, because when you can make anything, choosing one thing feels impossible.\n\nEach cause has its own fix. Perfectionism eases when you lower the stakes and call it a draft. Fear eases when you make something just for yourself first. An empty tank needs fresh input, and too many options need a limit. The next lessons cover these fixes one by one.",
+          "key_points": [
+            "Creative block has specific causes, not a lack of talent.",
+            "The common causes are perfectionism, fear of judgment, an empty input tank and too many options.",
+            "Naming the cause tells you which fix to try."
+          ],
+          "tip": "When you feel stuck, ask yourself one question: am I scared, empty or overwhelmed? The answer points straight to the cause.",
+          "task": "Think of the last time you got stuck on something creative, like a post, a drawing or a school project. Write two lines about what happened and name which of the four causes was behind it.",
+          "quiz": [
+            {
+              "q": "What is creative block usually a sign of?",
+              "options": [
+                "You have no talent",
+                "You should quit the project",
+                "Something specific is getting in the way",
+                "You need expensive tools"
+              ],
+              "answer": 2,
+              "explain": "Block usually has a specific cause, such as perfectionism or fear. Naming it is the first step to getting past it."
+            },
+            {
+              "q": "Riya keeps rewriting the first line of her story because it never feels good enough. Which cause is this?",
+              "options": [
+                "Perfectionism",
+                "An empty input tank",
+                "Too many options",
+                "Lack of time"
+              ],
+              "answer": 0,
+              "explain": "Never being satisfied with a first attempt is classic perfectionism. Calling it a draft lowers the stakes."
+            },
+            {
+              "q": "Which fix matches the cause 'too many options'?",
+              "options": [
+                "Show your work to more people",
+                "Wait until you feel inspired",
+                "Buy new materials",
+                "Set a limit, such as one topic or one colour"
+              ],
+              "answer": 3,
+              "explain": "When everything is possible, choosing is hard. A limit narrows the choices so you can start."
+            }
+          ]
+        },
+        {
+          "id": "create-2-2",
+          "title": "Constraints make you more creative",
+          "minutes": 6,
+          "content": "It sounds backwards, but limits often make ideas better. A blank page with no rules gives your brain nothing to push against. A rule like 'only three colours' or 'finish in 15 minutes' gives you a puzzle to solve, and puzzles get the mind moving.\n\nConstraints come in many forms. A time limit stops you from overthinking. A materials limit, such as only what is on your desk, forces you to use things in unexpected ways. A format limit, such as a story in 50 words or a photo from one spot, makes you choose what really matters. Many famous works came from tight limits, from six-word stories to films shot on a tiny budget.\n\nThe trick is to choose your constraints on purpose. Pick one or two clear limits before you start, not ten. If you feel too free and keep stalling, add a limit. If you feel trapped and bored, swap one limit for a different one. The goal is a rule that challenges you without making the task impossible.",
+          "key_points": [
+            "Limits give your brain a puzzle to solve instead of a blank page.",
+            "Useful constraints include time, materials and format.",
+            "Choose one or two clear limits before you start."
+          ],
+          "tip": "Stuck on a blank page? Add one rule right now, such as a 10-minute timer or a word limit, and start before you can argue with it.",
+          "task": "Set a 15-minute timer and make something using only three colours, three objects or exactly 50 words. Stop when the timer ends, even if it is not finished.",
+          "quiz": [
+            {
+              "q": "Why can constraints boost creativity?",
+              "options": [
+                "They make the work easier to judge",
+                "They turn a blank page into a puzzle to solve",
+                "They remove the need for ideas",
+                "They guarantee a perfect result"
+              ],
+              "answer": 1,
+              "explain": "A limit gives your mind something to push against, which sparks fresh solutions."
+            },
+            {
+              "q": "Which of these is a format constraint?",
+              "options": [
+                "A 10-minute timer",
+                "Using only items on your desk",
+                "Working early in the morning",
+                "Telling a story in exactly 50 words"
+              ],
+              "answer": 3,
+              "explain": "A fixed word count limits the shape of the work, which makes it a format constraint."
+            },
+            {
+              "q": "You keep stalling because you could make anything at all. What should you try?",
+              "options": [
+                "Add one or two clear limits",
+                "Wait for a better mood",
+                "Remove all deadlines",
+                "Add ten different rules at once"
+              ],
+              "answer": 0,
+              "explain": "Too much freedom causes stalling. One or two clear limits help, while ten rules can make the task impossible."
+            }
+          ]
+        },
+        {
+          "id": "create-2-3",
+          "title": "Fill the well: input and curiosity",
+          "minutes": 6,
+          "content": "Ideas do not come from nowhere. They are built from the things you have seen, heard, read and felt. If you only scroll the same feed every day, your ideas start to look like everyone else's. When the well is dry, nothing comes up, no matter how hard you pull.\n\nVaried input refills it. Take a walk without headphones and notice sounds and shapes. Read something outside your usual interests. Talk to someone older or from a different job. Look at art forms you do not make yourself: if you write, watch dance; if you draw, listen to music. Different sources give you different pieces to combine.\n\nCollect inspiration actively instead of waiting for it. Keep your idea notebook from Level 1 open to new input: a phrase from a conversation, a colour on a shop sign, an odd detail on the bus. Curiosity is a habit. The more you ask why something looks or works the way it does, the fuller your well becomes.",
+          "key_points": [
+            "Creative output depends on the input you take in.",
+            "Variety matters: walks, books, conversations and other art forms.",
+            "Collect inspiration actively and write it down."
+          ],
+          "tip": "Once a week, consume one thing you would never normally choose, like a podcast on a strange topic or a magazine from a different field.",
+          "task": "Spend 20 minutes walking or sitting in your neighbourhood without your phone screen. Write down 5 details you had never noticed before.",
+          "quiz": [
+            {
+              "q": "Why does scrolling the same feed every day hurt creativity?",
+              "options": [
+                "It uses too much battery",
+                "It is always negative",
+                "It gives you the same input as everyone else",
+                "It makes you too tired to sleep"
+              ],
+              "answer": 2,
+              "explain": "Ideas are built from input. Same input leads to similar ideas, so variety helps you stand out."
+            },
+            {
+              "q": "You mostly write stories. Which input adds the most variety?",
+              "options": [
+                "Reading more stories in the same genre",
+                "Watching a dance performance",
+                "Rereading your old stories",
+                "Scrolling the same writing accounts"
+              ],
+              "answer": 1,
+              "explain": "Input from a different art form gives you new pieces to combine with your own craft."
+            },
+            {
+              "q": "What does collecting inspiration actively mean?",
+              "options": [
+                "Saving every post you like",
+                "Copying other people's work",
+                "Waiting until an idea arrives",
+                "Noticing details and writing them down"
+              ],
+              "answer": 3,
+              "explain": "Active collecting means paying attention and capturing what you notice, so the details are there when you need them."
+            }
+          ]
+        },
+        {
+          "id": "create-2-4",
+          "title": "Make it bad on purpose",
+          "minutes": 5,
+          "content": "The hardest part of making anything is starting, and the main reason is pressure. When you expect the first try to be good, your hand freezes. So flip the rule: try to make it bad. When the goal is a mess, there is nothing to fail at, and you start moving.\n\nThis is the idea behind the ugly first draft. A first draft exists only to get something onto the page so you have material to shape. Writers, designers and filmmakers all make rough versions that nobody sees. Playful warm-ups work the same way: a one-minute doodle with your other hand, the silliest possible headline, or a photo taken without looking at the screen.\n\nSomething surprising happens when you make it bad on purpose. Hidden inside the mess there is often one good idea, an odd angle, a funny line or an unexpected colour. Once you have started, improving a bad draft is far easier than creating a perfect one from nothing.",
+          "key_points": [
+            "Aiming for bad removes the pressure that stops you starting.",
+            "An ugly first draft is raw material, not a final piece.",
+            "Bad versions often hide one good idea worth keeping."
+          ],
+          "tip": "Name your file or page 'ugly draft'. That one word gives you permission to make mistakes.",
+          "task": "Deliberately make the worst possible version of something today: a poster, a poem, a photo or a logo. Then look at it and write down one good idea hiding in it.",
+          "quiz": [
+            {
+              "q": "Why does trying to make something bad help you start?",
+              "options": [
+                "It removes the pressure of getting it right",
+                "Bad work gets more attention",
+                "It saves materials",
+                "It is faster to share"
+              ],
+              "answer": 0,
+              "explain": "When the goal is a mess, there is nothing to fail at, so the freeze goes away and you begin."
+            },
+            {
+              "q": "What is the main job of an ugly first draft?",
+              "options": [
+                "To be shown to everyone",
+                "To prove you are talented",
+                "To give you material to shape",
+                "To replace the final version"
+              ],
+              "answer": 2,
+              "explain": "A first draft just gets something on the page. You improve it later."
+            },
+            {
+              "q": "Which is a playful warm-up?",
+              "options": [
+                "Reading reviews of your old work",
+                "Doodling for one minute with your other hand",
+                "Planning a project for an hour",
+                "Comparing your work to experts"
+              ],
+              "answer": 1,
+              "explain": "A short, silly exercise lowers the stakes and gets your hands moving."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create-3",
+      "title": "See like a photographer",
+      "lessons": [
+        {
+          "id": "create-3-1",
+          "title": "Learn to see light",
+          "minutes": 6,
+          "content": "Photography literally means drawing with light. Before you think about the subject, look at the light falling on it. The same cup of cha can look warm and cosy or flat and boring, and the only thing that changed is the light. Your phone camera is good enough; what matters is noticing.\n\nStart with direction. Light from the front flattens a face or object. Light from the side shows texture and shape, because it creates shadows. Light from behind gives a glowing outline or a silhouette. Then look at softness: a cloudy sky or a window with a thin curtain gives soft light with gentle shadows, while harsh midday sun gives hard, sharp shadows.\n\nTime of day changes everything. The hour after sunrise and before sunset is called golden hour: the light is low, warm and soft, and almost anything looks beautiful. Midday light is strong and from above, which is harder to work with. When a photo feels dull, try moving yourself, the object or the time before you change anything else.",
+          "key_points": [
+            "Light direction (front, side, back) changes shape and mood.",
+            "Soft light gives gentle shadows; hard light gives sharp ones.",
+            "Golden hour, just after sunrise and before sunset, gives warm, flattering light."
+          ],
+          "tip": "Before you take a photo, ask one question: where is the light coming from? Just asking it will improve your pictures more than any new phone.",
+          "task": "Pick one simple object, like a mug or a fruit. Photograph it three times today: near a window, under a ceiling light and outside. Put the three photos side by side and write one line on how the mood changed.",
+          "quiz": [
+            {
+              "q": "Which light direction best shows the texture of an object?",
+              "options": [
+                "Light from the front",
+                "Light from the side",
+                "No light at all",
+                "Light from the camera flash only"
+              ],
+              "answer": 1,
+              "explain": "Side light creates small shadows across the surface, which reveals texture and shape."
+            },
+            {
+              "q": "What is golden hour?",
+              "options": [
+                "The brightest hour at midday",
+                "Any hour you use a yellow filter",
+                "The time just after sunrise and before sunset",
+                "The hour after midnight"
+              ],
+              "answer": 2,
+              "explain": "Around sunrise and sunset the sun is low, so the light is warm, soft and flattering."
+            },
+            {
+              "q": "A cloudy sky usually gives what kind of light?",
+              "options": [
+                "Soft light with gentle shadows",
+                "Hard light with sharp shadows",
+                "No usable light",
+                "Only backlight"
+              ],
+              "answer": 0,
+              "explain": "Clouds spread the sunlight out, like a giant curtain, so shadows become soft and gentle."
+            }
+          ]
+        },
+        {
+          "id": "create-3-2",
+          "title": "Composition: the rule of thirds and leading lines",
+          "minutes": 6,
+          "content": "Composition is how you arrange things inside the frame. Most beginners put the subject right in the centre, every time. That is not wrong, but it often feels static. A simple guide called the rule of thirds helps: imagine the frame split by two horizontal and two vertical lines into nine equal boxes.\n\nPlace your subject on one of those lines, or where two lines cross, instead of in the middle. Put the horizon on the top or bottom line, not across the centre. Leave a little space in the direction a person is looking or a rickshaw is moving. Most phone cameras can show these grid lines; turn the grid on in the camera settings.\n\nLeading lines are lines in the scene that pull the viewer's eye toward your subject: a road, a railway track, a riverbank, a row of lamp posts, even the edge of a table. When a line starts near the corner of the frame and travels toward the subject, the eye follows it naturally. Combine the two ideas and even an ordinary street becomes a strong photo.",
+          "key_points": [
+            "The rule of thirds splits the frame into nine boxes with four lines.",
+            "Placing subjects off-centre on those lines often feels more alive.",
+            "Leading lines like roads or rails guide the eye to the subject."
+          ],
+          "tip": "Rules are starting points, not laws. Once you can use the thirds grid on purpose, you can also break it on purpose, for example with a perfectly centred, symmetrical shot.",
+          "task": "Turn on the grid in your phone camera. Take three photos today with the subject on a grid line or crossing point, and make sure one of them has a clear leading line, like a road, a wall or a railing, pointing toward the subject.",
+          "quiz": [
+            {
+              "q": "Where does the rule of thirds suggest placing the horizon?",
+              "options": [
+                "Exactly across the middle",
+                "Outside the frame",
+                "Along the top or bottom grid line",
+                "Diagonally from corner to corner"
+              ],
+              "answer": 2,
+              "explain": "Putting the horizon on the upper or lower third gives more space to either the sky or the ground and avoids a split, static look."
+            },
+            {
+              "q": "What does a leading line do in a photo?",
+              "options": [
+                "It guides the viewer's eye toward the subject",
+                "It makes the photo brighter",
+                "It removes distractions automatically",
+                "It blurs the background"
+              ],
+              "answer": 0,
+              "explain": "Lines like roads or rails act like arrows, pulling the eye through the frame to what matters."
+            },
+            {
+              "q": "A person in your photo is looking to the right. Where should you leave more empty space?",
+              "options": [
+                "Above their head",
+                "On the left side",
+                "Below their feet",
+                "On the right side, where they are looking"
+              ],
+              "answer": 3,
+              "explain": "Leaving space in the direction someone looks or moves makes the photo feel balanced and natural."
+            }
+          ]
+        },
+        {
+          "id": "create-3-3",
+          "title": "Framing, angles and negative space",
+          "minutes": 6,
+          "content": "Most photos are taken from the same place: standing, phone at eye level. That is exactly why they look ordinary. The fastest way to make a simple scene interesting is to change your angle. Crouch down low and a cat becomes a giant. Shoot from above and a plate of food becomes a neat pattern. Move closer, then step back. Every change gives a new picture.\n\nFraming means using something in the scene to make a frame around your subject: a doorway, a window, an arch, tree branches or even the gap between two people. A natural frame adds depth and pulls attention to what is inside it, as if you are giving the viewer a peek into a small world.\n\nNegative space is the empty area around your subject, like plain sky, a bare wall or calm water. Beginners try to fill every corner, but empty space lets the subject breathe and stand out. One small boat on a wide, quiet river often says more than a crowded scene. Before you shoot, ask what you can remove from the frame, not just what you can add.",
+          "key_points": [
+            "Changing height and angle turns ordinary scenes into fresh ones.",
+            "Natural frames like doorways and windows add depth and focus.",
+            "Negative space lets the subject stand out and breathe."
+          ],
+          "tip": "Take the obvious shot first, then take five more by moving: lower, higher, closer, further, from the side. The best photo is rarely the first one.",
+          "task": "Choose one ordinary subject at home, like a plant, a shoe or a kettle. Photograph it from five different angles or positions, including one very low and one from above. Pick the strongest shot and write why it works.",
+          "quiz": [
+            {
+              "q": "What is negative space in a photo?",
+              "options": [
+                "A dark or underexposed area",
+                "The empty area around the subject",
+                "A mistake in the photo",
+                "The part of the photo you crop out"
+              ],
+              "answer": 1,
+              "explain": "Negative space is the calm, empty area around the subject, which helps it stand out."
+            },
+            {
+              "q": "Which of these is an example of a natural frame?",
+              "options": [
+                "A filter added in an editing app",
+                "A photo printed in a wooden frame",
+                "A doorway around a person standing in a room",
+                "A very bright sky"
+              ],
+              "answer": 2,
+              "explain": "Doorways, windows and arches inside the scene frame the subject and add depth."
+            },
+            {
+              "q": "Why does shooting from a low angle often make a photo more interesting?",
+              "options": [
+                "It always makes the photo sharper",
+                "It uses less battery",
+                "It removes all shadows",
+                "It shows the scene from a view people rarely see"
+              ],
+              "answer": 3,
+              "explain": "We usually see the world from standing height, so a low angle feels fresh and can make subjects look bigger or stronger."
+            }
+          ]
+        },
+        {
+          "id": "create-3-4",
+          "title": "Colour and contrast",
+          "minutes": 6,
+          "content": "Colour is often the first thing a viewer notices, even before the subject. Colours carry feeling: reds and oranges feel warm, energetic or urgent, while blues and greens feel calm and cool. When you choose what to include in a frame, you are also choosing the mood.\n\nContrast is difference, and difference grabs attention. Complementary colours sit opposite each other on the colour wheel, like red and green, blue and orange, or yellow and purple, and they make each other look stronger. Contrast also comes from light against dark: a bright face in a shadowy doorway, or a dark silhouette against a glowing sky.\n\nOne of the simplest tricks is a single colour accent. A red rickshaw against a grey wall, a yellow umbrella in a crowd of black ones, a green leaf on a brown floor. When most of the frame is quiet and one spot is bold, the eye goes straight to it. Look for scenes where one colour stands alone, and you will start seeing photos everywhere on your daily route.",
+          "key_points": [
+            "Warm colours feel energetic; cool colours feel calm.",
+            "Complementary colours and light-against-dark create strong contrast.",
+            "A single bold colour in a quiet scene draws the eye instantly."
+          ],
+          "tip": "To check contrast between light and dark, squint at the scene. The details disappear and you will clearly see which areas are bright and which are dark.",
+          "task": "On your way somewhere today, look for one scene built on strong colour contrast, like a red rickshaw against a grey wall or a blue door on a yellow building. Photograph it and note which two colours or tones are doing the work.",
+          "quiz": [
+            {
+              "q": "Which pair are complementary colours?",
+              "options": [
+                "Blue and orange",
+                "Red and pink",
+                "Green and dark green",
+                "Grey and white"
+              ],
+              "answer": 0,
+              "explain": "Blue and orange sit opposite each other on the colour wheel, so they make each other look more vivid."
+            },
+            {
+              "q": "What feeling do cool colours like blue and green usually create?",
+              "options": [
+                "Urgency and danger",
+                "Anger",
+                "Calm and peace",
+                "Hunger"
+              ],
+              "answer": 2,
+              "explain": "Cool colours are linked with sky, water and nature, so they tend to feel calm and relaxed."
+            },
+            {
+              "q": "Why does a single colour accent work so well?",
+              "options": [
+                "It makes the file smaller",
+                "The eye jumps to the one bold spot in a quiet frame",
+                "It hides mistakes in focus",
+                "It works only in black and white photos"
+              ],
+              "answer": 1,
+              "explain": "When the rest of the frame is muted, one strong colour stands out and becomes the clear centre of attention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create-4",
+      "title": "Tell a story",
+      "lessons": [
+        {
+          "id": "create-4-1",
+          "title": "Every story needs a change",
+          "minutes": 5,
+          "content": "A list of events is not yet a story. 'I woke up, had breakfast and went to class' tells us what happened, but nothing moves us. A story starts when someone wants something. That someone is your character, and it can be you, a friend, a shopkeeper or even a stray cat.\n\nNext comes an obstacle: something that stands between the character and what they want. The bus is late, the rain starts, the exam is harder than expected. The obstacle creates tension, and tension is what makes people keep reading, watching or listening.\n\nFinally, something changes by the end. The character gets what they wanted, loses it, or learns that they wanted something else. The change does not have to be big. A small shift in feeling, like going from annoyed to grateful, is enough to turn a plain moment into a story.",
+          "key_points": [
+            "A story needs a character who wants something.",
+            "An obstacle creates tension and keeps people interested.",
+            "Something must change by the end, even if it is small."
+          ],
+          "tip": "When a story feels flat, ask: what does the character want, and what is in the way? The answer usually shows what is missing.",
+          "task": "Pick one moment from your own week and describe it in exactly three sentences: what you wanted, what got in the way, and what changed.",
+          "quiz": [
+            {
+              "q": "What turns a list of events into a story?",
+              "options": [
+                "Adding more events",
+                "Using longer sentences",
+                "A character who wants something, an obstacle and a change",
+                "Writing it in the past tense"
+              ],
+              "answer": 2,
+              "explain": "Want, obstacle and change give events a shape and a reason to care."
+            },
+            {
+              "q": "What does the obstacle add to a story?",
+              "options": [
+                "Tension that keeps people interested",
+                "A happy ending",
+                "More characters",
+                "A longer title"
+              ],
+              "answer": 0,
+              "explain": "When something stands in the way, the audience wants to know what happens next."
+            },
+            {
+              "q": "How big does the change at the end need to be?",
+              "options": [
+                "It must change the whole world",
+                "The hero must always win",
+                "There should be no change at all",
+                "It can be small, like a shift in feeling"
+              ],
+              "answer": 3,
+              "explain": "Even a small change, like going from annoyed to grateful, completes a story."
+            }
+          ]
+        },
+        {
+          "id": "create-4-2",
+          "title": "Story structure: beginning, middle, end",
+          "minutes": 6,
+          "content": "Most stories, from a social media post to a short film, follow three parts. The beginning introduces the character and what they want. The middle brings the obstacle and the struggle. The end shows the change. This simple shape works because it matches how people naturally follow events.\n\nThe beginning needs a hook: a first line or first image that makes people curious. Start close to the action instead of with background. 'The rickshaw stopped in the middle of the flooded road' pulls you in faster than 'It was a normal Tuesday.' In the middle, build toward a turning point, the moment where things could go either way.\n\nThe end should feel clear, not cut off. A good closing line or image answers the question the hook raised, or leaves the audience with one thought to carry away. If you are not sure how to end, look back at your beginning: strong endings often echo the opening in a changed way.",
+          "key_points": [
+            "Beginning sets up the want, the middle brings the struggle, the end shows the change.",
+            "Open with a hook that starts close to the action.",
+            "End with a clear closing line that answers or echoes the opening."
+          ],
+          "tip": "Write your ending first. When you know where the story lands, it is much easier to choose the right hook and turning point.",
+          "task": "Outline a one-minute story in three lines: a hook to open, a turning point in the middle, and a closing line.",
+          "quiz": [
+            {
+              "q": "What is the main job of the middle of a story?",
+              "options": [
+                "Introducing the title",
+                "Bringing the obstacle and building to a turning point",
+                "Listing the credits",
+                "Repeating the beginning"
+              ],
+              "answer": 1,
+              "explain": "The middle is where the struggle happens and the story reaches its turning point."
+            },
+            {
+              "q": "Which opening line is the stronger hook?",
+              "options": [
+                "It was a normal Tuesday.",
+                "Let me tell you some background first.",
+                "This story is about my day.",
+                "The rickshaw stopped in the middle of the flooded road."
+              ],
+              "answer": 3,
+              "explain": "Starting close to the action makes people curious right away."
+            },
+            {
+              "q": "You are not sure how to end your story. What can help?",
+              "options": [
+                "Stop wherever you run out of time",
+                "Add a brand new character",
+                "Look back at the beginning and echo it in a changed way",
+                "Leave the turning point unresolved and say nothing more"
+              ],
+              "answer": 2,
+              "explain": "Endings that echo the opening feel complete and show what changed."
+            }
+          ]
+        },
+        {
+          "id": "create-4-3",
+          "title": "Show, don't tell",
+          "minutes": 5,
+          "content": "'She was angry' tells the reader a fact. 'She put the cup down so hard that the cha spilled' lets the reader see it and feel it. Showing means using actions, details and senses so the audience works out the feeling themselves. That small act of figuring it out makes the story feel alive.\n\nTo show, ask what the feeling looks like from the outside. What does the person do with their hands? What do they say, or avoid saying? What can you hear, smell or touch in the scene? One or two concrete details, like a shaking voice or an untouched plate of food, are stronger than a paragraph of explanation.\n\nTelling is not always wrong. Use it to move quickly through parts that do not matter, like 'Three days passed.' Save showing for the important moments, where you want the audience to slow down and feel something with your character.",
+          "key_points": [
+            "Showing uses actions, details and senses instead of naming feelings.",
+            "One or two concrete details beat a long explanation.",
+            "Tell to move quickly; show for the moments that matter."
+          ],
+          "tip": "Search your draft for feeling words like happy, sad, scared or nervous. Try replacing each one with an action or detail.",
+          "task": "Rewrite 'I was nervous' as two or three sentences that show the feeling without using the word nervous.",
+          "quiz": [
+            {
+              "q": "Which sentence shows rather than tells?",
+              "options": [
+                "He was very tired.",
+                "He felt sad.",
+                "He was happy about the result.",
+                "His eyes kept closing as he read the same line again."
+              ],
+              "answer": 3,
+              "explain": "The action lets the reader see the tiredness without naming it."
+            },
+            {
+              "q": "Why does showing make a story more vivid?",
+              "options": [
+                "The audience works out the feeling themselves",
+                "It makes the story shorter",
+                "It removes all the characters",
+                "It avoids any details"
+              ],
+              "answer": 0,
+              "explain": "Figuring out the feeling from details makes the audience part of the story."
+            },
+            {
+              "q": "When is telling useful?",
+              "options": [
+                "For the most emotional moment",
+                "Never, it should always be avoided",
+                "To move quickly through parts that do not matter",
+                "Only in the title"
+              ],
+              "answer": 2,
+              "explain": "Telling, like 'Three days passed', saves time so showing can shine in key moments."
+            }
+          ]
+        },
+        {
+          "id": "create-4-4",
+          "title": "Visual storytelling: a story in photos",
+          "minutes": 6,
+          "content": "You already know how to compose a strong photo, and now you know how a story works. Put them together and a few pictures can tell a whole story without words. A photo story is a short sequence of images, usually 3 to 5, that moves from a beginning to an end.\n\nA simple sequence uses three kinds of shots. The opening shot is wide and sets the scene: where are we and who is here? The detail shot moves close to show the action or emotion, like hands pouring cha or steam rising from a cup. The closing shot shows the result or the change, like a friend smiling as they take the first sip.\n\nPlan before you shoot. Write down the moment you want to capture and list the shots you need in order. Then keep the look consistent: similar light and colour make the photos feel like one story rather than a random album. Finally, lay them out in sequence and check that someone else could follow the story without explanation.",
+          "key_points": [
+            "A photo story is 3 to 5 images that move from beginning to end.",
+            "Use an opening wide shot, a close detail shot and a closing shot.",
+            "Plan the shots in order and keep light and colour consistent."
+          ],
+          "tip": "Show your sequence to someone without saying anything. If they can tell you what happened, your story works.",
+          "task": "Plan a 3 to 5 photo story about one small everyday event, like making cha. Write the shot list in order, then shoot it if you can.",
+          "quiz": [
+            {
+              "q": "What is the job of the opening shot in a photo story?",
+              "options": [
+                "To set the scene and show where we are",
+                "To show the final result",
+                "To show only a small detail",
+                "To add text to the story"
+              ],
+              "answer": 0,
+              "explain": "A wide opening shot gives the viewer context before the story moves closer."
+            },
+            {
+              "q": "Which is a good detail shot for a story about making cha?",
+              "options": [
+                "A wide shot of the whole street",
+                "A blurry selfie",
+                "Hands pouring cha with steam rising",
+                "A photo of a random sign"
+              ],
+              "answer": 2,
+              "explain": "A close detail shot shows the action and pulls the viewer into the moment."
+            },
+            {
+              "q": "Why keep light and colour consistent across the photos?",
+              "options": [
+                "It makes the photos load faster",
+                "It makes them feel like one connected story",
+                "It is required by every phone camera",
+                "It hides the subject"
+              ],
+              "answer": 1,
+              "explain": "A consistent look ties the images together so they read as one story."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create-5",
+      "title": "Share and sustain your work",
+      "lessons": [
+        {
+          "id": "create-5-1",
+          "title": "Share your work before it feels ready",
+          "minutes": 5,
+          "content": "Most creative work never gets shared because it never feels ready. There is always one more edit, one better photo, one cleaner line. Waiting for perfect usually means waiting forever, and work kept in a drawer cannot teach you anything.\n\nSharing early gives you something practice alone cannot: a reaction. When someone smiles, asks a question or looks confused, you learn what your work actually does to people. Each share also makes the next one easier, because the fear shrinks every time nothing terrible happens.\n\nYou do not need a big audience to start. One friend, a family group chat or a small online community is enough. Small audiences are kinder, give more honest feedback and let you grow without pressure. Treat each share as an experiment, not a final verdict on your talent.",
+          "key_points": [
+            "Waiting for perfect usually means never sharing.",
+            "Sharing gives you real reactions that solo practice cannot.",
+            "Start with a small, friendly audience and grow from there."
+          ],
+          "tip": "Before you share, decide what 'done enough' means, such as 'one round of edits'. When you reach it, share, even if it still feels a little rough.",
+          "task": "Pick one piece you made in this course, like a photo, a sketch or a short story, and share it with at least one person today. Note how they reacted and how you felt afterwards.",
+          "quiz": [
+            {
+              "q": "Why is waiting until your work feels perfect a problem?",
+              "options": [
+                "Perfect work gets less attention",
+                "The feeling of 'ready' rarely comes, so the work never gets shared",
+                "Sharing is only for professionals",
+                "People prefer unfinished work"
+              ],
+              "answer": 1,
+              "explain": "There is always one more thing to fix. If you wait to feel ready, you may never share, and you miss the learning that comes from real reactions."
+            },
+            {
+              "q": "What does sharing early give you that practising alone does not?",
+              "options": [
+                "Guaranteed praise",
+                "More free time",
+                "Better equipment",
+                "Real reactions that show what your work does to people"
+              ],
+              "answer": 3,
+              "explain": "Other people's reactions show you what lands and what confuses. You cannot get that information by working in private."
+            },
+            {
+              "q": "What is a good first audience for your work?",
+              "options": [
+                "A small, friendly group like one friend or a family chat",
+                "Thousands of strangers at once",
+                "Only famous artists",
+                "Nobody until you are an expert"
+              ],
+              "answer": 0,
+              "explain": "Small audiences feel safer, give more honest feedback and let you build confidence step by step."
+            }
+          ]
+        },
+        {
+          "id": "create-5-2",
+          "title": "Handle creative critique",
+          "minutes": 6,
+          "content": "When you ask 'Do you like it?', you usually get a polite 'Yes, nice'. That feels good but teaches you nothing. Useful feedback starts with specific questions, such as 'Where did your eye go first?', 'Which part felt slow?' or 'What do you think this story is about?'\n\nNot every comment is equally useful. Some feedback is about taste: 'I just don't like the colour yellow.' Other feedback is about whether the work does what you intended: 'I didn't notice the person in the photo.' Taste comments tell you about the viewer. Notes about your intention tell you what to fix.\n\nCritique should sharpen your voice, not replace it. Listen fully, say thank you, and do not argue in the moment. Later, decide calmly which notes serve your goal and which you will leave. If several people point to the same spot, that spot probably needs work.",
+          "key_points": [
+            "Ask specific questions to get useful feedback.",
+            "Separate personal taste from notes about your intention.",
+            "Listen, thank, then decide later which notes to use."
+          ],
+          "tip": "Write down feedback word for word while you listen. Reading it the next day, with less emotion, makes it much easier to judge fairly.",
+          "task": "Choose one piece you made and write three specific questions you would ask someone about it, like 'What did you notice first?'. Ask at least one person today if you can.",
+          "quiz": [
+            {
+              "q": "Which question is most likely to get useful feedback?",
+              "options": [
+                "Do you like it?",
+                "Is it good?",
+                "Where did your eye go first in this photo?",
+                "Am I talented?"
+              ],
+              "answer": 2,
+              "explain": "Specific questions point the viewer at something concrete, so their answer tells you exactly what is working or not."
+            },
+            {
+              "q": "'I just don't like yellow' is an example of...",
+              "options": [
+                "Personal taste",
+                "A technical error",
+                "A note about your intention",
+                "A copyright issue"
+              ],
+              "answer": 0,
+              "explain": "This tells you about the viewer's preference, not whether your work achieved its goal. You can note it and move on."
+            },
+            {
+              "q": "What should you do right after receiving critique?",
+              "options": [
+                "Explain why they are wrong",
+                "Change everything they mentioned immediately",
+                "Stop making that kind of work",
+                "Listen, thank them and decide later which notes to use"
+              ],
+              "answer": 3,
+              "explain": "Arguing stops people from being honest, and changing everything loses your voice. Calm reflection later helps you keep the useful notes."
+            }
+          ]
+        },
+        {
+          "id": "create-5-3",
+          "title": "Originality, influence and credit",
+          "minutes": 6,
+          "content": "Every creator learns by studying others. Musicians copy songs to practise, painters sketch old masters, writers imitate authors they love. Influence is normal. The difference between learning and copying is what you do next: do you take the whole thing, or do you take a lesson from it?\n\nA useful habit is to borrow techniques, not finished work. Notice how a photographer uses light, how a writer opens a story, or how a designer pairs colours. Then mix that technique with your own subject, your own place and your own experience. Combining several influences, instead of copying just one, is how a personal style grows.\n\nWhen you use someone else's actual work, such as a photo, a song or a quote, give clear credit and ask permission when it is not yours to use. Respecting other creators protects them, builds trust and shows that you understand how creative communities work.",
+          "key_points": [
+            "Learning from others is normal; copying whole works is not.",
+            "Borrow techniques and mix several influences into your own style.",
+            "Credit others and ask permission before using their work."
+          ],
+          "tip": "Keep a 'steal list' of techniques you admire, with the creator's name next to each one. It trains your eye and keeps your credits honest.",
+          "task": "Choose one creator you admire. List two specific things you could borrow from them, like their use of light or their way of opening a story, and one way to make each your own.",
+          "quiz": [
+            {
+              "q": "What is the healthiest way to learn from an artist you admire?",
+              "options": [
+                "Copy their work and post it as yours",
+                "Borrow their techniques and mix them with your own ideas",
+                "Avoid looking at other people's work",
+                "Only follow one artist forever"
+              ],
+              "answer": 1,
+              "explain": "Studying techniques is how every creator grows. Mixing them with your own subject and experience turns influence into originality."
+            },
+            {
+              "q": "How does a personal style usually develop?",
+              "options": [
+                "By copying one creator exactly",
+                "It appears suddenly without practice",
+                "By combining many influences with your own experience",
+                "By ignoring all feedback"
+              ],
+              "answer": 2,
+              "explain": "When many influences blend with your own life and choices, the result becomes something only you could make."
+            },
+            {
+              "q": "You want to use another person's photo in your project. What should you do?",
+              "options": [
+                "Use it, since it is online anyway",
+                "Crop it so nobody recognises it",
+                "Change the colours and call it yours",
+                "Ask permission and give clear credit"
+              ],
+              "answer": 3,
+              "explain": "Being online does not make work free to use. Asking permission and crediting the creator respects their work and builds trust."
+            }
+          ]
+        },
+        {
+          "id": "create-5-4",
+          "title": "Build a creative practice that lasts",
+          "minutes": 7,
+          "content": "Inspiration is unreliable, but habits are not. Creators who keep going usually have a small ritual: ten minutes of sketching with morning cha, one photo on the walk home, a page of writing before bed. A small, regular practice beats rare bursts of big effort.\n\nA project gives your practice direction. A 30-day challenge works well: one simple task each day, kept under 15 minutes, like 'one photo of something blue' or 'a six-word story'. Keep the rules clear and the task small, so a busy or low-energy day does not break the chain. If you miss a day, simply continue the next day.\n\nFinally, learn to finish. Unfinished projects quietly drain confidence. Set a clear finish line before you start, accept 'good enough' when you reach it, and celebrate completing things. Each finished piece, even a tiny one, proves to you that you are a person who makes things.",
+          "key_points": [
+            "Small regular habits beat rare bursts of inspiration.",
+            "A 30-day challenge with tiny daily tasks builds momentum.",
+            "Set a clear finish line and finish what you start."
+          ],
+          "tip": "Attach your creative habit to something you already do every day, like drinking tea or commuting. The existing habit becomes your reminder.",
+          "task": "Design your own 30-day creative challenge: choose a theme, write a daily task that takes under 15 minutes, decide when you will do it, and complete day one today.",
+          "quiz": [
+            {
+              "q": "Why is a small daily habit better than waiting for inspiration?",
+              "options": [
+                "Inspiration is unreliable, but habits keep you making regularly",
+                "Small work is always better than big work",
+                "Habits remove the need for ideas",
+                "Inspiration only comes to professionals"
+              ],
+              "answer": 0,
+              "explain": "Inspiration comes and goes. A regular habit means you keep practising on ordinary days, which is where most growth happens."
+            },
+            {
+              "q": "What makes a 30-day challenge easier to stick to?",
+              "options": [
+                "Making each task take at least two hours",
+                "Changing the rules every day",
+                "Keeping each daily task small and clear, under 15 minutes",
+                "Quitting after the first missed day"
+              ],
+              "answer": 2,
+              "explain": "Small, clear tasks fit even busy days. If you miss one, continue the next day instead of giving up."
+            },
+            {
+              "q": "How can you get better at finishing projects?",
+              "options": [
+                "Start several new projects at once",
+                "Set a clear finish line before you begin and accept 'good enough'",
+                "Keep editing until it is perfect",
+                "Only work when you feel inspired"
+              ],
+              "answer": 1,
+              "explain": "A clear finish line tells you when you are done. Accepting 'good enough' stops endless polishing and builds the habit of completing."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

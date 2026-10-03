@@ -5,17 +5,17 @@ import 'package:flutter/foundation.dart' show ValueNotifier;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sqflite/sqflite.dart';
 
-/// Copies the mentoring content from assets/content/mentors.json into SQLite.
+/// Copies the mentoring content from assets/content/ into SQLite.
 ///
-/// It runs on every app start but only writes when the JSON's
-/// "content_version" is higher than the version already stored, or when the
-/// app language changed. To ship new lessons, edit both JSON files
-/// (English and Bangla, same ids) and increase content_version by one.
+/// assets/content/index.json holds "content_version" and the category ids in
+/// display order; each category lives in `assets/content/<language>/<id>.json`.
+/// It runs on every app start but only reads the small index unless
+/// content_version is higher than the version already stored, or the app
+/// language changed. To ship new lessons, edit both language files of a
+/// category (same ids) and increase content_version by one.
 class ContentSeeder {
-  static const Map<String, String> contentAssets = {
-    'en': 'assets/content/mentors.json',
-    'bn': 'assets/content/mentors_bn.json',
-  };
+  static const List<String> languages = ['en', 'bn'];
+  static const String _indexAsset = 'assets/content/index.json';
   static const String _versionKey = 'content_version';
   static const String _languageKey = 'content_language';
   /// The language picked in the app; missing means "follow the device".
@@ -34,7 +34,7 @@ class ContentSeeder {
   // running shows up after the next restart.
   static String deviceLanguage() {
     for (final locale in PlatformDispatcher.instance.locales) {
-      if (contentAssets.containsKey(locale.languageCode)) return locale.languageCode;
+      if (languages.contains(locale.languageCode)) return locale.languageCode;
     }
     return 'en';
   }
@@ -43,17 +43,21 @@ class ContentSeeder {
     final meta = {
       for (final row in await db.query('meta')) row['key'] as String: row['value'] as String,
     };
-    final picked = contentAssets.containsKey(meta[appLanguageKey]) ? meta[appLanguageKey] : null;
+    final picked = languages.contains(meta[appLanguageKey]) ? meta[appLanguageKey] : null;
     appLocale.value = picked == null ? null : Locale(picked);
     appTheme.value = meta[appThemeKey];
     final language = picked ?? deviceLanguage();
 
-    final raw = await rootBundle.loadString(contentAssets[language]!);
-    final json = jsonDecode(raw) as Map<String, dynamic>;
-    final newVersion = json['content_version'] as int;
+    final index = jsonDecode(await rootBundle.loadString(_indexAsset)) as Map<String, dynamic>;
+    final newVersion = index['content_version'] as int;
 
     final currentVersion = int.tryParse(meta[_versionKey] ?? '') ?? 0;
     if (currentVersion >= newVersion && meta[_languageKey] == language) return;
+
+    final categories = [
+      for (final id in index['categories'] as List<dynamic>)
+        jsonDecode(await rootBundle.loadString('assets/content/$language/$id.json')) as Map<String, dynamic>,
+    ];
 
     await db.transaction((txn) async {
       // Only content tables are cleared. Learner progress is keyed by lesson
@@ -64,10 +68,9 @@ class ContentSeeder {
       await txn.delete('categories');
 
       final batch = txn.batch();
-      final categories = json['categories'] as List<dynamic>;
 
       for (var ci = 0; ci < categories.length; ci++) {
-        final category = categories[ci] as Map<String, dynamic>;
+        final category = categories[ci];
         final categoryId = category['id'] as String;
 
         batch.insert('categories', {

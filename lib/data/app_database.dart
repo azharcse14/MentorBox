@@ -7,7 +7,7 @@ import 'content_seeder.dart';
 ///
 /// Two kinds of tables live here:
 /// - content tables (categories, levels, lessons, quiz_questions), filled
-///   from assets/content/mentors.json and refreshed when its version changes
+///   from assets/content/ and refreshed when its version changes
 /// - learner tables (lesson_progress, category_state, activity_days, meta),
 ///   which are never touched by a content refresh
 class AppDatabase {

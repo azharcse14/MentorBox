@@ -1,0 +1,1008 @@
+{
+  "id": "study",
+  "name": "Study Skills",
+  "mentor": "Study Mentor",
+  "tagline": "Learn how to learn, so every hour of study actually sticks.",
+  "description": "No special tools needed. These lessons teach the methods that make knowledge stay: testing yourself, spacing your reviews, taking useful notes and walking into exams prepared.",
+  "image": "assets/images/study.jpg",
+  "color": "#4F7A9A",
+  "messages": {
+    "welcome": "Most students were never taught how to study, only what to study. We will fix that one method at a time, starting with how memory really works.",
+    "comeback": "Your brain is ready for a quick review. Open the next lesson and try to recall what you learned last time before you read anything.",
+    "pass": "Well done. You just practised the very skill this lesson teaches.",
+    "fail": "Forgetting is part of learning. Read the explanations, look back at the lesson and test yourself again. The second try is where memory grows.",
+    "finished": "You now know how memory works, how to test yourself, space your reviews, take notes that help, read with understanding, prepare for exams calmly and keep going when motivation fades. Pick one subject and use these methods on it this week."
+  },
+  "levels": [
+    {
+      "id": "study-1",
+      "title": "How learning works",
+      "lessons": [
+        {
+          "id": "study-1-1",
+          "title": "How memory works",
+          "minutes": 6,
+          "content": "Learning starts with attention. Anything you do not notice never enters memory at all. What you do notice goes into short-term memory, a small workspace that holds only a few items for a few seconds, like a phone number you repeat until you dial it.\n\nTo last, information must move into long-term memory. That happens when you think about it, connect it to what you already know and bring it back to mind later. Long-term memory has almost unlimited space, but only well-used paths stay easy to reach.\n\nWithout review, forgetting is fast. The psychologist Hermann Ebbinghaus showed that we lose most of new material within a day or two. This is called the forgetting curve. It is not a sign that you are weak at studying. It is how every brain works, and the right methods can flatten it.",
+          "key_points": [
+            "Memory moves from attention to short-term to long-term memory.",
+            "Short-term memory is small and lasts only seconds.",
+            "The forgetting curve shows most new material fades within days unless reviewed."
+          ],
+          "tip": "Before you start reading, remove your phone from the table. Divided attention means less information even reaches short-term memory.",
+          "task": "Read a short passage of about one page from any textbook. Wait ten minutes, then write down everything you remember without looking. Compare with the page and mark what you missed.",
+          "quiz": [
+            {
+              "q": "What is the first step for information to enter memory?",
+              "options": [
+                "Sleep",
+                "Highlighting",
+                "Attention",
+                "Rewriting"
+              ],
+              "answer": 2,
+              "explain": "If you do not pay attention to something, it never enters memory. Everything else builds on attention."
+            },
+            {
+              "q": "What does the forgetting curve show?",
+              "options": [
+                "We lose most new material within days unless we review it",
+                "We remember everything we read once",
+                "Only children forget what they learn",
+                "Forgetting happens only after many years"
+              ],
+              "answer": 0,
+              "explain": "Ebbinghaus found that forgetting is fast at first. Reviewing at the right time is what keeps knowledge."
+            },
+            {
+              "q": "Which is true about short-term memory?",
+              "options": [
+                "It stores information for a lifetime",
+                "It has unlimited space",
+                "It works only during sleep",
+                "It holds a few items for a few seconds"
+              ],
+              "answer": 3,
+              "explain": "Short-term memory is a small workspace. Information must be processed and reviewed to reach long-term memory."
+            }
+          ]
+        },
+        {
+          "id": "study-1-2",
+          "title": "The illusion of knowing",
+          "minutes": 5,
+          "content": "Rereading a chapter and covering it in highlighter feels like hard work. The pages start to look familiar, and familiarity feels like knowledge. But recognising something when you see it is very different from recalling it when the page is closed.\n\nAn exam does not show you the text and ask whether it looks familiar. It asks you to pull the answer out of your own head. If you have only practised recognising, you will find gaps you never noticed while reading. This false confidence is called the illusion of knowing.\n\nThe cure is simple: close the book and check. Try to explain the main ideas from memory, then open the book and compare. It feels harder and slower, and that difficulty is a sign that real learning is happening.",
+          "key_points": [
+            "Familiarity is not the same as being able to recall.",
+            "Rereading and highlighting create false confidence.",
+            "Closing the book and recalling shows what you really know."
+          ],
+          "tip": "If you highlight, do it after you have read the whole section once, and limit yourself to one line per paragraph.",
+          "task": "Pick a chapter you have already read. Close the book and write or say its main points from memory. Then open it and note what you forgot or got wrong.",
+          "quiz": [
+            {
+              "q": "Why does rereading often feel more effective than it is?",
+              "options": [
+                "It takes too little time",
+                "The text becomes familiar, and familiarity feels like knowing",
+                "It always improves exam marks",
+                "It trains recall directly"
+              ],
+              "answer": 1,
+              "explain": "Familiar text gives a feeling of knowing, but recognising is easier than recalling, which is what exams demand."
+            },
+            {
+              "q": "What do exams usually ask you to do?",
+              "options": [
+                "Recognise a page you have seen",
+                "Highlight key sentences",
+                "Reread the textbook",
+                "Recall answers from your own memory"
+              ],
+              "answer": 3,
+              "explain": "Most exam questions require recall. Practising only recognition leaves hidden gaps."
+            },
+            {
+              "q": "What is the best way to check whether you really know a chapter?",
+              "options": [
+                "Close the book and explain the main points from memory",
+                "Read it one more time",
+                "Highlight more lines",
+                "Count how many pages you read"
+              ],
+              "answer": 0,
+              "explain": "Recalling with the book closed shows exactly what you know and what you still need to learn."
+            }
+          ]
+        },
+        {
+          "id": "study-1-3",
+          "title": "Understand before you memorise",
+          "minutes": 6,
+          "content": "Memorising a fact without understanding it is like hanging a picture on a wall with no nail. It falls quickly. When a fact has meaning, it attaches to what you already know, and those connections hold it in place.\n\nSo before memorising, ask why and how. Why do plants need sunlight? How does that connect to the food we eat? Each answer links the new idea to older knowledge, and every link is another path your memory can use to find it later.\n\nYou can also compare new ideas with familiar ones. An electric circuit is a bit like water flowing through pipes. Such examples and comparisons make abstract topics concrete. Understanding first does not replace practice, but it makes everything you memorise afterwards easier to keep.",
+          "key_points": [
+            "Meaning makes facts stick.",
+            "Ask 'why' and 'how' to connect new ideas to old knowledge.",
+            "Examples and comparisons make abstract ideas concrete."
+          ],
+          "tip": "If you cannot explain why something is true, mark it with a question mark and ask a teacher or look it up before memorising it.",
+          "task": "Choose one topic from your syllabus. Write three 'why does this happen' or 'how does this work' questions about it, and answer each in two or three sentences.",
+          "quiz": [
+            {
+              "q": "Why do facts with meaning stay in memory longer?",
+              "options": [
+                "They are always shorter",
+                "Teachers repeat them more",
+                "They connect to what you already know",
+                "They do not need review"
+              ],
+              "answer": 2,
+              "explain": "Connections to existing knowledge give memory more paths to reach the fact later."
+            },
+            {
+              "q": "Which question helps you understand a topic most?",
+              "options": [
+                "How many pages is this chapter?",
+                "Why does this happen?",
+                "Will this be in the exam?",
+                "Who wrote this book?"
+              ],
+              "answer": 1,
+              "explain": "Asking why and how forces you to think about causes and links, which builds understanding."
+            },
+            {
+              "q": "Comparing an electric circuit to water in pipes is an example of...",
+              "options": [
+                "Making an abstract idea concrete with a familiar comparison",
+                "Rote memorisation",
+                "Highlighting",
+                "Cramming"
+              ],
+              "answer": 0,
+              "explain": "A familiar comparison turns an abstract idea into something you can picture, which helps understanding."
+            }
+          ]
+        },
+        {
+          "id": "study-1-4",
+          "title": "Your brain needs fuel and rest",
+          "minutes": 5,
+          "content": "Learning does not end when you close the book. While you sleep, your brain replays what you studied and strengthens it into long-term memory. This process is called consolidation, and it is one reason a good night's sleep after studying improves recall the next day.\n\nThat is why all-night cramming backfires. You may cover more pages, but a tired brain takes in less, and without sleep much of it is never consolidated. You also walk into the exam slow and anxious, which makes recall even harder.\n\nDuring the day, short breaks help too. After 25 to 50 minutes of focus, a five-minute break with a short walk or some stretching refreshes attention. Drinking water and eating regular meals keep your energy steady, so your study time works better.",
+          "key_points": [
+            "Sleep consolidates what you learned into long-term memory.",
+            "All-night cramming means less learning and a tired mind.",
+            "Short breaks, movement and water keep attention fresh."
+          ],
+          "tip": "Stop screens and heavy study about an hour before bed. A quick, light review of key points is fine, then let sleep do its work.",
+          "task": "Plan tonight's study session. Make it end at least one hour before you sleep, and include one short break with a walk or stretch in the middle.",
+          "quiz": [
+            {
+              "q": "What does the brain do with learning during sleep?",
+              "options": [
+                "Deletes it completely",
+                "Nothing at all",
+                "Turns it into short-term memory",
+                "Strengthens it into long-term memory"
+              ],
+              "answer": 3,
+              "explain": "During sleep the brain consolidates the day's learning, making it more lasting."
+            },
+            {
+              "q": "Why does all-night cramming usually backfire?",
+              "options": [
+                "A tired brain takes in less and learning is not consolidated",
+                "It gives too much sleep",
+                "Exams are always in the evening",
+                "It makes you remember too much"
+              ],
+              "answer": 0,
+              "explain": "Without sleep, less is learned and less is kept, and you face the exam tired and anxious."
+            },
+            {
+              "q": "What is a good break after 25 to 50 minutes of focused study?",
+              "options": [
+                "Two hours of social media",
+                "Skipping breaks entirely",
+                "A five-minute walk or stretch",
+                "Starting a new subject immediately without a pause"
+              ],
+              "answer": 2,
+              "explain": "A short break with movement refreshes attention so the next session works better."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-2",
+      "title": "Make it stick",
+      "lessons": [
+        {
+          "id": "study-2-1",
+          "title": "Active recall: test yourself",
+          "minutes": 6,
+          "content": "Most students study by putting information into their heads: reading, rereading and highlighting. The strongest method works the other way round. Active recall, also called retrieval practice, means pulling answers out of your memory without looking at the book.\n\nEvery time you retrieve something, the memory gets stronger and easier to find next time. The effort is the point. If recalling feels a little hard, your brain is doing real work. If reading feels easy, it is often only familiarity, not learning.\n\nYou can practise recall in many simple ways: close the book and write what you remember, answer questions at the end of a chapter, explain a topic out loud or cover your notes and rebuild them. Check your answers afterwards and focus on the parts you missed.",
+          "key_points": [
+            "Active recall means pulling answers out of memory, not reading them again.",
+            "Each successful retrieval makes a memory stronger.",
+            "Recall that feels effortful is a sign of real learning."
+          ],
+          "tip": "Before you start any study session, spend two minutes writing down what you remember from the last one. It warms up your memory and shows you what needs work.",
+          "task": "Take one page of your notes and turn it into five questions. Put the notes away, answer all five from memory, then check and mark what you missed.",
+          "quiz": [
+            {
+              "q": "What is active recall?",
+              "options": [
+                "Reading the same chapter several times",
+                "Highlighting the most important lines",
+                "Pulling information out of memory without looking",
+                "Copying notes neatly into a new notebook"
+              ],
+              "answer": 2,
+              "explain": "Active recall means retrieving information from your own memory. Reading and highlighting only put information in front of your eyes again."
+            },
+            {
+              "q": "Why does recall that feels hard help learning?",
+              "options": [
+                "The effort of retrieving strengthens the memory",
+                "It means you are studying the wrong topic",
+                "Hard work always tires the brain out",
+                "It only helps if you get every answer right"
+              ],
+              "answer": 0,
+              "explain": "The effort of searching your memory is what makes the memory stronger, even when you do not get everything right."
+            },
+            {
+              "q": "Which of these is an example of active recall?",
+              "options": [
+                "Listening to a recorded lecture again",
+                "Rereading your notes before bed",
+                "Underlining key words in the textbook",
+                "Covering your notes and explaining the topic out loud"
+              ],
+              "answer": 3,
+              "explain": "Explaining from memory with your notes hidden forces you to retrieve the ideas. The other options are passive review."
+            }
+          ]
+        },
+        {
+          "id": "study-2-2",
+          "title": "Spaced repetition",
+          "minutes": 6,
+          "content": "The forgetting curve shows that we lose most new information within a few days. But every time you review just before you forget, the curve becomes flatter and the memory lasts longer. Spaced repetition uses this by reviewing at growing gaps instead of all at once.\n\nA simple schedule is: review one day after learning, then after three days, then after one week, then after two weeks. Each review can be short, especially if you use active recall. Reviewing the same topic five times in one evening feels productive, but spreading those reviews over two weeks gives far better results.\n\nSpacing also saves time. Because the memory stays stronger, each review needs less effort than relearning from scratch before the exam. The key is planning: write your review dates down so they do not depend on remembering them.",
+          "key_points": [
+            "Review at growing gaps: 1 day, 3 days, 1 week, 2 weeks.",
+            "Spaced reviews beat cramming the same amount of study into one session.",
+            "Write review dates down so the plan does not rely on memory."
+          ],
+          "tip": "Combine spacing with recall. At each review, test yourself first and only reread the parts you could not remember.",
+          "task": "Pick one topic you learned this week and make a simple review calendar for it with four dates: 1 day, 3 days, 1 week and 2 weeks after you learned it.",
+          "quiz": [
+            {
+              "q": "What does spaced repetition mean?",
+              "options": [
+                "Studying a topic many times in one long session",
+                "Reviewing a topic at increasing gaps over time",
+                "Studying only on weekends",
+                "Taking a long break between subjects"
+              ],
+              "answer": 1,
+              "explain": "Spaced repetition spreads reviews out over growing intervals, which beats the forgetting curve."
+            },
+            {
+              "q": "Which review schedule follows spaced repetition?",
+              "options": [
+                "Five times tonight",
+                "Once, the night before the exam",
+                "Every hour for one day",
+                "After 1 day, 3 days, 1 week and 2 weeks"
+              ],
+              "answer": 3,
+              "explain": "The gaps grow longer each time, giving the memory a chance to strengthen before each review."
+            },
+            {
+              "q": "Why does spacing save total study time?",
+              "options": [
+                "Memories stay stronger, so each review takes less effort than relearning",
+                "You can skip difficult topics completely",
+                "It removes the need to test yourself",
+                "You only need to study once a month"
+              ],
+              "answer": 0,
+              "explain": "Reviewing before you fully forget means you refresh a memory instead of rebuilding it from zero."
+            }
+          ]
+        },
+        {
+          "id": "study-2-3",
+          "title": "Flashcards done right",
+          "minutes": 6,
+          "content": "Flashcards are one of the easiest ways to practise active recall, but only if they are written well. A good card holds one idea. Put a question on the front and a short answer on the back. A card full of copied paragraphs turns into rereading, not recall.\n\nWrite cards in your own words, because putting an idea into your words forces you to understand it. Ask questions that need thinking, like 'Why does iron rust?' instead of just 'Rust'. Always try to say the answer out loud or in your head before you turn the card.\n\nThe Leitner box system adds spacing. Use three boxes or piles. All new cards start in Box 1. A card you answer correctly moves up a box, and a card you get wrong goes back to Box 1. Review Box 1 every day, Box 2 every few days and Box 3 once a week, so you spend most time on what you do not know yet.",
+          "key_points": [
+            "One idea per card, with a question on the front.",
+            "Write cards in your own words and answer before flipping.",
+            "The Leitner boxes give more practice to the cards you miss."
+          ],
+          "tip": "Do not throw away cards you already know. Keep them in the last box and check them once a week so they stay fresh until the exam.",
+          "task": "Write ten flashcards for a subject you are studying now. Go through them once, then sort them into Box 1 (wrong) and Box 2 (right).",
+          "quiz": [
+            {
+              "q": "What makes a good flashcard?",
+              "options": [
+                "A full paragraph copied from the textbook",
+                "Several related ideas on one card",
+                "One idea, with a question on the front",
+                "A single word with no question"
+              ],
+              "answer": 2,
+              "explain": "One clear question per card keeps recall focused and makes it easy to see what you know and what you do not."
+            },
+            {
+              "q": "In the Leitner system, what happens to a card you answer wrongly?",
+              "options": [
+                "It goes back to Box 1",
+                "It moves up one box",
+                "It is thrown away",
+                "It stays where it is"
+              ],
+              "answer": 0,
+              "explain": "Missed cards return to Box 1 so you review them more often until you know them."
+            },
+            {
+              "q": "Why should you write flashcards in your own words?",
+              "options": [
+                "It makes the cards shorter to copy",
+                "Teachers require it",
+                "It lets you skip the answer side",
+                "Rephrasing forces you to understand the idea"
+              ],
+              "answer": 3,
+              "explain": "Turning an idea into your own words means you must understand it, which makes it easier to remember."
+            }
+          ]
+        },
+        {
+          "id": "study-2-4",
+          "title": "Interleaving and mixed practice",
+          "minutes": 6,
+          "content": "Many students practise in blocks: twenty problems of one type, then twenty of the next. This feels smooth because you already know which method to use before you start each problem. Interleaving means mixing different types of problems or topics in the same practice session.\n\nMixing feels harder and slower, and you may get more answers wrong at first. That is exactly why it works. In an exam, questions are not labelled with the chapter they come from. Interleaving trains you to recognise what kind of problem you are facing and choose the right method, not just repeat a method on autopilot.\n\nStart small. After learning a few topics, build practice sets that shuffle problems from different chapters. You can also rotate subjects within a study day instead of spending the whole day on one. Judge your progress by test results, not by how easy the session felt.",
+          "key_points": [
+            "Interleaving mixes problem types instead of practising one type in a row.",
+            "It trains you to choose the right method, as exams require.",
+            "Mixed practice feels harder but leads to better results."
+          ],
+          "tip": "Write each problem on a separate slip of paper, shuffle them and solve them in that random order. It stops you guessing the method from the order.",
+          "task": "Build a practice set of six maths or science problems from three different chapters, two from each. Shuffle them and solve them in the mixed order.",
+          "quiz": [
+            {
+              "q": "What is interleaving?",
+              "options": [
+                "Doing twenty problems of the same type in a row",
+                "Mixing different types of problems in one session",
+                "Studying only one subject per week",
+                "Taking a break after every problem"
+              ],
+              "answer": 1,
+              "explain": "Interleaving shuffles problem types and topics instead of practising each one in a separate block."
+            },
+            {
+              "q": "Why does interleaving prepare you better for exams?",
+              "options": [
+                "Exam questions always come in chapter order",
+                "It lets you finish practice faster",
+                "It trains you to recognise the problem type and choose the method",
+                "It means you never make mistakes"
+              ],
+              "answer": 2,
+              "explain": "Exams mix topics, so you must decide which method fits each question. Interleaving practises exactly that."
+            },
+            {
+              "q": "Mixed practice feels harder than blocked practice. What does that mean?",
+              "options": [
+                "You should switch back to blocked practice",
+                "The topics are too advanced for you",
+                "You are not learning anything",
+                "The extra effort is part of why it works"
+              ],
+              "answer": 3,
+              "explain": "Like active recall, interleaving is a useful difficulty. The effort builds stronger, more flexible skills."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-3",
+      "title": "Notes and reading",
+      "lessons": [
+        {
+          "id": "study-3-1",
+          "title": "Notes that help you learn",
+          "minutes": 6,
+          "content": "Many students try to write down every word the teacher says. It feels safe, but copying word for word keeps your hand busy while your brain stays switched off. Good notes are not a recording of the class. They are a record of what you understood, written in your own words.\n\nWhen you put an idea into your own words, you have to think about what it means. That small effort is exactly what makes it stick. Leave out filler, use short phrases, symbols and arrows, and write examples that make sense to you. If you cannot rephrase something, mark it with a question mark and ask about it later.\n\nThe Cornell method turns notes into a study tool. Split the page into three parts: a wide column on the right for notes during class, a narrow column on the left for cues, and a strip at the bottom for a summary. After class, write questions or keywords in the cue column, then a short summary at the bottom. Later, cover the notes and use the cues to test yourself.",
+          "key_points": [
+            "Copying word for word keeps your hand busy but your brain idle.",
+            "Writing ideas in your own words forces you to understand them.",
+            "Cornell notes have a notes column, a cue column and a summary strip."
+          ],
+          "tip": "Fill in the cue column the same day, while the class is still fresh. Turning each cue into a question gives you a ready-made self-test for later.",
+          "task": "Take Cornell notes on one class or video today. Afterwards, add at least three questions in the cue column and write a three-line summary at the bottom.",
+          "quiz": [
+            {
+              "q": "Why is copying the teacher word for word a weak way to take notes?",
+              "options": [
+                "It uses too much paper",
+                "Your hand works but you do not process the ideas",
+                "Teachers do not allow it",
+                "It is too slow to be possible"
+              ],
+              "answer": 1,
+              "explain": "Copying keeps you busy without making you think about meaning. Rephrasing in your own words is what builds understanding."
+            },
+            {
+              "q": "In the Cornell method, what goes in the narrow left column?",
+              "options": [
+                "Questions or keywords that act as cues",
+                "The full notes from class",
+                "The date and the teacher's name",
+                "Drawings only"
+              ],
+              "answer": 0,
+              "explain": "The left column holds cues, usually questions or keywords, which you later use to test yourself with the notes covered."
+            },
+            {
+              "q": "What should you do with something you cannot put into your own words?",
+              "options": [
+                "Skip it, it is not important",
+                "Copy it exactly and memorise it",
+                "Mark it and ask or look it up later",
+                "Highlight it in three colours"
+              ],
+              "answer": 2,
+              "explain": "If you cannot rephrase it, you have not understood it yet. Mark it so you remember to ask or look it up."
+            }
+          ]
+        },
+        {
+          "id": "study-3-2",
+          "title": "Mind maps and visual notes",
+          "minutes": 6,
+          "content": "Line-by-line notes are good for details, but they can hide the big picture. Your brain remembers ideas better when it sees how they connect. Visual notes, such as mind maps, diagrams and timelines, show those connections on one page so you can see the whole topic at a glance.\n\nA mind map starts with the main idea written in the centre of the page. From it, draw thick branches for the major subtopics, and from each branch, thinner branches for details and examples. Use single keywords instead of sentences, and add small drawings or colours where they help. The shape itself shows what belongs together and what is most important.\n\nDifferent content suits different visuals. A process, such as photosynthesis or how a bill becomes law, fits a flow diagram with arrows. History fits a timeline. Comparisons fit a table or two overlapping circles. Drawing these yourself is active work, because you must decide how ideas relate, and that decision is what helps you remember.",
+          "key_points": [
+            "Visual notes show how ideas connect, not just what they are.",
+            "A mind map grows from a central idea into branches and details.",
+            "Match the visual to the content: flows, timelines or comparison tables."
+          ],
+          "tip": "Try redrawing your mind map from memory a few days later. The branches you cannot recall show exactly which parts of the topic need another review.",
+          "task": "Turn one chapter you are studying into a single-page mind map today. Put the main idea in the centre, add one branch per subtopic and use keywords only.",
+          "quiz": [
+            {
+              "q": "What goes in the centre of a mind map?",
+              "options": [
+                "The smallest detail",
+                "A list of page numbers",
+                "Your exam date",
+                "The main idea or topic"
+              ],
+              "answer": 3,
+              "explain": "A mind map starts from the main idea in the centre, with subtopics branching out from it."
+            },
+            {
+              "q": "Which visual best fits the steps of a process?",
+              "options": [
+                "A flow diagram with arrows",
+                "A single long paragraph",
+                "A list of unrelated keywords",
+                "A blank page"
+              ],
+              "answer": 0,
+              "explain": "Arrows in a flow diagram show the order of steps and how one leads to the next."
+            },
+            {
+              "q": "Why does drawing your own visual notes help memory?",
+              "options": [
+                "Colourful pages are easier to sell",
+                "You must decide how the ideas relate, which is active thinking",
+                "It takes less time than reading",
+                "You no longer need to review"
+              ],
+              "answer": 1,
+              "explain": "Deciding where each idea goes and how it links to others is active processing, and that is what makes it stick."
+            }
+          ]
+        },
+        {
+          "id": "study-3-3",
+          "title": "Read with understanding",
+          "minutes": 7,
+          "content": "Have you ever reached the end of a page and realised you remember nothing? Your eyes moved over every line, but your mind was somewhere else. Passive reading feels like studying, yet very little stays. SQ3R is a simple method that turns reading into active work.\n\nThe first two steps happen before you read. Survey: spend two minutes looking over the headings, pictures, bold words and the summary to get a map of the section. Question: turn each heading into a question, such as changing 'Causes of the war' into 'What caused the war?'. Now you are reading to find answers, not just to finish pages.\n\nThe last three steps are the 3 Rs. Read: go through one part at a time, looking for the answers to your questions. Recite: after each part, look away and say or write the answer in your own words. Review: when you finish the section, go back over all your questions and answer them again from memory. Reciting and reviewing are where the real learning happens.",
+          "key_points": [
+            "SQ3R stands for Survey, Question, Read, Recite, Review.",
+            "Turning headings into questions gives your reading a purpose.",
+            "Reciting from memory after each part is what locks it in."
+          ],
+          "tip": "Write your questions down before you start reading. Seeing them on paper keeps your attention on finding answers instead of drifting.",
+          "task": "Apply SQ3R to one textbook section today. Before reading, survey it and write down one question per heading, then answer each one from memory at the end.",
+          "quiz": [
+            {
+              "q": "What do you do in the Survey step?",
+              "options": [
+                "Read every word slowly",
+                "Write a full summary",
+                "Look over headings, pictures and bold words first",
+                "Test yourself on the chapter"
+              ],
+              "answer": 2,
+              "explain": "Surveying means a quick look at the structure before reading, so you know what the section is about."
+            },
+            {
+              "q": "How would you turn the heading 'Types of rocks' into a Question?",
+              "options": [
+                "What are the types of rocks?",
+                "Rocks are important.",
+                "Skip the heading",
+                "Copy the heading three times"
+              ],
+              "answer": 0,
+              "explain": "Turning the heading into a question gives you something specific to look for while you read."
+            },
+            {
+              "q": "What does the Recite step mean?",
+              "options": [
+                "Reading the section aloud from the book",
+                "Highlighting the key sentences",
+                "Moving on to the next chapter quickly",
+                "Looking away and answering in your own words"
+              ],
+              "answer": 3,
+              "explain": "Recite means recalling the answer without looking. It is active recall built into your reading."
+            }
+          ]
+        },
+        {
+          "id": "study-3-4",
+          "title": "Read faster without losing meaning",
+          "minutes": 6,
+          "content": "Not everything needs to be read slowly, word by word. Two quick reading skills save a lot of time. Skimming means moving quickly through a text to get the general idea. Scanning means searching for one specific thing, such as a date, a name or a formula, and ignoring the rest.\n\nThe fastest way to skim is to read by structure. Read the title, headings and subheadings first. Then read the first sentence of each paragraph, because it is usually the topic sentence that says what the paragraph is about. Add the bold words, the diagrams and the final summary, and you will know the shape of the chapter in a few minutes.\n\nBe careful with speed-reading tricks that promise a thousand words a minute. Most of them work by skipping words, and comprehension drops with them. For hard material you still need to read carefully. The smart approach is to skim first to see the map, then slow down for the parts that matter most.",
+          "key_points": [
+            "Skimming gets the general idea; scanning finds one specific detail.",
+            "Headings and topic sentences show the shape of a chapter quickly.",
+            "Speed tricks that skip words lose meaning; skim first, then read closely."
+          ],
+          "tip": "Before you skim, decide what you need from the text. A clear purpose tells you when to speed up and when to slow down.",
+          "task": "Skim one chapter in five minutes today using headings and first sentences. Write what you expect it covers, then read it properly and check how close you were.",
+          "quiz": [
+            {
+              "q": "You need to find a single date in a long article. Which skill fits best?",
+              "options": [
+                "Skimming",
+                "Scanning",
+                "Reading every word slowly",
+                "Making a mind map"
+              ],
+              "answer": 1,
+              "explain": "Scanning means searching for one specific piece of information and ignoring the rest."
+            },
+            {
+              "q": "Why read the first sentence of each paragraph when skimming?",
+              "options": [
+                "It is always the longest sentence",
+                "Teachers always put exam questions there",
+                "It is usually the topic sentence that sums up the paragraph",
+                "It contains the page number"
+              ],
+              "answer": 2,
+              "explain": "The topic sentence usually states the main idea, so reading it gives you the paragraph's point quickly."
+            },
+            {
+              "q": "What is the main problem with most speed-reading tricks?",
+              "options": [
+                "They skip words, so understanding drops",
+                "They are too slow",
+                "They only work in English",
+                "They require special glasses"
+              ],
+              "answer": 0,
+              "explain": "Reading faster by skipping words means you miss meaning. Skim for the map, then read the important parts carefully."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-4",
+      "title": "Ace your exams",
+      "lessons": [
+        {
+          "id": "study-4-1",
+          "title": "Plan your exam preparation",
+          "minutes": 6,
+          "content": "Good exam preparation starts at the finish line. Write down the exam date, count the days you have left and work backwards. Without a plan, most students study the topics they already like and leave the hard ones for the last night.\n\nFirst list every topic the exam can cover, using the syllabus or past papers. Then rate how well you know each one from 1 to 3: 1 means you could not explain it, 3 means you could answer a question on it right now. This honest rating shows you where your time should go.\n\nNow spread your sessions across the days. Weak topics get more sessions and strong ones get short reviews, so spacing works for you. Leave the final days for mixed practice and past papers, and keep one or two spare days for when life gets in the way.",
+          "key_points": [
+            "Work backwards from the exam date.",
+            "Rate each topic honestly from 1 to 3.",
+            "Give weak topics more sessions and keep spare days."
+          ],
+          "tip": "Update your ratings after every few sessions. A plan is a living tool, not a promise you made once and must follow blindly.",
+          "task": "Make a revision plan for your next exam: list every topic, rate each from 1 to 3, and assign dates so the 1s get the most sessions. Leave the last two days for past papers.",
+          "quiz": [
+            {
+              "q": "Where should exam planning start?",
+              "options": [
+                "With your favourite topic",
+                "With the first chapter of the book",
+                "With the exam date, working backwards",
+                "On the night before the exam"
+              ],
+              "answer": 2,
+              "explain": "Starting from the exam date tells you how many days you have, so you can fit every topic in instead of running out of time."
+            },
+            {
+              "q": "Why rate how well you know each topic?",
+              "options": [
+                "To see where your study time is most needed",
+                "To skip the topics you find boring",
+                "To impress your teacher",
+                "Because ratings replace practice"
+              ],
+              "answer": 0,
+              "explain": "Honest ratings reveal weak areas. Without them, it is easy to keep studying what you already know because it feels comfortable."
+            },
+            {
+              "q": "Which plan uses your time best?",
+              "options": [
+                "Equal time for every topic, no matter what",
+                "Only study the topics rated 3",
+                "Leave all weak topics for the last day",
+                "More sessions for weak topics, short reviews for strong ones, spare days at the end"
+              ],
+              "answer": 3,
+              "explain": "Weak topics need the most work, strong ones only need spaced reviews, and spare days protect the plan when something unexpected happens."
+            }
+          ]
+        },
+        {
+          "id": "study-4-2",
+          "title": "Practise like the real exam",
+          "minutes": 6,
+          "content": "Knowing a topic and answering exam questions on it under time pressure are two different skills. Past papers train the second one. They show you how questions are worded, which topics come up often and how much detail earns full marks.\n\nPractise under real conditions as often as you can: set a timer, put your phone in another room, close your notes and do not stop to look things up. It feels uncomfortable, but that discomfort is exactly what you will meet in the exam hall, and practising it now makes it familiar.\n\nThe real learning happens after you mark your answers. Keep an error log: for each mistake, write the question, the right answer and the cause, such as did not know it, misread the question or ran out of time. Patterns in your log tell you exactly what to fix next.",
+          "key_points": [
+            "Past papers show how questions are really asked.",
+            "Practise on a timer, without notes or phone.",
+            "Record every mistake and its cause in an error log."
+          ],
+          "tip": "Before a new practice paper, reread your error log. Seeing your usual mistakes right before you start helps you avoid repeating them.",
+          "task": "Solve one past question paper or one section of it on a timer, with notes closed. Then mark it and write each mistake in an error log with its cause.",
+          "quiz": [
+            {
+              "q": "What do past papers help you learn?",
+              "options": [
+                "The exact questions that will come this year",
+                "How questions are worded and what earns full marks",
+                "Nothing that a textbook cannot teach",
+                "How to avoid studying the syllabus"
+              ],
+              "answer": 1,
+              "explain": "Past papers rarely repeat exactly, but they show the style, common topics and level of detail examiners expect."
+            },
+            {
+              "q": "Which is the best way to do a practice paper?",
+              "options": [
+                "With notes open so you get every answer right",
+                "A few questions at a time between phone breaks",
+                "Reading the answers first, then the questions",
+                "On a timer, notes closed, phone away"
+              ],
+              "answer": 3,
+              "explain": "Real exam conditions train you to recall and manage time under pressure, which is what the exam will demand."
+            },
+            {
+              "q": "What should an error log record for each mistake?",
+              "options": [
+                "The question, the right answer and why you got it wrong",
+                "Only your final score",
+                "Only the questions you got right",
+                "How you felt during the paper"
+              ],
+              "answer": 0,
+              "explain": "Writing down the cause, such as a knowledge gap, a misread question or poor timing, shows you exactly what to work on next."
+            }
+          ]
+        },
+        {
+          "id": "study-4-3",
+          "title": "Exam day strategy",
+          "minutes": 6,
+          "content": "When the paper arrives, do not start writing straight away. Spend the first few minutes reading the whole paper. Notice which questions you know well, which ones carry the most marks and any instructions such as answer any four. This short scan prevents many costly mistakes.\n\nTime should follow marks. Divide the total time by the total marks to find roughly how many minutes each mark is worth, then give each question its share. Start with questions you feel sure about. Early success calms your nerves and banks marks, and if one question gets stuck, move on and come back to it later.\n\nFor longer answers, take a minute to plan before you write. Jot down the key points and the order you will present them. A short plan keeps your answer focused and saves you from realising halfway through that you missed the main point. Keep the last few minutes to check your work.",
+          "key_points": [
+            "Read the whole paper before you start writing.",
+            "Give each question time in line with its marks.",
+            "Start with what you know and plan long answers first."
+          ],
+          "tip": "Write the finish time for each section next to it on the question paper. A quick glance at the clock then tells you if you are on track.",
+          "task": "Take a past paper and write a minute-by-minute time plan for it: reading time, time for each question based on its marks, and checking time at the end.",
+          "quiz": [
+            {
+              "q": "What should you do in the first few minutes of an exam?",
+              "options": [
+                "Read the whole paper and note marks and instructions",
+                "Start answering question 1 immediately",
+                "Find the hardest question and begin there",
+                "Check what other students are doing"
+              ],
+              "answer": 0,
+              "explain": "A quick read of the whole paper helps you choose an order, spot instructions and plan your time before you commit."
+            },
+            {
+              "q": "How should you divide your time across questions?",
+              "options": [
+                "Equal time for every question",
+                "As much time as you want on the first question",
+                "In line with how many marks each question carries",
+                "Spend most time on the questions you know best"
+              ],
+              "answer": 2,
+              "explain": "Matching time to marks stops you spending twenty minutes on a two-mark question and rushing the big ones."
+            },
+            {
+              "q": "Why plan a long answer before writing it?",
+              "options": [
+                "Examiners give marks for the plan alone",
+                "It keeps the answer focused and organised",
+                "It makes the answer longer",
+                "It is only useful if you have extra time"
+              ],
+              "answer": 1,
+              "explain": "One minute of planning helps you include the key points in a clear order, which is what earns marks in long answers."
+            }
+          ]
+        },
+        {
+          "id": "study-4-4",
+          "title": "Calm under exam pressure",
+          "minutes": 6,
+          "content": "Some nervousness before an exam is normal and even useful. The racing heart and alert mind are your body getting ready to perform. Instead of telling yourself to calm down, try telling yourself I am excited and ready. Treating the feeling as energy works better than fighting it.\n\nThe best cure for exam anxiety is preparation you trust. If you have planned, practised past papers and slept well, you have real evidence that you are ready. On the morning itself, keep a simple routine: a proper breakfast, everything packed the night before, and arriving early without last-minute cramming.\n\nIf your mind goes blank, do not panic. Put your pen down and breathe slowly: in for four counts, out for six, a few times. Then move to another question, or write down anything you remember about the topic. Memory often comes back once you stop forcing it and start writing.",
+          "key_points": [
+            "Nerves are energy; reframe them as readiness.",
+            "Trusted preparation and a calm routine reduce anxiety.",
+            "When blank: breathe slowly, move on, write what you know."
+          ],
+          "tip": "Practise slow breathing during your timed past papers too. A skill you have used under practice pressure is easier to use on the real day.",
+          "task": "Write your own short exam-morning routine in five steps or fewer, and a three-step plan for what you will do if your mind goes blank. Keep it in your pencil case.",
+          "quiz": [
+            {
+              "q": "What is a helpful way to think about exam nerves?",
+              "options": [
+                "As a sign that you will fail",
+                "As something you must hide from everyone",
+                "As proof that you did not study enough",
+                "As energy that helps your body get ready"
+              ],
+              "answer": 3,
+              "explain": "Reframing nerves as excitement and readiness turns the same body signals into something that helps you perform."
+            },
+            {
+              "q": "What reduces exam anxiety the most?",
+              "options": [
+                "Studying all night before the exam",
+                "Preparation you trust and a simple exam-morning routine",
+                "Avoiding all thoughts about the exam",
+                "Comparing answers with friends just before going in"
+              ],
+              "answer": 1,
+              "explain": "Real preparation gives you evidence that you are ready, and a calm routine removes avoidable stress on the day."
+            },
+            {
+              "q": "Your mind goes blank on a question. What should you do first?",
+              "options": [
+                "Keep staring at the question until it comes back",
+                "Leave the exam early",
+                "Breathe slowly, then move on or write what you remember",
+                "Guess randomly and stop thinking about it"
+              ],
+              "answer": 2,
+              "explain": "Slow breathing calms the stress response, and moving on or writing related points often brings the memory back."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study-5",
+      "title": "Become a lifelong learner",
+      "lessons": [
+        {
+          "id": "study-5-1",
+          "title": "Learn anything new quickly",
+          "minutes": 6,
+          "content": "The physicist Richard Feynman had a simple test for understanding: if you cannot explain something in plain words, you do not really know it yet. The Feynman technique turns that test into a study method you can use on any subject.\n\nIt has four steps. Pick a topic and write its name at the top of a page. Explain it in simple words, as if teaching a younger student, without copying from the book. Wherever you get stuck, use jargon you cannot explain or skip a step, you have found a gap. Go back to the source, fill that gap, and explain it again.\n\nThe power of the method is that it shows you exactly what you do not know. Rereading hides gaps behind familiar words, while explaining exposes them. Each round makes your explanation shorter and clearer, and a clear explanation is a sign the idea is truly yours.",
+          "key_points": [
+            "If you cannot explain it simply, you do not fully understand it yet.",
+            "Explain the topic in plain words as if to a younger student.",
+            "The places where you get stuck show you exactly what to study next."
+          ],
+          "tip": "Ban yourself from using any technical word you could not define on the spot. If you need it, explain it first in everyday language.",
+          "task": "Choose one hard concept from your current subject and explain it in plain words in under 100 words, without looking at your notes. Underline every place where you got stuck, then check the book and rewrite those parts.",
+          "quiz": [
+            {
+              "q": "What is the main idea behind the Feynman technique?",
+              "options": [
+                "Read the chapter as many times as possible",
+                "Memorise the exact definitions from the textbook",
+                "Explain a topic simply to find the gaps in your understanding",
+                "Study only with a teacher present"
+              ],
+              "answer": 2,
+              "explain": "Explaining in plain words reveals what you do not yet understand, so you know exactly where to go back and study."
+            },
+            {
+              "q": "While explaining a topic, you keep using a term you cannot define. What should you do?",
+              "options": [
+                "Treat it as a gap, look it up and explain it in simple words",
+                "Ignore it, because the examiner will know what it means",
+                "Replace it with a longer technical word",
+                "Move on to a different topic"
+              ],
+              "answer": 0,
+              "explain": "Jargon you cannot explain is a sign of a gap. Filling it is the whole point of the technique."
+            },
+            {
+              "q": "Why does explaining work better than rereading for finding what you do not know?",
+              "options": [
+                "Explaining takes less time than reading",
+                "Rereading makes words feel familiar, while explaining forces you to produce the idea yourself",
+                "Rereading is only useful for maths",
+                "Explaining lets you skip the hard parts"
+              ],
+              "answer": 1,
+              "explain": "Familiar words create an illusion of knowing. Producing the explanation yourself shows clearly what is missing."
+            }
+          ]
+        },
+        {
+          "id": "study-5-2",
+          "title": "Study with others",
+          "minutes": 6,
+          "content": "Studying with others can make learning faster and more enjoyable. When you explain a topic to a friend, you organise it in your own head, and when a friend asks you a question you had not thought of, you discover a new gap. Teaching is one of the strongest ways to learn.\n\nGood study groups use active methods. Members take turns teaching a small part, quiz each other with questions written in advance and compare answers to past problems. Hearing how someone else solved a problem shows you a different way of thinking about it.\n\nThe risk is that a group turns into chatting. Keep it small, three to five people, and agree on a clear goal before you meet, such as finishing one chapter's questions. Give each person a role, set a time limit, and end with a short quiz so everyone leaves knowing what they actually learned.",
+          "key_points": [
+            "Teaching a friend is one of the best ways to learn.",
+            "Use the group for active work: teaching, quizzing and solving problems.",
+            "A clear goal, roles and a time limit stop the group from becoming chatting."
+          ],
+          "tip": "Do your own study first and come to the group with questions. A group is best for testing and explaining, not for reading the book together for the first time.",
+          "task": "Plan one group study session: write its goal, the topic each person will teach, the time limit and five quiz questions for the end. Send the plan to two or three classmates.",
+          "quiz": [
+            {
+              "q": "Why does teaching a topic to a friend help you learn it?",
+              "options": [
+                "It lets you avoid studying on your own",
+                "It is easier than reading",
+                "Your friend will do your homework",
+                "You must organise the ideas clearly and you discover your own gaps"
+              ],
+              "answer": 3,
+              "explain": "To explain something, you have to structure it in your mind, and your friend's questions reveal what you have not understood yet."
+            },
+            {
+              "q": "Which is the best way to keep a study group focused?",
+              "options": [
+                "Invite as many people as possible",
+                "Meet without a plan and see what happens",
+                "Agree on a clear goal, give each person a role and set a time limit",
+                "Only meet the night before the exam"
+              ],
+              "answer": 2,
+              "explain": "A clear goal, roles and a time limit give the session structure, so the time goes to learning rather than chatting."
+            },
+            {
+              "q": "What is a good way to end a group session?",
+              "options": [
+                "A short quiz so everyone checks what they learned",
+                "Copying each other's notes",
+                "Planning the next meeting only",
+                "Watching a video together"
+              ],
+              "answer": 0,
+              "explain": "A closing quiz is retrieval practice. It shows each person what stuck and what still needs work."
+            }
+          ]
+        },
+        {
+          "id": "study-5-3",
+          "title": "Stay motivated as a student",
+          "minutes": 6,
+          "content": "Many students wait to feel motivated before they start studying. But motivation usually comes after action, not before it. Once you start, even for five minutes, the task feels less heavy and the wish to continue grows. So the first step is to make starting very easy.\n\nMotivation lasts longer when study is linked to something you care about. Ask yourself why a subject matters to you: a career you want, a skill you will use or simply the pride of doing well. Then track small wins, such as sessions completed or questions answered correctly. Seeing progress on paper gives you a reason to keep going.\n\nEveryone has bad weeks. Missing a few days does not make you a failure, but guilt can turn a short break into a long one. Instead of blaming yourself, restart small: one short session today, then build back up. What matters is not a perfect record but returning quickly.",
+          "key_points": [
+            "Motivation often follows action, so make starting easy.",
+            "Link each subject to your own reasons and track small wins.",
+            "After a bad week, restart small without guilt."
+          ],
+          "tip": "Use the five-minute rule: promise yourself only five minutes of study. Most of the time you will keep going, and if not, you still kept the habit alive.",
+          "task": "Write two or three sentences on why one subject matters to you personally. Then make a small tracker and mark three study sessions you complete this week.",
+          "quiz": [
+            {
+              "q": "According to this lesson, how are motivation and action usually related?",
+              "options": [
+                "You must feel motivated before you can start",
+                "Motivation often comes after you start acting",
+                "They are not related at all",
+                "Only rewards create motivation"
+              ],
+              "answer": 1,
+              "explain": "Starting, even briefly, makes the task feel lighter and builds the wish to continue. Waiting for motivation often means never starting."
+            },
+            {
+              "q": "Which helps keep motivation over a long term?",
+              "options": [
+                "Comparing yourself with the top student every day",
+                "Studying only when you feel like it",
+                "Promising yourself a huge reward at the end of the year",
+                "Linking study to your own goals and tracking small wins"
+              ],
+              "answer": 3,
+              "explain": "Personal reasons give study meaning, and visible progress gives you a reason to continue."
+            },
+            {
+              "q": "You missed a whole week of study. What is the best response?",
+              "options": [
+                "Restart with one short session today and build back up",
+                "Wait until next month to start fresh",
+                "Study all night to make up for everything at once",
+                "Give up on the subject"
+              ],
+              "answer": 0,
+              "explain": "A small restart is easy to do and gets the habit going again. Guilt and all-night catch-ups usually make things worse."
+            }
+          ]
+        },
+        {
+          "id": "study-5-4",
+          "title": "Your personal study system",
+          "minutes": 7,
+          "content": "You have learned many methods: active recall, spaced repetition, flashcards, Cornell notes, SQ3R, timed practice and more. Knowing them is not enough. They only work when they become a routine you follow every week, not something you try once before an exam.\n\nA personal study system answers four questions. How will you take notes in class? How will you test yourself on them? When will you review, and at what gaps? How will you plan your week and your exams? Choose one method for each question, write them on a single page and turn them into a weekly routine with fixed days and times.\n\nKeep the system simple enough to follow for a full term. Start with what you can keep, not with the perfect plan. After two weeks, review it: what worked, what you skipped and why. Adjust one thing at a time. A simple system you use every week beats a perfect one you abandon.",
+          "key_points": [
+            "Methods only help when they become a weekly routine.",
+            "Choose one method each for notes, recall, review and planning.",
+            "Keep it simple, then review and adjust after two weeks."
+          ],
+          "tip": "Attach your study blocks to things you already do every day, such as right after dinner or the first hour after school. Fixed times remove the daily decision.",
+          "task": "Write your one-page study system: your note method, your self-testing method, your review schedule and your weekly plan with days and times. Put a reminder in your calendar to review it in two weeks.",
+          "quiz": [
+            {
+              "q": "Why build a personal study system instead of just knowing many methods?",
+              "options": [
+                "So you can use a different method every day",
+                "Because methods only work when they become a regular routine",
+                "Because teachers require it",
+                "So you can stop reviewing"
+              ],
+              "answer": 1,
+              "explain": "Knowledge of methods does nothing on its own. A routine makes you actually use them week after week."
+            },
+            {
+              "q": "Which questions should a study system answer?",
+              "options": [
+                "Which subject is the easiest",
+                "Who in your class studies the most",
+                "How many hours your friends study",
+                "How you take notes, test yourself, review and plan"
+              ],
+              "answer": 3,
+              "explain": "Notes, recall, spaced review and planning are the core parts. One chosen method for each makes a complete system."
+            },
+            {
+              "q": "After two weeks you notice you keep skipping one part of your system. What should you do?",
+              "options": [
+                "Find out why and adjust that one part to something you can keep",
+                "Throw the whole system away and start over",
+                "Add three more methods to make up for it",
+                "Ignore it and hope it gets better"
+              ],
+              "answer": 0,
+              "explain": "Reviewing and changing one thing at a time keeps the system realistic. A simple system you follow beats a perfect one you abandon."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

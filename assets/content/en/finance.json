@@ -1,0 +1,1008 @@
+{
+  "id": "finance",
+  "name": "Personal Finance",
+  "mentor": "Money Mentor",
+  "tagline": "Track your money, budget with purpose and let savings grow.",
+  "description": "The clear basics of managing money: tracking, budgeting, emergency savings and compound growth. This is general education, not personal financial advice.",
+  "image": "assets/images/finance.jpg",
+  "color": "#7C9A5C",
+  "messages": {
+    "welcome": "Money gets simpler once you can see it. First we track, then we decide. No judgment here.",
+    "comeback": "Welcome back. Even five minutes on your money today is a good investment.",
+    "pass": "Smart thinking. Your future self says thank you.",
+    "fail": "That's okay. Money ideas often need a second look. Check the explanations and try again.",
+    "finished": "You can now track, budget, protect yourself, borrow wisely, grow your income, set goals, invest steadily and plan for the long term. Start with one automatic saving this month."
+  },
+  "levels": [
+    {
+      "id": "fin-1",
+      "title": "Money basics",
+      "lessons": [
+        {
+          "id": "fin-1-1",
+          "title": "Know where your money goes",
+          "minutes": 5,
+          "content": "You cannot manage what you cannot see. Most people underestimate their small, frequent spending: snacks, rides, subscriptions and in-app purchases add up quickly.\n\nFor the next 30 days, write down every expense, no matter how small. Use a notebook, a notes app or a spreadsheet. Note the amount, what it was for and whether it was a need or a want.\n\nAt the end of the month, group your spending into categories like food, transport, bills and fun. Many people are surprised by at least one category. That surprise is valuable, because it shows exactly where change will be easiest.",
+          "key_points": [
+            "Small, frequent spending adds up.",
+            "Track every expense for 30 days.",
+            "Group spending into categories to see patterns."
+          ],
+          "tip": "Do not try to cut spending in the first month of tracking. Just observe. Honest data first, decisions later.",
+          "task": "Start tracking today. Write down every expense for the next 7 days and mark each one as a need or a want.",
+          "quiz": [
+            {
+              "q": "Why track every small expense?",
+              "options": [
+                "Small purchases add up and are easy to underestimate",
+                "Banks require it",
+                "To feel guilty",
+                "It is not useful"
+              ],
+              "answer": 0,
+              "explain": "Frequent small spending is often the biggest surprise once you add it up."
+            },
+            {
+              "q": "What should you mainly do in the first month of tracking?",
+              "options": [
+                "Cut all spending",
+                "Observe and record honestly",
+                "Take a loan",
+                "Stop eating out completely"
+              ],
+              "answer": 1,
+              "explain": "Honest observation first shows you where change is realistic."
+            },
+            {
+              "q": "Which is usually a want rather than a need?",
+              "options": [
+                "Rent",
+                "Basic groceries",
+                "A new streaming subscription",
+                "The electricity bill"
+              ],
+              "answer": 2,
+              "explain": "Wants are nice to have. Needs keep you safe, housed and fed."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-2",
+          "title": "Build a simple budget",
+          "minutes": 6,
+          "content": "A budget is a plan for your money before you spend it. One easy starting point is the 50/30/20 rule: about 50% of income for needs, 30% for wants and 20% for savings or paying off debt.\n\nThese numbers are a guide, not a law. If rent is expensive where you live, needs may take more than half. What matters is deciding on purpose instead of discovering at the end of the month that nothing is left.\n\nThe most powerful trick is to pay yourself first: move your savings amount aside as soon as income arrives, ideally automatically. What remains is what you can spend, guilt free.",
+          "key_points": [
+            "A budget plans spending before it happens.",
+            "50/30/20 means needs, wants and savings.",
+            "Pay yourself first by saving as soon as income arrives."
+          ],
+          "tip": "If saving 20% feels impossible, start with 5% and raise it a little every few months. The habit matters more than the size.",
+          "task": "Using your tracked spending, split your income into needs, wants and savings. Choose an amount to save first next month.",
+          "quiz": [
+            {
+              "q": "In the 50/30/20 rule, what is the 20% for?",
+              "options": [
+                "Wants",
+                "Needs",
+                "Savings or paying off debt",
+                "Taxes"
+              ],
+              "answer": 2,
+              "explain": "The 20% goes to savings or debt repayment, building your financial future."
+            },
+            {
+              "q": "What does 'pay yourself first' mean?",
+              "options": [
+                "Buy something nice on payday",
+                "Move savings aside as soon as income arrives",
+                "Pay all bills late",
+                "Spend first and save what is left"
+              ],
+              "answer": 1,
+              "explain": "Saving first makes it automatic, instead of hoping something remains at the end."
+            },
+            {
+              "q": "Your rent takes 60% of your income. What does that mean for 50/30/20?",
+              "options": [
+                "Budgeting is impossible",
+                "Adjust the percentages to fit your situation",
+                "Stop paying rent",
+                "Ignore savings forever"
+              ],
+              "answer": 1,
+              "explain": "The rule is a guide. Adapt it to your real costs while still saving something."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-3",
+          "title": "Plan for the costs you can see coming",
+          "minutes": 5,
+          "content": "Many budgets break not because of surprises, but because of costs we knew about and forgot: a yearly phone or internet plan, school fees, festival shopping, birthday gifts, a vehicle service. They do not come every month, so they are easy to leave out, and then one month suddenly feels impossible.\n\nThe fix is a sinking fund: a small amount you set aside every month for a cost you know is coming. List every irregular expense you expect in the next 12 months with its rough amount. Divide each one by the number of months until it is due, and that is your monthly amount.\n\nKeep these savings apart from your everyday money, for example in a separate account or a clearly labelled envelope for each goal. When the bill arrives, the money is already waiting. A big payment then becomes a normal month instead of a crisis or a reason to borrow.",
+          "key_points": [
+            "Irregular but predictable costs break budgets when forgotten.",
+            "A sinking fund saves a little each month for a known future cost.",
+            "Divide the expected cost by the months left until it is due."
+          ],
+          "tip": "Look back at your last 12 months of spending or bank messages. Every large one-off payment you find is probably coming back next year too.",
+          "task": "List at least three irregular costs you expect this year with rough amounts and due months. Work out the monthly amount for the nearest one and set it aside this month.",
+          "quiz": [
+            {
+              "q": "Which of these is a good fit for a sinking fund?",
+              "options": [
+                "A sudden hospital bill",
+                "Your daily lunch",
+                "A lottery win",
+                "Festival shopping you do every year"
+              ],
+              "answer": 3,
+              "explain": "Sinking funds are for costs you can predict. Sudden, unexpected costs belong to an emergency fund."
+            },
+            {
+              "q": "A yearly fee of 6,000 is due in 6 months. How much should you set aside each month?",
+              "options": [
+                "1,000",
+                "500",
+                "6,000",
+                "Nothing until the bill arrives"
+              ],
+              "answer": 0,
+              "explain": "6,000 divided by 6 months is 1,000 a month, so the full amount is ready on time."
+            },
+            {
+              "q": "Why do irregular costs often break a budget?",
+              "options": [
+                "They are always very small",
+                "Banks hide them",
+                "They do not come every month, so they are easy to forget when planning",
+                "They can never be predicted"
+              ],
+              "answer": 2,
+              "explain": "Because they are not monthly, they get left out of the plan and then arrive all at once."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-4",
+          "title": "Bank accounts and mobile wallets",
+          "minutes": 6,
+          "content": "Where you keep your money matters. A savings account pays a little interest and is meant for money you want to hold on to. A current account is built for frequent payments and business use, usually with no interest. A mobile wallet like bKash or Nagad is great for quick transfers and paying bills, but it is a tool for moving money, not a place to grow it.\n\nEach one has costs that are easy to miss. Banks may charge yearly maintenance or card fees, and some charge for falling below a minimum balance. Wallets often charge for cash-out, and sometimes for sending money above a free limit. Small fees repeated every month can quietly cost more than you think.\n\nSafety habits matter as much as fees. Never share your PIN or OTP, lock your phone and your wallet app, and check your messages after every transaction. If something looks wrong, contact the official helpline right away. Choosing the right account and using it carefully protects both your money and your peace of mind.",
+          "key_points": [
+            "Savings accounts hold money, current accounts handle frequent payments, wallets move money quickly.",
+            "Cash-out, transfer and maintenance fees add up over a month.",
+            "Never share your PIN or OTP, and check every transaction message."
+          ],
+          "tip": "If you cash out often, try paying merchants or bills straight from your wallet instead. Paying directly is often free, while cashing out usually is not.",
+          "task": "Open the fee chart for your own bank account or mobile wallet. Add up what you paid in fees last month and pick one change that would lower it.",
+          "quiz": [
+            {
+              "q": "Which is the best place to keep money you want to save and hold on to?",
+              "options": [
+                "A mobile wallet you use for daily transfers",
+                "Cash in your pocket",
+                "A savings account",
+                "A current account used for business payments"
+              ],
+              "answer": 2,
+              "explain": "A savings account is designed for holding money and usually pays some interest. Wallets and current accounts are for moving money."
+            },
+            {
+              "q": "Which fee is common on mobile wallets?",
+              "options": [
+                "A cash-out charge",
+                "A charge for reading your balance message",
+                "A fee for receiving your own salary",
+                "A charge for locking the app"
+              ],
+              "answer": 0,
+              "explain": "Cashing out from a wallet usually costs a percentage of the amount, which adds up if you do it often."
+            },
+            {
+              "q": "You get a message about a transaction you did not make. What should you do first?",
+              "options": [
+                "Ignore it and hope it goes away",
+                "Reply to the message with your PIN to confirm",
+                "Wait until the end of the month to check",
+                "Contact the official helpline of your bank or wallet right away"
+              ],
+              "answer": 3,
+              "explain": "Acting quickly through official contacts gives you the best chance to stop further loss."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-2",
+      "title": "Grow and protect",
+      "lessons": [
+        {
+          "id": "fin-2-1",
+          "title": "Your emergency fund",
+          "minutes": 5,
+          "content": "Life brings surprises: a medical bill, a broken phone, a lost job. Without savings, these surprises often turn into debt. An emergency fund is money set aside only for unexpected, necessary costs.\n\nA common target is three to six months of essential expenses. That can feel huge, so start with a smaller first milestone, such as one month of expenses, and build from there.\n\nKeep this money separate from your everyday account so you are not tempted to spend it, but easy to reach when a real emergency happens. A sale, a holiday or a new gadget is not an emergency.",
+          "key_points": [
+            "An emergency fund covers unexpected, necessary costs.",
+            "Aim for 3 to 6 months of essential expenses, starting with a smaller milestone.",
+            "Keep it separate but easy to reach."
+          ],
+          "tip": "Give the account a name like 'Peace of mind'. A name makes it harder to raid for things that are not emergencies.",
+          "task": "Calculate one month of your essential expenses. That is your first emergency fund milestone. Decide how much you will add each month.",
+          "quiz": [
+            {
+              "q": "What is an emergency fund for?",
+              "options": [
+                "Holidays",
+                "Unexpected, necessary costs",
+                "Buying shares",
+                "Weekend shopping"
+              ],
+              "answer": 1,
+              "explain": "It protects you from turning surprises into debt."
+            },
+            {
+              "q": "What is a common long-term target?",
+              "options": [
+                "One week of expenses",
+                "3 to 6 months of essential expenses",
+                "Ten years of income",
+                "No target is needed"
+              ],
+              "answer": 1,
+              "explain": "Three to six months of essential expenses is a widely used guideline."
+            },
+            {
+              "q": "Where should you keep it?",
+              "options": [
+                "Nowhere, spend it",
+                "Separate from everyday money but easy to reach",
+                "In risky investments",
+                "Lent to friends"
+              ],
+              "answer": 1,
+              "explain": "Separate prevents casual spending, and easy to reach means it is there when you need it."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-2",
+          "title": "The power of compound growth",
+          "minutes": 6,
+          "content": "Compounding means earning returns on your returns. If your savings grow, next year's growth is calculated on a bigger amount, so growth speeds up over time.\n\nA handy shortcut is the rule of 72: divide 72 by the yearly growth rate to estimate how many years it takes money to double. At 8% a year, money roughly doubles in 9 years. At 6%, it takes about 12 years.\n\nThe biggest factor you control is time. Someone who starts saving small amounts early can end up with more than someone who saves larger amounts but starts much later. Remember that investments that can grow can also lose value, so learn the risks before you invest and spread your money instead of betting on one thing.",
+          "key_points": [
+            "Compounding is growth on top of growth.",
+            "Rule of 72: years to double is about 72 divided by the yearly rate.",
+            "Starting early matters; understand risk before investing."
+          ],
+          "tip": "Compounding also works against you with debt. High-interest debt grows the same way, so paying it off comes first.",
+          "task": "Use the rule of 72 to estimate how long money takes to double at 4%, 6% and 9%. Then write down one small amount you could start saving every month.",
+          "quiz": [
+            {
+              "q": "What is compound growth?",
+              "options": [
+                "Growth only on the original amount",
+                "Earning returns on previous returns",
+                "A type of bank fee",
+                "Spending interest immediately"
+              ],
+              "answer": 1,
+              "explain": "Returns are added to the balance, so future growth is calculated on a bigger amount."
+            },
+            {
+              "q": "Using the rule of 72, at 8% per year money doubles in about...",
+              "options": [
+                "4 years",
+                "9 years",
+                "20 years",
+                "72 years"
+              ],
+              "answer": 1,
+              "explain": "72 divided by 8 is 9, so roughly 9 years."
+            },
+            {
+              "q": "Why does starting early matter so much?",
+              "options": [
+                "Banks prefer young people",
+                "More time lets compounding work longer",
+                "Prices never rise",
+                "It does not matter"
+              ],
+              "answer": 1,
+              "explain": "Time is the engine of compounding. Extra years can matter more than bigger deposits."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-3",
+          "title": "Inflation: why idle cash shrinks",
+          "minutes": 6,
+          "content": "Inflation means prices rise over time. The same amount of money buys a little less each year. If prices rise 6% this year, something that cost 100 last year now costs about 106. Your note still says 100, but it can buy less than it used to.\n\nThis is why money kept as cash at home slowly loses value, even though the number never changes. What matters is your real return: the growth rate minus the inflation rate. If your savings earn 5% while prices rise 7%, you are actually losing about 2% of buying power every year.\n\nYou do not need to fear inflation, just plan for it. Keep only what you need for daily spending and emergencies in very safe, easy-to-reach places, and compare savings rates with the current inflation rate. For long-term goals, remember that future costs will be higher than today's, so set your targets a little higher than today's prices.",
+          "key_points": [
+            "Inflation means the same money buys less over time.",
+            "Real return equals your growth rate minus inflation.",
+            "Plan long-term goals using higher future prices, not today's."
+          ],
+          "tip": "When you see a savings rate, ask one question: is it higher than inflation? If not, your money is growing in number but shrinking in buying power.",
+          "task": "Find the current inflation rate in your country and the interest rate on your savings account. Subtract inflation from the savings rate to see your real return.",
+          "quiz": [
+            {
+              "q": "What does inflation do to your money?",
+              "options": [
+                "Makes each note worth more",
+                "Has no effect on cash",
+                "Makes the same amount buy less over time",
+                "Doubles your savings automatically"
+              ],
+              "answer": 2,
+              "explain": "As prices rise, every unit of money buys a little less than before."
+            },
+            {
+              "q": "Your savings earn 4% a year and inflation is 6%. What is your real return?",
+              "options": [
+                "10%",
+                "4%",
+                "2%",
+                "About minus 2%"
+              ],
+              "answer": 3,
+              "explain": "4% minus 6% is about minus 2%, so your buying power shrinks each year."
+            },
+            {
+              "q": "You plan to buy something in 5 years. How should inflation affect your saving target?",
+              "options": [
+                "Aim a little higher, because the price will likely rise",
+                "Aim lower, because prices fall over time",
+                "Use exactly today's price",
+                "Inflation does not apply to future plans"
+              ],
+              "answer": 0,
+              "explain": "Prices usually rise, so a target based only on today's price will likely fall short."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-4",
+          "title": "Insurance basics: protect what you build",
+          "minutes": 6,
+          "content": "Insurance is a way of sharing the cost of rare but expensive events. Many people each pay a small, regular amount, and the few who face a big loss, like a serious illness or an accident, get help paying for it. It is not an investment to make money. It is protection so that one bad event does not wipe out years of saving.\n\nA few terms make any policy easier to read. The premium is what you pay, monthly or yearly. Coverage is what the policy pays for and up to how much. The deductible is the part you pay yourself before insurance starts paying. Exclusions are the situations the policy does not cover, so read them before you sign, not after you claim.\n\nFor a young person, health cover usually comes first, because a hospital bill is the most likely large shock. Life insurance becomes important once others depend on your income, like parents, a spouse or children. Check what your employer or family already provides before buying more, and choose simple, clear policies over ones that mix insurance with investment.",
+          "key_points": [
+            "Insurance shares the cost of rare, expensive events across many people.",
+            "Know the premium, coverage, deductible and exclusions before you sign.",
+            "Health cover usually comes first; life cover matters once others depend on you."
+          ],
+          "tip": "Ask the seller one direct question: \"What does this policy not cover?\" A clear answer is a good sign. A vague one is a reason to wait.",
+          "task": "List the three biggest financial risks in your life right now. Then check whether you or your family already have any insurance that covers them, including cover from an employer.",
+          "quiz": [
+            {
+              "q": "What is the main purpose of insurance?",
+              "options": [
+                "To earn high returns on your money",
+                "To protect you from rare events that would be too expensive to pay for alone",
+                "To replace your emergency fund completely",
+                "To avoid paying any medical bills ever"
+              ],
+              "answer": 1,
+              "explain": "Insurance shares the cost of big, unlikely losses. It is protection, not a way to grow money."
+            },
+            {
+              "q": "What is the deductible?",
+              "options": [
+                "The yearly price of the policy",
+                "The maximum amount the insurer will pay",
+                "A list of situations that are not covered",
+                "The part of a cost you pay yourself before insurance pays"
+              ],
+              "answer": 3,
+              "explain": "You pay the deductible first, and the insurer covers the rest up to the policy limit."
+            },
+            {
+              "q": "When does life insurance usually become important?",
+              "options": [
+                "When other people depend on your income",
+                "As soon as you open a bank account",
+                "Only after you retire",
+                "When you want to invest for high returns"
+              ],
+              "answer": 0,
+              "explain": "Life insurance protects the people who rely on your income if something happens to you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-3",
+      "title": "Smart money moves",
+      "lessons": [
+        {
+          "id": "fin-3-1",
+          "title": "Handle debt wisely",
+          "minutes": 6,
+          "content": "Not all debt is the same. A low-interest loan for education or a home can help you build something. High-interest debt, like an unpaid credit card balance or a quick loan from an app, can grow faster than you can pay it off.\n\nStart by listing every debt you have: who you owe, the total amount, the interest rate and the minimum payment. Always pay at least the minimum on everything, because late payments add fees and can hurt your credit history.\n\nThen choose one method for any extra money. The avalanche method pays the highest interest rate first and saves the most money. The snowball method pays the smallest balance first and gives you quick wins that keep you motivated. Both work, as long as you stop adding new debt while you pay off the old.",
+          "key_points": [
+            "High-interest debt grows fast and should be cleared first.",
+            "List every debt with its rate and minimum payment.",
+            "Use the avalanche or snowball method and avoid new debt."
+          ],
+          "tip": "Before borrowing for something you want, ask: would I still buy this if I had to save for it first? If not, it is probably not worth the interest.",
+          "task": "Write down every debt you have with its amount, interest rate and minimum payment. Circle the one you will attack first with any extra money.",
+          "quiz": [
+            {
+              "q": "Which debt is usually the most urgent to pay off?",
+              "options": [
+                "A low-interest education loan",
+                "Money you already repaid",
+                "An unpaid credit card balance with high interest",
+                "A home loan at a low fixed rate"
+              ],
+              "answer": 2,
+              "explain": "High-interest debt grows fastest, so clearing it saves the most money."
+            },
+            {
+              "q": "What does the avalanche method focus on first?",
+              "options": [
+                "The debt with the highest interest rate",
+                "The debt with the smallest balance",
+                "The newest debt",
+                "Whichever lender calls most"
+              ],
+              "answer": 0,
+              "explain": "Paying the highest rate first reduces the total interest you pay."
+            },
+            {
+              "q": "Why pay at least the minimum on every debt?",
+              "options": [
+                "It clears the debt quickly",
+                "Lenders give you a prize",
+                "It is optional and does not matter",
+                "Missed payments add fees and hurt your credit history"
+              ],
+              "answer": 3,
+              "explain": "Late or missed payments cost extra and make future borrowing harder."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-2",
+          "title": "Investing basics: risk and spreading it",
+          "minutes": 7,
+          "content": "Investing means putting money into something that can grow, like shares, funds or bonds. The trade-off is risk: investments that can grow more usually swing up and down more, and none of them is guaranteed. Money you will need within the next few years usually belongs in safer places, not in the stock market.\n\nDiversification means not putting all your eggs in one basket. If you own one company's shares and it fails, you lose a lot. If you own small pieces of many companies, through a broad index fund for example, one failure hurts much less.\n\nKeep it simple and patient. Low fees matter, because they are taken every year whether you gain or not. Prices will fall at times. Selling in a panic turns a temporary drop into a real loss, so only invest money you can leave alone for many years.",
+          "key_points": [
+            "Higher possible returns usually come with higher risk.",
+            "Diversify across many investments instead of betting on one.",
+            "Invest only long-term money, keep fees low and avoid panic selling."
+          ],
+          "tip": "Before you invest anything, make sure your emergency fund and high-interest debt are handled. Investing works best on a stable base.",
+          "task": "Write down one money goal that is more than 5 years away and one that is less than 2 years away. Next to each, note whether it suits investing or safe savings.",
+          "quiz": [
+            {
+              "q": "What is the usual link between risk and return?",
+              "options": [
+                "Higher returns always mean no risk",
+                "Risk and return are unrelated",
+                "Low-risk investments always earn the most",
+                "Higher possible returns usually come with higher risk"
+              ],
+              "answer": 3,
+              "explain": "Investments that can grow more usually rise and fall more along the way."
+            },
+            {
+              "q": "What does diversification mean?",
+              "options": [
+                "Putting all your money in one promising company",
+                "Spreading money across many investments",
+                "Changing investments every week",
+                "Keeping all money in cash"
+              ],
+              "answer": 1,
+              "explain": "Spreading out means one bad investment cannot sink everything."
+            },
+            {
+              "q": "You need money for a house deposit in one year. Where should it go?",
+              "options": [
+                "Safe savings, not the stock market",
+                "A single exciting share",
+                "A friend's new business",
+                "Wherever promises the highest return"
+              ],
+              "answer": 0,
+              "explain": "Short-term money cannot wait out a market drop, so keep it safe."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-3",
+          "title": "Avoid scams and impulse spending",
+          "minutes": 5,
+          "content": "Scams follow a pattern: a promise that sounds too good, pressure to act right now, and a request for money or secret details. Guaranteed high returns, prizes you never entered for and messages asking for your PIN or OTP are classic warning signs. Real banks never ask for your PIN or OTP.\n\nWhen something feels urgent, slow down. Hang up and call the official number yourself, check with someone you trust, and never send money to someone you have only met online. A real opportunity will still be there tomorrow.\n\nImpulse spending works the same way, just with smaller numbers. Sales, countdown timers and one-click checkout are designed to make you act before you think. A simple defense is the 24-hour rule: for any unplanned purchase above a set amount, wait a day. Often the urge passes on its own.",
+          "key_points": [
+            "Too good to be true plus urgency is a scam warning sign.",
+            "Never share your PIN or OTP, and verify through official contacts.",
+            "Use the 24-hour rule for unplanned purchases."
+          ],
+          "tip": "Remove saved cards from shopping apps and turn off sale notifications. A little friction gives your thinking brain time to catch up.",
+          "task": "Pick an amount for your 24-hour rule today. Then unsubscribe from at least two shopping or sale notifications.",
+          "quiz": [
+            {
+              "q": "Which message is most likely a scam?",
+              "options": [
+                "Your monthly bank statement",
+                "A message promising guaranteed double returns if you invest today",
+                "A receipt for a purchase you made",
+                "A reminder from your own calendar"
+              ],
+              "answer": 1,
+              "explain": "Guaranteed high returns plus urgency is one of the clearest scam patterns."
+            },
+            {
+              "q": "Someone claiming to be your bank asks for your OTP. What should you do?",
+              "options": [
+                "Share it quickly so the account stays safe",
+                "Share only half of it",
+                "Send it by email instead",
+                "Refuse, hang up and call the official bank number yourself"
+              ],
+              "answer": 3,
+              "explain": "Real banks never ask for your OTP or PIN. Verify through official contacts."
+            },
+            {
+              "q": "What is the 24-hour rule?",
+              "options": [
+                "Spend all your money within 24 hours of payday",
+                "Check your balance every 24 hours",
+                "Wait a day before an unplanned purchase above a set amount",
+                "Return everything within 24 hours"
+              ],
+              "answer": 2,
+              "explain": "Waiting a day lets the urge fade so you buy only what you really want."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-4",
+          "title": "The true cost of a loan or EMI",
+          "minutes": 7,
+          "content": "A loan offer usually shows the monthly payment in large letters and the full cost in small ones. Before signing, look past the interest rate and ask one question: how much will I pay back in total? Add every installment, the processing fee and any insurance or service charge bundled in. Also check the late fee, because one missed payment can cost far more than the interest.\n\n\"0% EMI\" and \"buy now, pay later\" sound free, but often are not. The cost can hide in a processing fee, a higher price than the cash price, or a lost cash discount. For example, a phone that costs 30,000 in cash might cost 12 payments of 2,800 plus a 1,000 fee on EMI. That is 34,600, or 4,600 more than paying cash.\n\nYour repayment record follows you. In Bangladesh, banks report loans and card dues to the CIB (Credit Information Bureau), and lenders check it before giving you a new loan. Paying on time builds a good history; late or missed payments can block future loans when you need them most. Borrow only what you can repay from your regular income.",
+          "key_points": [
+            "Compare the total repayment, not just the interest rate or monthly amount.",
+            "0% EMI can still cost more through fees or a higher price.",
+            "Your repayment record, like the CIB report, affects future borrowing."
+          ],
+          "tip": "Before accepting any EMI, ask the shop for its best cash price. The difference between that and your total EMI repayment is the real cost of borrowing.",
+          "task": "Take one real loan, credit card or EMI offer. Add up every payment and fee to find the total you would pay back, and compare it with the item's cash price.",
+          "quiz": [
+            {
+              "q": "What is the most useful number when comparing loan offers?",
+              "options": [
+                "The size of the monthly payment",
+                "How fast the loan is approved",
+                "The advertised interest rate alone",
+                "The total amount you will pay back, including fees"
+              ],
+              "answer": 3,
+              "explain": "The total repayment includes interest, fees and charges, so it shows the true cost."
+            },
+            {
+              "q": "A phone costs 20,000 in cash. On EMI it is 10 payments of 2,100 plus a 500 fee. How much extra does the EMI cost?",
+              "options": [
+                "Nothing, it is 0%",
+                "1,500",
+                "500",
+                "2,100"
+              ],
+              "answer": 1,
+              "explain": "10 x 2,100 = 21,000, plus 500 is 21,500. That is 1,500 more than the cash price."
+            },
+            {
+              "q": "Why does paying loans and card dues on time matter beyond avoiding late fees?",
+              "options": [
+                "It increases your salary",
+                "It cancels the interest",
+                "It builds a good credit record that lenders check before future loans",
+                "It is only required for business loans"
+              ],
+              "answer": 2,
+              "explain": "Lenders check your repayment history, such as the CIB report, before lending again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-4",
+      "title": "Earn and plan ahead",
+      "lessons": [
+        {
+          "id": "fin-4-1",
+          "title": "Understand your payslip and income tax",
+          "minutes": 6,
+          "content": "The salary in your offer letter is usually your gross income, the total before anything is taken out. What reaches your account is your net income, or take-home pay. The gap is made up of deductions, most commonly income tax and a provident fund contribution, which is a savings scheme where you and often your employer put in money for your future.\n\nRead your payslip line by line. For example, a gross salary of 50,000 with 3,000 in tax and 2,500 in provident fund leaves 44,500 to take home. Plan your budget on the net amount, not the gross, or every month will feel short. Remember that provident fund money is still yours; it is saving, not a loss.\n\nTax is part of planning, not something to fear. In Bangladesh, once your income reaches the taxable level you need a TIN (Tax Identification Number) and should file a yearly return, even if tax was already deducted from your salary. Keep your payslips, tax certificates and investment receipts in one place. Rules and limits change, so check the official guidance or a qualified adviser for your own situation.",
+          "key_points": [
+            "Gross is the total salary; net is what actually reaches you.",
+            "Budget on net income, and know what each deduction is for.",
+            "Tax is part of planning: get a TIN and file a yearly return when required."
+          ],
+          "tip": "Keep a folder, paper or digital, for payslips, tax certificates and investment receipts. Filing a return is much easier when everything is already in one place.",
+          "task": "Using a real or sample payslip or offer letter, work out your monthly take-home amount. List every deduction and write one line on what each is for.",
+          "quiz": [
+            {
+              "q": "What is net income?",
+              "options": [
+                "The amount you take home after deductions",
+                "Your salary before any deductions",
+                "Only your yearly bonus",
+                "The tax you pay each year"
+              ],
+              "answer": 0,
+              "explain": "Net income, or take-home pay, is what remains after tax and other deductions."
+            },
+            {
+              "q": "Gross salary is 40,000. Tax is 2,000 and provident fund is 2,000. What is the take-home pay?",
+              "options": [
+                "40,000",
+                "38,000",
+                "36,000",
+                "44,000"
+              ],
+              "answer": 2,
+              "explain": "40,000 minus 2,000 tax minus 2,000 provident fund leaves 36,000."
+            },
+            {
+              "q": "Tax was already deducted from your salary. Do you still need to think about a tax return?",
+              "options": [
+                "No, deduction means you never need to file",
+                "Yes, if your income is taxable you usually still need a TIN and a yearly return",
+                "Only if you change jobs",
+                "Only if you own a business"
+              ],
+              "answer": 1,
+              "explain": "Salary deductions do not replace the yearly return. Check the official rules for your situation."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-2",
+          "title": "Grow your income",
+          "minutes": 6,
+          "content": "Budgeting controls what goes out, but there is a limit to how much you can cut. Income has much more room to grow. The most reliable way to earn more is to build skills that people pay well for, such as a technical skill, a language, sales or clear writing. Look at job posts in your field and notice which skills keep appearing next to higher salaries.\n\nWhen you negotiate a first salary or ask for a raise, bring research, not just hope. Find out the usual pay range for the role from job posts, people in the field and salary surveys. Then point to the value you add: results you delivered, responsibilities you took on, skills you gained. Ask clearly, give a number, and be ready to discuss it calmly.\n\nA side income, such as freelancing, tutoring or a small online business, can grow your earnings and build experience. Start small and keep it from hurting your main job or studies. Side income is often irregular, so budget on your lowest usual month and save the extra from good months, so a slow month does not become a crisis.",
+          "key_points": [
+            "Income can grow much more than spending can be cut.",
+            "Negotiate with research on pay ranges and the value you add.",
+            "Budget irregular side income on your lowest month and save the rest."
+          ],
+          "tip": "Keep a simple list of your wins at work or in projects as they happen. When it is time to ask for a raise, your evidence is already written down.",
+          "task": "Write down one skill that could raise your income within a year, one person or platform where that skill is paid for, and one step you will take this week to start.",
+          "quiz": [
+            {
+              "q": "What is the strongest basis for asking for a raise?",
+              "options": [
+                "Saying your expenses have gone up",
+                "Comparing yourself with a coworker's personal life",
+                "Research on pay ranges plus clear examples of the value you add",
+                "Threatening to leave without a plan"
+              ],
+              "answer": 2,
+              "explain": "Employers respond best to market data and evidence of your results."
+            },
+            {
+              "q": "Your freelance income ranges from 8,000 to 20,000 a month. How should you budget?",
+              "options": [
+                "Based on your lowest usual month, saving the extra from good months",
+                "Based on your best month",
+                "Based on the average, spending everything you earn",
+                "Do not budget irregular income at all"
+              ],
+              "answer": 0,
+              "explain": "Planning on the low month keeps you safe, and good months build a buffer."
+            },
+            {
+              "q": "Why is growing income important alongside budgeting?",
+              "options": [
+                "Because budgeting never works",
+                "Because higher income removes the need to track spending",
+                "Because side income is always guaranteed",
+                "Because there is a limit to cutting costs, but income has more room to grow"
+              ],
+              "answer": 3,
+              "explain": "You can only cut spending so far, while skills and negotiation can keep raising what you earn."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-3",
+          "title": "Set and prioritise money goals",
+          "minutes": 6,
+          "content": "A wish like 'save more' or 'buy a laptop someday' is hard to act on. A real goal has three parts: what it is, how much it costs and when you need the money. 'Save 60,000 taka for a laptop by next December' tells you exactly what to do: divide the amount by the months left and you have your monthly target.\n\nNext, sort your goals by time. Short-term goals are within a year, like a phone or a trip. Medium-term goals take one to five years, like a course fee or a wedding. Long-term goals are more than five years away, like a home or retirement. The timeline matters because it decides where the money should sit: money you need soon should stay safe and easy to reach.\n\nUsually, several goals want the same money. Put safety first: an emergency fund and paying off high-interest debt normally come before anything else. Then rank the rest by how important and how urgent they are. You do not have to fund everything at once. Give the top goal a fixed monthly amount, and start the next one when the first is done or your income grows.",
+          "key_points": [
+            "A goal needs an amount and a deadline.",
+            "Sort goals into short, medium and long term.",
+            "Safety first, then fund goals in order of priority."
+          ],
+          "tip": "Give each goal a name and, if you can, its own account or savings pot. Money with a label is much harder to spend by accident.",
+          "task": "Write three money goals with an amount and a date for each. Rank them, then divide the top goal's amount by the months left to get your monthly target.",
+          "quiz": [
+            {
+              "q": "Which of these is a specific money goal?",
+              "options": [
+                "Save more money",
+                "Be rich one day",
+                "Save 30,000 taka for a course by next June",
+                "Spend less on food"
+              ],
+              "answer": 2,
+              "explain": "It has a clear purpose, an amount and a deadline, so you can work out a monthly target."
+            },
+            {
+              "q": "You need 24,000 taka in 12 months. How much should you set aside each month?",
+              "options": [
+                "1,200 taka",
+                "2,000 taka",
+                "2,400 taka",
+                "24,000 taka"
+              ],
+              "answer": 1,
+              "explain": "24,000 divided by 12 months is 2,000 taka a month."
+            },
+            {
+              "q": "When several goals compete for the same money, what usually comes first?",
+              "options": [
+                "An emergency fund and paying off high-interest debt",
+                "A holiday",
+                "The newest phone",
+                "Whichever goal feels most exciting"
+              ],
+              "answer": 0,
+              "explain": "A safety net and getting rid of costly debt protect every other goal you have."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-4",
+          "title": "Know your net worth",
+          "minutes": 5,
+          "content": "Net worth is one simple number: everything you own minus everything you owe. What you own, your assets, includes cash, bank and mobile wallet balances, savings certificates, investments and valuable things like a motorbike or gold. What you owe, your debts, includes loans, credit card balances, EMIs and money borrowed from friends or family.\n\nIncome shows how much money comes in. Net worth shows how much you have actually kept. Someone with a high salary who spends it all and keeps borrowing can have a lower net worth than someone who earns less but saves steadily. When you are starting out, your net worth may be small or even negative because of a loan or a phone on EMI. That is normal. The direction matters more than the starting point.\n\nCalculate it every three to six months using the same simple list. Use realistic values: what you could actually sell something for today, not what you paid. If the number is rising, your saving and debt payoff are working. If it is falling, look for the cause: new debt, a big purchase or spending that slowly crept up.",
+          "key_points": [
+            "Net worth is what you own minus what you owe.",
+            "It shows what you have kept, not just what you earn.",
+            "Track it every few months and watch the direction."
+          ],
+          "tip": "Do not count things that lose value fast, like your phone or clothes, at the price you paid. Leave them out or use a low resale value so the number stays honest.",
+          "task": "List your assets and debts with rough values, subtract to find your net worth today, and set a calendar reminder to recalculate it in three months.",
+          "quiz": [
+            {
+              "q": "What is net worth?",
+              "options": [
+                "Your monthly salary",
+                "Your bank balance only",
+                "Your total income for the year",
+                "Everything you own minus everything you owe"
+              ],
+              "answer": 3,
+              "explain": "Net worth adds up all your assets and subtracts all your debts."
+            },
+            {
+              "q": "You own 50,000 taka in assets and owe 20,000 taka. What is your net worth?",
+              "options": [
+                "20,000 taka",
+                "30,000 taka",
+                "50,000 taka",
+                "70,000 taka"
+              ],
+              "answer": 1,
+              "explain": "50,000 minus 20,000 is 30,000 taka."
+            },
+            {
+              "q": "Why can net worth be a better measure of progress than income?",
+              "options": [
+                "It is always bigger than income",
+                "Banks calculate it for you",
+                "It shows how much you have actually kept after spending and debt",
+                "It never changes"
+              ],
+              "answer": 2,
+              "explain": "A big income means little if it all gets spent or borrowed against. Net worth shows what stays with you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-5",
+      "title": "Build long-term wealth",
+      "lessons": [
+        {
+          "id": "fin-5-1",
+          "title": "Compare real investment options",
+          "minutes": 7,
+          "content": "Investment options sit on a ladder from safer to riskier. At the safe end are bank fixed deposits and monthly savings schemes (DPS): fixed interest, low risk and small minimums. Government savings certificates (sanchayapatra) and treasury bonds are backed by the government and often pay more, but they have rules on who can buy, how much and how early you can cash out. Rates and rules change, so always check the current ones.\n\nFurther up are mutual funds, which pool money from many people and spread it across many shares or bonds, run by a professional manager for a fee. At the top are individual shares, bought through a brokerage (BO) account. They can grow the most over many years, but prices can fall sharply, and a single company can lose most of its value. Higher possible returns always come with higher risk.\n\nCompare options on return, risk, liquidity (how quickly you can get your money back without a penalty), fees and the minimum amount. Then match them to your goal's timeline. Money needed within about three years should stay in safe options. Money for goals five or more years away can take some ups and downs in exchange for more growth. This is general education, so check details with official sources before you invest.",
+          "key_points": [
+            "Options range from safe deposits to risky individual shares.",
+            "Compare return, risk, liquidity, fees and minimum amount.",
+            "Match the option to how soon you need the money."
+          ],
+          "tip": "If an offer promises high returns with no risk, treat it as a warning sign. Real investments always trade some safety for growth.",
+          "task": "Pick one goal at least 5 years away. Choose two options you can actually access and compare them on return, risk, fees and how easily you can withdraw. Write down which fits better and why.",
+          "quiz": [
+            {
+              "q": "Which of these is usually the lowest-risk option?",
+              "options": [
+                "Shares of a single company",
+                "A bank fixed deposit",
+                "A friend's new business",
+                "A crypto coin someone recommended"
+              ],
+              "answer": 1,
+              "explain": "Fixed deposits pay a set interest rate and your amount does not swing up and down with the market."
+            },
+            {
+              "q": "What does liquidity mean?",
+              "options": [
+                "How fast your money can grow",
+                "How risky an investment is",
+                "How much tax you pay on it",
+                "How quickly you can get your money back without a big penalty"
+              ],
+              "answer": 3,
+              "explain": "Liquid money is easy to reach. Some options lock your money or charge a penalty for early withdrawal."
+            },
+            {
+              "q": "You need money for a goal in 2 years. Which fits best?",
+              "options": [
+                "A safe option like a fixed deposit or DPS",
+                "Individual shares",
+                "Whatever performed best last year",
+                "A hot tip from social media"
+              ],
+              "answer": 0,
+              "explain": "Short-term money should be safe, because shares may be down exactly when you need to sell."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-2",
+          "title": "Invest regularly and stay the course",
+          "minutes": 6,
+          "content": "Investing a fixed amount on a fixed date every month is called cost averaging. When prices are high, your money buys fewer units. When prices are low, it buys more. Over time this smooths out the price you pay, and, just as important, it turns investing into a habit that does not depend on your mood or the news.\n\nMany people try to time the market: buy just before prices rise and sell just before they fall. Even professionals rarely manage this consistently. Missing just a few of the best days can cut long-term returns sharply, and the best days often come right after the worst ones. Time in the market usually beats timing the market.\n\nThe biggest danger is often your own behaviour. Panic selling during a fall turns a temporary drop into a permanent loss. Chasing hot tips from friends or social media usually means buying after prices have already jumped. Checking prices every day makes normal ups and downs feel like emergencies. Make your plan in a calm moment, automate it if you can and check in monthly, not hourly.",
+          "key_points": [
+            "Invest a fixed amount on a fixed schedule.",
+            "Timing the market rarely works; staying invested usually does.",
+            "Avoid panic selling, hot tips and constant price checking."
+          ],
+          "tip": "Write your falling-market rule before markets fall. A decision made calmly in advance is much easier to follow than one made in a panic.",
+          "task": "Choose a fixed amount and a fixed date each month for a regular investment or savings deposit. Then write one sentence on what you will do when markets fall, such as 'I keep my monthly amount the same and do not sell.'",
+          "quiz": [
+            {
+              "q": "What is cost averaging?",
+              "options": [
+                "Investing everything when prices look lowest",
+                "Investing a fixed amount on a regular schedule",
+                "Selling whenever prices fall",
+                "Only buying what friends recommend"
+              ],
+              "answer": 1,
+              "explain": "A fixed amount on a fixed date buys more when prices are low and less when they are high."
+            },
+            {
+              "q": "Your investment falls 15% in a month, but your goal is 10 years away. What is usually wise?",
+              "options": [
+                "Sell everything right away",
+                "Stop investing for good",
+                "Borrow money to buy as much as possible",
+                "Stick to your plan and keep investing your regular amount"
+              ],
+              "answer": 3,
+              "explain": "With a long timeline, drops are normal. Selling in a panic locks in the loss."
+            },
+            {
+              "q": "Why is checking prices many times a day a problem?",
+              "options": [
+                "It makes normal ups and downs feel like emergencies and leads to rash decisions",
+                "It costs a fee every time",
+                "It makes prices fall",
+                "It is against the law"
+              ],
+              "answer": 0,
+              "explain": "Short-term moves are mostly noise. Seeing them constantly pushes you to react instead of following your plan."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-3",
+          "title": "Start retirement planning early",
+          "minutes": 6,
+          "content": "Retirement is your longest-term goal. One day you may stop earning a salary but still need money for twenty years or more. Because it feels so far away, it is easy to put off. But that distance is exactly what makes starting early so powerful: small amounts get decades to compound.\n\nLong-term schemes can help. Many employers offer a provident fund, where part of your salary is saved each month and the employer often adds a matching contribution. That match is extra money for you, so it is worth taking in full. Government pension schemes, such as Bangladesh's Universal Pension Scheme, let people, including the self-employed and informal workers, pay in a monthly amount and receive a pension later. Rules change, so check the official details.\n\nFor a rough idea of how much is enough, think about what you might need each month in retirement in today's money, and remember that prices will keep rising. You do not need a perfect number now. What matters is starting with something, even a small monthly amount, and raising it whenever your income rises. Starting at 25 instead of 35 can matter more than doubling your contribution later.",
+          "key_points": [
+            "Retirement is the longest goal, so time helps it the most.",
+            "Use provident funds, pension schemes and any employer match.",
+            "Start small now and raise the amount as your income grows."
+          ],
+          "tip": "Whenever you get a raise, send part of the increase to retirement savings before you get used to spending it.",
+          "task": "Find out which retirement or pension options you can join, through your job or a government scheme. Then use the rule of 72 to estimate what a small monthly amount could grow to by age 60, assuming about 6% growth a year.",
+          "quiz": [
+            {
+              "q": "Why is starting retirement saving early so effective?",
+              "options": [
+                "Pensions are only for young people",
+                "Prices never rise",
+                "Small amounts get many years to compound",
+                "You can withdraw it any time you like"
+              ],
+              "answer": 2,
+              "explain": "Time is the engine of compounding, and retirement gives it the longest runway."
+            },
+            {
+              "q": "Your employer matches your provident fund contribution. What does that mean for you?",
+              "options": [
+                "It is extra money added to your savings, worth taking in full",
+                "It is a loan you must repay",
+                "It cuts your salary with no benefit",
+                "It is only for managers"
+              ],
+              "answer": 0,
+              "explain": "An employer match is extra money on top of your salary. Not taking it leaves money on the table."
+            },
+            {
+              "q": "When is a good moment to raise your retirement contribution?",
+              "options": [
+                "Never, once set it should stay the same",
+                "Only after age 50",
+                "When markets are at their highest",
+                "When your income goes up"
+              ],
+              "answer": 3,
+              "explain": "Raising it with each pay rise grows your savings without cutting what you live on today."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-4",
+          "title": "Your personal money plan: allocation and yearly review",
+          "minutes": 7,
+          "content": "Allocation means deciding what share of your savings goes into safe assets, like cash, deposits and savings certificates, and what share goes into growth assets, like mutual funds and shares. There is no single right split. It depends on your goals and your time: money for the next few years belongs in safe places, while long-term money can hold more growth assets. Many people keep a bigger safe share at first and add growth only as their emergency fund and knowledge grow.\n\nOver a year, some investments grow faster than others and your split drifts. Rebalancing means bringing it back to your target once a year: move some money from the side that has grown too big to the side that has fallen behind, or simply send new savings to the smaller side. This quietly makes you trim what has risen and add to what is cheaper, without guessing the market.\n\nA plan also needs good paperwork. Keep a simple list of every account, policy and investment, where the documents are and who to contact. Make sure each one has an up-to-date nominee, so your family can reach the money if something happens to you. Then pick one fixed date each year, like your birthday, for a full money review: net worth, goals, emergency fund, debts, allocation and nominees.",
+          "key_points": [
+            "Split savings between safe and growth assets based on goals and time.",
+            "Rebalance once a year back to your target split.",
+            "Keep documents and nominees up to date and review every year."
+          ],
+          "tip": "Keep your money plan to one page. A short plan you actually read every year beats a long one you never open.",
+          "task": "Write a one-page money plan with your target safe vs growth split, your top goals, your emergency fund status and a fixed date each year for a full money review. Add a reminder for that date.",
+          "quiz": [
+            {
+              "q": "What does allocation mean?",
+              "options": [
+                "Picking the single best share",
+                "Deciding what share of savings goes into safe vs growth assets",
+                "Spending your whole budget",
+                "Taking a loan to invest"
+              ],
+              "answer": 1,
+              "explain": "Allocation is the split between safe and growth assets, based on your goals and timeline."
+            },
+            {
+              "q": "Your target is 60% safe and 40% growth, but after a strong year it is 45% safe and 55% growth. What does rebalancing mean here?",
+              "options": [
+                "Sell everything that is safe",
+                "Put all new savings into growth assets",
+                "Move money or new savings back toward 60% safe and 40% growth",
+                "Ignore the change forever"
+              ],
+              "answer": 2,
+              "explain": "Rebalancing brings your split back to the target you chose, so your risk stays where you planned."
+            },
+            {
+              "q": "Why keep nominees up to date?",
+              "options": [
+                "So your family can reach the money if something happens to you",
+                "To earn a higher interest rate",
+                "Because it lowers your tax",
+                "It does not really matter"
+              ],
+              "answer": 0,
+              "explain": "Without a correct nominee, your family may face long delays and paperwork to access your money."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

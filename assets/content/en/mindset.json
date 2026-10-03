@@ -1,0 +1,1008 @@
+{
+  "id": "mindset",
+  "name": "Mindset & Wellbeing",
+  "mentor": "Mind Mentor",
+  "tagline": "Grow from setbacks and keep your energy steady.",
+  "description": "Lessons on growth mindset, learning from failure, handling stress and protecting your sleep. This is general wellbeing education, not medical advice.",
+  "image": "assets/images/mindset.jpg",
+  "color": "#A07093",
+  "messages": {
+    "welcome": "This is a calm space. We will work on how you think about challenges and how you look after your energy.",
+    "comeback": "Welcome back. Be kind to yourself about the break, and let's do one small lesson.",
+    "pass": "Well done. Notice how it feels to understand this.",
+    "fail": "That's alright. Struggling is part of learning, which is exactly what this mentor teaches. Try again.",
+    "finished": "You have built a growth mindset, steadier energy habits, kinder self-talk, sharper control over your thoughts and a plan for hard days. Come back to these lessons whenever life feels heavy."
+  },
+  "levels": [
+    {
+      "id": "mind-1",
+      "title": "Growth mindset",
+      "lessons": [
+        {
+          "id": "mind-1-1",
+          "title": "Fixed vs growth mindset",
+          "minutes": 5,
+          "content": "Psychologist Carol Dweck described two ways people think about ability. With a fixed mindset, you believe talent is set: you are either good at something or you are not. With a growth mindset, you believe abilities can be developed through effort, good strategies and help from others.\n\nThe mindset you hold changes how you act. Someone with a fixed mindset may avoid challenges so they do not look bad. Someone with a growth mindset sees challenges as the way to improve.\n\nA simple tool is the word yet. \"I can't do this\" becomes \"I can't do this yet.\" One word turns a verdict into a stage of learning. Growth mindset is not only effort, though: if something is not working, change the strategy, not just the hours.",
+          "key_points": [
+            "Fixed mindset: ability is set. Growth mindset: ability can be developed.",
+            "Mindset affects whether you avoid or welcome challenges.",
+            "Add 'yet', and change strategies, not just effort."
+          ],
+          "tip": "Notice your inner voice when something is hard. Write down one fixed thought and rewrite it as a growth thought.",
+          "task": "Catch yourself saying 'I can't' or 'I'm not a ___ person' this week. Rewrite each one using 'yet' and one new strategy.",
+          "quiz": [
+            {
+              "q": "What does a growth mindset believe?",
+              "options": [
+                "Talent is fixed at birth",
+                "Abilities can be developed with effort, strategies and help",
+                "Effort is pointless",
+                "Only geniuses succeed"
+              ],
+              "answer": 1,
+              "explain": "A growth mindset sees ability as something you can build."
+            },
+            {
+              "q": "Which statement shows a growth mindset?",
+              "options": [
+                "I'm just bad at maths.",
+                "I can't do this yet, so I'll try a different method.",
+                "Some people are born smart.",
+                "I'll avoid hard subjects."
+              ],
+              "answer": 1,
+              "explain": "It includes 'yet' and a change of strategy, which are at the core of a growth mindset."
+            },
+            {
+              "q": "If hard work is not improving your results, what should you do?",
+              "options": [
+                "Quit",
+                "Change your strategy and ask for help",
+                "Keep working the same way for longer",
+                "Blame others"
+              ],
+              "answer": 1,
+              "explain": "A growth mindset means effort plus better strategies, not just more hours."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-2",
+          "title": "Learning from failure",
+          "minutes": 5,
+          "content": "Failure feels personal, but it is information. Every failed attempt shows you something that does not work yet, and it often points to what might.\n\nAfter a setback, try a short review with three questions. What happened, described as facts without blame? What did I learn? What will I do differently next time? Writing the answers turns a painful moment into a plan.\n\nSeparate what you did from who you are. \"My presentation was poorly prepared\" can be fixed. \"I am a failure\" cannot, and it is not true. Talk to yourself the way you would talk to a good friend who had the same setback.",
+          "key_points": [
+            "Failure is information, not identity.",
+            "Review: what happened, what I learned, what I will change.",
+            "Speak to yourself as you would to a friend."
+          ],
+          "tip": "Keep a 'lessons learned' note. Reading it later shows how much you have grown.",
+          "task": "Think of a recent setback and answer the three review questions in writing.",
+          "quiz": [
+            {
+              "q": "How should you view failure?",
+              "options": [
+                "As proof you are not capable",
+                "As information about what to change",
+                "As something to hide",
+                "As bad luck only"
+              ],
+              "answer": 1,
+              "explain": "Failure shows what does not work yet, which guides your next attempt."
+            },
+            {
+              "q": "Which self-talk is most helpful after a setback?",
+              "options": [
+                "I am a failure.",
+                "I'll never be good at this.",
+                "My preparation was weak, so next time I'll practice twice.",
+                "Nothing ever works for me."
+              ],
+              "answer": 2,
+              "explain": "It focuses on a fixable action, not on your identity."
+            },
+            {
+              "q": "What is the first question in the review?",
+              "options": [
+                "Whose fault was it?",
+                "What happened, described as facts?",
+                "Should I give up?",
+                "Why am I always unlucky?"
+              ],
+              "answer": 1,
+              "explain": "Starting with facts instead of blame keeps the review calm and useful."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-3",
+          "title": "Using feedback to grow",
+          "minutes": 5,
+          "content": "Feedback is one of the fastest ways to improve, yet it often stings. With a fixed mindset, criticism feels like a judgment of who you are, so people get defensive or stop listening. With a growth mindset, feedback is free information about how to get better.\n\nWhen you receive feedback, try to listen first and react later. Say thank you, then ask one clarifying question, such as \"Can you give me an example?\" or \"What would you do differently?\" You do not have to agree with everything. Take a day to think, keep what is useful and let go of the rest.\n\nDo not wait for feedback to find you. Ask for it, and make your question specific. \"Any thoughts?\" usually gets a polite \"Looks fine.\" \"What is one thing I could make clearer in this report?\" gets a real answer you can act on.",
+          "key_points": [
+            "Feedback is information about your work, not a verdict on you.",
+            "Listen first, say thank you, and ask one clarifying question.",
+            "Ask for feedback with a specific question to get useful answers."
+          ],
+          "tip": "When feedback stings, wait before you reply. Write down what was said, then reread it the next day with fresh eyes.",
+          "task": "Pick one piece of recent work and ask one person a specific question about how to improve it. Write down one change you will make.",
+          "quiz": [
+            {
+              "q": "How does a growth mindset view criticism?",
+              "options": [
+                "As a personal attack",
+                "As something to ignore",
+                "As useful information about how to improve",
+                "As proof you lack talent"
+              ],
+              "answer": 2,
+              "explain": "A growth mindset separates the work from the person and uses feedback to get better."
+            },
+            {
+              "q": "Someone gives you feedback that feels harsh. What is a good first response?",
+              "options": [
+                "Thank them and ask for an example",
+                "Explain why they are wrong",
+                "Change the subject",
+                "Agree with everything immediately"
+              ],
+              "answer": 0,
+              "explain": "Listening and asking for an example helps you understand before you decide what to keep."
+            },
+            {
+              "q": "Which request is most likely to get useful feedback?",
+              "options": [
+                "Any thoughts?",
+                "Is it good?",
+                "Do you like it?",
+                "What is one thing I could make clearer in this report?"
+              ],
+              "answer": 3,
+              "explain": "A specific question gives the other person something concrete to answer."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-4",
+          "title": "Practice that actually makes you better",
+          "minutes": 6,
+          "content": "Many people practice by repeating what they already know. It feels productive because it is comfortable, but it rarely makes you much better. Researchers who study experts call the useful kind deliberate practice: focused work on a specific weakness, just beyond what you can currently do.\n\nThink of three zones. In the comfort zone, everything is easy and you learn little. In the panic zone, the task is so hard that you freeze or guess. In the stretch zone between them, you make mistakes but can still work through them. That is where improvement happens, so aim for tasks that feel slightly hard, not impossible.\n\nDeliberate practice also needs a clear target and quick feedback. 'Get better at English' is too vague; 'stop pausing before past-tense verbs when I speak' is a target. Feedback can come from a teacher, an answer key, a recording of yourself or a test that runs your code. Without it, you can repeat the same mistake a hundred times and call it practice.",
+          "key_points": [
+            "Repeating what you already know feels good but adds little.",
+            "Work in the stretch zone: slightly hard, not comfortable and not overwhelming.",
+            "Target one specific weakness and get quick feedback."
+          ],
+          "tip": "Keep practice sessions short and focused. Twenty minutes of full attention on one weak spot beats two hours of easy review.",
+          "task": "Pick one skill, such as English speaking, maths problems or coding. Name one precise weakness in it, then do one focused 20-minute practice session on only that weakness today.",
+          "quiz": [
+            {
+              "q": "What is deliberate practice?",
+              "options": [
+                "Repeating what you already do well",
+                "Practicing for many hours without a plan",
+                "Focused work on a specific weakness, just beyond your current level",
+                "Only practicing when you feel motivated"
+              ],
+              "answer": 2,
+              "explain": "Deliberate practice targets a weak spot in your stretch zone, which is where real improvement happens."
+            },
+            {
+              "q": "Which task is most likely in your stretch zone?",
+              "options": [
+                "A problem that is slightly hard, where you make mistakes but can work through them",
+                "Problems you can solve without thinking",
+                "A topic so far ahead that you can only guess",
+                "Rereading notes you already know by heart"
+              ],
+              "answer": 0,
+              "explain": "The stretch zone is challenging but workable, unlike the comfort zone (too easy) or the panic zone (too hard)."
+            },
+            {
+              "q": "Why is quick feedback important when practicing?",
+              "options": [
+                "It makes practice take longer",
+                "It replaces the need to practice",
+                "It is only useful for teachers",
+                "Without it, you may repeat the same mistake again and again"
+              ],
+              "answer": 3,
+              "explain": "Feedback shows you what to fix, so each round of practice improves on the last."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-2",
+      "title": "Stay balanced",
+      "lessons": [
+        {
+          "id": "mind-2-1",
+          "title": "Managing everyday stress",
+          "minutes": 6,
+          "content": "Some stress helps you rise to a challenge. Long-lasting stress without recovery, however, drains energy, focus and mood. The aim is not a life without stress, but a rhythm of effort and recovery.\n\nA quick tool for tense moments is slow breathing. Try box breathing: breathe in for 4 counts, hold for 4, breathe out for 4, hold for 4, and repeat a few times. Slow, steady breathing can help your body settle.\n\nIt also helps to sort worries into what you can control and what you cannot. Act on the first group with one small step. For the second, practice letting go, or talk it through with someone you trust. If stress or low mood feels heavy for weeks, reach out to a doctor or counselor. Asking for help is a strong move, not a weak one.",
+          "key_points": [
+            "Stress is normal; recovery matters as much as effort.",
+            "Box breathing: in for 4, hold for 4, out for 4, hold for 4.",
+            "Act on what you can control, and seek support when stress stays heavy."
+          ],
+          "tip": "Schedule small recovery moments into your day, like a short walk after lunch, before you feel exhausted.",
+          "task": "Try box breathing for one minute today. Then list three current worries and mark each one as 'can control' or 'cannot control'.",
+          "quiz": [
+            {
+              "q": "What is the healthy goal with stress?",
+              "options": [
+                "Remove all stress forever",
+                "Balance effort with recovery",
+                "Ignore it",
+                "Push through without rest"
+              ],
+              "answer": 1,
+              "explain": "Some stress is useful. Recovery stops it from wearing you down."
+            },
+            {
+              "q": "What is box breathing?",
+              "options": [
+                "Breathing into a box",
+                "In for 4, hold for 4, out for 4, hold for 4",
+                "Holding your breath as long as possible",
+                "Breathing fast to wake up"
+              ],
+              "answer": 1,
+              "explain": "Box breathing has four equal steps of four counts each, which slows your breathing down."
+            },
+            {
+              "q": "Stress has felt heavy for several weeks. What is a good step?",
+              "options": [
+                "Keep it to yourself",
+                "Talk to a doctor, a counselor or someone you trust",
+                "Work longer hours",
+                "Sleep less"
+              ],
+              "answer": 1,
+              "explain": "Reaching out for support is a healthy and strong choice."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-2",
+          "title": "Sleep and energy",
+          "minutes": 5,
+          "content": "Sleep is when your body recovers and your brain organizes what you learned during the day. Most adults need around 7 to 9 hours a night, and short sleep makes focus, mood and decision-making worse.\n\nConsistency is one of the most helpful habits: go to bed and wake up at roughly the same time every day, including weekends. Get daylight in the morning, and reduce bright screens and heavy meals close to bedtime. Caffeine can stay in your body for many hours, so avoid it in the late afternoon and evening.\n\nIf you cannot fall asleep, do not fight it for hours in bed. Get up, do something calm in dim light and return when you feel sleepy. If sleep problems continue for weeks, talk to a doctor.",
+          "key_points": [
+            "Most adults need about 7 to 9 hours of sleep.",
+            "Keep consistent sleep and wake times.",
+            "Morning light, fewer late screens and no late caffeine help."
+          ],
+          "tip": "Set an alarm for going to bed, not only for waking up. It reminds you to start winding down.",
+          "task": "Choose a fixed bedtime and wake time for the next 7 days. Each morning, write down how rested you feel.",
+          "quiz": [
+            {
+              "q": "About how much sleep do most adults need?",
+              "options": [
+                "4 to 5 hours",
+                "7 to 9 hours",
+                "12 hours",
+                "It does not matter"
+              ],
+              "answer": 1,
+              "explain": "Most adults function best with roughly 7 to 9 hours."
+            },
+            {
+              "q": "Which habit supports better sleep?",
+              "options": [
+                "A different bedtime every night",
+                "Consistent sleep and wake times",
+                "Coffee in the evening",
+                "Scrolling in bed until late"
+              ],
+              "answer": 1,
+              "explain": "A steady schedule helps your body clock know when to feel sleepy."
+            },
+            {
+              "q": "You cannot fall asleep. What is recommended?",
+              "options": [
+                "Stay in bed and force it for hours",
+                "Get up, do something calm in dim light, then return",
+                "Drink coffee",
+                "Start answering emails"
+              ],
+              "answer": 1,
+              "explain": "A calm activity until you feel sleepy stops your bed from becoming linked with frustration."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-3",
+          "title": "Saying no and setting boundaries",
+          "minutes": 6,
+          "content": "Many people say yes to every request because they want to be helpful or liked. Over time, that can leave no room for rest, your own goals or the people who matter most. Every yes uses some of your limited time and energy, so it quietly means no to something else.\n\nA boundary is a clear limit on what you will and will not take on. It is not rude or selfish; it helps you show up well for the things you do agree to. Boundaries can be simple: no work messages after 9 pm, one evening a week kept free, or not lending money you cannot afford to lose.\n\nSaying no gets easier with a short, kind script. Thank the person, give a clear answer and, if you like, offer an alternative: \"Thanks for thinking of me. I can't take this on this week, but I could help next Monday.\" You do not need a long excuse. Some people may feel disappointed at first, and that is okay. Respectful people adjust.",
+          "key_points": [
+            "Every yes to one thing is a no to something else.",
+            "A boundary is a clear limit that protects your time and energy.",
+            "Say no kindly and clearly: thanks, a clear answer, and an optional alternative."
+          ],
+          "tip": "When someone asks for something, you do not have to answer on the spot. Say \"Let me check and get back to you\" to give yourself time to decide.",
+          "task": "Write down one boundary you want to keep this week. Then prepare a short, kind 'no' sentence you can use when it is tested.",
+          "quiz": [
+            {
+              "q": "Why can saying yes to everything become a problem?",
+              "options": [
+                "Every yes uses limited time and energy that you need for other things",
+                "Helping others is always wrong",
+                "People will stop asking you for things",
+                "It makes you too relaxed"
+              ],
+              "answer": 0,
+              "explain": "Time and energy are limited, so too many yeses crowd out rest and your own priorities."
+            },
+            {
+              "q": "What is a healthy boundary?",
+              "options": [
+                "Refusing to help anyone ever",
+                "Ignoring people's messages without a word",
+                "A clear limit on what you will take on, such as no work messages after 9 pm",
+                "Saying yes and then not doing it"
+              ],
+              "answer": 2,
+              "explain": "A boundary is a clear, reasonable limit that protects your wellbeing."
+            },
+            {
+              "q": "Which is a kind and clear way to say no?",
+              "options": [
+                "Maybe, I'll see, I'm not sure...",
+                "Thanks for thinking of me. I can't this week, but I could help next Monday.",
+                "Why do you always ask me?",
+                "Saying yes and hoping they forget"
+              ],
+              "answer": 1,
+              "explain": "It thanks the person, gives a clear answer and offers an alternative without a long excuse."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-4",
+          "title": "Move your body, lift your mood",
+          "minutes": 5,
+          "content": "When you feel tired or stressed, moving may be the last thing you want to do. Yet regular movement is one of the simplest ways to lift energy and mood. Physical activity increases blood flow to the brain, helps release tension built up in the body and often leaves people feeling calmer and more alert.\n\nYou do not need a gym or a sports team for this. Small amounts count. A 10-minute walk, a few stretches between study sessions, taking the stairs instead of the lift or dancing to two songs in your room all help. Short active breaks also refresh focus, so you often get more done after moving than you would by pushing on while tired.\n\nThe key is regularity, not intensity. A short walk most days does more for you than one exhausting workout followed by a week of nothing. Pick something easy enough that you will actually do it, and attach it to an existing routine, such as after lunch or after each study block. If you have a health condition, check with a doctor about what kind of activity suits you.",
+          "key_points": [
+            "Movement helps energy, focus and stress levels.",
+            "Small amounts count: a 10-minute walk or a stretch break helps.",
+            "Regular and easy beats rare and intense."
+          ],
+          "tip": "Link movement to something you already do. For example, stand up and stretch every time you finish a chapter or a study block.",
+          "task": "Add a 10-minute walk or movement break every day for a week. Before and after each one, rate your energy and mood from 1 to 10 and note the difference.",
+          "quiz": [
+            {
+              "q": "Which of these counts as useful movement?",
+              "options": [
+                "Only a full hour at the gym",
+                "A 10-minute walk or stretching between study sessions",
+                "Only playing in a sports team",
+                "Nothing less than a long run"
+              ],
+              "answer": 1,
+              "explain": "Small amounts of movement still help energy, focus and mood."
+            },
+            {
+              "q": "You feel foggy after two hours of study. What is a good choice?",
+              "options": [
+                "Push on for another two hours without stopping",
+                "Scroll your phone in bed",
+                "Drink a lot of coffee and keep sitting",
+                "Take a short walk or stretch, then return"
+              ],
+              "answer": 3,
+              "explain": "A short active break refreshes focus, so you often work better afterwards."
+            },
+            {
+              "q": "What matters most for getting the benefits of movement?",
+              "options": [
+                "Doing it regularly, even in small amounts",
+                "Exercising as hard as possible once a week",
+                "Buying expensive equipment",
+                "Only moving when you feel full of energy"
+              ],
+              "answer": 0,
+              "explain": "Regularity beats intensity. Easy movement most days adds up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-3",
+      "title": "Be kind to yourself",
+      "lessons": [
+        {
+          "id": "mind-3-1",
+          "title": "Self-compassion",
+          "minutes": 5,
+          "content": "Many people believe harsh self-criticism keeps them motivated. Research by psychologist Kristin Neff suggests the opposite: people who treat themselves with kindness after a mistake are more likely to take responsibility, try again and keep going.\n\nSelf-compassion has three parts. Kindness means speaking to yourself warmly instead of attacking yourself. Common humanity means remembering that everyone struggles and makes mistakes, so you are not alone. Mindfulness means noticing painful feelings as they are, without ignoring them or making them bigger.\n\nSelf-compassion is not letting yourself off the hook. You still own the mistake and fix what you can. The difference is the tone: \"That went badly, and I'm upset. Anyone could slip here. What would help me now?\" is far more useful than a list of insults.",
+          "key_points": [
+            "Kindness after a mistake helps you try again; harshness tends to make you avoid.",
+            "Three parts: kindness, common humanity and mindfulness.",
+            "Self-compassion still takes responsibility, just in a kinder tone."
+          ],
+          "tip": "When you are hard on yourself, put a hand on your chest and ask: what would I say to a friend right now?",
+          "task": "Write a short, kind note to yourself about one mistake or difficulty from this week, as if a caring friend were writing it.",
+          "quiz": [
+            {
+              "q": "What does research suggest about self-compassion after a mistake?",
+              "options": [
+                "It makes people lazy",
+                "It makes people more likely to try again",
+                "It has no effect at all",
+                "It only works for children"
+              ],
+              "answer": 1,
+              "explain": "Kindness lowers the fear of failing, so people are more willing to own the mistake and try again."
+            },
+            {
+              "q": "Which is NOT one of the three parts of self-compassion?",
+              "options": [
+                "Kindness",
+                "Common humanity",
+                "Mindfulness",
+                "Perfectionism"
+              ],
+              "answer": 3,
+              "explain": "The three parts are kindness, common humanity and mindfulness. Perfectionism often works against them."
+            },
+            {
+              "q": "Which response shows self-compassion?",
+              "options": [
+                "That went badly. Anyone could slip here. What would help me now?",
+                "I'm useless and always mess things up.",
+                "It wasn't my fault at all.",
+                "I'll pretend it never happened."
+              ],
+              "answer": 0,
+              "explain": "It admits the mistake, remembers others struggle too, and looks for a helpful next step."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-2",
+          "title": "Building real confidence",
+          "minutes": 6,
+          "content": "Confidence is often seen as something you either have or do not. In practice it usually comes after action, not before it. Each time you do something slightly hard and survive it, your brain collects evidence that you can cope.\n\nThat is why small steps work. If speaking in a meeting feels scary, start by asking one question. If a new skill feels out of reach, practice one tiny part of it. Each small win becomes proof you can point to, and that proof is stronger than any pep talk.\n\nIt also helps to keep track of that proof. People tend to remember failures clearly and forget successes quickly. Writing down what you handled well, even small things, gives you a record to look at when doubt shows up. Feeling nervous does not mean you are not ready; it often just means the task matters to you.",
+          "key_points": [
+            "Confidence usually follows action, not the other way round.",
+            "Small, slightly hard steps build evidence that you can cope.",
+            "Write down your wins so you remember them when doubt appears."
+          ],
+          "tip": "Before a scary task, remind yourself of one similar thing you already handled. Past proof calms present nerves.",
+          "task": "Pick one small thing you have been avoiding and do it today. Then write it down as your first entry in a 'wins' list.",
+          "quiz": [
+            {
+              "q": "Where does confidence usually come from?",
+              "options": [
+                "Waiting until you feel ready",
+                "Being born with it",
+                "Taking action and collecting evidence that you can cope",
+                "Avoiding hard things"
+              ],
+              "answer": 2,
+              "explain": "Doing slightly hard things builds proof, and that proof grows into confidence."
+            },
+            {
+              "q": "Speaking in meetings feels scary. What is a good first step?",
+              "options": [
+                "Give a long presentation tomorrow",
+                "Stay silent until the fear goes away",
+                "Tell everyone you are not a speaker",
+                "Ask one question in the next meeting"
+              ],
+              "answer": 3,
+              "explain": "A small, manageable step gives you a win without overwhelming you."
+            },
+            {
+              "q": "Why keep a list of your wins?",
+              "options": [
+                "We tend to forget successes and remember failures",
+                "To show off to others",
+                "It replaces the need to practice",
+                "So you never feel nervous again"
+              ],
+              "answer": 0,
+              "explain": "A written record balances the mind's habit of focusing on what went wrong."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-3",
+          "title": "The gratitude habit",
+          "minutes": 5,
+          "content": "The mind has a natural negativity bias: it notices problems and threats more than good things. That once helped people survive, but today it can make an ordinary day feel worse than it was.\n\nGratitude is a simple way to balance this. Studies suggest that regularly noting things you are grateful for can lift mood and improve sleep and relationships. The key is being specific. \"My family\" is fine, but \"my sister called to check on me after my exam\" makes you relive the moment, and that is where the benefit comes from.\n\nGratitude does not mean pretending everything is fine or ignoring real problems. You can feel stressed and grateful on the same day. Expressing it to others also counts: a short, honest thank-you message often means more to the other person than you expect.",
+          "key_points": [
+            "The mind naturally notices problems more than good things.",
+            "Specific gratitude works better than general lists.",
+            "Gratitude sits alongside real problems; it does not deny them."
+          ],
+          "tip": "Link gratitude to a habit you already have, such as writing three good things right after brushing your teeth at night.",
+          "task": "Tonight, write three specific good things from today. Then send one person a short message thanking them for something real.",
+          "quiz": [
+            {
+              "q": "What is the negativity bias?",
+              "options": [
+                "Always being in a bad mood",
+                "Disliking other people",
+                "Only remembering good things",
+                "The mind's tendency to notice problems more than good things"
+              ],
+              "answer": 3,
+              "explain": "Our minds are tuned to spot threats, so good moments are easy to overlook."
+            },
+            {
+              "q": "Which gratitude note is most helpful?",
+              "options": [
+                "Life",
+                "My sister called to check on me after my exam",
+                "Everything",
+                "Nothing today"
+              ],
+              "answer": 1,
+              "explain": "Specific moments let you relive the good feeling, which is where the benefit comes from."
+            },
+            {
+              "q": "Does gratitude mean ignoring your problems?",
+              "options": [
+                "Yes, you should only think positive",
+                "Yes, problems disappear if you are grateful",
+                "No, you can feel stressed and grateful on the same day",
+                "No, gratitude is only for good days"
+              ],
+              "answer": 2,
+              "explain": "Gratitude balances your view without denying real difficulties."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-4",
+          "title": "Stop comparing, start tracking your own progress",
+          "minutes": 6,
+          "content": "It is natural to compare yourself with others. Classmates' results, a cousin's new job, a friend's photos online: the comparisons come almost automatically. The problem is that you usually compare your inside with someone else's outside. You know all your doubts and struggles, but you only see their best moments.\n\nSocial media makes this worse because it is a highlight reel. People post the trip, the award and the good results, not the failed attempts or the boring days. Comparing yourself with highlights leaves you feeling behind, and that feeling often drains motivation instead of increasing it. It can also hide the fact that everyone starts at different points and moves at different speeds.\n\nA more useful comparison is with your past self. Ask: what can I do now that I could not do a year ago? What have I learned, handled or improved? This keeps your attention on things you can control. Other people can still inspire you, but use them for ideas about what is possible, not as a scoreboard for your worth.",
+          "key_points": [
+            "We often compare our inside with others' highlight reels.",
+            "Constant comparison usually drains motivation.",
+            "Compare yourself with your past self and track your own growth."
+          ],
+          "tip": "When you catch a comparison, turn it into a question: 'What can I learn from how they did that?' instead of 'Why am I not like them?'",
+          "task": "For 3 days, notice and jot down each comparison you make and who it was with. Then write one way you have grown compared with a year ago.",
+          "quiz": [
+            {
+              "q": "Why can comparing yourself with others on social media feel so bad?",
+              "options": [
+                "Everyone online is lying",
+                "Social media is always negative",
+                "You compare your full life with their highlights",
+                "Other people are always better"
+              ],
+              "answer": 2,
+              "explain": "You see only others' best moments but know all of your own struggles, so the comparison is unfair."
+            },
+            {
+              "q": "What is a more helpful comparison?",
+              "options": [
+                "With the most successful person you know",
+                "With yourself from a year ago",
+                "With whoever got the top mark",
+                "With people doing worse than you"
+              ],
+              "answer": 1,
+              "explain": "Comparing with your past self shows real growth and keeps your focus on what you can control."
+            },
+            {
+              "q": "A friend gets into a great university. What is a healthy response?",
+              "options": [
+                "Decide you will never be good enough",
+                "Stop talking to them",
+                "Pretend you do not care",
+                "Ask what helped them and see if any of it fits your own path"
+              ],
+              "answer": 3,
+              "explain": "Others can inspire ideas without becoming a scoreboard for your worth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-4",
+      "title": "Work with your thoughts",
+      "lessons": [
+        {
+          "id": "mind-4-1",
+          "title": "Spotting thinking traps",
+          "minutes": 6,
+          "content": "Your mind produces quick, automatic thoughts all day. Most are harmless, but some follow patterns that make situations feel worse than they are. Psychologists call these thinking traps or cognitive distortions. Everyone falls into them sometimes; the skill is learning to notice them.\n\nA few common ones: Catastrophizing jumps to the worst outcome: 'I failed this test, so my future is ruined.' Mind reading assumes you know what others think: 'They didn't reply, so they must be angry with me.' All-or-nothing thinking sees only extremes: 'If it isn't perfect, it's a failure.' Labeling turns one event into an identity: 'I made a mistake, so I'm stupid.'\n\nThe best moment to catch a trap is when a feeling suddenly spikes. If you feel a rush of anxiety, anger or sadness, pause and ask: 'What was I just thinking?' Write the thought down exactly as it appeared. Seeing it on paper creates a little distance, and you can then check whether it matches one of these traps. Noticing a trap does not make the feeling vanish, but it stops you treating the thought as a fact.",
+          "key_points": [
+            "Thinking traps are automatic thought patterns that make things feel worse.",
+            "Common traps: catastrophizing, mind reading, all-or-nothing thinking and labeling.",
+            "When a feeling suddenly spikes, pause and write down the thought behind it."
+          ],
+          "tip": "Give your common trap a nickname, like 'the disaster movie'. Saying 'there goes the disaster movie again' helps you step back from it.",
+          "task": "Keep a simple thought log for 3 days. Each time you feel upset, write the situation, the automatic thought, and which trap (if any) it matches.",
+          "quiz": [
+            {
+              "q": "'My friend didn't say hello, so she must hate me.' Which trap is this?",
+              "options": [
+                "Mind reading",
+                "Catastrophizing",
+                "Labeling",
+                "All-or-nothing thinking"
+              ],
+              "answer": 0,
+              "explain": "You are assuming you know what she thinks without any real evidence."
+            },
+            {
+              "q": "'I got one answer wrong, so I'm stupid.' Which trap is this?",
+              "options": [
+                "Mind reading",
+                "Catastrophizing",
+                "Labeling",
+                "Positive thinking"
+              ],
+              "answer": 2,
+              "explain": "Labeling turns a single event into a judgement about who you are."
+            },
+            {
+              "q": "When is a good moment to look for a thinking trap?",
+              "options": [
+                "Only once a month",
+                "Never, because thoughts are always facts",
+                "Only when you are already calm and happy",
+                "When a feeling suddenly spikes"
+              ],
+              "answer": 3,
+              "explain": "A sudden rush of emotion is a signal that an automatic thought may be worth checking."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-2",
+          "title": "Reframing an unhelpful thought",
+          "minutes": 7,
+          "content": "Once you have spotted a thinking trap, the next step is to question the thought instead of accepting it. This is called reframing. The goal is not to force yourself to think positively. Telling yourself 'everything is amazing' when it is not rarely works. The goal is a thought that is more balanced and realistic.\n\nStart by looking at the evidence. Write down what supports the thought, and then what goes against it. For 'I failed this test, so my future is ruined', the evidence for might be one low mark. The evidence against might be that you passed other tests, there are more exams ahead and many people recover from a bad result. Next, ask: 'What would I tell a friend who had this thought?' We are often far fairer to friends than to ourselves.\n\nFinally, write a new version that fits all the evidence: 'This result is disappointing, and I need to change how I study, but one test does not decide my future.' Notice that it still admits the problem. A good reframe feels believable, and it points you towards an action rather than leaving you stuck in the feeling.",
+          "key_points": [
+            "Reframing means questioning a thought, not forcing positivity.",
+            "Check the evidence for and against, and ask what you would tell a friend.",
+            "Write a balanced, believable version that can lead to action."
+          ],
+          "tip": "If the new thought feels fake, it is probably too positive. Make it more honest until you can genuinely believe it.",
+          "task": "Take two thoughts from your thought log. For each, write the evidence for and against, what you would tell a friend, and a more balanced version.",
+          "quiz": [
+            {
+              "q": "What is the goal of reframing a thought?",
+              "options": [
+                "To always think positively, no matter what",
+                "To find a more balanced and realistic version",
+                "To ignore the problem completely",
+                "To prove that you were right"
+              ],
+              "answer": 1,
+              "explain": "Reframing aims for a fair, believable thought, not forced positivity."
+            },
+            {
+              "q": "Which question helps you check an unhelpful thought?",
+              "options": [
+                "What would I tell a friend who had this thought?",
+                "How can I make this feeling stronger?",
+                "Who else can I blame for this?",
+                "Why does this always happen to me?"
+              ],
+              "answer": 0,
+              "explain": "We are usually fairer and kinder to friends, so this question helps you see more of the picture."
+            },
+            {
+              "q": "Which is the best reframe of 'I failed this test, so my future is ruined'?",
+              "options": [
+                "I'm a genius and tests don't matter.",
+                "I'll never pass anything.",
+                "Tests are pointless anyway.",
+                "This result is disappointing, but one test doesn't decide my future, and I can change how I study."
+              ],
+              "answer": 3,
+              "explain": "It is honest about the problem, fits the evidence and points to an action."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-3",
+          "title": "Name your emotions to handle them",
+          "minutes": 5,
+          "content": "Many of us describe our inner world with only a few words: good, bad, fine, stressed. But \"bad\" could mean frustrated, anxious, disappointed, lonely or embarrassed, and each of those needs something different. Frustration may need a new approach, anxiety may need preparation, and loneliness may need a call to a friend.\n\nResearch on emotion labeling suggests that simply putting a precise name to a feeling can lower its intensity. When you say \"I feel anxious about tomorrow's viva\" instead of just feeling a vague knot, the thinking part of your brain joins in and the feeling becomes something you can work with.\n\nNaming also creates a pause between feeling and reacting. Without that pause, anger turns straight into a harsh message and worry turns straight into scrolling. With it, you can ask: what am I feeling, how strong is it, and what do I actually need right now? Feelings are information, not orders.",
+          "key_points": [
+            "Use precise words like frustrated, anxious or disappointed instead of just 'bad'.",
+            "Naming a feeling accurately can make it less intense and easier to manage.",
+            "A short pause between feeling and reacting lets you choose what to do."
+          ],
+          "tip": "If you are stuck for a word, ask: is this closer to anger, fear, sadness or shame? Then get more specific from there.",
+          "task": "For the next week, do a 30-second emotion check-in three times a day (morning, afternoon, night). Write the feeling's name, its strength from 1 to 10, and what triggered it. Start with your first check-in today.",
+          "quiz": [
+            {
+              "q": "Why is 'I feel bad' less useful than a precise emotion word?",
+              "options": [
+                "It is grammatically wrong",
+                "Different feelings need different responses, and 'bad' hides which one it is",
+                "Precise words make feelings disappear completely",
+                "Only negative feelings deserve names"
+              ],
+              "answer": 1,
+              "explain": "Frustration, anxiety and loneliness each call for something different, so knowing which one you feel helps you respond well."
+            },
+            {
+              "q": "What does research suggest happens when you name a feeling precisely?",
+              "options": [
+                "The feeling always gets stronger",
+                "You stop feeling anything at all",
+                "Nothing changes",
+                "Its intensity can drop and it becomes easier to work with"
+              ],
+              "answer": 3,
+              "explain": "Labeling an emotion brings the thinking brain in, which tends to calm the feeling."
+            },
+            {
+              "q": "You feel angry after a friend's comment. What is the most helpful first move?",
+              "options": [
+                "Pause, name the feeling and its strength, then decide how to respond",
+                "Reply immediately while the feeling is fresh",
+                "Pretend you feel nothing",
+                "Block the friend so it never happens again"
+              ],
+              "answer": 0,
+              "explain": "A pause turns a reaction into a choice. Feelings are information, not orders."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-4",
+          "title": "Breaking the overthinking loop",
+          "minutes": 6,
+          "content": "Thinking hard about a problem is not always a bad thing. Useful problem-solving moves forward: you look at options, pick one and act. Rumination is different. It circles the same questions again and again, \"what if I fail?\", \"why did I say that?\", without ever reaching a decision. It feels like work, but mostly drains energy.\n\nA simple test helps you tell them apart: is this thinking leading to an action? If you can name a next step, take it. If you have gone round the same loop three times with nothing new, you are ruminating, not solving.\n\nOne practical tool is a fixed daily worry time, for example 15 minutes at 6 pm. When a worry pops up during the day, jot it down and tell yourself, \"I'll deal with this at worry time.\" When that time comes, go through the list and end with either one concrete step or a decision to let it go. If a loop starts outside that time, switch to a short absorbing activity, like a puzzle or a walk.",
+          "key_points": [
+            "Problem-solving leads to a decision or action; rumination just circles.",
+            "Ask: is this thinking leading to an action? If not, step out of the loop.",
+            "A fixed daily worry time lets you postpone worries instead of fighting them all day."
+          ],
+          "tip": "Keep worry time away from bedtime, and use a notebook rather than your head so the worries have somewhere to wait.",
+          "task": "Set a 15-minute worry time at the same hour each day for 5 days, starting today. Postpone worries to it by writing them down, and end each session with one concrete next step or a clear decision to let the worry go.",
+          "quiz": [
+            {
+              "q": "What is the main difference between problem-solving and rumination?",
+              "options": [
+                "Rumination happens only at night",
+                "Problem-solving is always quick",
+                "Problem-solving leads to a decision or action, while rumination keeps circling",
+                "There is no real difference"
+              ],
+              "answer": 2,
+              "explain": "Useful thinking moves forward to a step; rumination repeats the same questions without a decision."
+            },
+            {
+              "q": "A worry pops into your head during class. Using the worry time method, what do you do?",
+              "options": [
+                "Write it down and save it for your scheduled worry time",
+                "Stop everything and think it through right now",
+                "Force yourself never to think about it again",
+                "Ask everyone around you for their opinion"
+              ],
+              "answer": 0,
+              "explain": "Postponing a worry to a set time stops it from taking over your whole day."
+            },
+            {
+              "q": "How should each worry time session end?",
+              "options": [
+                "With a longer list of worries",
+                "By going to sleep straight away",
+                "When all the worries feel completely solved",
+                "With one concrete next step or a decision to let the worry go"
+              ],
+              "answer": 3,
+              "explain": "Ending with a step or a release turns worrying into progress instead of another loop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-5",
+      "title": "Build lasting resilience",
+      "lessons": [
+        {
+          "id": "mind-5-1",
+          "title": "Good enough beats perfect",
+          "minutes": 6,
+          "content": "High standards can push you to do great work. Perfectionism is something else: standards so high that nothing ever feels finished, often driven by fear of being judged. It shows up as rewriting the same paragraph ten times or not applying for something because you are not \"fully ready\".\n\nThe cost is real. Perfectionism often leads to procrastination, because starting means risking a flawed result. It can lead to burnout, because every task gets maximum effort. And it can lead to avoidance, where you skip chances altogether rather than risk falling short.\n\nThe fix is to decide what \"good enough\" means before you start. For a class report, that might be: answers the question, has a clear structure, and is checked once for mistakes. Once you hit that bar, stop and submit. Practicing small, deliberate imperfections, teaches your brain that the world does not end over a small flaw.",
+          "key_points": [
+            "Perfectionism is driven by fear of judgment, not just high standards.",
+            "It often causes delay, burnout and avoiding opportunities.",
+            "Define a clear 'good enough' bar before starting, then stop when you reach it."
+          ],
+          "tip": "Write your 'good enough' checklist at the top of the task. When every item is ticked, you are done, even if it still feels imperfect.",
+          "task": "Choose one task you have been polishing or delaying. Write three short criteria for 'good enough', finish it to that bar today, and submit or share it without further changes.",
+          "quiz": [
+            {
+              "q": "How is perfectionism different from simply having high standards?",
+              "options": [
+                "Perfectionists always produce better work",
+                "There is no difference",
+                "High standards are always harmful",
+                "Perfectionism sets impossible bars, often driven by fear of judgment"
+              ],
+              "answer": 3,
+              "explain": "High standards can motivate; perfectionism makes nothing feel finished and is often fueled by fear."
+            },
+            {
+              "q": "Why does perfectionism often lead to procrastination?",
+              "options": [
+                "Because perfectionists are lazy",
+                "Because starting means risking a result that is not flawless",
+                "Because good work cannot be done quickly",
+                "Because deadlines do not matter to them"
+              ],
+              "answer": 1,
+              "explain": "When only perfect is acceptable, delaying feels safer than starting and falling short."
+            },
+            {
+              "q": "What is the best way to use a 'good enough' bar?",
+              "options": [
+                "Raise it every time you get close",
+                "Ignore it if you have extra time",
+                "Define it before starting and stop once you meet it",
+                "Only use it for tasks you do not care about"
+              ],
+              "answer": 2,
+              "explain": "A clear finish line set in advance protects you from endless polishing."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-2",
+          "title": "Living with uncertainty",
+          "minutes": 6,
+          "content": "Waiting for exam results, an admission list, a job reply or a family decision can feel harder than the event itself. The mind dislikes not knowing, so it tries to fill the gap, usually with the worst possible story. Many people freeze and just keep checking for news.\n\nA steadier approach starts by separating what you can prepare for from what you cannot. You cannot control the admission list, but you can prepare your documents, research backup options and keep studying. Then plan for a few scenarios instead of one: if it goes well, what will I do? If it does not, what is my plan B? Having a plan B does not mean you expect to fail; it means one result will not leave you stuck.\n\nFinally, accept that you will often have to act without feeling sure. Most important decisions are made with incomplete information. Waiting to feel certain usually means waiting forever. Take a reasonable step, learn from what happens, and adjust.",
+          "key_points": [
+            "Separate what you can prepare for from what you cannot control.",
+            "Plan for a few scenarios, including a plan B, so one outcome cannot leave you stuck.",
+            "Most good decisions are made without full certainty; act, learn and adjust."
+          ],
+          "tip": "When you catch yourself refreshing for news, ask: is there one small thing I can prepare right now? Do that instead.",
+          "task": "Pick one uncertain situation in your life. Write a plan A and a plan B for it, then choose one small step forward to take this week without waiting to feel sure. Write that step down today.",
+          "quiz": [
+            {
+              "q": "You are waiting for an admission result. What is the most useful thing to focus on?",
+              "options": [
+                "What you can prepare, such as documents and backup options",
+                "Checking the website every few minutes",
+                "Imagining the worst outcome in detail",
+                "Stopping all plans until the result comes"
+              ],
+              "answer": 0,
+              "explain": "Putting energy into what you can prepare keeps you steady while the rest is out of your hands."
+            },
+            {
+              "q": "What does having a plan B mean?",
+              "options": [
+                "You expect to fail",
+                "You are not serious about plan A",
+                "You should give up on plan A",
+                "One result will not leave you stuck"
+              ],
+              "answer": 3,
+              "explain": "A backup plan is about flexibility, not pessimism."
+            },
+            {
+              "q": "What is the problem with waiting until you feel completely certain before acting?",
+              "options": [
+                "Certainty always comes too fast",
+                "Most important decisions never come with full certainty, so you may wait forever",
+                "Acting early is always wrong",
+                "Feelings of certainty are always accurate"
+              ],
+              "answer": 1,
+              "explain": "Real decisions use incomplete information. Act reasonably, then learn and adjust."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-3",
+          "title": "Asking for help and building support",
+          "minutes": 6,
+          "content": "Many people believe strong people handle everything alone. In reality, resilient people usually have good support around them and know when to use it. Asking for help is a skill, not a weakness.\n\nIt helps to map your support network, because different people help in different ways. A family member may give practical help, a friend may simply listen, a teacher may help with study problems, and a mentor may guide career choices. When you ask, be clear: say what is happening and what you need, for example, \"I don't need advice, I just need to talk.\" Clear requests are easier for people to say yes to.\n\nSometimes friends and family are not enough, and that is okay. If low mood, anxiety or hopelessness lasts for weeks, affects your daily life, or you have thoughts of harming yourself, it is time to talk to a counselor, doctor or mental health professional. If you ever feel unsafe, contact someone you trust or local emergency services right away.",
+          "key_points": [
+            "Resilient people use their support, they do not do everything alone.",
+            "Map your network: different people offer different kinds of help.",
+            "Ask clearly, and seek professional help if struggles last for weeks or feel unsafe."
+          ],
+          "tip": "Reach out before things get heavy. A quick hello when life is fine makes it much easier to ask for help when it is not.",
+          "task": "Write down three people you could turn to for different kinds of support, such as practical help, listening and advice. Then send a message to one of them this week to reconnect or ask for something specific.",
+          "quiz": [
+            {
+              "q": "Which statement about asking for help is most accurate?",
+              "options": [
+                "Only weak people need help",
+                "You should ask only when everything has fallen apart",
+                "Asking for help is a skill that resilient people use",
+                "Help from others always makes things worse"
+              ],
+              "answer": 2,
+              "explain": "Strong people rely on good support and know when to use it."
+            },
+            {
+              "q": "Why does it help to map your support network?",
+              "options": [
+                "Different people can help in different ways",
+                "So you can ask the same person for everything",
+                "To decide who to stop talking to",
+                "It is only useful for career planning"
+              ],
+              "answer": 0,
+              "explain": "Knowing who listens, who gives practical help and who advises makes it easier to reach the right person."
+            },
+            {
+              "q": "When is it time to talk to a counselor or mental health professional?",
+              "options": [
+                "Only after a friend tells you to",
+                "Never, if you have family around",
+                "Whenever you have one bad day",
+                "When struggles last for weeks, affect daily life, or you feel unsafe"
+              ],
+              "answer": 3,
+              "explain": "Lasting distress or any thoughts of self-harm are clear signs to get professional support."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-4",
+          "title": "Your personal resilience plan",
+          "minutes": 7,
+          "content": "Throughout this path you have collected many tools: box breathing, self-compassion, spotting thinking traps, naming emotions, worry time and more. The challenge is that on a hard day, it is difficult to remember any of them. A personal resilience plan solves this by deciding in advance, while you are calm, what you will do when you are not.\n\nStart with your early warning signs. Stress often shows up before you notice it as stress: sleeping badly, snapping at people or scrolling for hours. Knowing your own signs lets you act early, when small steps still work. Next, choose three tools from earlier lessons that genuinely help you, not the ones you think should help.\n\nThen decide who to contact. Name two people you can reach out to, and note when you would contact a professional instead. Keep the plan short, one page is enough, and save it somewhere you can find in seconds, like your phone notes or a photo. Review it every few months.",
+          "key_points": [
+            "Plan in a calm moment what you will do on a hard day.",
+            "Know your early warning signs so you can act while small steps still work.",
+            "List your best tools and the people you will contact, and keep the plan easy to find."
+          ],
+          "tip": "Write the plan in your own words and keep it to one page. If it takes more than a minute to read, it will not get used on a bad day.",
+          "task": "Today, write a one-page resilience plan with your early warning signs, three tools that work for you, two people to contact and when you would seek professional help. Save it in your phone notes or as a photo so you can find it quickly.",
+          "quiz": [
+            {
+              "q": "Why make a resilience plan while you are calm?",
+              "options": [
+                "Because it is hard to remember your tools on a difficult day",
+                "Because you will never have hard days again",
+                "Because plans only work when you are calm",
+                "Because it replaces the need for other people"
+              ],
+              "answer": 0,
+              "explain": "Deciding in advance means you do not have to think clearly at the moment it is hardest to."
+            },
+            {
+              "q": "Which of these is an example of an early warning sign of stress?",
+              "options": [
+                "Finishing your work on time",
+                "Feeling curious about a new topic",
+                "Sleeping badly and snapping at people more than usual",
+                "Enjoying time with friends"
+              ],
+              "answer": 2,
+              "explain": "Changes in sleep, mood and habits often show stress before you notice it directly."
+            },
+            {
+              "q": "Which tools should go in your plan?",
+              "options": [
+                "Every tool from every lesson",
+                "Tools that genuinely help you, chosen from what you have tried",
+                "Only tools a friend recommends",
+                "Tools you have never tried but sound impressive"
+              ],
+              "answer": 1,
+              "explain": "A short list of tools that actually work for you is easier to use on a hard day."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

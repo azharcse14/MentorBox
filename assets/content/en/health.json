@@ -1,0 +1,1008 @@
+{
+  "id": "health",
+  "name": "Health & Fitness",
+  "mentor": "Fitness Mentor",
+  "tagline": "Move more, eat better and build a body that keeps up with your plans.",
+  "description": "No gym or equipment needed. These lessons teach everyday movement, simple nutrition and habits you can keep for years. They are general guidance, not medical advice.",
+  "image": "assets/images/health.jpg",
+  "color": "#5FA37A",
+  "messages": {
+    "welcome": "You do not need to be fit to start, you start to become fit. We will build one small habit at a time, and your body will thank you for each one.",
+    "comeback": "Your body has not forgotten you. Open the next lesson, stand up for two minutes, and let that small win pull you back in.",
+    "pass": "Strong work. That idea is now part of how you take care of yourself.",
+    "fail": "Every rep counts, even the missed ones. Read the explanations, review the lesson and try again.",
+    "finished": "You can now move with purpose, fuel yourself well, stay hydrated, protect your posture, plan a balanced routine and keep it going through busy seasons. Pick one habit from this path and make it part of your week."
+  },
+  "levels": [
+    {
+      "id": "health-1",
+      "title": "Start moving",
+      "lessons": [
+        {
+          "id": "health-1-1",
+          "title": "Why movement matters",
+          "minutes": 5,
+          "content": "Your body is built to move. Regular activity makes your heart pump blood more easily, keeps muscles strong and helps bones stay dense as you age. It also lifts your mood, eases stress and helps you sleep better, often from the very first week.\n\nHealth guidelines suggest that adults aim for about 150 minutes of moderate activity each week. That sounds like a lot, but it is only around 30 minutes on five days. Brisk walking, cycling, housework and playing a sport all count, and short bouts of 10 minutes add up.\n\nMost people overestimate how much they move. A day of classes, screens and rides can easily include less than 20 minutes of real movement. Before changing anything, find out where you are today. An honest starting point makes progress easy to see.",
+          "key_points": [
+            "Movement strengthens the heart, muscles and bones and improves mood.",
+            "Aim for about 150 minutes of moderate activity per week.",
+            "Short bouts count, and they add up over the day."
+          ],
+          "tip": "Do not wait for a perfect workout plan. Any movement is better than none, and today's ten-minute walk beats next month's ideal routine.",
+          "task": "For the next three days, write down how many minutes you actually moved each day, counting walking, stairs, chores and sport. At the end, add up the minutes and compare them with 30 minutes a day.",
+          "quiz": [
+            {
+              "q": "About how much moderate activity per week do health guidelines suggest for adults?",
+              "options": [
+                "15 minutes",
+                "60 minutes",
+                "150 minutes",
+                "500 minutes"
+              ],
+              "answer": 2,
+              "explain": "The common guideline is about 150 minutes of moderate activity per week, which is roughly 30 minutes on five days."
+            },
+            {
+              "q": "Which of these is a benefit of regular movement?",
+              "options": [
+                "Better mood and sleep",
+                "Weaker bones",
+                "More stress",
+                "A slower heart response to effort"
+              ],
+              "answer": 0,
+              "explain": "Regular activity improves mood, reduces stress and supports better sleep, while also strengthening the heart, muscles and bones."
+            },
+            {
+              "q": "Do short 10-minute bouts of activity count toward your weekly total?",
+              "options": [
+                "No, only sessions longer than an hour count",
+                "Only if you do them at a gym",
+                "No, they are too short to matter",
+                "Yes, short bouts add up over the day and week"
+              ],
+              "answer": 3,
+              "explain": "Short bouts of moderate activity add up. Three 10-minute walks give you the same 30 minutes as one longer walk."
+            }
+          ]
+        },
+        {
+          "id": "health-1-2",
+          "title": "Walking: the easiest workout",
+          "minutes": 5,
+          "content": "Walking is real exercise. It needs no equipment, no fee and no special skill, and almost everyone can do it. The key is pace. A slow stroll is pleasant, but a brisk walk, where you move with purpose and your breathing picks up, is what trains your heart.\n\nTo check your intensity, use the talk test. At a moderate pace you can talk in full sentences but cannot comfortably sing. If you can sing, speed up a little. If you can only say a few words between breaths, you are working hard, which is fine for short stretches.\n\nYou can also add steps without setting aside extra time. Take the stairs instead of the lift, walk to class or the shop when it is close, get off a stop early, or walk while you take phone calls. Small choices like these can add thousands of steps to a day.",
+          "key_points": [
+            "Brisk walking is a real workout that trains the heart.",
+            "The talk test: you can talk but not sing at a moderate pace.",
+            "Add steps through stairs, short trips on foot and walking calls."
+          ],
+          "tip": "Pair walking with something you already enjoy, like a podcast, a friend or a favourite playlist. A walk you look forward to is a walk you will repeat.",
+          "task": "Take a 15-minute brisk walk today. Halfway through, try the talk test, then write one line about how it felt: could you talk, sing, or only say a few words?",
+          "quiz": [
+            {
+              "q": "What turns an everyday walk into exercise for your heart?",
+              "options": [
+                "Walking only on a treadmill",
+                "Walking at a brisk pace so your breathing picks up",
+                "Walking very slowly for a long time",
+                "Wearing expensive shoes"
+              ],
+              "answer": 1,
+              "explain": "A brisk pace that raises your breathing is what makes walking a cardio workout. Equipment and location do not matter."
+            },
+            {
+              "q": "During the talk test, you can easily sing while walking. What should you do?",
+              "options": [
+                "Stop walking",
+                "Slow down",
+                "Nothing, you are working too hard",
+                "Speed up a little"
+              ],
+              "answer": 3,
+              "explain": "If you can sing, the pace is light. At a moderate pace you can talk in full sentences but not sing comfortably."
+            },
+            {
+              "q": "Which is a simple way to add steps without extra time?",
+              "options": [
+                "Taking the stairs instead of the lift",
+                "Sitting closer to the screen",
+                "Using a ride for every short trip",
+                "Skipping breaks"
+              ],
+              "answer": 0,
+              "explain": "Stairs, walking short distances and walking during calls all add steps to your day without needing a separate workout."
+            }
+          ]
+        },
+        {
+          "id": "health-1-3",
+          "title": "Warm up, cool down, stay safe",
+          "minutes": 6,
+          "content": "A warm-up prepares your body for effort. Five minutes of gentle movement raises your heart rate, warms your muscles and loosens your joints, so they move more freely and are less likely to get strained. Good warm-up moves are dynamic: marching on the spot, arm circles, gentle leg swings, hip circles and slow bodyweight squats.\n\nA cool-down helps your body settle after exercise. Slow your pace for a few minutes so your heart rate comes down gradually, then do easy stretches for the muscles you used, such as the calves, thighs and shoulders. Hold each stretch for about 20 to 30 seconds without bouncing, and never push into pain.\n\nSome signals mean stop right away: chest pain or pressure, feeling dizzy or faint, unusual shortness of breath, or a racing, irregular heartbeat. Rest and see a doctor before exercising again. If you have a heart condition, asthma or another health issue, ask a doctor before starting a new routine.",
+          "key_points": [
+            "Warm up for about 5 minutes with gentle dynamic moves.",
+            "Cool down by slowing your pace, then stretch without bouncing.",
+            "Chest pain, dizziness or unusual breathlessness mean stop and see a doctor."
+          ],
+          "tip": "Keep stretches that you hold for a long time for after exercise. Before exercise, moving stretches like arm circles and leg swings work better.",
+          "task": "Write a 5-minute warm-up of four or five dynamic moves with the time for each, for example one minute of marching on the spot. Try it once today and save it to reuse before every workout.",
+          "quiz": [
+            {
+              "q": "What kind of moves suit a warm-up best?",
+              "options": [
+                "Gentle dynamic moves like arm circles and marching",
+                "Long held stretches pushed to the limit",
+                "Maximum-effort sprints",
+                "Lying still for five minutes"
+              ],
+              "answer": 0,
+              "explain": "A warm-up should gradually raise your heart rate and loosen joints, which gentle moving exercises do well."
+            },
+            {
+              "q": "How should you stretch during a cool-down?",
+              "options": [
+                "Bounce quickly to stretch further",
+                "Push through sharp pain",
+                "Hold each stretch for about 20 to 30 seconds without bouncing",
+                "Skip stretching and sit down at once"
+              ],
+              "answer": 2,
+              "explain": "Slow, steady stretches held for 20 to 30 seconds are safe. Bouncing or forcing a stretch into pain can cause injury."
+            },
+            {
+              "q": "You feel chest pain and dizziness while exercising. What should you do?",
+              "options": [
+                "Push through to finish the session",
+                "Stop, rest and see a doctor before exercising again",
+                "Drink some water and carry on faster",
+                "Switch to a harder exercise"
+              ],
+              "answer": 1,
+              "explain": "Chest pain, dizziness and unusual breathlessness are warning signs. Stop at once and get checked by a doctor."
+            }
+          ]
+        },
+        {
+          "id": "health-1-4",
+          "title": "Your first bodyweight moves",
+          "minutes": 7,
+          "content": "You can build real strength with your own body weight. Start with the squat: stand with feet about shoulder-width apart, push your hips back as if sitting on a chair and bend your knees, keeping your chest up and heels on the floor. Go as low as feels comfortable, then stand up. A chair behind you makes a good guide.\n\nFor the push-up, keep your body in a straight line from head to heels and lower your chest toward the floor. If a full push-up is too hard, do it against a wall or with your knees on the floor. For the glute bridge, lie on your back with knees bent and feet flat, then squeeze your glutes and lift your hips until your body forms a straight line from shoulders to knees.\n\nThe plank trains your core. Rest on your forearms and toes, or on your knees as a beginner, and hold your body straight without letting your hips sag or rise. Start with 10 to 20 seconds. In every move, good form comes first, so do fewer reps well rather than many reps badly.",
+          "key_points": [
+            "Squats, push-ups, glute bridges and planks need no equipment.",
+            "Use easier versions like wall or knee push-ups while you build strength.",
+            "Good form matters more than the number of reps."
+          ],
+          "tip": "Breathe steadily during every move. Breathe out on the effort, such as when you stand up from a squat or push away from the floor, and never hold your breath.",
+          "task": "Do two rounds of 8 to 10 squats, 5 to 8 wall or knee push-ups, 10 glute bridges and a 15-second plank, resting as needed. Then write down which move felt hardest.",
+          "quiz": [
+            {
+              "q": "What is a good cue for a squat?",
+              "options": [
+                "Lift your heels off the floor",
+                "Round your back and look down",
+                "Lock your knees straight the whole time",
+                "Push your hips back as if sitting on a chair, chest up"
+              ],
+              "answer": 3,
+              "explain": "Pushing your hips back with your chest up and heels down keeps the squat safe and works the legs and glutes."
+            },
+            {
+              "q": "A full push-up is too hard for you right now. What is the best choice?",
+              "options": [
+                "Skip push-ups completely",
+                "Do push-ups against a wall or with your knees down",
+                "Do full push-ups with a sagging back",
+                "Only do them once a month"
+              ],
+              "answer": 1,
+              "explain": "Wall and knee push-ups train the same muscles at a lighter load, so you can build strength with good form."
+            },
+            {
+              "q": "In a plank, what should your body look like?",
+              "options": [
+                "Hips sagging toward the floor",
+                "Hips raised high like a tent",
+                "A straight line from head to heels or knees",
+                "Knees and elbows touching"
+              ],
+              "answer": 2,
+              "explain": "A good plank keeps the body in a straight line, with the core tight so the hips neither sag nor rise."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-2",
+      "title": "Fuel your body",
+      "lessons": [
+        {
+          "id": "health-2-1",
+          "title": "Build a balanced plate",
+          "minutes": 6,
+          "content": "You do not need a strict diet to eat well. The simplest guide is the balanced plate. Fill about half your plate with vegetables, about a quarter with protein and about a quarter with carbs. This works for almost any meal, at home, in a hostel or at a canteen.\n\nIn everyday food, the vegetable half can be shak, a mixed bhaji, a vegetable curry or a cucumber and tomato salad. Seasonal vegetables are usually the cheapest and freshest. The protein quarter can be fish, eggs, chicken, dal or chola. The carb quarter is your rice, roti or bread. Many of us fill most of the plate with rice and leave only a little room for everything else, so the easiest fix is to take a bit less rice and a bit more vegetables.\n\nYou do not need to measure anything. Look at your plate before you eat and ask whether it roughly matches the half, quarter, quarter shape. Add a fruit during the day and a glass of water with the meal. It does not have to be perfect every time. Getting most meals close is what makes the difference.",
+          "key_points": [
+            "Half vegetables, a quarter protein, a quarter carbs.",
+            "Everyday foods like rice, dal, fish, eggs and seasonal vegetables fit the plate.",
+            "A bit less rice and a bit more vegetables is the easiest first change."
+          ],
+          "tip": "Serve the vegetables and protein onto your plate first, then add rice to fill the space left. The order alone often fixes the balance.",
+          "task": "Photograph or sketch three of your meals today. For each one, estimate how much of the plate was vegetables, protein and carbs, and write one change that would bring it closer to the balanced plate.",
+          "quiz": [
+            {
+              "q": "On a balanced plate, how much space should vegetables take?",
+              "options": [
+                "About a quarter",
+                "Almost none",
+                "About half",
+                "The whole plate"
+              ],
+              "answer": 2,
+              "explain": "Vegetables should fill about half the plate. Protein and carbs take about a quarter each."
+            },
+            {
+              "q": "Which meal is closest to a balanced plate?",
+              "options": [
+                "A small portion of rice, a piece of fish, dal and a big serving of shak",
+                "A large plate of rice with a little dal",
+                "Fried noodles and a soft drink",
+                "Only a big bowl of fruit"
+              ],
+              "answer": 0,
+              "explain": "It has a modest amount of carbs, two protein sources and plenty of vegetables, which matches the half, quarter, quarter shape."
+            },
+            {
+              "q": "What is usually the easiest first change for a rice-heavy meal?",
+              "options": [
+                "Stop eating rice completely",
+                "Skip the meal",
+                "Add more oil to the curry",
+                "Take a bit less rice and a bit more vegetables"
+              ],
+              "answer": 3,
+              "explain": "Rice is not the enemy. Shrinking the portion a little and adding vegetables brings the plate into balance without giving anything up."
+            }
+          ]
+        },
+        {
+          "id": "health-2-2",
+          "title": "Protein, carbs and fats made simple",
+          "minutes": 6,
+          "content": "Most of your food is made of three main nutrients, called macronutrients: protein, carbohydrates and fats. Protein builds and repairs muscles and other tissues and keeps you full for longer. Carbs are your body's main source of quick energy, especially for the brain and for exercise. Fats help your body absorb some vitamins, support hormones and give long-lasting energy.\n\nGood sources do not have to be expensive. For protein, think eggs, dal, chola, fish, chicken, milk and yogurt. For carbs, choose rice, roti, oats, potatoes and fruit, and prefer whole grains like atta roti or red rice when you can. For fats, a small amount of cooking oil, nuts, seeds and the fat in fish is enough. The aim is a sensible amount of each, not as much as possible.\n\nNo single group is the enemy. Cutting out carbs can leave you tired and unfocused, and cutting out fat entirely can be unhealthy too. Problems usually come from too much of the less helpful kinds, like sugary drinks, sweets and deep-fried food, and from too little protein and fibre. A balanced plate with all three is the safest and easiest approach for most people.",
+          "key_points": [
+            "Protein builds and repairs, carbs give quick energy, fats support vitamins and hormones.",
+            "Affordable sources include eggs, dal, chola, rice, roti, oats, nuts and fish.",
+            "No macronutrient is the enemy; balance matters more than cutting any one out."
+          ],
+          "tip": "If you are always hungry soon after a meal, check whether it had any protein. Adding an egg, some dal or yogurt often keeps you full much longer.",
+          "task": "Write down one protein, one carb and one fat source you can add or improve in your meals this week, for example adding an egg to breakfast, switching to atta roti or using a little less oil.",
+          "quiz": [
+            {
+              "q": "What is the main job of protein in the body?",
+              "options": [
+                "Giving the brain its only fuel",
+                "Building and repairing muscles and tissues",
+                "Absorbing all vitamins on its own",
+                "Adding flavour to food"
+              ],
+              "answer": 1,
+              "explain": "Protein is the building material for muscles and other tissues, and it also helps you feel full."
+            },
+            {
+              "q": "Which is an affordable source of protein?",
+              "options": [
+                "White rice",
+                "A sugary soft drink",
+                "Cooking oil",
+                "Dal or chola"
+              ],
+              "answer": 3,
+              "explain": "Dal and chola are cheap, widely available plant proteins. Rice is mostly carbs and oil is fat."
+            },
+            {
+              "q": "Which statement about carbs is most accurate?",
+              "options": [
+                "They are a main energy source, and whole grains are a better choice",
+                "They should be removed from your diet completely",
+                "They have no effect on your energy",
+                "Only sweets count as carbs"
+              ],
+              "answer": 0,
+              "explain": "Carbs fuel your brain and muscles. The useful change is choosing better kinds, not cutting them out."
+            }
+          ]
+        },
+        {
+          "id": "health-2-3",
+          "title": "Water and hydration",
+          "minutes": 5,
+          "content": "Water helps control your body temperature, carries nutrients, keeps your joints moving and helps you think clearly. Even mild dehydration can bring a headache, tiredness and poor concentration, which many people mistake for hunger or stress.\n\nWatch for simple signs: feeling thirsty, a dry mouth, dark yellow urine, urinating rarely, headache or feeling dizzy when you stand up. Pale yellow urine is a good everyday sign that you are drinking enough. Your needs go up in hot and humid weather, when you sweat, during exercise and when you are sick with fever or diarrhoea. On those days, drink before, during and after activity, and use oral saline if you lose a lot of fluid.\n\nThere is no single perfect number for everyone, but a common starting target for many adults is about 8 glasses a day, more in heat and exercise. Sugary drinks like soft drinks and packaged juices add a lot of sugar without much benefit, so swap most of them for water. Keep a bottle with you, drink a glass with every meal, and you will rarely need to think about it.",
+          "key_points": [
+            "Mild dehydration can cause headache, tiredness and poor focus.",
+            "Pale yellow urine is a simple sign you are drinking enough.",
+            "Drink more in heat, during exercise and when sick, and swap sugary drinks for water."
+          ],
+          "tip": "Pair water with something you already do every day, like a glass after waking up, with each meal and before you start studying.",
+          "task": "Track every glass of water and every other drink for two days. Then set a simple daily water target and write when in the day you will drink it.",
+          "quiz": [
+            {
+              "q": "Which is a common sign of dehydration?",
+              "options": [
+                "Pale yellow urine",
+                "Feeling full after meals",
+                "Strong, steady energy",
+                "Dark yellow urine and a headache"
+              ],
+              "answer": 3,
+              "explain": "Dark urine, headache, thirst and tiredness are typical signs. Pale yellow urine usually means you are well hydrated."
+            },
+            {
+              "q": "When do you usually need extra water?",
+              "options": [
+                "Only in winter",
+                "In hot weather, during exercise and when sick",
+                "Only after drinking tea",
+                "Never, needs are always the same"
+              ],
+              "answer": 1,
+              "explain": "Heat, sweating, exercise, fever and diarrhoea all increase fluid loss, so you need to drink more."
+            },
+            {
+              "q": "What is the best everyday swap for a soft drink?",
+              "options": [
+                "A packaged juice",
+                "An energy drink",
+                "A glass of water",
+                "Another soft drink later"
+              ],
+              "answer": 2,
+              "explain": "Water hydrates without added sugar. Packaged juices and energy drinks often contain as much sugar as soft drinks."
+            }
+          ]
+        },
+        {
+          "id": "health-2-4",
+          "title": "Smarter snacks and reading labels",
+          "minutes": 6,
+          "content": "Snacks are not bad. A good snack can keep your energy steady between meals and stop you from overeating later. The trouble is that many easy snacks, like chips, instant noodles, fried singara and packaged biscuits, are high in salt, sugar or oil and keep you full for only a short time.\n\nPackaged food has a label that tells you what is inside. First check the serving size, because all the numbers are for one serving, and a packet often contains two or three. Then look at sugar and salt, which is sometimes listed as sodium. Lower is better for both. Finally read the ingredients list, which is ordered from most to least. If sugar, oil or salt is near the top, that food is mostly sugar, oil or salt.\n\nFilling snacks usually have protein, fibre or both. Good options include a piece of fruit, a handful of nuts, roasted chola or chickpeas, yogurt, a boiled egg, or puffed rice with peanuts and vegetables. They are often cheaper than packaged snacks too. You do not have to give up your favourite treats; just make the better choice your usual one.",
+          "key_points": [
+            "Check serving size first, since a packet often holds more than one serving.",
+            "Lower sugar and salt is better, and ingredients are listed from most to least.",
+            "Fruit, nuts, chola, yogurt and eggs are filling, affordable snacks."
+          ],
+          "tip": "Keep a better snack where you can see it, like fruit on the table or nuts in your bag. People mostly eat what is easiest to reach.",
+          "task": "Check the labels of three snacks you eat often. Note the serving size, sugar and salt for each, then choose one you will swap for a filling snack like fruit, nuts or roasted chola.",
+          "quiz": [
+            {
+              "q": "Why should you check the serving size first on a label?",
+              "options": [
+                "Because all the other numbers are for one serving, and a packet may hold several",
+                "Because it shows the price",
+                "Because it lists the expiry date",
+                "Because it is always the whole packet"
+              ],
+              "answer": 0,
+              "explain": "If a packet has three servings and you eat it all, you get three times the sugar and salt shown."
+            },
+            {
+              "q": "On an ingredients list, sugar is the first item. What does that tell you?",
+              "options": [
+                "The food has almost no sugar",
+                "Sugar was added only for colour",
+                "Sugar is the largest ingredient by amount",
+                "The list is in alphabetical order"
+              ],
+              "answer": 2,
+              "explain": "Ingredients are listed from most to least, so the first item is what the food contains most of."
+            },
+            {
+              "q": "Which snack is most likely to keep you full longer?",
+              "options": [
+                "A packet of chips",
+                "Roasted chola or a handful of nuts",
+                "A sugary soft drink",
+                "Cream biscuits"
+              ],
+              "answer": 1,
+              "explain": "Chola and nuts contain protein and fibre, which keep you full. Chips, biscuits and soft drinks are mostly salt, sugar and oil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-3",
+      "title": "Sit less, stand tall",
+      "lessons": [
+        {
+          "id": "health-3-1",
+          "title": "Posture basics",
+          "minutes": 5,
+          "content": "Posture is simply how you hold your body while you sit, stand and move. Neutral posture means your ears sit roughly above your shoulders, your shoulders sit above your hips, and your spine keeps its natural gentle curves. In this position your bones carry the load and your muscles do not have to fight to hold you up.\n\nSlouching changes that. When you round your back or push your head forward, muscles in your neck and upper back work overtime. Looking down at a phone is a common example, often called text neck. The further your head tips forward, the heavier it feels to your neck, and hours of this every day can lead to stiffness, aches and headaches.\n\nGood posture is not about sitting stiff like a soldier all day. When sitting, keep your back supported and your feet on the floor. When standing, share your weight between both feet with soft knees. With a phone, lift it closer to eye level instead of dropping your head. Small corrections, repeated often, matter more than one perfect pose.",
+          "key_points": [
+            "Neutral posture stacks ears over shoulders and shoulders over hips.",
+            "Slouching and text neck make neck and back muscles overwork.",
+            "Frequent small corrections beat holding one rigid pose."
+          ],
+          "tip": "Use a daily cue to check your posture, like every time you unlock your phone or open a notebook. Over time the correction becomes automatic.",
+          "task": "Ask a friend or family member to take a side photo of you while you study or work. Look at where your head, shoulders and hips sit, and write down one posture fix you will try today.",
+          "quiz": [
+            {
+              "q": "What does neutral posture look like?",
+              "options": [
+                "Head pushed forward to see the screen better",
+                "Shoulders rounded to relax the back",
+                "Ears roughly over shoulders and shoulders over hips",
+                "Back completely flat with no curves"
+              ],
+              "answer": 2,
+              "explain": "In neutral posture the body is stacked so bones carry the load and the spine keeps its natural curves."
+            },
+            {
+              "q": "Why does text neck cause strain?",
+              "options": [
+                "Tipping the head forward makes neck and upper back muscles work much harder",
+                "Phones are too heavy to hold",
+                "Screens damage the spine directly",
+                "It only affects the eyes, not the neck"
+              ],
+              "answer": 0,
+              "explain": "The further the head tips forward, the more load the neck muscles must hold, which leads to stiffness and aches over time."
+            },
+            {
+              "q": "Which habit helps posture the most?",
+              "options": [
+                "Sitting perfectly straight for hours without moving",
+                "Never using a phone",
+                "Only fixing posture once a week",
+                "Making small corrections often throughout the day"
+              ],
+              "answer": 3,
+              "explain": "Posture improves through frequent small adjustments, not by holding one rigid position all day."
+            }
+          ]
+        },
+        {
+          "id": "health-3-2",
+          "title": "Set up your study or work desk",
+          "minutes": 6,
+          "content": "Ergonomics means arranging your space to fit your body, instead of bending your body to fit the space. If you spend hours at a desk, a few simple changes can save your neck, back and wrists from daily strain, and you do not need expensive furniture to make them.\n\nStart with the screen. The top of it should be at or just below eye level, about an arm's length away, so you look straight ahead instead of down. Sit with your feet flat on the floor and your knees roughly level with your hips. Keep your elbows close to your sides and bent at about 90 degrees, with your wrists straight while you type or write.\n\nMost homes and hostels do not have adjustable chairs, and that is fine. Stack books under a laptop to raise the screen, and use a separate keyboard if you have one. Put a folded pillow or towel behind your lower back for support. If your feet do not reach the floor, rest them on a box or a pile of books. Avoid studying in bed for long hours, because it forces your neck to bend.",
+          "key_points": [
+            "Keep the top of the screen at or just below eye level.",
+            "Feet flat, elbows at about 90 degrees, wrists straight.",
+            "Books, pillows and boxes can replace special furniture."
+          ],
+          "tip": "After setting up your desk, sit for a minute with your eyes closed, then open them. Your gaze should land near the top part of the screen without tilting your head.",
+          "task": "Adjust your own desk setup today using what you have at home: raise the screen, support your back and fix your feet position. Then list every change you made.",
+          "quiz": [
+            {
+              "q": "Where should the top of your screen be?",
+              "options": [
+                "Well below your chin",
+                "At or just below eye level",
+                "High above your head",
+                "It does not matter"
+              ],
+              "answer": 1,
+              "explain": "A screen at about eye level lets you look straight ahead instead of bending your neck down for hours."
+            },
+            {
+              "q": "What is a good elbow position while typing or writing?",
+              "options": [
+                "Arms fully stretched out in front",
+                "Elbows raised above the shoulders",
+                "Wrists bent sharply upward",
+                "Elbows close to the body, bent at about 90 degrees"
+              ],
+              "answer": 3,
+              "explain": "Elbows near your sides at about 90 degrees, with straight wrists, keep strain off the shoulders and wrists."
+            },
+            {
+              "q": "You have a laptop but no stand. What is a simple fix?",
+              "options": [
+                "Stack books under the laptop to raise the screen",
+                "Study lying in bed",
+                "Lean further forward",
+                "Put the laptop on your lap"
+              ],
+              "answer": 0,
+              "explain": "Raising the laptop on books brings the screen closer to eye level. A separate keyboard helps keep your arms comfortable too."
+            }
+          ]
+        },
+        {
+          "id": "health-3-3",
+          "title": "Break up long sitting",
+          "minutes": 5,
+          "content": "Sitting for many hours without a break slows your body down. Muscles in your legs barely work, blood flow becomes sluggish, and your body handles sugar and fat less efficiently. Over years, a lot of long uninterrupted sitting is linked to a higher risk of heart disease, diabetes and back pain.\n\nHere is the surprising part: a workout in the morning does not fully cancel out eight hours of sitting afterward. Even active people benefit from breaking up long sitting. What matters is not only how much you exercise, but also how long you stay still in one stretch.\n\nThe fix is simple. Every 30 to 60 minutes, stand up and move for two to five minutes. Walk to fill your water bottle, climb a flight of stairs, stretch, or take a phone call standing. These breaks also refresh your focus, so you often get more done, not less. Use a timer or link breaks to natural moments, like the end of a chapter or a class.",
+          "key_points": [
+            "Long uninterrupted sitting slows blood flow and metabolism.",
+            "Exercise alone does not cancel out hours of sitting.",
+            "Move for a few minutes every 30 to 60 minutes."
+          ],
+          "tip": "Keep your water bottle slightly out of reach. Every refill becomes a free movement break, and you stay hydrated too.",
+          "task": "Set an hourly reminder on your phone for one full study or work day. Each time it rings, stand up and move for at least two minutes, and count how many breaks you actually took.",
+          "quiz": [
+            {
+              "q": "Why is long uninterrupted sitting a problem?",
+              "options": [
+                "It makes you taller",
+                "It only affects people who never exercise",
+                "It slows blood flow and how the body handles sugar and fat",
+                "It has no effect on health"
+              ],
+              "answer": 2,
+              "explain": "Long sitting keeps leg muscles inactive and slows circulation and metabolism, which raises long-term health risks."
+            },
+            {
+              "q": "Does a morning workout cancel out a full day of sitting?",
+              "options": [
+                "No, breaking up long sitting still matters",
+                "Yes, completely",
+                "Only if the workout is longer than two hours",
+                "Yes, but only on weekends"
+              ],
+              "answer": 0,
+              "explain": "Exercise is great, but long still periods still have their own effect. Even active people benefit from regular movement breaks."
+            },
+            {
+              "q": "How often should you take a short movement break?",
+              "options": [
+                "Once a day",
+                "Only when you feel pain",
+                "Every four hours",
+                "Every 30 to 60 minutes"
+              ],
+              "answer": 3,
+              "explain": "Standing and moving for a few minutes every 30 to 60 minutes keeps your body and focus fresh."
+            }
+          ]
+        },
+        {
+          "id": "health-3-4",
+          "title": "Stretches for desk life",
+          "minutes": 6,
+          "content": "Hours at a desk leave certain parts of the body tight: the neck, the shoulders, the upper and lower back, the hips and the wrists. Gentle stretching through the day helps these areas stay loose, eases stiffness and makes it easier to hold good posture.\n\nA few simple stretches cover most of it. For the neck, slowly tilt one ear toward your shoulder and hold. For the shoulders, roll them backward ten times, then pull one arm across your chest. For the back, sit tall and gently twist to each side, or stand and lean back with hands on your hips. For the hips, stand and step one foot back into a small lunge. For the wrists, stretch your palm back with the other hand, then flip it the other way.\n\nHold each stretch for about 15 to 30 seconds and breathe slowly. Stretching should feel like mild tension, never sharp pain. If anything hurts sharply, tingles or feels numb, stop at once, and if the pain keeps coming back, see a doctor. Do not bounce, and move slowly into and out of each position.",
+          "key_points": [
+            "Desk life tightens the neck, shoulders, back, hips and wrists.",
+            "Hold each stretch 15 to 30 seconds and breathe slowly.",
+            "Mild tension is fine; sharp pain means stop."
+          ],
+          "tip": "Pair your stretch routine with your movement breaks from the last lesson. One break, one or two stretches, and your day stays loose without extra time.",
+          "task": "Build a 5-minute desk stretch routine using at least one stretch each for the neck, shoulders, back, hips and wrists. Do the full routine twice today, once before lunch and once in the evening.",
+          "quiz": [
+            {
+              "q": "How long should you usually hold a gentle stretch?",
+              "options": [
+                "1 to 2 seconds",
+                "About 15 to 30 seconds",
+                "At least 5 minutes",
+                "Until it hurts"
+              ],
+              "answer": 1,
+              "explain": "Holding for about 15 to 30 seconds with slow breathing gives the muscle time to relax without strain."
+            },
+            {
+              "q": "What should you do if a stretch causes sharp pain?",
+              "options": [
+                "Push harder to break through it",
+                "Bounce to loosen the muscle",
+                "Hold it longer",
+                "Stop right away, and see a doctor if the pain keeps coming back"
+              ],
+              "answer": 3,
+              "explain": "Stretching should feel like mild tension. Sharp pain, tingling or numbness are signals to stop."
+            },
+            {
+              "q": "Which is a simple neck stretch?",
+              "options": [
+                "Slowly tilting one ear toward your shoulder",
+                "Spinning your head in fast circles",
+                "Pulling your head down hard with both hands",
+                "Bouncing your chin on your chest"
+              ],
+              "answer": 0,
+              "explain": "A slow ear-to-shoulder tilt gently stretches the side of the neck. Fast or forceful moves can strain it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-4",
+      "title": "Build your routine",
+      "lessons": [
+        {
+          "id": "health-4-1",
+          "title": "The parts of a complete routine",
+          "minutes": 6,
+          "content": "A complete fitness routine has four parts. Cardio, like brisk walking, cycling or skipping, trains your heart and lungs. Strength work, like squats and push-ups, builds muscle and bone. Flexibility, like gentle stretching, keeps your joints moving freely. Balance, like standing on one leg, helps you stay steady and avoid falls.\n\nEach part does a different job, so doing only one leaves gaps. Someone who only walks may have a healthy heart but weak legs and a stiff back. Someone who only lifts may be strong but tight and out of breath on the stairs. Covering all four makes your body ready for everyday life.\n\nA beginner does not need four separate workouts. Walk briskly on most days for cardio, do bodyweight strength moves two or three times a week, stretch for five minutes after each session and practise one-leg stands while brushing your teeth. That simple mix covers everything.",
+          "key_points": [
+            "A complete routine includes cardio, strength, flexibility and balance.",
+            "Each part trains something different, so skipping one leaves a gap.",
+            "Beginners can cover all four with walking, bodyweight moves, stretching and one-leg stands."
+          ],
+          "tip": "Attach balance practice to something you already do every day, like brushing your teeth or waiting for the kettle. It takes no extra time.",
+          "task": "Write the four parts on a piece of paper. Next to each, write what you already do for it, if anything. Circle the one that is missing or weakest, and choose one small activity to add for it this week.",
+          "quiz": [
+            {
+              "q": "Which activity mainly trains the heart and lungs?",
+              "options": [
+                "Holding a stretch",
+                "Brisk walking",
+                "Standing on one leg",
+                "Wall push-ups"
+              ],
+              "answer": 1,
+              "explain": "Brisk walking is cardio. It raises your heart rate and trains the heart and lungs, while the others target flexibility, balance or strength."
+            },
+            {
+              "q": "Why is it a problem to do only one type of exercise?",
+              "options": [
+                "Each type trains something different, so other areas get left behind",
+                "One type of exercise is always dangerous",
+                "Your body stops responding after one week",
+                "It is not a problem at all"
+              ],
+              "answer": 0,
+              "explain": "Cardio, strength, flexibility and balance each do a different job. Doing only one leaves gaps, like a strong heart with weak muscles."
+            },
+            {
+              "q": "What is an easy way for a beginner to practise balance?",
+              "options": [
+                "Running a marathon",
+                "Lifting heavy weights at a gym",
+                "Skipping all stretching",
+                "Standing on one leg while brushing your teeth"
+              ],
+              "answer": 3,
+              "explain": "One-leg stands need no equipment or extra time and steadily improve balance. Balance does not require a gym."
+            }
+          ]
+        },
+        {
+          "id": "health-4-2",
+          "title": "Plan your weekly workout",
+          "minutes": 6,
+          "content": "A plan turns good intentions into action. Without one, exercise becomes something you will do when you find time, and busy days rarely leave time. Start by looking at your real week: classes, work, travel and family duties. Then find slots you can actually protect, even if they are only 20 or 30 minutes long.\n\nMix hard and easy days. A strength session or a fast, long walk counts as hard. A gentle walk or stretching counts as easy. Avoid putting two hard strength days back to back for the same muscles, because muscles grow stronger while they recover, not while they work.\n\nKeep at least one full rest day each week. Rest is not laziness, it is part of training. Write your plan down with the day, the activity and the duration, and treat each session like an appointment. If you miss one, do not try to double up the next day. Just continue with the plan.",
+          "key_points": [
+            "Plan around your real schedule, using slots you can protect.",
+            "Alternate hard and easy days so muscles can recover.",
+            "Keep at least one full rest day every week."
+          ],
+          "tip": "A short session you actually do beats a long one you skip. If your week is packed, plan 15 minutes and count it as a win.",
+          "task": "Make a simple seven-day table with three columns: day, activity and duration. Include at least two strength days, three cardio days and one rest day. Put it where you will see it every morning.",
+          "quiz": [
+            {
+              "q": "Why should you avoid two hard strength days in a row for the same muscles?",
+              "options": [
+                "Exercise is only allowed on weekends",
+                "Strength training has no benefit",
+                "Muscles get stronger while they recover, so they need time between hard sessions",
+                "Two days in a row always cause injury"
+              ],
+              "answer": 2,
+              "explain": "Muscles adapt and grow stronger during recovery. Training the same muscles hard every day leaves no time for that."
+            },
+            {
+              "q": "What should you do if you miss a planned session?",
+              "options": [
+                "Simply continue with the plan as normal",
+                "Do two sessions the next day to make up for it",
+                "Give up the plan for the week",
+                "Skip food that day"
+              ],
+              "answer": 0,
+              "explain": "Doubling up raises the risk of fatigue and injury. Missing one session is normal. Just pick up where the plan continues."
+            },
+            {
+              "q": "How should you think about a rest day?",
+              "options": [
+                "It is a sign of laziness",
+                "It is a part of training that helps the body recover",
+                "It should be skipped once you get fitter",
+                "It means doing a double workout the next day"
+              ],
+              "answer": 1,
+              "explain": "Rest gives muscles and joints time to repair. Even athletes plan rest days because progress happens during recovery."
+            }
+          ]
+        },
+        {
+          "id": "health-4-3",
+          "title": "Progress without injury",
+          "minutes": 7,
+          "content": "Your body adapts to what you ask of it. Once a workout feels easy, it stops making you much fitter. To keep improving, you need to ask for a little more over time. This is called progressive overload: slowly increasing the challenge so your body keeps adapting.\n\nThe safe way is to change one thing at a time, by small steps. Add two reps, or one extra set, or five more minutes of walking, or a slightly harder version of a move, like going from wall push-ups to knee push-ups. Do not increase everything at once. A common rule of thumb is to raise your total weekly effort by no more than about ten percent.\n\nLearn the difference between soreness and pain. Dull, general muscle soreness a day or two after a new workout is normal and fades within a few days. Sharp pain, pain in a joint, swelling or pain that gets worse during exercise is a signal to stop and rest. If it does not improve, or you feel chest pain or dizziness, see a doctor.",
+          "key_points": [
+            "Progressive overload means slowly increasing the challenge over time.",
+            "Change only one thing at a time, by a small step.",
+            "Mild muscle soreness is normal, but sharp or joint pain means stop."
+          ],
+          "tip": "Leave every session feeling you could have done a little more. That margin is what keeps you training next week instead of resting an injury.",
+          "task": "Pick one exercise you already do, like squats or brisk walking. Write a four-week plan that makes it slightly harder each week by changing only one thing, for example 10, 12, 14, then 16 squats.",
+          "quiz": [
+            {
+              "q": "What is progressive overload?",
+              "options": [
+                "Doing the exact same workout forever",
+                "Training until you feel sharp pain",
+                "Lifting the heaviest weight possible on day one",
+                "Slowly increasing the challenge so your body keeps adapting"
+              ],
+              "answer": 3,
+              "explain": "Progressive overload means asking a little more of your body over time, in small steps, so it keeps getting fitter."
+            },
+            {
+              "q": "Which is a safe way to make squats harder next week?",
+              "options": [
+                "Add two reps and keep everything else the same",
+                "Double the reps, sets and speed all at once",
+                "Skip the warm-up to save energy",
+                "Do squats every day without rest"
+              ],
+              "answer": 0,
+              "explain": "Changing one thing by a small step lets your body adapt safely. Changing everything at once raises the risk of injury."
+            },
+            {
+              "q": "Which of these is a sign to stop and rest?",
+              "options": [
+                "Mild, dull soreness the day after a new workout",
+                "Feeling a little out of breath while walking briskly",
+                "Sharp pain in a joint that gets worse during exercise",
+                "Feeling warm after the warm-up"
+              ],
+              "answer": 2,
+              "explain": "Sharp or joint pain that worsens with movement is a warning sign. General soreness after a new workout is normal and fades."
+            }
+          ]
+        },
+        {
+          "id": "health-4-4",
+          "title": "Track your progress",
+          "minutes": 5,
+          "content": "Tracking shows you that your effort is working, and seeing progress keeps you motivated. Without records, it is easy to forget how far you have come and feel like nothing has changed, even when a lot has.\n\nThe scale alone is a poor guide. Your weight goes up and down daily with water, food and salt, and when you build muscle while losing fat, the number may barely move. Better measures are what you can do and how you feel: how many push-ups or squats you can do, how long you can walk briskly, how your clothes fit, your energy during the day and how well you sleep.\n\nKeep it simple. A notebook or a notes app is enough. Record a few baseline numbers today, then check them again every two to four weeks under similar conditions. Small improvements, like two more push-ups or walking up the stairs without stopping, are real progress worth celebrating.",
+          "key_points": [
+            "Tracking makes progress visible and keeps you motivated.",
+            "The scale alone misleads, so track what you can do and how you feel.",
+            "Record a baseline and recheck every two to four weeks."
+          ],
+          "tip": "Measure at the same time of day and in the same way each time, for example the morning before breakfast, so the comparison is fair.",
+          "task": "Record three baseline measures today, for example how many squats you can do in one minute, how long you can hold a plank and how you rate your daily energy from 1 to 10. Write today's date and set a reminder to recheck in one month.",
+          "quiz": [
+            {
+              "q": "Why is the scale alone a poor way to track fitness?",
+              "options": [
+                "Scales are never accurate",
+                "Weight changes daily with water and food, and muscle gain can hide fat loss",
+                "Weight has nothing to do with health",
+                "Fitness cannot be measured at all"
+              ],
+              "answer": 1,
+              "explain": "Daily weight swings with water, food and salt, and building muscle can keep the number steady while your body improves."
+            },
+            {
+              "q": "Which is a good fitness measure besides weight?",
+              "options": [
+                "How many hours you sat today",
+                "How many snacks you bought",
+                "How many squats you can do in one minute",
+                "How many fitness videos you watched"
+              ],
+              "answer": 2,
+              "explain": "Performance measures like reps, walk time or plank time show real changes in fitness."
+            },
+            {
+              "q": "How often is it reasonable to recheck your measures?",
+              "options": [
+                "Every two to four weeks",
+                "Every hour",
+                "Several times a day",
+                "Only once a year"
+              ],
+              "answer": 0,
+              "explain": "Fitness changes take weeks. Checking every two to four weeks shows real trends without daily noise."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-5",
+      "title": "Keep it for life",
+      "lessons": [
+        {
+          "id": "health-5-1",
+          "title": "Eat well on a budget and a busy schedule",
+          "minutes": 6,
+          "content": "Most people do not eat badly because they do not know better. They eat badly because they are tired, busy and short on money, so they grab whatever is quick. The fix is a little planning. Spend ten minutes once a week deciding a few simple meals, then buy the ingredients together. Rice, dal, eggs, seasonal vegetables, chola and bananas are cheap, filling and easy to build a balanced plate around.\n\nCooking in batches saves time on busy days. A big pot of dal or mixed vegetable curry can last two or three meals, and boiled eggs or roasted chola make ready snacks. If you live in a hostel or eat at a mess, you may not control the menu, but you can control the plate: take more vegetables and dal, add an egg or fish when you can, and go easy on the extra oil and second helping of rice.\n\nStreet food and eating out do not have to ruin your week. Pick grilled, boiled or lightly cooked items over deep-fried ones, choose places that look clean and serve food hot, and drink safe bottled or boiled water. Treat fuchka or singara as an occasional treat, not a daily meal. One planned, balanced meal a day is already a big step up from eating at random.",
+          "key_points": [
+            "Ten minutes of weekly meal planning saves money, time and poor choices.",
+            "Batch cooking and ready snacks keep busy days on track.",
+            "In a hostel, mess or restaurant, you can still build a balanced plate."
+          ],
+          "tip": "Keep one emergency meal you can make in ten minutes, like egg fried rice with vegetables or chira with yogurt and banana. When you are tired, you will reach for it instead of fried snacks.",
+          "task": "Plan three affordable, balanced meals for your next busy week. For each, write the dish, the protein, the vegetable and the rough cost.",
+          "quiz": [
+            {
+              "q": "What is the simplest first step to eating well on a busy schedule?",
+              "options": [
+                "Buying expensive health foods",
+                "Spending a few minutes each week planning simple meals",
+                "Skipping breakfast to save time",
+                "Eating only one big meal a day"
+              ],
+              "answer": 1,
+              "explain": "A short weekly plan means you already know what to cook and buy, so you are less likely to grab whatever is quick and unhealthy."
+            },
+            {
+              "q": "You eat at a hostel mess and cannot change the menu. What helps most?",
+              "options": [
+                "Skipping mess meals and eating chips instead",
+                "Taking extra rice to stay full",
+                "Only eating once a day",
+                "Taking more vegetables and dal and adding protein when you can"
+              ],
+              "answer": 3,
+              "explain": "You may not control the menu, but you control your plate. More vegetables, dal and some protein moves it closer to a balanced plate."
+            },
+            {
+              "q": "Which street food choice is generally the better one?",
+              "options": [
+                "A grilled or boiled item served hot from a clean stall",
+                "A deep-fried item that has been sitting out for hours",
+                "Any food, as long as it is cheap",
+                "A sugary drink instead of a meal"
+              ],
+              "answer": 0,
+              "explain": "Grilled or boiled food has less oil, and food served hot from a clean place is less likely to make you sick."
+            }
+          ]
+        },
+        {
+          "id": "health-5-2",
+          "title": "Stay active in any season",
+          "minutes": 6,
+          "content": "Most fitness habits do not end with a decision to quit. They end with one hot week, a rainy month or exam season, and then never restart. The trick is to expect these seasons and have a plan ready. Your routine does not need to look the same all year. It just needs to keep going in some form.\n\nIn hot weather, move early in the morning or after sunset, drink water before and after, wear light clothes and slow down if you feel dizzy or stop sweating. In the monsoon, or whenever you cannot go outside, switch to an indoor routine: squats, push-ups, glute bridges, planks, marching or skipping in place and climbing stairs. During exams, shorten sessions instead of dropping them. Ten minutes of movement between study blocks can actually help you focus.\n\nDuring Ramadan, keep exercise light to moderate and time it well, such as a walk shortly before iftar or a short session a couple of hours after it, and drink plenty of water between iftar and sehri. Anyone with a health condition should ask a doctor first. The rule for every season is the same: when you cannot do your full routine, do a smaller version. Something always beats nothing.",
+          "key_points": [
+            "Expect hard seasons and keep a backup plan ready.",
+            "Adjust timing and intensity for heat, rain, exams and Ramadan.",
+            "A shorter session keeps the habit alive; skipping completely breaks it."
+          ],
+          "tip": "Keep your backup routine written on your phone or taped to the wall. When the day goes wrong, you should not have to think about what to do.",
+          "task": "Write a 15-minute backup indoor workout with no equipment for days when you cannot go outside. List each move, the reps or time and the order, then try it once today.",
+          "quiz": [
+            {
+              "q": "During a very hot week, what is the best way to keep walking?",
+              "options": [
+                "Walk at noon to sweat more",
+                "Stop all exercise until winter",
+                "Walk early morning or after sunset and drink water",
+                "Wear heavy clothes to burn more calories"
+              ],
+              "answer": 2,
+              "explain": "Cooler times of day and good hydration let you keep moving safely. Midday heat and heavy clothes raise the risk of heat illness."
+            },
+            {
+              "q": "Exams start next week and you have little time. What should you do with your routine?",
+              "options": [
+                "Shorten it to around ten minutes instead of dropping it",
+                "Drop it completely until exams finish",
+                "Double it to relieve stress",
+                "Only exercise on the night before each exam"
+              ],
+              "answer": 0,
+              "explain": "A short session keeps the habit alive and can even help focus. Stopping completely makes it much harder to restart later."
+            },
+            {
+              "q": "Which is a sensible approach to exercise during Ramadan?",
+              "options": [
+                "Hard workouts at midday while fasting",
+                "No water at all between iftar and sehri",
+                "Stopping all movement for the whole month",
+                "Light to moderate activity timed near or after iftar"
+              ],
+              "answer": 3,
+              "explain": "Light to moderate activity at the right time, with enough water after iftar, keeps you active without overloading a fasting body."
+            }
+          ]
+        },
+        {
+          "id": "health-5-3",
+          "title": "Myths, fads and trustworthy advice",
+          "minutes": 7,
+          "content": "Health advice is everywhere, and much of it is wrong. A common myth is spot reduction, the idea that doing crunches will burn belly fat. Your body does not choose where to lose fat based on which muscle you work; fat drops across the whole body through regular activity and good eating over time. Other popular claims, like detox teas, fat-burning pills and miracle supplements, promise fast results. Most do little, some just make you lose water, and some can be harmful.\n\nWhen you see a claim, ask a few questions. Who is saying it, and are they selling something? Does it promise big results fast or with no effort? Is it based on one person's story or on real research? Trustworthy sources include doctors, registered dietitians, government health departments and major health organisations like the WHO. A post from an influencer with a discount code is not evidence, no matter how many likes it has.\n\nSome changes need a doctor's advice first. Talk to a doctor before starting a new exercise plan or diet if you have a heart condition, diabetes, high blood pressure, asthma, are pregnant, take regular medicine, or feel chest pain, dizziness or unusual breathlessness when active. These lessons are general guidance. They are a good starting point, not a replacement for someone who knows your health.",
+          "key_points": [
+            "You cannot burn fat from one spot by exercising that area.",
+            "Be suspicious of fast, effortless results and people selling the cure.",
+            "See a doctor before big changes if you have a health condition or warning signs."
+          ],
+          "tip": "If a product is advertised as working 'without diet or exercise', treat that line alone as a red flag.",
+          "task": "Find one health or fitness claim online or on social media. Check it against a reliable source like the WHO, a government health site or a doctor, and write down whether it holds up and why.",
+          "quiz": [
+            {
+              "q": "Someone says 100 crunches a day will burn belly fat. What is true?",
+              "options": [
+                "Correct, crunches burn fat right where you work",
+                "Crunches burn arm fat instead",
+                "Only crunches at night burn belly fat",
+                "Fat loss happens across the whole body, not just the area you exercise"
+              ],
+              "answer": 3,
+              "explain": "Spot reduction is a myth. Crunches strengthen the core, but fat is lost across the body through overall activity and diet."
+            },
+            {
+              "q": "Which source is most trustworthy for health advice?",
+              "options": [
+                "An influencer with a discount code",
+                "A government health department or the WHO",
+                "A viral video with millions of views",
+                "A product's own advertisement"
+              ],
+              "answer": 1,
+              "explain": "Official health bodies base advice on research and are not selling you a product. Popularity is not the same as accuracy."
+            },
+            {
+              "q": "When should you talk to a doctor before starting a new exercise plan?",
+              "options": [
+                "Never, exercise is always safe",
+                "Only if you want to lose weight",
+                "If you have a condition like heart disease or diabetes, or feel chest pain when active",
+                "Only after you have been exercising for a year"
+              ],
+              "answer": 2,
+              "explain": "Health conditions, regular medicine and warning signs like chest pain or dizziness mean a doctor should guide what is safe for you."
+            }
+          ]
+        },
+        {
+          "id": "health-5-4",
+          "title": "Your long-term health plan",
+          "minutes": 7,
+          "content": "You now know how to move, eat, drink water, sit better and build a routine. The final step is keeping it all going for years, not weeks. Start with regular check-ups. Even if you feel fine, a basic check of blood pressure, weight, and when advised blood sugar, can catch problems early, when they are easiest to fix. Know your numbers the same way you know your phone battery.\n\nSet goals you can actually reach. 'Get fit' is too vague, and 'lose ten kilos this month' is unrealistic. Try 'walk 30 minutes, five days a week' or 'eat vegetables at lunch and dinner'. You will also have breaks: illness, travel, family events, a busy semester. When that happens, skip the guilt and restart smaller than before. One missed week does not erase months of work, but quitting because of it does.\n\nThe strongest habits come from identity. Instead of 'I am trying to exercise', think 'I am someone who moves every day'. People who see health as part of who they are make better choices without forcing themselves. Write your plan down, keep it somewhere you will see it and review it once a month. Your health is not a project you finish; it is something you keep living.",
+          "key_points": [
+            "Regular check-ups catch problems early, even when you feel fine.",
+            "Set specific, realistic goals and restart without guilt after breaks.",
+            "Seeing yourself as a healthy person makes habits last."
+          ],
+          "tip": "Put a recurring reminder in your calendar for the first day of every month to review your health plan for five minutes.",
+          "task": "Write a one-page personal health plan with four sections: movement, food, water and desk habits. Give each one specific, realistic goal and note how you will restart if you fall off.",
+          "quiz": [
+            {
+              "q": "Why are regular check-ups useful even if you feel healthy?",
+              "options": [
+                "They can catch problems early, when they are easiest to treat",
+                "They replace the need for exercise",
+                "They are only needed after age 70",
+                "They guarantee you will never get sick"
+              ],
+              "answer": 0,
+              "explain": "Problems like high blood pressure often have no symptoms at first. Check-ups find them early, when they are easiest to manage."
+            },
+            {
+              "q": "Which goal is the most realistic and specific?",
+              "options": [
+                "Get fit",
+                "Lose ten kilos this month",
+                "Walk 30 minutes, five days a week",
+                "Never eat sweets again"
+              ],
+              "answer": 2,
+              "explain": "A good goal is clear and doable. You know exactly what to do and can check whether you did it."
+            },
+            {
+              "q": "You missed two weeks of exercise because you were sick. What is the best response?",
+              "options": [
+                "Give up, the progress is gone",
+                "Restart with a smaller, easier version of your routine",
+                "Do double workouts to make up for it",
+                "Wait until next year to start fresh"
+              ],
+              "answer": 1,
+              "explain": "Restarting smaller gets you moving again without strain or guilt. A break does not erase your progress, but quitting does."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

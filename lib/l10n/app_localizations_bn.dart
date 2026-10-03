@@ -43,7 +43,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String loadError(String error) {
-    return 'লেসনগুলো লোড করা যায়নি। assets/content/mentors.json ঠিকঠাক JSON কিনা আর pubspec.yaml-এ আছে কিনা দেখো।\n\n$error';
+    return 'লেসনগুলো লোড করা যায়নি। assets/content/-এর ফাইলগুলো ঠিকঠাক JSON কিনা আর pubspec.yaml-এ আছে কিনা দেখো।\n\n$error';
   }
 
   @override

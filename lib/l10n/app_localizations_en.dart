@@ -43,7 +43,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String loadError(String error) {
-    return 'The lessons could not be loaded. Check that assets/content/mentors.json is valid JSON and listed in pubspec.yaml.\n\n$error';
+    return 'The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n$error';
   }
 
   @override

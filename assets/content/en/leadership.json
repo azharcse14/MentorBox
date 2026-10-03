@@ -1,0 +1,1008 @@
+{
+  "id": "leadership",
+  "name": "Leadership",
+  "mentor": "Lead Mentor",
+  "tagline": "Take ownership, bring people together and get things done.",
+  "description": "You do not need a title to lead. These lessons cover ownership, delegation, running meetings, motivating people and making decisions, whether you lead a class project, a club or a team at work.",
+  "image": "assets/images/leadership.jpg",
+  "color": "#8A5A5A",
+  "messages": {
+    "welcome": "Leadership is not a position, it is something you do. We start with the part you fully control: how you show up yourself.",
+    "comeback": "Good to have you back. Teams need people who return and keep going. Let's do one short lesson.",
+    "pass": "Well led. That is the kind of thinking people follow.",
+    "fail": "Not this time. Good leaders review what went wrong without blaming anyone, including themselves. Read the explanations and try again.",
+    "finished": "You can now take ownership, set a clear purpose, delegate, run useful meetings, motivate people, handle team conflict and make decisions together. Pick one group you belong to and lead one small thing in it this week."
+  },
+  "levels": [
+    {
+      "id": "lead-1",
+      "title": "Lead without a title",
+      "lessons": [
+        {
+          "id": "lead-1-1",
+          "title": "What leadership really is",
+          "minutes": 5,
+          "content": "Many people think leadership starts when you get a title: captain, class representative, manager. But titles only give authority. Leadership is something else: influence and action. It is noticing what a group needs and helping it happen.\n\nThink of the classmate who quietly made a shared document so everyone could add notes, or the cousin who started cleaning up after a family event and soon everyone joined in. Nobody appointed them. They saw a gap, acted first and made it easy for others to follow.\n\nThis means you can practise leadership today, in any group you belong to. Ask yourself two questions: what does this group need right now, and what small step can I take to move it forward? Answering them again and again is what turns a member into a leader.",
+          "key_points": [
+            "A title gives authority, but leadership is influence and action.",
+            "Leaders notice what a group needs and help it happen.",
+            "You can lead in any group today, starting with one small step."
+          ],
+          "tip": "When a group feels stuck, ask out loud: what do we need right now? Often just asking that question is the first act of leadership.",
+          "task": "Recall one moment when someone without any authority led well in a class, club or family. Write down exactly what they did, step by step.",
+          "quiz": [
+            {
+              "q": "What is leadership at its core?",
+              "options": [
+                "Having an official title",
+                "Being the loudest person in the group",
+                "Influence and action that help a group get what it needs",
+                "Telling others what to do"
+              ],
+              "answer": 2,
+              "explain": "Titles bring authority, but leadership is about influence and action. Many people lead without any title at all."
+            },
+            {
+              "q": "A group project is falling behind and no one has a plan. What is a leadership move?",
+              "options": [
+                "Suggest a quick list of remaining tasks and offer to take one",
+                "Wait for the teacher to step in",
+                "Complain in the group chat",
+                "Do nothing because you are not the group leader"
+              ],
+              "answer": 0,
+              "explain": "Noticing the gap and taking a small, helpful first step is leadership, with or without a title."
+            },
+            {
+              "q": "Which question helps you act like a leader in any group?",
+              "options": [
+                "Who is in charge here?",
+                "How can I get credit for this?",
+                "Why is nobody else doing anything?",
+                "What does this group need right now, and what can I do?"
+              ],
+              "answer": 3,
+              "explain": "Leaders focus on the group's needs and their own next step, not on rank, credit or blame."
+            }
+          ]
+        },
+        {
+          "id": "lead-1-2",
+          "title": "Own it: ownership without blame",
+          "minutes": 6,
+          "content": "When something goes wrong in a group, the first question many people ask is: whose fault is it? It feels natural, but it rarely fixes anything. People get defensive, time passes, and the problem stays exactly where it was.\n\nOwnership means treating a shared outcome as yours, even when you did not cause the problem. Instead of asking who is to blame, you ask: what can I do? If the club event has no venue yet, an owner does not wait for the president. They call two places, share the options and ask the group to decide.\n\nOwnership is not taking over everything or blaming yourself for every mistake. It is choosing your next step and doing it. Once one person moves, others usually follow, because a clear action is far easier to join than an argument.",
+          "key_points": [
+            "Blame looks backward, ownership looks for the next step.",
+            "Owning an outcome means asking what you can do, even if it was not your fault.",
+            "Ownership is not doing everything alone or blaming yourself."
+          ],
+          "tip": "Replace 'Why didn't anyone...?' with 'Here is what I can do...'. The second sentence moves a group, the first one stops it.",
+          "task": "Pick one stuck problem in a group you belong to. Write the one next step you will personally take, and when you will take it.",
+          "quiz": [
+            {
+              "q": "What usually happens when a group focuses on whose fault a problem is?",
+              "options": [
+                "The problem gets solved faster",
+                "People get defensive and the problem stays",
+                "Everyone learns to work harder",
+                "The leader becomes clear"
+              ],
+              "answer": 1,
+              "explain": "Blame looks backward and makes people defend themselves, so time is lost while the problem stays unsolved."
+            },
+            {
+              "q": "Which statement shows real ownership?",
+              "options": [
+                "It is not my job, ask the president",
+                "I will do everything myself so it is done right",
+                "This is all my fault, I always ruin things",
+                "I will call two venues today and share the options"
+              ],
+              "answer": 3,
+              "explain": "Ownership is a concrete next step toward the shared outcome, without taking over or blaming yourself."
+            },
+            {
+              "q": "Why does one person taking ownership often get others moving?",
+              "options": [
+                "A clear action is easier to join than an argument",
+                "People are afraid of the owner",
+                "Others want to avoid work",
+                "It proves who was wrong"
+              ],
+              "answer": 0,
+              "explain": "When someone starts acting, others see a simple way to help, so momentum replaces discussion about blame."
+            }
+          ]
+        },
+        {
+          "id": "lead-1-3",
+          "title": "Lead by example",
+          "minutes": 5,
+          "content": "People copy what you do far more than what you say. If you ask your group to be on time but arrive ten minutes late yourself, they learn that being late is fine. Your behaviour quietly sets the real rules of the team.\n\nThis works in a good direction too. When you show up prepared, reply to messages, finish your part early and stay calm under pressure, others start to match you. Your punctuality, effort and attitude become the standard, even if you never say a word about them.\n\nThat is why the easiest place to start leading is with your own habits. Before you ask anything from others, check whether you are already doing it yourself. A standard you keep consistently gives you the right to ask others to keep it too.",
+          "key_points": [
+            "People copy your actions more than your words.",
+            "Your punctuality, effort and attitude set the team's real standard.",
+            "Keep a standard yourself before asking it from others."
+          ],
+          "tip": "Pick standards that others can see: arriving early, coming prepared, meeting your own deadlines. Visible habits spread fastest.",
+          "task": "Choose one standard you expect from others, such as being on time. Keep it yourself for a full week and note each day whether you did.",
+          "quiz": [
+            {
+              "q": "A leader asks everyone to be on time but often arrives late. What does the team learn?",
+              "options": [
+                "Being on time is very important",
+                "The leader is busier than everyone",
+                "Nothing, because words matter most",
+                "Being late is acceptable here"
+              ],
+              "answer": 3,
+              "explain": "Actions speak louder than instructions. The team copies what the leader does, not what the leader says."
+            },
+            {
+              "q": "Which is the best example of leading by example?",
+              "options": [
+                "Making a strict rule about deadlines",
+                "Finishing your own part early and sharing it",
+                "Reminding others of their deadlines every day",
+                "Praising yourself in group chat"
+              ],
+              "answer": 1,
+              "explain": "Visibly doing what you hope others will do sets the standard more powerfully than rules or reminders."
+            },
+            {
+              "q": "Before asking others to follow a standard, what should you check?",
+              "options": [
+                "Whether they will agree",
+                "Whether there is a punishment for breaking it",
+                "Whether you already keep it yourself",
+                "Whether other teams have it"
+              ],
+              "answer": 2,
+              "explain": "Keeping the standard yourself first gives you credibility and makes your request fair."
+            }
+          ]
+        },
+        {
+          "id": "lead-1-4",
+          "title": "Earn trust through small promises",
+          "minutes": 6,
+          "content": "Trust is not built by big speeches. It is built by small promises kept again and again. \"I will send the notes tonight.\" \"I will bring the extension cord.\" Each kept promise is a tiny deposit. Over weeks, people learn that when you say something, it happens.\n\nThe opposite also adds up. Every \"I forgot\" or quietly missed promise is a withdrawal, even if each one feels small. After a few, people stop relying on you and start double-checking your work, which makes leading them much harder.\n\nYou will not keep every promise, and that is fine if you handle it well. The moment you know you cannot deliver, say so quickly and offer a new plan: \"I cannot finish the slides by tonight, can I send them by 10 tomorrow?\" Admitting early keeps trust. Going silent breaks it.",
+          "key_points": [
+            "Trust grows from small promises kept consistently.",
+            "Every quietly missed promise slowly drains trust.",
+            "When you cannot deliver, say so early and offer a new plan."
+          ],
+          "tip": "Promise less and write down every promise the moment you make it. A promise you forget is a promise you break.",
+          "task": "List every promise you made this week, even small ones. Mark which you kept, then close or renegotiate one open promise today.",
+          "quiz": [
+            {
+              "q": "What builds trust most reliably over time?",
+              "options": [
+                "Keeping small commitments consistently",
+                "Giving inspiring speeches",
+                "Making big promises",
+                "Being friendly with everyone"
+              ],
+              "answer": 0,
+              "explain": "Trust comes from a track record. Many small promises kept add up to people believing your word."
+            },
+            {
+              "q": "You realise you cannot finish your part by the deadline. What is the best move?",
+              "options": [
+                "Stay quiet and hope nobody notices",
+                "Blame someone else for the delay",
+                "Tell the group early and propose a new time",
+                "Submit something unfinished without saying anything"
+              ],
+              "answer": 2,
+              "explain": "Admitting quickly and offering a new plan keeps trust. Silence and excuses break it."
+            },
+            {
+              "q": "Why do small forgotten promises matter?",
+              "options": [
+                "They do not matter if the promise was small",
+                "They add up until people stop relying on you",
+                "They only matter to the leader",
+                "People forget them immediately"
+              ],
+              "answer": 1,
+              "explain": "Each missed promise is a small withdrawal of trust. Together they make people double-check you instead of relying on you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lead-2",
+      "title": "Organise the group",
+      "lessons": [
+        {
+          "id": "lead-2-1",
+          "title": "Give the group a clear purpose",
+          "minutes": 6,
+          "content": "Many groups fail not because people are lazy, but because each person is quietly working towards a slightly different goal. One member thinks the project is about getting a top grade, another wants to finish fast, a third is polishing slides nobody asked for. Effort gets spread in different directions and the group feels busy but goes nowhere.\n\nA clear purpose fixes this. It answers two questions in one or two sentences: why are we doing this, and what does 'done' look like? \"We are running a book drive to fill the school library's empty shelf, and we are done when we have collected 200 books by 30 November\" gives everyone the same picture. The finish line should be concrete enough that anyone could check whether it has been reached.\n\nWriting the purpose down is only half the job. The real test is whether others can repeat it in their own words. Ask two members separately what the group is trying to achieve. If their answers differ, you have found a problem early, while it is still cheap to fix. Repeat the purpose at the start of meetings and whenever someone proposes something new: does this help us reach the finish line?",
+          "key_points": [
+            "A purpose explains why the group exists and what 'done' looks like.",
+            "A good finish line is concrete enough that anyone can check it.",
+            "Test the purpose by asking members to describe it in their own words."
+          ],
+          "tip": "When the group argues about what to do next, go back to the purpose. Ask: which option gets us closer to the finish line? Many debates end right there.",
+          "task": "For one group project you are part of, write a one-sentence purpose and a clear finish line with a date. Then ask two members, separately, to describe the goal and compare their answers with yours.",
+          "quiz": [
+            {
+              "q": "What two things should a clear group purpose answer?",
+              "options": [
+                "Who the leader is and who follows",
+                "Why we are doing this and what 'done' looks like",
+                "How much each person will be paid",
+                "Which tools the group will use"
+              ],
+              "answer": 1,
+              "explain": "A purpose gives the reason for the work and a finish line everyone can recognise. Roles and tools come later."
+            },
+            {
+              "q": "Which of these is the clearest finish line?",
+              "options": [
+                "Do our best on the project",
+                "Make the event really good",
+                "Help the library as much as possible",
+                "Collect 200 books by 30 November"
+              ],
+              "answer": 3,
+              "explain": "A concrete number and a date make it easy for anyone to check whether the goal has been reached."
+            },
+            {
+              "q": "Two members describe the group's goal differently. What does that tell you?",
+              "options": [
+                "The purpose is not shared yet and needs to be clarified now",
+                "One of them is not trying hard enough",
+                "This is normal and can be ignored",
+                "The group needs a new leader"
+              ],
+              "answer": 0,
+              "explain": "Different answers mean the purpose is not clear to everyone. Catching it early is cheap; discovering it at the deadline is expensive."
+            }
+          ]
+        },
+        {
+          "id": "lead-2-2",
+          "title": "Who does what: roles and owners",
+          "minutes": 6,
+          "content": "\"We'll all handle the poster\" sounds friendly, but it usually means nobody handles it. When a task belongs to everyone, each person assumes someone else is doing it. Days later the group discovers the poster was never made, and the blame game begins.\n\nThe fix is simple: every task gets exactly one named owner and a deadline. The owner is not necessarily the only person working on it, but they are the one who makes sure it gets done and who speaks up if it is stuck. Two owners is as bad as none, because each can wait for the other. A deadline turns \"sometime\" into a real commitment.\n\nThe easiest tool is a plain table with three columns: task, owner and due date. Break big tasks into pieces small enough that one person can own each one. Share the table where everyone can see it, and read it out at the end of planning so people agree to their names out loud. Any row without an owner is a warning sign: either someone takes it, or the group decides openly not to do it.",
+          "key_points": [
+            "A task owned by everyone is effectively owned by no one.",
+            "Each task needs exactly one named owner and a deadline.",
+            "A simple task, owner and due date table makes gaps visible."
+          ],
+          "tip": "Let people volunteer for tasks before you assign them. Ownership feels stronger when someone chose it, and you can fill the leftover rows afterwards.",
+          "task": "Take a current group plan and turn it into a table with three columns: task, owner and due date. Make sure no task is left without exactly one owner, then share it with the group.",
+          "quiz": [
+            {
+              "q": "Why is 'we'll all handle it' risky?",
+              "options": [
+                "It makes the task take longer to finish",
+                "It is too formal for a small group",
+                "Each person assumes someone else is doing it",
+                "It gives one person too much power"
+              ],
+              "answer": 2,
+              "explain": "Shared ownership without a named person leads everyone to wait for someone else, so the task quietly gets dropped."
+            },
+            {
+              "q": "How many owners should a single task have?",
+              "options": [
+                "Exactly one",
+                "At least two, for backup",
+                "The whole group",
+                "None, the leader tracks everything"
+              ],
+              "answer": 0,
+              "explain": "One owner is clearly responsible. Others can help, but one person makes sure it gets done."
+            },
+            {
+              "q": "Your task table has a row with no owner. What should happen?",
+              "options": [
+                "Leave it, someone will pick it up",
+                "The leader must always do it",
+                "Delete it from the table quietly",
+                "Someone takes it, or the group openly agrees not to do it"
+              ],
+              "answer": 3,
+              "explain": "An unowned task will not get done by accident. Either assign it or make a clear, shared decision to drop it."
+            }
+          ]
+        },
+        {
+          "id": "lead-2-3",
+          "title": "Delegate well",
+          "minutes": 7,
+          "content": "Many new leaders do too much themselves. It feels faster, safer and easier than explaining. But a leader who does everything becomes the bottleneck, burns out, and leaves the rest of the team with nothing meaningful to do. Delegation is how a group gets more done than one person ever could.\n\nGood delegation hands over the outcome, not just the chores. \"Type up these notes\" is a chore. \"Own the event's social media and get 100 people to register\" is an outcome. Give the person the context (why it matters), the result you expect, the deadline, and how much freedom they have to decide. Match tasks to strengths when speed matters, and to growth when someone wants to learn something new.\n\nThe hardest part comes after you hand it over: not taking it back. Their way may differ from yours and still be fine. If you redo their work or quietly fix every detail, you teach them that their effort does not count. Agree on what good looks like, stay available for questions, and let them own both the work and the credit.",
+          "key_points": [
+            "Doing everything yourself makes you the bottleneck.",
+            "Delegate outcomes with context, expectations, deadline and freedom.",
+            "Once delegated, do not take it back just because their way differs."
+          ],
+          "tip": "Before delegating, ask yourself: if this were done 80 percent as well as I would do it, would that be fine? If yes, hand it over.",
+          "task": "Pick one task you usually do yourself. Hand it to someone today with clear context, the expected result and a deadline, and decide in advance that you will not take it back.",
+          "quiz": [
+            {
+              "q": "Which is an example of delegating an outcome rather than a chore?",
+              "options": [
+                "Own the event's social media and get 100 registrations",
+                "Type up these meeting notes",
+                "Print 50 copies of this flyer",
+                "Send this exact email I wrote"
+              ],
+              "answer": 0,
+              "explain": "An outcome gives the person a result to achieve and room to decide how. The others are fixed steps with no ownership."
+            },
+            {
+              "q": "What should you share when delegating a task?",
+              "options": [
+                "Only the deadline",
+                "Nothing, they should figure it out",
+                "Context, expected result, deadline and how much freedom they have",
+                "A step-by-step script they must follow exactly"
+              ],
+              "answer": 2,
+              "explain": "Clear context and expectations let the person succeed while still owning the decisions."
+            },
+            {
+              "q": "The person you delegated to does the task differently from how you would. What is usually best?",
+              "options": [
+                "Quietly redo it your way",
+                "Accept it if it meets the agreed result",
+                "Take the task back for next time",
+                "Point out every difference in front of the group"
+              ],
+              "answer": 1,
+              "explain": "If the agreed result is met, a different method is fine. Redoing their work teaches them their effort does not count."
+            }
+          ]
+        },
+        {
+          "id": "lead-2-4",
+          "title": "Follow up without micromanaging",
+          "minutes": 6,
+          "content": "After delegating, leaders often fall into one of two traps. Some disappear completely and only find out on the deadline that the work is stuck. Others check in every few hours, ask for constant updates and hover over every decision. The first leaves problems hidden; the second tells people you do not trust them.\n\nThe middle path is to agree on check-in points in advance, at the moment you delegate. \"Let's do a quick five-minute check on Tuesday and again on Friday\" sets expectations for both sides. Because the check-ins are planned, they feel like support, not suspicion. Space them out based on how big the task is and how experienced the person is: more often for new or risky work, less often for someone who has done it before.\n\nAt each check-in, ask open questions instead of inspecting every detail: What is done so far? What is in your way? Is the deadline still realistic? Is there anything you need from me? Then step back. If a real problem appears, help solve it together, but leave the ownership with them.",
+          "key_points": [
+            "Disappearing hides problems; hovering signals distrust.",
+            "Agree check-in points at the moment you delegate.",
+            "Use open questions about progress, blockers and support."
+          ],
+          "tip": "End each check-in by asking 'what do you need from me?' It reminds both of you that your job is to remove obstacles, not to inspect.",
+          "task": "For one task you have delegated, set two short check-ins with dates. For each one, write the three or four questions you will ask, and share the dates with the person.",
+          "quiz": [
+            {
+              "q": "What is the main problem with checking in every few hours?",
+              "options": [
+                "It makes the work go too fast",
+                "It is against most team rules",
+                "It uses too much paper",
+                "It signals that you do not trust the person"
+              ],
+              "answer": 3,
+              "explain": "Constant checking feels like distrust and takes away the person's sense of ownership."
+            },
+            {
+              "q": "When is the best time to agree on check-in points?",
+              "options": [
+                "Only when something goes wrong",
+                "At the moment you delegate the task",
+                "On the day of the deadline",
+                "Never, check-ins should be surprises"
+              ],
+              "answer": 1,
+              "explain": "Planned check-ins set expectations on both sides, so they feel like support instead of suspicion."
+            },
+            {
+              "q": "Which is a good check-in question?",
+              "options": [
+                "Why haven't you finished yet?",
+                "Can you show me every file you changed?",
+                "What is in your way, and what do you need from me?",
+                "Shall I just do it myself?"
+              ],
+              "answer": 2,
+              "explain": "Open questions about blockers and support help you catch problems early while the person keeps ownership."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lead-3",
+      "title": "Run meetings that work",
+      "lessons": [
+        {
+          "id": "lead-3-1",
+          "title": "Does this need a meeting?",
+          "minutes": 5,
+          "content": "Meetings feel productive because everyone is busy talking, but many of them could have been a short message. If the goal is only to share an update or ask a simple question, a written note respects people's time and gives them a record to look back at.\n\nA real meeting earns its place when people need to discuss, solve a problem together or make a decision that needs several views. Even then, it needs three things: a clear purpose you can say in one line, only the people who are truly needed, and an agenda shared before the meeting starts.\n\nThe agenda is a short list of topics in order, ideally each with a rough time. Sending it beforehand lets people prepare their thoughts instead of thinking on the spot. If you cannot write a purpose and an agenda, that is a strong sign the meeting is not ready, or not needed at all.",
+          "key_points": [
+            "Many meetings can be replaced by a clear message.",
+            "A real meeting needs a purpose, the right people and an agenda.",
+            "Share the agenda before the meeting so people can prepare."
+          ],
+          "tip": "Before calling a meeting, finish this sentence: \"By the end of this meeting we will have...\". If you cannot finish it, send a message instead.",
+          "task": "Take an upcoming meeting you are organising or attending. Write its one-line purpose, the list of people who truly need to be there and a three-item agenda. If you cannot, replace it with a clear message.",
+          "quiz": [
+            {
+              "q": "When is a message usually better than a meeting?",
+              "options": [
+                "When the group must make a hard decision together",
+                "When you only need to share an update or ask a simple question",
+                "When people strongly disagree",
+                "When a problem needs many views to solve"
+              ],
+              "answer": 1,
+              "explain": "Simple updates and questions do not need everyone in a room. A written message saves time and leaves a record."
+            },
+            {
+              "q": "Why should the agenda be shared before the meeting?",
+              "options": [
+                "So it looks more official",
+                "So the meeting can last longer",
+                "So nobody needs to attend",
+                "So people can prepare their thoughts in advance"
+              ],
+              "answer": 3,
+              "explain": "An agenda sent in advance lets people come ready, which makes the discussion faster and better."
+            },
+            {
+              "q": "You cannot write a clear purpose for a meeting. What does that suggest?",
+              "options": [
+                "The meeting is not ready or not needed",
+                "You should invite more people",
+                "The meeting should be longer",
+                "You should skip the agenda"
+              ],
+              "answer": 0,
+              "explain": "If you cannot say why you are meeting, the group will not know either. Clarify the purpose first or use a message."
+            }
+          ]
+        },
+        {
+          "id": "lead-3-2",
+          "title": "Facilitate: get every voice heard",
+          "minutes": 6,
+          "content": "In most group discussions, a few confident people do most of the talking. The quiet ones often have useful ideas, but they wait for a gap that never comes. A facilitator is the person who guides the discussion so that it stays on track and everyone gets a fair chance to speak.\n\nThe facilitator watches the clock, brings the group back to the agenda when it drifts and gently stops anyone who dominates, for example: \"Thanks, let's hear from someone who has not spoken yet.\" Facilitating is not about pushing your own opinion. It is about making the conversation work for the whole group.\n\nA simple technique is the round-robin: go around the group and ask each person for their view in turn, with no interruptions. Another is to give everyone a minute to write their ideas before anyone speaks, so the first loud idea does not shape all the others. Small methods like these often surface the best idea in the room.",
+          "key_points": [
+            "A facilitator keeps time and keeps the discussion on track.",
+            "Politely limit dominant speakers and invite quiet members in.",
+            "Round-robin and silent writing help every voice be heard."
+          ],
+          "tip": "Ask quiet members by name with an easy, open question, like \"Rahim, what do you think we are missing?\" Many people speak once they are invited.",
+          "task": "In your next group discussion, ask each person for their view in turn, round-robin style. Afterwards, note who spoke that usually does not, and what they added.",
+          "quiz": [
+            {
+              "q": "What is the main job of a facilitator?",
+              "options": [
+                "To win the discussion with their own opinion",
+                "To talk the most",
+                "To guide the discussion so it stays on track and everyone can speak",
+                "To take notes only"
+              ],
+              "answer": 2,
+              "explain": "A facilitator serves the group: managing time, focus and participation, not pushing their own view."
+            },
+            {
+              "q": "What is a round-robin?",
+              "options": [
+                "Asking each person for their view in turn",
+                "Letting the loudest person decide",
+                "Ending the meeting early",
+                "Voting without discussion"
+              ],
+              "answer": 0,
+              "explain": "In a round-robin everyone speaks in turn without interruption, so no one is left out."
+            },
+            {
+              "q": "Why give everyone a minute to write ideas before speaking?",
+              "options": [
+                "To make the meeting longer",
+                "So the first loud idea does not shape everyone else's thinking",
+                "Because talking is not allowed",
+                "So the leader can skip the discussion"
+              ],
+              "answer": 1,
+              "explain": "Writing first lets people form their own ideas before hearing others, so you get more varied and honest input."
+            }
+          ]
+        },
+        {
+          "id": "lead-3-3",
+          "title": "End with decisions and action items",
+          "minutes": 5,
+          "content": "Have you ever left a meeting with a good feeling, only to realise a week later that nothing happened? That usually means the meeting ended without clear decisions and next steps. Talking is not progress until it turns into action.\n\nIn the last few minutes, the leader should sum up: what did we decide, what needs to be done, who will do it and by when. Each of these is called an action item, and like any task it needs exactly one owner and a deadline. \"Someone should check the venue\" is not an action item. \"Nadia will confirm the venue by Thursday\" is.\n\nThen write it down and share it. A short summary sent soon after the meeting, with decisions and action items, makes sure everyone remembers the same thing. It also gives you an easy starting point for the next meeting: check the list first.",
+          "key_points": [
+            "A meeting is useful only if it ends in clear decisions and actions.",
+            "Every action item needs one owner and a deadline.",
+            "Send a short written summary soon after the meeting."
+          ],
+          "tip": "Save the last five minutes of every meeting for the summary. Read the action items aloud and ask each owner to confirm.",
+          "task": "After your next meeting, send a short summary to everyone with the decisions made and a list of who does what by when.",
+          "quiz": [
+            {
+              "q": "Which of these is a proper action item?",
+              "options": [
+                "Someone should look at the budget",
+                "We will think about the venue",
+                "Let's all try harder",
+                "Tanvir will send the budget draft by Monday"
+              ],
+              "answer": 3,
+              "explain": "A real action item has a specific task, one named owner and a deadline."
+            },
+            {
+              "q": "Why send a written summary after the meeting?",
+              "options": [
+                "So everyone remembers the same decisions and tasks",
+                "To show off your writing",
+                "Because meetings are not important",
+                "To replace all future meetings"
+              ],
+              "answer": 0,
+              "explain": "Memories differ. A written summary gives everyone the same record of decisions and responsibilities."
+            },
+            {
+              "q": "When should the leader sum up decisions and action items?",
+              "options": [
+                "Never, people will remember",
+                "Only if someone asks",
+                "In the last few minutes of the meeting",
+                "A month later"
+              ],
+              "answer": 2,
+              "explain": "Summing up at the end, while everyone is still there, lets owners confirm their tasks and fixes misunderstandings."
+            }
+          ]
+        },
+        {
+          "id": "lead-3-4",
+          "title": "Look back to get better: the retrospective",
+          "minutes": 6,
+          "content": "When a project or event ends, most groups simply move on. Good teams stop for a short moment and look back. This is called a retrospective, or retro: a meeting where the team reflects on how things went so the next time goes better.\n\nA simple retro asks three questions: What went well? What did not go well? What will we change next time? Give everyone a few minutes to write their answers, then share and group similar points. Finish by agreeing on one or two concrete changes, not a long wish list that nobody follows.\n\nThe most important rule is no blame. A retro looks at the process, not at individuals. Instead of \"Arif was late with the posters\", say \"the posters were late because we had no deadline for design\". When people feel safe, they share honestly, and honest feedback is the only kind that helps a team improve.",
+          "key_points": [
+            "A retro asks: what went well, what did not, what will we change.",
+            "Agree on one or two concrete changes, not a long list.",
+            "Focus on the process, never blame individuals."
+          ],
+          "tip": "Start the retro with what went well. It sets a positive tone and makes it easier for people to talk honestly about problems.",
+          "task": "Run a 15-minute retro after a recent project, class assignment or event using the three questions. Agree with the group on one change for next time and write it down.",
+          "quiz": [
+            {
+              "q": "What is the purpose of a retrospective?",
+              "options": [
+                "To find out who made mistakes",
+                "To reflect on how things went so next time goes better",
+                "To celebrate only",
+                "To plan a brand new project"
+              ],
+              "answer": 1,
+              "explain": "A retro is about learning and improving, not blaming or only celebrating."
+            },
+            {
+              "q": "Which statement fits a good retro?",
+              "options": [
+                "It was all Arif's fault",
+                "Nothing went wrong, let's move on",
+                "The posters were late because we had no deadline for design",
+                "Next time the leader will do everything"
+              ],
+              "answer": 2,
+              "explain": "Good retros describe problems in terms of the process, which keeps people safe and points to a fix."
+            },
+            {
+              "q": "How should a retro end?",
+              "options": [
+                "With one or two concrete changes the team agrees on",
+                "With a list of twenty ideas",
+                "With a vote on who did worst",
+                "Without any conclusion"
+              ],
+              "answer": 0,
+              "explain": "A few clear, agreed changes are far more likely to happen than a long wish list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lead-4",
+      "title": "Motivate and hold the team together",
+      "lessons": [
+        {
+          "id": "lead-4-1",
+          "title": "What really motivates people",
+          "minutes": 6,
+          "content": "Many new leaders assume people work harder only for rewards: marks, money, prizes or praise from the boss. Rewards help with simple, repetitive tasks, but for work that needs thinking and care, they fade quickly. What keeps people going for longer is usually something inside the work itself.\n\nResearch points to three strong drivers. Autonomy is having some say in how you do the work. Mastery is the feeling of getting better at something. Purpose is seeing that the work matters to someone. A teammate who chooses their approach, learns a new skill and sees who benefits will often give far more than one who is just told what to do.\n\nPeople differ, so do not guess. One person wants a challenge, another wants clear steps, another wants to see the final result used. Ask what makes a task feel worth doing for them, then shape the task where you can: give a choice, add a learning angle or show the real impact.",
+          "key_points": [
+            "Rewards work for simple tasks but fade for work that needs thinking.",
+            "Autonomy, mastery and purpose drive people for longer.",
+            "Ask people what motivates them instead of guessing."
+          ],
+          "tip": "When you hand over a task, add one sentence about who it helps. 'This sheet saves the team an hour every week' lands better than 'please fill this sheet'.",
+          "task": "Ask two teammates what makes a task feel worth doing for them. Then change one of their current tasks to match, for example by giving them a choice in how to do it or showing who it helps.",
+          "quiz": [
+            {
+              "q": "Which three drivers keep people motivated for longer than rewards?",
+              "options": [
+                "Money, fear and deadlines",
+                "Praise, prizes and competition",
+                "Autonomy, mastery and purpose",
+                "Rules, checks and penalties"
+              ],
+              "answer": 2,
+              "explain": "Having a say, getting better and seeing that the work matters are inner drivers that last longer than outside rewards."
+            },
+            {
+              "q": "What is the best way to find out what motivates a teammate?",
+              "options": [
+                "Ask them what makes a task feel worth doing",
+                "Assume they want what you want",
+                "Offer the same reward to everyone",
+                "Watch them silently for a month"
+              ],
+              "answer": 0,
+              "explain": "People differ, so a direct and curious question works better than guessing."
+            },
+            {
+              "q": "Which change adds purpose to a task?",
+              "options": [
+                "Setting a stricter deadline",
+                "Checking their work every hour",
+                "Making the task longer",
+                "Showing who will benefit from the result"
+              ],
+              "answer": 3,
+              "explain": "Purpose comes from seeing that the work matters to real people."
+            }
+          ]
+        },
+        {
+          "id": "lead-4-2",
+          "title": "Recognise effort the right way",
+          "minutes": 5,
+          "content": "\"Good job, everyone\" is kind, but it is easy to forget. Recognition that really works is specific, timely and sincere. It names exactly what someone did and why it mattered, and it comes soon after the action, while it is still fresh.\n\nCompare \"thanks for your help\" with \"thanks for checking the slides last night, you caught two wrong numbers and that saved us in front of the teacher\". The second shows that you noticed. People feel seen, and they are much more likely to repeat that exact behaviour.\n\nRecognise effort and helpful behaviour, not only big results, and do not forget the quiet people whose work happens in the background. Some people enjoy public praise while others prefer a private message, so pick the form that suits the person. Above all, mean it. Empty praise is easy to spot and slowly makes all your praise worth less.",
+          "key_points": [
+            "Good recognition is specific, timely and sincere.",
+            "Name the exact action and its effect.",
+            "Notice quiet, background work and choose public or private to suit the person."
+          ],
+          "tip": "Use a simple pattern: 'You did X, it led to Y, thank you.' It takes ten seconds and makes the thanks impossible to mistake for politeness.",
+          "task": "Send three specific thank-you messages this week. Each one must name the exact action and the effect it had on you or the team.",
+          "quiz": [
+            {
+              "q": "Which thank-you is most effective?",
+              "options": [
+                "Good job, everyone",
+                "Thanks for booking the room early, it meant we started on time",
+                "You are the best",
+                "Thanks for everything"
+              ],
+              "answer": 1,
+              "explain": "It names the exact action and its effect, so the person knows what to repeat."
+            },
+            {
+              "q": "When is the best time to recognise someone's effort?",
+              "options": [
+                "At the end of the year",
+                "Only when they ask for it",
+                "Never, it makes people lazy",
+                "Soon after the action, while it is fresh"
+              ],
+              "answer": 3,
+              "explain": "Timely recognition clearly links the praise to the behaviour."
+            },
+            {
+              "q": "Why should praise always be sincere?",
+              "options": [
+                "Empty praise is easy to spot and makes all your praise worth less",
+                "Sincere praise is shorter",
+                "It is a company rule",
+                "It does not matter if it is sincere"
+              ],
+              "answer": 0,
+              "explain": "People notice when praise is automatic, and then they stop trusting any of it."
+            }
+          ]
+        },
+        {
+          "id": "lead-4-3",
+          "title": "When someone stops contributing",
+          "minutes": 6,
+          "content": "Sooner or later a team member goes quiet: they miss deadlines, skip meetings or do the bare minimum. It is tempting to label them lazy and complain to others. But disengagement usually has a reason, such as being confused about the task, being overloaded with other work, personal problems or feeling that their ideas are ignored.\n\nStart with a private, curious conversation, not a public warning. Describe what you have noticed without judging, then ask and listen. For example: \"I noticed you have missed the last two meetings. Is everything okay? How is the task going for you?\" Then really listen, and do not rush to fill the silence.\n\nOnce you understand the reason, help to fix that reason. If they are confused, clarify the task. If they are overloaded, adjust the deadline or share the work. If they feel unheard, give them a real role in the next decision. Agree on one clear next step together and check in on it soon.",
+          "key_points": [
+            "Disengagement usually has a reason, not just laziness.",
+            "Start with a private, curious conversation before judging.",
+            "Fix the real cause and agree on one clear next step."
+          ],
+          "tip": "Describe behaviour, not character. 'You missed two meetings' opens a conversation, while 'you are not committed' starts a defence.",
+          "task": "Think of someone who has stopped contributing in a group you belong to. Plan the conversation: write your opening question and two possible ways you could help depending on their answer.",
+          "quiz": [
+            {
+              "q": "A teammate has missed several deadlines. What should you do first?",
+              "options": [
+                "Complain about them in the group chat",
+                "Quietly do their work for them",
+                "Remove them from the team",
+                "Have a private, curious conversation with them"
+              ],
+              "answer": 3,
+              "explain": "A private talk helps you find the real reason without embarrassing them."
+            },
+            {
+              "q": "Which opening line works best?",
+              "options": [
+                "Why are you always so lazy?",
+                "I noticed you missed the last two meetings. Is everything okay?",
+                "Everyone is upset with you",
+                "You need to try harder"
+              ],
+              "answer": 1,
+              "explain": "It describes behaviour without judging and invites them to explain."
+            },
+            {
+              "q": "The teammate says they are overloaded with exams. What is a good response?",
+              "options": [
+                "Tell them everyone is busy",
+                "Ignore it and keep the same plan",
+                "Adjust the deadline or share part of their work",
+                "Report them to the teacher"
+              ],
+              "answer": 2,
+              "explain": "Helping fix the real cause brings people back far more than pressure does."
+            }
+          ]
+        },
+        {
+          "id": "lead-4-4",
+          "title": "Handle conflict inside the team",
+          "minutes": 7,
+          "content": "When two teammates clash, everyone looks at the leader. Ignoring it rarely works, because the tension spreads and the work suffers. Taking sides is just as bad. Your role here is mediator: you help the two people solve their problem fairly, without deciding who is the good one.\n\nFirst, separate the people from the problem. The issue is not that Rafi is difficult, it is that the two of them disagree about how to split the presentation. Talk to each person alone first so both can calm down and feel heard. Then bring them together, set simple ground rules like no interrupting and no insults, and let each person explain their view while the other listens and repeats it back.\n\nNext, turn to the shared goal: \"We all want a strong presentation by Thursday.\" Ask both of them for options that would work for that goal, and agree on one together. Write down what was decided and check in a few days later to make sure it is holding.",
+          "key_points": [
+            "As leader you mediate; you do not take sides.",
+            "Separate the people from the problem and hear both sides.",
+            "Focus on the shared goal and agree on a written next step."
+          ],
+          "tip": "Ask each person to repeat the other's view before giving their own. Feeling understood cools most conflicts faster than any argument.",
+          "task": "Think of a past clash in a team you were part of. Write step by step how you would run a short mediation: who you would talk to first, your ground rules, the shared goal you would point to and how you would check in afterwards.",
+          "quiz": [
+            {
+              "q": "What is the leader's main role when two teammates clash?",
+              "options": [
+                "Mediate fairly between them",
+                "Decide who is right and who is wrong",
+                "Ignore it until it goes away",
+                "Side with the stronger performer"
+              ],
+              "answer": 0,
+              "explain": "A mediator helps both sides solve the problem without taking a side."
+            },
+            {
+              "q": "What does 'separate the people from the problem' mean?",
+              "options": [
+                "Put them in different teams",
+                "Never let them talk to each other",
+                "Focus on the disagreement, not on who is a difficult person",
+                "Let them solve it alone"
+              ],
+              "answer": 2,
+              "explain": "Talking about the issue instead of personalities keeps everyone less defensive."
+            },
+            {
+              "q": "Why point both people to the shared goal?",
+              "options": [
+                "To end the meeting faster",
+                "It reminds them they want the same outcome and opens up options",
+                "So the leader can make the final call",
+                "It is not useful"
+              ],
+              "answer": 1,
+              "explain": "A common goal moves the talk from 'me versus you' to 'us versus the problem'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lead-5",
+      "title": "Decide and grow leaders",
+      "lessons": [
+        {
+          "id": "lead-5-1",
+          "title": "How groups make decisions",
+          "minutes": 6,
+          "content": "Many group arguments are not really about the decision. They are about how the decision is being made. One person thinks the group is voting, another thinks the leader will decide, and a third expects everyone to agree. When the result comes out, someone feels ignored. A good leader prevents this by choosing the decision method on purpose and saying it out loud before the discussion starts.\n\nThere are four common methods. Decide alone: fast, and fine for small or urgent matters, or when only you have the information. Consult then decide: you ask people for their views, then you make the call, and you explain why. Vote: quick and fair when the options are clear and the group is fairly equal. Consensus: everyone can live with the result, which takes the most time but builds the strongest commitment for decisions that affect everyone deeply.\n\nThe right method depends on how much time you have, how important the decision is and how much you need people's buy-in. Picking a venue for a class party can be a vote. Choosing who presents can be consulted. Changing the whole project topic probably needs consensus. Saying 'I will listen to everyone, then I will decide by Friday' is honest and clear, and people accept results far more easily when they knew the rules from the start.",
+          "key_points": [
+            "Many conflicts come from unclear decision methods, not the decision itself.",
+            "The four methods are decide alone, consult then decide, vote and consensus.",
+            "Announce the method before the discussion so people know how their input will be used."
+          ],
+          "tip": "Never ask for opinions as if it were a vote and then decide alone. If you will make the final call, say so up front; people forgive a clear rule, not a fake one.",
+          "task": "List three decisions your group has to make soon. For each, choose a method (decide alone, consult then decide, vote or consensus) and write one sentence explaining why that method fits.",
+          "quiz": [
+            {
+              "q": "Why should a leader announce the decision method before the discussion?",
+              "options": [
+                "So the leader can avoid listening to anyone",
+                "So everyone knows how their input will be used and accepts the result more easily",
+                "Because voting is always required by rules",
+                "So the discussion can be skipped entirely"
+              ],
+              "answer": 1,
+              "explain": "When people know the rules in advance, such as 'I will consult, then decide', they do not feel tricked by the result, even if it is not their preferred option."
+            },
+            {
+              "q": "Which method takes the most time but builds the strongest commitment?",
+              "options": [
+                "Decide alone",
+                "Vote",
+                "Flip a coin",
+                "Consensus"
+              ],
+              "answer": 3,
+              "explain": "Consensus means everyone can live with the result. Reaching it takes long discussion, but people are far more committed to a decision they all shaped."
+            },
+            {
+              "q": "In 'consult then decide', what does the leader do?",
+              "options": [
+                "Asks for people's views, then makes the call and explains why",
+                "Lets the majority decide by vote",
+                "Decides without talking to anyone",
+                "Waits until everyone fully agrees"
+              ],
+              "answer": 0,
+              "explain": "The leader gathers input first, but keeps the final decision, and explaining the reasoning shows people their views were actually considered."
+            }
+          ]
+        },
+        {
+          "id": "lead-5-2",
+          "title": "Decide when you are not sure",
+          "minutes": 6,
+          "content": "Leaders rarely have all the information they want. Waiting for certainty feels safe, but a group that keeps postponing decisions loses time, energy and confidence. Often no decision is the worst decision of all. The skill is not being always right; it is knowing how much care each decision actually needs.\n\nA useful way to sort decisions is to ask: can we undo this? Reversible decisions are like a door you can walk back through: which tool to try first, how to split a slide deck, what time to meet this week. If the choice is wrong, you change it, so decide fast and learn from what happens. Irreversible decisions are like a one-way door: spending the club's whole budget, dropping a team member, or submitting the final project. These deserve more information, more opinions and a little more time.\n\nEven for big decisions, set a deadline. Say 'We will gather information until Thursday and decide in Friday's meeting.' This stops endless discussion and gives everyone a clear point to work towards. When you do decide, share what you knew, what you chose and what would make you change your mind. That way, if new facts appear, adjusting the plan looks like good leadership rather than failure.",
+          "key_points": [
+            "Endless delay is often worse than a decent decision made on time.",
+            "Decide reversible decisions fast; give irreversible ones more care.",
+            "Set a decision deadline so the group does not stall."
+          ],
+          "tip": "When stuck, ask the group: 'What is the cost of being wrong here, and can we fix it later?' If the cost is small, decide now and move on.",
+          "task": "Write down five decisions that are pending in your life, studies or group. Mark each as reversible or irreversible. Pick one reversible decision and make it today, then set a deadline for one irreversible one.",
+          "quiz": [
+            {
+              "q": "Which is an example of a reversible decision?",
+              "options": [
+                "Spending the club's entire yearly budget",
+                "Submitting the final project",
+                "Choosing which note-taking tool the team tries this week",
+                "Removing a member from the team"
+              ],
+              "answer": 2,
+              "explain": "Trying a tool for a week is easy to undo. If it does not work, you switch, so it is best decided quickly."
+            },
+            {
+              "q": "How should a leader treat an irreversible decision?",
+              "options": [
+                "Decide instantly without thinking",
+                "Gather more information and opinions, but still set a deadline",
+                "Postpone it with no end date",
+                "Let one random member choose"
+              ],
+              "answer": 1,
+              "explain": "One-way decisions deserve extra care, but a deadline keeps that care from turning into endless delay."
+            },
+            {
+              "q": "Why is it useful to share what would make you change your mind?",
+              "options": [
+                "It shows the leader never really decided",
+                "It lets the leader blame others later",
+                "It makes the decision impossible to change",
+                "It makes adjusting the plan with new facts look like good leadership, not failure"
+              ],
+              "answer": 3,
+              "explain": "If the group knows the conditions for changing course in advance, updating the plan when new information arrives feels planned and sensible."
+            }
+          ]
+        },
+        {
+          "id": "lead-5-3",
+          "title": "Lead through setbacks",
+          "minutes": 6,
+          "content": "Every team fails sometimes. The event has few visitors, the presentation crashes, the deadline is missed. These moments test a leader more than any success, because the whole team watches how you react. If you panic or start looking for someone to blame, the team copies you. If you stay calm and focused, they will too.\n\nThe first step is to own the result publicly. Say 'We missed the deadline, and as the lead I take responsibility for it,' even if the mistake started with someone else. Protect your team in public and discuss individual problems privately and kindly. This builds enormous trust, because people learn that you will not throw them under the bus. Owning the mistake does not mean pretending everything was your fault; it means you take charge of fixing it.\n\nNext, move everyone's attention to the next step. Briefly state what happened, what you are doing about it now and what you will change next time. Keep the message short and honest, without drama and without fake cheerfulness. Later, when emotions have cooled, run a calm retrospective to learn from it. Teams that recover well from failure often become stronger than teams that never failed at all.",
+          "key_points": [
+            "Your reaction to a setback sets the emotional tone for the whole team.",
+            "Own the team's mistakes in public; handle individual issues in private.",
+            "Quickly shift focus to what happened, what we do now and what we change next time."
+          ],
+          "tip": "Before you speak after a setback, take a few minutes to calm down. A message sent in anger or panic is hard to take back.",
+          "task": "Imagine your team just missed an important deadline or an event went badly. Write the short message you would send them: what happened, that you take responsibility, the next step now and one change for next time. Keep it under 100 words.",
+          "quiz": [
+            {
+              "q": "After a public failure, what should the leader do first?",
+              "options": [
+                "Own the result publicly on behalf of the team",
+                "Name the member who made the mistake",
+                "Say nothing and hope people forget",
+                "Blame the circumstances only"
+              ],
+              "answer": 0,
+              "explain": "Taking responsibility in public protects the team and shows that you will take charge of fixing the problem."
+            },
+            {
+              "q": "Where should a leader discuss one person's part in a mistake?",
+              "options": [
+                "In the team group chat",
+                "In front of everyone at the next meeting",
+                "Privately and kindly",
+                "Nowhere, it should never be discussed"
+              ],
+              "answer": 2,
+              "explain": "Individual issues still need attention, but discussing them privately keeps trust and dignity intact while the leader shields the team publicly."
+            },
+            {
+              "q": "What makes a good message to the team after a setback?",
+              "options": [
+                "Long and dramatic, so everyone feels the seriousness",
+                "Short and honest: what happened, the next step and one change",
+                "Overly cheerful, pretending nothing went wrong",
+                "Focused mainly on who caused the problem"
+              ],
+              "answer": 1,
+              "explain": "A short, honest message keeps people calm and points their energy at recovery instead of blame or worry."
+            }
+          ]
+        },
+        {
+          "id": "lead-5-4",
+          "title": "Grow the next leaders",
+          "minutes": 6,
+          "content": "If a group falls apart the moment you leave, you were a useful worker, but not yet a great leader. Great leaders make themselves less and less necessary. They share what they know, let others take the lead and prepare the group for the day they step away, whether that is graduation, a new job or simply a busy month.\n\nStart by giving people real chances to lead. Let someone run a meeting, own a small project or represent the team, and stay in the background as support instead of jumping in. They will make mistakes; that is how they learn. Afterwards, ask what went well and what they would do differently, rather than listing everything they got wrong. Also stop being the only one who knows things: passwords, contacts, how a process works. Knowledge locked in one head is a risk for the whole team.\n\nFinally, plan your handover before you need it. A simple handover note covers what the role involves, ongoing tasks and deadlines, key contacts, where files are and lessons you learned the hard way. Give it to your successor and spend a little time answering their questions. The best sign of your leadership is not how much the group needed you, but how well it keeps going after you.",
+          "key_points": [
+            "A great leader makes the group able to succeed without them.",
+            "Give others real chances to lead and support them instead of taking over.",
+            "Share knowledge and write a clear handover note before you need it."
+          ],
+          "tip": "When someone you are coaching asks 'What should I do?', try asking 'What do you think?' first. It builds their judgement, not just their obedience.",
+          "task": "Write a one-page handover note for a role you hold now: responsibilities, ongoing tasks with deadlines, key contacts, where files are and two lessons learned. Then name one person you will give a chance to lead something in the next month, and what that will be.",
+          "quiz": [
+            {
+              "q": "What is the best sign of good leadership according to this lesson?",
+              "options": [
+                "The group cannot function without the leader",
+                "The leader knows every password alone",
+                "The leader does most of the work personally",
+                "The group keeps going well after the leader steps away"
+              ],
+              "answer": 3,
+              "explain": "Great leaders build people and systems so the group succeeds without depending on them."
+            },
+            {
+              "q": "When a new leader you are supporting makes a mistake, what should you do?",
+              "options": [
+                "Take the task back immediately",
+                "Let them learn, then ask what went well and what they would change",
+                "Point out every error in front of the team",
+                "Never give them a leadership chance again"
+              ],
+              "answer": 1,
+              "explain": "Mistakes are part of learning to lead. Reflective questions build their judgement without destroying their confidence."
+            },
+            {
+              "q": "Why is knowledge held by only one person a risk?",
+              "options": [
+                "If that person leaves or is unavailable, the team gets stuck",
+                "It makes meetings too long",
+                "It is against all team rules",
+                "It is not a risk at all"
+              ],
+              "answer": 0,
+              "explain": "When only one person knows passwords, contacts or processes, the whole team depends on them. Sharing knowledge makes the group resilient."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

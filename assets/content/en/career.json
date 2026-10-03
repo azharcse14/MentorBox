@@ -1,0 +1,1008 @@
+{
+  "id": "career",
+  "name": "Career Growth",
+  "mentor": "Career Mentor",
+  "tagline": "Understand your strengths, set clear goals and get noticed.",
+  "description": "Practical lessons on planning your career, writing a resume and building a network, whether you are a student or already working.",
+  "image": "assets/images/career.jpg",
+  "color": "#C98B4F",
+  "messages": {
+    "welcome": "Careers are built in small, deliberate moves. Let's start by understanding you, then make a plan.",
+    "comeback": "Welcome back. Your career did not pause while you were away, so let's take one useful step today.",
+    "pass": "Good. You just thought through something most people never do.",
+    "fail": "Not yet. Look at the explanations, revisit the lesson and give it another go.",
+    "finished": "You have walked the whole path: knowing yourself, getting noticed, landing the job, growing at work and shaping a career that lasts. Act on it: pick one lesson and take its task further this week, whether that is one application, one feedback question or one hour of learning."
+  },
+  "levels": [
+    {
+      "id": "career-1",
+      "title": "Know yourself",
+      "lessons": [
+        {
+          "id": "career-1-1",
+          "title": "Find your strengths",
+          "minutes": 5,
+          "content": "Many people pick careers based on job titles or salaries, then feel stuck. A stronger starting point is your strengths: the things you do well that also give you energy instead of draining it.\n\nTo find them, look at evidence, not guesses. Which tasks do people ask you to help with? When did time fly because you were absorbed? What did you do better than classmates or colleagues with similar effort?\n\nAsk three people who know you well what they think you are good at. Others often notice strengths we take for granted, because what feels easy to us does not feel special.",
+          "key_points": [
+            "Strengths are skills you do well that also give you energy.",
+            "Use evidence from your past, not guesses.",
+            "Ask others, because they see strengths you take for granted."
+          ],
+          "tip": "Write strengths as verbs, like explaining, organizing or persuading. Verbs travel across jobs better than job titles do.",
+          "task": "Ask three people what they think you are good at. Write their answers next to your own list and circle what appears more than once.",
+          "quiz": [
+            {
+              "q": "Which best describes a strength?",
+              "options": [
+                "Anything you are paid to do",
+                "Something you do well that also energizes you",
+                "A skill listed in a job ad",
+                "A hobby"
+              ],
+              "answer": 1,
+              "explain": "A real strength combines ability and energy. Being good at something that drains you is a skill, but not a strength to build a career on."
+            },
+            {
+              "q": "Why ask other people about your strengths?",
+              "options": [
+                "To get compliments",
+                "They notice strengths that feel too easy for you to see",
+                "Your own opinion does not matter",
+                "Employers require it"
+              ],
+              "answer": 1,
+              "explain": "Things that come naturally feel ordinary to us, so outside views help reveal them."
+            },
+            {
+              "q": "What is the best evidence of a strength?",
+              "options": [
+                "A personality quiz result",
+                "Moments when you did well and lost track of time",
+                "A job title you want",
+                "What your friends are studying"
+              ],
+              "answer": 1,
+              "explain": "Real past experiences are stronger evidence than labels or wishes."
+            }
+          ]
+        },
+        {
+          "id": "career-1-2",
+          "title": "Set goals that actually work",
+          "minutes": 6,
+          "content": "\"I want a good job\" is a wish, not a goal. A useful goal tells you what to do next. The SMART method helps: a goal should be Specific, Measurable, Achievable, Relevant and Time-bound.\n\nCompare \"get better at design\" with \"finish two portfolio projects and apply to five UI design internships by 31 March\". The second tells you exactly what to work on and when you have succeeded.\n\nBig goals feel heavy, so split them into milestones and weekly actions. A one-year goal becomes three-month milestones, and each milestone becomes things you can do this week.",
+          "key_points": [
+            "SMART means Specific, Measurable, Achievable, Relevant and Time-bound.",
+            "A good goal tells you what to do next.",
+            "Split big goals into milestones and weekly actions."
+          ],
+          "tip": "Review your goal every Sunday for five minutes. Goals that nobody looks at quietly die.",
+          "task": "Rewrite one vague career wish as a SMART goal. Then write the three actions you will take this week toward it.",
+          "quiz": [
+            {
+              "q": "What does the T in SMART stand for?",
+              "options": [
+                "Tough",
+                "Time-bound",
+                "Targeted",
+                "Tested"
+              ],
+              "answer": 1,
+              "explain": "Time-bound means the goal has a deadline, which creates urgency and a clear finish line."
+            },
+            {
+              "q": "Which is the best SMART goal?",
+              "options": [
+                "Become successful",
+                "Learn coding someday",
+                "Complete an online SQL course and build one project by 30 June",
+                "Work harder at my job"
+              ],
+              "answer": 2,
+              "explain": "It is specific and measurable (a course and a project) and it has a deadline."
+            },
+            {
+              "q": "Why break a big goal into weekly actions?",
+              "options": [
+                "It makes the goal sound bigger",
+                "It turns a heavy goal into clear next steps",
+                "Managers require it",
+                "It is not useful"
+              ],
+              "answer": 1,
+              "explain": "Small, concrete actions are easier to start and track than a distant big goal."
+            }
+          ]
+        },
+        {
+          "id": "career-1-3",
+          "title": "Know what you value at work",
+          "minutes": 6,
+          "content": "Two jobs can use the same strengths and still feel completely different. One pays well but means long hours, the other pays less but gives you freedom and time for family. Which one fits you depends on your work values: the things that matter most to you about how and why you work.\n\nCommon work values include money, stability, learning, flexibility, helping others, recognition and independence. None of them is right or wrong, but you cannot have all of them at full strength in one job. Knowing your top three helps you choose quickly when two good options pull you in different directions.\n\nTo find yours, look back at times you felt satisfied or frustrated at school, work or in a project. Frustration is often a sign that a value was being ignored. Then rank your values honestly, not by what sounds impressive or what your family expects, and check them against any role you consider.",
+          "key_points": [
+            "Work values are what matter most to you about how and why you work.",
+            "No job offers every value at full strength, so know your top three.",
+            "Past frustration often points to a value that was being ignored."
+          ],
+          "tip": "Your values can shift with life stages. Stability may matter more when you support a family, learning more when you are starting out. Review your ranking once a year.",
+          "task": "Write down eight work values, then cross out five until only your top three remain. Next to each, write one past moment that proves it matters to you.",
+          "quiz": [
+            {
+              "q": "What are work values?",
+              "options": [
+                "The salary you expect",
+                "Your company's mission statement",
+                "What matters most to you about how and why you work",
+                "Skills listed on your resume"
+              ],
+              "answer": 2,
+              "explain": "Work values are personal priorities, like flexibility or learning, that decide whether a job feels right to you."
+            },
+            {
+              "q": "Why is it useful to know your top three values?",
+              "options": [
+                "It helps you choose when good options pull in different directions",
+                "Employers ask for them in every interview",
+                "It guarantees a higher salary",
+                "So you can have every value in one job"
+              ],
+              "answer": 0,
+              "explain": "No job gives you everything, so a clear ranking makes trade-offs easier to decide."
+            },
+            {
+              "q": "What can past frustration at work or school tell you?",
+              "options": [
+                "That you chose the wrong field",
+                "Nothing useful",
+                "That you should avoid all hard tasks",
+                "That one of your values was probably being ignored"
+              ],
+              "answer": 3,
+              "explain": "Strong frustration often shows something you care about, such as fairness or independence, was missing."
+            }
+          ]
+        },
+        {
+          "id": "career-1-4",
+          "title": "Explore careers before you commit",
+          "minutes": 6,
+          "content": "Choosing a career can feel like one huge, permanent bet. It does not have to be. Before you spend years on a degree or a job path, you can test the idea cheaply and find out whether the daily reality suits you, not just the title or the image.\n\nStart with real job ads. Ignore the company's sales pitch and look at the lists of responsibilities and requirements. Read several ads for the same role and note what keeps repeating. Those recurring tasks are what you would actually do all day, and the recurring skills are what you would need to learn. If the daily tasks sound boring to you, the title will not fix that.\n\nThen run small experiments. Take a short free online course, volunteer for a few weeks, try part-time or tuition work, or join a student club project that uses the skills. Each experiment costs little but tells you a lot: whether you enjoy the work, whether you are good at it and what you still need to learn. A few weeks of trying beats months of guessing.",
+          "key_points": [
+            "Test a career idea cheaply before investing years in it.",
+            "Recurring tasks and skills across several job ads show the real daily work.",
+            "Small experiments like courses, volunteering or club projects give honest feedback."
+          ],
+          "tip": "After each experiment, write two lines: what gave you energy and what drained you. Over time these notes become a clearer guide than any career quiz.",
+          "task": "Pick two roles you are curious about and read three real job ads for each. List the tasks and skills that repeat, then write one small experiment you could try this month for each role.",
+          "quiz": [
+            {
+              "q": "What is the most useful part of a job ad for exploring a career?",
+              "options": [
+                "The company's logo and slogan",
+                "The salary alone",
+                "The responsibilities and requirements that repeat across ads",
+                "The number of applicants"
+              ],
+              "answer": 2,
+              "explain": "Tasks and skills that appear in many ads show what the job really involves day to day."
+            },
+            {
+              "q": "Which is a cheap way to test a career idea?",
+              "options": [
+                "Volunteering or doing a short project that uses the skills",
+                "Enrolling in a four-year degree straight away",
+                "Quitting your current job to try it",
+                "Waiting until you feel completely sure"
+              ],
+              "answer": 0,
+              "explain": "Small experiments cost little time and money but show you whether the work suits you."
+            },
+            {
+              "q": "The daily tasks of a role sound boring to you, but the title sounds impressive. What does this suggest?",
+              "options": [
+                "The title matters more than the tasks",
+                "You will grow to love any task",
+                "Job ads are never accurate",
+                "The role may not suit you, because you will spend most days on those tasks"
+              ],
+              "answer": 3,
+              "explain": "You live the daily tasks, not the title, so they matter most for whether a job fits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-2",
+      "title": "Get noticed",
+      "lessons": [
+        {
+          "id": "career-2-1",
+          "title": "A resume that gets read",
+          "minutes": 6,
+          "content": "Recruiters often scan a resume for only a few seconds before deciding whether to read more. Your resume's job is not to tell your life story. It is to show quickly that you can do this specific job.\n\nLead with results, not duties. \"Responsible for social media\" says little. \"Grew the page from 2,000 to 9,000 followers in six months\" proves impact. Start each bullet with a strong action verb and add numbers where you can.\n\nTailor the resume for each role. Read the job description, note the skills it repeats, and make sure your most relevant experience appears near the top using similar words. Keep it to one or two clean pages.",
+          "key_points": [
+            "Show results with numbers, not just duties.",
+            "Start bullets with action verbs.",
+            "Tailor your resume to each job description."
+          ],
+          "tip": "For every bullet, ask yourself 'so what?'. If the answer is not on the page, add it.",
+          "task": "Pick one bullet from your resume, or one thing you did in a project, and rewrite it as action verb + what you did + a measurable result.",
+          "quiz": [
+            {
+              "q": "Which resume line is strongest?",
+              "options": [
+                "Responsible for customer emails",
+                "Handled emails",
+                "Cut average email reply time from 2 days to 4 hours",
+                "Good at communication"
+              ],
+              "answer": 2,
+              "explain": "It shows a concrete result with numbers, which proves impact."
+            },
+            {
+              "q": "Why tailor your resume for each job?",
+              "options": [
+                "To make it longer",
+                "So your most relevant experience matches what the role asks for",
+                "Because it is the law",
+                "To add more hobbies"
+              ],
+              "answer": 1,
+              "explain": "Matching the role's needs helps recruiters and screening software see your fit quickly."
+            },
+            {
+              "q": "What should most resume bullets start with?",
+              "options": [
+                "The word I",
+                "An action verb",
+                "A date",
+                "The company name"
+              ],
+              "answer": 1,
+              "explain": "Action verbs like built, led or reduced make your contribution clear."
+            }
+          ]
+        },
+        {
+          "id": "career-2-2",
+          "title": "Network without feeling fake",
+          "minutes": 6,
+          "content": "Many opportunities come through people, not job boards. Networking simply means building real relationships with people in fields you care about. It is not about collecting contacts or asking strangers for jobs.\n\nStart with curiosity. Ask for a 15-minute conversation to learn about someone's work: what they do day to day, how they got there and what they wish they had known earlier. Most people enjoy talking about their experience when the request is small and specific.\n\nGive before you ask. Share a useful article, congratulate someone on a milestone or introduce two people who could help each other. Follow up with a thank-you, and stay in touch every few months.",
+          "key_points": [
+            "Networking means building real relationships.",
+            "Ask small, specific questions to learn, not to get a job.",
+            "Give value first and follow up."
+          ],
+          "tip": "Keep a simple list of people you have met, what you talked about and when to check in next. Relationships fade without a little system.",
+          "task": "Write a short, polite message asking one person in a field you like for a 15-minute chat about their work. Send it if you feel ready.",
+          "quiz": [
+            {
+              "q": "What is the main goal of networking?",
+              "options": [
+                "Collecting as many contacts as possible",
+                "Building real relationships",
+                "Asking everyone for a job",
+                "Selling a product"
+              ],
+              "answer": 1,
+              "explain": "Real relationships lead to trust, advice and opportunities over time."
+            },
+            {
+              "q": "Which first message is best?",
+              "options": [
+                "Can you give me a job?",
+                "Hi, could I ask you three quick questions about your work as a data analyst? 15 minutes would be great.",
+                "Please check my resume.",
+                "Follow me back."
+              ],
+              "answer": 1,
+              "explain": "It is small, specific and about learning, so it is easy to say yes to."
+            },
+            {
+              "q": "What should you do after a helpful conversation?",
+              "options": [
+                "Nothing",
+                "Send a thank-you and stay in touch",
+                "Ask for money",
+                "Delete the contact"
+              ],
+              "answer": 1,
+              "explain": "A thank-you and occasional check-ins turn one chat into a relationship."
+            }
+          ]
+        },
+        {
+          "id": "career-2-3",
+          "title": "Show your work, not just your claims",
+          "minutes": 6,
+          "content": "Anyone can write \"strong writing skills\" or \"good at data analysis\" on a resume. Far fewer people can show it. A small, visible body of work, like a portfolio, a few project write-ups or a public profile with real samples, turns your claims into proof that a stranger can check in a minute.\n\nYou do not need a job to build this. Pick a real problem and solve it in public: redesign a local shop's menu, analyse a free dataset, write a short guide for something you know well, or build a simple tool. Two or three solid pieces relevant to the roles you want are worth more than twenty half-finished ones.\n\nFor each piece, explain the problem, what you did, the choices you made and the result. That short story shows how you think, which is what employers really want to see. Put the link where people will find it: on your resume, your online profile and in the messages you send.",
+          "key_points": [
+            "Visible work turns your claims into proof.",
+            "Two or three solid, relevant pieces beat many unfinished ones.",
+            "Explain the problem, your choices and the result for each piece."
+          ],
+          "tip": "Done is better than perfect. Publish a good first version, then improve it, because work sitting on your laptop helps nobody see you.",
+          "task": "Pick one small project you could finish in a week that matches a role you want. Write its problem, the steps you will take and where you will share it.",
+          "quiz": [
+            {
+              "q": "Why does a portfolio help you get noticed?",
+              "options": [
+                "It makes your resume longer",
+                "It lets people check proof of your skills quickly",
+                "It replaces the need to apply for jobs",
+                "Recruiters only read portfolios"
+              ],
+              "answer": 1,
+              "explain": "Real samples are easier to trust than claims, and they can be checked in a minute."
+            },
+            {
+              "q": "Which portfolio is strongest?",
+              "options": [
+                "Twenty unfinished projects",
+                "Only certificates from online courses",
+                "A list of tools you have heard of",
+                "Three finished projects related to the role you want"
+              ],
+              "answer": 3,
+              "explain": "A few complete, relevant pieces show both skill and the ability to finish."
+            },
+            {
+              "q": "What should you include with each piece of work?",
+              "options": [
+                "The problem, what you did, your choices and the result",
+                "Only the final screenshot",
+                "How long it took you to learn the tool",
+                "Your salary expectation"
+              ],
+              "answer": 0,
+              "explain": "The story behind the work shows how you think, which matters as much as the result."
+            }
+          ]
+        },
+        {
+          "id": "career-2-4",
+          "title": "Write a cover letter that gets a reply",
+          "minutes": 6,
+          "content": "Many cover letters start with \"I am writing to apply for the position of...\" and then repeat the resume in long sentences. Recruiters have seen thousands of these, so they skim or skip them. A good cover letter or application email does one job: it connects what this employer needs most to proof that you can deliver it.\n\nStart with the job ad. Find the three requirements that matter most, usually the ones listed first or repeated. For each one, give a short, concrete example from your experience: a project, a result or a responsibility. \"You need someone who can handle customer queries; at my part-time job I answered around 40 messages a day and kept complaints under 2%\" is far stronger than \"I have excellent communication skills\".\n\nKeep it short, around 150 to 250 words. Open with the role and one line on why this company interests you, match the three needs to your evidence, then close with a polite line inviting a conversation. Use the company's name and the hiring manager's name if you can find it. A generic template is easy to spot; a tailored letter shows effort and fit.",
+          "key_points": [
+            "A cover letter links the employer's top needs to your evidence.",
+            "Match each key requirement with a concrete example, not an adjective.",
+            "Keep it short, tailored and specific to this company."
+          ],
+          "tip": "Read your letter and ask: could I send this exact text to another company? If yes, it is too generic. Add details only this employer would recognise.",
+          "task": "Choose one real job ad and underline its three main requirements. Draft a 150-200 word letter that matches each requirement with a concrete example from your experience.",
+          "quiz": [
+            {
+              "q": "What is the main job of a cover letter?",
+              "options": [
+                "To repeat your resume in full sentences",
+                "To connect the employer's top needs to proof you can meet them",
+                "To list all your hobbies",
+                "To explain why you need a job"
+              ],
+              "answer": 1,
+              "explain": "A strong letter shows fit quickly by linking their needs to your evidence."
+            },
+            {
+              "q": "Which line is strongest in a cover letter?",
+              "options": [
+                "I am a hard-working team player",
+                "I have excellent communication skills",
+                "I am passionate about everything",
+                "At my part-time job I answered about 40 customer messages a day"
+              ],
+              "answer": 3,
+              "explain": "A concrete example with numbers is proof, while adjectives are just claims."
+            },
+            {
+              "q": "How do you know a cover letter is too generic?",
+              "options": [
+                "You could send the same text to any company without changes",
+                "It is under 250 words",
+                "It mentions the company's name",
+                "It ends by inviting a conversation"
+              ],
+              "answer": 0,
+              "explain": "If nothing in it is specific to this employer, it reads like a template and gets ignored."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-3",
+      "title": "Land the job",
+      "lessons": [
+        {
+          "id": "career-3-1",
+          "title": "Interview answers that stick",
+          "minutes": 6,
+          "content": "An interview is not a test of memorized answers. The interviewer is trying to answer three questions: can you do the job, will you enjoy it, and will you work well with the team. Every answer you give should help them say yes to one of these.\n\nFor questions like \"Tell me about a time you handled a problem\", use the STAR method: Situation, Task, Action, Result. Spend little time on the setup and most of it on what you did and what changed because of it. Prepare four or five real stories in advance, because one good story can answer many different questions.\n\nResearch the company before you go: what they make, who their customers are and what the role is meant to fix. At the end, ask one or two thoughtful questions, such as what success looks like in the first six months. Good questions show you are already thinking like someone on the team.",
+          "key_points": [
+            "Every answer should show you can do the job and fit the team.",
+            "Use STAR: Situation, Task, Action, Result.",
+            "Prepare a few real stories and a few smart questions in advance."
+          ],
+          "tip": "Practise your stories out loud, not just in your head. Answers that sound fine in your mind often come out long and messy the first time you say them.",
+          "task": "Write one STAR story about a problem you solved, at school, work or in a project. Keep it under two minutes and say it out loud once.",
+          "quiz": [
+            {
+              "q": "What does the A in STAR stand for?",
+              "options": [
+                "Ability",
+                "Answer",
+                "Attitude",
+                "Action"
+              ],
+              "answer": 3,
+              "explain": "Action is what you personally did. It should take up most of your answer, because it shows how you work."
+            },
+            {
+              "q": "Where should most of a STAR answer focus?",
+              "options": [
+                "A long description of the situation",
+                "What you did and the result it produced",
+                "Why the problem was someone else's fault",
+                "Your job title at the time"
+              ],
+              "answer": 1,
+              "explain": "Interviewers want to see your actions and their impact, not a long backstory."
+            },
+            {
+              "q": "Which is the best question to ask at the end of an interview?",
+              "options": [
+                "What does success look like in this role in the first six months?",
+                "How many holidays do I get?",
+                "Did I get the job?",
+                "I have no questions."
+              ],
+              "answer": 0,
+              "explain": "It shows you care about doing well in the role and gives you useful information about expectations."
+            }
+          ]
+        },
+        {
+          "id": "career-3-2",
+          "title": "Negotiate your offer calmly",
+          "minutes": 6,
+          "content": "Many people accept the first offer because negotiating feels rude or risky. In most companies it is normal and expected. A polite, well-prepared request rarely makes an employer take an offer back, and the difference can follow you for years, because future raises are often based on your starting salary.\n\nPreparation is everything. Find the market range for the role using salary surveys, job ads that list pay and people working in the field. Decide three numbers before the conversation: your ideal figure, a fair target and the lowest you would accept. If asked for your expectation early, give a researched range rather than a single number.\n\nWhen the offer arrives, thank them, show you are excited and ask for time to review it. Then make one clear request backed by reasons, such as your skills or the market range. If salary cannot move, ask about other things: a joining bonus, extra leave, remote days, training budget or an earlier salary review.",
+          "key_points": [
+            "Negotiating politely is normal and rarely costs you the offer.",
+            "Research the market range and know your walk-away number.",
+            "If salary is fixed, negotiate other parts of the offer."
+          ],
+          "tip": "After you state your number, stop talking. Silence feels uncomfortable, but filling it often means lowering your own request.",
+          "task": "Look up the salary range for one role you want using at least two sources. Write your ideal, target and minimum numbers.",
+          "quiz": [
+            {
+              "q": "Why does your starting salary matter so much?",
+              "options": [
+                "It decides your job title",
+                "It cannot be changed by law",
+                "Future raises are often calculated from it",
+                "It only matters for the first month"
+              ],
+              "answer": 2,
+              "explain": "Raises are usually a percentage of your current pay, so a higher start compounds over time."
+            },
+            {
+              "q": "What should you decide before a salary conversation?",
+              "options": [
+                "Only the highest number you can imagine",
+                "Your ideal, target and minimum acceptable numbers",
+                "Whatever your friend earns",
+                "Nothing, it is better to improvise"
+              ],
+              "answer": 1,
+              "explain": "Knowing all three numbers keeps you calm and stops you accepting something below your limit."
+            },
+            {
+              "q": "The company says the salary cannot change. What is a good next step?",
+              "options": [
+                "Reject the offer immediately",
+                "Accept and never mention it again",
+                "Threaten to join a competitor",
+                "Ask about a joining bonus, extra leave or an earlier salary review"
+              ],
+              "answer": 3,
+              "explain": "An offer has many parts. When one is fixed, others are often still flexible."
+            }
+          ]
+        },
+        {
+          "id": "career-3-3",
+          "title": "Your first 90 days",
+          "minutes": 5,
+          "content": "The first three months in a new job shape how people see you for a long time. Nobody expects you to know everything yet. They are watching how quickly you learn, how reliable you are and how you treat others.\n\nIn the first month, focus on listening and learning. Understand how the team works, what your manager cares about most and who the key people are. Ask your manager directly: what would a great first 90 days look like for me? Write the answer down and check it every few weeks.\n\nThen look for an early win: a small, visible problem you can solve well, like fixing a slow process or finishing a task others kept postponing. Deliver what you promise, on time, and share short updates on your progress. Trust built in these first weeks makes everything after it easier.",
+          "key_points": [
+            "Early impressions come from learning speed, reliability and attitude.",
+            "Ask your manager what a great first 90 days looks like.",
+            "Find one small, visible early win and deliver it well."
+          ],
+          "tip": "Keep a simple notes file for your first weeks: names, tools, unwritten rules and questions. It saves you from asking the same thing twice.",
+          "task": "Write three questions you would ask a new manager in your first week. If you have a job now, ask one of them this week.",
+          "quiz": [
+            {
+              "q": "What should you focus on in your first month?",
+              "options": [
+                "Changing how the team works",
+                "Listening, learning and understanding priorities",
+                "Proving you know more than everyone",
+                "Staying quiet and never asking questions"
+              ],
+              "answer": 1,
+              "explain": "Learning first helps you understand what really matters before trying to change anything."
+            },
+            {
+              "q": "Which is a good early win?",
+              "options": [
+                "A small, visible problem you can solve well",
+                "A huge project that will take a year",
+                "Criticising your predecessor's work",
+                "Working late every night so people notice"
+              ],
+              "answer": 0,
+              "explain": "A small, finished result builds trust quickly and shows how you work."
+            },
+            {
+              "q": "What is the best way to know what your manager expects?",
+              "options": [
+                "Guess from the job ad",
+                "Copy what your coworkers do",
+                "Wait for your yearly review",
+                "Ask them directly what a great first 90 days looks like"
+              ],
+              "answer": 3,
+              "explain": "Asking directly removes guesswork and shows you care about meeting expectations."
+            }
+          ]
+        },
+        {
+          "id": "career-3-4",
+          "title": "Emails and updates that build trust",
+          "minutes": 5,
+          "content": "As a new joiner, people judge you partly by how you communicate. Long, vague messages make readers work hard to find what you want. Busy managers and teammates often read only the first two lines, so if your point is hidden at the bottom, it may never be seen.\n\nPut the point first. Start with what you need or what happened, then add only the context needed to act. End with a clear ask and a deadline: \"Could you approve the draft by Thursday 3 pm so I can send it to the client on Friday?\" One message, one main topic. If you need several things, use short numbered points so each one can be answered.\n\nDo not wait to be asked how things are going. A short proactive update, such as what is done, what is next and what is blocking you, saves your manager from chasing you. This matters most when something is delayed. Telling people early, with a new date and a plan, builds trust. Hiding it until the deadline breaks it.",
+          "key_points": [
+            "Put the main point and request in the first two lines.",
+            "End with a clear ask and a deadline.",
+            "Share short updates proactively, especially when something is delayed."
+          ],
+          "tip": "Before sending, read only your first two lines. If someone saw nothing else, would they know what you need and by when?",
+          "task": "Rewrite one long or vague message you sent recently so the main point and request are in the first two lines. Then write a three-line weekly update: done, next, blockers.",
+          "quiz": [
+            {
+              "q": "Where should the main point of a work email go?",
+              "options": [
+                "At the very end, after all the background",
+                "In the subject line only",
+                "In an attachment",
+                "In the first one or two lines"
+              ],
+              "answer": 3,
+              "explain": "Busy readers often read only the opening, so the point and request belong there."
+            },
+            {
+              "q": "Which request is clearest?",
+              "options": [
+                "Let me know your thoughts whenever",
+                "Could you approve the draft by Thursday 3 pm so I can send it on Friday?",
+                "Please check this",
+                "Any feedback?"
+              ],
+              "answer": 1,
+              "explain": "It says exactly what is needed, by when and why, so the reader can act at once."
+            },
+            {
+              "q": "Your task will miss its deadline. What builds the most trust?",
+              "options": [
+                "Say nothing and hope nobody notices",
+                "Wait until the deadline, then explain",
+                "Tell your manager early with a new date and a plan",
+                "Blame another team"
+              ],
+              "answer": 2,
+              "explain": "Early, honest updates with a plan let others adjust and show you are reliable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-4",
+      "title": "Grow at work",
+      "lessons": [
+        {
+          "id": "career-4-1",
+          "title": "Ask for feedback and use it",
+          "minutes": 6,
+          "content": "Feedback is one of the fastest ways to grow, but most people ask for it badly. \"Any feedback?\" usually gets \"No, all good\", because it is vague and puts the other person on the spot. A specific question gets a specific answer. Try: \"What is one thing I could do differently to be more effective?\" or \"How could my last presentation have been clearer?\"\n\nReceiving feedback is the harder part. When you hear criticism, the instinct is to explain or defend yourself. Resist it. Listen, take notes and ask one follow-up question to understand, such as \"Can you give me an example?\" Then say thank you. You do not have to agree with everything, but if you argue, people stop telling you the truth.\n\nFeedback only helps if you act on it. Pick one change, make it visible and do it consistently for a few weeks. Then go back to the same person: \"You mentioned I could be clearer in updates. I have been trying a shorter format. Is it better?\" This closes the loop and shows you take their input seriously, which makes them more willing to help again.",
+          "key_points": [
+            "Ask specific questions instead of 'any feedback?'.",
+            "Listen and take notes without defending yourself.",
+            "Turn feedback into one visible change and follow up."
+          ],
+          "tip": "Feedback says something about your work, not your worth. If it stings, wait a day before deciding what to do with it.",
+          "task": "Ask one teacher, manager or teammate: 'What is one thing I could do differently to be more effective?' Write down the answer without arguing, and plan one change you will make in the next two weeks.",
+          "quiz": [
+            {
+              "q": "Which question is most likely to get useful feedback?",
+              "options": [
+                "What is one thing I could do differently to be more effective?",
+                "Any feedback?",
+                "I did well, right?",
+                "Was everything fine?"
+              ],
+              "answer": 0,
+              "explain": "A specific, open question makes it easy for someone to give an honest, concrete answer."
+            },
+            {
+              "q": "What is the best first response when you hear criticism?",
+              "options": [
+                "Explain why they are wrong",
+                "Change the topic quickly",
+                "Listen, take notes and ask for an example",
+                "Point out their own mistakes"
+              ],
+              "answer": 2,
+              "explain": "Listening and clarifying helps you understand, and keeps people willing to be honest with you."
+            },
+            {
+              "q": "Why go back to the person after making a change?",
+              "options": [
+                "To prove they were wrong",
+                "To close the loop and check whether the change is working",
+                "To ask for a raise",
+                "It is not necessary"
+              ],
+              "answer": 1,
+              "explain": "Following up shows you took their input seriously and tells you if you are improving."
+            }
+          ]
+        },
+        {
+          "id": "career-4-2",
+          "title": "Prioritise when everything feels urgent",
+          "minutes": 6,
+          "content": "At work or university, there will be weeks when everything lands at once and every request feels urgent. Working harder on all of it usually leads to rushed work, missed deadlines and burnout. The real skill is deciding what matters most and doing that first.\n\nSeparate urgent from important. Urgent tasks shout for attention now, like most messages and small requests. Important tasks move your main goals forward, like a key project or exam preparation. Do what is both urgent and important first, schedule important but not urgent work before it becomes a crisis, and keep the rest short or hand it off. Protect one or two blocks of focus time each day, with notifications off, for the important work.\n\nWhen you cannot do everything, do not silently overcommit. Say 'not now' politely by showing the trade-off: \"I can take this on, but it would push the report to next week. Which should come first?\" This lets your manager or teammate decide with full information, and it shows you are managing your work, not avoiding it.",
+          "key_points": [
+            "Separate urgent tasks from important ones and do the important work first.",
+            "Protect regular focus time for work that moves your goals forward.",
+            "Decline or delay politely by showing the trade-off."
+          ],
+          "tip": "Pick your top three tasks the evening before. Starting the day with a clear plan stops your inbox from deciding your priorities.",
+          "task": "List everything on your plate this week and sort it into important and urgent groups. Pick your top three, then write one polite message to renegotiate or decline a lower-priority request.",
+          "quiz": [
+            {
+              "q": "What makes a task important rather than just urgent?",
+              "options": [
+                "It arrived most recently",
+                "Someone sent it in capital letters",
+                "It moves your main goals forward",
+                "It is the shortest task"
+              ],
+              "answer": 2,
+              "explain": "Urgent tasks demand attention now; important tasks are the ones that actually move your goals."
+            },
+            {
+              "q": "What should you do with important but not urgent work?",
+              "options": [
+                "Ignore it until it becomes urgent",
+                "Delete it",
+                "Do it only on weekends",
+                "Schedule time for it before it becomes a crisis"
+              ],
+              "answer": 3,
+              "explain": "Planning important work early stops it turning into a last-minute emergency."
+            },
+            {
+              "q": "Your manager gives you a new task when you are already full. What is the best response?",
+              "options": [
+                "Show the trade-off and ask which task should come first",
+                "Say yes and work every night to finish everything",
+                "Say no without explaining",
+                "Accept it and quietly miss another deadline"
+              ],
+              "answer": 0,
+              "explain": "Showing the trade-off lets your manager decide with full information instead of being surprised later."
+            }
+          ]
+        },
+        {
+          "id": "career-4-3",
+          "title": "Work well with your manager",
+          "minutes": 5,
+          "content": "Your manager has a big effect on what you learn, which projects you get and how your work is seen. Working well with them is sometimes called managing up. It is not flattery. It means understanding what your manager is trying to achieve and making it easy for them to rely on you.\n\nStart by learning their goals and pressures: what their own boss expects, which deadlines worry them and how they like to receive information. Then agree on expectations clearly. Ask what good work looks like for your current tasks and how often they want updates, so neither of you is guessing.\n\nUse one-on-one meetings well by bringing your own short agenda: progress, questions and problems. When something goes wrong, do not just drop the problem on their desk. Bring it early with a suggested solution, even a rough one. Managers trust people who think ahead and make their job lighter.",
+          "key_points": [
+            "Understand your manager's goals, pressures and preferred way of working.",
+            "Agree clearly on what good work looks like and how often to update.",
+            "Bring your own agenda to one-on-ones and pair every problem with a suggested fix."
+          ],
+          "tip": "Keep a running note for your next one-on-one. When a question comes up during the week, add it there instead of interrupting your manager every time.",
+          "task": "Write an agenda for your next one-on-one, or a meeting with a teacher or supervisor, with one progress update, one question and one problem paired with your suggested fix.",
+          "quiz": [
+            {
+              "q": "What does managing up mean?",
+              "options": [
+                "Flattering your manager so they like you",
+                "Doing your manager's job for them",
+                "Understanding your manager's goals and making it easy to rely on you",
+                "Going to your manager's boss whenever you disagree"
+              ],
+              "answer": 2,
+              "explain": "Managing up is about alignment and reliability, not flattery or going around your manager."
+            },
+            {
+              "q": "What is the best way to raise a problem with your manager?",
+              "options": [
+                "Bring it early with a suggested solution",
+                "Wait until it becomes impossible to hide",
+                "Mention it only if they ask",
+                "Complain about it to your teammates first"
+              ],
+              "answer": 0,
+              "explain": "Raising problems early with a proposed fix shows ownership and saves your manager time."
+            },
+            {
+              "q": "Who should prepare the agenda for your one-on-one?",
+              "options": [
+                "Only your manager",
+                "Nobody, it should be a casual chat",
+                "HR",
+                "You, with your updates, questions and problems"
+              ],
+              "answer": 3,
+              "explain": "The one-on-one is your time. Bringing your own agenda makes it useful for both of you."
+            }
+          ]
+        },
+        {
+          "id": "career-4-4",
+          "title": "Make the case for a raise or promotion",
+          "minutes": 6,
+          "content": "Raises and promotions rarely arrive just because you have worked hard for a long time. They usually go to people who show results, are already doing some of the next level's work and ask clearly at the right time. Waiting quietly and hoping someone notices often leads to frustration.\n\nStart a wins file today: a simple list of what you achieved and the result, such as a report finished two days early, a process that saved hours or a customer problem you solved. Write numbers where you can. Also find out what the next level actually requires by asking your manager or looking at people already in that role.\n\nWhen you ask, choose a good moment, like a review or after a clear success, not a stressful week. Make your case with evidence: what you delivered, how it helped and what more you are ready to take on. Avoid arguing from personal need or comparing yourself with colleagues. If the answer is not yet, ask what exactly you need to show and by when.",
+          "key_points": [
+            "Raises and promotions follow visible results and a clear request, not just time served.",
+            "Keep a wins file with achievements and their measurable results.",
+            "Ask at the right time with evidence, not need or comparison with others."
+          ],
+          "tip": "Update your wins file every Friday in two minutes. By review time you will have months of evidence instead of trying to remember what you did.",
+          "task": "Start a wins file with at least five achievements and their results, then write the three-sentence case you would use to ask for more responsibility or pay.",
+          "quiz": [
+            {
+              "q": "What is the strongest basis for asking for a raise?",
+              "options": [
+                "Your rent has gone up",
+                "Evidence of results you delivered and value you added",
+                "A colleague earns more than you",
+                "You have been there longer than others"
+              ],
+              "answer": 1,
+              "explain": "Managers can defend a raise with evidence of results. Personal need and comparisons are much harder to act on."
+            },
+            {
+              "q": "What belongs in a wins file?",
+              "options": [
+                "Complaints about your workload",
+                "A list of your job duties",
+                "Gossip about who got promoted",
+                "Achievements and their results, with numbers where possible"
+              ],
+              "answer": 3,
+              "explain": "A wins file records outcomes, not duties, so you can show impact when it matters."
+            },
+            {
+              "q": "If your manager says 'not yet', what should you do?",
+              "options": [
+                "Ask exactly what you need to show and by when",
+                "Stop putting in extra effort",
+                "Threaten to quit immediately",
+                "Never bring it up again"
+              ],
+              "answer": 0,
+              "explain": "A clear target and timeline turn a 'no' into a plan you can work toward."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-5",
+      "title": "Shape your long-term career",
+      "lessons": [
+        {
+          "id": "career-5-1",
+          "title": "Keep learning so your skills stay valuable",
+          "minutes": 6,
+          "content": "Jobs and tools change faster than ever. Software that was standard five years ago may be gone, and AI tools are changing how many tasks are done. The degree or skills that got you your first job will not be enough for a long career. Staying valuable means learning on purpose, not only when you are forced to.\n\nA useful model is the T-shaped skill set. The vertical bar is one deep skill you are known for, like accounting, design or programming. The horizontal bar is broad skills that make any job easier: clear communication, working with data and spreadsheets, and using AI tools well. Depth makes you useful, breadth makes you adaptable.\n\nRandom courses rarely stick. A simple, regular plan works better: pick one goal for the next 90 days, set aside a few fixed hours each week and finish with a small project that proves what you learned. A project you can show is worth more than a pile of half-finished certificates.",
+          "key_points": [
+            "Skills lose value over time, so learning must be ongoing and deliberate.",
+            "Build a T-shape: one deep skill plus broad skills like communication, data and AI tools.",
+            "Use a 90-day plan with weekly hours and a small project to prove the skill."
+          ],
+          "tip": "Attach learning to a fixed slot, like the first 30 minutes after dinner on three weekdays. A small habit you keep beats a big plan you abandon.",
+          "task": "Name your one deep skill and two broad skills to build, then plan a 90-day learning goal with weekly hours, one free resource and a small project to prove it.",
+          "quiz": [
+            {
+              "q": "What does a T-shaped skill set mean?",
+              "options": [
+                "Knowing a little about everything",
+                "Having two degrees",
+                "Mastering only one narrow skill",
+                "One deep skill plus a broad range of useful skills"
+              ],
+              "answer": 3,
+              "explain": "The T combines depth in one area with breadth that helps you adapt and work with others."
+            },
+            {
+              "q": "Which learning approach works best over time?",
+              "options": [
+                "Signing up for many random courses at once",
+                "A regular plan with fixed weekly hours and a clear goal",
+                "Learning only when your job demands it",
+                "Watching videos without practising"
+              ],
+              "answer": 1,
+              "explain": "Steady, focused learning with a clear goal builds skills that last."
+            },
+            {
+              "q": "What is the best way to prove a new skill?",
+              "options": [
+                "A small project you can show",
+                "Listing the course name on your CV",
+                "Telling people you are interested in it",
+                "Collecting as many certificates as possible"
+              ],
+              "answer": 0,
+              "explain": "A finished project shows you can actually use the skill, which employers value most."
+            }
+          ]
+        },
+        {
+          "id": "career-5-2",
+          "title": "Find mentors and sponsors",
+          "minutes": 5,
+          "content": "Nobody builds a career completely alone. Two kinds of people can speed up your growth. A mentor gives you advice, shares experience and helps you think through decisions. A sponsor does something different: they speak up for you when you are not in the room, recommend you for projects and put their name behind yours.\n\nThese relationships rarely start with 'will you be my mentor?' They grow gradually, often from people you already know: a senior colleague, a former teacher or a manager from another team. Start with one specific question, use the advice and come back to tell them what happened. People enjoy helping when they see their help made a difference.\n\nSponsors are earned through your work. Someone will only recommend you if they have seen you deliver and trust you will not embarrass them. So be easy to help: ask clear questions, respect their time, follow up and do excellent work where they can see it.",
+          "key_points": [
+            "A mentor advises you; a sponsor speaks up for you when you are not there.",
+            "Build these relationships gradually, starting from people you already know.",
+            "Be easy to help: ask specific questions, act on advice and report back."
+          ],
+          "tip": "After someone gives you advice, send a short message a few weeks later saying what you tried and how it went. That one follow-up turns a single chat into a relationship.",
+          "task": "List two people who could mentor you and one who could become a sponsor, then write a specific question you will ask one of them this month.",
+          "quiz": [
+            {
+              "q": "What is the main difference between a mentor and a sponsor?",
+              "options": [
+                "A mentor is paid, a sponsor is not",
+                "There is no difference",
+                "A mentor advises you, a sponsor advocates for you when you are not present",
+                "A sponsor only helps with money"
+              ],
+              "answer": 2,
+              "explain": "Mentors share guidance; sponsors use their influence to open doors for you."
+            },
+            {
+              "q": "What is a good way to start a mentoring relationship?",
+              "options": [
+                "Ask a stranger to be your mentor right away",
+                "Ask someone you know one specific question and follow up later",
+                "Send a long message listing all your problems",
+                "Wait for someone to offer"
+              ],
+              "answer": 1,
+              "explain": "A specific question and a follow-up build trust naturally, without pressure on either side."
+            },
+            {
+              "q": "How do you usually earn a sponsor?",
+              "options": [
+                "By delivering strong work they can see and trust",
+                "By asking many people at once",
+                "By praising them on social media",
+                "By telling them you deserve it"
+              ],
+              "answer": 0,
+              "explain": "Sponsors put their reputation behind you, so they need to have seen your work first."
+            }
+          ]
+        },
+        {
+          "id": "career-5-3",
+          "title": "Change jobs or careers wisely",
+          "minutes": 6,
+          "content": "Almost everyone thinks about leaving a job at some point. The key question is whether you are facing a bad month or a real misfit. A difficult project, a tense week or one unfair comment can pass. Lasting signs are different: you have stopped learning, your values clash with the company or the work drains you no matter what you try.\n\nBefore deciding, write your honest reasons and ask which ones could be fixed where you are, for example by talking to your manager or moving to another team. If a move is needed, plan it. Map your transferable skills, like communication, analysis or managing people, onto the role you want, and start closing the biggest gaps while you still have an income.\n\nWhen you do leave, leave well. Give proper notice, finish or hand over your work with clear notes and thank the people who helped you. Industries are smaller than they look, and your former manager may be your future reference, client or colleague.",
+          "key_points": [
+            "Separate short-term frustration from real, lasting misfit.",
+            "Check what is fixable where you are, then plan a move by mapping skills and closing gaps first.",
+            "Exit professionally: proper notice, a clean handover and no burned bridges."
+          ],
+          "tip": "Try not to quit on a bad day. Write your reasons down, wait at least a week and read them again before you decide.",
+          "task": "Write your honest reasons for wanting a change and sort them into 'fixable here' and 'needs a move'. For one target role, list the skills you already have and the two gaps to close.",
+          "quiz": [
+            {
+              "q": "Which is a sign of a real misfit rather than short-term frustration?",
+              "options": [
+                "One stressful week before a deadline",
+                "A single disagreement with a colleague",
+                "A boring meeting",
+                "You have stopped learning and the work drains you whatever you try"
+              ],
+              "answer": 3,
+              "explain": "Lasting patterns, not single events, are the signal that a change may be needed."
+            },
+            {
+              "q": "When is the best time to start closing skill gaps for a new career?",
+              "options": [
+                "After you have already quit",
+                "While you still have your current job and income",
+                "Only after the new employer trains you",
+                "Never, transferable skills are enough"
+              ],
+              "answer": 1,
+              "explain": "Building skills while you still earn reduces risk and makes the switch smoother."
+            },
+            {
+              "q": "What is the professional way to leave a job?",
+              "options": [
+                "Give proper notice and hand over your work clearly",
+                "Leave without telling your team",
+                "Tell everyone what was wrong with the company",
+                "Stop working once you have a new offer"
+              ],
+              "answer": 0,
+              "explain": "A clean exit protects your reputation and keeps future references and opportunities open."
+            }
+          ]
+        },
+        {
+          "id": "career-5-4",
+          "title": "Bounce back from setbacks",
+          "minutes": 6,
+          "content": "Every long career includes setbacks: rejected applications, failed projects, missed promotions, layoffs and periods of burnout. They feel personal and permanent when they happen, but they are a normal part of working life. What matters most is not avoiding them but how you recover.\n\nFirst, separate the event from your worth. Being rejected or laid off is something that happened, not a verdict on who you are. Give yourself time to feel disappointed, then review calmly: what was in your control, what was not and what you would do differently. Keep the lesson and let go of the blame.\n\nResilience is also built before trouble arrives. A savings cushion of a few months' expenses gives you time to choose instead of panic. Up-to-date skills and a network of people who know your work make the next step easier. When you restart, begin with small, concrete actions, like one application a day or one hour of learning, and let momentum return.",
+          "key_points": [
+            "Setbacks are a normal part of a long career, not proof that you have failed.",
+            "Separate the event from your self-worth and review it for lessons, not blame.",
+            "Build resilience early with savings, skills and support, then restart with small steps."
+          ],
+          "tip": "When you feel stuck after a setback, pick one action you can finish in 30 minutes today. Small completed steps rebuild confidence faster than big plans.",
+          "task": "Write about one past setback, what it taught you and what you would do differently, then list three things that would make you more resilient next time, such as savings, skills or people.",
+          "quiz": [
+            {
+              "q": "What is the healthiest way to view a job rejection?",
+              "options": [
+                "Proof that you are not good enough",
+                "A reason to stop applying",
+                "An event to learn from, not a judgement of your worth",
+                "Something to forget immediately without reflection"
+              ],
+              "answer": 2,
+              "explain": "Separating the event from your self-worth lets you learn from it without losing confidence."
+            },
+            {
+              "q": "Why does a savings cushion help with setbacks?",
+              "options": [
+                "It means you never need to work again",
+                "It gives you time to make good choices instead of panicking",
+                "It impresses employers",
+                "It prevents layoffs"
+              ],
+              "answer": 1,
+              "explain": "Financial breathing room lets you choose your next step carefully rather than taking the first option out of fear."
+            },
+            {
+              "q": "What is a good way to restart after a setback?",
+              "options": [
+                "Wait until you feel completely ready",
+                "Make a huge plan to fix everything at once",
+                "Avoid telling anyone what happened",
+                "Take small, concrete actions every day"
+              ],
+              "answer": 3,
+              "explain": "Small, regular actions rebuild momentum and confidence step by step."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
