@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../components/appbar.dart';
 import '../components/mentor_card.dart';
+import '../components/switch_animation.dart';
+import '../data/content_seeder.dart';
 import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../l10n/app_localizations.dart';
@@ -212,9 +214,19 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
     if (!mounted || picked == null || picked.code == current) return;
-    setState(() => _loading = true);
+    final fromCode = current ?? ContentSeeder.deviceLanguage();
+    final toCode = picked.code ?? ContentSeeder.deviceLanguage();
     try {
-      await _repo.setLanguage(picked.code);
+      if (fromCode == toCode) {
+        await _repo.setLanguage(picked.code);
+      } else {
+        // The reseed runs while the letter flips, behind the overlay.
+        await playLanguageSwitch(context, fromCode: fromCode, toCode: toCode, change: () async {
+          await _repo.setLanguage(picked.code);
+          await _load();
+        });
+        return;
+      }
     } catch (e) {
       // The reseed runs in one transaction, so the old content is still intact.
       if (!mounted) return;
@@ -246,8 +258,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
-    if (picked == null || picked.mode == current) return;
-    await _repo.setTheme(picked.mode);
+    if (!mounted || picked == null || picked.mode == current) return;
+    final toDark = switch (picked.mode) {
+      'dark' => true,
+      'light' => false,
+      _ => MediaQuery.platformBrightnessOf(context) == Brightness.dark,
+    };
+    if (toDark == AppTheme.isDark) return _repo.setTheme(picked.mode);
+    await playThemeSwitch(context, toDark: toDark, change: () => _repo.setTheme(picked.mode));
   }
 
   Future<void> _push(Widget page) async {
