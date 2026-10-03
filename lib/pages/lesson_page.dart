@@ -238,13 +238,16 @@ class _LessonPageState extends State<LessonPage> {
                 children: [
                   Text(lesson.task, style: AppTheme.body(14, height: 1.55)),
                   const SizedBox(height: 6),
-                  CheckboxListTile(
-                    value: progress.taskDone,
-                    onChanged: _setTaskDone,
-                    activeColor: accent,
-                    contentPadding: EdgeInsets.zero,
-                    controlAffinity: ListTileControlAffinity.leading,
-                    title: Text(l.iDidTask, style: AppTheme.body(14, weight: FontWeight.w600)),
+                  Material(
+                    type: MaterialType.transparency,
+                    child: CheckboxListTile(
+                      value: progress.taskDone,
+                      onChanged: _setTaskDone,
+                      activeColor: accent,
+                      contentPadding: EdgeInsets.zero,
+                      controlAffinity: ListTileControlAffinity.leading,
+                      title: Text(l.iDidTask, style: AppTheme.body(14, weight: FontWeight.w600)),
+                    ),
                   ),
                 ],
               ),
