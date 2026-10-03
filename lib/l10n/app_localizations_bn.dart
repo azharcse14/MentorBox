@@ -423,13 +423,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyReminder => 'রোজকার রিমাইন্ডার';
 
   @override
-  String get dailyReminderHint => 'রাত ৮টায়, শুধু যেদিন এখনো পড়োনি';
-
-  @override
-  String get reminderTitle => 'তোমার মেন্টররা অপেক্ষা করছে';
-
-  @override
-  String get reminderBody => 'একটা ছোট লেসন করলেই স্ট্রিক টিকে থাকবে।';
+  String get dailyReminderHint => 'শুধু যেদিন এখনো পড়োনি';
 
   @override
   String get retry => 'আবার চেষ্টা করো';
@@ -454,4 +448,51 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get stayInQuiz => 'থাকো';
+
+  @override
+  String get reminderTime => 'রিমাইন্ডারের সময়';
+
+  @override
+  String get notifPracticeTitle => 'আজকের লেসনের সময় হয়েছে';
+
+  @override
+  String notifPracticeBody(String mentor, String lesson, int minutes) {
+    return '$mentor: এবার \"$lesson\"। মাত্র $minutes মিনিট।';
+  }
+
+  @override
+  String get notifGenericBody => 'রোজ একটা ছোট লেসন, ধীরে ধীরে অনেক দূর।';
+
+  @override
+  String notifStreakRiskTitle(int count) {
+    return '🔥 তোমার $count দিনের স্ট্রিক বিপদে';
+  }
+
+  @override
+  String get notifStreakRiskBody =>
+      'রাত ১২টায় শেষ হয়ে যাবে। একটা লেসনেই বাঁচবে।';
+
+  @override
+  String notifStreakLostTitle(int count) {
+    return 'তোমার $count দিনের স্ট্রিক শেষ হয়ে গেছে';
+  }
+
+  @override
+  String get notifStreakLostBody =>
+      'সব স্ট্রিকই ১ম দিন থেকে শুরু হয়। আজই নতুন করে শুরু করো।';
+
+  @override
+  String get notifComebackTitle => 'তোমার মেন্টররা তোমাকে মিস করছে';
+
+  @override
+  String notifComebackBody(String mentor, String lesson) {
+    return '$mentor তোমার জায়গা রেখে দিয়েছে: \"$lesson\"';
+  }
+
+  @override
+  String get notifLastCallTitle => 'রিমাইন্ডার আপাতত বন্ধ রাখছি';
+
+  @override
+  String get notifLastCallBody =>
+      'মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!';
 }

@@ -286,9 +286,7 @@
   "quizFail": "Not yet. Read the explanations above, review the lesson, and try again.",
   "settings": "Settings",
   "dailyReminder": "Daily reminder",
-  "dailyReminderHint": "At 8 PM, only if you haven't studied that day",
-  "reminderTitle": "Your mentors are waiting",
-  "reminderBody": "One short lesson keeps your streak alive.",
+  "dailyReminderHint": "Only on days you haven't studied yet",
   "retry": "Try again",
   "skip": "Skip",
   "undo": "Undo",
@@ -296,5 +294,54 @@
   "leaveQuizTitle": "Leave the quiz?",
   "leaveQuizBody": "Your answers so far will be lost.",
   "leaveQuiz": "Leave",
-  "stayInQuiz": "Stay"
+  "stayInQuiz": "Stay",
+  "reminderTime": "Reminder time",
+  "notifPracticeTitle": "Time for today's lesson",
+  "notifPracticeBody": "{mentor}: \"{lesson}\" is next. Just {minutes} min.",
+  "@notifPracticeBody": {
+    "placeholders": {
+      "mentor": {
+        "type": "String"
+      },
+      "lesson": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifGenericBody": "One short lesson a day adds up.",
+  "notifStreakRiskTitle": "🔥 Your {count}-day streak is at risk",
+  "@notifStreakRiskTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifStreakRiskBody": "It ends at midnight. One lesson saves it.",
+  "notifStreakLostTitle": "Your {count}-day streak ended",
+  "@notifStreakLostTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifStreakLostBody": "Every streak starts at day 1. Start a new one today.",
+  "notifComebackTitle": "Your mentors miss you",
+  "notifComebackBody": "{mentor} saved your place: \"{lesson}\"",
+  "@notifComebackBody": {
+    "placeholders": {
+      "mentor": {
+        "type": "String"
+      },
+      "lesson": {
+        "type": "String"
+      }
+    }
+  },
+  "notifLastCallTitle": "We'll pause your reminders",
+  "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!"
 }

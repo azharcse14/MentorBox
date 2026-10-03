@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<CategoryOverview> _overviews = [];
   int _streak = 0;
   bool _reminderOn = false;
+  TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
   void initState() {
@@ -44,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       final overviews = await _repo.getAllOverviews();
       final days = await _repo.getActivityDays();
       final reminderOn = await _repo.getReminderOn();
+      final (hour, minute) = await _repo.getReminderTime();
       if (!mounted) return;
       setState(() {
         _userName = name;
@@ -51,10 +53,12 @@ class _HomeScreenState extends State<HomeScreen> {
         _overviews = overviews;
         _streak = MentorEngine.streak(days);
         _reminderOn = reminderOn;
+        _reminderTime = TimeOfDay(hour: hour, minute: minute);
         _loading = false;
         _error = null;
       });
-      if (reminderOn) _scheduleReminder(days);
+      // Opening the app reschedules, so the plan always starts from today.
+      Reminder.refresh();
       if (name == null && !_askedForName) {
         _askedForName = true;
         WidgetsBinding.instance.addPostFrameCallback((_) => _editName());
@@ -76,27 +80,22 @@ class _HomeScreenState extends State<HomeScreen> {
     _load();
   }
 
-  Future<void> _scheduleReminder(Set<String> days) async {
-    final l = AppLocalizations.of(context);
-    try {
-      await Reminder.schedule(
-        studiedToday: days.contains(MentorEngine.dayKey(DateTime.now())),
-        title: l.reminderTitle,
-        body: l.reminderBody,
-      );
-    } catch (_) {
-      // A reminder that fails to schedule must never break the home screen.
-    }
-  }
-
   Future<void> _toggleReminder() async {
     final on = !_reminderOn;
     if (on && !await Reminder.requestPermission()) return;
-    if (!on) await Reminder.cancel();
     await _repo.setReminderOn(on);
+    await Reminder.refresh();
     if (!mounted) return;
     setState(() => _reminderOn = on);
-    if (on) _scheduleReminder(await _repo.getActivityDays());
+  }
+
+  Future<void> _pickReminderTime() async {
+    final picked = await showTimePicker(context: context, initialTime: _reminderTime);
+    if (picked == null) return;
+    await _repo.setReminderTime(picked.hour, picked.minute);
+    await Reminder.refresh();
+    if (!mounted) return;
+    setState(() => _reminderTime = picked);
   }
 
   /// Theme, language and the daily reminder, in one sheet.
@@ -135,6 +134,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 activeThumbColor: AppTheme.kPrimaryColor,
                 onChanged: (_) => Navigator.of(context).pop('reminder'),
               ),
+            if (Reminder.supported && _reminderOn)
+              ListTile(
+                leading: const Icon(Icons.schedule),
+                title: Text(l.reminderTime, style: AppTheme.body(16)),
+                trailing: Text(_reminderTime.format(context), style: AppTheme.mono(16)),
+                onTap: () => Navigator.of(context).pop('time'),
+              ),
           ],
         ),
       ),
@@ -146,6 +152,8 @@ class _HomeScreenState extends State<HomeScreen> {
         await _pickLanguage();
       case 'reminder':
         await _toggleReminder();
+      case 'time':
+        await _pickReminderTime();
     }
   }
 

@@ -1,6 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 
 import '../logic/mentor_engine.dart';
+import '../logic/reminder.dart';
 import 'app_database.dart';
 import 'content_seeder.dart';
 import 'models.dart';
@@ -59,6 +60,19 @@ class MentorRepository {
   }
 
   Future<void> setReminderOn(bool on) => _setMeta(_reminderKey, on ? '1' : null);
+
+  static const String _reminderTimeKey = 'reminder_time';
+
+  /// When the daily reminder fires, as (hour, minute). 8 PM by default.
+  Future<(int, int)> getReminderTime() async {
+    final db = await _db;
+    final rows = await db.query('meta', where: 'key = ?', whereArgs: [_reminderTimeKey]);
+    final parts = rows.isEmpty ? null : (rows.first['value'] as String).split(':');
+    if (parts == null || parts.length != 2) return (20, 0);
+    return (int.tryParse(parts[0]) ?? 20, int.tryParse(parts[1]) ?? 0);
+  }
+
+  Future<void> setReminderTime(int hour, int minute) => _setMeta(_reminderTimeKey, '$hour:$minute');
 
   /// Stores [value] under [key], or removes the key when [value] is null.
   Future<void> _setMeta(String key, String? value) async {
@@ -187,6 +201,7 @@ class MentorRepository {
       );
       if (done) await _recordActivity(txn, categoryId);
     });
+    if (done) Reminder.refresh();
   }
 
   Future<void> setBookmarked(String lessonId, bool bookmarked) async {
@@ -233,6 +248,7 @@ class MentorRepository {
       ''', [score, passedFlag, passedFlag, DateTime.now().toIso8601String(), lessonId]);
       await _recordActivity(txn, categoryId);
     });
+    Reminder.refresh();
     return getProgress(lessonId);
   }
 
@@ -249,6 +265,7 @@ class MentorRepository {
       ''', [DateTime.now().toIso8601String(), lessonId]);
       await _recordActivity(txn, categoryId);
     });
+    Reminder.refresh();
   }
 
   /// Marks a category as started (first time) and as active now.
@@ -313,6 +330,8 @@ class MentorRepository {
   }
 
   /// A real learning action (task done, quiz taken) counts toward the streak.
+  /// Callers refresh the reminders afterwards, so studying today cancels
+  /// today's nudges even if the app is closed right after.
   Future<void> _recordActivity(DatabaseExecutor db, String categoryId) async {
     await db.insert(
       'activity_days',

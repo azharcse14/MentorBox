@@ -665,20 +665,8 @@ abstract class AppLocalizations {
   /// No description provided for @dailyReminderHint.
   ///
   /// In en, this message translates to:
-  /// **'At 8 PM, only if you haven\'t studied that day'**
+  /// **'Only on days you haven\'t studied yet'**
   String get dailyReminderHint;
-
-  /// No description provided for @reminderTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Your mentors are waiting'**
-  String get reminderTitle;
-
-  /// No description provided for @reminderBody.
-  ///
-  /// In en, this message translates to:
-  /// **'One short lesson keeps your streak alive.'**
-  String get reminderBody;
 
   /// No description provided for @retry.
   ///
@@ -727,6 +715,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stay'**
   String get stayInQuiz;
+
+  /// No description provided for @reminderTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder time'**
+  String get reminderTime;
+
+  /// No description provided for @notifPracticeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time for today\'s lesson'**
+  String get notifPracticeTitle;
+
+  /// No description provided for @notifPracticeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{mentor}: \"{lesson}\" is next. Just {minutes} min.'**
+  String notifPracticeBody(String mentor, String lesson, int minutes);
+
+  /// No description provided for @notifGenericBody.
+  ///
+  /// In en, this message translates to:
+  /// **'One short lesson a day adds up.'**
+  String get notifGenericBody;
+
+  /// No description provided for @notifStreakRiskTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'🔥 Your {count}-day streak is at risk'**
+  String notifStreakRiskTitle(int count);
+
+  /// No description provided for @notifStreakRiskBody.
+  ///
+  /// In en, this message translates to:
+  /// **'It ends at midnight. One lesson saves it.'**
+  String get notifStreakRiskBody;
+
+  /// No description provided for @notifStreakLostTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {count}-day streak ended'**
+  String notifStreakLostTitle(int count);
+
+  /// No description provided for @notifStreakLostBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Every streak starts at day 1. Start a new one today.'**
+  String get notifStreakLostBody;
+
+  /// No description provided for @notifComebackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your mentors miss you'**
+  String get notifComebackTitle;
+
+  /// No description provided for @notifComebackBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{mentor} saved your place: \"{lesson}\"'**
+  String notifComebackBody(String mentor, String lesson);
+
+  /// No description provided for @notifLastCallTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll pause your reminders'**
+  String get notifLastCallTitle;
+
+  /// No description provided for @notifLastCallBody.
+  ///
+  /// In en, this message translates to:
+  /// **'These reminders don\'t seem to be working, so we\'ll stop for now. Come back any time!'**
+  String get notifLastCallBody;
 }
 
 class _AppLocalizationsDelegate

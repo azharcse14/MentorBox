@@ -427,14 +427,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dailyReminder => 'Daily reminder';
 
   @override
-  String get dailyReminderHint =>
-      'At 8 PM, only if you haven\'t studied that day';
-
-  @override
-  String get reminderTitle => 'Your mentors are waiting';
-
-  @override
-  String get reminderBody => 'One short lesson keeps your streak alive.';
+  String get dailyReminderHint => 'Only on days you haven\'t studied yet';
 
   @override
   String get retry => 'Try again';
@@ -459,4 +452,50 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get stayInQuiz => 'Stay';
+
+  @override
+  String get reminderTime => 'Reminder time';
+
+  @override
+  String get notifPracticeTitle => 'Time for today\'s lesson';
+
+  @override
+  String notifPracticeBody(String mentor, String lesson, int minutes) {
+    return '$mentor: \"$lesson\" is next. Just $minutes min.';
+  }
+
+  @override
+  String get notifGenericBody => 'One short lesson a day adds up.';
+
+  @override
+  String notifStreakRiskTitle(int count) {
+    return '🔥 Your $count-day streak is at risk';
+  }
+
+  @override
+  String get notifStreakRiskBody => 'It ends at midnight. One lesson saves it.';
+
+  @override
+  String notifStreakLostTitle(int count) {
+    return 'Your $count-day streak ended';
+  }
+
+  @override
+  String get notifStreakLostBody =>
+      'Every streak starts at day 1. Start a new one today.';
+
+  @override
+  String get notifComebackTitle => 'Your mentors miss you';
+
+  @override
+  String notifComebackBody(String mentor, String lesson) {
+    return '$mentor saved your place: \"$lesson\"';
+  }
+
+  @override
+  String get notifLastCallTitle => 'We\'ll pause your reminders';
+
+  @override
+  String get notifLastCallBody =>
+      'These reminders don\'t seem to be working, so we\'ll stop for now. Come back any time!';
 }
