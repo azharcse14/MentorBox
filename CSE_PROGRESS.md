@@ -1,0 +1,104 @@
+# CSE full courses: progress
+
+Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.
+The short overview lessons in the `cse` category stay as they are.
+
+Status: `done` = in the app, `in progress` = being written, `todo` = not started.
+
+## 1st Year
+
+| # | Id | Course | Status |
+|---|---|---|---|
+| 1 | cse-1-1 | Introduction to Computer Systems | done |
+| 2 | cse-1-2 | Structured Programming (C) | todo |
+| 3 | cse-1-3 | Discrete Mathematics | todo |
+| 4 | cse-1-4 | Calculus & Differential Equations | todo |
+| 5 | cse-1-5 | Electrical Circuits | todo |
+
+## 2nd Year
+
+| # | Id | Course | Status |
+|---|---|---|---|
+| 6 | cse-2-1 | Object Oriented Programming | todo |
+| 7 | cse-2-2 | Data Structures | todo |
+| 8 | cse-2-3 | Digital Logic Design | todo |
+| 9 | cse-2-4 | Electronic Devices & Circuits | todo |
+| 10 | cse-2-5 | Linear Algebra | todo |
+| 11 | cse-2-6 | Probability & Statistics | todo |
+| 12 | cse-2-7 | Complex Variables, Fourier & Laplace Transforms (Math III) | todo |
+| 13 | cse-3-1 | Algorithms (Design & Analysis) | todo |
+| 14 | cse-3-2 | Computer Architecture & Organization | todo |
+| 15 | cse-3-3 | Microprocessors & Assembly Language | todo |
+| 16 | cse-3-4 | Numerical Methods | todo |
+| 17 | cse-3-5 | Theory of Computation | todo |
+| 18 | cse-3-6 | Data Communication | todo |
+| 19 | cse-3-7 | Signals & Systems | todo |
+| 20 | cse-3-8 | Computer Peripherals & Interfacing | todo |
+| 21 | cse-3-9 | Graph Theory | todo |
+
+## 3rd Year
+
+| # | Id | Course | Status |
+|---|---|---|---|
+| 22 | cse-4-1 | Operating Systems | todo |
+| 23 | cse-4-2 | Database Management Systems | todo |
+| 24 | cse-4-3 | Computer Networks | todo |
+| 25 | cse-4-4 | Software Engineering | todo |
+| 26 | cse-4-5 | Compiler Design | todo |
+| 27 | cse-4-6 | System Analysis & Design | todo |
+| 28 | cse-4-7 | Management Information Systems | todo |
+| 29 | cse-5-1 | Artificial Intelligence | todo |
+| 30 | cse-5-2 | Computer Graphics | todo |
+| 31 | cse-5-3 | Web Engineering | todo |
+| 32 | cse-5-4 | Mobile Application Development | todo |
+| 33 | cse-5-5 | Human Computer Interaction | todo |
+| 34 | cse-5-6 | Embedded Systems | todo |
+| 35 | cse-5-7 | Digital Signal Processing | todo |
+| 36 | cse-5-8 | Software Testing & Quality Assurance | todo |
+| 37 | cse-5-9 | Multimedia Systems | todo |
+| 38 | cse-5-10 | Game Development | todo |
+
+## 4th Year
+
+| # | Id | Course | Status |
+|---|---|---|---|
+| 39 | cse-6-1 | Machine Learning | todo |
+| 40 | cse-6-2 | Computer Security & Cryptography | todo |
+| 41 | cse-6-3 | Distributed Systems | todo |
+| 42 | cse-6-4 | Digital Image Processing | todo |
+| 43 | cse-6-5 | Simulation & Modeling | todo |
+| 44 | cse-6-6 | Professional Ethics & Cyber Law | todo |
+| 45 | cse-6-8 | Technical Writing | todo |
+| 46 | cse-6-9 | VLSI Design | todo |
+| 47 | cse-6-10 | Operations Research | todo |
+| 48 | cse-6-11 | Software Project Management | todo |
+| 49 | cse-6-12 | Pattern Recognition | todo |
+| 50 | cse-6-13 | System Design | todo |
+| 51 | cse-6-7 | Final Year Project / Thesis | todo |
+
+## MSc
+
+| # | Id | Course | Status |
+|---|---|---|---|
+| 52 | cse-7-1 | Advanced Algorithms | todo |
+| 53 | cse-7-2 | Advanced Database Systems & Big Data | todo |
+| 54 | cse-7-3 | Cloud Computing | todo |
+| 55 | cse-7-4 | Advanced Computer Networks & Wireless Networks | todo |
+| 56 | cse-7-5 | Parallel & High Performance Computing | todo |
+| 57 | cse-7-6 | Data Mining | todo |
+| 58 | cse-7-7 | Research Methodology | todo |
+| 59 | cse-7-8 | Neural Networks & Fuzzy Systems | todo |
+| 60 | cse-7-9 | Information Retrieval | todo |
+| 61 | cse-7-10 | Fault Tolerant Systems | todo |
+| 62 | cse-8-1 | Deep Learning | todo |
+| 63 | cse-8-2 | Natural Language Processing | todo |
+| 64 | cse-8-3 | Computer Vision | todo |
+| 65 | cse-8-4 | Reinforcement Learning | todo |
+| 66 | cse-8-5 | Robotics | todo |
+| 67 | cse-9-1 | Internet of Things (IoT) | todo |
+| 68 | cse-9-2 | Blockchain | todo |
+| 69 | cse-9-3 | Quantum Computing | todo |
+| 70 | cse-9-4 | Bioinformatics | todo |
+| 71 | cse-9-5 | Advanced Cyber Security | todo |
+| 72 | cse-9-7 | Wireless Sensor Networks | todo |
+| 73 | cse-9-6 | MSc Thesis | todo |

@@ -1,5 +1,5 @@
 {
-  "content_version": 7,
+  "content_version": 9,
   "categories": [
     "programming",
     "career",
@@ -11,6 +11,7 @@
     "leadership",
     "study",
     "creativity",
-    "cse"
+    "cse",
+    "cse-y1"
   ]
 }
