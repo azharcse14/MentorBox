@@ -498,4 +498,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get notifLastCallBody =>
       'These reminders don\'t seem to be working, so we\'ll stop for now. Come back any time!';
+
+  @override
+  String get layoutGrid => 'Grid';
+
+  @override
+  String get layoutCarousel => 'Carousel';
+
+  @override
+  String get layoutList => 'List';
 }

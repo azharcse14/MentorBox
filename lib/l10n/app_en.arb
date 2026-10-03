@@ -343,5 +343,8 @@
     }
   },
   "notifLastCallTitle": "We'll pause your reminders",
-  "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!"
+  "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!",
+  "layoutGrid": "Grid",
+  "layoutCarousel": "Carousel",
+  "layoutList": "List"
 }

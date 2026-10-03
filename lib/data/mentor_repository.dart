@@ -74,6 +74,17 @@ class MentorRepository {
 
   Future<void> setReminderTime(int hour, int minute) => _setMeta(_reminderTimeKey, '$hour:$minute');
 
+  static const String _homeLayoutKey = 'home_layout';
+
+  /// How mentors are shown on home: 'grid', 'carousel' or 'list'.
+  Future<String> getHomeLayout() async {
+    final db = await _db;
+    final rows = await db.query('meta', where: 'key = ?', whereArgs: [_homeLayoutKey]);
+    return rows.isEmpty ? 'grid' : rows.first['value'] as String;
+  }
+
+  Future<void> setHomeLayout(String layout) => _setMeta(_homeLayoutKey, layout);
+
   /// Stores [value] under [key], or removes the key when [value] is null.
   Future<void> _setMeta(String key, String? value) async {
     final db = await _db;

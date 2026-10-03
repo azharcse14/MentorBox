@@ -787,6 +787,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'These reminders don\'t seem to be working, so we\'ll stop for now. Come back any time!'**
   String get notifLastCallBody;
+
+  /// No description provided for @layoutGrid.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid'**
+  String get layoutGrid;
+
+  /// No description provided for @layoutCarousel.
+  ///
+  /// In en, this message translates to:
+  /// **'Carousel'**
+  String get layoutCarousel;
+
+  /// No description provided for @layoutList.
+  ///
+  /// In en, this message translates to:
+  /// **'List'**
+  String get layoutList;
 }
 
 class _AppLocalizationsDelegate

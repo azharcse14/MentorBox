@@ -114,5 +114,8 @@
   "notifComebackTitle": "তোমার মেন্টররা তোমাকে মিস করছে",
   "notifComebackBody": "{mentor} তোমার জায়গা রেখে দিয়েছে: \"{lesson}\"",
   "notifLastCallTitle": "রিমাইন্ডার আপাতত বন্ধ রাখছি",
-  "notifLastCallBody": "মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!"
+  "notifLastCallBody": "মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!",
+  "layoutGrid": "গ্রিড",
+  "layoutCarousel": "ক্যারোসেল",
+  "layoutList": "লিস্ট"
 }

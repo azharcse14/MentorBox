@@ -22,6 +22,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final _repo = MentorRepository.instance;
+  final _pageController = PageController(viewportFraction: 0.86);
 
   bool _loading = true;
   String? _error;
@@ -31,6 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
   List<CategoryOverview> _overviews = [];
   int _streak = 0;
   bool _reminderOn = false;
+  String _layout = 'grid';
+  int _page = 0;
   TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
@@ -39,12 +42,19 @@ class _HomeScreenState extends State<HomeScreen> {
     _load();
   }
 
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
   Future<void> _load() async {
     try {
       final name = await _repo.getUserName();
       final overviews = await _repo.getAllOverviews();
       final days = await _repo.getActivityDays();
       final reminderOn = await _repo.getReminderOn();
+      final layout = await _repo.getHomeLayout();
       final (hour, minute) = await _repo.getReminderTime();
       if (!mounted) return;
       setState(() {
@@ -53,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
         _overviews = overviews;
         _streak = MentorEngine.streak(days);
         _reminderOn = reminderOn;
+        _layout = layout;
         _reminderTime = TimeOfDay(hour: hour, minute: minute);
         _loading = false;
         _error = null;
@@ -70,6 +81,11 @@ class _HomeScreenState extends State<HomeScreen> {
         _error = '$e';
       });
     }
+  }
+
+  void _setLayout(String layout) {
+    setState(() => _layout = layout);
+    _repo.setHomeLayout(layout);
   }
 
   void _retry() {
@@ -329,28 +345,112 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const SizedBox(height: 16),
-          GridView.builder(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: _overviews.length,
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 14,
-              crossAxisSpacing: 14,
-              childAspectRatio: 0.72,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                for (final (layout, icon, tooltip) in [
+                  ('grid', Icons.grid_view, l.layoutGrid),
+                  ('carousel', Icons.view_carousel_outlined, l.layoutCarousel),
+                  ('list', Icons.view_list, l.layoutList),
+                ])
+                  IconButton(
+                    icon: Icon(icon),
+                    tooltip: tooltip,
+                    isSelected: _layout == layout,
+                    color: AppTheme.kSubheadingColor,
+                    selectedIcon: Icon(icon, color: AppTheme.kPrimaryColor),
+                    onPressed: () => _setLayout(layout),
+                  ),
+              ],
             ),
-            itemBuilder: (context, index) {
-              final overview = _overviews[index];
-              return MentorCard(
-                overview: overview,
-                onTap: () => _push(MentorPage(categoryId: overview.category.id)),
-              );
-            },
           ),
+          _buildMentors(),
         ],
       ),
+    );
+  }
+
+  Widget _buildMentors() {
+    void open(CategoryOverview o) => _push(MentorPage(categoryId: o.category.id));
+    switch (_layout) {
+      case 'carousel':
+        return Column(
+          children: [
+            SizedBox(
+              height: 400,
+              child: PageView.builder(
+                controller: _pageController,
+                itemCount: _overviews.length,
+                onPageChanged: (index) => setState(() => _page = index),
+                itemBuilder: (context, index) => MentorCard(
+                  overview: _overviews[index],
+                  large: true,
+                  onTap: () => open(_overviews[index]),
+                ),
+              ),
+            ),
+            const SizedBox(height: 14),
+            _PageDots(count: _overviews.length, index: _page),
+          ],
+        );
+      case 'list':
+        return ListView.separated(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: _overviews.length,
+          separatorBuilder: (_, __) => const SizedBox(height: 12),
+          itemBuilder: (context, index) => MentorListTile(
+            overview: _overviews[index],
+            onTap: () => open(_overviews[index]),
+          ),
+        );
+      default:
+        return GridView.builder(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: _overviews.length,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 14,
+            crossAxisSpacing: 14,
+            childAspectRatio: 0.72,
+          ),
+          itemBuilder: (context, index) => MentorCard(
+            overview: _overviews[index],
+            onTap: () => open(_overviews[index]),
+          ),
+        );
+    }
+  }
+}
+
+class _PageDots extends StatelessWidget {
+  final int count;
+  final int index;
+
+  const _PageDots({required this.count, required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < count; i++)
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 250),
+            margin: const EdgeInsets.symmetric(horizontal: 3),
+            width: i == index ? 22 : 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: i == index ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor.withAlpha(0x55),
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
+      ],
     );
   }
 }

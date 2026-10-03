@@ -495,4 +495,13 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get notifLastCallBody =>
       'মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!';
+
+  @override
+  String get layoutGrid => 'গ্রিড';
+
+  @override
+  String get layoutCarousel => 'ক্যারোসেল';
+
+  @override
+  String get layoutList => 'লিস্ট';
 }
