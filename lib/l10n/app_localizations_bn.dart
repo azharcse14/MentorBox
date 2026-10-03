@@ -50,7 +50,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get exploreLabel => 'ঘুরে দেখো :';
 
   @override
-  String get exploreTagline => 'একজন মেন্টর বেছে নাও,\nরোজ একটু করে শেখো';
+  String get exploreTagline => 'একজন মেন্টর বেছে নাও, রোজ একটু করে শেখো';
 
   @override
   String get heroBefore => 'প্রতিটি দক্ষতার জন্য\nতোমার নিজের ';

@@ -50,7 +50,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exploreLabel => 'Explore :';
 
   @override
-  String get exploreTagline => 'Pick a mentor,\ngrow one skill a day';
+  String get exploreTagline => 'Pick a mentor, grow one skill a day';
 
   @override
   String get heroBefore => 'Your Personal\n';

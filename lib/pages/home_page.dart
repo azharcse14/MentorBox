@@ -328,28 +328,25 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.only(left: 24, right: 12),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Text(
-                  l.exploreLabel,
-                  style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l.exploreLabel,
+                        style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        l.exploreTagline,
+                        style: AppTheme.body(13, color: AppTheme.kSubheadingColor, height: 1.35),
+                      ),
+                    ],
+                  ),
                 ),
-                Text(
-                  l.exploreTagline,
-                  textAlign: TextAlign.right,
-                  style: AppTheme.body(14, weight: FontWeight.w600, height: 1.35),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
                 for (final (layout, icon, tooltip) in [
                   ('grid', Icons.grid_view, l.layoutGrid),
                   ('carousel', Icons.view_carousel_outlined, l.layoutCarousel),
@@ -359,6 +356,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icon(icon),
                     tooltip: tooltip,
                     isSelected: _layout == layout,
+                    visualDensity: VisualDensity.compact,
                     color: AppTheme.kSubheadingColor,
                     selectedIcon: Icon(icon, color: AppTheme.kPrimaryColor),
                     onPressed: () => _setLayout(layout),
@@ -366,6 +364,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 12),
           _buildMentors(),
         ],
       ),

@@ -13,7 +13,7 @@
   "defaultName": "শিক্ষার্থী",
   "loadError": "লেসনগুলো লোড করা যায়নি। assets/content/-এর ফাইলগুলো ঠিকঠাক JSON কিনা আর pubspec.yaml-এ আছে কিনা দেখো।\n\n{error}",
   "exploreLabel": "ঘুরে দেখো :",
-  "exploreTagline": "একজন মেন্টর বেছে নাও,\nরোজ একটু করে শেখো",
+  "exploreTagline": "একজন মেন্টর বেছে নাও, রোজ একটু করে শেখো",
   "heroBefore": "প্রতিটি দক্ষতার জন্য\nতোমার নিজের ",
   "heroHighlight": "মেন্টর",
   "heroAfter": "",

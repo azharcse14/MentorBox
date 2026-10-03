@@ -179,7 +179,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreTagline.
   ///
   /// In en, this message translates to:
-  /// **'Pick a mentor,\ngrow one skill a day'**
+  /// **'Pick a mentor, grow one skill a day'**
   String get exploreTagline;
 
   /// No description provided for @heroBefore.
