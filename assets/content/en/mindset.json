@@ -1,0 +1,1028 @@
+{
+  "id": "mindset",
+  "name": "Mindset & Wellbeing",
+  "mentor": "Mind Mentor",
+  "tagline": "Grow from setbacks and keep your energy steady.",
+  "description": "Lessons on growth mindset, learning from failure, handling stress and protecting your sleep. This is general wellbeing education, not medical advice.",
+  "image": "assets/images/mindset.jpg",
+  "color": "#A07093",
+  "messages": {
+    "welcome": "This is a calm space. We will work on how you think about challenges and how you look after your energy.",
+    "comeback": "Welcome back. Be kind to yourself about the break, and let's do one small lesson.",
+    "pass": "Well done. Notice how it feels to understand this.",
+    "fail": "That's alright. Struggling is part of learning, which is exactly what this mentor teaches. Try again.",
+    "finished": "You have built a growth mindset, steadier energy habits, kinder self-talk, sharper control over your thoughts and a plan for hard days. Come back to these lessons whenever life feels heavy."
+  },
+  "levels": [
+    {
+      "id": "mind-1",
+      "title": "Growth mindset",
+      "lessons": [
+        {
+          "id": "mind-1-1",
+          "title": "Fixed vs growth mindset",
+          "minutes": 6,
+          "content": "A mindset is the way you think about your own brain. Some people think the brain is like a stone: whatever shape it has now, it stays that shape forever. That is a fixed mindset. Other people think the brain is like a muscle: the more you use it the right way, the stronger it gets. That is a growth mindset. The psychologist Carol Dweck studied this for many years and found that which one you believe changes how you act.\n\nWhy does it matter? With a fixed mindset, every hard question feels like a test of whether you are smart or dumb. So you avoid hard things, you give up fast, and you hide mistakes. With a growth mindset, a hard question is just practice. You try longer, you ask for help, and you actually get better, because brains do grow when they work on things that are a bit too hard.\n\nHere's the trick to switch. First, catch your fixed sentences. They sound like \"I'm bad at maths\", \"I'm not a drawing person\" or \"I'll never get this\". Second, add one small word at the end: yet. \"I can't solve this yet.\" That one word turns a final verdict into a stage you are passing through.\n\nThird, add a plan. Growth mindset is not just trying harder for longer. If something is not working after 20 minutes, change the method. Watch a different explanation, try an easier example first, or ask someone to show you one step. So the full sentence becomes: \"I can't solve fractions yet, so I'll do three easy ones first and then ask Apu about the hard one.\"\n\nMeet Rafi from Class 6. He got 9 out of 25 in a maths class test and told his friends, \"I'm just not a maths person.\" He stopped doing homework because, in his head, what was the point? His cousin told him about the word yet. Rafi wrote on his notebook cover: \"I don't understand fractions yet.\" Every evening he did five fraction sums, and when he got stuck he marked it and asked his teacher the next day. Six weeks later he got 18 out of 25. He was not a new person. He just stopped believing the stone story.\n\nThe common mistake is thinking growth mindset means saying nice things to yourself while doing nothing different. Saying \"I can do it!\" and then studying the same way that already failed will not help. Effort plus a better method plus asking for help is what grows you.\n\nRemember: your brain is a muscle, not a stone. Add yet, then add a plan.",
+          "key_points": [
+            "Fixed mindset says ability is set forever. Growth mindset says ability can be built.",
+            "Adding the word \"yet\" turns \"I can't\" into a stage of learning.",
+            "If a method fails after a fair try, change the method, not just the hours.",
+            "Growth comes from effort, better strategies and help from others together."
+          ],
+          "tip": "Write \"...yet\" on a sticky note and put it on your study table, so every \"I can't\" you think has an ending waiting for it.",
+          "task": "Write down one subject or skill you have said \"I'm bad at\". Rewrite it as \"I can't ___ yet, so I will ___\" with one concrete new method you'll try tomorrow.",
+          "quiz": [
+            {
+              "q": "Which sentence shows a growth mindset?",
+              "options": [
+                "I'm just not a maths person",
+                "I can't do fractions yet, so I'll practise easy ones first",
+                "Smart people never need help",
+                "If it's hard, I'm probably dumb"
+              ],
+              "answer": 1,
+              "explain": "It adds \"yet\" and a concrete plan, which is the full growth mindset move."
+            },
+            {
+              "q": "What changed for Rafi?",
+              "options": [
+                "He got a new teacher",
+                "He started studying 6 hours a day",
+                "He believed he could improve and did five sums daily, asking about stuck ones",
+                "He copied answers from friends"
+              ],
+              "answer": 2,
+              "explain": "He switched his belief and added a small daily method plus asking for help."
+            },
+            {
+              "q": "What is the common mistake about growth mindset?",
+              "options": [
+                "Asking teachers too many questions",
+                "Changing your study method too often",
+                "Using the word yet",
+                "Saying positive words but studying the same way that already failed"
+              ],
+              "answer": 3,
+              "explain": "Positive words alone do nothing. You need effort plus a better method."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-2",
+          "title": "Learning from failure",
+          "minutes": 6,
+          "content": "Failing means you tried something and it did not work out the way you wanted. Think of a cricket batter who gets out. A bad batter just walks off angry. A good batter walks off and thinks, \"That ball was outside off stump and I chased it.\" Next match, he leaves that ball. Failure is not the opposite of learning. If you look at it properly, it is the lesson itself.\n\nWhy does this matter? If you treat failure as proof that you are useless, you feel terrible and repeat the same mistake, because you never looked at what went wrong. If you treat it as information, every failure makes the next try a bit better. People who get really good at anything have usually failed more times than others, because they tried more.\n\nHere's a simple method called the 3-question review. After something goes wrong, wait until you are calm, maybe an hour or the next day. Then ask: One, what exactly happened? Write the facts, not feelings. \"I finished only 4 out of 6 questions\" is a fact. \"I'm hopeless\" is a feeling. Two, what was in my control? Maybe you started revising two days before instead of a week before. Three, what will I do differently next time? Pick one change, not ten.\n\nKeep the change small and specific. \"Study harder\" is not a change. \"Start revising 7 days before, 30 minutes a day\" is a change. Write it down where you'll see it before the next attempt. Also separate what you did from who you are: \"My plan failed\" is useful. \"I am a failure\" is not true and not useful.\n\nNusrat entered her school's debate competition and froze halfway. She forgot her points and sat down early. She cried that evening and said she would never do debate again. Two days later, her mother sat with her and they did the three questions. What happened? She lost her place when she looked at the audience. What was in her control? She had written her whole speech word by word and tried to memorise it. What would she change? Write only five key words on a card and practise speaking in front of family three times. At the next competition she finished her full speech and reached the second round.\n\nThe common mistake is doing the review while you are still upset. When you are angry or crying, your brain only says \"I'm bad.\" Wait until you are calm, then look at the facts. The other mistake is blaming only others, like \"the judge was unfair\". Sometimes that's true, but always look for the part you can change.\n\nRemember: after a failure, ask what happened, what you controlled, and what one thing you'll change.",
+          "key_points": [
+            "Failure is information about what to change, not proof that you are useless.",
+            "Use 3 questions: what happened, what was in my control, what will I do differently.",
+            "Pick one small, specific change, like \"start revising 7 days before\".",
+            "Do the review when you are calm, and separate what you did from who you are."
+          ],
+          "tip": "Keep a \"lessons\" page at the back of your notebook. Every time something goes wrong, write one line: what happened and the one change you'll make.",
+          "task": "Think of one thing that went badly in the last month, like a test, a game or an argument. Answer the 3 questions on paper and circle the one change you'll try next time.",
+          "quiz": [
+            {
+              "q": "Which is the first question in the 3-question review?",
+              "options": [
+                "Whose fault was it?",
+                "What exactly happened?",
+                "How bad do I feel?",
+                "Should I quit?"
+              ],
+              "answer": 1,
+              "explain": "You start with the facts of what happened."
+            },
+            {
+              "q": "What change did Nusrat make?",
+              "options": [
+                "She stopped doing debate",
+                "She memorised her speech word by word",
+                "She asked the judges to be kinder",
+                "She used five key words on a card and practised in front of family"
+              ],
+              "answer": 3,
+              "explain": "Key words plus practice fixed the exact problem of losing her place."
+            },
+            {
+              "q": "Why should you wait until you're calm to do the review?",
+              "options": [
+                "Because upset brains mostly say 'I'm bad' instead of seeing facts",
+                "Because teachers want you to wait",
+                "Because failures fix themselves",
+                "Because you'll forget the failure"
+              ],
+              "answer": 0,
+              "explain": "When you are upset, feelings drown out the useful facts."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-3",
+          "title": "Using feedback to grow",
+          "minutes": 6,
+          "content": "Feedback is when someone tells you how your work looks from the outside. Imagine you cooked rice and your mother tastes it and says, \"A bit too much salt.\" That is feedback. You can't taste your own mistakes as easily as someone else can, just like you can't see the back of your own head without a second mirror. Feedback is that second mirror.\n\nWhy does it matter? Without feedback, you can practise the same mistake for months and think you are improving. With feedback, you find the problem in one minute. The hard part is that feedback can sting, so many people get defensive, argue or stop listening. Then they lose the most useful information they could have got for free.\n\nHere's how to take feedback well. Step one: listen to the end without arguing. Just say \"okay\" and let them finish. Step two: ask one question to make it clear, like \"Which part was confusing?\" or \"Can you show me one example?\" Vague feedback like \"it's not good\" becomes useful when you ask what exactly. Step three: say thank you, even if it hurt. It keeps people willing to help you next time.\n\nStep four: sort it later, when you are calm. Not all feedback is right. Ask yourself: Does this match what others have said? Does it make sense if I try it? If two or three people say the same thing, it's almost surely true. Step five: pick one point and use it on your very next piece of work. Feedback you don't use is just noise.\n\nTania loved drawing and posted her art on the school's Facebook group. Her art teacher commented, \"Your faces look flat.\" Tania felt hurt and almost deleted the post. Instead, she messaged the teacher: \"Thank you, Ma'am. What can I do to make them less flat?\" The teacher said to add shadows under the chin and nose. Tania tried it in her next three drawings. A cousin who never knew about the comment said, \"Your faces look so real now!\" One honest comment and one question saved her months of guessing.\n\nThe common mistake is explaining or defending right away: \"But I did it like that because...\" The moment you start defending, you stop hearing. Explanations can come later if needed. The other mistake is taking every comment as an attack on you as a person. Feedback is about the work, not your worth.\n\nRemember: listen, ask one question, say thanks, then use one point next time.",
+          "key_points": [
+            "Feedback shows mistakes you can't see yourself, like a second mirror.",
+            "Listen to the end without arguing, and ask one clarifying question.",
+            "If several people say the same thing, it is very likely true.",
+            "Use at least one point in your very next piece of work."
+          ],
+          "tip": "When someone gives you feedback, ask \"What's the one thing I should fix first?\" It turns a long list of problems into one clear next step.",
+          "task": "Show something you made today, like homework, a drawing or a short writing, to one person. Ask \"What's one thing I could make better?\" and write their answer down without defending.",
+          "quiz": [
+            {
+              "q": "What should you do first when someone gives you feedback?",
+              "options": [
+                "Explain why you did it that way",
+                "Listen to the end without arguing",
+                "Ask someone else instead",
+                "Change the topic"
+              ],
+              "answer": 1,
+              "explain": "Listening fully comes first. Defending stops you hearing."
+            },
+            {
+              "q": "What did Tania do after the 'flat faces' comment?",
+              "options": [
+                "Deleted the post",
+                "Argued in the comments",
+                "Thanked the teacher and asked how to improve, then tried shadows",
+                "Stopped drawing faces"
+              ],
+              "answer": 2,
+              "explain": "She thanked, asked one question, and used the advice in her next drawings."
+            },
+            {
+              "q": "How can you tell feedback is very likely true?",
+              "options": [
+                "The person said it loudly",
+                "It made you feel bad",
+                "It came from a stranger online",
+                "Two or three different people say the same thing"
+              ],
+              "answer": 3,
+              "explain": "When several people notice the same thing, it's probably real."
+            }
+          ]
+        },
+        {
+          "id": "mind-1-4",
+          "title": "Practice that actually makes you better",
+          "minutes": 6,
+          "content": "Not all practice is equal. Imagine two boys at cricket nets. One bowls 100 balls while chatting with friends, not really watching where they land. The other bowls 30 balls, aiming every single one at a water bottle placed on a good length, and checks after each ball how far he missed. After a month, the second boy is far better. That focused kind is called deliberate practice.\n\nWhy does it matter? Lots of people spend hours \"studying\" and barely improve, then decide they are not talented. Usually the problem is not talent. It is that they repeat what they already know, like re-reading notes, because it feels comfortable. Real improvement happens at the edge of what you can do, where it feels a little hard.\n\nHere's how deliberate practice works. One, pick one small skill, not a whole subject. Not \"get better at English\" but \"use past tense correctly\". Two, work on it in short, focused blocks, around 20 to 30 minutes, with the phone in another room. Three, get quick feedback: check answers right away, use an answer key, or ask someone. Four, spend most of your time on what you get wrong, not on what you already get right.\n\nOne more trick that really works: test yourself instead of re-reading. Close the book and write down everything you remember, or do questions without looking. It feels harder than reading, and that's exactly why it sticks. Also spread practice out. Three sessions of 20 minutes across three days beat one session of 60 minutes the night before.\n\nSabbir had a Bangla spelling test every week and usually got around 12 out of 20. His method was reading the word list again and again for an hour. His tuition teacher suggested a change. Sabbir covered the list, wrote each word from memory, checked it, and copied only the wrong ones three times. Then he did this again the next day, just 15 minutes each time. He spent less total time than before, but after three weeks he was getting 18 out of 20.\n\nThe common mistake is measuring practice by hours instead of by focus and feedback. Two hours with the phone buzzing and no checking is worth less than 20 sharp minutes. The other mistake is only practising what you're already good at because it feels nice. Feeling a bit stuck is the sign you're in the right zone.\n\nRemember: one small skill, short focused blocks, quick feedback, and more time on your mistakes.",
+          "key_points": [
+            "Deliberate practice means focused work on one small skill at the edge of your ability.",
+            "Get quick feedback and spend most time on what you get wrong.",
+            "Testing yourself beats re-reading, and spread-out sessions beat cramming.",
+            "Measure practice by focus and feedback, not by hours."
+          ],
+          "tip": "Before you start practising, finish the sentence \"Today I'm working on ___\" with one tiny skill. If you can't name it, you're about to do comfortable practice.",
+          "task": "Pick one topic from today's school work. Close the book and write everything you remember for 5 minutes, then check it and copy out only the parts you got wrong or missed.",
+          "quiz": [
+            {
+              "q": "What made the second cricket boy improve more?",
+              "options": [
+                "He bowled more balls",
+                "He aimed every ball at a target and checked how far he missed",
+                "He had better shoes",
+                "He chatted with friends to stay relaxed"
+              ],
+              "answer": 1,
+              "explain": "Focus on a target plus feedback after each ball is deliberate practice."
+            },
+            {
+              "q": "Which method helps you remember better than re-reading?",
+              "options": [
+                "Highlighting more lines",
+                "Reading faster",
+                "Testing yourself by writing from memory, then checking",
+                "Reading the same page for an hour"
+              ],
+              "answer": 2,
+              "explain": "Pulling information out of memory makes it stick."
+            },
+            {
+              "q": "How did Sabbir change his spelling practice?",
+              "options": [
+                "He read the list for two hours",
+                "He stopped practising",
+                "He only practised words he already knew",
+                "He wrote words from memory, checked, and repeated only wrong ones over several days"
+              ],
+              "answer": 3,
+              "explain": "Self-testing, focusing on mistakes, and spreading it out did the trick."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-2",
+      "title": "Stay balanced",
+      "lessons": [
+        {
+          "id": "mind-2-1",
+          "title": "Managing everyday stress",
+          "minutes": 6,
+          "content": "Stress is your body's alarm system. When something feels like a threat, like an exam tomorrow or a fight with a friend, your body speeds up: your heart beats faster, your breathing gets quick, your muscles tighten. Think of it like a pressure cooker. A little pressure cooks the food. Too much for too long, with no release, and the whistle screams.\n\nWhy does it matter? A little stress is useful. It makes you focus before an exam or run faster in a race. But when stress stays on all day, every day, without a break, it drains you. You sleep badly, you can't concentrate, you snap at people and you get headaches or stomach aches. The goal is not zero stress. The goal is pressure, then release, then pressure again.\n\nHere's a quick release tool you can use anywhere: box breathing. Breathe in through your nose while counting to 4. Hold for 4. Breathe out slowly for 4. Hold for 4. Do this 4 rounds, which takes about one minute. Slow breathing sends a message to your body that you are safe, so your heart and muscles start to calm down. You can do it in the exam hall and nobody will notice.\n\nThe second tool is the control sort. Take a page and draw a line down the middle. On the left, write worries you can do something about. On the right, write worries you can't control. For each worry on the left, write one tiny step you can take today. For the right side, the move is to let it go, or talk about it with someone you trust. Worrying harder about the right side changes nothing.\n\nTania had a science exam on Sunday and an argument with her best friend on Friday. By Saturday night her chest felt tight and she couldn't study. She did four rounds of box breathing first, and felt a bit looser. Then she did the control sort. Left side: \"I haven't revised chapter 5\" with the step \"read chapter 5 summary and do 10 questions\", and \"fight with Mitu\" with the step \"send her a sorry message\". Right side: \"What if the questions are very hard?\" She did the two steps, and Mitu replied with a heart. She slept by eleven and felt ready on Sunday.\n\nThe common mistake is trying to push through stress by studying or scrolling non-stop, with no break at all. Without release, stress builds up. Even 5 minutes of breathing, walking or drinking water away from your desk helps you work better afterwards. And if stress or sadness feels heavy for weeks, talk to a parent, teacher, counselor or doctor. That is a smart move, not a weak one.\n\nRemember: breathe in a box, sort what you can control, and take one small step.",
+          "key_points": [
+            "Stress is your body's alarm. A little helps, but nonstop stress drains you.",
+            "Box breathing: in 4, hold 4, out 4, hold 4, for about four rounds.",
+            "Sort worries into what you can control and what you can't, then act on the first list.",
+            "If heavy stress lasts for weeks, talk to a trusted adult, counselor or doctor."
+          ],
+          "tip": "Practise box breathing once a day when you are calm, like before sleeping. Then it will come easily when you are actually stressed.",
+          "task": "Draw a line down a page. Write every worry in your head right now on the left (can control) or right (can't control). Next to one left-side worry, write a step you can do in 10 minutes, and do it.",
+          "quiz": [
+            {
+              "q": "What are the four counts in box breathing?",
+              "options": [
+                "Breathe in 2, out 8",
+                "Hold your breath as long as possible",
+                "In 4, hold 4, out 4, hold 4",
+                "Breathe fast for one minute"
+              ],
+              "answer": 2,
+              "explain": "Four equal sides, like a box, done slowly."
+            },
+            {
+              "q": "In the control sort, what do you do with worries you CAN control?",
+              "options": [
+                "Write one tiny step and do it",
+                "Worry about them more",
+                "Ignore them",
+                "Put them on the right side"
+              ],
+              "answer": 0,
+              "explain": "For controllable worries, a small action reduces the stress."
+            },
+            {
+              "q": "What did Tania do first when her chest felt tight?",
+              "options": [
+                "Studied all night",
+                "Scrolled Facebook",
+                "Called her friend",
+                "Did four rounds of box breathing"
+              ],
+              "answer": 3,
+              "explain": "She calmed her body first, then sorted her worries."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-2",
+          "title": "Sleep and energy",
+          "minutes": 6,
+          "content": "Sleep is when your body and brain charge up, like a phone on a charger overnight. While you sleep, your brain also sorts and saves what you learned that day, like moving files from a messy desktop into proper folders. If you unplug the phone at 30 percent every night, it dies in the middle of the next day. Your body works the same way.\n\nWhy does it matter? Kids aged 6 to 12 need roughly 9 to 12 hours of sleep, and teens need about 8 to 10. With too little, you forget what you studied, you get cranky, you get sick more easily and your reaction is slower in sports. With enough, the same study time sticks better and your mood is steadier. Sleep is not lost study time. It is when studying gets saved.\n\nHere's how to sleep better. First, fix a wake-up time and keep it every day, even on Friday, within about an hour. Your body clock likes a steady pattern. Count back from the wake-up time to set bedtime. If you wake at 6:30 and need 9 hours, lights off by 9:30. Second, get some daylight in the morning, like standing on the balcony or walking to school. It tells your body clock when the day starts.\n\nThird, build a wind-down for the last 30 to 60 minutes. Put the phone away, outside the bedroom if you can, because bright screens and exciting videos keep the brain alert. Do something calm instead: read a paper book, take a shower, talk with family. Fourth, avoid tea, coffee and energy drinks in the afternoon and evening, because caffeine can stay in your body for hours.\n\nSabbir used to watch YouTube in bed until 1 am and then struggle to wake at 6:30 for school. He dozed off in first period and his marks were sliding. He decided to try a two-week experiment. He left his phone charging in the drawing room at 10 pm, read a comic in bed, and turned the lights off by 10:30. The first three nights he lay awake a bit, but by the second week he was falling asleep quickly. He stopped yawning in class, and his maths teacher said he looked sharper.\n\nThe common mistake is sleeping very late on weekdays and trying to \"catch up\" by sleeping till noon on Friday. That big shift confuses your body clock, so Saturday night you can't sleep and Sunday morning feels terrible. A small lie-in is fine, but keep the wake-up time close to normal. If you have trouble sleeping for weeks even with good habits, talk to a parent or a doctor.\n\nRemember: same wake-up time, phone out an hour before bed, and enough hours for your age.",
+          "key_points": [
+            "Sleep charges your body and saves what you learned that day.",
+            "Kids 6 to 12 need about 9 to 12 hours, and teens about 8 to 10.",
+            "Keep a steady wake-up time and count back to set your bedtime.",
+            "Put screens away 30 to 60 minutes before bed and avoid caffeine later in the day."
+          ],
+          "tip": "Set an alarm for bedtime, not just for waking up. When it rings, that's the signal to put the phone on charge outside your room.",
+          "task": "Write your normal school wake-up time. Count back the hours you need and write your lights-off time. Tonight, set a phone alarm 45 minutes before it as your screens-away signal.",
+          "quiz": [
+            {
+              "q": "If you wake at 6:30 and need 9 hours of sleep, when should lights go off?",
+              "options": [
+                "9:30 pm",
+                "11:00 pm",
+                "10:30 pm",
+                "8:00 pm"
+              ],
+              "answer": 0,
+              "explain": "6:30 minus 9 hours is 9:30 the night before."
+            },
+            {
+              "q": "What did Sabbir change first?",
+              "options": [
+                "He drank tea at night to study",
+                "He slept till noon on Fridays",
+                "He bought a new alarm clock",
+                "He left his phone charging outside his room at 10 pm"
+              ],
+              "answer": 3,
+              "explain": "Moving the phone out removed the 1 am YouTube habit."
+            },
+            {
+              "q": "Why is sleeping till noon on Friday a problem?",
+              "options": [
+                "It burns too many calories",
+                "It shifts your body clock, making Saturday night and Sunday morning harder",
+                "It is not a problem at all",
+                "It makes you taller"
+              ],
+              "answer": 1,
+              "explain": "A big shift in wake-up time confuses your body clock."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-3",
+          "title": "Saying no and setting boundaries",
+          "minutes": 5,
+          "content": "A boundary is a line you draw to protect your time, your things or your feelings. Think of the boundary wall around a house. It doesn't mean you hate your neighbours. It just shows where your space starts, and there is a gate for people you want to let in. Saying no is how you keep the gate from being pushed open by everyone.\n\nWhy does it matter? If you say yes to everything, your time gets eaten by other people's plans. You end up doing a friend's homework instead of your own, lending things you never get back, or staying online at midnight because someone keeps messaging. Then you feel tired and secretly angry. With clear boundaries, people know what to expect, and you have energy left for what matters to you.\n\nHere's how to say no without being rude. Use a short, kind, clear sentence: \"No, I can't today.\" You don't need a long excuse, because long excuses invite arguments. If you want, add warmth: \"Thanks for asking me.\" Or offer something smaller that you are okay with: \"I can't do your whole project, but I can show you how I did the first part.\"\n\nTwo more tricks. First, buy time. If you feel pressured, say \"Let me think and tell you later.\" That stops you from saying yes just to escape the awkward moment. Second, stay a broken record. If the person pushes, repeat the same calm sentence again: \"I understand, but no, I can't.\" You don't need a new reason each time. And for anything unsafe, like someone asking you to share passwords, private photos or go somewhere without telling your parents, the answer is always no, and tell a trusted adult.\n\nNusrat's classmate Riya kept asking to copy her homework every morning. Nusrat said yes for weeks, but felt used and worried a teacher would catch them both. She practised one sentence in her head. Next morning she said, \"Riya, I can't give my copy anymore. But if you're stuck, I can explain the sums at tiffin.\" Riya sulked for a day. Then at tiffin she came with her notebook. Nusrat felt lighter, and Riya actually started understanding the maths.\n\nThe common mistake is thinking a no makes you a bad friend. Real friends can hear no and stay friends. The other mistake is waiting until you're really angry and then exploding. Say a calm no early, when the problem is still small.\n\nRemember: short, kind, clear. \"No, I can't\" is a full sentence.",
+          "key_points": [
+            "A boundary is a line that protects your time, things and feelings.",
+            "A good no is short, kind and clear, with no long excuse needed.",
+            "Buy time with \"Let me think\" and repeat the same calm no if pushed.",
+            "For anything unsafe, the answer is always no, and tell a trusted adult."
+          ],
+          "tip": "Pick one no-sentence that sounds like you, like \"Sorry, not this time\", and practise saying it out loud three times so it comes out easily when you need it.",
+          "task": "Think of one thing you keep saying yes to but don't want to. Write the exact short, kind sentence you'll use next time, and say it out loud twice in front of a mirror.",
+          "quiz": [
+            {
+              "q": "Which is the best way to say no, according to the lesson?",
+              "options": [
+                "Give a long list of excuses",
+                "Say yes and then avoid the person",
+                "Get angry so they stop asking",
+                "A short, kind, clear sentence like 'No, I can't today'"
+              ],
+              "answer": 3,
+              "explain": "Short and clear works best. Long excuses invite arguments."
+            },
+            {
+              "q": "What does 'buy time' mean?",
+              "options": [
+                "Saying 'Let me think and tell you later' instead of yes on the spot",
+                "Paying someone to leave you alone",
+                "Ignoring messages forever",
+                "Saying yes now and no later"
+              ],
+              "answer": 0,
+              "explain": "It stops you from saying yes just to escape an awkward moment."
+            },
+            {
+              "q": "What did Nusrat offer Riya instead of her homework copy?",
+              "options": [
+                "Money for tiffin",
+                "Her old notebooks",
+                "To explain the sums at tiffin",
+                "To tell the teacher"
+              ],
+              "answer": 2,
+              "explain": "She offered a smaller help she was happy to give."
+            }
+          ]
+        },
+        {
+          "id": "mind-2-4",
+          "title": "Move your body, lift your mood",
+          "minutes": 5,
+          "content": "Moving your body is like opening the windows of a stuffy room. When you sit still for hours, your body and mind feel heavy and stale. When you move, fresh air comes in: your heart pumps more blood to your brain, and your body releases chemicals that make you feel calmer and happier. You don't need a gym. Running, cycling, skipping rope, dancing, playing cricket or football all count.\n\nWhy does it matter? Kids who move regularly usually sleep better, focus better in class and feel less stressed. Without movement, you can feel restless, tired and grumpy even after a full night's sleep, and long hours sitting with a phone make it worse. Health experts like the World Health Organization suggest children and teens get about 60 minutes of active movement a day, the kind that makes you breathe faster.\n\nHere's how to fit it in without a big plan. One, break the 60 minutes into small pieces. Ten minutes of skipping in the morning, a 20-minute walk to tuition, and 30 minutes of football in the afternoon add up to 60. Two, use the talk test. If you can talk but not sing while moving, that's a good level of effort. If you can sing easily, push a little more.\n\nThree, use movement as a mood button. Feeling stuck while studying? Get up and do 20 jumping jacks or walk up and down the stairs twice. Feeling angry or sad? A brisk 10-minute walk often helps you think more clearly. Four, pick something you actually enjoy, because you'll keep doing what's fun. Start small and go slowly if you're new, and drink water.\n\nRafi spent his afternoons on his phone and his evenings feeling low and restless. He couldn't sit through homework for more than 15 minutes. His father suggested a deal: before opening the phone after school, Rafi had to play 30 minutes of cricket with the boys in the lane or cycle around the block. The first week he grumbled. By the third week he was looking forward to it, finishing homework faster, and falling asleep earlier. His mood in the evenings felt lighter.\n\nThe common mistake is thinking exercise only counts if it's long and hard, so you do nothing because you don't have an hour. Ten minutes still helps, and small bits add up. The other mistake is overdoing it on day one and getting so sore you quit. Build up slowly. If you have a health condition, check with a doctor about what's right for you.\n\nRemember: about 60 active minutes a day, in small pieces, doing something you enjoy.",
+          "key_points": [
+            "Movement sends more blood to your brain and helps you feel calmer and happier.",
+            "Children and teens should aim for about 60 minutes of active movement a day.",
+            "Small pieces add up, like 10 plus 20 plus 30 minutes.",
+            "Use the talk test: you can talk but not sing means good effort."
+          ],
+          "tip": "When you feel stuck on homework, set a 2-minute timer and do jumping jacks or climb the stairs, then sit back down. It resets your focus faster than scrolling.",
+          "task": "Right now, do 10 minutes of movement you like: skip, dance to two songs, walk fast around the house or roof. Then write one word for how you feel before and after.",
+          "quiz": [
+            {
+              "q": "How many minutes of active movement per day are recommended for children and teens?",
+              "options": [
+                "About 15",
+                "About 120",
+                "About 60",
+                "About 5"
+              ],
+              "answer": 2,
+              "explain": "The WHO suggests about 60 active minutes a day."
+            },
+            {
+              "q": "What is the 'talk test'?",
+              "options": [
+                "Talking to a coach before exercise",
+                "If you can talk but not sing while moving, the effort is good",
+                "Exercising in silence",
+                "Asking friends if you look fit"
+              ],
+              "answer": 1,
+              "explain": "It's a simple way to check you are working hard enough."
+            },
+            {
+              "q": "What was Rafi's deal with his father?",
+              "options": [
+                "30 minutes of cricket or cycling before using the phone after school",
+                "No phone for a whole month",
+                "Going to a gym every day",
+                "Running 5 km every morning"
+              ],
+              "answer": 0,
+              "explain": "Movement first, phone later, which lifted his mood and focus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-3",
+      "title": "Be kind to yourself",
+      "lessons": [
+        {
+          "id": "mind-3-1",
+          "title": "Self-compassion",
+          "minutes": 6,
+          "content": "Self-compassion means treating yourself the way you'd treat a good friend who is having a hard time. Imagine your best friend fails a test and comes to you crying. You would never say, \"You're so stupid, you'll never pass anything.\" You'd say, \"That's rough. You can fix this. Let's look at what went wrong.\" Self-compassion is saying that second thing to yourself.\n\nWhy does it matter? Many people think being hard on themselves makes them work harder. Research by psychologists like Kristin Neff suggests the opposite often happens. Harsh self-talk makes you feel ashamed, and shame makes you want to hide, give up or avoid trying again. Kind self-talk makes it safe to look at your mistake honestly and try again. Being kind to yourself is not being lazy. It is what helps you keep going.\n\nHere's a simple three-step method for hard moments. Step one, notice: say what's happening in plain words. \"I'm feeling really bad about my result.\" Step two, remember you're not alone: \"Lots of students have bad exams. This is a normal human thing.\" Step three, be kind: ask, \"What would I say to a friend right now?\" and then say that to yourself, maybe with a hand on your chest.\n\nA quick check you can use any time is the friend test. When you hear your inner voice say something, ask, \"Would I say this to my friend?\" If the answer is no, rewrite it. \"I'm useless\" becomes \"I messed up this one, and I can learn from it.\" Self-compassion still means taking responsibility. You can be kind and still say, \"I need to start studying earlier.\"\n\nTania dropped an easy catch in the final over of a school cricket match, and her team lost by four runs. On the way home she kept thinking, \"It's all my fault, I'm the worst player, I should quit.\" Her elder sister heard her and asked, \"If Mitu dropped that catch, what would you tell her?\" Tania said, \"That everyone drops catches, and she should practise more.\" Her sister said, \"Then tell yourself that.\" Tania wrote it down, and the next week she asked the coach for extra catching practice instead of quitting.\n\nThe common mistake is mixing up self-compassion with making excuses. Saying \"It wasn't my fault, the sun was in my eyes\" every time is not kindness. It just blocks learning. Self-compassion says, \"That hurt, it's normal, and here's what I'll do next.\"\n\nRemember: talk to yourself the way you'd talk to a friend you care about.",
+          "key_points": [
+            "Self-compassion is treating yourself like a good friend in a hard moment.",
+            "Harsh self-talk causes shame and hiding. Kind self-talk helps you try again.",
+            "Three steps: notice the feeling, remember you're not alone, say something kind.",
+            "Use the friend test: would I say this to my friend?"
+          ],
+          "tip": "When you catch a harsh thought, put your hand on your chest and say it again in the voice you'd use for your best friend. The physical gesture helps it feel real.",
+          "task": "Write down one harsh thing you said to yourself this week. Under it, write what you would say to a friend in the same situation. Read the second version out loud once.",
+          "quiz": [
+            {
+              "q": "What is the 'friend test'?",
+              "options": [
+                "Asking 'Would I say this to my friend?' about your inner voice",
+                "Asking friends to rate you",
+                "Testing who your real friends are",
+                "Only making friends who are kind"
+              ],
+              "answer": 0,
+              "explain": "If you'd never say it to a friend, rewrite it."
+            },
+            {
+              "q": "Why does harsh self-talk often backfire?",
+              "options": [
+                "It makes you too confident",
+                "It takes too much time",
+                "It causes shame, which makes you hide or give up",
+                "It makes you work too hard"
+              ],
+              "answer": 2,
+              "explain": "Shame pushes people away from trying again."
+            },
+            {
+              "q": "What did Tania do after her sister's question?",
+              "options": [
+                "Quit the cricket team",
+                "Blamed the sun",
+                "Stopped talking to Mitu",
+                "Asked the coach for extra catching practice"
+              ],
+              "answer": 3,
+              "explain": "Being kind helped her try again instead of quitting."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-2",
+          "title": "Building real confidence",
+          "minutes": 6,
+          "content": "Confidence is trusting that you can handle something. Real confidence doesn't come from someone telling you \"You're amazing!\" It comes from proof. Think of learning to ride a bicycle. At first you were scared. Then you rode ten metres without falling, then to the end of the lane, then to the shop. Each small success was proof, and the proof built your confidence. Confidence follows action, it doesn't come before it.\n\nWhy does it matter? Without confidence, you don't raise your hand in class, you don't try for the school team, you don't speak to new people, so you never get the practice that would build confidence. It's a loop. With confidence, you try more things, learn faster and recover from mistakes more easily. The good news is you can break into the loop from the action side.\n\nHere's the method, called the confidence ladder. Write the scary goal at the top, like \"give a speech in assembly\". Then write five or six smaller steps below it, from easiest to hardest. For example: read the speech aloud alone, read it to one family member, read it to three friends, say one answer out loud in class, give it to the whole class. Start at the bottom rung. Only move up when the current step feels a bit boring.\n\nKeep a proof list too. Every time you do something you were nervous about, write one line: date and what you did. \"Monday, asked the teacher a question in front of everyone.\" When your brain says \"you can't\", read the list. It's hard to argue with your own evidence. Also, act confident in small ways: stand straight, look at people, speak slowly. It won't make you confident on its own, but it helps you take the step.\n\nSabbir was too shy to answer questions in class, even when he knew the answer. He made a ladder. Week one, he answered one question each day in his small tuition group of four. Week two, he asked his class teacher one question after class. Week three, he raised his hand once in class. Each time, he wrote it on his proof list. By the end of the month he had 14 lines. When the teacher picked him for a quiz team, he was nervous but said yes, because his list told him he could do it.\n\nThe common mistake is waiting to feel confident before doing anything. That day never comes. You do the small scary thing first, and the confident feeling arrives later. The other mistake is jumping straight to the top step, failing, and deciding you're just a shy person. Use the ladder.\n\nRemember: confidence comes from proof, and proof comes from small brave steps.",
+          "key_points": [
+            "Real confidence comes from proof of what you've done, not from praise.",
+            "Build a confidence ladder: small steps from easy to scary, climbing one at a time.",
+            "Keep a proof list of every brave thing you do.",
+            "Don't wait to feel confident. Act first, and the feeling follows."
+          ],
+          "tip": "Keep your proof list in the notes app on your phone or at the back of a notebook, so you can read it in the two minutes before something scary.",
+          "task": "Write one goal that makes you nervous at the top of a page. Below it, write five smaller steps from easiest to hardest. Do the easiest one today if you can, or schedule it for tomorrow.",
+          "quiz": [
+            {
+              "q": "Where does real confidence come from, according to the lesson?",
+              "options": [
+                "Being told you're amazing",
+                "Being born with it",
+                "Waiting until you feel ready",
+                "Proof from small things you've actually done"
+              ],
+              "answer": 3,
+              "explain": "Each small success is evidence that builds confidence."
+            },
+            {
+              "q": "When should you move up to the next rung on your confidence ladder?",
+              "options": [
+                "When the current step feels a bit boring",
+                "Every day no matter what",
+                "Only after a month",
+                "When someone pushes you"
+              ],
+              "answer": 0,
+              "explain": "A bit boring means you've mastered it."
+            },
+            {
+              "q": "What was the first rung on Sabbir's ladder?",
+              "options": [
+                "Joining the quiz team",
+                "Raising his hand in class",
+                "Answering one question a day in his small tuition group",
+                "Giving a speech in assembly"
+              ],
+              "answer": 2,
+              "explain": "He started with the easiest step: a small group of four."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-3",
+          "title": "The gratitude habit",
+          "minutes": 5,
+          "content": "Gratitude means noticing the good things you already have and the people who help you. Your brain is a bit like a security guard: it's built to spot problems quickly, because noticing danger kept humans alive. That's useful, but it means good things slide past without being noticed. A gratitude habit is like training the guard to also report the good news.\n\nWhy does it matter? When you only notice problems, life feels heavier than it really is. Studies on gratitude have found that people who regularly write down things they're thankful for often report feeling a bit happier and more hopeful, and sometimes sleep better. It also improves relationships, because people who feel appreciated want to help you again.\n\nHere's how to do it so it actually works. Each night, write down three good things from your day. Make them specific, not general. Not \"my family\" every night, but \"Ammu made my favourite khichuri because it was raining.\" For each one, add a few words about why it happened or why it mattered. Specific details make your brain really relive the moment instead of just listing words.\n\nThe second part is saying it out loud to people. Once a week, thank someone directly for something specific. \"Thanks for explaining that sum to me yesterday, I got it right in the test.\" It takes ten seconds. Small things count a lot: the rickshaw puller who waited while you ran back for your bag, the friend who shared tiffin, the bus that came on time.\n\nNusrat felt like everything was going wrong. Her exam marks were average, her brother annoyed her, and it was raining every day. Her teacher suggested the three good things exercise for two weeks. On day one she struggled and wrote \"nothing\". By day four she was writing things like \"Rafsan lent me his umbrella\" and \"Abbu brought jilapi from the bazar.\" After two weeks she noticed she was looking for good moments during the day so she could write them down later. Her problems hadn't vanished, but she felt lighter and fought less with her brother.\n\nThe common mistake is writing the same three general things every night, like \"food, family, house\". After a few days it becomes copy-paste and stops working. Look for new, small, specific moments. The other mistake is using gratitude to ignore real problems. You can be grateful and still feel sad or ask for help.\n\nRemember: three specific good things each night, and one real thank-you each week.",
+          "key_points": [
+            "Your brain spots problems quickly but often misses good things.",
+            "Write three specific good things each night and why they happened.",
+            "Specific details work better than general lists like \"my family\".",
+            "Thank one person directly each week for something specific."
+          ],
+          "tip": "Keep a small notebook and pen on your pillow. Writing three lines takes two minutes, and seeing it there reminds you before you sleep.",
+          "task": "Write three good things that happened today with one specific detail each. Then send one thank-you message to someone who helped you this week, naming exactly what they did.",
+          "quiz": [
+            {
+              "q": "Which gratitude entry is best, according to the lesson?",
+              "options": [
+                "My family",
+                "Good things",
+                "Ammu made my favourite khichuri because it was raining",
+                "Food, family, house"
+              ],
+              "answer": 2,
+              "explain": "Specific details make your brain relive the moment."
+            },
+            {
+              "q": "Why does your brain miss good things easily?",
+              "options": [
+                "It's built to spot problems quickly, like a security guard",
+                "Good things don't really happen",
+                "It is too tired at night",
+                "Only adults notice good things"
+              ],
+              "answer": 0,
+              "explain": "Spotting danger helped humans survive, so good things slide by."
+            },
+            {
+              "q": "What changed for Nusrat after two weeks?",
+              "options": [
+                "All her problems disappeared",
+                "Her marks doubled",
+                "She stopped writing anything",
+                "She started looking for good moments and felt lighter"
+              ],
+              "answer": 3,
+              "explain": "The habit trained her to notice good things during the day."
+            }
+          ]
+        },
+        {
+          "id": "mind-3-4",
+          "title": "Stop comparing, start tracking your own progress",
+          "minutes": 5,
+          "content": "Comparing means measuring yourself against other people. Imagine you are watching a movie of your own life, all the boring parts, the bloopers and the hard days included. Then you watch someone else's highlight reel, only their best moments, edited and with nice music. Of course their reel looks better. That is what comparing on Facebook, Instagram or even in the classroom often is.\n\nWhy does it matter? Constant comparing can make you feel you're never good enough, no matter how much you improve. If you got 70 and your friend got 90, you might feel bad even though you went up from 55. It can also make you jealous of friends and give up on things you enjoy because someone else is better. Tracking your own progress shows you the growth that comparison hides.\n\nHere's how to switch. One, compare yourself to yourself: you last month versus you now. Pick one thing you're working on and write a number down regularly, like maths test marks, pages read per week, how many push-ups you can do, or typing speed. Two, look at the trend, not one day. A line going up over two months matters more than one bad Tuesday.\n\nThree, when you catch yourself comparing, turn it into a question. Instead of \"She's so much better than me\", ask \"What does she do that I could learn?\" Then copy one habit, not the whole person. Four, cut the triggers. If certain accounts always make you feel bad, mute or unfollow them for a while. You can choose what you look at.\n\nRafi felt terrible every time he saw his classmate Arif's posts about winning maths olympiad medals. Rafi was getting average maths marks and kept thinking he was dumb. His tuition teacher asked him to keep a simple chart: every weekly test score on one page. Over three months, Rafi's scores went 11, 12, 14, 13, 16, 17 out of 25. Seeing the line climb made him feel proud for the first time. He also asked Arif how he practised, and started doing ten extra problems on Fridays like Arif did.\n\nThe common mistake is only tracking when things go well, or only looking at your worst day. Write the number every time, good or bad, so the trend is honest. The other mistake is turning tracking into another comparison: \"I improved 5 marks but Arif improved 10.\" Your chart is yours alone.\n\nRemember: compare you with past you, and track one number over time.",
+          "key_points": [
+            "Comparing your whole life to others' highlight reels is unfair to yourself.",
+            "Compare yourself to yourself: write one number regularly and watch the trend.",
+            "Turn comparison into a question: what can I learn from them?",
+            "Mute or unfollow accounts that always make you feel bad."
+          ],
+          "tip": "Put your progress chart somewhere you see often, like inside your notebook cover. A line going up over weeks is more convincing than any pep talk.",
+          "task": "Pick one thing you're working on, like a subject, a sport or a hobby. Write today's number for it, like a test mark or how many minutes you practised, at the top of a new page titled \"My progress\". Add a new number each week.",
+          "quiz": [
+            {
+              "q": "Why do other people's posts often look better than your life?",
+              "options": [
+                "They really are better than you",
+                "You see their highlight reel but your whole movie",
+                "Their phones have better cameras",
+                "You don't post enough"
+              ],
+              "answer": 1,
+              "explain": "You compare your full life with their edited best moments."
+            },
+            {
+              "q": "What should you track according to the lesson?",
+              "options": [
+                "Other people's marks",
+                "How many likes you get",
+                "Only your best days",
+                "One number about yourself over time, like weekly test marks"
+              ],
+              "answer": 3,
+              "explain": "Comparing you with past you shows your real progress."
+            },
+            {
+              "q": "What did Rafi learn from Arif instead of feeling jealous?",
+              "options": [
+                "To do ten extra problems on Fridays",
+                "To post more on Facebook",
+                "To quit maths",
+                "To change schools"
+              ],
+              "answer": 0,
+              "explain": "He turned comparison into a question and copied one habit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-4",
+      "title": "Work with your thoughts",
+      "lessons": [
+        {
+          "id": "mind-4-1",
+          "title": "Spotting thinking traps",
+          "minutes": 6,
+          "content": "A thinking trap is a habit your brain has of jumping to an unfair or extreme conclusion. Think of wearing sunglasses with dark grey lenses. Everything looks gloomier than it really is, but because you forgot you're wearing them, you believe the world is actually that dark. Thinking traps are those glasses. Spotting them is like noticing the glasses and taking them off.\n\nWhy does it matter? Your feelings follow your thoughts. If you think \"Everyone hates me\", you'll feel awful and maybe avoid people, even if it isn't true. Traps make small problems feel huge and make you act on things that never happened. Once you can name a trap, it loses a lot of its power, because you realise it's a pattern, not a fact.\n\nHere are four common traps to learn. All-or-nothing thinking: seeing things as perfect or a total failure. \"I got one question wrong, so the whole test is ruined.\" Catastrophising: jumping to the worst possible ending. \"If I fail this test, I'll fail the year and my life is over.\" Mind reading: being sure you know what others think. \"She didn't reply, so she must be angry with me.\" Overgeneralising: using words like always, never, everyone. \"I always mess up.\"\n\nThe method is simple: catch, name, check. Catch the thought when you notice a strong bad feeling. Name the trap: \"That's mind reading.\" Then check it with one question: \"What's the evidence?\" or \"What else could be true?\" Your friend might not have replied because her phone died, or she's at her nani's house. You don't have to force a happy thought, just a fairer one.\n\nSabbir sent a message in his class WhatsApp group asking about homework, and nobody replied for two hours. He started thinking, \"Everyone's ignoring me. They all think I'm annoying. I never fit in.\" He felt his face get hot. Then he remembered the traps. \"Everyone thinks I'm annoying\" was mind reading. \"I never fit in\" was overgeneralising. He checked the evidence: it was Friday afternoon, and most of his friends were at Jummah prayer or out with family. An hour later, three people replied with the homework.\n\nThe common mistake is thinking that if a thought feels strongly true, it must be true. Feelings are real, but they are not evidence. The other mistake is beating yourself up for having traps. Everyone's brain does this. The skill is noticing, not never having them.\n\nRemember: catch the thought, name the trap, and ask what else could be true.",
+          "key_points": [
+            "Thinking traps are habits of jumping to unfair or extreme conclusions.",
+            "Four common traps: all-or-nothing, catastrophising, mind reading, overgeneralising.",
+            "Method: catch the thought, name the trap, check the evidence.",
+            "A thought feeling true doesn't make it true."
+          ],
+          "tip": "Words like always, never, everyone, nobody and ruined are red flags. When you hear yourself use one, stop and check for a trap.",
+          "task": "Write the four trap names on a small card. Today, try to catch one thought that fits a trap, write it down, name the trap, and write one other thing that could be true.",
+          "quiz": [
+            {
+              "q": "\"She didn't reply, so she must be angry with me\" is which trap?",
+              "options": [
+                "Mind reading",
+                "All-or-nothing",
+                "Catastrophising",
+                "Gratitude"
+              ],
+              "answer": 0,
+              "explain": "You're assuming you know what she thinks without evidence."
+            },
+            {
+              "q": "What are the three steps of the method?",
+              "options": [
+                "Ignore, forget, move on",
+                "Think positive, smile, relax",
+                "Ask friends, post online, wait",
+                "Catch, name, check"
+              ],
+              "answer": 3,
+              "explain": "Catch the thought, name the trap, check the evidence."
+            },
+            {
+              "q": "Why had nobody replied to Sabbir's message?",
+              "options": [
+                "They thought he was annoying",
+                "The group was deleted",
+                "It was Friday afternoon and friends were at prayer or with family",
+                "He sent it to the wrong group"
+              ],
+              "answer": 2,
+              "explain": "Checking the evidence showed a simple, non-scary reason."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-2",
+          "title": "Reframing an unhelpful thought",
+          "minutes": 6,
+          "content": "Reframing means looking at the same situation from a fairer, more useful angle. Think of a photo frame. Put a plain photo in a cracked, ugly frame and it looks sad. Put the same photo in a nice frame and it looks better. The photo didn't change, the frame did. Your thoughts are the frame around what happens to you.\n\nWhy does it matter? In the last lesson you learned to spot thinking traps. Reframing is the next step: replacing the trap with a thought that is more accurate and helps you act. Without it, you know your thought is unfair but you're still stuck with it. With it, you get unstuck and can decide what to do next. Reframing is not pretending everything is fine. It's finding the true thought that the trap was hiding.\n\nHere's a three-column method. Draw three columns on a page. In column one, write the situation in plain facts: \"Got 12 out of 30 in the English test.\" In column two, write the automatic thought: \"I'm hopeless at English, I'll fail the final.\" In column three, write a balanced thought by asking a few questions. What's the evidence for and against? Is there a less extreme way to see it? What would I tell a friend? What can I do about it?\n\nA good balanced thought is believable, not fake-cheerful. \"This is the best thing that ever happened!\" won't feel true. Try something like: \"12 out of 30 is low, and I'm disappointed. But I passed the last two tests, and the final is two months away. I'll ask Sir which topics I lost marks on and practise those.\" Notice it has the feeling, the facts, and one action.\n\nTania's best friend Mim sat with another girl at lunch for a whole week. Tania's automatic thought was, \"Mim doesn't like me anymore. I'm going to be alone.\" She felt sick about going to school. That night, she wrote the three columns. Evidence against: Mim still walked home with her, and they had chatted on the phone that weekend. Balanced thought: \"Mim might just be helping the new girl settle in. I'm feeling left out, so I'll ask her if I can sit with them tomorrow.\" She asked, Mim said \"Of course!\", and the three of them became friends.\n\nThe common mistake is jumping to a fake positive thought you don't believe, like \"I'm the best at English!\" Your brain rejects it, and you feel worse. Aim for fair and true, not happy. The other mistake is doing it only in your head. Writing it down makes it much clearer.\n\nRemember: write the facts, the automatic thought, then a fair thought with one action.",
+          "key_points": [
+            "Reframing means looking at the same situation from a fairer, more useful angle.",
+            "Three columns: situation (facts), automatic thought, balanced thought.",
+            "A balanced thought includes the feeling, the facts and one action.",
+            "Aim for fair and believable, not fake positive."
+          ],
+          "tip": "Ask \"What would I say to a friend in this exact situation?\" It's the fastest way to find a balanced thought, because you're naturally fairer to others.",
+          "task": "Draw three columns on a page. Fill them in for one thing that bothered you this week: the facts, your automatic thought, and a balanced thought that ends with one small action.",
+          "quiz": [
+            {
+              "q": "What goes in the first column of the three-column method?",
+              "options": [
+                "Your feelings",
+                "A happy thought",
+                "The situation in plain facts",
+                "What your friends think"
+              ],
+              "answer": 2,
+              "explain": "Start with just the facts of what happened."
+            },
+            {
+              "q": "Which is the best balanced thought after a low test score?",
+              "options": [
+                "It's disappointing, but I passed the last two, and I'll practise the topics I lost marks on",
+                "I'm the best at English!",
+                "I'm hopeless and will fail everything",
+                "Tests don't matter at all"
+              ],
+              "answer": 0,
+              "explain": "It's believable, includes the feeling and the facts, and has an action."
+            },
+            {
+              "q": "What evidence helped Tania reframe her thought about Mim?",
+              "options": [
+                "Mim said she hated her",
+                "Mim still walked home with her and they had chatted that weekend",
+                "The new girl told her",
+                "Her teacher explained it"
+              ],
+              "answer": 1,
+              "explain": "Facts against the scary thought helped her find a fairer one."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-3",
+          "title": "Name your emotions to handle them",
+          "minutes": 5,
+          "content": "Naming an emotion means putting the right word on what you're feeling. Imagine a doctor who just says \"you're sick\" versus one who says \"you have a sore throat from a virus.\" The second one can actually help, because the name tells them what to do. Feelings work the same way. \"I feel bad\" is too blurry to fix. \"I feel embarrassed\" or \"I feel nervous\" gives you something to work with.\n\nWhy does it matter? Studies using brain scans have found that just putting a feeling into words can turn down the brain's alarm a little. It's sometimes called \"name it to tame it\". When you can't name a feeling, it comes out sideways: you shout at your little brother when you're actually worried about an exam. When you name it, you can choose what to do with it.\n\nHere's how. Step one, pause and notice your body. Feelings often show up there first: a tight chest, a hot face, a heavy stomach, clenched fists. Step two, pick the most exact word you can. Go beyond \"good\" and \"bad\". Instead of \"bad\", is it sad, angry, worried, embarrassed, jealous, lonely, disappointed or frustrated? Instead of \"good\", is it proud, relieved, excited or calm? Step three, rate it from 1 to 10. \"I'm frustrated, about a 6.\"\n\nStep four, ask what the feeling needs. Each emotion carries a message. Worry often says \"prepare for something\". Anger often says \"something feels unfair\". Sadness often says \"I've lost something and need comfort\". Loneliness says \"connect with someone\". Once you know the message, pick one small action: revise for 20 minutes, calmly tell someone what felt unfair, or call a friend.\n\nRafi came home from school and slammed his door. When his mother asked what was wrong, he shouted \"Nothing! Just leave me alone!\" Later, sitting on his bed, he tried naming it. His chest was tight and his face was hot. The first word was angry, but it didn't fit exactly. He tried again: embarrassed, about an 8. His teacher had read his low marks out loud in front of the class. Now that he knew, the message was clear: he needed comfort and a plan. He told his mother what happened. She hugged him, and they decided he'd ask the teacher for extra help on Sunday.\n\nThe common mistake is stopping at \"I'm fine\" or \"I'm bad\" because finding a precise word feels awkward. The vaguer the word, the harder the feeling is to handle. The other mistake is thinking some feelings are wrong to have. All feelings are allowed. It's what you do with them that matters.\n\nRemember: notice your body, find the exact word, rate it, and ask what it needs.",
+          "key_points": [
+            "Putting a precise word on a feeling can calm the brain's alarm a little.",
+            "Go beyond good and bad: proud, relieved, embarrassed, frustrated, lonely.",
+            "Rate the feeling from 1 to 10 and ask what it needs.",
+            "All feelings are allowed. What you do with them is what matters."
+          ],
+          "tip": "Save a list of 20 feeling words in your phone's notes. When you feel something strong, scroll through and pick the closest one.",
+          "task": "Set three phone reminders for today, morning, afternoon and night. Each time it rings, write one exact feeling word and a 1-10 rating.",
+          "quiz": [
+            {
+              "q": "Why is 'I feel embarrassed' more useful than 'I feel bad'?",
+              "options": [
+                "It sounds more grown up",
+                "It is shorter",
+                "Teachers prefer it",
+                "A precise name tells you what the feeling needs"
+              ],
+              "answer": 3,
+              "explain": "The exact word gives you something to work with."
+            },
+            {
+              "q": "What is step one of naming an emotion?",
+              "options": [
+                "Shout to let it out",
+                "Pause and notice your body",
+                "Ignore it until it goes away",
+                "Ask a friend to name it"
+              ],
+              "answer": 1,
+              "explain": "Feelings often show up in the body first."
+            },
+            {
+              "q": "What feeling did Rafi finally name?",
+              "options": [
+                "Embarrassed, about an 8",
+                "Bored, about a 2",
+                "Angry, about a 10",
+                "Hungry, about a 5"
+              ],
+              "answer": 0,
+              "explain": "Being more exact than 'angry' helped him see what he needed."
+            }
+          ]
+        },
+        {
+          "id": "mind-4-4",
+          "title": "Breaking the overthinking loop",
+          "minutes": 6,
+          "content": "Overthinking is when your mind replays the same worry over and over without getting anywhere. Picture a rickshaw stuck in a muddy pothole. The rickshaw puller pedals harder and harder, the wheel spins faster, but the rickshaw doesn't move forward, it just sinks deeper. Overthinking feels like you're working on a problem, but you're just spinning the same wheel.\n\nWhy does it matter? Overthinking eats your time and energy. You lie awake at night replaying what you said to a friend, or imagining every way an exam could go wrong. It makes you more anxious, not more prepared, and it can make it hard to sleep or concentrate. The difference between useful thinking and overthinking is simple: useful thinking ends in a decision or an action. Overthinking ends in more thinking.\n\nHere's the first tool: the two-minute question. When you notice a thought looping, ask, \"Is there something I can do about this right now?\" If yes, do the smallest step within two minutes, like sending the message, writing the to-do, or opening the book. Action breaks the loop. If no, move to the second tool.\n\nThe second tool is worry time. Choose a fixed 15-minute slot in the day, like 5:00 to 5:15 pm, not right before bed. When a worry pops up at other times, write it on a piece of paper and tell yourself, \"I'll think about this at 5.\" At worry time, read the list, think properly, and write any action. You'll often find many worries have already shrunk. The third tool is switching channels: do something that needs your full attention for a few minutes, like counting backwards from 100 by sevens, playing a quick game of carrom, or naming five things you can see around you.\n\nNusrat said \"hi\" to a senior girl at school, who didn't reply. That night Nusrat replayed it for an hour: \"Was I weird? Does she think I'm annoying? Will she tell her friends?\" She couldn't sleep. Next day she tried the tools. Was there something she could do? No. So she wrote \"senior didn't say hi\" on her worry list for 5 pm. When the thought came back during class, she named five things in the room and went back to her work. At 5 pm, reading it, she thought, \"Maybe she just didn't hear me.\" The worry took two minutes, not two hours.\n\nThe common mistake is thinking that if you just think a bit longer, you'll finally solve it. After the first few minutes, more thinking rarely adds anything new. The other mistake is trying to force the thought away with \"stop thinking about it!\", which usually makes it come back stronger. Park it on paper instead. If worry is taking over your days for weeks, talk to a trusted adult or counselor.\n\nRemember: act if you can, park it for worry time if you can't, and switch channels.",
+          "key_points": [
+            "Overthinking replays the same worry without reaching a decision or action.",
+            "Ask: can I do something now? If yes, take the smallest step within two minutes.",
+            "Use a fixed 15-minute worry time and write worries down until then.",
+            "Switch channels with something that needs full attention, like naming five things you see."
+          ],
+          "tip": "Keep a small \"worry list\" paper in your pencil box. Writing a worry down and saying \"later\" works better than trying not to think about it.",
+          "task": "Pick a 15-minute worry time for today, not right before bed. Until then, write down every worry that pops up. At worry time, read the list and write one action next to any worry you can do something about.",
+          "quiz": [
+            {
+              "q": "What is the key difference between useful thinking and overthinking?",
+              "options": [
+                "Useful thinking ends in a decision or action",
+                "Overthinking is faster",
+                "Useful thinking is always positive",
+                "There is no difference"
+              ],
+              "answer": 0,
+              "explain": "Overthinking just ends in more thinking."
+            },
+            {
+              "q": "When is the best time to schedule worry time?",
+              "options": [
+                "Right before bed",
+                "During exams",
+                "A fixed slot like 5 pm, not right before bed",
+                "Whenever a worry appears"
+              ],
+              "answer": 2,
+              "explain": "A fixed time away from bedtime keeps worries from stealing your sleep."
+            },
+            {
+              "q": "What did Nusrat do when the worry came back during class?",
+              "options": [
+                "Messaged the senior girl",
+                "Cried in the bathroom",
+                "Tried harder to stop thinking",
+                "Named five things in the room and went back to work"
+              ],
+              "answer": 3,
+              "explain": "Switching channels gave her mind something else to hold."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mind-5",
+      "title": "Build lasting resilience",
+      "lessons": [
+        {
+          "id": "mind-5-1",
+          "title": "Good enough beats perfect",
+          "minutes": 5,
+          "content": "Perfectionism means feeling that anything less than perfect is a failure. Imagine you're making a birthday card for your friend. A perfectionist starts, thinks the first letter looks a bit wonky, tears it up, starts again, tears it up again, and by the end of the evening there's no card at all. A card that is good enough and actually given makes your friend happy. A perfect card that never exists makes nobody happy.\n\nWhy does it matter? Perfectionism looks like high standards, but it often leads to doing less. You delay starting because you're scared it won't be perfect. You spend three hours on one homework question and never reach the rest. You stress so much about small details that you feel exhausted. Aiming for good enough, which means doing the job well and then stopping, lets you finish things, learn from feedback and actually improve.\n\nHere's how to practise good enough. One, decide what \"done\" looks like before you start. For a homework essay, done might be: answers the question, has an introduction and conclusion, checked once for spelling. When those boxes are ticked, you stop. Two, set a time limit. Give a task 30 minutes, and when the timer rings, finish your sentence and move on.\n\nThree, use the 80 percent rule. For most everyday tasks, getting it about 80 percent right is enough, and the last 20 percent often takes as long as everything before it. Save your extra effort for the few things that really matter, like a final exam answer, not a practice sheet. Four, start with a rough draft. Tell yourself the first try is allowed to be messy. It's much easier to improve something that exists than something that's still in your head.\n\nSabbir had a science project on plants due in a week. He kept redrawing the title page because the letters weren't straight. By day five he had a beautiful title page and nothing else. Panicking, he talked to his elder brother, who helped him write a list of what \"done\" meant: title, three sections, two photos, one conclusion. They gave each part 30 minutes. Sabbir finished in two evenings. The title wasn't perfectly straight, but he got a good mark and his teacher praised his clear explanations.\n\nThe common mistake is thinking good enough means careless or lazy. It doesn't. Good enough means doing the important parts well and not wasting hours on parts nobody will notice. The other mistake is applying perfectionism to practice. Practice is supposed to be messy. That's how you learn.\n\nRemember: decide what done looks like, set a timer, and finish.",
+          "key_points": [
+            "Perfectionism often leads to delaying, never finishing and exhaustion.",
+            "Decide what \"done\" looks like before you start, and stop when it's met.",
+            "Set a time limit for each task and move on when it rings.",
+            "Save extra effort for what truly matters. Practice is allowed to be messy."
+          ],
+          "tip": "Write your \"done\" checklist on a sticky note at the top of your page before you start. When every item is ticked, close the notebook, even if you want to keep polishing.",
+          "task": "Pick one task you've been putting off because you want it perfect. Write a 3-item \"done\" list for it, set a 15-minute timer, and work on it until the timer rings.",
+          "quiz": [
+            {
+              "q": "What should you do before starting a task, according to the lesson?",
+              "options": [
+                "Find the perfect pen",
+                "Decide what 'done' looks like",
+                "Wait until you feel ready",
+                "Look at others' work for an hour"
+              ],
+              "answer": 1,
+              "explain": "Knowing when you're done stops endless polishing."
+            },
+            {
+              "q": "What is the 80 percent rule?",
+              "options": [
+                "For most everyday tasks, about 80 percent right is enough",
+                "Always study 80 percent of the day",
+                "Only 80 percent of homework matters",
+                "Score 80 or you've failed"
+              ],
+              "answer": 0,
+              "explain": "The last 20 percent often takes as long as everything before it."
+            },
+            {
+              "q": "How did Sabbir finally finish his project?",
+              "options": [
+                "He bought a ready-made project",
+                "He kept redrawing the title until it was perfect",
+                "He made a 'done' list and gave each part 30 minutes",
+                "He skipped it"
+              ],
+              "answer": 2,
+              "explain": "A clear finish line and time limits helped him finish in two evenings."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-2",
+          "title": "Living with uncertainty",
+          "minutes": 6,
+          "content": "Uncertainty means not knowing what will happen. Will the exam be easy or hard? Will you get into the school you want? Will it rain on Eid day? Think of walking down an unfamiliar road at night with a torch. You can only see a few steps ahead, never the whole road. But you don't need to see the whole road to keep walking. You just need to see the next step.\n\nWhy does it matter? Many people feel they can only relax once they know exactly how things will turn out. But life is full of things we can't know in advance. If you need certainty to feel okay, you'll spend a lot of time anxious, checking, asking the same questions again and again, or avoiding things. Learning to live with not knowing lets you stay calm, keep acting and enjoy the present.\n\nHere's how to handle it. One, separate what you know from what you're guessing. Write two lists: \"What I know for sure\" and \"What I'm guessing\". Often the scary part is all in the guessing list. Two, plan for a few likely outcomes, not every possible one. Ask: What's the best case? The worst case? The most likely case? Then make one simple plan for the most likely, and a small backup for the worst.\n\nThree, focus on the next step only, like the torch. You don't have to solve the whole future today. Four, notice when you're seeking reassurance over and over, like asking your friend for the tenth time \"Do you think the result will be good?\" Each time, the relief lasts a shorter time. Instead, tell yourself, \"I don't know yet, and that's okay. I'll handle it when I know.\"\n\nTania's family was moving from Sylhet to Dhaka, and she'd have to change schools. For weeks she couldn't stop asking her parents: \"What if nobody likes me? What if the teachers are strict? What if I get lost?\" Her mother suggested the two lists. Known for sure: the school name, that her cousin Nabila studies there, and the start date. Guessing: everything about whether people would like her. Her most likely case was a few awkward days and then settling in. Her backup plan: sit with Nabila at lunch. Her next step: visit the school one day before. When school started, the first week was awkward, just as expected, but she managed it.\n\nThe common mistake is thinking you have to feel certain before you can act. You don't. You can feel unsure and still take the next step. The other mistake is filling the unknown with only the worst outcomes. Remind yourself that good and ordinary outcomes are possible too, and usually more likely.\n\nRemember: sort known from guessed, plan for the likely case, and take just the next step.",
+          "key_points": [
+            "You can't know most things in advance, so needing certainty keeps you anxious.",
+            "Separate what you know for sure from what you're guessing.",
+            "Plan for the most likely case with a small backup for the worst.",
+            "Focus on the next step, and notice when you're asking for reassurance over and over."
+          ],
+          "tip": "When you catch yourself asking \"What if...?\", finish the sentence with \"...then I would ___.\" Having a rough answer turns a scary question into a plan.",
+          "task": "Pick one uncertain thing coming up, like a result, a new class or a trip. Write two lists, \"I know for sure\" and \"I'm guessing\". Then write the most likely outcome and one next step you can take.",
+          "quiz": [
+            {
+              "q": "What does the torch at night teach about uncertainty?",
+              "options": [
+                "Never walk at night",
+                "Buy a brighter torch",
+                "You only need to see the next step to keep going",
+                "Wait until morning to do anything"
+              ],
+              "answer": 2,
+              "explain": "You don't need to see the whole road, just the next step."
+            },
+            {
+              "q": "Why does asking for reassurance again and again backfire?",
+              "options": [
+                "Friends get bored",
+                "It costs money",
+                "It makes you sleepy",
+                "The relief lasts a shorter time each time"
+              ],
+              "answer": 3,
+              "explain": "Reassurance seeking feeds the need for certainty."
+            },
+            {
+              "q": "What was Tania's backup plan for the new school?",
+              "options": [
+                "Sit with her cousin Nabila at lunch",
+                "Stay home for a week",
+                "Go back to Sylhet",
+                "Change to another school"
+              ],
+              "answer": 0,
+              "explain": "A small backup made the worst case feel manageable."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-3",
+          "title": "Asking for help and building support",
+          "minutes": 6,
+          "content": "Asking for help means letting someone else carry part of a load with you. Imagine trying to carry a heavy bag of rice up four flights of stairs alone. You could do it, slowly and painfully. Or your brother grabs one side and you're up in two minutes. Problems are like that bag. Some you can carry alone, but many are lighter and faster with another pair of hands.\n\nWhy does it matter? Many people think asking for help means they are weak or stupid. So they stay stuck on a maths problem for weeks, keep worries to themselves, or struggle through hard times alone. Actually, the people who do best in school and life usually ask for help a lot. They know who to ask and how. A support network, a few people you can turn to, makes hard times shorter and lighter.\n\nHere's how to ask well. Be specific. \"I don't get maths\" is hard to help with. \"I don't understand how to find the area of a triangle, can you show me one example?\" is easy. Choose the right person and time: a teacher after class, not in the middle of a lesson. And say what you've already tried, like \"I watched a video and did two questions, but I'm stuck on the third.\" People are happier to help when they see you've tried.\n\nNow build your support map. Draw yourself in the middle of a page. Around you, write names for different kinds of help. Schoolwork help: maybe a teacher, an older cousin or a smart friend. Fun and company: friends you play or chat with. When you're upset: a parent, an older sibling, a teacher you trust or the school counselor. Aim for at least one name in each area. Help also goes both ways, so offer help to others when you can.\n\nRafi was struggling with English grammar and also feeling lonely after his best friend moved to Chattogram. He kept it all inside and pretended he was fine. His marks dropped, and he stopped going out to play. One evening his uncle noticed and asked what was going on. Rafi finally told him. Together they made his support map. For English, he'd ask his cousin Shuvo, who was in Class 10, every Saturday. For company, he'd join the boys playing football in the field again. For bad days, he'd talk to his uncle. Within a month, his grammar was improving and he felt much less alone.\n\nThe common mistake is waiting until a problem becomes huge before asking. A small question early saves weeks of struggle later. The other mistake is asking the same one person for everything, which can tire them out. Spread it across your map. And if you ever feel unsafe or very low, tell a trusted adult right away. That's exactly what they're there for.\n\nRemember: ask early, ask specifically, and know who's on your support map.",
+          "key_points": [
+            "Asking for help is a skill strong learners use often, not a sign of weakness.",
+            "Be specific, choose the right person and time, and say what you've tried.",
+            "Draw a support map with names for schoolwork, fun and upset days.",
+            "Ask early, before a small problem becomes a big one."
+          ],
+          "tip": "When asking for schoolwork help, bring your attempt with you. Showing \"here's where I got stuck\" gets you better help in less time.",
+          "task": "Draw your support map: you in the middle, and names around you for schoolwork help, fun and company, and when you're upset. If any area is empty, write one person you could start getting closer to.",
+          "quiz": [
+            {
+              "q": "Which is the best way to ask for help with maths?",
+              "options": [
+                "I don't get maths",
+                "Can you do my homework?",
+                "I don't understand how to find the area of a triangle, can you show me one example?",
+                "Maths is stupid"
+              ],
+              "answer": 2,
+              "explain": "Specific questions are much easier to help with."
+            },
+            {
+              "q": "What goes on a support map?",
+              "options": [
+                "Names of people for different kinds of help",
+                "A map of your school",
+                "Your exam timetable",
+                "A list of your mistakes"
+              ],
+              "answer": 0,
+              "explain": "It shows who you can turn to for schoolwork, fun and hard days."
+            },
+            {
+              "q": "What helped Rafi most?",
+              "options": [
+                "Keeping everything inside",
+                "Moving to Chattogram",
+                "Quitting English",
+                "Telling his uncle and making a support map with specific people"
+              ],
+              "answer": 3,
+              "explain": "Opening up and spreading support across people helped quickly."
+            }
+          ]
+        },
+        {
+          "id": "mind-5-4",
+          "title": "Your personal resilience plan",
+          "minutes": 7,
+          "content": "Resilience is your ability to bounce back after something hard, like a rubber ball that gets squashed when it hits the ground but pops back into shape. A resilience plan is like the first-aid box in your home. You don't wait until someone gets a cut to go and buy bandages. You keep the box ready so that when something happens, you know exactly where to reach. This lesson puts together tools from this whole course into your own box.\n\nWhy does it matter? When you're having a really bad day, your brain is flooded and it's hard to remember any helpful ideas. That's exactly when you need them most. A written plan, made on a calm day, does the remembering for you. People who have a plan usually recover faster from setbacks because they don't waste time feeling lost.\n\nHere's how to build your plan. Take one page and write five sections. One, my warning signs: how do I know I'm starting to struggle? Maybe you sleep badly, snap at people, stop eating properly, or want to stay in bed. Two, my calm-down tools: two or three things that settle you in the moment, like box breathing, a 10-minute walk, naming your emotion, or listening to a favourite song.\n\nThree, my thought tools: a few reminders, like \"Add yet\", \"Is this a thinking trap?\", \"What would I tell a friend?\" Four, my people: names and phone numbers of two or three people from your support map. Five, my small daily anchors: basics that keep you steady, like sleeping by 10:30, moving for 30 minutes, and eating proper meals. Keep the plan short enough to read in one minute, and put it somewhere easy, like inside your notebook or as a photo on your phone.\n\nNusrat made her plan one quiet Friday afternoon, mostly because her teacher asked the class to. Two months later, her board exam results came out lower than she'd hoped, and her parents seemed disappointed. That night she felt awful and couldn't think straight. Then she remembered the photo on her phone. Warning signs: yes, she hadn't eaten dinner and wanted to hide. Calm-down tool: she did box breathing and wrote \"disappointed, 9\". Thought tool: \"This is all-or-nothing thinking. One result is not my whole life.\" People: she called her khala, who listened for half an hour. By morning she still felt sad, but steady enough to talk with her parents about next steps.\n\nThe common mistake is thinking you'll make the plan \"when you need it\". When you need it, you won't be in a state to make it. Make it on a good day. The other mistake is making it so long that you'll never read it in a crisis. Keep it to one page. And if things ever feel too heavy to handle with your plan, tell a trusted adult, counselor or doctor straight away.\n\nRemember: build your plan on a calm day, keep it short, and keep it where you can reach it.",
+          "key_points": [
+            "Resilience is bouncing back after hard times, and a plan helps you do it faster.",
+            "Make the plan on a calm day, because a bad day makes it hard to think.",
+            "Five sections: warning signs, calm-down tools, thought tools, people, daily anchors.",
+            "Keep it to one page, somewhere easy to reach, like a photo on your phone."
+          ],
+          "tip": "After writing your plan, take a photo of it and set it as a favourite in your phone gallery, so you can find it in seconds on a bad day.",
+          "task": "On one page, write the five sections of your resilience plan with two or three short points each. Take a photo of it and keep the paper inside your notebook.",
+          "quiz": [
+            {
+              "q": "Why should you make a resilience plan on a calm day?",
+              "options": [
+                "Because calm days are boring",
+                "Because on a bad day your brain is flooded and it's hard to think",
+                "Because teachers check it",
+                "Because plans only work on Fridays"
+              ],
+              "answer": 1,
+              "explain": "The plan remembers the tools for you when you can't."
+            },
+            {
+              "q": "Which is NOT one of the five sections of the plan?",
+              "options": [
+                "Warning signs",
+                "Calm-down tools",
+                "A list of people who annoy you",
+                "Daily anchors"
+              ],
+              "answer": 2,
+              "explain": "The five sections are warning signs, calm-down tools, thought tools, people and daily anchors."
+            },
+            {
+              "q": "Which thought tool did Nusrat use after her results?",
+              "options": [
+                "She told herself to stop being sad",
+                "She compared herself with her friends",
+                "She decided to give up studying",
+                "She noticed all-or-nothing thinking: one result is not her whole life"
+              ],
+              "answer": 3,
+              "explain": "Naming the trap helped her see the result more fairly."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

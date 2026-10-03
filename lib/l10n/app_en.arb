@@ -1,0 +1,350 @@
+{
+  "@@locale": "en",
+  "appTitle": "MentorBox",
+  "welcomeBack": "Welcome back",
+  "savedLessons": "Saved lessons",
+  "language": "Language",
+  "deviceLanguage": "Phone's language",
+  "theme": "Theme",
+  "deviceTheme": "Phone's theme",
+  "lightTheme": "Light",
+  "darkTheme": "Dark",
+  "todaysMissions": "Today's missions",
+  "defaultName": "Learner",
+  "loadError": "The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n{error}",
+  "@loadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreLabel": "Explore :",
+  "exploreTagline": "Pick a mentor, grow one skill a day",
+  "heroBefore": "Your Personal\n",
+  "heroHighlight": "Mentors",
+  "heroAfter": " For\nEvery Skill",
+  "streakDays": "{count, plural, =1{{count} day streak} other{{count} day streak}}",
+  "@streakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "noStreak": "No streak yet",
+  "continueWith": "Continue with {mentor}",
+  "@continueWith": {
+    "placeholders": {
+      "mentor": {
+        "type": "String"
+      }
+    }
+  },
+  "nameDialogFirstTitle": "Hi! What should your mentors call you?",
+  "nameDialogChangeTitle": "Change your name",
+  "nameHint": "Your name",
+  "saveName": "Save name",
+  "finished": "Finished",
+  "percentDone": "{percent}% done",
+  "@percentDone": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "lockedLessonHint": "Finish the lesson before this one to unlock it.",
+  "progressLabel": "Progress : ",
+  "percent": "{value}%",
+  "@percent": {
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "lessonsOf": "{done} of {total} lessons",
+  "@lessonsOf": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "reviewFromFirst": "Review from the first lesson",
+  "startMentoring": "Start mentoring",
+  "continueLesson": "Continue: {title}",
+  "@continueLesson": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "levelNumber": "Level {number}",
+  "@levelNumber": {
+    "placeholders": {
+      "number": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "fraction": "{done}/{total}",
+  "@fraction": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "locked": "Locked",
+  "minutes": "{minutes} min",
+  "@minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "minutesWithScore": "{minutes} min, best quiz score {score}",
+  "@minutesWithScore": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "score": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "lessonSaved": "Lesson saved",
+  "lessonUnsaved": "Lesson removed from saved",
+  "noteSaved": "Note saved",
+  "lessonMissing": "This lesson is no longer available.",
+  "removeFromSaved": "Remove from saved",
+  "saveLesson": "Save lesson",
+  "minutesRead": "{minutes} min read",
+  "@minutesRead": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "completed": "Completed",
+  "keyPoints": "Key points",
+  "mentorTip": "Mentor tip",
+  "yourTask": "Your task",
+  "iDidTask": "I did this task",
+  "myNotes": "My notes",
+  "notesHint": "What did you learn? Where will you use it this week?",
+  "markComplete": "Mark lesson as complete",
+  "takeQuiz": "Take the quiz",
+  "retakeQuiz": "Retake the quiz",
+  "nextLesson": "Next lesson: {title}",
+  "@nextLesson": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "backToMentor": "Back to your mentor",
+  "practiceQuizAgain": "Practice the quiz again",
+  "noQuiz": "This lesson has no quiz.",
+  "quizTitle": "Quiz",
+  "questionProgress": "Question {number} of {total}",
+  "@questionProgress": {
+    "placeholders": {
+      "number": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "answerCorrect": "Correct",
+  "answerWrong": "Not quite",
+  "checkAnswer": "Check answer",
+  "seeResult": "See my result",
+  "nextQuestion": "Next question",
+  "score": "{correct} / {total}",
+  "@score": {
+    "placeholders": {
+      "correct": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "youCompleted": "You completed \"{title}\"",
+  "@youCompleted": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "needToPass": "You need {required} right answers to pass",
+  "@needToPass": {
+    "placeholders": {
+      "required": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "continueButton": "Continue",
+  "reviewLesson": "Review the lesson",
+  "tryQuizAgain": "Try the quiz again",
+  "savedTitle": "Saved",
+  "savedEmpty": "Tap the bookmark on any lesson to keep it here for later.",
+  "yourNotes": "Your notes",
+  "notesEmpty": "Notes you write at the end of a lesson show up here.",
+  "todayTitle": "Today",
+  "noMissions": "You have no missions yet. Pick a mentor below or on the home screen and start the first lesson.",
+  "lessonsDone": "{done} of {total} lessons done",
+  "@lessonsDone": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "taskPrefix": "Task: {task}",
+  "@taskPrefix": {
+    "placeholders": {
+      "task": {
+        "type": "String"
+      }
+    }
+  },
+  "tryNewMentor": "Try a new mentor",
+  "todayDone": "You learned something today. See you tomorrow.",
+  "keepStreak": "Finish a task or a quiz today to keep your streak going.",
+  "greetFinished": "You finished every lesson here. Explain one idea to a friend this week. Teaching it is the final test.",
+  "greetWelcome": "Let's start small. One short lesson, one small task. That is how every skill begins.",
+  "greetComeback": "Good to have you back. Skip the guilt and do one lesson today.",
+  "greetProgress": "You are {done} of {total} lessons in. Next up is \"{title}\".",
+  "@greetProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "quizPassShort": "Well done.",
+  "quizPerfect": "{message} And a perfect score.",
+  "@quizPerfect": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "quizPassed": "Well done, you passed this lesson.",
+  "quizTricky": "This one is tricky, and that is normal. Read only the key points again, then try once more. Slow progress is still progress.",
+  "quizFail": "Not yet. Read the explanations above, review the lesson, and try again.",
+  "settings": "Settings",
+  "dailyReminder": "Daily reminder",
+  "dailyReminderHint": "Only on days you haven't studied yet",
+  "retry": "Try again",
+  "skip": "Skip",
+  "undo": "Undo",
+  "lessonCompleted": "Lesson complete! Nice work.",
+  "leaveQuizTitle": "Leave the quiz?",
+  "leaveQuizBody": "Your answers so far will be lost.",
+  "leaveQuiz": "Leave",
+  "stayInQuiz": "Stay",
+  "reminderTime": "Reminder time",
+  "notifPracticeTitle": "Time for today's lesson",
+  "notifPracticeBody": "{mentor}: \"{lesson}\" is next. Just {minutes} min.",
+  "@notifPracticeBody": {
+    "placeholders": {
+      "mentor": {
+        "type": "String"
+      },
+      "lesson": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifGenericBody": "One short lesson a day adds up.",
+  "notifStreakRiskTitle": "🔥 Your {count}-day streak is at risk",
+  "@notifStreakRiskTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifStreakRiskBody": "It ends at midnight. One lesson saves it.",
+  "notifStreakLostTitle": "Your {count}-day streak ended",
+  "@notifStreakLostTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifStreakLostBody": "Every streak starts at day 1. Start a new one today.",
+  "notifComebackTitle": "Your mentors miss you",
+  "notifComebackBody": "{mentor} saved your place: \"{lesson}\"",
+  "@notifComebackBody": {
+    "placeholders": {
+      "mentor": {
+        "type": "String"
+      },
+      "lesson": {
+        "type": "String"
+      }
+    }
+  },
+  "notifLastCallTitle": "We'll pause your reminders",
+  "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!",
+  "layoutGrid": "Grid",
+  "layoutCarousel": "Carousel",
+  "layoutList": "List"
+}

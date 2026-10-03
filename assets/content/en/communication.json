@@ -1,0 +1,1028 @@
+{
+  "id": "communication",
+  "name": "Communication",
+  "mentor": "Speak Mentor",
+  "tagline": "Listen better, speak clearly and present with confidence.",
+  "description": "Communication is the skill behind every other skill. These lessons cover listening, asking questions, structuring your message and handling nerves.",
+  "image": "assets/images/communication.jpg",
+  "color": "#D07A5F",
+  "messages": {
+    "welcome": "Great communicators are made, not born. We start with the most underrated part: listening.",
+    "comeback": "Good to hear from you again. Let's warm up with one short lesson.",
+    "pass": "Clear and confident. Nicely done.",
+    "fail": "Not quite there. Re-read the explanations and try again. Repetition is how communication skills stick.",
+    "finished": "You now have tools to listen with empathy, ask, structure, speak with presence, set boundaries, persuade, negotiate, run meetings, handle tough questions and explain simply. Use one of them in your next real conversation or message."
+  },
+  "levels": [
+    {
+      "id": "comm-1",
+      "title": "Listen first",
+      "lessons": [
+        {
+          "id": "comm-1-1",
+          "title": "Active listening",
+          "minutes": 6,
+          "content": "Active listening means listening to understand, not just waiting for your turn to talk. Think of a cricket fielder. A lazy fielder stands there half-watching. A good fielder keeps his eyes on the ball the whole time, so he catches it. Active listening is keeping your eyes on the other person's words until you have really caught them.\n\nMost of us listen while planning our reply in our head. So we miss half of what the person said. Then we answer the wrong problem, and the other person feels ignored. Your friend says, \"I'm worried about the math test,\" and you reply, \"Me too, I haven't even started!\" Now the talk is about you. When you listen properly, people trust you, they tell you more, and you make fewer mistakes because you got the real message.\n\nHere's the trick. It has three steps. Step one, attend. Put your phone face down, look at the person and let them finish. Don't jump in, even if you know what they are going to say. Step two, reflect. Say back what you heard in your own short words: \"So the test is on Sunday and you haven't done chapter 5 yet?\" This lets them fix anything you got wrong.\n\nStep three, ask. Ask one question that goes a bit deeper, like \"Which part of chapter 5 feels hardest?\" Then stop and listen again. One small extra trick: when they stop talking, count to two in your head before you speak. Very often they add the most important part in that little gap.\n\nReal life: Rafi's little sister Mim came home from school quiet. Before, Rafi would say \"What happened?\" while scrolling Facebook, hear \"nothing\", and go back to his phone. This time he put the phone down and looked at her. Mim said, \"Some girls didn't let me sit with them at tiffin.\" Rafi reflected: \"So you ate alone today?\" She nodded. He asked, \"Has this happened before?\" Mim said it was the third day. Because Rafi caught the real story, he told their mother, and she talked to the class teacher. A week later Mim had a new tiffin group.\n\nThe common mistake is fake listening: nodding and saying \"hmm, hmm\" while thinking about something else. People can feel it. To avoid it, give yourself a small job. Try to repeat their main point in one sentence when they finish. If you can't, you weren't really listening, so ask them to say it again.\n\nRemember: attend, reflect, ask, and let the other person finish first.",
+          "key_points": [
+            "Active listening means listening to understand, not to reply.",
+            "The three steps are attend, reflect and ask.",
+            "Reflecting catches mistakes early and makes people feel heard.",
+            "Pausing for two seconds often brings out the most important part."
+          ],
+          "tip": "When someone finishes talking, start your reply with \"So you're saying...\" and sum up their point in one line before you add your own.",
+          "task": "In your next conversation today, reflect back what the other person said at least twice, using \"So you mean...\". Notice if they correct you or tell you more.",
+          "quiz": [
+            {
+              "q": "What are the three steps of active listening in this lesson?",
+              "options": [
+                "Nod, smile, agree",
+                "Listen, judge, advise",
+                "Attend, reflect, ask",
+                "Wait, reply, move on"
+              ],
+              "answer": 2,
+              "explain": "Attend (full attention), reflect (say back what you heard), ask (one deeper question)."
+            },
+            {
+              "q": "Mim says girls didn't let her sit with them at tiffin. Which reply is reflecting?",
+              "options": [
+                "So you ate alone today?",
+                "That's nothing, forget it.",
+                "When I was your age, I had it worse.",
+                "Okay. What's for dinner?"
+              ],
+              "answer": 0,
+              "explain": "Reflecting means saying back what you heard in your own words so the speaker can confirm it."
+            },
+            {
+              "q": "What is the best way to avoid fake listening?",
+              "options": [
+                "Nod more often",
+                "Say \"hmm\" every few seconds",
+                "Plan your reply while they talk",
+                "Try to repeat their main point in one sentence"
+              ],
+              "answer": 3,
+              "explain": "Giving yourself the job of summing up their point forces you to actually listen."
+            }
+          ]
+        },
+        {
+          "id": "comm-1-2",
+          "title": "Ask better questions",
+          "minutes": 6,
+          "content": "A question is a key. A closed question is a small key that opens only a tiny box: the answer is \"yes\", \"no\" or one word. An open question is a big key that opens a whole room: the other person has to explain. \"Did you like the trip?\" gets \"yes\". \"What was the best part of the trip?\" gets a story.\n\nGood questions get you real information. Without them you guess, and guessing goes wrong. A teacher asks, \"Any questions?\" and the class says nothing, even though half of them are lost. A doctor who only asks \"Are you okay?\" misses the real pain. With better questions you learn faster, you solve the right problem, and people enjoy talking to you because you seem truly interested.\n\nHere's how to do it. Rule one: start with What, How, or Tell me about. \"What happened next?\" \"How did you fix it?\" \"Tell me about your new school.\" These open the room. Rule two: be careful with \"Why\". \"Why did you do that?\" can sound like blame. \"What made you choose that?\" asks the same thing more gently.\n\nRule three: ask one question at a time. If you ask three together, people answer only the last one. Rule four: build on their answer. If your friend says, \"The match was tough,\" don't jump to a new topic. Pick a word they used and ask about it: \"Tough how? Was it the bowling?\" Use closed questions only when you need a quick fact, like \"Is the exam on Sunday?\"\n\nReal life: Nusrat was doing homework with her cousin Tanvir, who is in class 5. Before, she kept asking, \"Do you understand?\" Tanvir always said \"yes\", and then got the sums wrong. So Nusrat changed her question to: \"How would you solve this one? Talk me through it.\" Tanvir started, then stopped at the step where he had to carry the number. Now Nusrat could see exactly where he was stuck. She explained just that one step. The next day he got 9 out of 10 sums right.\n\nThe common mistake is asking a question while hiding your own opinion inside it, like \"Don't you think this plan is bad?\" That isn't really a question. It pushes people to agree, so you don't learn what they actually think. Keep your question clean: \"What do you think of this plan?\" Then listen to the full answer before you share your view.\n\nRemember: use open questions starting with What or How, ask one at a time, and build on the answer you get.",
+          "key_points": [
+            "Closed questions get one word. Open questions get a full answer.",
+            "Start with What, How or Tell me about. Use Why carefully.",
+            "Ask one question at a time and build on the last answer.",
+            "Don't hide your opinion inside the question."
+          ],
+          "tip": "Replace \"Do you understand?\" with \"How would you explain this back to me?\" You will see at once what the person really understood.",
+          "task": "Today, ask a family member three open questions about their day, each starting with What or How. Ask one follow-up using a word they used.",
+          "quiz": [
+            {
+              "q": "Which one is an open question?",
+              "options": [
+                "Did you enjoy the match?",
+                "What was the hardest part of the match?",
+                "Was the match on Friday?",
+                "Did your team win?"
+              ],
+              "answer": 1,
+              "explain": "Open questions start with What, How or Tell me about and need a full answer."
+            },
+            {
+              "q": "Why did Nusrat's question \"Do you understand?\" fail with Tanvir?",
+              "options": [
+                "Tanvir didn't hear it",
+                "It was too long",
+                "It was an open question",
+                "It let Tanvir just say \"yes\" without showing his thinking"
+              ],
+              "answer": 3,
+              "explain": "A closed question allows a one-word answer. \"Talk me through it\" made him show exactly where he got stuck."
+            },
+            {
+              "q": "Your friend says, \"The match was tough.\" What is the best follow-up?",
+              "options": [
+                "Anyway, did you see the new phone?",
+                "Why did you play so badly?",
+                "Tough how? Was it the bowling?",
+                "Okay."
+              ],
+              "answer": 2,
+              "explain": "Building on a word they used keeps the talk going deeper instead of jumping topic."
+            }
+          ]
+        },
+        {
+          "id": "comm-1-3",
+          "title": "Listen to what is not said",
+          "minutes": 6,
+          "content": "People talk with more than words. Their face, voice and body also send a message. Think of your mother saying \"I'm fine\" while banging pots in the kitchen. The words say fine. The pots say something else. Listening to what is not said means noticing these extra signals too.\n\nIf you only hear the words, you miss half the message. A friend says \"Sure, I'll come\" in a flat voice, and you think it's settled. Then he doesn't show up, because he never wanted to come. When you notice the hidden signals, you can catch problems early, ask the right question, and help before things get worse.\n\nHere's how. Watch for three things. First, the voice: is it quieter, slower, shakier or flatter than usual? Second, the face and body: no eye contact, arms crossed, a forced smile, fidgeting with a pen. Third, the gaps: what did they skip? If someone tells you all about the trip except the day with their uncle, that skipped day may be the real story.\n\nNow the important rule: a signal is a clue, not a proof. Crossed arms might mean upset, or it might just mean the room is cold. So never decide for them. Instead, gently say what you noticed and ask: \"You said it's fine, but you sound tired. Is something bothering you?\" Notice, then check. Compare with how that person normally is. A quiet friend being quiet is normal. A loud friend going quiet is a signal.\n\nReal life: Sabbir's best friend Arif usually talks non-stop about cricket. One day at school Arif answered everything with \"hmm\" and didn't open his tiffin. When Sabbir asked about the BPL match, Arif said, \"Didn't watch.\" Before, Sabbir would have shrugged and played with others. This time he noticed: Arif never misses a match. At break he said, \"You're very quiet today, and you didn't eat. All okay?\" After a pause, Arif said his father was in hospital. Sabbir sat with him, shared his own paratha, and told the class teacher, who let Arif call home. Arif later said that was the day he felt less alone.\n\nThe common mistake is mind-reading: deciding you know what someone feels and acting on it. \"You're angry with me!\" can start a fight when the person was only sleepy. Always turn your guess into a soft question. Say what you saw, then ask. Let them tell you what it means.\n\nRemember: notice the voice, the body and the gaps, then ask instead of assuming.",
+          "key_points": [
+            "Voice, face, body and skipped topics also carry a message.",
+            "Compare with how that person usually behaves.",
+            "A signal is a clue, not proof, so always check by asking.",
+            "Say what you noticed, then ask a gentle question."
+          ],
+          "tip": "Use this sentence: \"You said ___, but you seem ___. Want to talk about it?\" It shows you noticed without blaming.",
+          "task": "In one conversation today, notice the other person's voice and face, not just their words. If something doesn't match, ask one gentle question about it.",
+          "quiz": [
+            {
+              "q": "Your loud, chatty friend suddenly answers everything with \"hmm\". What does this lesson say it is?",
+              "options": [
+                "A signal worth gently asking about",
+                "Proof that he is angry with you",
+                "Nothing, words are all that matter",
+                "A reason to avoid him"
+              ],
+              "answer": 0,
+              "explain": "A change from someone's normal behaviour is a clue. Check it with a gentle question."
+            },
+            {
+              "q": "Which three things should you watch for?",
+              "options": [
+                "Clothes, shoes and hair",
+                "Grades, friends and phone",
+                "Voice, face and body, and the gaps in what they say",
+                "Only the exact words"
+              ],
+              "answer": 2,
+              "explain": "Voice, face and body, plus the topics they skip, carry the hidden part of the message."
+            },
+            {
+              "q": "Why is \"You're angry with me!\" a mistake?",
+              "options": [
+                "It is too long",
+                "It is mind-reading: deciding what they feel instead of asking",
+                "It is an open question",
+                "It reflects their words"
+              ],
+              "answer": 1,
+              "explain": "A signal is only a clue. Turn your guess into a question and let them explain."
+            }
+          ]
+        },
+        {
+          "id": "comm-1-4",
+          "title": "Support first, solutions later",
+          "minutes": 6,
+          "content": "When someone is upset, they usually need two things: first to feel understood, then maybe some help. Empathetic listening means giving the first thing before the second. It's like a doctor cleaning a wound before putting on the bandage. If you slap the bandage on a dirty wound, it doesn't heal well.\n\nMost of us jump straight to advice. Your friend says, \"I failed the English test,\" and you say, \"You should have studied more.\" Even if that's true, it feels like a slap. Now your friend gets defensive, stops talking, or feels worse. When you show you understand first, the person calms down, and then they can actually think about solutions, often their own.\n\nHere's the method, in three steps. Step one, name the feeling: \"That sounds really frustrating\" or \"You must be so disappointed.\" You don't have to agree with everything. You're just showing you get how they feel. Step two, make it normal: \"Anyone would feel bad after working hard and still failing.\" This tells them their feeling makes sense.\n\nStep three, ask what they need: \"Do you want ideas, or do you just want to vent right now?\" This one question saves so many fights. If they want ideas, now is the time. If they just want to vent, keep listening. Words to avoid: \"At least...\", \"Don't cry\", \"It's not a big deal\" and \"The same thing happened to me...\" They all push the feeling away instead of accepting it.\n\nReal life: Tania's friend Rumi called her crying. Her bKash account had been used by a scammer and she'd lost 2,000 taka of her Eid salami. Tania's first thought was, \"Why did you share your PIN?\" But she held it in. She said, \"Oh no, 2,000 taka! That's horrible, you must be so angry.\" Rumi cried more, then calmed down. Tania said, \"Anyone would be shaken by this.\" Then she asked, \"Do you want help figuring out what to do?\" Rumi said yes. Together they called the bKash helpline, 16247, to report it, and Rumi changed her PIN. Rumi later said she'd been too ashamed to tell anyone else.\n\nThe common mistake is fixing too fast. Advice feels helpful to the giver, but too early it says, \"Your feeling is a problem, let's get rid of it quickly.\" A simple test: if the person is still showing strong emotion, you are not done with steps one and two yet. Wait until they sound calmer before offering any fix.\n\nRemember: name the feeling, make it normal, then ask whether they want ideas or just an ear.",
+          "key_points": [
+            "Upset people need to feel understood before they can use advice.",
+            "Name the feeling, make it normal, then ask what they need.",
+            "Avoid \"At least...\", \"Don't cry\" and \"It's not a big deal\".",
+            "If emotions are still strong, it's too early for solutions."
+          ],
+          "tip": "Memorise one question: \"Do you want ideas, or do you just want me to listen?\" Ask it before giving any advice.",
+          "task": "Think of the last time someone told you a problem. Write down what you said, then write what you would say now using the three steps.",
+          "quiz": [
+            {
+              "q": "What are the three steps of empathetic listening in this lesson?",
+              "options": [
+                "Advise, warn, move on",
+                "Agree, blame, fix",
+                "Listen, laugh, share your own story",
+                "Name the feeling, make it normal, ask what they need"
+              ],
+              "answer": 3,
+              "explain": "First show you understand the feeling, then that it makes sense, then ask whether they want help."
+            },
+            {
+              "q": "Rumi lost 2,000 taka to a scam. What did Tania say first?",
+              "options": [
+                "Why did you share your PIN?",
+                "Oh no, 2,000 taka! That's horrible, you must be so angry.",
+                "At least it wasn't more.",
+                "Don't cry, it's just money."
+              ],
+              "answer": 1,
+              "explain": "She named the feeling first and kept the 'why' question to herself."
+            },
+            {
+              "q": "When is it a good time to offer advice?",
+              "options": [
+                "After they sound calmer and say they want ideas",
+                "Immediately, to save time",
+                "Never",
+                "Only when they are crying"
+              ],
+              "answer": 0,
+              "explain": "Advice works once the person feels understood and asks for it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comm-2",
+      "title": "Speak with confidence",
+      "lessons": [
+        {
+          "id": "comm-2-1",
+          "title": "Structure your message with PREP",
+          "minutes": 6,
+          "content": "PREP is a simple recipe for saying your opinion clearly. It stands for Point, Reason, Example, Point. Think of it like a burger: the bun on top is your point, the filling is your reason and example, and the bun at the bottom is your point again. Without the buns, everything falls out of your hands.\n\nWhen people speak without a structure, they wander. They start with a long story, add side details, and the listener keeps thinking, \"So what do you want?\" In class, at an interview, or when asking your parents for something, a wandering answer sounds unsure and gets ignored. With PREP, your listener knows your point in the first five seconds and remembers it at the end.\n\nHere's how to build it. P, Point: say your main idea in one sentence. \"I think our class should have a reading corner.\" R, Reason: give the main why, starting with \"because\". \"Because many of us don't have storybooks at home.\" Keep it to one strong reason, not five weak ones.\n\nE, Example: give one real, specific example or number. \"In our class of 40, only 8 said they read a storybook last month.\" Examples make people believe you. P, Point again: repeat your point, maybe with a small ask. \"So let's start a reading corner, and I can bring 5 books to begin.\" The whole thing can take just 30 seconds. Before you speak, take five seconds to decide your P in your head. Everything else hangs from it.\n\nReal life: Sabbir wanted to go on the school trip to Sylhet, which cost 1,500 taka. Last time he asked his father, he rambled: \"Everyone's going, and there's a bus, and Rafi's going, and please...\" His father said no. This time he used PREP. \"Abbu, I want to go on the Sylhet trip. Because it's a science trip and we'll see the tea gardens we're studying in geography. Last year's group did a project from it that got the highest marks. So can I go? I'll pay 500 taka from my Eid salami.\" His father thought for a moment and said yes.\n\nThe common mistake is starting with the background instead of the point. \"So, yesterday, I was thinking, and you know how...\" Your listener gets lost before you even reach your idea. Fix it by saying your point in your very first sentence. You can always add the story after.\n\nRemember: Point, Reason, Example, Point. Say your main idea first and last.",
+          "key_points": [
+            "PREP means Point, Reason, Example, Point.",
+            "Say your main idea in the very first sentence.",
+            "One strong reason and one specific example beat many weak ones.",
+            "Repeat your point at the end, ideally with a clear ask."
+          ],
+          "tip": "Before you answer any question, silently finish this sentence in your head: \"My point is...\". Then say that sentence first.",
+          "task": "Pick something you want, like a later bedtime or a new book. Write a 4-line PREP message for it and say it out loud once.",
+          "quiz": [
+            {
+              "q": "What does PREP stand for?",
+              "options": [
+                "Plan, Read, Explain, Present",
+                "Problem, Result, Effort, Praise",
+                "Point, Reason, Example, Point",
+                "Prepare, Rehearse, Explain, Pause"
+              ],
+              "answer": 2,
+              "explain": "Point, Reason, Example, Point: your idea, why, proof, and your idea again."
+            },
+            {
+              "q": "In Sabbir's PREP message, which part is the Example?",
+              "options": [
+                "Abbu, I want to go on the Sylhet trip.",
+                "I'll pay 500 taka from my Eid salami.",
+                "Everyone's going, please.",
+                "Last year's group did a project from it that got the highest marks."
+              ],
+              "answer": 3,
+              "explain": "The example is the specific proof that backs up his reason."
+            },
+            {
+              "q": "What is the most common mistake this lesson warns about?",
+              "options": [
+                "Starting with background instead of the point",
+                "Speaking for only 30 seconds",
+                "Giving one reason instead of five",
+                "Repeating the point at the end"
+              ],
+              "answer": 0,
+              "explain": "Long background loses the listener. Say the point first, add the story later."
+            }
+          ]
+        },
+        {
+          "id": "comm-2-2",
+          "title": "Handle nerves when presenting",
+          "minutes": 6,
+          "content": "Feeling nervous before speaking in front of people is your body's alarm system. Your heart beats fast, your hands shake, your mouth gets dry. It's the same alarm that would help you run from a dog. Your body thinks the class is a danger. The good news: almost everyone feels this, even famous speakers, and you can learn to calm the alarm.\n\nIf you don't handle nerves, you rush, forget lines, speak too softly, or avoid speaking at all. Avoiding feels good today but makes the fear bigger next time. When you learn to manage nerves, you can share your ideas at school, in viva exams and in interviews, and people get to see what you actually know.\n\nHere's what to do before. One: practise out loud, not just in your head, at least three times. Say it to a mirror, a sibling or your phone's voice recorder. Two: memorise only your first two sentences perfectly. The first 30 seconds are the scariest, and a strong start calms you for the rest. Three: breathe in slowly for 4 counts, hold for 4, breathe out for 6. Do this three or four times. A long breath out tells your body there's no danger.\n\nHere's what to do during. Find two or three friendly faces in the room and talk to them. Hold a small note card with three keywords, not full sentences. If you forget, pause, look at your card, and continue. The audience usually doesn't notice a pause at all. Also, call the feeling \"excited\" instead of \"scared\". Both feel the same in the body, and the word \"excited\" helps you use that energy.\n\nReal life: Nusrat had to present her science project on water pollution in front of 45 classmates. Last time, she read from her paper, her voice shook, and she finished in one minute. This time she practised three times with her little brother as the audience. She memorised her opening: \"Every single day, factories and homes dump their waste into the Buriganga. Let me show you what that does.\" Before her turn, she did the 4-4-6 breathing. During the talk, she looked at her friend Tania in the second row. Her hands still shook a bit at first, but by the second minute she was speaking clearly. The teacher gave her group the highest marks.\n\nThe common mistake is trying to make the nerves disappear completely before you start. They won't, and waiting for that only makes you more anxious. The goal is to speak well while a bit nervous. Expect the shaky start. It usually fades after the first minute.\n\nRemember: practise out loud, nail your first two lines, breathe out long, and talk to friendly faces.",
+          "key_points": [
+            "Nerves are your body's alarm system and almost everyone feels them.",
+            "Practise out loud at least three times and memorise your opening.",
+            "Breathe in for 4, hold for 4, out for 6 to calm your body.",
+            "Use keyword cards and friendly faces. Nerves usually fade after the first minute."
+          ],
+          "tip": "Record your talk on your phone once and listen back. It sounds much better than you fear, and that builds real confidence.",
+          "task": "Pick any topic you know, like your favourite cricketer. Stand up and talk about it out loud for one minute to a mirror, starting with a memorised first line.",
+          "quiz": [
+            {
+              "q": "What breathing pattern does this lesson suggest?",
+              "options": [
+                "Quick short breaths",
+                "In for 4, hold for 4, out for 6",
+                "Hold your breath as long as possible",
+                "In for 6, out for 2"
+              ],
+              "answer": 1,
+              "explain": "A long breath out calms the body's alarm system."
+            },
+            {
+              "q": "Why did Nusrat memorise her first two sentences?",
+              "options": [
+                "The first 30 seconds are the scariest, and a strong start calms you",
+                "So she wouldn't need to practise the rest",
+                "Because the teacher asked for it",
+                "To finish faster"
+              ],
+              "answer": 0,
+              "explain": "A strong, memorised opening gets you through the hardest part."
+            },
+            {
+              "q": "What is the realistic goal with nerves?",
+              "options": [
+                "Wait until they disappear completely",
+                "Avoid presenting until you feel ready",
+                "Speak well while still a bit nervous",
+                "Read every word from the paper"
+              ],
+              "answer": 2,
+              "explain": "Nerves rarely vanish. Expect a shaky start and keep going. It usually fades."
+            }
+          ]
+        },
+        {
+          "id": "comm-2-3",
+          "title": "Use your voice: pace, pauses and fillers",
+          "minutes": 6,
+          "content": "Your voice is like the driver of a bus. If the driver goes too fast, passengers get scared and miss their stop. If he goes too slow, they get bored. A good driver changes speed, stops at the right places, and doesn't keep honking for no reason. Pace is your speed, pauses are your stops, and fillers like \"umm\", \"uh\" and \"like\" are the useless honking.\n\nWhen you're nervous, you speak fast, and your listeners can't keep up. When every sentence is full of \"umm\" and \"you know\", you sound unsure even if you know the answer perfectly. In a viva or class presentation, teachers often judge confidence from your voice before your content. Control these three things and the same words suddenly sound clear and strong.\n\nHere's how to fix pace. A good speaking speed is around 130 to 150 words per minute. Test it: read a 150-word paragraph out loud and time yourself. If you finish in under 50 seconds, slow down. Speed up a little for exciting parts, and slow down for the most important sentence, almost saying it word by word.\n\nHere's how to use pauses and cut fillers. Pause for one or two seconds after a key point so it sinks in, and before you say something important so people lean in. A pause feels long to you, but to listeners it sounds confident. To cut fillers, first notice them: record yourself talking for one minute and count every \"umm\". Then, whenever you feel an \"umm\" coming, close your mouth and pause instead. Silence is the replacement for a filler.\n\nReal life: Rafi had his English viva. In a practice recording, he counted 23 \"umm\"s in two minutes and spoke so fast his friend asked, \"What did you say?\" For a week, he practised answering one question each evening while his sister Mim counted his fillers on her fingers. Each time he felt an \"umm\" coming, he paused instead. By Thursday he was down to 5. In the real viva, when asked about his favourite book, he paused, then said slowly, \"My favourite book is Thakurmar Jhuli.\" The examiner smiled and wrote a good mark.\n\nThe common mistake is trying to cut every single filler right away and freezing up. Then you think more about the \"umm\"s than about your message. Aim to cut them by half first. An occasional filler is fine. What matters is that most of your sentences are clean and the important ones are slow and clear.\n\nRemember: slow down for what matters, pause instead of saying \"umm\", and let silence work for you.",
+          "key_points": [
+            "Aim for about 130 to 150 words per minute.",
+            "Slow down and pause around your most important sentences.",
+            "Replace each filler with a short silent pause.",
+            "Record yourself to count fillers, and aim to cut them by half first."
+          ],
+          "tip": "Put a small \"/\" mark in your notes after each key sentence. When you see it, stop for one full second.",
+          "task": "Record yourself talking for one minute about your day. Count your fillers. Then record again, pausing instead of saying \"umm\", and compare the counts.",
+          "quiz": [
+            {
+              "q": "What should you do when you feel an \"umm\" coming?",
+              "options": [
+                "Say \"you know\" instead",
+                "Speak faster to cover it",
+                "Laugh",
+                "Close your mouth and pause"
+              ],
+              "answer": 3,
+              "explain": "A short silent pause is the replacement for a filler, and it sounds confident."
+            },
+            {
+              "q": "How did Rafi reduce his fillers from 23 to 5?",
+              "options": [
+                "He memorised every answer",
+                "He stopped answering questions",
+                "He practised daily while Mim counted, pausing instead of saying umm",
+                "He spoke faster"
+              ],
+              "answer": 2,
+              "explain": "Counting fillers made him aware of them, and pausing replaced them."
+            },
+            {
+              "q": "Where should you slow down the most?",
+              "options": [
+                "At the start of every sentence",
+                "On your most important sentence",
+                "On the exciting parts",
+                "Nowhere, speed shows confidence"
+              ],
+              "answer": 1,
+              "explain": "Slowing down and pausing around key points helps them sink in."
+            }
+          ]
+        },
+        {
+          "id": "comm-2-4",
+          "title": "Speak with your body",
+          "minutes": 6,
+          "content": "Your body talks even when your mouth is closed. Posture is how you stand or sit, eye contact is where you look, and gestures are what your hands do. Picture two shopkeepers at a bazar. One stands straight, looks at you and points to the fresh fish. The other slouches, stares at his phone and mumbles. Same fish, but you buy from the first one. That's body language.\n\nIf your body says \"I'm scared\" or \"I don't care\", people believe your body more than your words. You can say \"I'm confident about this project,\" but if you're looking at the floor with your hands in your pockets, nobody believes it. Good body language makes people trust you, listen longer, and remember your point.\n\nHere's how to set your posture. Stand with your feet about shoulder-width apart, weight on both feet, shoulders relaxed and back, chin level. Don't sway or shift from foot to foot. When sitting, sit up and lean slightly forward. That shows interest. For eye contact, use the \"one thought, one person\" rule: say one full sentence to one person, then move to someone else. In a big room, look at different sections, left, middle and right, not just the teacher.\n\nFor gestures, keep your hands where people can see them, between your waist and shoulders. Use them to show size, numbers or direction: hold up three fingers when you say \"three reasons\". When you aren't gesturing, let your hands rest loosely at your sides or lightly together in front. Avoid crossed arms, hands in pockets, and fiddling with a pen or your hair.\n\nReal life: Tania was class captain and had to announce the sports day plan at assembly. In her first try in front of her mirror, she noticed she held her paper in front of her face, rocked side to side, and looked only at the floor. She practised again: feet planted, paper held low, looking up after every line. When she said, \"We have three events this year,\" she held up three fingers. On the day, she looked at the left side, then the middle, then the right. Afterwards, the headmaster said it was the clearest announcement of the year, and more students signed up than last time.\n\nThe common mistake is overdoing it: staring at one person without blinking, or waving your hands like a windmill. That looks fake and distracts people. Body language should support your words, not perform on its own. Keep it natural: calm stance, a sentence of eye contact per person, and gestures only when they show something.\n\nRemember: stand steady, look at one person per thought, and use your hands to show, not to fidget.",
+          "key_points": [
+            "People believe your body language more than your words.",
+            "Stand steady with feet shoulder-width apart and shoulders relaxed.",
+            "Eye contact: one full sentence to one person, then move on.",
+            "Gesture between waist and shoulders to show numbers or size. Don't fidget."
+          ],
+          "tip": "Before you start talking, plant both feet and take one breath. That one second stops swaying and makes you look ready.",
+          "task": "Stand in front of a mirror and say three sentences about your favourite food. Use the one-sentence-per-person rule by looking at three different objects in the room.",
+          "quiz": [
+            {
+              "q": "What is the \"one thought, one person\" rule?",
+              "options": [
+                "Say one full sentence to one person, then look at someone else",
+                "Only talk to one person the whole time",
+                "Think before you speak",
+                "Ask one person one question"
+              ],
+              "answer": 0,
+              "explain": "Holding eye contact for one thought feels natural and connects with the whole room."
+            },
+            {
+              "q": "When Tania said \"three events\", what did she do?",
+              "options": [
+                "Crossed her arms",
+                "Held up three fingers",
+                "Looked at the floor",
+                "Put her hands in her pockets"
+              ],
+              "answer": 1,
+              "explain": "Gestures should show numbers, size or direction to support your words."
+            },
+            {
+              "q": "Which is an example of overdoing body language?",
+              "options": [
+                "Standing with feet shoulder-width apart",
+                "Looking at the left, middle and right of the room",
+                "Resting hands loosely at your sides",
+                "Staring at one person without blinking"
+              ],
+              "answer": 3,
+              "explain": "Body language should support your words naturally, not look forced."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comm-3",
+      "title": "Handle real conversations",
+      "lessons": [
+        {
+          "id": "comm-3-1",
+          "title": "Give and receive feedback",
+          "minutes": 6,
+          "content": "Feedback is telling someone how their work or behaviour affected you, so they can keep the good parts and fix the rest. It's like a mirror. You can't see the spinach stuck in your teeth, but a friend who tells you saves you from smiling at everyone all day with it.\n\nWithout feedback, people repeat the same mistakes for years. With bad feedback, like \"Your presentation was boring,\" people just feel hurt and learn nothing. Good feedback is specific and kind, so the person knows exactly what to do next. And when you can take feedback calmly, you improve much faster than people who get defensive.\n\nHere's how to give it, using SBI: Situation, Behaviour, Impact. Situation: say when and where. \"In today's group presentation...\" Behaviour: describe what they did, like a camera would see it, not your judgement. \"...you read from your phone for most of it...\" Impact: say what effect it had. \"...so the class stopped looking at you, and our main point got lost.\" Then add one suggestion: \"Next time, could you use 3 keywords on a card?\" Also give positive feedback with SBI: \"When you added that chart, everyone understood the numbers.\"\n\nHere's how to receive it. First, breathe and don't argue right away. Second, say \"Thanks for telling me.\" Third, ask a question to understand better: \"Which part was hardest to follow?\" Fourth, decide later what to use. You don't have to agree with everything, but listen to all of it. If three people say the same thing, it's probably true.\n\nReal life: Sabbir and Rafi were doing a group project. Rafi kept submitting his part late, the night before. Sabbir was angry and almost texted, \"You're so lazy.\" Instead, he used SBI when they met: \"For the last two assignments, you sent your part at 11 pm the night before. I had to stay up till 2 am to put it together, and I was too tired for my math exam.\" Rafi was surprised. He hadn't realised. He said, \"Sorry, I didn't know it was that bad.\" They agreed Rafi would send his part two days early. The next project went smoothly, and they stayed friends.\n\nThe common mistake is attacking the person instead of describing the behaviour. \"You're careless\" is a label, and labels make people defensive. \"You forgot to add page numbers\" is a behaviour, and behaviours can be fixed. Before giving feedback, check: could a camera have recorded what I'm describing? If not, rewrite it.\n\nRemember: give feedback with Situation, Behaviour, Impact, and receive it with a thank you and a question.",
+          "key_points": [
+            "Good feedback is specific about behaviour, not a label about the person.",
+            "Use SBI: Situation, Behaviour, Impact, then one suggestion.",
+            "When receiving feedback, say thanks and ask a question before reacting.",
+            "If several people say the same thing, take it seriously."
+          ],
+          "tip": "Use the camera test: before you give feedback, ask yourself whether a video camera could have recorded the behaviour you're describing.",
+          "task": "Write one piece of positive SBI feedback for a friend or family member about something they did this week, and send it or say it today.",
+          "quiz": [
+            {
+              "q": "What does SBI stand for?",
+              "options": [
+                "Speak, Blame, Improve",
+                "Smile, Breathe, Ignore",
+                "Situation, Behaviour, Impact",
+                "Short, Brave, Important"
+              ],
+              "answer": 2,
+              "explain": "Situation (when/where), Behaviour (what they did), Impact (the effect)."
+            },
+            {
+              "q": "Which sentence describes behaviour, not a label?",
+              "options": [
+                "You sent your part at 11 pm the night before.",
+                "You're so lazy.",
+                "You never care about the group.",
+                "You're a careless person."
+              ],
+              "answer": 0,
+              "explain": "A behaviour is what a camera could record. Labels make people defensive."
+            },
+            {
+              "q": "What is the first thing to do when someone gives you feedback?",
+              "options": [
+                "Explain why they are wrong",
+                "Breathe and don't argue right away",
+                "Give them feedback back",
+                "Change everything immediately"
+              ],
+              "answer": 1,
+              "explain": "Stay calm, say thanks and ask a question. Decide what to use later."
+            }
+          ]
+        },
+        {
+          "id": "comm-3-2",
+          "title": "Handle difficult conversations",
+          "minutes": 6,
+          "content": "A difficult conversation is one where feelings are strong, opinions are different, and something important is at stake. Telling a friend they hurt you, asking your parents to change a rule, or admitting you broke something. It's like walking across a slippery floor. If you run, you fall. If you go slowly and carefully, you reach the other side.\n\nMost people either avoid these talks or explode. Avoiding means the problem keeps growing silently, and resentment builds. Exploding means you say things you regret, and the other person stops listening. Handled well, a hard conversation can actually make a relationship stronger, because the problem finally gets solved.\n\nHere's the method. Step one, prepare. Before the talk, write down in one sentence what you want, like \"I want us to split chores fairly.\" Pick a calm time, not when someone is hungry, tired or in front of others. Step two, start soft. Open with something you both care about: \"I want us to get along better, so can I talk about something that's bothering me?\" Step three, use \"I\" statements: \"I feel stressed when I have to wash all the dishes alone,\" not \"You never help!\"\n\nStep four, listen to their side using what you learned: reflect and ask. They may have a reason you didn't know. Step five, find one next step together: \"So you'll wash dishes on Sunday, Tuesday and Thursday, and I'll do the rest?\" If emotions get too hot, it's okay to say, \"Let's take a 10-minute break and come back.\" Then actually come back.\n\nReal life: Nusrat's younger brother Tanvir kept taking her phone without asking to play games, draining the battery before her online tuition. She used to shout, and they'd both end up crying and getting scolded. This time she waited until after dinner when he was calm. She said, \"Tanvir, I like that you enjoy games. But I feel worried when my phone is at 5% right before my tuition at 8. What can we do?\" Tanvir admitted he was bored after school. They agreed he could use her phone from 5 to 6 pm only, if he asked first. The fights stopped.\n\nThe common mistake is bringing up every old problem at once. \"And last month you also... and you always...\" Now the talk becomes a trial, and the other person just defends themselves. Stick to one issue per conversation. If you have three problems, have three separate talks.\n\nRemember: prepare one goal, start soft, use \"I\" statements, listen, and agree on one next step.",
+          "key_points": [
+            "Avoiding hard talks lets problems grow. Exploding makes them worse.",
+            "Prepare one clear goal and pick a calm time.",
+            "Start soft and use \"I feel... when...\" instead of \"You always...\".",
+            "Stick to one issue and finish with one agreed next step."
+          ],
+          "tip": "Write your opening sentence before the talk and practise saying it once. The first 30 seconds set the tone for everything after.",
+          "task": "Think of one small issue you've been avoiding. Write the goal in one sentence and an \"I feel... when...\" opening line for it.",
+          "quiz": [
+            {
+              "q": "Which opening is an \"I\" statement?",
+              "options": [
+                "You never help with anything!",
+                "Why are you so selfish?",
+                "Everyone thinks you're lazy.",
+                "I feel stressed when I wash all the dishes alone."
+              ],
+              "answer": 3,
+              "explain": "\"I feel... when...\" describes your experience without attacking the other person."
+            },
+            {
+              "q": "When did Nusrat choose to talk to Tanvir?",
+              "options": [
+                "In front of their parents",
+                "After dinner when he was calm",
+                "Right when he took the phone",
+                "Over text during tuition"
+              ],
+              "answer": 1,
+              "explain": "Choosing a calm time makes the other person more ready to listen."
+            },
+            {
+              "q": "What should you do if you have three different problems with someone?",
+              "options": [
+                "Bring them all up at once to save time",
+                "Ignore two of them forever",
+                "Have three separate conversations, one issue each",
+                "Write them a long letter"
+              ],
+              "answer": 2,
+              "explain": "One issue per talk keeps it from turning into a trial."
+            }
+          ]
+        },
+        {
+          "id": "comm-3-3",
+          "title": "Write clear emails and messages",
+          "minutes": 6,
+          "content": "A clear message is one the reader understands in one quick read and knows exactly what to do next. Think of a signboard on the highway. The driver has two seconds to read it. If it says \"Dhaka 50 km, turn left,\" perfect. If it has a paragraph of text, the driver misses the turn.\n\nUnclear messages waste everyone's time. \"Hey, about the thing tomorrow?\" gets the reply \"What thing?\" and five messages later you still haven't sorted it out. Long messages with the request hidden at the end often don't get answered at all. Clear messages get faster replies, fewer mix-ups, and make you look organised to teachers and, later, to bosses.\n\nHere's the method. Rule one, put the main point or request in the first line. \"Can we move our study group to 5 pm on Friday?\" Then add only the details needed. Rule two, one message, one topic. If you have two separate things, send two messages. Rule three, make the ask clear: who should do what, by when. \"Please reply by Thursday night so I can tell the others.\"\n\nRule four, keep it short. Use short sentences and break longer messages into small paragraphs of one or two lines. For email, write a subject line that says what it's about, like \"Request: extension for science assignment\", not \"Hello\". Rule five, reread once before sending. Ask yourself: if I knew nothing about this, would I understand it? Check names, dates and times.\n\nReal life: Tania needed to ask her class teacher for an extension on her assignment because she'd had fever for three days. Her first draft was: \"Assalamu alaikum Ma'am, hope you're well, I was thinking about the assignment and I've been sick and my mother said...\" The request came only at the very end. She rewrote it: \"Assalamu alaikum Ma'am. Could I submit my science assignment on Monday instead of Thursday? I had fever from Sunday to Tuesday and missed three days. I've attached the doctor's note. Thank you, Tania, Class 7, Roll 12.\" The teacher replied in ten minutes: \"Yes, Monday is fine. Get well soon.\"\n\nThe common mistake is assuming the reader knows what you know. You write \"Is it still on?\" because the plan is clear in your head, but the reader has ten other chats going. Always include the key facts: what, when, where. Writing \"Is the cricket match at the school field still on for 4 pm today?\" takes five more seconds and saves five back-and-forth messages.\n\nRemember: request first, one topic per message, clear ask with a deadline, and reread before you hit send.",
+          "key_points": [
+            "Put the main point or request in the first line.",
+            "One message, one topic. Say who does what by when.",
+            "Keep it short, and use a clear subject line for emails.",
+            "Never assume the reader knows the context. Include what, when, where."
+          ],
+          "tip": "Before sending, cover everything except your first line. If that line alone tells the reader what you need, your message is clear.",
+          "task": "Find one message you sent recently that caused confusion or got no reply. Rewrite it with the request in the first line and a clear deadline.",
+          "quiz": [
+            {
+              "q": "Where should the main request go in a message?",
+              "options": [
+                "At the very end, after the context",
+                "In the first line",
+                "In the middle",
+                "In a separate message the next day"
+              ],
+              "answer": 1,
+              "explain": "Readers decide quickly. Put what you need first, details after."
+            },
+            {
+              "q": "Which version of Tania's email worked?",
+              "options": [
+                "The one with a long greeting and the story first",
+                "A one-word message: \"Extension?\"",
+                "The one starting with the request, the reason and the doctor's note",
+                "A message sent to the whole class"
+              ],
+              "answer": 2,
+              "explain": "Request first, short reason, proof attached, and her name and roll number made it easy to say yes."
+            },
+            {
+              "q": "Why is \"Is it still on?\" a weak message?",
+              "options": [
+                "It assumes the reader knows what, when and where",
+                "It is too long",
+                "It has a deadline",
+                "It is too polite"
+              ],
+              "answer": 0,
+              "explain": "Include key facts so the reader doesn't need to ask back."
+            }
+          ]
+        },
+        {
+          "id": "comm-3-4",
+          "title": "Say no and set boundaries politely",
+          "minutes": 6,
+          "content": "A boundary is a line that shows what you are okay with and what you are not. Think of the boundary wall around your school. It doesn't stop friends from coming in through the gate, but it keeps the cows from walking into your classroom. Saying no politely is how you keep your wall standing without fighting anyone.\n\nIf you never say no, you end up doing everyone's work, lending money you never get back, and staying up late for things you didn't want to do. Then you feel tired and angry, and you might snap at people. When you say no clearly and kindly, people actually respect you more, and your yes starts to mean something.\n\nHere's the method. Step one, pause before answering. You don't have to decide on the spot. Say, \"Let me check and tell you in an hour.\" Step two, be clear. Use the word \"no\" or \"I can't\", not \"maybe\" or \"I'll try\" when you mean no. Step three, be kind and brief: one short reason is enough, or none at all. \"I can't lend money this month, I'm saving for my exam fees.\"\n\nStep four, offer an alternative if you want to: \"I can't do your homework, but I can explain the first sum to you tomorrow at tiffin.\" Step five, if they keep pushing, repeat the same sentence calmly. This is called the broken record method: \"I understand, but I can't.\" You don't need to give a new reason each time. New reasons just give them new things to argue with.\n\nReal life: Sabbir's classmate Jamil asked to copy his homework every single day. Sabbir always said \"okay\" because he didn't want to seem rude, but he hated it. One day their teacher noticed the identical answers and scolded both of them. The next morning, Jamil asked again. Sabbir took a breath and said, \"No, I can't share my homework anymore. But if you're stuck, I'll explain one sum at tiffin.\" Jamil said, \"Come on, just today!\" Sabbir repeated, \"I get it, but I can't.\" Jamil grumbled, but at tiffin he came over with his math book. A month later, he was doing his own homework.\n\nThe common mistake is over-explaining. You give five long reasons and apologise again and again. This sounds unsure, and the other person starts arguing with each reason. One short, honest sentence is stronger. Saying no to a request is not saying no to the person, so you don't need to apologise for having a boundary.\n\nRemember: pause, say no clearly, give one short reason or none, and repeat calmly if pushed.",
+          "key_points": [
+            "A boundary shows what you're okay with and what you're not.",
+            "Pause before answering. You don't have to decide on the spot.",
+            "Say a clear \"no\" with one short reason, and offer an alternative if you want.",
+            "If pushed, repeat the same calm sentence instead of giving new reasons."
+          ],
+          "tip": "Keep one ready-made line: \"Thanks for asking, but I can't this time.\" Having it ready makes saying no much easier in the moment.",
+          "task": "Think of one thing you often say yes to but don't want to. Write a clear, kind \"no\" sentence for it, with one alternative you're happy to offer.",
+          "quiz": [
+            {
+              "q": "What is the broken record method?",
+              "options": [
+                "Calmly repeating the same sentence when someone keeps pushing",
+                "Giving a new reason every time",
+                "Ignoring the person",
+                "Saying yes after the third ask"
+              ],
+              "answer": 0,
+              "explain": "Repeating one calm line avoids giving the other person new things to argue with."
+            },
+            {
+              "q": "What alternative did Sabbir offer Jamil?",
+              "options": [
+                "Copying only half the homework",
+                "Doing Jamil's homework on weekends",
+                "Telling the teacher",
+                "Explaining one sum at tiffin"
+              ],
+              "answer": 3,
+              "explain": "He said no to copying but offered help that actually taught Jamil."
+            },
+            {
+              "q": "Why is over-explaining a mistake?",
+              "options": [
+                "It is too short",
+                "It makes you sound confident",
+                "It sounds unsure and gives the other person reasons to argue with",
+                "It is a kind of broken record"
+              ],
+              "answer": 2,
+              "explain": "One short, honest sentence is stronger than five long reasons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comm-4",
+      "title": "Persuade and collaborate",
+      "lessons": [
+        {
+          "id": "comm-4-1",
+          "title": "Tell stories that stick",
+          "minutes": 6,
+          "content": "A story is the oldest way humans share ideas. Your grandmother didn't teach you \"be honest\" with a rule. She told you about the shepherd boy who cried wolf. Years later you still remember it. Facts are like loose rice that slips through your fingers. A story is like a rice ball: the same rice, but it holds together and you can carry it.\n\nIf you only share facts and opinions, people nod and forget. In a class presentation, a debate, or when convincing friends, a list of points rarely moves anyone. A good short story makes people feel something, and what we feel, we remember. It also makes a dry topic easy to understand, because people can picture it.\n\nHere's a simple recipe with four parts. One, the person and place: \"Last Eid, my cousin Rina was at Kamalapur station.\" Two, the problem: \"Her train was cancelled and her phone was at 2% battery.\" Three, what they did: \"She asked a tea seller to charge her phone, and called her uncle.\" Four, the change or lesson: \"She got home at midnight, and now she always carries a power bank.\" That's it. Person, problem, action, change.\n\nA few rules make it stronger. Keep it short, under one minute. Use one or two specific details a listener can see or hear, like \"the smell of jhal muri\" or \"2% battery\". Use real dialogue if you can: \"She said, 'Bhai, please, just ten minutes of charge.'\" And most important: connect the story to your point. Say it clearly at the end: \"That's why I think every student needs an emergency plan.\"\n\nReal life: Rafi had to give a speech on road safety at school. His first draft was full of numbers about accidents. When he practised, his friends looked bored. So he started with a story instead: \"Last month, my neighbour Sumon bhai was crossing the road near our school, looking at his phone. A rickshaw hit him. He broke his arm and missed his HSC test exams.\" The hall went quiet. Then Rafi gave one number and his three safety tips. After the speech, several juniors came to tell him they would stop using their phones while crossing.\n\nThe common mistake is telling a story with too many details and no point. \"So we went, then we stopped, then we had tea, then...\" Listeners get lost and wonder why you're telling it. Before you tell any story, decide the one point it proves. Cut every detail that doesn't help that point.\n\nRemember: person, problem, action, change, then say clearly what the story proves.",
+          "key_points": [
+            "People forget facts but remember stories, because stories make them feel.",
+            "Use four parts: person, problem, action, change.",
+            "Keep it under a minute, with one or two vivid details.",
+            "End by stating the point the story proves."
+          ],
+          "tip": "Keep a \"story bank\" in your phone notes. Whenever something interesting happens, write it in three lines. You'll always have a story ready.",
+          "task": "Pick one small thing that happened to you this week. Write it as a four-part story (person, problem, action, change) in under 80 words.",
+          "quiz": [
+            {
+              "q": "What are the four parts of the story recipe?",
+              "options": [
+                "Beginning, middle, end, credits",
+                "Fact, number, chart, summary",
+                "Person, problem, action, change",
+                "Hook, joke, twist, applause"
+              ],
+              "answer": 2,
+              "explain": "Who and where, what went wrong, what they did, and what changed."
+            },
+            {
+              "q": "Why did Rafi start his speech with Sumon bhai's story?",
+              "options": [
+                "To make it longer",
+                "Because numbers alone bored his listeners",
+                "Because the teacher told him to",
+                "To avoid giving safety tips"
+              ],
+              "answer": 1,
+              "explain": "A short, real story made people feel the danger before he gave his tips."
+            },
+            {
+              "q": "What is the common mistake with stories?",
+              "options": [
+                "Making them under one minute",
+                "Using real dialogue",
+                "Adding a specific detail",
+                "Too many details and no clear point"
+              ],
+              "answer": 3,
+              "explain": "Decide the one point first, then cut details that don't help it."
+            }
+          ]
+        },
+        {
+          "id": "comm-4-2",
+          "title": "Persuade by knowing your audience",
+          "minutes": 6,
+          "content": "Persuading means helping someone agree with you or do something, by giving them reasons that matter to them. The key word is \"them\". Think of fishing. You don't put a sweet on the hook because you like sweets. You put a worm, because the fish likes worms. Persuasion works the same way: use the bait your listener cares about.\n\nMost people try to persuade using their own reasons. \"I want a new phone because all my friends have one\" works on your friends, not on your father, who worries about money and studies. When you use reasons the other person doesn't care about, they say no, and you think they're being unfair. When you speak to what they care about, the same request suddenly makes sense to them.\n\nHere's the method. Step one, before asking, think: what does this person care about most? Parents often care about studies, safety, money and family time. A teacher cares about learning and class discipline. A friend might care about fun or saving time. Step two, find where your goal and their care overlap. Step three, lead with that overlap.\n\nStep four, answer their worry before they say it. If your mother worries about safety, say, \"I'll share my live location and be home by 7.\" Step five, make it easy to say yes. Offer a small first step or a trial: \"Can we try it for one week, and if my marks drop, we'll stop?\" A trial feels much less risky than a forever yes.\n\nReal life: Nusrat wanted to join the school debate club, which met every Thursday until 5:30 pm. Her mother had already said no once, because she worried about Nusrat coming home late and falling behind in studies. This time, Nusrat thought about what her mother cared about. She said, \"Ammu, debate club will help my English and my Bangla essay marks, because we practise writing arguments. I'll come home with Tania's father, who picks her up at 5:45. And let's try it for one month. If my class test marks go down, I'll quit.\" Her mother agreed. After the month, Nusrat's essay marks went up, and her mother let her stay.\n\nThe common mistake is pushing harder with the same reasons. When someone says no, many of us just repeat our argument louder or beg. That never changes their mind, because they never cared about those reasons. Instead, ask, \"What worries you about it?\" Their answer tells you exactly what reason you're missing.\n\nRemember: find what they care about, lead with it, solve their worry, and offer a small trial.",
+          "key_points": [
+            "Persuade with reasons that matter to the listener, not just to you.",
+            "Find the overlap between your goal and what they care about.",
+            "Answer their worry before they raise it.",
+            "Make yes easy with a small trial or first step."
+          ],
+          "tip": "When someone says no, ask \"What worries you about it?\" Their answer is the exact reason you need to address.",
+          "task": "Think of something you want from a parent or teacher. Write down the top two things they care about, and one sentence connecting your request to each.",
+          "quiz": [
+            {
+              "q": "What is the fishing analogy about?",
+              "options": [
+                "Being patient",
+                "Using the bait your listener cares about, not what you like",
+                "Asking many times",
+                "Waiting for the right weather"
+              ],
+              "answer": 1,
+              "explain": "Persuasion works when you use reasons that matter to the other person."
+            },
+            {
+              "q": "What did Nusrat offer to make yes easy for her mother?",
+              "options": [
+                "A one-month trial, quitting if marks went down",
+                "To stop studying for a while",
+                "To go alone by bus",
+                "To ask her father instead"
+              ],
+              "answer": 0,
+              "explain": "A small, reversible trial feels much less risky than a forever yes."
+            },
+            {
+              "q": "Someone says no to you. What does this lesson suggest?",
+              "options": [
+                "Repeat your reasons louder",
+                "Beg until they agree",
+                "Give up forever",
+                "Ask what worries them about it"
+              ],
+              "answer": 3,
+              "explain": "Their worry tells you which reason you haven't addressed yet."
+            }
+          ]
+        },
+        {
+          "id": "comm-4-3",
+          "title": "Negotiate win-win",
+          "minutes": 6,
+          "content": "Negotiating is talking with someone to reach a deal when you both want different things. Win-win means finding a deal where both sides walk away happier, not one winner and one loser. The classic example: two sisters fight over one orange. They cut it in half. But one wanted the juice and the other wanted the peel for a cake. If they had talked, each could have had 100% of what they needed.\n\nWithout win-win thinking, people treat every disagreement like a tug of war. One side wins, the other feels cheated, and next time they don't cooperate. You see this with siblings fighting over the TV remote, friends splitting costs, or bargaining at the bazar. Win-win deals last longer, keep relationships good, and often get both people more than a simple split.\n\nHere's the method. Step one, separate the position from the interest. A position is what someone says they want: \"I want the TV at 8 pm.\" An interest is why: \"I don't want to miss the cricket match.\" Ask \"Why is that important to you?\" to find the interest. Step two, share your own interest honestly: \"I need the TV at 8 for my drama, because my friends will talk about it tomorrow.\"\n\nStep three, brainstorm options that serve both interests. Could one of you watch on a phone? Could one record it and watch later? Could you switch at the cricket break? Come up with at least three options before choosing. Step four, pick the option that fits both, and say the deal out loud clearly: \"So you watch cricket on TV, and I'll watch my drama on the laptop at 8.\" Also know your backup plan, what you'll do if no deal happens, so you don't accept a bad deal out of panic.\n\nReal life: Sabbir and his friend Arif both wanted to use the school's only free football ground on Friday afternoon for their teams. Arif said, \"We booked it first!\" Sabbir said, \"We need it more!\" Then Sabbir asked, \"Why do you need Friday specifically?\" Arif's team had a match on Saturday and wanted practice the day before. Sabbir's team just wanted a fun game, any day. So Sabbir offered: \"Take Friday, and we'll take Thursday. And if your team wants a practice match, play us on Thursday.\" Arif agreed. Both teams got what they actually needed, plus an extra practice match.\n\nThe common mistake is jumping straight to splitting the difference. \"Fine, you get it half the time.\" Splitting feels fair, but often neither side gets what they really need, like the orange. Always ask \"Why?\" first. Once you know both interests, you'll often find a deal that's better than half for everyone.\n\nRemember: find the why behind the want, share yours, brainstorm three options, and say the final deal clearly.",
+          "key_points": [
+            "Win-win means both sides leave happier, not one winner and one loser.",
+            "A position is what someone wants. An interest is why they want it.",
+            "Ask \"Why is that important to you?\" and brainstorm at least three options.",
+            "Don't jump to splitting the difference. It can leave both sides short."
+          ],
+          "tip": "In any disagreement, ask \"Why is that important to you?\" before making any offer. The answer often shows an easy solution.",
+          "task": "Think of a recent disagreement over something shared, like the TV, a room or a phone. Write each person's position and interest, and three options that could satisfy both.",
+          "quiz": [
+            {
+              "q": "What is the difference between a position and an interest?",
+              "options": [
+                "They are the same thing",
+                "A position is why, an interest is what",
+                "A position is fair, an interest is selfish",
+                "A position is what someone wants, an interest is why they want it"
+              ],
+              "answer": 3,
+              "explain": "Finding the why behind the want opens up better solutions."
+            },
+            {
+              "q": "What question helped Sabbir find a win-win with Arif?",
+              "options": [
+                "Who booked first?",
+                "Can we split the ground?",
+                "Why do you need Friday specifically?",
+                "Do you want to fight about it?"
+              ],
+              "answer": 2,
+              "explain": "Asking why showed that Arif needed Friday but Sabbir's team could play any day."
+            },
+            {
+              "q": "Why is splitting the difference often a mistake?",
+              "options": [
+                "Neither side may get what they really need",
+                "It takes too long",
+                "It is always unfair",
+                "It means one side wins completely"
+              ],
+              "answer": 0,
+              "explain": "Like the orange, a half split can miss that each side needed something different."
+            }
+          ]
+        },
+        {
+          "id": "comm-4-4",
+          "title": "Run a meeting or group discussion",
+          "minutes": 6,
+          "content": "Running a meeting means guiding a group of people to talk about something and decide what to do. Think of the captain of a cricket team in a team huddle. He doesn't do all the talking. He makes sure everyone knows the plan, hears from the bowler and the keeper, decides quickly, and gets the team back on the field. A good meeting leader does the same.\n\nWithout someone guiding it, a group discussion goes in circles. The loudest person talks the most, quiet people with good ideas say nothing, people go off-topic about last night's match, and after an hour nobody knows what was decided. Then the group project is done at the last minute. A well-run meeting is shorter, includes everyone, and ends with clear jobs.\n\nHere's the method, in three parts. Before: write down the goal in one line, like \"Decide the topic and split work for our science project.\" List 2 or 3 things to discuss, and share them with the group. Set a time limit, like 30 minutes. During: start by saying the goal. Go through the list in order. When someone goes off-topic, say kindly, \"Good point, let's keep it for later,\" and write it down.\n\nAlso during: make sure everyone speaks. Ask quiet people directly: \"Mim, what do you think?\" If one person talks too much, say, \"Thanks, Rafi, let's hear from someone who hasn't spoken yet.\" Before ending: sum up the decisions and who does what by when. \"Tania makes the poster by Sunday, Sabbir writes the report by Monday, I'll print it Tuesday.\" Afterwards, send these action points in the group chat so nobody forgets.\n\nReal life: Tania's group of five had a social science project on Bangladesh's rivers. Their first two meetings on Messenger video call went badly. Everyone talked at once, two people said nothing, and they spent 20 minutes debating which river was the longest. For the third meeting, Tania sent the goal and three questions in the group chat beforehand. She set a 30-minute timer. She asked quiet Rumi, who suggested a great idea: a model of the Padma Bridge. At the end, Tania sent a message: \"Rumi: model by Friday. Arif: map by Thursday. Me: report by Saturday.\" They submitted two days early and got an A.\n\nThe common mistake is ending the meeting without clear next steps. Everyone says \"Okay, sounds good,\" and leaves, but nobody knows exactly who does what. A week later, nothing is done. Never end a meeting until each task has one name and one deadline attached, said out loud and written down.\n\nRemember: set a goal and time limit, include everyone, stay on topic, and end with names and deadlines.",
+          "key_points": [
+            "Start with a one-line goal, a short list and a time limit.",
+            "Gently bring the group back when it goes off-topic.",
+            "Invite quiet people by name and politely limit those who talk too much.",
+            "End with each task given one name and one deadline, then write it down."
+          ],
+          "tip": "Keep a \"parking lot\" in your notes. When a good but off-topic idea comes up, write it there and move on.",
+          "task": "Think of the next group activity you have, like a project or a family plan. Write a one-line goal, three discussion points and a time limit for it.",
+          "quiz": [
+            {
+              "q": "What should you do before a meeting?",
+              "options": [
+                "Write a one-line goal, list 2 or 3 points and set a time limit",
+                "Nothing, just see what happens",
+                "Prepare a 10-page speech",
+                "Decide everything yourself"
+              ],
+              "answer": 0,
+              "explain": "A clear goal and short list keep the meeting focused."
+            },
+            {
+              "q": "How did Tania get the best idea in her third meeting?",
+              "options": [
+                "By talking the most herself",
+                "By debating which river was longest",
+                "By ending the meeting early",
+                "By asking quiet Rumi directly"
+              ],
+              "answer": 3,
+              "explain": "Quiet people often have good ideas but wait to be invited."
+            },
+            {
+              "q": "What is the most common mistake when ending a meeting?",
+              "options": [
+                "Ending on time",
+                "Leaving without clear names and deadlines for each task",
+                "Sending action points in the group chat",
+                "Summing up decisions"
+              ],
+              "answer": 1,
+              "explain": "Without a name and a deadline for each task, nothing gets done."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comm-5",
+      "title": "Lead the conversation",
+      "lessons": [
+        {
+          "id": "comm-5-1",
+          "title": "Help two friends settle a fight",
+          "minutes": 6,
+          "content": "Mediating means helping two other people solve their fight, without taking sides. You're like a cricket umpire. The umpire doesn't play for either team. He makes sure both teams follow the rules and get a fair chance. A mediator doesn't decide who is right. They help both people talk and find their own solution.\n\nWhen friends fight and nobody helps, the fight often grows. Each one tells everyone else their side, the class splits into two groups, and a small problem turns into weeks of not talking. If you take one side, the other person stops trusting you. A good mediator calms things down, helps each person feel heard, and helps the group get back to normal.\n\nHere's the method. Step one, cool down first. Don't try to fix it while they're shouting. Say, \"Let's talk after tiffin when we're calm.\" Step two, meet together and set two simple rules: one person talks at a time, and no insults. Step three, let each person tell their side without interruption. After each one, reflect what they said: \"So Arif, you felt left out when you weren't picked for the team?\" This makes each person feel heard.\n\nStep four, find the real problem underneath. Ask each one, \"What do you need so this feels okay?\" Often both want the same thing, like respect or to be included. Step five, ask them to suggest solutions, not you. \"What could we do so this doesn't happen again?\" Help them agree on one clear thing each will do. Stay neutral the whole time: don't say \"you're right\" to either person, and don't share what one said privately with the other.\n\nReal life: Rafi's friends Sumi and Mitu stopped talking after Sumi posted a funny photo of Mitu on Facebook without asking. Mitu was hurt, and Sumi thought she was overreacting. Their friend group was splitting in two. Rafi asked them both to meet in the school library after class. He set the rules, then let Mitu talk first. He reflected, \"So you felt embarrassed because the whole class saw it?\" Then Sumi spoke: she hadn't meant to hurt Mitu, she thought it was cute. Rafi asked, \"What would make this okay?\" Mitu wanted the photo deleted. Sumi agreed, and offered to always ask before posting. They hugged, and the group was back together the next day.\n\nThe common mistake is acting like a judge and deciding who is right. \"Sumi, you were wrong, say sorry.\" Even if it seems obvious, the person you blamed will feel you took sides, and the fight just moves to you. Your job isn't to decide. It's to help them hear each other. Solutions they make themselves last much longer than ones you force.\n\nRemember: cool down first, set rules, let each one speak and reflect it, and let them choose the solution.",
+          "key_points": [
+            "A mediator helps both people talk and doesn't take sides.",
+            "Cool down first, then set rules: one person talks at a time, no insults.",
+            "Let each person speak, and reflect what they said.",
+            "Ask them for solutions instead of deciding for them."
+          ],
+          "tip": "Use the same sentence for both people: \"Tell me what happened from your side.\" Using exactly the same words shows you're being fair.",
+          "task": "Think of a recent fight between two people you know. Write down what each might need underneath, like respect or being included, and one question you could ask each.",
+          "quiz": [
+            {
+              "q": "What is a mediator like, according to this lesson?",
+              "options": [
+                "A lawyer for one side",
+                "A teacher giving punishments",
+                "A cricket umpire who doesn't play for either team",
+                "A fan cheering for the winner"
+              ],
+              "answer": 2,
+              "explain": "A mediator stays neutral and helps both sides get a fair chance to speak."
+            },
+            {
+              "q": "What did Rafi ask Sumi and Mitu to find a solution?",
+              "options": [
+                "Who started it?",
+                "What would make this okay?",
+                "Why are you so sensitive?",
+                "Can you just forget it?"
+              ],
+              "answer": 1,
+              "explain": "Asking what each needs helps them find their own solution."
+            },
+            {
+              "q": "Why is acting like a judge a mistake?",
+              "options": [
+                "The blamed person feels you took sides and the fight moves to you",
+                "It makes the fight shorter",
+                "Judges are always right",
+                "It helps them hear each other"
+              ],
+              "answer": 0,
+              "explain": "Solutions the two people make themselves last longer than ones you force."
+            }
+          ]
+        },
+        {
+          "id": "comm-5-2",
+          "title": "Adapt to culture, hierarchy and setting",
+          "minutes": 6,
+          "content": "Adapting means changing how you speak depending on who you're talking to and where you are. Think of your clothes. You wear a lungi or pajama at home, your uniform at school, and panjabi or a nice dress at a wedding. You're the same person, but you dress for the place. Talking works the same way.\n\nIf you talk to everyone the same way, you'll sometimes sound rude and sometimes sound stiff. Using the slang you use with friends in front of the headmaster can get you into trouble. Talking very formally to your best friend sounds strange and cold. When you adapt, older people feel respected, friends feel close, and you're understood everywhere you go.\n\nHere's how. Before speaking, check three things. One, the person: are they older, younger, or your age? In Bangladesh, we show respect with \"apni\" for elders, teachers and strangers, \"tumi\" for people close to you or younger, and \"tui\" only for very close friends or younger siblings. Two, the hierarchy: is this person your teacher, principal, or a guest? With seniors, add greetings like \"Assalamu alaikum\" or \"Adab\", wait your turn to speak, and avoid jokes until they joke first.\n\nThree, the setting: is it formal like a class, office or exam viva, or casual like a family dinner or chat with friends? In formal settings, use full sentences, no slang, and keep it short. In casual settings, relax. When you're with people from a different culture, religion or region, watch and copy. Notice how they greet each other and follow it. If you're unsure, it's safer to start a little more formal and relax later.\n\nReal life: Sabbir's family went to his uncle's house in a village in Rajshahi for Eid. His grandfather was strict and old-fashioned. On the first day, Sabbir walked in with headphones on and said \"Hi\" to his grandfather, then called his uncle \"tumi\" like he did at home with his parents. His grandfather frowned. His mother quietly told him what to change. The next morning, Sabbir greeted his grandfather with \"Assalamu alaikum, Dada,\" took off his headphones, used \"apni\", and asked about his health. His grandfather smiled, called Sabbir to sit beside him, and told stories about the Liberation War for an hour.\n\nThe common mistake is thinking adapting means being fake. It doesn't. You're not changing who you are or what you believe, just how you say it. Saying \"Could you please help me?\" to a teacher and \"Help me, yaar\" to a friend is the same request in different clothes.\n\nRemember: check the person, the hierarchy and the setting, and when unsure, start formal and relax later.",
+          "key_points": [
+            "Adapting means changing how you speak for the person and the place.",
+            "In Bangla, choose apni, tumi or tui based on age and closeness.",
+            "With seniors, greet first, wait your turn and avoid jokes until they joke.",
+            "When unsure, start a little formal and relax later."
+          ],
+          "tip": "When you enter a new group, spend the first two minutes just watching how people greet and address each other, then copy that.",
+          "task": "Write down three people you'll talk to this week, like a teacher, a friend and a relative. For each, write how you'd greet them and whether you'd use apni, tumi or tui.",
+          "quiz": [
+            {
+              "q": "What is the clothes analogy about?",
+              "options": [
+                "Being fashionable",
+                "Being the same person but speaking to fit the place, like dressing for it",
+                "Never changing anything",
+                "Wearing a uniform everywhere"
+              ],
+              "answer": 1,
+              "explain": "You change how you talk for the setting, just like you dress for it."
+            },
+            {
+              "q": "What did Sabbir change the next morning with his grandfather?",
+              "options": [
+                "He stopped talking completely",
+                "He told jokes first",
+                "He kept his headphones on but smiled",
+                "He greeted with Assalamu alaikum, removed headphones and used apni"
+              ],
+              "answer": 3,
+              "explain": "Showing respect in the expected way made his grandfather open up."
+            },
+            {
+              "q": "When you're unsure how formal to be, what does this lesson suggest?",
+              "options": [
+                "Use slang to seem friendly",
+                "Say nothing",
+                "Start a little formal and relax later",
+                "Copy the youngest person there"
+              ],
+              "answer": 2,
+              "explain": "It's easier to relax later than to fix a first impression that was too casual."
+            }
+          ]
+        },
+        {
+          "id": "comm-5-3",
+          "title": "Think on your feet: handle tough questions",
+          "minutes": 6,
+          "content": "Thinking on your feet means answering a surprise or tough question calmly, without having prepared for it. Think of a goalkeeper in football. He doesn't know where the next shot will come from, but he has a routine: watch, set his feet, then move. Handling tough questions needs a routine too, so you don't panic when the ball comes.\n\nWithout a routine, a hard question makes your mind go blank. You say \"umm\" for ten seconds, give a wrong answer just to say something, or get defensive. In a viva, a debate, a job interview or even when relatives ask tricky questions at a family dinner, panicking makes you look less prepared than you are. With a routine, you sound calm and thoughtful, even when you don't know the answer.\n\nHere's the routine, in four steps. Step one, pause and breathe. A two-second pause looks thoughtful, not stupid. Step two, buy a little time politely by repeating or rephrasing the question: \"So you're asking how pollution affects fish in the river?\" This also checks you understood it. Step three, answer with a quick structure. Use PREP from earlier: point, reason, example, point. Or just say, \"There are two reasons. First... Second...\" Saying \"two\" gives your brain a frame to fill.\n\nStep four, if you really don't know, say so honestly and offer what you do know: \"I'm not sure about the exact number, but I know it has gone up a lot in the last ten years.\" Or offer to find out: \"I'll check and tell you tomorrow.\" If the question feels like an attack, stay calm and answer only the fair part of it, without getting angry.\n\nReal life: Tania was in the final round of her school's debate competition. The opposing team asked, \"If social media is so bad, why do you use Facebook yourself?\" Her friends gasped. Before, Tania would have frozen or snapped back. This time she paused for two seconds and said calmly, \"Good question. So you're asking whether using it means it's good?\" Then she continued, \"I use it, yes, and that's exactly how I know two things. First, it eats hours I don't notice. Second, I see how it affects my younger cousins. Using something doesn't mean it has no harm.\" The judges gave her the best speaker award.\n\nThe common mistake is answering too fast to avoid silence. You blurt out the first thing that comes to mind, and it's often wrong or off-topic. Silence feels long to you, but two seconds of thinking always looks better than ten seconds of rambling. Pause first, then answer.\n\nRemember: pause, rephrase the question, answer with a simple structure, and be honest when you don't know.",
+          "key_points": [
+            "A short pause before answering looks thoughtful, not weak.",
+            "Rephrasing the question buys time and checks your understanding.",
+            "Use a quick structure like PREP or \"There are two reasons...\".",
+            "If you don't know, say so honestly and share what you do know."
+          ],
+          "tip": "Memorise the line \"There are two reasons\" as your emergency starter. It gives your brain a frame and buys a few seconds to think.",
+          "task": "Ask a family member to fire three surprise questions at you about any topic. Answer each one using pause, rephrase and \"There are two reasons...\".",
+          "quiz": [
+            {
+              "q": "What is the first step when you get a tough question?",
+              "options": [
+                "Answer immediately",
+                "Change the topic",
+                "Say you don't know",
+                "Pause and breathe"
+              ],
+              "answer": 3,
+              "explain": "A two-second pause calms you and looks thoughtful."
+            },
+            {
+              "q": "How did Tania start her answer to the Facebook question?",
+              "options": [
+                "By pausing and rephrasing the question",
+                "By getting angry",
+                "By saying \"no comment\"",
+                "By asking her teammates to answer"
+              ],
+              "answer": 0,
+              "explain": "Pausing and rephrasing gave her time to think and showed she was calm."
+            },
+            {
+              "q": "What should you do if you really don't know the answer?",
+              "options": [
+                "Make up a confident-sounding answer",
+                "Stay silent until they move on",
+                "Say so honestly and share what you do know",
+                "Blame the question"
+              ],
+              "answer": 2,
+              "explain": "Honesty plus what you do know sounds much better than a made-up answer."
+            }
+          ]
+        },
+        {
+          "id": "comm-5-4",
+          "title": "Explain complex ideas simply",
+          "minutes": 6,
+          "content": "Explaining simply means taking a hard idea and making it easy for someone who knows nothing about it. It's like being a translator. You aren't changing the idea, just turning it from \"expert language\" into \"everyday language\". If you can explain something to a 10-year-old, you really understand it.\n\nWhen people explain badly, they use big words, skip steps, and pack in too much at once. The listener nods to look smart but understands nothing. This happens in classrooms, in tuition, and when you try to explain your phone's settings to your grandmother. When you can explain simply, people learn from you, trust you, and remember what you said. It also shows you where your own understanding has gaps.\n\nHere's the method. Step one, know your one main idea. Ask yourself: if they remember only one sentence, what should it be? Step two, start from what they already know and connect to it with an analogy. Explaining how the heart works? \"Your heart is a pump, like the water pump on your roof. It pushes blood to every part of your body through pipes called blood vessels.\" Step three, cut the jargon. If you must use a technical word, explain it right away in plain words.\n\nStep four, go step by step, one idea at a time, in order. Use small numbers or examples: \"Say you have 10 taka...\" Step five, check understanding by asking them to explain it back, not by asking \"Got it?\" If they can't, the problem is your explanation, not their brain. Try a different analogy.\n\nReal life: Rafi's grandmother wanted to learn how to send money with bKash, but every time Rafi explained, she got confused. He used words like \"app\", \"OTP\", \"PIN\" and \"merchant\" and went too fast. So he tried again. His main idea: \"bKash is like a money box inside your phone.\" He explained, \"The PIN is like your secret key for the box. Never tell anyone, not even me.\" Then he showed her just one thing: how to send money to her son, step by step. He wrote the steps on a small paper. Then he asked her to do it while he watched. She sent 500 taka to his uncle by herself. Now she proudly sends Eid salami to all her grandchildren.\n\nThe common mistake is trying to explain everything at once to show how much you know. More detail doesn't mean more understanding. It often means more confusion. Start with the one main idea and the simplest version. If they want more, they'll ask, and you can add detail then.\n\nRemember: one main idea, a familiar analogy, no jargon, step by step, and check by asking them to explain it back.",
+          "key_points": [
+            "Find the one main idea they should remember.",
+            "Connect to something they know with an everyday analogy.",
+            "Cut jargon, or explain any technical word right away.",
+            "Check understanding by asking them to explain it back."
+          ],
+          "tip": "Before explaining anything, finish this sentence: \"It's like a...\". If you can't find an everyday comparison, simplify your idea first.",
+          "task": "Pick one thing you learned in class this week. Explain it in three sentences, with one analogy, to a younger sibling, cousin or parent, then ask them to explain it back.",
+          "quiz": [
+            {
+              "q": "What is the first step in explaining something simply?",
+              "options": [
+                "Know your one main idea",
+                "Use as many technical words as possible",
+                "Explain everything at once",
+                "Start with the history of the topic"
+              ],
+              "answer": 0,
+              "explain": "Decide the one sentence you most want them to remember."
+            },
+            {
+              "q": "What analogy did Rafi use to explain bKash to his grandmother?",
+              "options": [
+                "A bank building",
+                "A cricket bat",
+                "A money box inside your phone",
+                "A post office"
+              ],
+              "answer": 2,
+              "explain": "Connecting to something familiar made a new idea easy to grasp."
+            },
+            {
+              "q": "How should you check if someone understood your explanation?",
+              "options": [
+                "Ask \"Got it?\"",
+                "Ask them to explain it back to you",
+                "Watch if they nod",
+                "Repeat it louder"
+              ],
+              "answer": 1,
+              "explain": "If they can explain it back, they understood. If not, try a different analogy."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

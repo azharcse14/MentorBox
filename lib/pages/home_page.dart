@@ -1,9 +1,19 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mentor_app_flutter/components/appbar.dart';
-import 'package:mentor_app_flutter/components/swipable_card.dart';
 import 'package:flutter/material.dart';
+
+import '../components/appbar.dart';
+import '../components/mentor_card.dart';
+import '../components/switch_animation.dart';
+import '../data/content_seeder.dart';
+import '../components/widgets.dart';
+import '../data/mentor_repository.dart';
+import '../l10n/app_localizations.dart';
+import '../logic/mentor_engine.dart';
+import '../logic/reminder.dart';
 import '../theme.dart';
+import 'lesson_page.dart';
+import 'mentor_page.dart';
+import 'saved_page.dart';
+import 'today_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,183 +23,550 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final _repo = MentorRepository.instance;
+  final _pageController = PageController(viewportFraction: 0.86);
+
+  bool _loading = true;
+  String? _error;
+  String? _userName;
+  bool _hasName = true;
+  bool _askedForName = false;
+  List<CategoryOverview> _overviews = [];
+  int _streak = 0;
+  bool _reminderOn = false;
+  String _layout = 'grid';
+  int _page = 0;
+  TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _load() async {
+    try {
+      final name = await _repo.getUserName();
+      final overviews = await _repo.getAllOverviews();
+      final days = await _repo.getActivityDays();
+      final reminderOn = await _repo.getReminderOn();
+      final layout = await _repo.getHomeLayout();
+      final (hour, minute) = await _repo.getReminderTime();
+      if (!mounted) return;
+      setState(() {
+        _userName = name;
+        _hasName = name != null;
+        _overviews = overviews;
+        _streak = MentorEngine.streak(days);
+        _reminderOn = reminderOn;
+        _layout = layout;
+        _reminderTime = TimeOfDay(hour: hour, minute: minute);
+        _loading = false;
+        _error = null;
+      });
+      // Opening the app reschedules, so the plan always starts from today.
+      Reminder.refresh();
+      if (name == null && !_askedForName) {
+        _askedForName = true;
+        WidgetsBinding.instance.addPostFrameCallback((_) => _editName());
+      }
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _error = '$e';
+      });
+    }
+  }
+
+  void _setLayout(String layout) {
+    setState(() => _layout = layout);
+    _repo.setHomeLayout(layout);
+  }
+
+  void _retry() {
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    _load();
+  }
+
+  Future<void> _toggleReminder() async {
+    final on = !_reminderOn;
+    if (on && !await Reminder.requestPermission()) return;
+    await _repo.setReminderOn(on);
+    await Reminder.refresh();
+    if (!mounted) return;
+    setState(() => _reminderOn = on);
+  }
+
+  Future<void> _pickReminderTime() async {
+    final picked = await showTimePicker(context: context, initialTime: _reminderTime);
+    if (picked == null) return;
+    await _repo.setReminderTime(picked.hour, picked.minute);
+    await Reminder.refresh();
+    if (!mounted) return;
+    setState(() => _reminderTime = picked);
+  }
+
+  /// Theme, language and the daily reminder, in one sheet.
+  Future<void> _openSettings() async {
+    final l = AppLocalizations.of(context);
+    final picked = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: AppTheme.kSurface,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(l.settings, style: AppTheme.mono(22, weight: FontWeight.w700)),
+              ),
+            ),
+            ListTile(
+              leading: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
+              title: Text(l.theme, style: AppTheme.body(16)),
+              onTap: () => Navigator.of(context).pop('theme'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.translate),
+              title: Text(l.language, style: AppTheme.body(16)),
+              onTap: () => Navigator.of(context).pop('language'),
+            ),
+            if (Reminder.supported)
+              SwitchListTile(
+                secondary: const Icon(Icons.alarm),
+                title: Text(l.dailyReminder, style: AppTheme.body(16)),
+                subtitle: Text(l.dailyReminderHint, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
+                value: _reminderOn,
+                activeThumbColor: AppTheme.kPrimaryColor,
+                onChanged: (_) => Navigator.of(context).pop('reminder'),
+              ),
+            if (Reminder.supported && _reminderOn)
+              ListTile(
+                leading: const Icon(Icons.schedule),
+                title: Text(l.reminderTime, style: AppTheme.body(16)),
+                trailing: Text(_reminderTime.format(context), style: AppTheme.mono(16)),
+                onTap: () => Navigator.of(context).pop('time'),
+              ),
+          ],
+        ),
+      ),
+    );
+    switch (picked) {
+      case 'theme':
+        await _pickTheme();
+      case 'language':
+        await _pickLanguage();
+      case 'reminder':
+        await _toggleReminder();
+      case 'time':
+        await _pickReminderTime();
+    }
+  }
+
+  Future<void> _editName() async {
+    final name = await showDialog<String>(
+      context: context,
+      barrierDismissible: _hasName,
+      builder: (_) => _NameDialog(initial: _hasName ? _userName ?? '' : '', firstTime: !_hasName),
+    );
+    if (!mounted) return;
+    // Skipping on first launch keeps the default name, so we don't ask again.
+    final trimmed = name?.trim() ?? '';
+    if (trimmed.isEmpty && _hasName) return;
+    final saved = trimmed.isEmpty ? AppLocalizations.of(context).defaultName : trimmed;
+    await _repo.setUserName(saved);
+    if (!mounted) return;
+    setState(() {
+      _userName = saved;
+      _hasName = true;
+    });
+  }
+
+  Future<void> _pickLanguage() async {
+    final l = AppLocalizations.of(context);
+    final current = _repo.language;
+    // Wrapped so "phone's language" (null) is not the same as dismissing.
+    final picked = await showDialog<({String? code})>(
+      context: context,
+      builder: (context) => SimpleDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.language, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        children: [
+          for (final (code, label) in [(null, l.deviceLanguage), ('en', 'English'), ('bn', 'বাংলা')])
+            ListTile(
+              title: Text(label, style: AppTheme.body(16)),
+              trailing: code == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
+              onTap: () => Navigator.of(context).pop((code: code)),
+            ),
+        ],
+      ),
+    );
+    if (!mounted || picked == null || picked.code == current) return;
+    final fromCode = current ?? ContentSeeder.deviceLanguage();
+    final toCode = picked.code ?? ContentSeeder.deviceLanguage();
+    try {
+      if (fromCode == toCode) {
+        await _repo.setLanguage(picked.code);
+      } else {
+        // The reseed runs while the letter flips, behind the overlay.
+        await playLanguageSwitch(context, fromCode: fromCode, toCode: toCode, change: () async {
+          await _repo.setLanguage(picked.code);
+          await _load();
+        });
+        return;
+      }
+    } catch (e) {
+      // The reseed runs in one transaction, so the old content is still intact.
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _error = '$e';
+      });
+      return;
+    }
+    await _load();
+  }
+
+  Future<void> _pickTheme() async {
+    final l = AppLocalizations.of(context);
+    final current = _repo.theme;
+    // Wrapped so "phone's theme" (null) is not the same as dismissing.
+    final picked = await showDialog<({String? mode})>(
+      context: context,
+      builder: (context) => SimpleDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.theme, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        children: [
+          for (final (mode, label) in [(null, l.deviceTheme), ('light', l.lightTheme), ('dark', l.darkTheme)])
+            ListTile(
+              title: Text(label, style: AppTheme.body(16)),
+              trailing: mode == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
+              onTap: () => Navigator.of(context).pop((mode: mode)),
+            ),
+        ],
+      ),
+    );
+    if (!mounted || picked == null || picked.mode == current) return;
+    final toDark = switch (picked.mode) {
+      'dark' => true,
+      'light' => false,
+      _ => MediaQuery.platformBrightnessOf(context) == Brightness.dark,
+    };
+    if (toDark == AppTheme.isDark) return _repo.setTheme(picked.mode);
+    await playThemeSwitch(context, toDark: toDark, change: () => _repo.setTheme(picked.mode));
+  }
+
+  Future<void> _push(Widget page) async {
+    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => page));
+    await _load();
+  }
+
+  /// Categories the learner has started and not finished, most recent first.
+  List<CategoryOverview> get _inProgress {
+    final list = _overviews.where((o) => o.started && !o.finished && o.nextLesson != null).toList();
+    list.sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
+    return list;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final mqh = MediaQuery.of(context).size.height;
-    final mqw = MediaQuery.of(context).size.width;
+    final inProgress = _inProgress;
+    return Scaffold(
+      appBar: CustomAppBar(
+        userName: _userName ?? AppLocalizations.of(context).defaultName,
+        hasMissions: inProgress.isNotEmpty,
+        onNameTap: _editName,
+        onSavedTap: () => _push(const SavedPage()),
+        onTodayTap: () => _push(const TodayPage()),
+        onSettingsTap: _openSettings,
+      ),
+      body: SafeArea(top: false, child: _buildBody(inProgress)),
+    );
+  }
 
-    return SafeArea(
-      child: Scaffold(
-        appBar: const CustomAppBar(),
-        body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: mqw * 0.1),
+  Widget _buildBody(List<CategoryOverview> inProgress) {
+    final l = AppLocalizations.of(context);
+    if (_loading) {
+      return const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor));
+    }
+    if (_error != null) {
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(
-                height: mqh * 0.20,
-                width: mqw,
-                child: Stack(
-                  children: [
-                    RichText(
-                      text: TextSpan(
-                        style: GoogleFonts.shareTech(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 35.0,
-                          color: AppTheme.kGreyShade800,
-                        ),
-                        children: [
-                          const TextSpan(
-                            text: 'Find Best\n',
-                          ),
-                          TextSpan(
-                            text: 'Mentors',
-                            style: GoogleFonts.bebasNeue(
-                                color: AppTheme.kPrimaryColor,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 40),
-                          ),
-                          const TextSpan(text: ' For\n'),
-                          const TextSpan(
-                            text: 'You',
-                          ),
-                        ],
-                      ),
-                    ),
-                    Positioned(
-                      top: 80.0,
-                      left: 70.0,
-                      child: LayoutBuilder(
-                        builder:
-                            (BuildContext context, BoxConstraints constraints) {
-                          return const OverlappingWidget(
-                            images: [
-                              'https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg',
-                              'https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg',
-                              'https://i0.wp.com/thatrandomagency.com/wp-content/uploads/2021/06/headshot.png?resize=618%2C617&ssl=1',
-                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOjCZSoaBhZyODYeQMDCOTICHfz_tia5ay8I_k3k&s',
-                            ],
-                          );
-                        },
-                      ),
-                    ),
-                  ],
-                ),
+              Text(
+                l.loadError(_error!),
+                textAlign: TextAlign.center,
+                style: AppTheme.body(14),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  RichText(
-                    text: TextSpan(
-                      style: GoogleFonts.shareTech(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20.0,
-                        color: AppTheme.kSubheadingColor,
-                      ),
-                      children: const [
-                        TextSpan(
-                          text: 'Explore :',
-                        ),
-                      ],
-                    ),
-                  ),
-                  RichText(
-                    text: TextSpan(
-                      style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 15.0,
-                        color: AppTheme.kGreyShade800,
-                      ),
-                      children: const [
-                        TextSpan(
-                          text:
-                              'Find Perfect Match For You,\n Meet Your Dream Skills ',
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: mqh * 0.05,
-              ),
-              SwipableCardStackWidget(
-                cardDataList: [
-                  CardData(
-                      imagePath: 'assets/images/1.jpg',
-                      subHeading: 'UI UX Designer',
-                      heading: 'Keol Risen',
-                      description: '5 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/2.jpg',
-                      subHeading: 'Penetration Expert',
-                      heading: 'Perter Panter',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/3.jpg',
-                      subHeading: 'Professional Photographer',
-                      heading: 'Tommy Styles',
-                      description: '2 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/4.jpg',
-                      subHeading: 'Graphics Designer',
-                      heading: 'Kenny Parse',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/5.jpg',
-                      subHeading: 'React Developer',
-                      heading: 'Harry Parker',
-                      description: '3 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/6.jpg',
-                      subHeading: 'Mongo-DB Expert',
-                      heading: 'Deneal Parker',
-                      description: '6 Years of Experience'),
-                  CardData(
-                      imagePath: 'assets/images/7.jpg',
-                      subHeading: 'UI UX Designer',
-                      heading: 'Zore Kaido',
-                      description: '4 Years of Experience'),
-                ],
-              )
+              const SizedBox(height: 16),
+              FilledButton(onPressed: _retry, child: Text(l.retry)),
             ],
           ),
         ),
+      );
+    }
+
+    final current = inProgress.isEmpty ? null : inProgress.first;
+
+    return RefreshIndicator(
+      color: AppTheme.kPrimaryColor,
+      onRefresh: _load,
+      child: ListView(
+        padding: const EdgeInsets.only(bottom: 32),
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: _Hero(
+              avatars: _overviews.map((o) => o.category.image).toList(),
+              streak: _streak,
+            ),
+          ),
+          const SizedBox(height: 24),
+          if (current != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              child: _ContinueCard(
+                overview: current,
+                onTap: () => _push(LessonPage(lessonId: current.nextLesson!.id)),
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24, right: 12),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l.exploreLabel,
+                        style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        l.exploreTagline,
+                        style: AppTheme.body(13, color: AppTheme.kSubheadingColor, height: 1.35),
+                      ),
+                    ],
+                  ),
+                ),
+                for (final (layout, icon, tooltip) in [
+                  ('grid', Icons.grid_view, l.layoutGrid),
+                  ('carousel', Icons.view_carousel_outlined, l.layoutCarousel),
+                  ('list', Icons.view_list, l.layoutList),
+                ])
+                  IconButton(
+                    icon: Icon(icon),
+                    tooltip: tooltip,
+                    isSelected: _layout == layout,
+                    visualDensity: VisualDensity.compact,
+                    color: AppTheme.kSubheadingColor,
+                    selectedIcon: Icon(icon, color: AppTheme.kPrimaryColor),
+                    onPressed: () => _setLayout(layout),
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          _buildMentors(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMentors() {
+    void open(CategoryOverview o) => _push(MentorPage(categoryId: o.category.id));
+    switch (_layout) {
+      case 'carousel':
+        return Column(
+          children: [
+            SizedBox(
+              height: 400,
+              child: PageView.builder(
+                controller: _pageController,
+                itemCount: _overviews.length,
+                onPageChanged: (index) => setState(() => _page = index),
+                itemBuilder: (context, index) => MentorCard(
+                  overview: _overviews[index],
+                  large: true,
+                  onTap: () => open(_overviews[index]),
+                ),
+              ),
+            ),
+            const SizedBox(height: 14),
+            _PageDots(count: _overviews.length, index: _page),
+          ],
+        );
+      case 'list':
+        return ListView.separated(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: _overviews.length,
+          separatorBuilder: (_, __) => const SizedBox(height: 12),
+          itemBuilder: (context, index) => MentorListTile(
+            overview: _overviews[index],
+            onTap: () => open(_overviews[index]),
+          ),
+        );
+      default:
+        return GridView.builder(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: _overviews.length,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 14,
+            crossAxisSpacing: 14,
+            childAspectRatio: 0.72,
+          ),
+          itemBuilder: (context, index) => MentorCard(
+            overview: _overviews[index],
+            onTap: () => open(_overviews[index]),
+          ),
+        );
+    }
+  }
+}
+
+class _PageDots extends StatelessWidget {
+  final int count;
+  final int index;
+
+  const _PageDots({required this.count, required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < count; i++)
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 250),
+            margin: const EdgeInsets.symmetric(horizontal: 3),
+            width: i == index ? 22 : 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: i == index ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor.withAlpha(0x55),
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _Hero extends StatelessWidget {
+  final List<String> avatars;
+  final int streak;
+
+  const _Hero({required this.avatars, required this.streak});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        RichText(
+          text: TextSpan(
+            style: AppTheme.mono(35, weight: FontWeight.w600),
+            children: [
+              TextSpan(text: l.heroBefore),
+              TextSpan(
+                text: l.heroHighlight,
+                style: AppTheme.display(42, color: AppTheme.kPrimaryColor),
+              ),
+              TextSpan(text: l.heroAfter),
+            ],
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          children: [
+            _OverlappingAvatars(images: avatars.take(4).toList()),
+            const Spacer(),
+            _StreakChip(streak: streak),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _StreakChip extends StatelessWidget {
+  final int streak;
+
+  const _StreakChip({required this.streak});
+
+  @override
+  Widget build(BuildContext context) {
+    final active = streak > 0;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: active ? AppTheme.kPrimaryColor : AppTheme.kSurface,
+        borderRadius: BorderRadius.circular(30),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            Icons.local_fire_department,
+            size: 20,
+            color: active ? Colors.white : AppTheme.kSubheadingColor,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            active ? AppLocalizations.of(context).streakDays(streak) : AppLocalizations.of(context).noStreak,
+            style: AppTheme.mono(15, color: active ? Colors.white : AppTheme.kText),
+          ),
+        ],
       ),
     );
   }
 }
 
-class OverlappingWidget extends StatefulWidget {
+/// The round mentor photos that pop in once when the home screen opens.
+/// (The original version never rebuilt during the animation, so the photos
+/// could stay invisible. ScaleTransition listens to the animation itself.)
+class _OverlappingAvatars extends StatefulWidget {
   final List<String> images;
 
-  const OverlappingWidget({Key? key, required this.images}) : super(key: key);
+  const _OverlappingAvatars({required this.images});
 
   @override
-  _OverlappingWidgetState createState() => _OverlappingWidgetState();
+  State<_OverlappingAvatars> createState() => _OverlappingAvatarsState();
 }
 
-class _OverlappingWidgetState extends State<OverlappingWidget>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _popAnimation;
-  late Animation<double> _fadeAnimation;
+class _OverlappingAvatarsState extends State<_OverlappingAvatars> with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late final Animation<double> _pop;
 
   @override
   void initState() {
     super.initState();
-
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
     );
-
-    _popAnimation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOutBack,
-    );
-
-    _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(_controller);
-
+    _pop = CurvedAnimation(parent: _controller, curve: Curves.easeOutBack);
     _controller.forward();
   }
 
@@ -201,37 +578,130 @@ class _OverlappingWidgetState extends State<OverlappingWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        for (int i = 0; i < widget.images.length; i++)
-          Padding(
-            padding: const EdgeInsets.only(right: 10.0),
-            child: Transform.scale(
-              scale: _popAnimation.value,
-              child: FadeTransition(
-                opacity: _fadeAnimation,
-                child: CachedNetworkImage(
-                  imageUrl: widget.images[i],
-                  imageBuilder: (context, imageProvider) => Container(
-                    margin: const EdgeInsets.symmetric(vertical: 0),
-                    child: Align(
-                      widthFactor: 0.5,
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Colors.white,
-                        backgroundImage: imageProvider,
-                      ),
-                    ),
-                  ),
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
-                ),
+    return ScaleTransition(
+      scale: _pop,
+      alignment: Alignment.centerLeft,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (final image in widget.images)
+            Align(
+              widthFactor: 0.62,
+              child: Container(
+                padding: const EdgeInsets.all(2),
+                decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                child: CircleAvatar(radius: 22, backgroundImage: AssetImage(image)),
               ),
             ),
-          ),
-      ],
+        ],
+      ),
     );
   }
 }
 
-// ... (other classes and imports)
+class _ContinueCard extends StatelessWidget {
+  final CategoryOverview overview;
+  final VoidCallback onTap;
+
+  const _ContinueCard({required this.overview, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final category = overview.category;
+    final next = overview.nextLesson!;
+    return Material(
+      color: AppTheme.kGreyShade800,
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(18),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              CircleAvatar(radius: 26, backgroundImage: AssetImage(category.image)),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      AppLocalizations.of(context).continueWith(category.mentorName),
+                      style: AppTheme.mono(14, color: category.color, weight: FontWeight.w700),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      next.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTheme.body(16, color: Colors.white, weight: FontWeight.w600, height: 1.3),
+                    ),
+                    const SizedBox(height: 8),
+                    ProgressBar(value: overview.ratio, color: category.color, height: 5),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 10),
+              const Icon(Icons.play_circle_fill, color: AppTheme.kPrimaryColor, size: 40),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Asks for the learner's name the first time, and lets them change it later.
+class _NameDialog extends StatefulWidget {
+  final String initial;
+  final bool firstTime;
+
+  const _NameDialog({required this.initial, required this.firstTime});
+
+  @override
+  State<_NameDialog> createState() => _NameDialogState();
+}
+
+class _NameDialogState extends State<_NameDialog> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController(text: widget.initial);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _save() => Navigator.of(context).pop(_controller.text);
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return AlertDialog(
+      backgroundColor: AppTheme.kSurface,
+      title: Text(
+        widget.firstTime ? l.nameDialogFirstTitle : l.nameDialogChangeTitle,
+        style: AppTheme.mono(22, weight: FontWeight.w700),
+      ),
+      content: TextField(
+        controller: _controller,
+        autofocus: true,
+        textCapitalization: TextCapitalization.words,
+        onSubmitted: (_) => _save(),
+        decoration: InputDecoration(hintText: l.nameHint),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: Text(widget.firstTime ? l.skip : MaterialLocalizations.of(context).cancelButtonLabel),
+        ),
+        FilledButton(onPressed: _save, child: Text(l.saveName)),
+      ],
+    );
+  }
+}

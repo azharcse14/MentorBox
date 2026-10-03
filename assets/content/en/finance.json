@@ -1,0 +1,1028 @@
+{
+  "id": "finance",
+  "name": "Personal Finance",
+  "mentor": "Money Mentor",
+  "tagline": "See your money, plan it, save it and watch it grow.",
+  "description": "Money basics explained simply: tracking, budgeting, saving for emergencies, borrowing carefully and growing money over time. This is general education, not personal financial advice.",
+  "image": "assets/images/finance.jpg",
+  "color": "#7C9A5C",
+  "messages": {
+    "welcome": "Money gets simple once you can see it. First we track, then we plan. No judging here.",
+    "comeback": "Welcome back. Five minutes on your money today is time well spent.",
+    "pass": "Smart thinking. Future you says thank you.",
+    "fail": "That's okay. Money ideas often need a second look. Read the explanations and try again.",
+    "finished": "You can now track, budget, stay safe, borrow carefully, earn more, set goals, invest steadily and plan for the long run. Start with one automatic saving this month."
+  },
+  "levels": [
+    {
+      "id": "fin-1",
+      "title": "Money basics",
+      "lessons": [
+        {
+          "id": "fin-1-1",
+          "title": "Know where your money goes",
+          "minutes": 5,
+          "content": "Imagine a bucket of water with a few tiny holes in the bottom. You keep filling it, but it never gets full, and you can't see where the water is going. Your money works the same way. Tracking means writing down every taka you spend, so you can finally see the holes.\n\nWhy bother? Because small spending hides. A 20 taka chips packet here, a 30 taka rickshaw there, a 50 taka game top-up. None of them feels big. But 30 taka a day is 900 taka a month and almost 11,000 taka a year. Without tracking, you only notice that your money \"just disappeared\". With tracking, you know exactly which hole to fix.\n\nHere's how to do it. Take a small notebook or the notes app on a phone. Every time you spend money, write three things right away: how much, what it was for, and whether it was a need or a want. A need is something you really must have, like a school bus fare or a pencil for the exam. A want is nice but not necessary, like a cold drink or a new phone cover. Write it the same minute you spend. If you wait until night, you will forget half of it.\n\nDo this for 7 days to start, and later for a full month. At the end, add up your spending by group: food, transport, school things, fun. Then circle the biggest group. Don't try to cut anything in the first week. Just watch. Honest numbers first, changes later.\n\nMeet Rafi, a class 7 student in Mirpur. He got 100 taka a day from his mother and was always broke by Thursday. He thought he spent most of it on bus fare. So he wrote down every purchase for one week. The surprise: bus fare was only 140 taka for the week, but snacks from the shop near school were 310 taka. He didn't stop snacks completely. He just started carrying a tiffin from home three days a week. The next week he had 150 taka left on Friday, and he bought the cricket ball he wanted.\n\nThe common mistake is tracking only the big things, like a new shirt, and skipping the small ones because \"that's just 10 taka\". The small ones are exactly where money leaks. Write down everything, even a 5 taka chocolate.\n\nRemember: you can't fix what you can't see, so write down every taka for one week.",
+          "key_points": [
+            "Small daily spending adds up fast: 30 taka a day is about 11,000 taka a year.",
+            "Write the amount, what it was for, and need or want, right after you spend.",
+            "Group your spending at the end of the week and find the biggest group.",
+            "In the first week, just watch. Don't try to cut yet."
+          ],
+          "tip": "Keep your notebook or notes app open next to your money. If writing takes more than 10 seconds, you'll skip it, so use short words like \"bus 20\" or \"chips 25\".",
+          "task": "Write down everything you spent yesterday and today, as much as you remember. Mark each one N for need or W for want, then add up the W's.",
+          "quiz": [
+            {
+              "q": "Why is tracking small purchases so important?",
+              "options": [
+                "Shops ask for a written list",
+                "Small amounts add up to big amounts over a month",
+                "Big purchases don't matter at all",
+                "It makes you spend more"
+              ],
+              "answer": 1,
+              "explain": "30 taka a day becomes about 900 taka a month. Small leaks are the hardest to notice without writing them down."
+            },
+            {
+              "q": "In Rafi's story, where was most of his money really going?",
+              "options": [
+                "Bus fare",
+                "School books",
+                "Cricket gear",
+                "Snacks near school"
+              ],
+              "answer": 3,
+              "explain": "He thought it was bus fare, but his notes showed snacks were more than double his bus fare."
+            },
+            {
+              "q": "What should you do in your first week of tracking?",
+              "options": [
+                "Write everything down and just watch",
+                "Stop all spending",
+                "Track only purchases over 100 taka",
+                "Write it all at the end of the month"
+              ],
+              "answer": 0,
+              "explain": "Watch honestly first. Once you see the real numbers, you know where a change will be easiest."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-2",
+          "title": "Build a simple budget",
+          "minutes": 6,
+          "content": "A budget is a plan for your money before you spend it. Think of it like packing your school bag the night before: you decide what goes in, so you don't forget your math copy in the morning. With a budget, you decide where each taka goes before the shop decides for you.\n\nWhy does it matter? Without a plan, money goes to whatever is in front of you. You buy a burger on Sunday and then can't pay for the photocopy you need on Wednesday. With a plan, the important things are covered first, and you can enjoy the fun spending without guilt, because it was already planned.\n\nHere's a simple rule people use, called 50-30-20. Split your money into three parts. 50 percent for needs, the things you must pay for. 30 percent for wants, the fun things. 20 percent for savings, money you don't touch. Say you get 1,000 taka a month. That's 500 taka for needs, 300 taka for wants and 200 taka for savings. The numbers don't have to be perfect. If your needs eat up 60 percent, then make it 60-25-15. The idea is that every taka gets a job.\n\nThe trick is the order. The moment money comes in, take out the savings part first and put it away, in a box, a piggy bank or a separate account. Then pay the needs. Whatever is left is your wants money, and you can spend it freely. If you save \"whatever is left at the end\", there will almost never be anything left. Then check once a week: am I still inside my plan?\n\nNusrat is in class 8 in Chattogram. Her uncle gives her 1,200 taka every month. She used to spend it all by the 15th. Then she tried a budget. On the first day she put 240 taka (20 percent) into a tin box her mother keeps in the almirah. She kept 600 taka for school things and rickshaw fare. The other 360 taka was for fuchka with friends and phone data. After four months, the tin box had 960 taka, and she bought a scientific calculator for her exams without asking anyone.\n\nThe common mistake is making a budget so strict that it has zero fun money. You follow it for a week, then give up completely. Always keep some money for wants. A budget you can actually follow beats a perfect one you quit.\n\nRemember: give every taka a job, and pay your savings first.",
+          "key_points": [
+            "A budget is a plan for your money before you spend it.",
+            "The 50-30-20 rule: 50% needs, 30% wants, 20% savings.",
+            "Take out savings first, the moment money comes in.",
+            "Keep some fun money, or you'll quit the budget."
+          ],
+          "tip": "Use separate envelopes or pockets for needs, wants and savings. When the wants envelope is empty, wants are done for the month. No maths needed.",
+          "task": "Write down how much money you get in a month. Multiply it by 0.5, 0.3 and 0.2 to get your three budget parts, and write them on a paper you can see.",
+          "quiz": [
+            {
+              "q": "With the 50-30-20 rule, how much goes to savings from 1,000 taka?",
+              "options": [
+                "500 taka",
+                "300 taka",
+                "200 taka",
+                "100 taka"
+              ],
+              "answer": 2,
+              "explain": "20 percent of 1,000 is 200 taka. 500 goes to needs and 300 to wants."
+            },
+            {
+              "q": "When should you put your savings aside?",
+              "options": [
+                "At the end of the month, if anything is left",
+                "Only on Eid",
+                "After buying all your wants",
+                "First, the moment money comes in"
+              ],
+              "answer": 3,
+              "explain": "If you wait for leftovers, there are usually none. Saving first makes it happen."
+            },
+            {
+              "q": "Why should a budget include some money for wants?",
+              "options": [
+                "A budget with zero fun is hard to follow, so people quit",
+                "Wants are more important than needs",
+                "Shops give discounts on wants",
+                "Savings are not needed"
+              ],
+              "answer": 0,
+              "explain": "A realistic budget you keep using beats a perfect one you give up after a week."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-3",
+          "title": "Plan for the costs you can see coming",
+          "minutes": 5,
+          "content": "Some costs feel like a surprise, but they really aren't. Eid shopping, exam fees, a new school uniform every January, a friend's birthday gift. You know they're coming, you just don't know the exact day. Planning for them is like filling a water bottle before a long bus ride. You know you'll get thirsty, so you get ready early.\n\nWhy does it matter? If you wait until the cost arrives, you have to grab money from somewhere else. You skip something important, borrow from a friend, or ask your parents in a panic. A 1,200 taka exam fee feels huge when it shows up all at once. But split into small parts over many months, it's easy.\n\nHere's the method. First, make a list of every cost you expect in the next 12 months. Think month by month: Eid, birthdays, school fees, new shoes, a family trip. Next to each, write the rough amount and the month. Then use this simple trick: divide the amount by the number of months you have left. Say Eid is 6 months away and you want 1,800 taka for it. 1,800 divided by 6 is 300. So you save 300 taka a month, and when Eid comes, the money is just sitting there.\n\nKeep this money separate from your everyday money. A separate box, envelope or wallet works. You can even label it \"Eid\" or \"Exam fee\". When the money has a name, you're much less likely to spend it on something random. If you have several goals, add up the monthly amounts and put that into your budget as a fixed line.\n\nSabbir is in class 9 in Sylhet. Every year his board exam registration and coaching fees came in October, and every year his family scrambled. This year, in April, he and his father listed the costs: about 3,000 taka for fees and books by October. That's 6 months, so 500 taka a month. Sabbir saved 200 taka a month from his own pocket money, and his father added 300. In October, the 3,000 taka was ready in a labeled envelope. No stress, no borrowing.\n\nThe common mistake is calling these costs \"emergencies\". Eid is not an emergency. It comes every single year. If you treat it like a surprise, it will always feel like one. Put it on the list.\n\nRemember: if you know a cost is coming, divide it by the months left and save that much every month.",
+          "key_points": [
+            "Many \"surprise\" costs are actually predictable: Eid, fees, uniforms, gifts.",
+            "List every expected cost for the next 12 months with amount and month.",
+            "Divide each cost by the months left: that's what you save each month.",
+            "Keep this money separate and give it a name."
+          ],
+          "tip": "Write the goal's name on the envelope or box, like \"Eid 1,800\". A named pile of money is much harder to spend on random things.",
+          "task": "List 3 costs you know are coming in the next year. Write the amount and the month for each, then work out how much you'd need to save every month.",
+          "quiz": [
+            {
+              "q": "You want 1,800 taka for Eid, which is 6 months away. How much should you save each month?",
+              "options": [
+                "150 taka",
+                "300 taka",
+                "600 taka",
+                "1,800 taka"
+              ],
+              "answer": 1,
+              "explain": "1,800 divided by 6 months is 300 taka a month."
+            },
+            {
+              "q": "Which of these is a cost you can see coming?",
+              "options": [
+                "A school uniform you need every January",
+                "A sudden phone screen crack",
+                "A surprise doctor visit",
+                "Losing your wallet"
+              ],
+              "answer": 0,
+              "explain": "A yearly uniform is predictable. The others are true surprises, which is what an emergency fund is for."
+            },
+            {
+              "q": "Why did Sabbir's family have no stress in October this year?",
+              "options": [
+                "They took a loan",
+                "The fees were cancelled",
+                "They started saving 500 taka a month in April",
+                "Sabbir skipped the exam"
+              ],
+              "answer": 2,
+              "explain": "They listed the cost early and split 3,000 taka over 6 months, so the money was ready."
+            }
+          ]
+        },
+        {
+          "id": "fin-1-4",
+          "title": "Bank accounts and mobile wallets",
+          "minutes": 6,
+          "content": "A bank account is a safe place where a bank keeps your money for you. A mobile wallet, like bKash, Nagad or Rocket, is like a small bank account inside your phone. Think of a bank account as a big locked almirah at home, and a mobile wallet as the purse you carry around. The almirah is for keeping, the purse is for daily paying.\n\nWhy use them? Cash under the mattress can get lost, stolen, burnt or eaten by rats, and it's very easy to spend. Money in a savings account is safer, and many banks pay you a little extra, called interest, for keeping it there. A mobile wallet lets you pay a shop, send money to your cousin or pay a bill without carrying cash. Both also keep a record of every transaction, so tracking becomes easier.\n\nHere's how to use them well. Use the bank savings account for money you want to keep, like your savings and your Eid fund. In Bangladesh, children can have a student account or a minor account opened with a parent or guardian, often at a very low cost. Use the mobile wallet only for spending money, and keep only what you need for the next week or two in it. Many wallets have a cash-out charge, so check it before you cash out. Sending money to a person or paying a shop is often cheaper than cashing out.\n\nThe most important safety rule: your PIN and OTP are like the key to your almirah. Never tell them to anyone. Not a friend, not a cousin, and not someone on the phone who says they are from bKash or your bank. Real companies never ask for your PIN or OTP. Also set a PIN that isn't your birthday or 1234, and lock your phone with a password.\n\nTania, 13, lives in Rajshahi. Her grandfather sent her Eid salami of 2,000 taka through bKash. One day she got a call: \"Ma, we sent money to your number by mistake, please tell us the code we just sent.\" She almost read out the OTP. Then she remembered her mother's rule and hung up. Later, with her mother, she opened a student savings account and moved 1,500 taka there. She kept 500 taka in bKash for small payments.\n\nThe common mistake is keeping all your money in the wallet, where it's one tap away from being spent, or one OTP away from being stolen. Keep savings in the bank, spending money in the wallet.\n\nRemember: bank for keeping, wallet for spending, and your PIN and OTP are for you alone.",
+          "key_points": [
+            "A savings account is for keeping money; a mobile wallet is for daily spending.",
+            "Banks may pay interest on savings, and both keep a record of transactions.",
+            "Never share your PIN or OTP with anyone, even someone claiming to be the company.",
+            "Check cash-out charges before you cash out."
+          ],
+          "tip": "If anyone calls about a \"wrong send\" and asks for a code, hang up and check your balance in the app yourself. Real companies never ask for your PIN or OTP.",
+          "task": "Ask a parent which bank or mobile wallet your family uses, and find out together how much its cash-out charge is per 1,000 taka.",
+          "quiz": [
+            {
+              "q": "Where is the best place to keep money you are saving?",
+              "options": [
+                "Under your mattress",
+                "In a bank savings account",
+                "All in your mobile wallet",
+                "With a friend"
+              ],
+              "answer": 1,
+              "explain": "A savings account keeps money safer and harder to spend on impulse, and may even pay interest."
+            },
+            {
+              "q": "Someone calls saying they are from bKash and asks for your OTP. What do you do?",
+              "options": [
+                "Give it so they can fix the problem",
+                "Give only half of it",
+                "Send them money instead",
+                "Hang up, because real companies never ask for it"
+              ],
+              "answer": 3,
+              "explain": "Your OTP and PIN are only for you. Anyone asking for them is trying to steal your money."
+            },
+            {
+              "q": "Why did Tania keep only 500 taka in her wallet?",
+              "options": [
+                "The wallet can't hold more",
+                "Her bank told her to",
+                "Wallet money is easier to spend and steal, so she kept just her spending money there",
+                "bKash charges a fee for keeping money"
+              ],
+              "answer": 2,
+              "explain": "She moved her savings to the bank and kept only small spending money in the wallet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-2",
+      "title": "Grow and protect",
+      "lessons": [
+        {
+          "id": "fin-2-1",
+          "title": "Your emergency fund",
+          "minutes": 6,
+          "content": "An emergency fund is money you save only for real surprises. Think of the spare tyre in a car. You don't use it every day, and you hope you never need it. But the day a tyre bursts on the highway, you're very glad it's there. An emergency fund is your money spare tyre.\n\nWhy does it matter? Life throws surprises: a phone falls and the screen cracks, someone gets sick and needs medicine, a parent's shop is closed for a week during a flood. Without an emergency fund, you have to borrow, often with extra charges, or use money meant for something important like school fees. With one, a bad day stays a bad day. It doesn't turn into a bad month.\n\nHere's how to build it. Start with a small first goal. For a student, even 500 or 1,000 taka is a great start. For a family, the usual advice is to slowly build up 3 to 6 months of basic living costs, like food, rent and bills. Don't try to do it in one go. Put a fixed small amount in every week or month, like 50 taka from every 500 taka you get. Extra money, like Eid salami or a prize, can give it a quick boost.\n\nWhere to keep it matters. It should be easy to reach in a day or two, but not so easy that you spend it on snacks. A separate savings account or a separate box at home, not your everyday wallet, works well. Then make a clear rule for yourself: this money is only for things that are sudden, necessary and urgent. A new game is not an emergency. A sale is not an emergency. And when you do use it, fill it back up before saving for anything else.\n\nRafiq is 14 and lives in Khulna. Over six months, he saved 1,200 taka in a separate box, 50 taka a week. Then his bicycle chain broke, and the repair cost 450 taka. He needs the bicycle to get to school and tuition every day. Before, he would have had to beg his father or miss tuition for a week. This time, he paid from his emergency box the same day. Then, for the next two months, he put a bit extra in until the box was back at 1,200 taka.\n\nThe common mistake is using the emergency fund for things that only feel urgent, like a limited-time discount. Ask yourself one question: \"Is this sudden, and do I truly need it now?\" If not, it comes from your wants money.\n\nRemember: save a little every week for real surprises, and refill the fund after you use it.",
+          "key_points": [
+            "An emergency fund is money only for sudden, necessary, urgent costs.",
+            "Start small, like 500 to 1,000 taka, and grow it slowly with a fixed amount.",
+            "Keep it separate from everyday money, but reachable in a day or two.",
+            "After using it, refill it before saving for anything else."
+          ],
+          "tip": "Before taking money out, ask: is it sudden, is it necessary, is it urgent? If any answer is no, it's not an emergency.",
+          "task": "Pick a separate place for your emergency fund today, a box, an envelope or an account. Write a small first goal on it, like \"500 taka\", and put in your first 20 taka.",
+          "quiz": [
+            {
+              "q": "Which of these is a real emergency?",
+              "options": [
+                "A big sale on sneakers",
+                "A new phone model coming out",
+                "Your bicycle for school breaks and needs repair",
+                "A friend's party next month"
+              ],
+              "answer": 2,
+              "explain": "It's sudden, necessary and urgent. A sale or a planned party isn't."
+            },
+            {
+              "q": "What did Rafiq do after using 450 taka from his emergency box?",
+              "options": [
+                "Put in a bit extra until it was full again",
+                "Stopped saving",
+                "Spent the rest on a game",
+                "Borrowed from a friend"
+              ],
+              "answer": 0,
+              "explain": "Refilling the fund means it's ready for the next surprise."
+            },
+            {
+              "q": "Where is a good place to keep an emergency fund?",
+              "options": [
+                "Inside your everyday wallet",
+                "Lent to a friend",
+                "In a risky investment",
+                "In a separate account or box you can reach in a day or two"
+              ],
+              "answer": 3,
+              "explain": "It should be separate so you don't spend it, but reachable when a real emergency hits."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-2",
+          "title": "The power of compound growth",
+          "minutes": 6,
+          "content": "Compound growth means your money earns extra money, and then that extra money also starts earning. Imagine rolling a small snowball down a hill. As it rolls, it picks up more snow, gets bigger, and the bigger it gets, the more snow it picks up each turn. Money that grows on top of its own growth works just like that snowball.\n\nWhy does it matter? Because time does a lot of the work for you. Someone who starts saving early with small amounts can end up with more than someone who saves bigger amounts but starts late. And it works the other way too: a loan with interest on interest grows against you, just as fast.\n\nHere's how it works with numbers. Say you put 1,000 taka somewhere that grows 10 percent a year. After year one, you have 1,100 taka. In year two, you earn 10 percent on 1,100, not 1,000, so you get 110 taka and have 1,210. In year three you get 121 taka. Each year the growth is a little bigger, because you earn on your earnings. That's the snowball. If you took the growth out every year and spent it, you'd only ever earn 100 taka a year.\n\nThere's a quick shortcut called the Rule of 72. Divide 72 by the yearly growth rate, and you get roughly how many years it takes to double your money. At 6 percent a year, 72 divided by 6 is 12, so about 12 years to double. At 8 percent, about 9 years. Two rules make compound growth work for you: start as early as you can, and leave the growth in instead of spending it.\n\nHere's a story of two cousins. Tania started putting 500 taka a month into savings at age 20. Her cousin Sabbir waited and started at 30, putting in 1,000 taka a month, double Tania's amount. Say both earned 8 percent a year. By age 50, Tania would have around 7.5 lakh taka and Sabbir only around 6 lakh, even though she put in less money each month. Her extra ten years gave the snowball more time to roll.\n\nThe common mistake is thinking \"I'll start when I have more money.\" Waiting costs you the most valuable thing: time. Starting with 100 taka today beats starting with 1,000 taka in five years. Also remember that real investments that can grow can also go down, so you should understand the risk first.\n\nRemember: start early, keep the growth in, and let time roll your snowball.",
+          "key_points": [
+            "Compound growth means earning money on your earlier earnings too.",
+            "1,000 taka at 10% becomes 1,100, then 1,210, then 1,331.",
+            "Rule of 72: years to double = 72 divided by the yearly rate.",
+            "Starting early matters more than starting big."
+          ],
+          "tip": "Compound growth also works against you on loans. A loan with high interest snowballs the same way, so pay those off first.",
+          "task": "Use the Rule of 72 to work out how long money takes to double at 4%, 6% and 9% a year. Write the three answers down.",
+          "quiz": [
+            {
+              "q": "1,000 taka grows 10% a year and you leave the growth in. How much after 2 years?",
+              "options": [
+                "1,200 taka",
+                "1,210 taka",
+                "1,100 taka",
+                "2,000 taka"
+              ],
+              "answer": 1,
+              "explain": "Year 1: 1,100. Year 2: 10% of 1,100 is 110, so 1,210. You earn on your earlier growth."
+            },
+            {
+              "q": "Using the Rule of 72, how long does money take to double at 6% a year?",
+              "options": [
+                "About 6 years",
+                "About 72 years",
+                "About 20 years",
+                "About 12 years"
+              ],
+              "answer": 3,
+              "explain": "72 divided by 6 is 12, so roughly 12 years."
+            },
+            {
+              "q": "Why might Tania end up with more than Sabbir, even though she saved less each month?",
+              "options": [
+                "She started 10 years earlier, giving her money more time to grow",
+                "Her bank liked her more",
+                "Sabbir's money was lost",
+                "Prices never go up"
+              ],
+              "answer": 0,
+              "explain": "Time is the engine of compound growth. Extra years often matter more than bigger amounts."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-3",
+          "title": "Inflation: why idle cash shrinks",
+          "minutes": 5,
+          "content": "Inflation means prices slowly go up over time, so the same money buys less. Ask your parents what a singara cost when they were in school. Maybe 1 or 2 taka. Now it's 10 taka or more. The singara didn't get bigger. The taka just got weaker. That slow weakening is inflation.\n\nWhy does it matter? Because money that just sits still loses power. Say prices go up about 8 percent a year. Then 1,000 taka in a drawer will buy only about what 925 taka buys today, one year from now. Nothing was stolen, but you lost buying power quietly. If you plan for a big purchase a few years away and don't think about inflation, you'll find the price went up and your savings fall short.\n\nHere's how to deal with it. First, understand the simple rule: if your savings grow slower than prices, you're actually going backwards. If a savings account gives you 5 percent a year but prices rise 8 percent, you're losing about 3 percent of buying power each year, even though the number in your account goes up. So compare the growth rate with the rate prices are rising.\n\nSecond, use cash for the right jobs. Keep cash, or a simple savings account, for short-term needs and your emergency fund, because you need that money safe and ready. For money you won't need for many years, grown-ups look at options that have a chance to grow faster than inflation, after understanding the risks. Third, when you save for a future goal, add a bit extra for price rises. If a bicycle costs 10,000 taka today and you'll buy it in 2 years, plan for around 11,500 taka.\n\nNusrat's mother runs the house budget in Dhaka. Two years ago, a month of groceries cost her about 12,000 taka. Now the same list costs about 14,000 taka. Her income stayed the same, so things felt tight, and she didn't know why. When she wrote down old and new prices side by side, she saw it clearly: rice, oil and eggs had all gone up. She adjusted her budget and started planning every big purchase with a little extra for price rises.\n\nThe common mistake is thinking money is \"safe\" just because the number doesn't go down. A number that stays the same while prices climb is shrinking in real life. Keep only what you need as idle cash.\n\nRemember: prices rise every year, so money that just sits still slowly buys less.",
+          "key_points": [
+            "Inflation means prices rise, so the same money buys less over time.",
+            "If savings grow slower than prices, you lose buying power.",
+            "Keep cash for short-term needs and emergencies, not for many years.",
+            "Add extra for price rises when saving for a future goal."
+          ],
+          "tip": "When saving for something two or more years away, add about 8 to 10 percent per year to today's price so your goal isn't too small.",
+          "task": "Ask an adult at home what 3 things, like rice, eggs or a bus fare, cost 5 years ago. Write the old and today's price side by side.",
+          "quiz": [
+            {
+              "q": "What is inflation?",
+              "options": [
+                "Prices going down",
+                "Banks closing",
+                "Prices slowly going up, so money buys less",
+                "Getting a pay rise"
+              ],
+              "answer": 2,
+              "explain": "Inflation means each taka buys a little less than before."
+            },
+            {
+              "q": "Your savings grow 5% a year, but prices rise 8%. What's happening?",
+              "options": [
+                "You are losing buying power",
+                "You are getting richer fast",
+                "Nothing changes",
+                "Your savings double every year"
+              ],
+              "answer": 0,
+              "explain": "The number grows, but prices grow faster, so you can buy less with it."
+            },
+            {
+              "q": "A bicycle costs 10,000 taka today and you'll buy it in 2 years. What's a sensible goal?",
+              "options": [
+                "8,000 taka",
+                "10,000 taka exactly",
+                "5,000 taka",
+                "Around 11,500 taka"
+              ],
+              "answer": 3,
+              "explain": "Prices will likely rise, so plan for a bit extra over today's price."
+            }
+          ]
+        },
+        {
+          "id": "fin-2-4",
+          "title": "Insurance basics: protect what you build",
+          "minutes": 6,
+          "content": "Insurance is a deal where many people each pay a small amount regularly, and the insurance company uses that pool to pay for the big loss of the few people it happens to. Think of your class all putting 10 taka into a box every month. If one student's bicycle gets stolen, the box helps buy a new one. Nobody knows who'll be unlucky, so everyone chips in a little.\n\nWhy does it matter? Some losses are too big to save for. A hospital stay can cost more than a family earns in months. A fire can destroy a shop. Without insurance, one bad event can wipe out years of savings or push a family into debt. With the right insurance, you pay a small known cost so you don't face a huge unknown one.\n\nHere's how it works. The small regular payment is called the premium. The written agreement is called the policy. When something covered happens, you make a claim, and the company pays according to the policy. Many policies have a deductible, an amount you pay yourself first before the company pays the rest. Common types are health insurance, life insurance for families who depend on one person's income, and insurance for things like a car, motorbike, house or shop.\n\nHow do grown-ups choose? First, cover the biggest risks, the ones that would really hurt the family. Second, read what the policy does not cover, called exclusions. Third, check the company's licence and reputation, and how easy it is to make a claim. Fourth, be honest on the form, because a wrong answer can let them refuse the claim later. Remember, insurance is protection, not a way to get rich. Policies sold as \"save and earn big returns\" need extra careful checking.\n\nSabbir's father in Gazipur runs a small garments supply shop. Last year he bought shop insurance against fire, paying a premium of a few thousand taka a year. His neighbour said, \"Why waste money? Nothing will happen.\" Then in winter, an electrical short circuit started a fire in the market. Sabbir's father lost stock worth over 3 lakh taka. After he filed a claim with photos and bills, the insurer paid a large part of the loss, and he reopened in a month. The neighbour, with no insurance, took a big loan to restart.\n\nThe common mistake is buying a policy without reading it, then being shocked when a claim is refused. Always ask: what exactly is covered, what isn't, and how do I claim?\n\nRemember: insurance trades a small, sure cost for protection from a big, rare loss, so read what it covers.",
+          "key_points": [
+            "Insurance pools small payments from many people to pay for the big losses of a few.",
+            "Premium is the regular payment, policy is the agreement, claim is asking for payment.",
+            "Cover the biggest risks first and read the exclusions.",
+            "Insurance is protection, not a way to get rich."
+          ],
+          "tip": "Before anyone in your family signs a policy, ask the seller to show you in writing three things: what is covered, what is not, and how to make a claim.",
+          "task": "Ask a parent if your family has any insurance, like health, life or motorbike. Find out what it covers and roughly how much the premium is.",
+          "quiz": [
+            {
+              "q": "What is a premium?",
+              "options": [
+                "The money you get after a loss",
+                "The small regular payment you make for insurance",
+                "A type of bank account",
+                "A penalty for late bills"
+              ],
+              "answer": 1,
+              "explain": "The premium is what you pay regularly. The payout after a loss comes from a claim."
+            },
+            {
+              "q": "Why did Sabbir's father reopen his shop quickly after the fire?",
+              "options": [
+                "The fire was small",
+                "His neighbour helped",
+                "His insurance paid a large part of the loss",
+                "He had no stock"
+              ],
+              "answer": 2,
+              "explain": "Because he had fire insurance, he could claim and recover most of the loss."
+            },
+            {
+              "q": "What should you check before buying an insurance policy?",
+              "options": [
+                "Only the colour of the brochure",
+                "Whether it promises big returns",
+                "Nothing, just sign quickly",
+                "What it covers, what it doesn't, and how to claim"
+              ],
+              "answer": 3,
+              "explain": "Knowing the exclusions and claim process avoids nasty surprises later."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-3",
+      "title": "Smart money moves",
+      "lessons": [
+        {
+          "id": "fin-3-1",
+          "title": "Handle debt wisely",
+          "minutes": 6,
+          "content": "Debt means money you borrowed and have to pay back. Usually you pay back more than you borrowed, and that extra is called interest. It's like borrowing your friend's cricket bat and promising to return it with a new grip. Borrowing isn't always bad, but it always has a cost, and the bat must go back.\n\nWhy does it matter? Debt lets you use tomorrow's money today. Used carefully, for something that helps you earn or is truly needed, it can help. Used carelessly, for wants, it eats your future income. If you owe 2,000 taka with high interest and only pay a little, the interest keeps adding up, and soon you're paying for something you bought months ago and barely remember.\n\nHere's how to handle it. Rule one: before borrowing, ask \"Is this a need, and can I pay it back on time from money I'm sure to get?\" If not, wait and save instead. Rule two: always know three numbers, how much you owe, the interest rate, and the date it's due. Write them down. Rule three: pay every debt at least the minimum on time, because late fees and a bad record make everything worse.\n\nIf you have more than one debt, here's a smart order. Pay the minimum on all of them, then put every extra taka on the debt with the highest interest rate first. When it's gone, move that payment to the next highest. This is often called the avalanche method, and it saves the most money. If you need motivation, you can instead clear the smallest debt first for a quick win. Either way, don't take on new debt while paying off old debt.\n\nTania, a university student in Dhaka, had three debts: 1,500 taka borrowed from her cousin with no interest, 4,000 taka on a buy-now-pay-later phone plan with a high charge, and 800 taka from a friend. She felt lost. So she wrote all three on paper with their rates. She paid the minimum on each and put all her extra tuition money on the phone plan, since it had the highest charge. In three months it was gone. Then she cleared her friend and her cousin. She stopped buying on instalments until she had savings.\n\nThe common mistake is paying only the minimum forever and taking on new debt at the same time. That's like bailing water from a boat while drilling new holes. Stop adding new debt first.\n\nRemember: borrow only for real needs, know your three numbers, and pay the highest interest first.",
+          "key_points": [
+            "Debt is borrowed money you must repay, usually with interest.",
+            "Before borrowing, check it's a need and that you can repay on time.",
+            "Know how much you owe, the interest rate and the due date.",
+            "Pay minimums on all, then put extra on the highest-interest debt first."
+          ],
+          "tip": "Write every debt on one paper: who, how much, interest, due date. Stick it where you see it daily. Debts you can see get paid faster.",
+          "task": "If you owe anyone anything, even a friend, write it down with the amount and when you'll pay. If you don't, ask an adult to explain one loan they've had and what interest it charged.",
+          "quiz": [
+            {
+              "q": "You have three debts. After paying minimums, where should extra money go first to save the most?",
+              "options": [
+                "The debt with the highest interest rate",
+                "The newest debt",
+                "The one from your cousin with no interest",
+                "Split equally across all"
+              ],
+              "answer": 0,
+              "explain": "Clearing the highest-interest debt first cuts how much extra you pay overall."
+            },
+            {
+              "q": "Which three numbers should you always know about a debt?",
+              "options": [
+                "Lender's age, phone number and address",
+                "Amount owed, interest rate and due date",
+                "Your marks, roll number and class",
+                "Only the monthly payment"
+              ],
+              "answer": 1,
+              "explain": "These three tell you how big the debt is, how fast it grows and when you must pay."
+            },
+            {
+              "q": "What did Tania stop doing to fix her debt problem?",
+              "options": [
+                "Paying her cousin",
+                "Going to university",
+                "Doing tuition",
+                "Buying on instalments until she had savings"
+              ],
+              "answer": 3,
+              "explain": "Stopping new debt is step one, or the old debt never really goes away."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-2",
+          "title": "Investing basics: risk and spreading it",
+          "minutes": 6,
+          "content": "Investing means putting your money into something that you hope will grow over time, like a business, land, or shares of a company. Risk means the chance that it doesn't grow, or even goes down. Think of a mango farmer. Planting mango trees can bring a big harvest, but a storm can also ruin the crop. Investing always comes with that kind of chance.\n\nWhy learn this? Because most of the time, the chance of earning more comes with the chance of losing more. A savings account grows slowly but is very safe. Shares can grow faster but can drop a lot in a bad year. If you don't understand risk, you might put money you need next month into something that falls, or you might fall for someone promising \"big profit, zero risk\", which doesn't exist.\n\nHere's the main idea for handling risk: don't put all your eggs in one basket. If you carry all your eggs in one basket and drop it, they all break. If you spread them across five baskets, one fall breaks only a few. In money, this is called diversification. Instead of putting everything into one company or one idea, grown-ups spread money across many companies and different types of investments, so one bad result doesn't ruin everything.\n\nTwo more rules. First, match the investment to time. Money you need within a year or two, like school fees or your emergency fund, should stay safe in savings. Only money you won't need for many years should go into things that can go up and down, because time gives them a chance to recover. Second, only invest in what you understand, through licensed, regulated companies. If you can't explain how it makes money in two sentences, don't put money in it.\n\nRafi's uncle Kamal in Narayanganj got excited when a friend said one company's share price would \"surely double\". He wanted to put all of his 2 lakh taka savings into it. Rafi's father convinced him to wait. Kamal kept 1 lakh in a savings account for safety, and spread the other 1 lakh across a few different options after learning about them. A few months later, that one company's price fell by almost half. Kamal lost a little on that part, but most of his money was fine.\n\nThe common mistake is chasing what's \"hot\" right now because friends are making money. By the time everyone is talking about it, the price is often already high. Spread your money and think long term.\n\nRemember: more chance of gain means more chance of loss, so spread your money and only invest what you won't need soon.",
+          "key_points": [
+            "Investing means putting money into something you hope will grow; risk is the chance it won't.",
+            "Higher possible returns usually come with higher risk.",
+            "Diversify: spread money across many investments, not one basket.",
+            "Money needed soon stays safe; only long-term money goes into ups and downs."
+          ],
+          "tip": "Before any investment, try explaining in two sentences how it makes money. If you can't, or if someone promises big profit with no risk, walk away.",
+          "task": "Make a list of 4 ways people keep or grow money (for example savings account, land, a small business, shares). Next to each, write \"low\", \"medium\" or \"high\" risk and why.",
+          "quiz": [
+            {
+              "q": "What does diversification mean?",
+              "options": [
+                "Putting all your money in the best company",
+                "Keeping all money as cash",
+                "Spreading money across many different investments",
+                "Borrowing to invest"
+              ],
+              "answer": 2,
+              "explain": "Spreading money means one bad result doesn't ruin everything."
+            },
+            {
+              "q": "Which money should stay in safe savings, not risky investments?",
+              "options": [
+                "Money you won't need for 20 years",
+                "Money for next month's school fees",
+                "Extra money you can afford to leave alone",
+                "None, all money should be invested"
+              ],
+              "answer": 1,
+              "explain": "Money you need soon must be safe, because a risky investment might be down exactly when you need it."
+            },
+            {
+              "q": "Why was Rafi's uncle mostly fine when that one company's share price fell?",
+              "options": [
+                "He sold it the day before",
+                "He spread his money and kept part in savings",
+                "The bank paid him back",
+                "The price went up again the next day"
+              ],
+              "answer": 1,
+              "explain": "Because he didn't put all 2 lakh in one place, the fall only hit a small part."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-3",
+          "title": "Avoid scams and impulse spending",
+          "minutes": 6,
+          "content": "A scam is a trick to take your money by lying to you. Impulse spending is buying something suddenly, without thinking, because you felt a strong urge in the moment. They're different, but they work on the same weak spot: rushing you before your brain catches up. A scammer and a flashy \"50% off, today only!\" sign both want you to act fast.\n\nWhy does it matter? One scam can take months of savings in a minute. And impulse buys are sneaky: a 300 taka thing here and there feels small, but a few every month can eat your whole savings plan. Learning to slow down protects you from both. You keep your money, and you only buy things you'll actually be glad you bought.\n\nHere's how to spot a scam. Watch for these red flags: someone promises big money fast with no risk, like \"double your money in a month\". Someone pushes you to act right now, \"offer ends in 10 minutes\". Someone asks for your PIN, OTP or password. You \"won\" a prize from a contest you never entered, but must pay a fee first. Or a friend's Facebook account suddenly asks you to send bKash money urgently. When you see any of these, stop, don't send money, and check with a trusted adult. Call your friend on their real number before sending anything.\n\nHere's how to beat impulse spending. Use the 24-hour rule: when you want something that isn't planned, wait one full day. If you still want it tomorrow and it fits your wants budget, buy it. Most urges fade by then. Also, turn off shopping app notifications, don't save your card or wallet in shopping apps, and before buying, count the cost in hours of work or days of pocket money.\n\nSabbir, 15, from Bogura, got a Facebook message from his best friend's account: \"Bro, emergency, send 2,000 taka to this bKash number, I'll return it tonight.\" The message sounded rushed and a bit unlike his friend. Sabbir called his friend directly. His friend said, \"My account got hacked!\" Sabbir saved 2,000 taka. The same week, he wanted 1,200 taka headphones on sale. He waited 24 hours, realised his old ones worked fine, and kept the money.\n\nThe common mistake is thinking \"I'm too smart to be scammed.\" Scammers fool clever people every day by making them rush or feel scared. Your best tool isn't being smart, it's slowing down.\n\nRemember: if someone rushes you about money, slow down, check, and wait 24 hours.",
+          "key_points": [
+            "Scams and impulse buys both work by making you rush.",
+            "Red flags: big fast profit, pressure to act now, asking for PIN or OTP, fee to claim a prize.",
+            "If a friend asks for money online, call them on their real number first.",
+            "Use the 24-hour rule before any unplanned purchase."
+          ],
+          "tip": "When a message about money makes you feel rushed or scared, that feeling itself is the warning sign. Put the phone down for 10 minutes before doing anything.",
+          "task": "Look at your last 3 unplanned purchases. For each, write whether you'd still buy it today. Then turn off notifications for one shopping app.",
+          "quiz": [
+            {
+              "q": "Which is a red flag for a scam?",
+              "options": [
+                "A shop gives you a receipt",
+                "Someone promises to double your money in a month with no risk",
+                "Your bank shows your balance in its app",
+                "A friend returns money they borrowed"
+              ],
+              "answer": 1,
+              "explain": "Big fast profit with no risk is a classic scam promise. Real investments always carry risk."
+            },
+            {
+              "q": "What did Sabbir do when his friend's account asked for money?",
+              "options": [
+                "Sent the money quickly",
+                "Sent half of it",
+                "Called his friend directly and found the account was hacked",
+                "Shared his PIN to check"
+              ],
+              "answer": 2,
+              "explain": "Checking through a different, real channel exposed the scam."
+            },
+            {
+              "q": "What is the 24-hour rule?",
+              "options": [
+                "Wait one day before an unplanned purchase",
+                "Spend all your money within 24 hours",
+                "Check your balance every hour",
+                "Only shop at night"
+              ],
+              "answer": 0,
+              "explain": "Most urges fade in a day. If you still want it and it fits your budget, then buy it."
+            }
+          ]
+        },
+        {
+          "id": "fin-3-4",
+          "title": "The true cost of a loan or EMI",
+          "minutes": 6,
+          "content": "An EMI, or instalment, is when you buy something now and pay for it in equal monthly parts. Shops love to show only the small monthly number: \"Just 1,150 taka a month!\" The true cost of a loan is the total you pay by the end, not the monthly amount. It's like a cricket match: what matters is the final score, not the runs in one over.\n\nWhy does it matter? A small monthly number can hide a big extra cost. If you only look at \"1,150 a month\", you might not notice that the phone ends up costing far more than its cash price. People sign up for several \"small\" EMIs at once, and then a big part of their income disappears every month before they've bought food.\n\nHere's the simple method. Step one: multiply the monthly payment by the number of months. Step two: add any down payment and fees, like a processing fee. Step three: subtract the cash price. What's left is the true cost of borrowing. Say a phone's cash price is 12,000 taka. The EMI plan is 1,150 taka for 12 months plus a 300 taka processing fee. 1,150 times 12 is 13,800. Add 300, that's 14,100. So you pay 2,100 taka extra, about 17 percent more, just to have it now instead of later.\n\nSome offers say \"0% EMI\". Check carefully: sometimes the cash price is raised, there's a processing fee, or a big late fee kicks in if you miss one payment. Also check the total of all your monthly loan payments. A common safety rule for grown-ups is to keep all loan payments well below a third of monthly income. And always ask, \"Could I save for this in a few months instead?\"\n\nNusrat's elder brother Arif, who works in an office in Dhaka, wanted a 60,000 taka laptop. The shop offered 5,800 taka a month for 12 months. It sounded easy. Nusrat, who had just learned this lesson, did the maths with him: 5,800 times 12 is 69,600 taka, which is 9,600 taka extra. Arif decided to save 10,000 taka a month instead. In six months he bought the laptop for cash, and with the 9,600 taka he saved, he bought a bag and a mouse.\n\nThe common mistake is asking \"Can I afford the monthly payment?\" instead of \"What's the total I'll pay, and is it worth it?\" Always do the total.\n\nRemember: monthly payment times months, plus fees, minus cash price, is what borrowing really costs you.",
+          "key_points": [
+            "The true cost of a loan is the total paid, not the monthly amount.",
+            "Total = monthly payment × months + down payment + fees.",
+            "Extra cost = total minus the cash price.",
+            "Check \"0% EMI\" offers for hidden fees and higher prices."
+          ],
+          "tip": "When a shop says \"only X a month\", take out your phone calculator and multiply by the number of months right there, before you decide.",
+          "task": "Find one EMI ad online or in a shop window. Work out the total you'd pay and how much extra that is compared with the cash price.",
+          "quiz": [
+            {
+              "q": "A 12,000 taka phone costs 1,150 taka a month for 12 months plus a 300 taka fee. What is the extra cost?",
+              "options": [
+                "1,150 taka",
+                "300 taka",
+                "13,800 taka",
+                "2,100 taka"
+              ],
+              "answer": 3,
+              "explain": "1,150 × 12 = 13,800, plus 300 = 14,100. Minus 12,000 = 2,100 taka extra."
+            },
+            {
+              "q": "What should you check in a \"0% EMI\" offer?",
+              "options": [
+                "Hidden fees, a higher price than cash, and late fees",
+                "Only the colour of the product",
+                "Nothing, 0% means it's free",
+                "Whether the shop is busy"
+              ],
+              "answer": 0,
+              "explain": "Zero interest can still hide costs in fees or a raised price."
+            },
+            {
+              "q": "How did Arif save 9,600 taka on his laptop?",
+              "options": [
+                "He got a discount coupon",
+                "He saved for six months and bought with cash",
+                "He bought a cheaper laptop",
+                "He borrowed from Nusrat"
+              ],
+              "answer": 1,
+              "explain": "Saving first instead of using EMI meant he didn't pay the extra cost of borrowing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-4",
+      "title": "Earn and plan ahead",
+      "lessons": [
+        {
+          "id": "fin-4-1",
+          "title": "Understand your payslip and income tax",
+          "minutes": 6,
+          "content": "A payslip is the paper or PDF a company gives you each month that shows how your salary was calculated. Income tax is the share of your income that you pay to the government, which it uses for roads, schools, hospitals and more. Think of a payslip like the bill at a restaurant: it shows each item, then what was taken off, and finally what you actually get.\n\nWhy does it matter? Many people only look at the last number and never check the rest. Then they don't notice a mistake, don't know how much tax was cut, or don't realise their company is saving money for them in a provident fund. Understanding your payslip helps you catch errors, plan your budget on the right number, and file your tax return correctly.\n\nHere's how to read one. The top part is usually earnings: basic salary, plus allowances like house rent, medical and transport. Add them all and you get the gross salary, the total before anything is cut. The next part is deductions: things taken out, like provident fund contribution, income tax cut at source, and sometimes loan repayments. Gross minus deductions equals net salary, also called take-home pay. That's the money that actually lands in your bank account.\n\nNow income tax in Bangladesh, in simple terms. Each year in the national budget, the government sets a tax-free limit. Income up to that limit has no tax. Income above it is taxed in slabs: the next part at a low rate, the part after that at a higher rate, and so on. So you don't pay the top rate on all your money, only on the part that falls in that slab. Many employees must get a TIN, or tax ID, and submit a yearly tax return, which can be done online. Some savings and investments can lower your tax, so ask about them.\n\nTania's sister Mitu got her first job in Dhaka with a gross salary of 35,000 taka. In her first month, only about 32,000 taka reached her bank, and she thought the company had cheated her. Tania sat with her and read the payslip. 1,750 taka went to provident fund, which is still her money, saved with an extra contribution from the company. Some tax was also cut at source. Everything matched. Mitu then set her budget based on 32,000 taka, not 35,000, and stopped running short each month.\n\nThe common mistake is budgeting on your gross salary. You can only spend your take-home pay. Always plan with the net number.\n\nRemember: gross minus deductions is your take-home pay, and that's the number you budget with.",
+          "key_points": [
+            "Gross salary is the total before deductions; net (take-home) is what reaches your account.",
+            "Deductions can include provident fund, income tax at source and loan repayments.",
+            "Bangladesh taxes income in slabs above a tax-free limit set every year.",
+            "Always budget with your net pay, not your gross."
+          ],
+          "tip": "Save every payslip in one folder on your phone or computer. At tax return time, and if there's ever a mistake, you'll have everything in one place.",
+          "task": "Ask a working adult at home if you can look at one payslip together (they can hide the numbers). Find the gross, the deductions and the net.",
+          "quiz": [
+            {
+              "q": "What is net salary?",
+              "options": [
+                "Salary before anything is cut",
+                "Only the basic salary",
+                "Gross salary minus deductions, the amount you take home",
+                "The yearly tax amount"
+              ],
+              "answer": 2,
+              "explain": "Net salary, or take-home pay, is what actually reaches your bank account."
+            },
+            {
+              "q": "Why was Mitu's bank amount less than 35,000 taka?",
+              "options": [
+                "The company made an error",
+                "Provident fund and tax were deducted",
+                "She was fined",
+                "Her bank charged a fee"
+              ],
+              "answer": 1,
+              "explain": "Her payslip showed provident fund and tax cut at source. Everything matched."
+            },
+            {
+              "q": "In a slab tax system, which part of your income is taxed at the highest rate?",
+              "options": [
+                "All of your income",
+                "None of it",
+                "Only the first part",
+                "Only the part that falls in the highest slab"
+              ],
+              "answer": 3,
+              "explain": "Each slab of income has its own rate. Only the money in the top slab pays the top rate."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-2",
+          "title": "Grow your income",
+          "minutes": 6,
+          "content": "Growing your income means finding ways to earn more money, not just spend less. Saving is like closing the holes in a bucket. Earning more is like turning up the tap. Both help, but there's a limit to how much you can cut, while there's much less of a limit to how much your skills can earn over time.\n\nWhy does it matter? If your income stays the same while prices go up every year, life slowly gets tighter. Cutting costs helps, but you can't cut rice and rent to zero. Growing your income gives you room to save more, handle emergencies, and reach goals faster. And the best tool to grow income is something you already have: your ability to learn.\n\nHere's how to do it. Step one: list what you're good at or enjoy, like maths, drawing, English, fixing phones, cooking, or using Canva. Step two: ask who would pay for that. A class 10 student who is good at maths can teach class 5 students. Someone who draws well can design birthday cards or simple Facebook page posts for local shops. Step three: start small and do it well. Happy customers tell others, and that's how a small side income grows.\n\nStep four: keep learning a skill that's valuable. Free YouTube tutorials and online courses can teach you spoken English, graphic design, basic coding, video editing or accounting. A skill that more people need, and that fewer people do well, usually pays more. At a job, grown-ups grow income by doing excellent work, learning new skills, asking for a raise with clear proof of results, or moving to a better-paying role. Always check that any work offer is real, and never pay money upfront to \"get a job\".\n\nRafi, 16, from Cumilla, was good at maths but always short of money. He started teaching two class 6 students in his neighbourhood, 3 days a week, for 1,500 taka each per month. That's 3,000 taka a month. He also watched free videos to learn Canva and made simple sale posters for his uncle's shop. After six months, two more parents asked him to teach their kids, and his uncle's friend paid him for posters too. Rafi now earns about 6,000 taka a month and saves half.\n\nThe common mistake is spending all the extra income the moment it comes. If you earn 2,000 taka more and your spending grows by 2,000 taka, nothing changes. Save at least half of every increase.\n\nRemember: turn a skill into income, keep learning, and save at least half of every raise.",
+          "key_points": [
+            "Spending less has a limit; growing your income has much more room.",
+            "List your skills, find who would pay for them, and start small.",
+            "Keep learning a valuable skill; free online courses are a good start.",
+            "Save at least half of every income increase."
+          ],
+          "tip": "Tell 5 people you trust exactly what you can do and what it costs, like \"I teach class 5 maths, 1,500 taka a month\". Most first customers come from people who already know you.",
+          "task": "Write down 3 things you're good at. Next to each, write one person or shop who might pay for it, and what you'd charge.",
+          "quiz": [
+            {
+              "q": "Rafi teaches two students for 1,500 taka each per month. How much does he earn from them each month?",
+              "options": [
+                "3,000 taka",
+                "1,500 taka",
+                "6,000 taka",
+                "4,500 taka"
+              ],
+              "answer": 0,
+              "explain": "Two students times 1,500 taka is 3,000 taka a month."
+            },
+            {
+              "q": "What should you do with extra income when it comes?",
+              "options": [
+                "Spend all of it right away",
+                "Save at least half of it",
+                "Lend all of it to friends",
+                "Hide it and forget about it"
+              ],
+              "answer": 1,
+              "explain": "If spending grows as fast as income, nothing really improves. Saving half makes the raise count."
+            },
+            {
+              "q": "Someone offers you a job but asks you to pay money first to get it. What does this suggest?",
+              "options": [
+                "It's a great opportunity",
+                "All good jobs work like this",
+                "It may be a scam, so check carefully",
+                "You should pay quickly before it's gone"
+              ],
+              "answer": 2,
+              "explain": "Real employers pay you. Paying upfront to get a job is a common scam sign."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-3",
+          "title": "Set and prioritise money goals",
+          "minutes": 6,
+          "content": "A money goal is something specific you want to save for, with an amount and a date. \"I want to save money\" is a wish. \"I want 3,000 taka for a football by December\" is a goal. Think of a cricket chase: \"We need 120 runs in 20 overs\" tells the batters exactly how fast to score. A clear goal tells you exactly how much to save each month.\n\nWhy does it matter? Without clear goals, savings get spent on whatever comes up, because there's no reason to protect them. And when you have many wants at once, a new phone, a trip, a gift for Ammu, you can't do them all right now. Picking an order means the most important things actually happen, instead of everything happening halfway.\n\nHere's how to set a goal. Make it specific and measurable: what it is, how much it costs, and by when. Then divide the cost by the months you have. Say you want a 4,800 taka bicycle helmet and lights in 8 months. 4,800 divided by 8 is 600 taka a month. Now check: can your budget really give 600 a month? If not, either push the date further or pick a cheaper option. A goal you can actually hit is better than a big one you give up on.\n\nNow prioritise. Sort your goals into three groups. Must-have and urgent come first, like your emergency fund or exam fees. Important but not urgent come second, like a laptop for studies next year. Nice-to-have comes last, like a new game. Fund them in that order. You can work on two at a time, putting more money into the top one. Write the goals on paper with their amounts and dates, and stick it where you'll see it.\n\nNusrat, 14, from Barishal, had four wishes: a smartwatch, a gift for her mother's birthday in 2 months, an emergency fund, and a trip to Cox's Bazar with her cousins next year. She had 800 taka a month to save. She sorted them: emergency fund (500 taka goal) and mother's gift (600 taka in 2 months) first, the trip second, the smartwatch last. In two months, both top goals were done. Then she put most of her 800 taka toward the trip and a little toward the smartwatch. Everything moved forward, in the right order.\n\nThe common mistake is setting too many goals at once and saving a tiny bit for each. Nothing gets finished, and you lose motivation. Focus on one or two goals at a time.\n\nRemember: give every goal an amount and a date, and fund the most important ones first.",
+          "key_points": [
+            "A goal has a specific amount and a date; a wish doesn't.",
+            "Monthly saving = goal amount divided by months left.",
+            "Sort goals into must-have, important and nice-to-have, and fund them in that order.",
+            "Work on one or two goals at a time so they actually finish."
+          ],
+          "tip": "Draw a simple bar for each goal on paper and colour it in a little every time you save. Seeing it fill up keeps you going.",
+          "task": "Write your top 3 money goals with an amount and a date for each. Number them 1, 2, 3 by importance, and work out the monthly saving for goal number 1.",
+          "quiz": [
+            {
+              "q": "Which of these is a real money goal?",
+              "options": [
+                "\"I want to be rich someday\"",
+                "\"I'll save whatever I can\"",
+                "\"I want more money\"",
+                "\"3,000 taka for a football by December\""
+              ],
+              "answer": 3,
+              "explain": "A real goal has a specific amount and a date, so you know how much to save each month."
+            },
+            {
+              "q": "You want 4,800 taka in 8 months. How much should you save each month?",
+              "options": [
+                "400 taka",
+                "800 taka",
+                "600 taka",
+                "480 taka"
+              ],
+              "answer": 2,
+              "explain": "4,800 divided by 8 months is 600 taka a month."
+            },
+            {
+              "q": "Which goal did Nusrat fund first?",
+              "options": [
+                "The smartwatch",
+                "Her emergency fund and her mother's gift",
+                "The Cox's Bazar trip",
+                "All four equally"
+              ],
+              "answer": 1,
+              "explain": "She funded the must-have and urgent goals first, then moved to the others."
+            }
+          ]
+        },
+        {
+          "id": "fin-4-4",
+          "title": "Know your net worth",
+          "minutes": 5,
+          "content": "Net worth is everything you own minus everything you owe. What you own, like savings, a bicycle, gold or land, is called assets. What you owe, like loans or money borrowed from friends, is called liabilities. Think of it like checking your score at the end of a game: your income is how many runs you hit in one over, but net worth is the total on the scoreboard.\n\nWhy does it matter? Income alone can fool you. Someone earning 80,000 taka a month with big loans might actually be worse off than someone earning 30,000 who saves and owes nothing. Net worth shows whether you're really moving forward. If it goes up over time, your money habits are working. If it goes down, something needs to change, even if your income looks good.\n\nHere's how to calculate it. Take a paper and draw two columns. On the left, list your assets with today's value: cash, bank and wallet balance, savings certificates, gold, a phone or bicycle at what it could actually sell for (not what you paid). On the right, list your liabilities: every loan, EMI balance still left, credit card balance, money you owe friends or family. Add up each column. Assets minus liabilities equals your net worth. If liabilities are bigger, your net worth is negative, and that's okay as a starting point. It just tells you where you are.\n\nThen repeat it every 6 months or once a year, on the same date, like your birthday. Compare with last time. You can grow your net worth in two ways: increase assets by saving and investing, or reduce liabilities by paying off debt. Both push the number up. Things that lose value fast, like phones and motorbikes, count less every year, so don't count them as your main wealth.\n\nSabbir's cousin Rumi, 24, from Dhaka, earned a good salary and felt rich. When he did the two columns, he found: 60,000 taka in the bank, a phone worth about 25,000, and a motorbike worth about 1.5 lakh. Assets: 2.35 lakh. But he still owed 1.8 lakh on the motorbike loan and 40,000 on a credit card. Liabilities: 2.2 lakh. Net worth: just 15,000 taka. That shocked him. He stopped new EMIs and paid down the card. A year later, his net worth was over 1.5 lakh.\n\nThe common mistake is counting things at the price you paid, not what they're worth today. A phone bought for 40,000 taka two years ago might sell for 15,000. Use honest current values.\n\nRemember: what you own minus what you owe is your net worth, so check it every year and make it grow.",
+          "key_points": [
+            "Net worth = assets (what you own) minus liabilities (what you owe).",
+            "It shows real progress better than income alone.",
+            "Value assets at what they would sell for today.",
+            "Check it every 6 to 12 months, on the same date, and compare."
+          ],
+          "tip": "Pick a fixed date, like your birthday or 1 January, for your net worth check. Keep each year's numbers on the same page so you can see the trend.",
+          "task": "Make your own two-column list right now: what you own (cash, savings, things you could sell) and what you owe. Subtract to find your net worth.",
+          "quiz": [
+            {
+              "q": "What is net worth?",
+              "options": [
+                "Your monthly income",
+                "Everything you own minus everything you owe",
+                "Only your bank balance",
+                "The price of your house"
+              ],
+              "answer": 1,
+              "explain": "Net worth shows what's really yours after all debts are counted."
+            },
+            {
+              "q": "Why was Rumi's net worth only 15,000 taka?",
+              "options": [
+                "His debts were almost as big as his assets",
+                "He earned very little",
+                "He had no bank account",
+                "He counted his salary twice"
+              ],
+              "answer": 0,
+              "explain": "His motorbike loan and credit card nearly cancelled out everything he owned."
+            },
+            {
+              "q": "How should you value a phone in your net worth list?",
+              "options": [
+                "At the price you paid",
+                "At the price of the newest model",
+                "At zero always",
+                "At what it could sell for today"
+              ],
+              "answer": 3,
+              "explain": "Things lose value. Use honest current values to see your true position."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-5",
+      "title": "Build long-term wealth",
+      "lessons": [
+        {
+          "id": "fin-5-1",
+          "title": "Compare real investment options",
+          "minutes": 6,
+          "content": "In Bangladesh, people keep and grow money in a few common ways: bank deposits like FDR and DPS, government savings certificates (sanchayapatra), mutual funds, shares on the stock market, and things like gold or land. Comparing them is like choosing how to travel from Dhaka to Chattogram. A train is steady and safe, a bus is cheaper but bumpier, a plane is fast but costs more. Each option fits a different trip.\n\nWhy compare? Because every option is a mix of three things: how safe it is, how much it can grow, and how quickly you can get your money back. No option is best at all three. If you pick without comparing, you might lock away money you need soon, or put long-term money somewhere that barely beats price rises, or take a big risk you didn't understand.\n\nHere's a simple way to compare. Bank deposits: a DPS is a monthly savings scheme for a fixed number of years, and an FDR keeps a lump sum for a fixed time. They're fairly safe, with a set rate, but breaking them early can mean losing some profit. Sanchayapatra: issued by the government, usually with a fixed rate that is often higher than banks, but with buying limits, a few years of lock-in, and tax rules, so check the current rules before buying. These suit money for the next 1 to 5 years.\n\nMutual funds collect money from many people and a professional manager spreads it across many companies or bonds. They can grow more over many years but can also go down. Buying shares directly means owning a small piece of one company: higher possible growth, higher risk, and you need to really study the company. Gold and land can hold value over long periods, but prices also go up and down, and land is hard to sell quickly. Use only licensed banks, the official government channels and regulated companies, and check the latest rates and rules yourself, since they change.\n\nTania's parents in Mymensingh had 3 lakh taka saved. Before, they kept it all in a savings account earning very little. They sat down and compared. They needed 1 lakh for Tania's university admission in 2 years, so they put that in an FDR. They had a separate 1 lakh emergency fund, which stayed in the savings account so they could reach it anytime. The last 1 lakh they wouldn't need for 10 years, so after learning about the risks, they put it in a regulated mutual fund. Each taka now matches its job.\n\nThe common mistake is choosing an option only because it has the highest rate or because a relative swears by it. Always ask: how safe is it, how fast can I get my money back, and when will I need this money?\n\nRemember: no option is best at everything, so match each taka to how soon you'll need it and how much risk you can take.",
+          "key_points": [
+            "Every option is a mix of safety, growth and how quickly you can get money back.",
+            "Bank deposits and sanchayapatra are steadier, with fixed rates and rules.",
+            "Mutual funds and shares can grow more over many years but can also fall.",
+            "Match each part of your money to when you'll need it."
+          ],
+          "tip": "For any option, write three words next to it: safety (high/medium/low), growth (high/medium/low), and access (fast/slow). Comparing becomes easy.",
+          "task": "With a parent, look up the current rate of one bank DPS and one type of sanchayapatra. Write down the rate, the lock-in time and any rules you find.",
+          "quiz": [
+            {
+              "q": "Which three things should you compare in any investment option?",
+              "options": [
+                "Safety, growth and how quickly you get money back",
+                "Colour, logo and office size",
+                "Only the interest rate",
+                "What your friends chose"
+              ],
+              "answer": 0,
+              "explain": "Every option trades off these three. No option wins at all of them."
+            },
+            {
+              "q": "Where did Tania's parents keep the money needed in 2 years?",
+              "options": [
+                "Shares of one company",
+                "Land",
+                "An FDR",
+                "Under the bed"
+              ],
+              "answer": 2,
+              "explain": "Money needed soon belongs somewhere steady with a fixed term, like an FDR."
+            },
+            {
+              "q": "What is a mutual fund?",
+              "options": [
+                "A government loan to you",
+                "A pool of many people's money spread by a manager across many investments",
+                "A type of bank fee",
+                "A guaranteed fixed-rate deposit"
+              ],
+              "answer": 1,
+              "explain": "It spreads money across many companies or bonds, so it can grow, but it can also go down."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-2",
+          "title": "Invest regularly and stay the course",
+          "minutes": 6,
+          "content": "Investing regularly means putting in the same amount at a fixed time, like 1,000 taka on the 1st of every month, no matter what's happening in the news. Staying the course means not panicking and quitting when prices drop. It's like brushing your teeth: doing it every day for years matters far more than one amazing brushing session.\n\nWhy does it matter? People who try to guess the perfect time to buy usually get it wrong. They buy when everyone is excited and prices are high, and sell in fear when prices fall, which is the opposite of what makes money. A steady habit removes the guessing. And since long-term growth needs time, quitting during a bad patch often means locking in a loss that might have recovered.\n\nHere's how it works, with numbers. Say you put 1,000 taka a month into a fund. In month one, the price per unit is 10 taka, so you get 100 units. Month two, the price falls to 8, so your 1,000 taka buys 125 units. Month three, it rises to 12, and you get about 83 units. Month four, back to 10, so 100 units. You put in 4,000 taka and got about 408 units, an average cost of about 9.80 taka per unit, a bit less than the average price of 10. When prices drop, the same money buys more. This is called taka-cost averaging.\n\nTo make it work, follow three rules. First, automate it: set up a DPS or an automatic monthly transfer on the day your money comes in, so you never have to decide. Second, only invest money you won't need for at least 5 years, so you never have to sell in a bad month. Third, check your investments only a few times a year. Checking daily makes every drop feel scary.\n\nSabbir's uncle Habib in Rangpur put 2,000 taka a month into a regulated mutual fund. In his second year, the market fell and his fund showed a loss of 15 percent. His friends said, \"Sell before you lose everything!\" Habib remembered his plan. He kept investing the same 2,000 taka every month, which now bought more units at lower prices. Over the next two years, the market recovered. Because he had kept buying during the low months, his total was clearly above what he had put in.\n\nThe common mistake is stopping or selling right after a drop. That's like leaving a cricket match at the drinks break because your team lost two wickets. Stick to the plan, as long as the money is long-term money you don't need soon. Past recoveries don't guarantee future ones, so spread your money and keep your emergency fund separate.\n\nRemember: invest the same amount on the same date every month, and don't let a bad month make you quit.",
+          "key_points": [
+            "Invest a fixed amount at a fixed time, instead of guessing the best moment.",
+            "When prices fall, the same money buys more units (taka-cost averaging).",
+            "Automate it and only invest money you won't need for at least 5 years.",
+            "Don't panic-sell after a drop; check only a few times a year."
+          ],
+          "tip": "Set the automatic transfer for the day after your income arrives, not the end of the month. Then saving happens before spending can.",
+          "task": "Using the numbers from this lesson, work out how many units 1,000 taka buys at prices of 10, 5 and 20 taka. Notice which price gives you the most.",
+          "quiz": [
+            {
+              "q": "You invest 1,000 taka when the price is 8 taka per unit. How many units do you get?",
+              "options": [
+                "80 units",
+                "100 units",
+                "125 units",
+                "800 units"
+              ],
+              "answer": 2,
+              "explain": "1,000 divided by 8 is 125 units. A lower price means more units for the same money."
+            },
+            {
+              "q": "What did Habib do when his fund showed a 15% loss?",
+              "options": [
+                "Sold everything",
+                "Kept investing the same amount every month",
+                "Stopped investing for a year",
+                "Moved it all to one company's shares"
+              ],
+              "answer": 1,
+              "explain": "He stuck to his plan and bought more units at lower prices, which helped when the market recovered."
+            },
+            {
+              "q": "Which money is suitable for regular long-term investing?",
+              "options": [
+                "Your emergency fund",
+                "Next month's rent",
+                "Money for exam fees next term",
+                "Money you won't need for at least 5 years"
+              ],
+              "answer": 3,
+              "explain": "Long-term money gives investments time to recover from bad years, so you never have to sell at a low."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-3",
+          "title": "Start retirement planning early",
+          "minutes": 6,
+          "content": "Retirement is the time, usually around age 60, when people stop working full time. Retirement planning means saving now so you'll have money to live on then, when there's no salary. Think of an ant collecting food all summer so it has enough for the rainy season. The ant doesn't wait until it's already raining.\n\nWhy start early? Because of compound growth, the snowball from an earlier lesson. The longer your money has to grow, the less you need to put in. Also, people are living longer now, so retirement can last 20 years or more. Without savings, people have to depend fully on their children or keep working when their health is weak. Many jobs in Bangladesh, especially private and informal ones, have no pension, so it's up to each person.\n\nHere's the power of starting early, with numbers. Imagine two people each saving 2,000 taka a month until age 60, and say their money grows 8 percent a year, which is not guaranteed. Person A starts at 25. Person B starts at 35. Person A puts in a total of about 8.4 lakh taka and ends up with around 46 lakh. Person B puts in about 6 lakh and ends up with around 19 lakh. Ten extra years more than doubled the result. Starting early is the biggest advantage you can give yourself, and it costs nothing.\n\nHow do grown-ups do it? First, join the provident fund at work if there is one, because the employer often adds money too, which is like free money. Second, set up a long-term automatic saving, like a DPS or regular investment, and increase it a little every time income grows. Third, Bangladesh has a Universal Pension Scheme run by the government, where people can pay monthly and get a pension later, so it's worth checking the current plans and rules. And fourth, don't touch retirement money for other wants, because once taken out, it loses all those years of growth.\n\nNusrat's father, Jamal, is 45 and works in a private company in Khulna. He had never saved for retirement and felt it was too late. Nusrat showed him the two-person example. He realised starting now was still far better than not starting. He began putting 3,000 taka a month into a long-term plan and joined his company's provident fund properly. He also told Nusrat's elder brother, who just got his first job at 23, to start with even 1,000 taka a month right away.\n\nThe common mistake is thinking \"Retirement is far away, I'll think about it later.\" Every year you wait makes it harder and more expensive to catch up. Start small, but start now.\n\nRemember: the earlier you start saving for retirement, the less you need to save, because time does the heavy lifting.",
+          "key_points": [
+            "Retirement planning means saving now for the years when there's no salary.",
+            "Starting 10 years earlier can more than double the final amount.",
+            "Use workplace provident funds, long-term automatic saving, and check the Universal Pension Scheme.",
+            "Don't use retirement money for other wants."
+          ],
+          "tip": "Every time income rises, add part of the increase to retirement saving right away. You won't miss money you never got used to spending.",
+          "task": "Ask a working adult at home whether they have a provident fund, pension or long-term saving plan. Then explain the 25-versus-35 example to them in your own words.",
+          "quiz": [
+            {
+              "q": "Why does starting retirement saving early help so much?",
+              "options": [
+                "Banks give gifts to young savers",
+                "Prices never change",
+                "Money has more years to grow through compound growth",
+                "You don't need to save as much later because salaries are always high"
+              ],
+              "answer": 2,
+              "explain": "More years means more time for growth on top of growth."
+            },
+            {
+              "q": "In the example, roughly how much did Person A, who started at 25, end up with?",
+              "options": [
+                "About 46 lakh taka",
+                "About 8.4 lakh taka",
+                "About 19 lakh taka",
+                "About 6 lakh taka"
+              ],
+              "answer": 0,
+              "explain": "Starting 10 years earlier gave around 46 lakh, versus around 19 lakh for starting at 35."
+            },
+            {
+              "q": "Why should you join a workplace provident fund if there is one?",
+              "options": [
+                "It's always optional and useless",
+                "The employer often adds money too",
+                "It pays off your loans",
+                "It replaces your salary"
+              ],
+              "answer": 1,
+              "explain": "The employer's contribution is extra money added to your savings."
+            }
+          ]
+        },
+        {
+          "id": "fin-5-4",
+          "title": "Your personal money plan: allocation and yearly review",
+          "minutes": 7,
+          "content": "A personal money plan puts everything from this course together: how much you save, where each part of your money goes, and when you check it. Allocation means deciding what share of your money goes where. Think of a cricket team: you don't pick eleven fast bowlers. You need openers, a keeper, spinners and fast bowlers, each with a role. Your money needs a balanced team too.\n\nWhy does it matter? Without a plan, money ends up wherever it happened to land: too much sitting idle, or too much in one risky place, or nothing set aside for emergencies. A simple plan tells every taka its job. And a yearly review keeps the plan matched to your life, because your income, goals and needs change.\n\nHere's how to build it, in order. Step one, protect: build your emergency fund and get basic insurance for big risks. Step two, clear high-interest debt, because paying off a loan with high interest is like earning that same rate, guaranteed. Step three, sort your goals by time. Money needed within 2 years goes in safe places like savings or an FDR. Money for 2 to 5 years can go in steady options like DPS or sanchayapatra. Money for 5 years or more, like retirement, can include growth options like mutual funds, after understanding the risks, and spread out.\n\nStep four, write your allocation as simple percentages. For example, a young earner with stable income and no debt might decide: 30 percent of savings in safe and steady places, 70 percent in long-term growth. Someone close to retirement, or who can't sleep when prices drop, might choose the opposite. There's no single right answer. It depends on your time, your goals and how much risk you can handle. Step five, review once a year on a fixed date. Check your net worth, update goals, and rebalance: if growth investments did well and grew from 70 to 80 percent, move some back so you're at 70 again.\n\nRafi's elder sister Lamia, 27, works in Dhaka and earns 45,000 taka a month. She had money scattered everywhere with no plan. On a Friday, she wrote it all down. She topped up her emergency fund to 4 months of costs, paid off her 20,000 taka credit card balance, and set her long-term money at 30 percent safe, 70 percent in a regulated mutual fund through monthly investing. She set 1 January as her review day. A year later, the fund part had grown to 78 percent, so she moved some into an FDR to get back to 70-30. Her money was finally organised, and she stopped worrying about it.\n\nThe common mistake is making a plan once and never looking at it again, or changing it every week because of news. Once a year, on a fixed date, is the sweet spot.\n\nRemember: protect first, clear costly debt, match money to time, and review your plan once a year.",
+          "key_points": [
+            "Order: emergency fund and insurance, then high-interest debt, then goals.",
+            "Under 2 years: safe; 2 to 5 years: steady; 5+ years: some growth, spread out.",
+            "Write your allocation as percentages that fit your time, goals and comfort with risk.",
+            "Review once a year on a fixed date and rebalance back to your plan."
+          ],
+          "tip": "Write your whole money plan on one page: emergency fund target, debts, goals with dates, allocation percentages and your review date. If it doesn't fit on one page, it's too complicated.",
+          "task": "Write a one-page money plan for yourself today, even with small numbers: your emergency fund goal, your top goal with a date, and which goals are short, medium or long term.",
+          "quiz": [
+            {
+              "q": "What should come first in a personal money plan?",
+              "options": [
+                "Buying shares of a popular company",
+                "An emergency fund and basic insurance",
+                "A new phone on EMI",
+                "A holiday"
+              ],
+              "answer": 1,
+              "explain": "Protection comes first so one bad event doesn't undo everything else."
+            },
+            {
+              "q": "Your plan is 70% growth and 30% safe, but growth grew to 80%. What does rebalancing mean?",
+              "options": [
+                "Moving some money back so it's 70-30 again",
+                "Putting everything into growth",
+                "Selling everything",
+                "Doing nothing ever"
+              ],
+              "answer": 0,
+              "explain": "Rebalancing brings your money back to the plan you chose, keeping risk where you want it."
+            },
+            {
+              "q": "Where does money needed within 2 years belong?",
+              "options": [
+                "Shares of one company",
+                "A risky new scheme",
+                "Land you can't sell quickly",
+                "Safe places like savings or an FDR"
+              ],
+              "answer": 3,
+              "explain": "Short-term money must be there when you need it, so it shouldn't be in things that can fall."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+import 'dart:math' show Random;
+
+import 'package:flutter/material.dart';
+
+import '../components/widgets.dart';
+import '../data/mentor_repository.dart';
+import '../data/models.dart';
+import '../l10n/app_localizations.dart';
+import '../logic/mentor_engine.dart';
+import '../theme.dart';
+
+/// One question at a time. After each answer the mentor explains why it is
+/// right or wrong, so the quiz teaches instead of only testing.
+/// Pops with true when the quiz was passed.
+class QuizPage extends StatefulWidget {
+  final String lessonId;
+
+  /// Offered on the result screen when the quiz is passed.
+  final Lesson? nextLesson;
+
+  const QuizPage({super.key, required this.lessonId, this.nextLesson});
+
+  @override
+  State<QuizPage> createState() => _QuizPageState();
+}
+
+class _QuizPageState extends State<QuizPage> {
+  final _repo = MentorRepository.instance;
+  final _random = Random();
+
+  Lesson? _lesson;
+  MentorCategory? _category;
+  List<QuizQuestion> _original = [];
+  List<QuizQuestion> _questions = [];
+
+  int _index = 0;
+  int? _selected;
+  bool _checked = false;
+  int _correct = 0;
+  bool _saving = false;
+  QuizResult? _result;
+  String _feedback = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final lesson = await _repo.getLesson(widget.lessonId);
+    if (lesson == null) return;
+    final category = await _repo.getCategory(lesson.categoryId);
+    final questions = await _repo.getQuiz(lesson.id);
+    if (!mounted) return;
+    setState(() {
+      _lesson = lesson;
+      _category = category;
+      _original = questions;
+      _questions = _shuffle(questions);
+    });
+  }
+
+  List<QuizQuestion> _shuffle(List<QuizQuestion> questions) => questions.map((q) => q.shuffled(_random)).toList();
+
+  void _select(int option) {
+    if (_checked) return;
+    setState(() => _selected = option);
+  }
+
+  void _check() {
+    final selected = _selected;
+    if (selected == null) return;
+    setState(() {
+      _checked = true;
+      if (selected == _questions[_index].answerIndex) _correct++;
+    });
+  }
+
+  Future<void> _next() async {
+    if (_index + 1 < _questions.length) {
+      setState(() {
+        _index++;
+        _selected = null;
+        _checked = false;
+      });
+      return;
+    }
+    await _finish();
+  }
+
+  Future<void> _finish() async {
+    final lesson = _lesson;
+    final category = _category;
+    if (_saving || lesson == null || category == null) return;
+    setState(() => _saving = true);
+
+    final result = QuizResult(_correct, _questions.length);
+    final progress = await _repo.recordQuizAttempt(
+      lessonId: lesson.id,
+      categoryId: lesson.categoryId,
+      score: _correct,
+      passed: result.passed,
+    );
+    if (!mounted) return;
+    setState(() {
+      _result = result;
+      _feedback = MentorEngine.quizFeedback(
+        category,
+        result,
+        progress.attempts,
+        AppLocalizations.of(context),
+      );
+      _saving = false;
+    });
+  }
+
+  void _restart() {
+    setState(() {
+      _questions = _shuffle(_original);
+      _index = 0;
+      _selected = null;
+      _checked = false;
+      _correct = 0;
+      _result = null;
+      _feedback = '';
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final lesson = _lesson;
+    final category = _category;
+    if (lesson == null || category == null) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor)),
+      );
+    }
+
+    final l = AppLocalizations.of(context);
+    if (_questions.isEmpty) {
+      return Scaffold(
+        appBar: AppBar(),
+        body: Center(child: Text(l.noQuiz, style: AppTheme.body(15))),
+      );
+    }
+
+    final result = _result;
+    // Mid-quiz, ask before leaving so answers are not lost by a stray swipe.
+    final inProgress = result == null && (_index > 0 || _checked);
+    return PopScope(
+      canPop: !inProgress,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (didPop) return;
+        if (await _confirmLeave() && context.mounted) Navigator.of(context).pop();
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(l.quizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        ),
+        body: result == null ? _questionView(category) : _resultView(category, lesson, result),
+        bottomNavigationBar: SafeArea(
+          top: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+            child: result == null ? _questionAction() : _resultAction(result),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Future<bool> _confirmLeave() async {
+    final l = AppLocalizations.of(context);
+    final leave = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.leaveQuizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        content: Text(l.leaveQuizBody, style: AppTheme.body(14)),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l.stayInQuiz)),
+          TextButton(onPressed: () => Navigator.of(context).pop(true), child: Text(l.leaveQuiz)),
+        ],
+      ),
+    );
+    return leave ?? false;
+  }
+
+  Widget _questionView(MentorCategory category) {
+    final question = _questions[_index];
+    final answeredCount = _index + (_checked ? 1 : 0);
+    final wasRight = _selected == question.answerIndex;
+    final l = AppLocalizations.of(context);
+
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(24, 4, 24, 24),
+      children: [
+        Text(
+          l.questionProgress(_index + 1, _questions.length),
+          style: AppTheme.mono(16, color: AppTheme.kSubheadingColor),
+        ),
+        const SizedBox(height: 8),
+        ProgressBar(
+          value: answeredCount / _questions.length,
+          color: category.color,
+          background: AppTheme.kSubheadingColor.withAlpha(0x44),
+        ),
+        const SizedBox(height: 24),
+        Text(question.question, style: AppTheme.body(19, weight: FontWeight.w600, height: 1.4)),
+        const SizedBox(height: 20),
+        for (var i = 0; i < question.options.length; i++)
+          _OptionTile(
+            text: question.options[i],
+            look: _lookFor(i, question),
+            onTap: () => _select(i),
+          ),
+        if (_checked) ...[
+          const SizedBox(height: 8),
+          Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: wasRight ? const Color(0x225FA97A) : const Color(0x22D9645F),
+              borderRadius: BorderRadius.circular(14),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  wasRight ? l.answerCorrect : l.answerWrong,
+                  style: AppTheme.mono(
+                    18,
+                    color: wasRight ? AppTheme.kSuccess : AppTheme.kDanger,
+                    weight: FontWeight.w700,
+                  ),
+                ),
+                if (question.explanation.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(question.explanation, style: AppTheme.body(14, height: 1.5)),
+                ],
+              ],
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  _OptionLook _lookFor(int option, QuizQuestion question) {
+    if (!_checked) {
+      return option == _selected ? _OptionLook.selected : _OptionLook.idle;
+    }
+    if (option == question.answerIndex) return _OptionLook.correct;
+    if (option == _selected) return _OptionLook.wrong;
+    return _OptionLook.faded;
+  }
+
+  Widget _questionAction() {
+    final l = AppLocalizations.of(context);
+    if (!_checked) {
+      return PrimaryButton(label: l.checkAnswer, onTap: _selected == null ? null : _check);
+    }
+    final last = _index + 1 >= _questions.length;
+    return PrimaryButton(
+      label: last ? l.seeResult : l.nextQuestion,
+      onTap: _saving ? null : _next,
+    );
+  }
+
+  Widget _resultView(MentorCategory category, Lesson lesson, QuizResult result) {
+    final l = AppLocalizations.of(context);
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
+      children: [
+        Icon(
+          result.passed ? Icons.emoji_events : Icons.replay,
+          size: 72,
+          color: result.passed ? category.color : AppTheme.kSubheadingColor,
+        ),
+        const SizedBox(height: 8),
+        Center(
+          child: Text(l.score(result.correct, result.total), style: AppTheme.display(68)),
+        ),
+        Center(
+          child: Text(
+            result.passed ? l.youCompleted(lesson.title) : l.needToPass(result.required),
+            textAlign: TextAlign.center,
+            style: AppTheme.mono(18),
+          ),
+        ),
+        const SizedBox(height: 28),
+        MentorBubble(category: category, message: _feedback),
+      ],
+    );
+  }
+
+  Widget _resultAction(QuizResult result) {
+    final l = AppLocalizations.of(context);
+    if (result.passed) {
+      final next = widget.nextLesson;
+      return PrimaryButton(
+        label: next == null ? l.continueButton : l.nextLesson(next.title),
+        onTap: () => Navigator.of(context).pop(true),
+      );
+    }
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        PrimaryButton(label: l.reviewLesson, onTap: () => Navigator.of(context).pop(false)),
+        TextButton(onPressed: _restart, child: Text(l.tryQuizAgain)),
+      ],
+    );
+  }
+}
+
+enum _OptionLook { idle, selected, correct, wrong, faded }
+
+class _OptionTile extends StatelessWidget {
+  final String text;
+  final _OptionLook look;
+  final VoidCallback onTap;
+
+  const _OptionTile({required this.text, required this.look, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    Color border = Colors.transparent;
+    Color background = AppTheme.kCard;
+    Color textColor = AppTheme.kText;
+    IconData? icon;
+
+    switch (look) {
+      case _OptionLook.idle:
+        break;
+      case _OptionLook.selected:
+        border = AppTheme.kPrimaryColor;
+        break;
+      case _OptionLook.correct:
+        border = AppTheme.kSuccess;
+        background = const Color(0x1A5FA97A);
+        icon = Icons.check_circle;
+        break;
+      case _OptionLook.wrong:
+        border = AppTheme.kDanger;
+        background = const Color(0x1AD9645F);
+        icon = Icons.cancel;
+        break;
+      case _OptionLook.faded:
+        textColor = AppTheme.kSubheadingColor;
+        break;
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Material(
+        color: background,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+          side: BorderSide(color: border, width: 2),
+        ),
+        child: InkWell(
+          onTap: onTap,
+          customBorder: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            child: Row(
+              children: [
+                Expanded(child: Text(text, style: AppTheme.body(15, color: textColor, height: 1.4))),
+                if (icon != null) ...[
+                  const SizedBox(width: 8),
+                  Icon(icon, color: border),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

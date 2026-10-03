@@ -1,0 +1,1028 @@
+{
+  "id": "programming",
+  "name": "Programming",
+  "mentor": "Code Mentor",
+  "tagline": "Learn to think in steps and write your first real logic.",
+  "description": "No setup needed. These lessons teach how programmers think, with examples you can try later in any language.",
+  "image": "assets/images/programming.jpg",
+  "color": "#5E8C8A",
+  "messages": {
+    "welcome": "Every programmer started exactly where you are. We will go one idea at a time, and you will be writing logic before you know it.",
+    "comeback": "Code waits patiently. Open the next lesson and read just the first paragraph. Momentum will do the rest.",
+    "pass": "Clean work. That idea is now part of your toolkit.",
+    "fail": "Bugs are normal, even in answers. Read the explanations, review the lesson and run it again.",
+    "finished": "You can now plan with pseudocode, store and look up data, control flow, write clean functions, handle text and errors, test your work and reason about algorithms, recursion and objects. Pick a language and build a small real project this month."
+  },
+  "levels": [
+    {
+      "id": "prog-1",
+      "title": "Think like a programmer",
+      "lessons": [
+        {
+          "id": "prog-1-1",
+          "title": "What programming really is",
+          "minutes": 5,
+          "content": "A program is a list of instructions that a computer follows, one by one, exactly as written. Imagine you have a robot friend who is super fast but knows nothing. If you say \"make tea\", it just stands there. If you say \"fill the kettle with water, switch it on, wait until it boils\", now it can work. Programming is writing those clear steps.\n\nWhy does this matter? Because a computer does what you say, not what you mean. If you forget a step, it skips it. If a step is vague, it gets stuck or does something silly. Learn to give clear steps and you can make a computer do boring work for you: adding up marks, sending reminders, sorting a list of 1,000 names in less than a second.\n\nHere's the trick programmers use. First, write the steps in plain words. This list of steps that solves a problem is called an algorithm. A recipe is an algorithm. Directions to your friend's house are an algorithm. Second, if a step feels too big, break it into smaller steps. \"Make tea\" becomes \"boil water\", \"put tea leaves in the cup\", \"pour water\", \"add sugar\". This breaking-down is called decomposition.\n\nKeep breaking until each step is so small that nobody could get it wrong. Then check: read the steps as if you were the robot. Does every step say exactly what to do? Is anything missing? Only after that do you write it in a programming language like Python. The language is just a way of writing your steps down for the computer.\n\nRafi wanted his little brother to buy eggs from the bazar. He said, \"Get some eggs.\" His brother came back with 2 eggs and no change. Next time Rafi wrote the steps: \"Take 100 taka. Go to Karim uncle's shop. Ask for 6 eggs. Pay. Count the change. Come straight home.\" The brother came back with 6 eggs and the right change. Same brother, clearer instructions, correct result. That is programming.\n\nThe common mistake is jumping straight into typing code before you know the steps. You end up stuck, staring at the screen. Always write the plan in plain words first. If you can't explain the steps to a friend, the code won't appear by itself.\n\nRemember: a program is just clear, small steps, and a good programmer is someone who breaks problems down well.",
+          "key_points": [
+            "A program is a list of exact instructions a computer follows.",
+            "An algorithm is a step-by-step solution, like a recipe.",
+            "Decomposition means breaking a big problem into small, clear steps.",
+            "Write the steps in plain words before writing any code."
+          ],
+          "tip": "Read your steps out loud as if you were a robot that knows nothing. Wherever you think \"how?\", that step needs to be broken down more.",
+          "task": "Write the steps for brushing your teeth in at least 8 numbered steps. Then give them to someone at home and ask them to point out any step that is unclear.",
+          "quiz": [
+            {
+              "q": "What is an algorithm?",
+              "options": [
+                "A type of computer chip",
+                "A programming language like Python",
+                "A step-by-step set of instructions that solves a problem",
+                "A mistake in the code"
+              ],
+              "answer": 2,
+              "explain": "An algorithm is a clear list of steps. A programming language is just a way to write those steps for a computer."
+            },
+            {
+              "q": "Rafi's brother came back with only 2 eggs the first time. Why?",
+              "options": [
+                "The instruction \"get some eggs\" was too vague",
+                "The shop had no eggs",
+                "He did not have money",
+                "He forgot the way"
+              ],
+              "answer": 0,
+              "explain": "\"Some eggs\" didn't say how many. When Rafi wrote exact steps, the result was correct."
+            },
+            {
+              "q": "What is decomposition?",
+              "options": [
+                "Deleting old code",
+                "Making a program run faster",
+                "Translating code to another language",
+                "Breaking a big problem into smaller, simpler steps"
+              ],
+              "answer": 3,
+              "explain": "Decomposition means breaking a big job like \"make tea\" into small steps nobody can get wrong."
+            }
+          ]
+        },
+        {
+          "id": "prog-1-2",
+          "title": "Variables and data types",
+          "minutes": 6,
+          "content": "A variable is a box with a name on it, where your program keeps a value. Think of the labelled jars in your mother's kitchen: one says \"salt\", one says \"sugar\". You look for the label, and you find what's inside. In code, you might write score = 0. Now there is a box called score holding the number 0.\n\nWhy do you need this? A program has to remember things while it runs: your name, your marks, how much money is left. Without variables, the computer would forget every number the moment it used it. With them, you can change a value later, like score = score + 10, and the box now holds 10.\n\nEvery value also has a type, which tells the computer what kind of thing it is. The four you'll use most: whole numbers like 25 (integer), numbers with a point like 4.5 (float), text inside quotes like \"Dhaka\" (string), and yes-or-no values, True or False (boolean). The type decides what you can do. You can multiply 5 by 2 and get 10. You can't sensibly multiply \"Dhaka\" by \"Khulna\".\n\nHere's the rule that trips everyone up: \"5\" with quotes is text, not a number. In Python, \"5\" + \"5\" gives \"55\", because it just sticks the two texts together. 5 + 5 gives 10. So when you read something a user typed, it's usually text, and you must change it to a number first, like int(\"5\"), before doing maths. Also, give boxes clear names: total_price is better than x, because next week you'll forget what x meant.\n\nNusrat was making a small program for her tuition fees. She wrote fee = \"1500\" and months = 3, then tried fee * months. The answer came out as \"150015001500\". Confused, she noticed the quotes. Her fee was stored as text, so the computer just repeated it three times. She changed it to fee = 1500, without quotes, and got 4500. One pair of quotes was the whole bug.\n\nThe most common mistake is mixing up text and numbers, exactly like Nusrat did. Whenever a result looks strange, ask yourself: what type is each value? Is a number secretly sitting inside quotes?\n\nRemember: a variable is a named box, and its type decides what you can do with what's inside.",
+          "key_points": [
+            "A variable is a named box that holds a value, like score = 0.",
+            "Main types: integer (25), float (4.5), string (\"Dhaka\") and boolean (True/False).",
+            "\"5\" in quotes is text; \"5\" + \"5\" gives \"55\", not 10.",
+            "Use clear names like total_price instead of x."
+          ],
+          "tip": "When a result looks weird, write the type next to each variable on paper. Nine times out of ten, a number is hiding inside quotes.",
+          "task": "Pick 5 things about yourself (name, age, height, class, whether you like mangoes). Write each as a variable with a good name, and write its type next to it.",
+          "quiz": [
+            {
+              "q": "What type is the value \"Dhaka\"?",
+              "options": [
+                "Integer",
+                "String (text)",
+                "Boolean",
+                "Float"
+              ],
+              "answer": 1,
+              "explain": "Anything inside quotes is a string, which means text."
+            },
+            {
+              "q": "In Python, what does \"5\" + \"5\" give?",
+              "options": [
+                "10",
+                "An error every time",
+                "5",
+                "\"55\""
+              ],
+              "answer": 3,
+              "explain": "Both are text, so + just joins them into \"55\". Numbers without quotes would give 10."
+            },
+            {
+              "q": "Why did Nusrat's program print \"150015001500\"?",
+              "options": [
+                "Her fee was stored as text inside quotes",
+                "She used the wrong number of months",
+                "The computer was broken",
+                "She forgot to use a variable"
+              ],
+              "answer": 0,
+              "explain": "fee = \"1500\" is text, so multiplying by 3 repeated the text. Removing the quotes gave 4500."
+            }
+          ]
+        },
+        {
+          "id": "prog-1-3",
+          "title": "Input, process, output",
+          "minutes": 5,
+          "content": "Almost every program does three things: it takes something in (input), works on it (process), and gives something back (output). Think of a juice stall. Mangoes go in, the blender works, juice comes out. A calculator works the same way: you press 12 + 8 (input), it adds (process), and it shows 20 (output).\n\nWhy think this way? Because when you have to build something, you often don't know where to start. Asking these three questions gives you a starting point straight away. It also helps when something breaks. If the output is wrong, either the input was wrong or the process was wrong. Now you only have two places to look instead of everywhere.\n\nHere's how to use it. Before writing anything, write three lines on paper. Input: what does the program need to know? Process: what calculation or decision does it make? Output: what should the person see at the end? For a program that splits a restaurant bill, input is the total bill and the number of friends, process is bill divided by friends, output is \"Each person pays ___ taka\".\n\nThen test it with small numbers you can check in your head. Bill 600 taka, 3 friends: 600 / 3 = 200, so the output should be \"Each person pays 200 taka\". If the program says anything else, you know something is broken. Inputs can come from the keyboard, a file, a sensor or a button tap. Outputs can be text on screen, a sound, a saved file or a message sent.\n\nTania wanted to make a program that tells her how many days are left until Eid. At first she just stared at the screen. Then she wrote: Input: today's date and the Eid date. Process: count the days between them. Output: \"__ days until Eid!\" Suddenly the job was clear. She tested it with today as the 1st and Eid on the 11th of the same month, expecting 10 days. It printed 10. Done.\n\nThe common mistake is forgetting the input part, for example writing a bill splitter that always divides by 3 because that's how many friends were there today. Next time 4 friends come and it's wrong. Anything that can change should be an input, not a fixed number inside the process.\n\nRemember: input, process, output. Answer those three questions first, and the code has a shape before you write it.",
+          "key_points": [
+            "Programs take input, process it, and give output.",
+            "Write the three parts on paper before writing any code.",
+            "Test with small numbers you can check in your head, like 600 / 3 = 200.",
+            "Anything that can change should be an input, not a fixed number."
+          ],
+          "tip": "When the output is wrong, check the input first. It's the quickest thing to look at, and it's often the culprit.",
+          "task": "Pick an app on your phone, like a calculator or a weather app. Write down one input it takes, the process it does, and the output it shows.",
+          "quiz": [
+            {
+              "q": "In a bill-splitting program, what is the process?",
+              "options": [
+                "The total bill",
+                "The number of friends",
+                "\"Each person pays 200 taka\"",
+                "Dividing the bill by the number of friends"
+              ],
+              "answer": 3,
+              "explain": "The process is the work done on the inputs: bill divided by number of friends."
+            },
+            {
+              "q": "If a program's output is wrong, where should you look?",
+              "options": [
+                "Only at the output screen",
+                "At the input and at the process",
+                "Nowhere, just run it again",
+                "Only at the font"
+              ],
+              "answer": 1,
+              "explain": "A wrong output comes from wrong input or a wrong process, so check those two."
+            },
+            {
+              "q": "Why is a bill splitter that always divides by 3 a problem?",
+              "options": [
+                "It is too slow",
+                "Dividing is not allowed",
+                "The number of friends can change, so it should be an input",
+                "It uses too much memory"
+              ],
+              "answer": 2,
+              "explain": "Anything that can change, like the number of friends, should be an input."
+            }
+          ]
+        },
+        {
+          "id": "prog-1-4",
+          "title": "Planning with pseudocode and flowcharts",
+          "minutes": 6,
+          "content": "Pseudocode is your program written in plain, simple English, before you write real code. A flowchart is the same plan drawn as boxes and arrows. Think of it like drawing a rough map before going somewhere new. You don't need the exact streets yet, just the route.\n\nWhy bother? Because real code has strict rules: brackets, colons, exact spelling. If you try to solve the problem and fight those rules at the same time, your brain gets overloaded. Planning in pseudocode lets you think only about the logic. When the plan works, turning it into code is easy. Without a plan, people write code, get confused, delete it, and start again three times.\n\nHow to write pseudocode: one action per line, using simple words like GET, SET, IF, OTHERWISE, REPEAT, SHOW. For example, to check if a student passed: GET marks. IF marks is 33 or more, SHOW \"Pass\". OTHERWISE SHOW \"Fail\". There's no fixed grammar. The only rule is that a friend could read it and understand every step.\n\nHow to draw a flowchart: an oval for start and end, a rectangle for an action (like \"add 10 to total\"), a diamond for a yes/no question (like \"marks >= 33?\"), and arrows to show what happens next. A diamond always has two arrows coming out, one for yes and one for no. Then test your plan by walking through it with real numbers. Try marks = 50: is 50 >= 33? Yes, so show \"Pass\". Try marks = 20: no, so show \"Fail\". Also try the edge, marks = 33, to make sure it says Pass.\n\nSabbir had to write a program for his cricket club: if a player scored 50 or more runs, print \"Half century!\", otherwise print the runs. He started typing code and got lost in errors. So he stopped and wrote four lines of pseudocode: GET runs. IF runs >= 50, SHOW \"Half century!\". OTHERWISE SHOW runs. END. He tested it on paper with 49, 50 and 72. Then he typed the code in five minutes, and it worked the first time.\n\nThe common mistake is making pseudocode too vague, like writing \"calculate the result\". That's not a step, it's a wish. Every line should be clear enough that you could do it by hand with a pencil.\n\nRemember: plan first in plain words or boxes, test the plan with real numbers, then write code.",
+          "key_points": [
+            "Pseudocode is a plan in plain words; a flowchart is the same plan drawn.",
+            "Flowchart shapes: oval for start/end, rectangle for actions, diamond for yes/no questions.",
+            "Test your plan with real numbers, including the edge, like marks = 33.",
+            "Each line should be doable by hand, not vague like \"calculate the result\"."
+          ],
+          "tip": "Always test the exact boundary number. If the rule says \"33 or more\", try 32, 33 and 34. Most bugs hide right at the edge.",
+          "task": "Write pseudocode for this: given a person's age, show \"Can vote\" if they are 18 or older, otherwise show how many years they must wait. Test it on paper with ages 10, 17 and 18.",
+          "quiz": [
+            {
+              "q": "In a flowchart, which shape is used for a yes/no question?",
+              "options": [
+                "Diamond",
+                "Oval",
+                "Rectangle",
+                "Circle with a star"
+              ],
+              "answer": 0,
+              "explain": "A diamond means a decision. It has two arrows out: one for yes, one for no."
+            },
+            {
+              "q": "Why write pseudocode before real code?",
+              "options": [
+                "Computers can run pseudocode directly",
+                "It is required by law",
+                "You can think about the logic without fighting code rules",
+                "It makes the final program faster"
+              ],
+              "answer": 2,
+              "explain": "Pseudocode lets you solve the problem first, without worrying about brackets and spelling."
+            },
+            {
+              "q": "Sabbir's rule is \"50 or more runs is a half century\". Which test checks the edge?",
+              "options": [
+                "Testing with 10",
+                "Testing with 50",
+                "Testing with 100",
+                "Testing with 0"
+              ],
+              "answer": 1,
+              "explain": "50 is exactly on the boundary. If 50 prints \"Half century!\", the edge is handled correctly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-2",
+      "title": "Control the flow",
+      "lessons": [
+        {
+          "id": "prog-2-1",
+          "title": "Making decisions with if and else",
+          "minutes": 6,
+          "content": "An if statement lets your program choose what to do. It asks a yes-or-no question, and does one thing if the answer is yes, and maybe another thing if it's no. You do this all day: if it's raining, take an umbrella, else leave it. In code: if raining: take umbrella. else: leave it.\n\nWhy do you need it? Without decisions, a program does the exact same thing every time, no matter what. A result checker would print \"Pass\" for everyone, even someone with 10 marks. With if and else, the program reacts to the situation: different marks, different message.\n\nThe question inside an if is called a condition, and it's always either True or False. You build conditions by comparing: == means \"is equal to\" (two equal signs, because one = is for putting a value in a box), != means \"not equal\", and >, <, >=, <= mean greater, less, greater-or-equal, less-or-equal. You can join conditions with and (both must be true) or or (at least one must be true). For example: if age >= 13 and age <= 19, the person is a teenager.\n\nWhen there are more than two choices, use elif (short for \"else if\"). The computer checks from top to bottom and runs only the first one that's true, then skips the rest. So order matters. For grades: if marks >= 80: \"A+\". elif marks >= 70: \"A\". elif marks >= 60: \"A-\". else: \"Keep trying\". With marks = 75, the first check (75 >= 80) is false, the second (75 >= 70) is true, so it prints \"A\" and stops.\n\nRafi wrote a grade checker but put the checks in the wrong order: if marks >= 60: \"A-\" came first, then if marks >= 80: \"A+\". He tested with 92, and it said \"A-\". Why? 92 >= 60 is true, so the very first check won and the rest were skipped. He moved the biggest number to the top. Now 92 gave \"A+\", 75 gave \"A\", 65 gave \"A-\". Same checks, new order, correct answers.\n\nTwo common mistakes. First, using = instead of == inside a condition; one sign stores a value, two signs compare. Second, putting a wide check like >= 60 above a narrow check like >= 80, so the narrow one can never be reached. When using >= ranges, start with the biggest number.\n\nRemember: if asks a true-or-false question, elif adds more choices, else catches everything left, and only the first true branch runs.",
+          "key_points": [
+            "if runs code only when its condition is True; else runs when it's False.",
+            "== compares, = stores. Other comparisons: !=, >, <, >=, <=.",
+            "With elif, only the first true branch runs, so order matters.",
+            "For >= ranges, put the biggest number first."
+          ],
+          "tip": "For every if/elif chain, test one value from each branch plus the exact boundaries. For grades, try 80, 79, 70, 69 and 0.",
+          "task": "Write an if/elif/else on paper for the price of a rickshaw ride: under 1 km costs 30 taka, 1 to 3 km costs 50 taka, more than 3 km costs 80 taka. Test it with 0.5, 1, 3 and 5 km.",
+          "quiz": [
+            {
+              "q": "What does == mean in a condition?",
+              "options": [
+                "Store a value in a variable",
+                "Add two numbers",
+                "Check if two values are equal",
+                "Not equal"
+              ],
+              "answer": 2,
+              "explain": "== compares two values. A single = puts a value into a variable."
+            },
+            {
+              "q": "In an if/elif/else chain, how many branches run?",
+              "options": [
+                "All the true ones",
+                "All of them",
+                "None, unless you press a key",
+                "Only the first true one"
+              ],
+              "answer": 3,
+              "explain": "The computer checks top to bottom, runs the first true branch, and skips the rest."
+            },
+            {
+              "q": "Why did Rafi's checker give \"A-\" for 92 marks?",
+              "options": [
+                "The check >= 60 came first, so it won before >= 80 was reached",
+                "92 is not a valid mark",
+                "He used else instead of elif",
+                "The computer rounded 92 down"
+              ],
+              "answer": 0,
+              "explain": "92 >= 60 is true, so the first branch ran. Putting the biggest number first fixed it."
+            }
+          ]
+        },
+        {
+          "id": "prog-2-2",
+          "title": "Loops: repeating work",
+          "minutes": 6,
+          "content": "A loop tells the computer to repeat some steps again and again. Imagine your teacher says, \"Write 'I will not talk in class' 100 times.\" You'd hate it. A computer wouldn't care. With a loop, you write the line once and say \"do this 100 times\".\n\nWhy does it matter? Because a lot of work is repetition: adding up 40 students' marks, sending a message to 200 friends, checking every item in a shopping list. Without loops, you'd copy the same line 40 times, and if you needed to change it, you'd change it in 40 places. With a loop, it's three lines, and the change happens in one place.\n\nThere are two main kinds. A for loop is used when you know how many times, or you want to go through every item in a list. For example: for i in range(1, 6): print(i). This prints 1, 2, 3, 4, 5. Notice it stops before 6. A while loop repeats as long as a condition stays true, which is useful when you don't know how many times in advance. For example: while balance > 0: buy one more chocolate.\n\nHere's the most useful loop pattern: the running total. Start a box at zero, then add each item to it inside the loop. To add marks 70, 85 and 90: total = 0. For each mark: total = total + mark. After the first round total is 70, then 155, then 245. Every while loop needs something inside it that changes, so the condition eventually becomes false. If nothing changes, the loop runs forever. This is called an infinite loop, and the program freezes.\n\nNusrat saves 20 taka a day from her tiffin money and wants to know how many days until she has 500 taka for a new storybook. She wrote: saved = 0, days = 0. While saved < 500: saved = saved + 20, days = days + 1. Then print days. On paper she checked: after 1 day 20, after 2 days 40... after 25 days exactly 500, so the loop stops. Answer: 25 days. She circled the date on her calendar.\n\nThe common mistake is forgetting to change the variable inside a while loop. If Nusrat had forgotten saved = saved + 20, saved would stay 0 forever, 0 < 500 would always be true, and the loop would never end. Before running a while loop, point to the line that moves it toward stopping.\n\nRemember: for loops repeat a known number of times or go through a list, while loops repeat until a condition turns false, and something inside must change.",
+          "key_points": [
+            "A loop repeats steps so you write them only once.",
+            "for loops go through a range or list; range(1, 6) gives 1 to 5.",
+            "while loops repeat as long as a condition is true.",
+            "Something inside a while loop must change, or it never stops."
+          ],
+          "tip": "Before running a while loop, find and point to the exact line that brings it closer to stopping. No such line means an infinite loop.",
+          "task": "On paper, write a loop that adds the numbers 1 to 10 using a running total. Track total after each round in a small table and check you end at 55.",
+          "quiz": [
+            {
+              "q": "What does for i in range(1, 6) go through?",
+              "options": [
+                "1, 2, 3, 4, 5",
+                "1, 2, 3, 4, 5, 6",
+                "0, 1, 2, 3, 4, 5",
+                "Only 1 and 6"
+              ],
+              "answer": 0,
+              "explain": "range stops just before the second number, so it gives 1 to 5."
+            },
+            {
+              "q": "What causes an infinite loop?",
+              "options": [
+                "Using a for loop",
+                "Nothing inside the while loop changes, so the condition stays true",
+                "Printing too many lines",
+                "Adding numbers in a loop"
+              ],
+              "answer": 1,
+              "explain": "If nothing moves the loop toward its stop condition, it repeats forever."
+            },
+            {
+              "q": "Nusrat saves 20 taka a day. How many days to reach 500 taka?",
+              "options": [
+                "20",
+                "50",
+                "500",
+                "25"
+              ],
+              "answer": 3,
+              "explain": "500 divided by 20 is 25. The loop adds 20 each day and stops when saved reaches 500."
+            }
+          ]
+        },
+        {
+          "id": "prog-2-3",
+          "title": "Stopping and skipping with break and continue",
+          "minutes": 5,
+          "content": "break and continue are two small words that change how a loop runs. break means \"stop the whole loop right now\". continue means \"skip the rest of this round and go to the next one\". Imagine looking for your friend's house on a street. When you find it, you stop walking. That's break. If a house has a scary dog outside, you skip it and move to the next house. That's continue.\n\nWhy do you need them? Without break, a loop keeps going even after it has found what it wanted, which wastes time. If you're searching 10,000 phone numbers and the one you want is the 3rd, you don't want to check the other 9,997. Without continue, you end up wrapping the whole loop in a big if, which gets messy and hard to read.\n\nHow break works: put it inside an if, inside the loop. For example: for number in contacts: if number == target: print(\"Found!\"), break. The moment the match is found, the loop ends and the program moves to whatever comes after the loop. With numbers 3, 8, 5, 9 and a target of 8, the loop checks 3, then 8, prints \"Found!\" and stops. It never looks at 5 or 9.\n\nHow continue works: for price in prices: if price < 0: continue, then total = total + price. If the prices are 50, -10 and 30, the loop adds 50, sees -10 and skips straight to the next round without adding it, then adds 30. Total is 80. Both break and continue only affect the loop they are directly inside.\n\nTania was checking her class's exam results to find the first student who scored 100 in maths, so she could invite them to the olympiad team. The list had 60 names. Her first program checked all 60 and printed every perfect scorer. She only needed the first one, so she added break right after printing. Now it stopped at student number 4. Later she noticed some rows were blank because students were absent. She added: if marks is empty: continue. The blanks were skipped instead of crashing her program.\n\nThe common mistake is putting break in the wrong place, outside the if. Then the loop stops after the very first round, every time, no matter what. Always put break inside the if that checks for the thing you're looking for.\n\nRemember: break leaves the loop completely, continue skips just this one round.",
+          "key_points": [
+            "break stops the whole loop immediately.",
+            "continue skips the rest of the current round and moves to the next.",
+            "Put break inside an if, or the loop stops after the first round.",
+            "They only affect the loop they are directly inside."
+          ],
+          "tip": "When you write break, say out loud what the loop has found. If you can't name it, the break is probably in the wrong place.",
+          "task": "Write on paper a loop over the numbers 1 to 20 that skips every multiple of 3 using continue and stops completely when it reaches 15 using break. Write down which numbers it prints.",
+          "quiz": [
+            {
+              "q": "What does continue do inside a loop?",
+              "options": [
+                "Stops the whole program",
+                "Restarts the loop from the beginning",
+                "Skips the rest of this round and goes to the next one",
+                "Ends the loop immediately"
+              ],
+              "answer": 2,
+              "explain": "continue skips only the current round. break is the one that ends the loop."
+            },
+            {
+              "q": "Prices are 50, -10 and 30. The loop uses continue to skip negatives. What is the total?",
+              "options": [
+                "70",
+                "90",
+                "80",
+                "-10"
+              ],
+              "answer": 2,
+              "explain": "50 is added, -10 is skipped, 30 is added: 50 + 30 = 80."
+            },
+            {
+              "q": "Why did Tania add break after printing the first perfect scorer?",
+              "options": [
+                "To stop checking the rest of the list once she found what she needed",
+                "To skip absent students",
+                "To print every perfect scorer",
+                "To make the list longer"
+              ],
+              "answer": 0,
+              "explain": "She only needed the first one, so break stopped the loop as soon as it was found."
+            }
+          ]
+        },
+        {
+          "id": "prog-2-4",
+          "title": "Nesting: loops and decisions inside each other",
+          "minutes": 6,
+          "content": "Nesting means putting one block of code inside another: an if inside a loop, a loop inside a loop, or an if inside another if. Think of a school. Inside the school there are classes, and inside each class there are students. To greet every student, you go class by class, and inside each class, student by student. That's a loop inside a loop.\n\nWhy do you need it? Real problems have layers. \"For every student, if their marks are below 33, send a reminder\" is a loop with a decision inside. Printing a multiplication table needs rows and columns, so it needs a loop inside a loop. Without nesting, you can only handle flat, one-layer problems.\n\nHow a nested loop runs: the inner loop finishes all its rounds for every single round of the outer loop. For example: for row in range(1, 4): for col in range(1, 4): print(row * col). When row is 1, col goes 1, 2, 3, printing 1, 2, 3. Then row becomes 2, and col goes 1, 2, 3 again, printing 2, 4, 6. Then row 3 prints 3, 6, 9. So the inner print runs 3 times 3, which is 9 times in total.\n\nHow to keep it readable: in Python, indentation (the spaces at the start of a line) shows what is inside what. A line pushed further right belongs to the block above it. Keep nesting to two or three levels deep. If you go deeper, it's a sign the code should be split into smaller pieces. Also, an if inside an if can often be joined with and: \"if age >= 18: if has_nid: allow vote\" is the same as \"if age >= 18 and has_nid: allow vote\".\n\nSabbir's mother runs a small tiffin service. She has 3 delivery days and 4 customers, and Sabbir needed to print a checklist of every customer for every day. His first try used one loop and printed just 4 lines. Then he nested: for day in days: for customer in customers: print(day, customer). Now it printed 3 times 4, which is 12 lines, one for each delivery. He added an if inside to mark customers who had already paid for the week.\n\nThe common mistake is wrong indentation. If a line meant to be inside the inner loop is pushed one level too far left, it runs only once per outer round instead of every inner round. When the count of printed lines is wrong, check the spaces at the start of each line first.\n\nRemember: the inner loop runs completely for each outer round, so total runs are outer times inner, and indentation shows what lives inside what.",
+          "key_points": [
+            "Nesting means putting loops or ifs inside other loops or ifs.",
+            "The inner loop runs fully for each round of the outer loop.",
+            "Total inner runs = outer rounds times inner rounds, like 3 times 4 = 12.",
+            "Indentation shows what is inside what; keep nesting 2 to 3 levels deep."
+          ],
+          "tip": "Before running a nested loop, predict how many lines it will print by multiplying the two loop sizes. If the real count is different, check your indentation.",
+          "task": "On paper, write a nested loop that prints a 5 by 5 multiplication table. Before filling it in, predict how many numbers it will print, then check your guess.",
+          "quiz": [
+            {
+              "q": "An outer loop runs 3 times and the inner loop runs 4 times. How many times does the inner code run?",
+              "options": [
+                "7",
+                "12",
+                "4",
+                "3"
+              ],
+              "answer": 1,
+              "explain": "The inner loop runs fully for each outer round: 3 times 4 = 12."
+            },
+            {
+              "q": "In Python, what shows that a line is inside a loop?",
+              "options": [
+                "A semicolon at the end",
+                "Capital letters",
+                "Its indentation, the spaces at the start of the line",
+                "A comment above it"
+              ],
+              "answer": 2,
+              "explain": "Python uses indentation to show which lines belong inside a block."
+            },
+            {
+              "q": "\"if age >= 18: if has_nid: allow vote\" can be written as:",
+              "options": [
+                "if age >= 18 or has_nid: allow vote",
+                "if has_nid: allow vote",
+                "if age >= 18: allow vote",
+                "if age >= 18 and has_nid: allow vote"
+              ],
+              "answer": 3,
+              "explain": "Both conditions must be true, so the two ifs join with and."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-3",
+      "title": "Build real tools",
+      "lessons": [
+        {
+          "id": "prog-3-1",
+          "title": "Functions: reusable building blocks",
+          "minutes": 6,
+          "content": "A function is a named set of steps that you write once and use whenever you need it. Think of a rice cooker. You don't explain how to cook rice every time. You put in rice and water, press one button, and get cooked rice. A function is that button: you give it something, it does its job, and it gives something back.\n\nWhy does this matter? Without functions, you copy the same ten lines every time you need them. If there's a mistake in those lines, it's now in five places, and you have to fix all five. With a function, you fix it once and every place that uses it is fixed. Functions also give a name to an idea, so calculate_discount(price) explains itself.\n\nHow to make one: in Python, you write def, a name, and in brackets the values it needs. These values are called parameters. For example: def area(length, width): return length * width. return sends the answer back to whoever asked. Writing the function doesn't run it. You run it by calling it: area(5, 3) gives back 15. area(10, 2) gives back 20. Same steps, different inputs.\n\nHere are the rules for a good function. Do one job only. If you need the word \"and\" to describe it, like \"calculates the total and prints the receipt\", split it into two functions. Give it a verb name that says what it does: add_vat, find_max, send_reminder. Keep it short enough to fit on your screen. And use return to give back the result instead of only printing it, because a returned value can be used again, like saving it in a variable or passing it to another function.\n\nRafi's father runs a small grocery shop. Every bill needed 5% VAT added. Rafi had written price * 1.05 in six different places in his billing program. Then the VAT rate changed to 7.5%, and he missed one place. One customer got charged the old rate. Rafi made a function: def add_vat(price): return price * 1.075, and replaced all six places with add_vat(price). For 200 taka, add_vat(200) gives 215. Next time the rate changes, he edits one line.\n\nThe common mistake is printing inside a function instead of returning. If area only prints 15, you can see it, but you can't use it. You can't do total = area(5, 3) + area(2, 2). Return the value, and let the caller decide whether to print it.\n\nRemember: a function is a named button for a job: write it once, give it inputs, get a result back with return.",
+          "key_points": [
+            "A function is a named set of steps you can reuse.",
+            "Parameters are the inputs; return sends the result back.",
+            "Writing a function doesn't run it; calling it, like area(5, 3), does.",
+            "One function, one job, with a verb name like add_vat."
+          ],
+          "tip": "If you copy and paste the same lines a second time, stop and turn them into a function instead.",
+          "task": "Write on paper a function called taka_to_paisa that takes taka and returns paisa (1 taka = 100 paisa). Then write the results of calling it with 5, 12 and 0.5.",
+          "quiz": [
+            {
+              "q": "What does return do in a function?",
+              "options": [
+                "Prints the result on screen",
+                "Sends the result back to whoever called the function",
+                "Deletes the function",
+                "Repeats the function"
+              ],
+              "answer": 1,
+              "explain": "return gives the value back so it can be stored or used again. Printing only shows it."
+            },
+            {
+              "q": "Given def area(length, width): return length * width, what does area(10, 2) give?",
+              "options": [
+                "12",
+                "102",
+                "8",
+                "20"
+              ],
+              "answer": 3,
+              "explain": "10 times 2 is 20. The parameters length and width receive 10 and 2."
+            },
+            {
+              "q": "Why did Rafi turn price * 1.05 into a function?",
+              "options": [
+                "Functions make maths more accurate",
+                "Python does not allow multiplication",
+                "So a rate change needs editing in only one place",
+                "To make the program longer"
+              ],
+              "answer": 2,
+              "explain": "He had missed one of six copies. With add_vat, there is only one place to change."
+            }
+          ]
+        },
+        {
+          "id": "prog-3-2",
+          "title": "Lists: many values in one place",
+          "minutes": 6,
+          "content": "A list is one variable that holds many values in order. Think of a shopping list on a piece of paper: rice, dal, oil, onion. One paper, many items, in a fixed order. In Python: bazar = [\"rice\", \"dal\", \"oil\", \"onion\"].\n\nWhy do you need it? Imagine storing the marks of 40 students as mark1, mark2, mark3... up to mark40. Adding them up would mean writing all 40 names. And if a new student joins, you need a new variable and have to change your code. With a list, all marks live in one place, a loop can go through them, and adding a student is one line.\n\nEach item has a position number called an index, and counting starts at 0, not 1. In the bazar list, bazar[0] is \"rice\", bazar[1] is \"dal\", and bazar[3] is \"onion\". The last index is always the length minus 1. A list of 4 items ends at index 3. len(bazar) tells you the length: 4.\n\nUseful things you can do: add to the end with bazar.append(\"egg\"). Change an item with bazar[1] = \"moong dal\". Remove one with bazar.remove(\"oil\"). Check if something is in it with \"rice\" in bazar, which gives True. And loop through every item with for item in bazar: print(item). For number lists, sum(marks) adds them all, max(marks) finds the biggest, and min(marks) finds the smallest. For marks = [70, 85, 60, 90], sum gives 305, max gives 90, and the average is 305 / 4 = 76.25.\n\nTania was keeping track of her daily screen time for a week in minutes: 120, 95, 150, 80, 200, 60, 110. She used to write each number in a notebook and add them on a calculator, often making mistakes. She put them in a list: screen = [120, 95, 150, 80, 200, 60, 110]. Then sum(screen) gave 815 minutes, about 13.5 hours, and max(screen) showed 200 minutes on Friday. Seeing Friday stand out, she set a rule: no phone after 9 pm on Fridays.\n\nThe common mistake is forgetting that counting starts at 0. People write bazar[4] to get the 4th item, and get an error because the list only goes up to index 3. The 1st item is [0], the 4th item is [3]. Item number minus one is the index.\n\nRemember: a list keeps many values in order under one name, and the first item is at index 0.",
+          "key_points": [
+            "A list holds many values in order, like [\"rice\", \"dal\", \"oil\"].",
+            "Index starts at 0, so the last index is length minus 1.",
+            "append adds, remove deletes, in checks if something is there.",
+            "sum, max, min and len work directly on number lists."
+          ],
+          "tip": "When you want item number N, write [N - 1]. Say it out loud once or twice and the 0-start will stick.",
+          "task": "Make a list on paper of the prices of 5 things you or your family bought this week. Write the index of each item, then work out the sum, the max and the average.",
+          "quiz": [
+            {
+              "q": "For bazar = [\"rice\", \"dal\", \"oil\", \"onion\"], what is bazar[1]?",
+              "options": [
+                "\"rice\"",
+                "\"oil\"",
+                "\"dal\"",
+                "\"onion\""
+              ],
+              "answer": 2,
+              "explain": "Counting starts at 0: [0] is rice, [1] is dal."
+            },
+            {
+              "q": "A list has 4 items. What is its last index?",
+              "options": [
+                "3",
+                "4",
+                "5",
+                "0"
+              ],
+              "answer": 0,
+              "explain": "The last index is always the length minus 1, so 4 - 1 = 3."
+            },
+            {
+              "q": "Tania's screen times are in a list. Which tells her the worst day?",
+              "options": [
+                "sum(screen)",
+                "max(screen)",
+                "len(screen)",
+                "min(screen)"
+              ],
+              "answer": 1,
+              "explain": "max finds the biggest number, which was 200 minutes on Friday."
+            }
+          ]
+        },
+        {
+          "id": "prog-3-3",
+          "title": "Debugging: finding and fixing bugs",
+          "minutes": 6,
+          "content": "A bug is a mistake in a program that makes it do the wrong thing. Debugging is finding and fixing that mistake. It's like being a detective: something went wrong, there are clues, and you follow them to the cause. Every programmer, even at big companies, spends a large part of the day debugging. It's normal, not a sign you're bad at it.\n\nWhy learn a method for it? Because guessing wastes hours. People change random lines, hoping it works, and often create two new bugs. A calm, step-by-step method finds the problem much faster, and you actually understand why it broke, so you don't make the same mistake again.\n\nStep one: read the error message. It usually tells you the type of problem and the line number. \"NameError: name 'totl' is not defined, line 7\" means on line 7 you used a name the computer doesn't know, probably a spelling mistake. Step two: make the bug happen again on purpose, with the same input. If you can't repeat it, you can't be sure you've fixed it.\n\nStep three: find where it goes wrong by printing values. Add print lines to show what's inside your variables at different points. The bug is between the last place values looked right and the first place they looked wrong. Step four: change one thing at a time, then test again. If you change three things at once and it works, you won't know which one fixed it. Another great trick is explaining your code line by line to someone, or even to a toy. Saying it out loud often makes the mistake jump out. This is called rubber duck debugging.\n\nSabbir's program to find the class average gave 7.2 instead of 72. He was about to rewrite everything. Instead, he added print(total) and print(count). total was 720, which was correct. count was 100, but there were only 10 students. Looking back, he saw count = count + 10 where it should have been count + 1. He changed that one line. The average became 72. Ten minutes, one line, done.\n\nThe common mistake is changing code randomly without understanding the bug. It feels like progress, but it's just shuffling. Always find out what is actually wrong first, by reading the error and printing values, and only then change one thing.\n\nRemember: read the error, repeat the bug, print values to find where it breaks, then fix one thing at a time.",
+          "key_points": [
+            "A bug is a mistake; debugging is finding and fixing it step by step.",
+            "Read the error message first: it gives the problem type and line number.",
+            "Print variable values to find where things first go wrong.",
+            "Change one thing at a time, then test again."
+          ],
+          "tip": "Before changing any code, write down in one sentence what you think is wrong. If you can't, you need more print statements, not more changes.",
+          "task": "Find the bug on paper: total = 0, for n in [10, 20, 30]: total = n, then print(total). It should print 60. Write what it actually prints and fix the one line.",
+          "quiz": [
+            {
+              "q": "What should you do first when you get an error?",
+              "options": [
+                "Delete the program and start again",
+                "Change lines randomly until it works",
+                "Ask the computer to try harder",
+                "Read the error message for the problem type and line number"
+              ],
+              "answer": 3,
+              "explain": "The error message is your first clue: what kind of problem and where."
+            },
+            {
+              "q": "Why should you change only one thing at a time?",
+              "options": [
+                "So you know which change actually fixed it",
+                "Because Python allows only one change",
+                "To make the code shorter",
+                "To make the program run faster"
+              ],
+              "answer": 0,
+              "explain": "If you change several things at once, you can't tell which one fixed the bug."
+            },
+            {
+              "q": "How did Sabbir find his bug?",
+              "options": [
+                "He rewrote the whole program",
+                "He printed total and count to see which value was wrong",
+                "He changed the number of students",
+                "He turned the computer off and on"
+              ],
+              "answer": 1,
+              "explain": "Printing showed total was right but count was 100 instead of 10, pointing to the wrong line."
+            }
+          ]
+        },
+        {
+          "id": "prog-3-4",
+          "title": "Dictionaries: looking things up by key",
+          "minutes": 6,
+          "content": "A dictionary stores pairs: a key and its value. You look up the key and get the value. It works just like the contact list on your phone. You search for \"Ammu\" and get her number. You don't need to know she's the 37th contact. In Python: phone = {\"Ammu\": \"01711000000\", \"Abbu\": \"01811000000\"}.\n\nWhy not just use a list? With a list, you find things by position number, like [3]. That's fine when order matters, but awful when you want to find something by name. To find Rafi's marks in a list of 40, you'd have to loop through all of them. With a dictionary, marks[\"Rafi\"] gives it to you straight away, and it stays fast even with thousands of entries.\n\nHow to use one: make it with curly brackets, with each key and value joined by a colon: prices = {\"rice\": 70, \"dal\": 120, \"oil\": 190}. Look up a value with prices[\"dal\"], which gives 120. Add or change a value the same way: prices[\"egg\"] = 13 adds a new pair, and prices[\"rice\"] = 75 changes the old price. Each key appears only once. If you set the same key again, the old value is replaced.\n\nBefore looking up a key that might not exist, check with in: if \"sugar\" in prices. Asking for a missing key directly causes an error. Or use prices.get(\"sugar\", 0), which gives 0 if sugar isn't there. To go through everything: for item, price in prices.items(): print(item, price). Dictionaries are also great for counting. To count votes for class captain: start with votes = {}. For each vote, votes[name] = votes.get(name, 0) + 1.\n\nNusrat was class monitor and had to count votes for the class picnic spot. 30 slips said things like \"Sonargaon\", \"Botanical Garden\" and \"Lalbagh\". Counting by hand, she got different totals every time. So she wrote: votes = {}, then for each slip: votes[slip] = votes.get(slip, 0) + 1. The result was {\"Sonargaon\": 14, \"Lalbagh\": 9, \"Botanical Garden\": 7}. Total 30, matching the slips. Sonargaon won, and nobody argued, because the counts added up.\n\nThe common mistake is asking for a key that isn't there, like prices[\"sugar\"] when sugar was never added. The program crashes. Use in to check first, or get with a default value. Also remember keys must match exactly: \"Rice\" and \"rice\" are two different keys.\n\nRemember: a dictionary finds a value by its key, instantly, like a contact list finds a number by a name.",
+          "key_points": [
+            "A dictionary stores key-value pairs, like {\"rice\": 70}.",
+            "Look up with prices[\"rice\"]; add or change with prices[\"egg\"] = 13.",
+            "Check with in, or use get(key, default), to avoid errors on missing keys.",
+            "Great for counting: votes[name] = votes.get(name, 0) + 1."
+          ],
+          "tip": "Keep all keys in the same style, for example all lowercase. \"Rice\" and \"rice\" are different keys, and mixing them causes silent bugs.",
+          "task": "On paper, make a dictionary of 5 friends or family members and their favourite food. Then write how you would look up one person, change one food, and safely check for someone who isn't in it.",
+          "quiz": [
+            {
+              "q": "For prices = {\"rice\": 70, \"dal\": 120, \"oil\": 190}, what is prices[\"dal\"]?",
+              "options": [
+                "120",
+                "70",
+                "190",
+                "\"dal\""
+              ],
+              "answer": 0,
+              "explain": "The key \"dal\" is paired with the value 120."
+            },
+            {
+              "q": "What happens if you set prices[\"rice\"] = 75 when rice is already 70?",
+              "options": [
+                "You get an error",
+                "A second \"rice\" key is added",
+                "The old value 70 is replaced by 75",
+                "Both 70 and 75 are kept"
+              ],
+              "answer": 2,
+              "explain": "Each key appears only once, so setting it again replaces the old value."
+            },
+            {
+              "q": "Why did Nusrat use votes.get(slip, 0) + 1?",
+              "options": [
+                "To delete wrong votes",
+                "To sort the places by name",
+                "To make the votes random",
+                "So a place seen for the first time starts at 0 instead of crashing"
+              ],
+              "answer": 3,
+              "explain": "get returns 0 for a missing key, so the first vote for a place becomes 1 without an error."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-4",
+      "title": "Write reliable code",
+      "lessons": [
+        {
+          "id": "prog-4-1",
+          "title": "Working with text",
+          "minutes": 6,
+          "content": "Text in a program is called a string: letters, numbers, spaces and symbols inside quotes, like \"Hello, Dhaka!\". Think of a string as a row of beads on a thread. Each bead is one character, and they stay in order. You can count the beads, cut a piece out, or join two threads together.\n\nWhy does it matter? A huge part of real programs is text: names, messages, passwords, phone numbers, search boxes. If you can't clean and check text, small things break. A login fails because someone typed a space at the end. A search for \"rafi\" misses \"Rafi\". A phone number with a dash won't match one without.\n\nBasic moves: join strings with +, so \"Good \" + \"morning\" gives \"Good morning\". len(\"Dhaka\") gives 5. Like lists, each character has an index starting at 0, so \"Dhaka\"[0] is \"D\". You can take a slice: \"Bangladesh\"[0:6] gives \"Bangla\", from index 0 up to but not including 6. To put values inside text neatly, use an f-string: name = \"Rafi\", marks = 85, then f\"{name} got {marks}\" gives \"Rafi got 85\".\n\nCleaning moves: .lower() makes everything small letters, and .upper() makes them capital. .strip() removes extra spaces from the start and end, so \"  rafi  \".strip() gives \"rafi\". .replace(\"-\", \"\") removes every dash. .split(\",\") breaks text into a list at each comma, so \"rice,dal,oil\".split(\",\") gives [\"rice\", \"dal\", \"oil\"]. Strings can't be changed in place. These methods give you a new string, so you have to save it: name = name.strip().\n\nTania made a quiz app where the answer to \"Capital of Bangladesh?\" is \"Dhaka\". Her friends kept getting marked wrong even when they were right. One typed \"dhaka\", another typed \"Dhaka \" with a space, and another typed \"DHAKA\". The program compared them exactly, so they all failed. Tania changed the check to answer.strip().lower() == \"dhaka\". Now all three versions were cleaned to \"dhaka\" and marked correct.\n\nThe common mistake is calling a method and not saving the result. Writing name.strip() on its own line does nothing useful, because the cleaned text is thrown away. Always write name = name.strip(). Strings never change themselves; you get a new copy.\n\nRemember: strings are ordered characters, indexed from 0. Clean them with strip and lower before comparing, and always save the result.",
+          "key_points": [
+            "A string is text in quotes; each character has an index starting at 0.",
+            "Join with +, measure with len, cut with slices like [0:6].",
+            "Clean with strip, lower, replace and split before comparing.",
+            "Methods return a new string, so save it: name = name.strip()."
+          ],
+          "tip": "Whenever you compare text a person typed, clean both sides with .strip().lower() first. It removes most \"why doesn't it match?\" bugs.",
+          "task": "On paper, take the text \"  Rafi Ahmed, Class 7  \". Write the result after strip(), then after lower(), then after split(\",\"). Finally write the slice that gives just \"Rafi\" from the stripped text.",
+          "quiz": [
+            {
+              "q": "What does \"Bangladesh\"[0:6] give?",
+              "options": [
+                "\"Banglad\"",
+                "\"angla\"",
+                "\"Bangla\"",
+                "\"desh\""
+              ],
+              "answer": 2,
+              "explain": "A slice goes from index 0 up to but not including 6, giving 6 characters: \"Bangla\"."
+            },
+            {
+              "q": "What does \"  rafi  \".strip() give?",
+              "options": [
+                "\"RAFI\"",
+                "\"rafi\"",
+                "\"  rafi\"",
+                "\"r a f i\""
+              ],
+              "answer": 1,
+              "explain": "strip removes the spaces from the start and end only."
+            },
+            {
+              "q": "Why were Tania's friends marked wrong for typing \"dhaka\" and \"DHAKA\"?",
+              "options": [
+                "The app compared the text exactly, without cleaning case and spaces",
+                "Dhaka is not the capital",
+                "The app had no internet",
+                "Strings cannot be compared"
+              ],
+              "answer": 0,
+              "explain": "Exact comparison treats \"dhaka\" and \"Dhaka\" as different. strip().lower() fixed it."
+            }
+          ]
+        },
+        {
+          "id": "prog-4-2",
+          "title": "Scope: where variables live",
+          "minutes": 6,
+          "content": "Scope means where in your program a variable can be seen and used. Think of your home. Things in your own room, like your diary, belong to you, and nobody outside your room knows about them. Things in the living room, like the TV, everyone in the house can see. Variables work the same way. A variable made inside a function lives only in that function's \"room\".\n\nWhy does it matter? Without scope, every variable would be shared everywhere. If two functions both used a variable called total, they'd keep overwriting each other's numbers, and you'd get wrong answers that are very hard to track down. Scope keeps each function's variables private, so you can use simple names like total or count without worrying about clashes.\n\nThe rules: a variable created inside a function is local. It is born when the function starts and disappears when the function ends. Code outside can't see it. A variable created outside all functions, at the top of the file, is global. Functions can read it, but you should avoid changing globals from inside functions. Also, a function's parameters are local too. In def double(n): result = n * 2, return result, both n and result live only inside double.\n\nSo how do values get in and out? In through parameters, out through return. That's the clean way. For example: def add_bonus(marks): return marks + 5. Then outside, final = add_bonus(80) gives 85. The function never touches anything outside its own room. It just takes what it's given and hands back an answer. If you try print(result) outside double, you get an error, because result no longer exists.\n\nSabbir wrote a game where the score was a global variable, and three different functions all changed it. Sometimes the score jumped by 20 instead of 10 and he couldn't find why, because any of the three could be the culprit. He rewrote it so each function took the score as a parameter and returned the new score: score = add_points(score, 10). Now, when something went wrong, he only had to look at the one function that had just been called. The mystery jumps stopped.\n\nThe common mistake is making a variable inside a function and then trying to use it outside, expecting it to still be there. It isn't. If you need a value outside, return it and save it in a variable: result = double(4).\n\nRemember: variables made inside a function stay inside it. Pass values in with parameters and send them out with return.",
+          "key_points": [
+            "Scope is where a variable can be seen and used.",
+            "Local variables live only inside their function and disappear when it ends.",
+            "Global variables are at the top level; avoid changing them inside functions.",
+            "Values go in through parameters and come out through return."
+          ],
+          "tip": "If a function needs a value, put it in the brackets as a parameter. If you need its result, return it. Then you never have to wonder who changed what.",
+          "task": "On paper, write def make_greeting(name): msg = \"Hello \" + name, then return msg. Mark which variables are local. Then write the line outside the function that saves and prints the greeting for \"Tania\".",
+          "quiz": [
+            {
+              "q": "Where can a local variable be used?",
+              "options": [
+                "Everywhere in the program",
+                "Only in the next function",
+                "Only in global code",
+                "Only inside the function where it was created"
+              ],
+              "answer": 3,
+              "explain": "A local variable lives only in its own function and disappears when the function ends."
+            },
+            {
+              "q": "What happens if you print(result) outside the function where result was made?",
+              "options": [
+                "You get an error, because result doesn't exist there",
+                "It prints 0",
+                "It prints the last value automatically",
+                "It prints \"result\""
+              ],
+              "answer": 0,
+              "explain": "result was local to the function, so outside it doesn't exist."
+            },
+            {
+              "q": "How did Sabbir stop the mystery score jumps?",
+              "options": [
+                "He made more global variables",
+                "He deleted the score",
+                "He passed score in as a parameter and returned the new value",
+                "He used a bigger number"
+              ],
+              "answer": 2,
+              "explain": "With score going in and coming out explicitly, he could see exactly which function changed it."
+            }
+          ]
+        },
+        {
+          "id": "prog-4-3",
+          "title": "Handling errors gracefully",
+          "minutes": 6,
+          "content": "Some errors aren't your code's fault: a user types \"abc\" when you asked for a number, a file is missing, or the internet drops. Handling errors means planning for these moments so your program says something helpful instead of crashing. It's like a shopkeeper who, when you ask for something out of stock, says \"Sorry, it's finished, try tomorrow\" instead of shutting the shop.\n\nWhy does it matter? A crash loses the user's work and confuses them. Imagine a bKash-style app that closes completely because you typed a space in the amount. People stop trusting it. A program that catches the problem and says \"Please enter numbers only\" keeps working and tells the user exactly what to fix.\n\nIn Python, you use try and except. Put the risky line inside try. If it fails, the code inside except runs instead of crashing. For example: try: age = int(text). except ValueError: print(\"Please type a number, like 12\"). If text is \"12\", int works and except is skipped. If text is \"twelve\", int fails with a ValueError, and the friendly message appears. Catch the specific error you expect, like ValueError for bad numbers, or ZeroDivisionError for dividing by zero, not every possible error at once.\n\nAnother approach is checking before you act. Before dividing a bill by the number of friends, check: if friends == 0: print(\"Need at least 1 person\"). Before using a list item, check the list isn't empty. A good rule: validate input as soon as it arrives, and give a message that says what's wrong and how to fix it. \"Error\" is useless. \"Amount must be between 10 and 25,000 taka\" is helpful.\n\nNusrat built a small program to split tuition costs among friends. One friend typed \"three\" for the number of people, and the program crashed with a red error. Another time someone typed 0, and it crashed again with a division error. She added try/except ValueError around the number input with the message \"Type digits, like 3\", and an if to block 0 with \"At least 1 person needed\". Now wrong inputs got a clear message and a second chance, and nobody saw a red error again.\n\nThe common mistake is a bare except that catches everything and does nothing, like except: pass. It hides real bugs. The program carries on silently with wrong data, and you have no idea anything went wrong. Catch only the error you expect, and always show or record a message.\n\nRemember: expect bad input, catch the specific error with try/except or check before acting, and tell the user exactly how to fix it.",
+          "key_points": [
+            "try runs risky code; except runs if a specific error happens.",
+            "Catch specific errors like ValueError, not everything.",
+            "Check input early, like blocking 0 before dividing.",
+            "Error messages should say what's wrong and how to fix it."
+          ],
+          "tip": "Write your error messages as instructions: instead of \"Invalid input\", say \"Type a number between 1 and 100\".",
+          "task": "On paper, write a try/except that turns a typed text into a number and shows a helpful message if it fails. Then list 3 bad inputs a user might type, like \"abc\", an empty box and \"-5\", and what your program should say for each.",
+          "quiz": [
+            {
+              "q": "What happens when the code inside try causes the expected error?",
+              "options": [
+                "The program always crashes",
+                "The except block runs instead of crashing",
+                "The try block runs again forever",
+                "The computer restarts"
+              ],
+              "answer": 1,
+              "explain": "except catches the error and runs its code, so the program keeps going."
+            },
+            {
+              "q": "Which error message is most helpful?",
+              "options": [
+                "\"Error\"",
+                "\"Something went wrong\"",
+                "\"Invalid\"",
+                "\"Amount must be between 10 and 25,000 taka\""
+              ],
+              "answer": 3,
+              "explain": "A good message says what's wrong and how to fix it."
+            },
+            {
+              "q": "Why is except: pass a bad idea?",
+              "options": [
+                "It makes the program slower",
+                "Python doesn't allow it",
+                "It silently hides real bugs, so you never know something went wrong",
+                "It prints too many messages"
+              ],
+              "answer": 2,
+              "explain": "Catching everything and doing nothing hides problems instead of handling them."
+            }
+          ]
+        },
+        {
+          "id": "prog-4-4",
+          "title": "Testing your own code",
+          "minutes": 6,
+          "content": "Testing means checking that your code gives the right answer, on purpose, before someone else finds the mistake. It's like checking your exam paper before handing it in: you redo a few sums and make sure each answer makes sense. A test is simply: give this input, expect this output, and see if they match.\n\nWhy does it matter? \"It worked when I tried it once\" isn't proof. Code often works for normal numbers and breaks for odd ones like 0, a negative number or an empty list. And when you change code later, you can break something that used to work without noticing. Tests catch both problems in seconds.\n\nHow to write a test in Python: use assert. It checks that something is true and stops with an error if it isn't. For a function def total_cost(price, qty): return price * qty, write assert total_cost(25, 4) == 100. If the function is right, nothing happens. If it's wrong, you get an AssertionError pointing at that line. Write the expected answer by working it out yourself, by hand, not by copying what the program printed.\n\nWhich inputs should you test? Three kinds. Normal cases: a typical value, like 25 taka times 4. Edge cases: the boundaries, like 0, the smallest and largest allowed values, and the exact cut-off numbers. For a pass mark of 33, test 32, 33 and 34. Weird cases: empty text, an empty list, negative numbers. Keep your tests in one place and run them every time you change the code. If they all pass, you know you haven't broken anything old.\n\nRafi wrote a function to give discounts: 10% off if you spend 1,000 taka or more. He tried 1,500 and got 1,350, which was correct, so he thought it was done. Then he wrote three tests: assert discount(1500) == 1350, assert discount(500) == 500, assert discount(1000) == 900. The last test failed. His code said price > 1000 instead of price >= 1000, so exactly 1,000 taka got no discount. He fixed one symbol, and all three tests passed. A customer would have complained about exactly that case.\n\nThe common mistake is only testing the easy, normal case, the one you already know works. Bugs live at the edges. Always include the exact boundary value and at least one weird input, like 0 or an empty list.\n\nRemember: a test is input plus expected output. Test normal, edge and weird cases, and run your tests every time you change code.",
+          "key_points": [
+            "A test gives an input and checks the output matches what you expect.",
+            "assert total_cost(25, 4) == 100 stops with an error if the answer is wrong.",
+            "Test normal cases, edge cases like 0 and exact cut-offs, and weird cases.",
+            "Run all tests every time you change the code."
+          ],
+          "tip": "Work out the expected answer by hand before running the code. If you copy the program's output into the test, you're testing nothing.",
+          "task": "Pick the rule \"children under 12 ride the bus for half fare, the full fare is 40 taka\". On paper, write 5 test cases as input and expected output, including ages 11, 12 and 0.",
+          "quiz": [
+            {
+              "q": "What does assert discount(500) == 500 do if the function is correct?",
+              "options": [
+                "Nothing, it passes silently",
+                "Prints 500",
+                "Stops with an AssertionError",
+                "Changes the price to 500"
+              ],
+              "answer": 0,
+              "explain": "assert stays quiet when the check is true and only stops when it is false."
+            },
+            {
+              "q": "The pass mark is 33. Which set of tests checks the edge best?",
+              "options": [
+                "10, 50 and 90",
+                "0 and 100 only",
+                "50 only",
+                "32, 33 and 34"
+              ],
+              "answer": 3,
+              "explain": "Bugs hide at the boundary, so test just below, exactly on and just above 33."
+            },
+            {
+              "q": "Which of Rafi's tests found his bug?",
+              "options": [
+                "discount(1500) == 1350",
+                "discount(1000) == 900",
+                "discount(500) == 500",
+                "None of them"
+              ],
+              "answer": 1,
+              "explain": "His code used > instead of >=, so exactly 1,000 taka got no discount. Only the boundary test caught it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-5",
+      "title": "Think like an engineer",
+      "lessons": [
+        {
+          "id": "prog-5-1",
+          "title": "Searching and sorting",
+          "minutes": 7,
+          "content": "Searching means finding an item in a collection. Sorting means putting items in order, like smallest to biggest or A to Z. Think of a messy pile of exam copies. Finding Rafi's copy means checking one by one. But if the copies are sorted by roll number, you can jump almost straight to it.\n\nWhy does it matter? Phones, shops and websites search and sort all the time: your contact list, prices from low to high, a cricket leaderboard. With a few items, any method works. With 10 lakh items, a smart method takes a moment while a slow one makes people wait. Sorting first often makes searching much faster.\n\nLinear search: start at the first item and check each one until you find it or run out. It works on any list, sorted or not. In a list of 100 items, it might take up to 100 checks. Binary search works only on a sorted list, and it's much faster. Look at the middle item. If it's your target, done. If your target is smaller, throw away the right half. If it's bigger, throw away the left half. Repeat with what's left. It's how you find a word in a dictionary book: open the middle, then go left or right.\n\nHere's binary search on [3, 8, 15, 21, 30, 42, 57], looking for 42. The middle is 21. 42 is bigger, so keep [30, 42, 57]. The middle is 42. Found, in 2 checks instead of 6. Each check cuts the list in half, so 1,000 sorted items need about 10 checks, and 10 lakh need about 20. For sorting, one simple idea is selection sort: find the smallest item, put it first, then find the smallest of the rest, put it second, and so on. In real code, use the built-in sorted(list) or list.sort(), which are fast and well tested.\n\nSabbir and Tania played a guessing game: Tania picks a number from 1 to 100 and says \"higher\" or \"lower\". At first Sabbir guessed 1, 2, 3, 4... and once needed 73 guesses. Then he used binary search: guess 50, \"higher\", guess 75, \"lower\", guess 62, and so on, always the middle of what was left. He never needed more than 7 guesses, because halving 100 seven times gets you down to 1.\n\nThe common mistake is using binary search on a list that isn't sorted. Throwing away half only works if everything on the left is smaller and everything on the right is bigger. On a jumbled list, it confidently throws away the half that contains your item. Sort first, or use linear search.\n\nRemember: linear search checks one by one and works on anything; binary search halves a sorted list each step and is much faster.",
+          "key_points": [
+            "Linear search checks items one by one and works on any list.",
+            "Binary search checks the middle and throws away half each step, but needs a sorted list.",
+            "1,000 sorted items need about 10 binary search checks.",
+            "In real code, use built-in sorting like sorted(list)."
+          ],
+          "tip": "Before using binary search, ask one question: is this list sorted? If you're not sure, sort it first or use linear search.",
+          "task": "Play the number-guessing game with someone at home, from 1 to 100. Use binary search, always guessing the middle of what's left. Count your guesses for 3 rounds; none should take more than 7.",
+          "quiz": [
+            {
+              "q": "What does binary search need before it can work?",
+              "options": [
+                "A list with fewer than 10 items",
+                "A sorted list",
+                "A list of words only",
+                "An empty list"
+              ],
+              "answer": 1,
+              "explain": "Binary search throws away half based on order, so the list must be sorted."
+            },
+            {
+              "q": "About how many checks does binary search need for 1,000 sorted items?",
+              "options": [
+                "1,000",
+                "500",
+                "10",
+                "100"
+              ],
+              "answer": 2,
+              "explain": "Each check halves the list, and halving 1,000 about 10 times reaches 1."
+            },
+            {
+              "q": "Why did Sabbir never need more than 7 guesses?",
+              "options": [
+                "Halving 1 to 100 seven times gets down to a single number",
+                "Tania always picked small numbers",
+                "He guessed randomly",
+                "He started from 1 every time"
+              ],
+              "answer": 0,
+              "explain": "Guessing the middle halves the range each time, so 7 guesses are enough for 100 numbers."
+            }
+          ]
+        },
+        {
+          "id": "prog-5-2",
+          "title": "Efficiency and Big-O thinking",
+          "minutes": 7,
+          "content": "Efficiency is about how much more work your program has to do when the input gets bigger. Big-O is a short way of describing that growth. Imagine handing out sweets at a birthday party. If you give one to each child, 10 children means 10 handouts, and 100 children means 100. But if every child has to shake hands with every other child, 10 children make about 100 handshakes, and 100 children make about 10,000. Same party, very different growth.\n\nWhy does it matter? A program that feels instant with 10 items can freeze with 10 lakh. Faster phones don't fix a bad method. Choosing a better way of doing the work does. Big-O helps you spot the slow method before your users do.\n\nThe common types, from fast to slow. O(1), constant: the same work no matter the size, like getting list[0] or looking up a dictionary key. O(log n), logarithmic: the work grows very slowly, like binary search, about 20 steps for 10 lakh items. O(n), linear: work grows with the size, like one loop over the list; double the items, double the work. O(n squared), quadratic: a loop inside a loop over the same list; double the items, four times the work.\n\nHow to estimate it: count the loops. No loop over the data is usually O(1). One loop over n items is O(n). A loop inside a loop, both over n items, is O(n squared). Halving each step, like binary search, is O(log n). Ignore small details like \"2n + 3\" and just say O(n), because what matters is the growth when n gets huge. Then improve by removing the inner loop, often with a dictionary or a set, which can find things in one step instead of scanning.\n\nNusrat's school had 2,000 students and she wanted to check whether any two had the same roll number by mistake. Her first program compared each student with every other student, a loop inside a loop: about 2,000 times 2,000, which is 40 lakh comparisons. It was slow. She changed it: go through the list once, and keep a set of rolls already seen. For each roll, if it's already in the set, it's a duplicate; otherwise add it. That's one loop, about 2,000 steps. It finished instantly and found 3 duplicate rolls.\n\nThe common mistake is thinking speed only depends on the computer. People say \"it works fine on my laptop\" after testing with 20 items. Test or think about the biggest size you expect. If the work for 10 times the data is 100 times longer, you have an O(n squared) problem.\n\nRemember: count the loops. One loop grows evenly, a loop inside a loop grows fast, and halving each step barely grows at all.",
+          "key_points": [
+            "Big-O describes how work grows as the input gets bigger.",
+            "O(1) constant, O(log n) halving, O(n) one loop, O(n squared) loop inside a loop.",
+            "Double the items: O(n) does double the work, O(n squared) does four times.",
+            "Remove inner loops with a dictionary or set lookup to speed things up."
+          ],
+          "tip": "When code feels slow, look first for a loop inside a loop over the same data. Replacing the inner loop with a set or dictionary lookup is the most common big speed-up.",
+          "task": "On paper, work out the steps for n = 10, 100 and 1,000 for O(n) and for O(n squared). Write them in a small table and see how fast the second column grows.",
+          "quiz": [
+            {
+              "q": "What is the Big-O of a loop inside a loop, both over the same n items?",
+              "options": [
+                "O(1)",
+                "O(log n)",
+                "O(n)",
+                "O(n squared)"
+              ],
+              "answer": 3,
+              "explain": "For each of the n items, the inner loop does n steps, so n times n."
+            },
+            {
+              "q": "Looking up a key in a dictionary is usually:",
+              "options": [
+                "O(1), the same work no matter the size",
+                "O(n squared)",
+                "O(n)",
+                "Impossible to measure"
+              ],
+              "answer": 0,
+              "explain": "Dictionary lookups go straight to the key, so they don't grow with size."
+            },
+            {
+              "q": "How did Nusrat make her duplicate check fast?",
+              "options": [
+                "She bought a faster computer",
+                "She used one loop and a set of rolls already seen",
+                "She checked only the first 100 students",
+                "She added another loop"
+              ],
+              "answer": 1,
+              "explain": "Replacing the inner loop with a set lookup turned about 40 lakh steps into about 2,000."
+            }
+          ]
+        },
+        {
+          "id": "prog-5-3",
+          "title": "Recursion: functions that call themselves",
+          "minutes": 7,
+          "content": "Recursion is when a function solves a problem by calling itself on a smaller version of the same problem. Imagine you're in the back of a long queue and want to know your position. You ask the person in front, \"What's your number?\" They ask the person in front of them, and so on, until the first person says \"I'm 1.\" Then each person adds 1 and passes the answer back. You get your number without counting anyone yourself.\n\nWhy is it useful? Some problems are naturally made of smaller copies of themselves: folders inside folders on a computer, a family tree, branches of a tree splitting into smaller branches. Writing a loop for these gets messy, but a recursive function can say \"handle this one, then do the same for each part inside it\" in a few lines.\n\nEvery recursive function needs two parts. The base case: the smallest version, answered directly, with no more calls. This is what stops it. The recursive case: break the problem a bit smaller and call the function on that. Example, factorial, which means multiplying all numbers down to 1, so 4! is 4 times 3 times 2 times 1, which is 24. def fact(n): if n == 1: return 1, else return n * fact(n - 1). The base case is n == 1. The recursive case is n * fact(n - 1).\n\nTrace it to see how it works. fact(4) needs 4 * fact(3). fact(3) needs 3 * fact(2). fact(2) needs 2 * fact(1). fact(1) hits the base case and returns 1. Now the answers come back up: fact(2) = 2 * 1 = 2, fact(3) = 3 * 2 = 6, fact(4) = 4 * 6 = 24. Each call waits for the smaller one to finish. Every call must move closer to the base case, here by doing n - 1.\n\nRafi wanted to count all the photos on his family's computer. The pictures folder had folders for each year, each year had folders for Eid, school and trips, and some of those had more folders inside. A loop kept missing the deeper folders. So he thought recursively: count(folder) = the photos directly in this folder, plus count(sub) for each folder inside it. The base case was a folder with no folders inside. It counted all 3,412 photos, no matter how deep they were hidden.\n\nThe common mistake is forgetting the base case, or writing a recursive call that never gets smaller, like fact(n) calling fact(n) again. The function keeps calling itself until Python stops it with a RecursionError. Always write the base case first, then check that every call moves toward it.\n\nRemember: recursion is a function calling itself on a smaller problem. It needs a base case to stop, and every call must get closer to it.",
+          "key_points": [
+            "Recursion means a function calls itself on a smaller version of the problem.",
+            "The base case answers the smallest version directly and stops the calls.",
+            "Every recursive call must move closer to the base case, like n - 1.",
+            "fact(4) = 4 * 3 * 2 * 1 = 24, with answers passed back up."
+          ],
+          "tip": "Write the base case first, before anything else. Then ask: does each call make the problem smaller? If yes, you're safe.",
+          "task": "On paper, trace fact(5) step by step, writing each call going down and each answer coming back up. Check that you get 120.",
+          "quiz": [
+            {
+              "q": "What does the base case do in a recursive function?",
+              "options": [
+                "Makes the problem bigger",
+                "Calls the function twice",
+                "Answers the smallest case directly and stops the calls",
+                "Prints the result"
+              ],
+              "answer": 2,
+              "explain": "Without a base case, the function would call itself forever."
+            },
+            {
+              "q": "What is fact(4) using def fact(n): if n == 1: return 1, else return n * fact(n - 1)?",
+              "options": [
+                "4",
+                "10",
+                "16",
+                "24"
+              ],
+              "answer": 3,
+              "explain": "4 times 3 times 2 times 1 equals 24."
+            },
+            {
+              "q": "What was the base case in Rafi's photo-counting function?",
+              "options": [
+                "A folder with more than 100 photos",
+                "A folder with no folders inside it",
+                "The pictures folder",
+                "A folder named Eid"
+              ],
+              "answer": 1,
+              "explain": "A folder with no sub-folders needs no more calls; its photos are just counted directly."
+            }
+          ]
+        },
+        {
+          "id": "prog-5-4",
+          "title": "Objects and classes: modelling the real world",
+          "minutes": 7,
+          "content": "A class is a blueprint, and an object is a real thing made from it. Think of a cake mould. The mould is the class: it decides the shape. Each cake you bake with it is an object. Every cake has the same shape, but one can be chocolate and another vanilla. In code, a Student class could describe what every student has, like a name and marks, and what every student can do, like calculate an average. Rafi and Nusrat would be two objects made from it.\n\nWhy does it help? Without classes, a student's data is scattered: a list of names here, a list of marks there, and functions somewhere else. It's easy to mix up whose marks are whose. A class keeps a thing's data and its actions together in one package. When you have 40 students, each object carries its own name and marks, so nothing gets mixed up.\n\nThe parts: data stored in an object is called attributes, like name and balance. Functions that belong to the class are called methods, like deposit or average. In Python, __init__ is a special method that runs when you create an object and sets its starting attributes. self means \"this particular object\". Example: class Wallet: def __init__(self, owner, balance): self.owner = owner, self.balance = balance. def spend(self, amount): self.balance = self.balance - amount.\n\nUsing it: w = Wallet(\"Tania\", 500) creates an object with owner Tania and balance 500. w.spend(120) runs the method on that wallet, so w.balance is now 380. Make another: s = Wallet(\"Sabbir\", 1000). Spending from w doesn't touch s, because each object has its own attributes. A good class has methods that protect its data. For example, spend can refuse if the amount is more than the balance, so the balance never goes negative by mistake.\n\nSabbir was making a small cricket scoring app for his para tournament. He kept separate lists for player names, runs and balls faced, and once a player's runs got shifted to the wrong name when someone was removed from the list. He made a class Player with name, runs and balls, and methods add_runs(n) and strike_rate(), which is runs divided by balls times 100. Each player became one object. A player with 45 runs from 30 balls showed a strike rate of 150. Removing a player removed everything about them at once, so nothing got shifted again.\n\nThe common mistake is forgetting self. Inside a method, writing balance instead of self.balance creates a temporary local variable, and the object's real balance never changes. Always use self. to read or change the object's own data.\n\nRemember: a class is the blueprint, objects are the real things made from it, and each object keeps its own data together with the actions that work on it.",
+          "key_points": [
+            "A class is a blueprint; an object is one real thing made from it.",
+            "Attributes are an object's data; methods are its actions.",
+            "__init__ sets starting attributes; self means this particular object.",
+            "Each object keeps its own data, so spending from one wallet doesn't change another."
+          ],
+          "tip": "When you find yourself keeping several lists that must stay lined up, like names, runs and balls, that's a sign they belong together in a class.",
+          "task": "On paper, design a class for a library book: list 3 attributes (like title, author, is_borrowed) and 2 methods (like borrow and give_back). Write what each method changes.",
+          "quiz": [
+            {
+              "q": "What is the difference between a class and an object?",
+              "options": [
+                "A class is a blueprint; an object is a real thing made from it",
+                "They are exactly the same",
+                "An object is a blueprint; a class is made from it",
+                "A class is only for numbers"
+              ],
+              "answer": 0,
+              "explain": "Like a cake mould and the cakes baked from it."
+            },
+            {
+              "q": "w = Wallet(\"Tania\", 500), then w.spend(120). What is w.balance?",
+              "options": [
+                "500",
+                "380",
+                "620",
+                "120"
+              ],
+              "answer": 1,
+              "explain": "spend subtracts 120 from 500, leaving 380."
+            },
+            {
+              "q": "Why did Sabbir's Player class fix his shifting-runs problem?",
+              "options": [
+                "It made the app faster",
+                "It used more lists",
+                "It removed the need for runs",
+                "Each player's name, runs and balls stay together in one object"
+              ],
+              "answer": 3,
+              "explain": "With all of a player's data in one object, removing a player can't shift runs onto someone else."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
