@@ -43,7 +43,7 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 10 | cse-2-5 | Linear Algebra | done |
 | 11 | cse-2-6 | Probability & Statistics | done |
 | 12 | cse-2-7 | Complex Variables, Fourier & Laplace Transforms (Math III) | done |
-| 13 | cse-3-1 | Algorithms (Design & Analysis) | in progress |
+| 13 | cse-3-1 | Algorithms (Design & Analysis) | done |
 | 14 | cse-3-2 | Computer Architecture & Organization | todo |
 | 15 | cse-3-3 | Microprocessors & Assembly Language | todo |
 | 16 | cse-3-4 | Numerical Methods | todo |
