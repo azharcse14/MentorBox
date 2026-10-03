@@ -1,16 +1,17 @@
 # Rebuilds CSE_PROGRESS.md from the cse overview order. Status is worked out from the files:
-# done = the course's level is in its year category, in progress = tool/cse_content/parts/deep_<id>* exists.
+# done = the course's level is in the Computer Science category (cse-courses), in progress = tool/cse_content/parts/deep_<id>* exists.
 import glob, json, os
 here = os.path.dirname(os.path.abspath(__file__))
 repo = os.path.dirname(os.path.dirname(here)) + '/'
 YEAR = {'cse-1': '1st Year', 'cse-2': '2nd Year', 'cse-3': '2nd Year', 'cse-4': '3rd Year', 'cse-5': '3rd Year',
         'cse-6': '4th Year', 'cse-7': 'MSc', 'cse-8': 'MSc', 'cse-9': 'MSc'}
-done = {l['id'][len('deep-'):] for f in glob.glob(repo + 'assets/content/en/cse-*.json')
+done = {l['id'][len('deep-'):] for f in [repo + 'assets/content/en/cse-courses.json'] if os.path.exists(f)
         for l in json.load(open(f, encoding='utf-8'))['levels']}
 c = json.load(open(repo + 'assets/content/en/cse.json', encoding='utf-8'))
 out = ['# CSE full courses: progress', '',
        'Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.',
-       'The short overview lessons in the `cse` category stay as they are. See tool/cse_content/README.md.', '',
+       'Full courses live in the "Computer Science" category (`cse-courses`), grouped by year sections. The short overview lessons are',
+       'the "Computer Science Roadmap" category (`cse`). See tool/cse_content/README.md.', '',
        'Status: `done` = in the app, `in progress` = lessons being written, `todo` = not started.',
        'Regenerate with `python3 tool/cse_content/tracker.py`.', '',
        '## Rules (follow these when asked to continue; no extra instructions needed)', '',
@@ -22,7 +23,7 @@ out = ['# CSE full courses: progress', '',
        '   explained like to a curious 10-12 year old, Bangla in everyday spoken (cholito) style with Bangladesh examples, 5 quiz questions,',
        '   same quiz answers in English and Bangla, accurate facts only (leave out anything unsure).',
        '6. Per course: write `outlines/<id>.md`, then `parts/deep_<id>/NN_{en,bn}.json`, run `check_course.py <id>` until it prints OK,',
-       '   then `assemble_course.py <id>` (puts it in its year category, bumps content_version, refreshes this file).',
+       '   then `assemble_course.py <id>` (adds it to the Computer Science category under its year, bumps content_version, refreshes this file).',
        '   A half-written course: keep the lessons already written, write only the missing ones from its outline.',
        '7. After the batch: `flutter analyze`, `flutter test`, then commit the content, this file and `tool/cse_content/` together. Do not push.',
        '8. Never change existing lesson ids (learner progress is stored by id).',

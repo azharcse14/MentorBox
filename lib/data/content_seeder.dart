@@ -94,6 +94,7 @@ class ContentSeeder {
             'id': levelId,
             'category_id': categoryId,
             'title': level['title'],
+            'section': level['section'] ?? '',
             'sort_order': li,
           });
 

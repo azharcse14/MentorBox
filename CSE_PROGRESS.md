@@ -1,7 +1,8 @@
 # CSE full courses: progress
 
 Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.
-The short overview lessons in the `cse` category stay as they are. See tool/cse_content/README.md.
+Full courses live in the "Computer Science" category (`cse-courses`), grouped by year sections. The short overview lessons are
+the "Computer Science Roadmap" category (`cse`). See tool/cse_content/README.md.
 
 Status: `done` = in the app, `in progress` = lessons being written, `todo` = not started.
 Regenerate with `python3 tool/cse_content/tracker.py`.
@@ -16,7 +17,7 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
    explained like to a curious 10-12 year old, Bangla in everyday spoken (cholito) style with Bangladesh examples, 5 quiz questions,
    same quiz answers in English and Bangla, accurate facts only (leave out anything unsure).
 6. Per course: write `outlines/<id>.md`, then `parts/deep_<id>/NN_{en,bn}.json`, run `check_course.py <id>` until it prints OK,
-   then `assemble_course.py <id>` (puts it in its year category, bumps content_version, refreshes this file).
+   then `assemble_course.py <id>` (adds it to the Computer Science category under its year, bumps content_version, refreshes this file).
    A half-written course: keep the lessons already written, write only the missing ones from its outline.
 7. After the batch: `flutter analyze`, `flutter test`, then commit the content, this file and `tool/cse_content/` together. Do not push.
 8. Never change existing lesson ids (learner progress is stored by id).

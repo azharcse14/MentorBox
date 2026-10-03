@@ -1,9 +1,9 @@
 {
   "id": "cse",
-  "name": "Computer Science",
-  "mentor": "CSE Mentor",
-  "tagline": "Every BSc and MSc CSE course, explained like a friend would.",
-  "description": "One lesson per university course, from your first C program to your MSc thesis. Each one tells you what it is, why it matters, how it works and where you see it in real life.",
+  "name": "Computer Science Roadmap",
+  "mentor": "CSE Roadmap Mentor",
+  "tagline": "A short tour of every BSc and MSc CSE course, explained like a friend would.",
+  "description": "One short lesson per course, from your first C program to your MSc thesis: what it is, why it matters, how it works and where you see it in real life. The full courses are in the Computer Science category.",
   "messages": {
     "welcome": "Hey! Forget the heavy textbooks for a bit. We'll go through the whole CSE degree one course at a time, with simple words and real examples.",
     "comeback": "Your next course is waiting. Just read the first paragraph, that's all. You'll want to keep going.",

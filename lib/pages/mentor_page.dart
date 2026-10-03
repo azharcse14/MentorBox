@@ -152,7 +152,16 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
         const SizedBox(height: 20),
         Text(category.description, style: AppTheme.body(15, color: Colors.white70, height: 1.6)),
         const SizedBox(height: 28),
-        for (var i = 0; i < overview.levels.length; i++)
+        for (var i = 0; i < overview.levels.length; i++) ...[
+          if (overview.levels[i].section.isNotEmpty &&
+              (i == 0 || overview.levels[i - 1].section != overview.levels[i].section))
+            Padding(
+              padding: EdgeInsets.only(top: i == 0 ? 0 : 20, bottom: 8),
+              child: Text(
+                overview.levels[i].section.toUpperCase(),
+                style: AppTheme.mono(14, color: category.color),
+              ),
+            ),
           _LevelSection(
             number: i + 1,
             level: overview.levels[i],
@@ -160,6 +169,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
             onOpen: _openLesson,
             onLocked: _showLocked,
           ),
+        ],
       ],
     );
   }

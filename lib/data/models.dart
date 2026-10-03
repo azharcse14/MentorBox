@@ -54,12 +54,15 @@ class Level {
   final String id;
   final String categoryId;
   final String title;
+  /// Optional group heading inside the category, e.g. "2nd Year"; '' for none.
+  final String section;
   final int sortOrder;
 
   const Level({
     required this.id,
     required this.categoryId,
     required this.title,
+    this.section = '',
     required this.sortOrder,
   });
 
@@ -67,6 +70,7 @@ class Level {
         id: row['id'] as String,
         categoryId: row['category_id'] as String,
         title: row['title'] as String,
+        section: row['section'] as String? ?? '',
         sortOrder: row['sort_order'] as int,
       );
 }

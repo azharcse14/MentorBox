@@ -15,7 +15,7 @@ class AppDatabase {
   static final AppDatabase instance = AppDatabase._();
 
   static const String _fileName = 'mentor_app.db';
-  static const int _schemaVersion = 1;
+  static const int _schemaVersion = 2;
 
   Future<Database>? _database;
 
@@ -30,6 +30,10 @@ class AppDatabase {
         for (final statement in _schema) {
           await db.execute(statement);
         }
+      },
+      onUpgrade: (db, oldVersion, newVersion) async {
+        // 2: levels can be grouped into sections inside a category.
+        if (oldVersion < 2) await db.execute("ALTER TABLE levels ADD COLUMN section TEXT NOT NULL DEFAULT ''");
       },
     );
     await ContentSeeder.seedIfNeeded(db);
@@ -55,6 +59,7 @@ class AppDatabase {
       id TEXT PRIMARY KEY,
       category_id TEXT NOT NULL,
       title TEXT NOT NULL,
+      section TEXT NOT NULL DEFAULT '',
       sort_order INTEGER NOT NULL
     )
     ''',
