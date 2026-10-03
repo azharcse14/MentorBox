@@ -2,9 +2,10 @@
 
 Read SPEC.md first for tone rules (kid-friendly, Bangla in CHOLITO spoken style, Bangladesh examples). Those still apply.
 
-Output: parts/deep_<course id>_part<P>_en.json and _bn.json in this folder (course id from CSE_PROGRESS.md, e.g. cse-1-1).
-Outline first: write outlines/<course id>.md (~25 topics, see outlines/cse-1-1.md), then split the lessons across parts.
-Each file = JSON array of lesson objects, same order/ids in both languages:
+Output: one file per lesson: parts/deep_<course id>/NN_en.json and NN_bn.json in this folder (NN = 01..25,
+course id from CSE_PROGRESS.md, e.g. cse-1-2). Lesson ids: deep-<course id>-NN.
+Outline first: write outlines/<course id>.md (~25 topics, see outlines/cse-1-1.md), then the lessons in order.
+Each file = ONE lesson object:
 {"id": "...", "title": "...", "minutes": 20, "content": "...", "key_points": [6-8], "tip": "...", "task": "...",
  "quiz": [5 x {"q","options":[4],"answer":0-3,"explain"}]}
 

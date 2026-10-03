@@ -1,26 +1,27 @@
 # CSE full courses: progress
 
 Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.
-The short overview lessons in the `cse` category stay as they are.
+The short overview lessons in the `cse` category stay as they are. See tool/cse_content/README.md.
 
-Status: `done` = in the app, `in progress` = being written, `todo` = not started.
+Status: `done` = in the app, `in progress` = lessons being written, `todo` = not started.
+Regenerate with `python3 tool/cse_content/tracker.py`.
 
 ## 1st Year
 
 | # | Id | Course | Status |
 |---|---|---|---|
 | 1 | cse-1-1 | Introduction to Computer Systems | done |
-| 2 | cse-1-2 | Structured Programming (C) | todo |
-| 3 | cse-1-3 | Discrete Mathematics | todo |
-| 4 | cse-1-4 | Calculus & Differential Equations | todo |
-| 5 | cse-1-5 | Electrical Circuits | todo |
+| 2 | cse-1-2 | Structured Programming (C) | in progress |
+| 3 | cse-1-3 | Discrete Mathematics | in progress |
+| 4 | cse-1-4 | Calculus & Differential Equations | in progress |
+| 5 | cse-1-5 | Electrical Circuits | in progress |
 
 ## 2nd Year
 
 | # | Id | Course | Status |
 |---|---|---|---|
-| 6 | cse-2-1 | Object Oriented Programming | todo |
-| 7 | cse-2-2 | Data Structures | todo |
+| 6 | cse-2-1 | Object Oriented Programming | in progress |
+| 7 | cse-2-2 | Data Structures | in progress |
 | 8 | cse-2-3 | Digital Logic Design | todo |
 | 9 | cse-2-4 | Electronic Devices & Circuits | todo |
 | 10 | cse-2-5 | Linear Algebra | todo |
@@ -74,31 +75,33 @@ Status: `done` = in the app, `in progress` = being written, `todo` = not started
 | 48 | cse-6-11 | Software Project Management | todo |
 | 49 | cse-6-12 | Pattern Recognition | todo |
 | 50 | cse-6-13 | System Design | todo |
-| 51 | cse-6-7 | Final Year Project / Thesis | todo |
+| 51 | cse-6-14 | Data Science | todo |
+| 52 | cse-6-7 | Final Year Project / Thesis | todo |
 
 ## MSc
 
 | # | Id | Course | Status |
 |---|---|---|---|
-| 52 | cse-7-1 | Advanced Algorithms | todo |
-| 53 | cse-7-2 | Advanced Database Systems & Big Data | todo |
-| 54 | cse-7-3 | Cloud Computing | todo |
-| 55 | cse-7-4 | Advanced Computer Networks & Wireless Networks | todo |
-| 56 | cse-7-5 | Parallel & High Performance Computing | todo |
-| 57 | cse-7-6 | Data Mining | todo |
-| 58 | cse-7-7 | Research Methodology | todo |
-| 59 | cse-7-8 | Neural Networks & Fuzzy Systems | todo |
-| 60 | cse-7-9 | Information Retrieval | todo |
-| 61 | cse-7-10 | Fault Tolerant Systems | todo |
-| 62 | cse-8-1 | Deep Learning | todo |
-| 63 | cse-8-2 | Natural Language Processing | todo |
-| 64 | cse-8-3 | Computer Vision | todo |
-| 65 | cse-8-4 | Reinforcement Learning | todo |
-| 66 | cse-8-5 | Robotics | todo |
-| 67 | cse-9-1 | Internet of Things (IoT) | todo |
-| 68 | cse-9-2 | Blockchain | todo |
-| 69 | cse-9-3 | Quantum Computing | todo |
-| 70 | cse-9-4 | Bioinformatics | todo |
-| 71 | cse-9-5 | Advanced Cyber Security | todo |
-| 72 | cse-9-7 | Wireless Sensor Networks | todo |
-| 73 | cse-9-6 | MSc Thesis | todo |
+| 53 | cse-7-1 | Advanced Algorithms | todo |
+| 54 | cse-7-2 | Advanced Database Systems & Big Data | todo |
+| 55 | cse-7-3 | Cloud Computing | todo |
+| 56 | cse-7-4 | Advanced Computer Networks & Wireless Networks | todo |
+| 57 | cse-7-5 | Parallel & High Performance Computing | todo |
+| 58 | cse-7-6 | Data Mining | todo |
+| 59 | cse-7-7 | Research Methodology | todo |
+| 60 | cse-7-8 | Neural Networks & Fuzzy Systems | todo |
+| 61 | cse-7-9 | Information Retrieval | todo |
+| 62 | cse-7-10 | Fault Tolerant Systems | todo |
+| 63 | cse-7-11 | Data Engineering | todo |
+| 64 | cse-8-1 | Deep Learning | todo |
+| 65 | cse-8-2 | Natural Language Processing | todo |
+| 66 | cse-8-3 | Computer Vision | todo |
+| 67 | cse-8-4 | Reinforcement Learning | todo |
+| 68 | cse-8-5 | Robotics | todo |
+| 69 | cse-9-1 | Internet of Things (IoT) | todo |
+| 70 | cse-9-2 | Blockchain | todo |
+| 71 | cse-9-3 | Quantum Computing | todo |
+| 72 | cse-9-4 | Bioinformatics | todo |
+| 73 | cse-9-5 | Advanced Cyber Security | todo |
+| 74 | cse-9-7 | Wireless Sensor Networks | todo |
+| 75 | cse-9-6 | MSc Thesis | todo |

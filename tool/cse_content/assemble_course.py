@@ -1,7 +1,7 @@
 # Usage: python3 assemble_course.py <course id from CSE_PROGRESS.md, e.g. cse-1-1>
-# Joins parts/deep_<id>_part*_{en,bn}.json into one level and puts it in the year category
+# Joins the lessons in parts/deep_<id>/ into one level and puts it in the year category
 # (cse-y1 .. cse-y4, cse-msc), creating the category if needed. Bumps content_version
-# and marks the course done in CSE_PROGRESS.md.
+# and refreshes CSE_PROGRESS.md.
 import glob, json, os, re, sys
 
 here = os.path.dirname(os.path.abspath(__file__))
@@ -50,9 +50,11 @@ cat_id = f'cse-{year}'
 
 lessons = {}
 for lang in ('en', 'bn'):
+    # one file per lesson (parts/deep_<id>/NN_<lang>.json) or older multi-lesson parts
+    single = sorted(glob.glob(f'{here}/parts/deep_{cid}/[0-9][0-9]_{lang}.json'))
     files = sorted(glob.glob(f'{here}/parts/deep_{cid}_part*_{lang}.json'), key=lambda f: int(re.search(r'part(\d+)', f).group(1)))
-    assert files, f'no parts for course {cid}'
-    lessons[lang] = [s for f in files for s in json.load(open(f, encoding='utf-8'))]
+    assert single or files, f'no lessons for course {cid}'
+    lessons[lang] = [json.load(open(f, encoding='utf-8')) for f in single] or [s for f in files for s in json.load(open(f, encoding='utf-8'))]
 shape = lambda ls: [(s['id'], [q['answer'] for q in s['quiz']]) for s in ls]
 assert shape(lessons['en']) == shape(lessons['bn']), 'en/bn mismatch'
 for s in lessons['en'] + lessons['bn']:
@@ -83,9 +85,8 @@ if cat_id not in index['categories']:
 index['content_version'] += 1
 open(content + 'index.json', 'w').write(json.dumps(index, indent=2) + '\n')
 
-tracker = open(repo + 'CSE_PROGRESS.md', encoding='utf-8').read()
-tracker = re.sub(rf'^(\| \d+ \| {cid} \| .*) \| [a-z ]+ \|$', r'\1 | done |', tracker, count=1, flags=re.M)
-open(repo + 'CSE_PROGRESS.md', 'w', encoding='utf-8').write(tracker)
+import subprocess
+subprocess.run([sys.executable, here + '/tracker.py'], check=True)
 
 words = [len(s['content'].split()) for s in lessons['en']]
 print(f'course {cid} {course_en["title"]} -> {cat_id}: {len(words)} lessons, {sum(words)} en words '

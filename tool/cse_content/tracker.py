@@ -1,28 +1,27 @@
-# Rebuilds CSE_PROGRESS.md from the cse overview order, keeping each course's status by id.
-# Usage: python3 tracker.py [<course id> <status>]
-import json, os, re, sys
-repo = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) + '/'
+# Rebuilds CSE_PROGRESS.md from the cse overview order. Status is worked out from the files:
+# done = the course's level is in its year category, in progress = tool/cse_content/parts/deep_<id>* exists.
+import glob, json, os
+here = os.path.dirname(os.path.abspath(__file__))
+repo = os.path.dirname(os.path.dirname(here)) + '/'
 YEAR = {'cse-1': '1st Year', 'cse-2': '2nd Year', 'cse-3': '2nd Year', 'cse-4': '3rd Year', 'cse-5': '3rd Year',
         'cse-6': '4th Year', 'cse-7': 'MSc', 'cse-8': 'MSc', 'cse-9': 'MSc'}
-try:
-    old = open(repo + 'CSE_PROGRESS.md', encoding='utf-8').read()
-except FileNotFoundError:
-    old = ''
-status = dict(re.findall(r'^\| \d+ \| (cse-[\d-]+) \| .* \| ([a-z ]+) \|$', old, re.M))
-if len(sys.argv) == 3:
-    status[sys.argv[1]] = sys.argv[2]
+done = {l['id'][len('deep-'):] for f in glob.glob(repo + 'assets/content/en/cse-*.json')
+        for l in json.load(open(f, encoding='utf-8'))['levels']}
 c = json.load(open(repo + 'assets/content/en/cse.json', encoding='utf-8'))
 out = ['# CSE full courses: progress', '',
        'Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.',
-       'The short overview lessons in the `cse` category stay as they are.', '',
-       'Status: `done` = in the app, `in progress` = being written, `todo` = not started.']
-n, cur = 0, None
+       'The short overview lessons in the `cse` category stay as they are. See tool/cse_content/README.md.', '',
+       'Status: `done` = in the app, `in progress` = lessons being written, `todo` = not started.',
+       'Regenerate with `python3 tool/cse_content/tracker.py`.']
+n, cur, count = 0, None, {}
 for l in c['levels']:
     if YEAR[l['id']] != cur:
         cur = YEAR[l['id']]
         out += ['', f'## {cur}', '', '| # | Id | Course | Status |', '|---|---|---|---|']
     for s in l['lessons']:
         n += 1
-        out.append(f"| {n} | {s['id']} | {s['title']} | {status.get(s['id'], 'todo')} |")
+        st = 'done' if s['id'] in done else 'in progress' if glob.glob(f"{here}/parts/deep_{s['id']}*") else 'todo'
+        count[st] = count.get(st, 0) + 1
+        out.append(f"| {n} | {s['id']} | {s['title']} | {st} |")
 open(repo + 'CSE_PROGRESS.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
-print(n, 'courses;', {v: list(status.values()).count(v) for v in set(status.values())})
+print(n, 'courses;', count)

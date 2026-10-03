@@ -2596,6 +2596,57 @@
           ]
         },
         {
+          "id": "cse-6-14",
+          "title": "Data Science",
+          "minutes": 14,
+          "content": "What is it? Data Science is the art of asking questions and answering them with data. Imagine a huge pile of numbers: every ball bowled in a cricket season, every click on a shopping app, every patient who came to a hospital. On its own the pile says nothing. A data scientist cleans it, looks at it from many angles, finds patterns and then tells people something useful, like \"this batter struggles against left-arm spin\" or \"dengue cases will jump in two weeks\". Think of a detective, but the clues are numbers.\n\nWhy learn it? Almost every company now collects data, but very few know what to do with it. Banks, hospitals, telecom companies, e-commerce shops and even the government need people who can turn data into decisions. That is why data scientist is one of the most wanted jobs in the world. It also helps you to know how it differs from its cousins. Machine Learning is one tool inside Data Science: it builds models that learn from data. Data Mining is about digging patterns out of large databases. Data Science is the whole journey, from asking the right question, to collecting and cleaning data, to analysis, models and finally explaining the result to humans.\n\nWhat's in the course? A typical Data Science course covers data collection and cleaning, exploratory data analysis and visualization, the statistics you need, Python tools like pandas and Jupyter notebooks, feature engineering, building and evaluating machine learning models, telling a story with data, and the ethics of using people's data. You usually finish with a project on a real dataset.\n\nData collection and cleaning: Data comes from forms, sensors, websites, apps and spreadsheets, and it is almost always messy. Some ages are missing, someone typed \"Dhaka\" as \"dhaka\" or \"Dhk\", a price is written as 5000 in one row and \"5,000 tk\" in another, and some rows appear twice. Cleaning means fixing all that: filling or removing missing values, making formats match, deleting duplicates and catching impossible values like a 250 year old customer. Data scientists joke that 80 percent of the job is cleaning, and honestly it is not a big exaggeration.\n\nExploratory analysis and visualization: Before building anything, you look at the data like a curious kid. What is the average? What is the biggest and smallest value? How do two things move together? You draw charts: a histogram shows how values are spread, a bar chart compares groups, a line chart shows change over time and a scatter plot shows if two things are related. One good chart can show in two seconds what a table of 10,000 rows hides.\n\nStatistics for Data Science: Statistics gives you the tools to not fool yourself. Mean, median and mode tell you the center of the data. Standard deviation tells you how spread out it is. Correlation tells you if two things rise and fall together, but remember the golden rule: correlation is not causation. Ice cream sales and drowning both go up in summer, but ice cream does not cause drowning. Hypothesis testing and p-values help you check if a difference is real or just luck, and sampling helps you learn about millions of people by studying a few thousand.\n\nPython, pandas and notebooks: Most data scientists work in Python. The pandas library lets you load a spreadsheet into a table called a DataFrame and then filter, group and summarize it in one line, like df.groupby(\"city\")[\"sales\"].sum() to get total sales per city. NumPy handles fast number crunching, Matplotlib and Seaborn draw charts, and scikit-learn gives you ready-made ML models. Jupyter notebooks let you write code, see the output and write notes all on one page, which is perfect for exploring step by step.\n\nFeature engineering: A feature is a piece of information you give a model. Raw data often needs to be turned into better features. From a date you can make \"day of the week\" or \"is it Eid week?\". From a customer's purchase history you can make \"how many days since last order\". Text like \"Male\" and \"Female\" must become numbers. Good features often matter more than a fancy model, because the model can only learn from what you show it.\n\nModels and evaluation: Next you train a model, for example linear regression to predict a number like house rent, or a decision tree to predict a yes or no, like \"will this customer leave?\". The key trick is to split data into a training set and a test set. The model learns from the training part, and you check it on the test part it has never seen. You measure accuracy, precision, recall or error. If it does great on training data but badly on test data, it has memorized instead of learned. That is called overfitting.\n\nStorytelling with data: The best analysis is useless if nobody understands it. A data scientist must explain results to managers who do not know statistics. That means one clear message, a simple chart, and a recommendation: \"Sales drop every Tuesday, so let's run a Tuesday discount.\" Dashboards in tools like Power BI or Tableau help people see the numbers every day.\n\nEthics and bias: Data is about real people, so you must be careful. Protect privacy, never share personal details, and ask for permission. Also watch for bias. If a loan model learns only from past approvals, and past approvals were unfair to some group, the model will copy that unfairness. A responsible data scientist checks who might be hurt by a model before using it.\n\nReal life example 1, cricket: Bangladesh's team analysts collect data on every ball: the line, length, speed and where the batter hit it. They clean it, then plot each opposing batter's scoring areas on a pitch map. They notice one batter scores few runs from short balls outside off stump. The bowling plan for the next match is built around that. Add recommendation engines like Daraz showing you \"customers who bought this phone also bought this cover\" and you see data science working every day.\n\nReal life example 2, dengue in Dhaka: Health officials collect daily dengue cases by area, along with rainfall and temperature. After cleaning the data, a scientist notices cases rise about two to three weeks after heavy rain, because standing water helps mosquitoes breed. A simple model uses rainfall to forecast cases, and a clear map shows which wards are at risk. City workers can then clean drains and hospitals can prepare beds before the wave hits.\n\nWhere people go wrong and what exams ask: Students often skip cleaning, confuse correlation with causation, test the model on the same data it trained on, or report only accuracy on unbalanced data (if 95 percent of emails are not spam, a model that always says \"not spam\" gets 95 percent accuracy and is useless). Exams ask you to explain the data science life cycle, compare mean and median, read a chart, explain overfitting and train/test split, and say how Data Science differs from Data Mining and Machine Learning.\n\nAfter this course you can take a messy dataset, clean it, explore it, build a simple model and explain what it means. Next, go deeper with Machine Learning, Data Mining and Data Engineering, and practise on free datasets from Kaggle or the Bangladesh Bureau of Statistics.",
+          "key_points": [
+            "Data Science is the whole journey: question, data, cleaning, analysis, model and explaining the result.",
+            "Machine Learning is one tool inside Data Science; Data Mining digs patterns out of large databases.",
+            "Most of the work is cleaning messy data and exploring it with charts.",
+            "Correlation is not causation; statistics stops you from fooling yourself.",
+            "Always test a model on data it has never seen, or you can't spot overfitting.",
+            "Data is about real people: protect privacy and check models for bias."
+          ],
+          "tip": "Learn by doing: pick one small dataset you care about, like your favourite team's scores, and ask it one question a week.",
+          "task": "Write down how much you spend each day for one week in a table. Then find your average daily spend, the biggest day and draw a simple bar chart on paper. What one message would you tell your family from it?",
+          "quiz": [
+            {
+              "q": "What is the best description of Data Science?",
+              "options": [
+                "Only training machine learning models",
+                "Only storing data in big databases",
+                "The whole journey from a question and raw data to an answer people can use",
+                "Drawing charts in Excel"
+              ],
+              "answer": 2,
+              "explain": "Data Science covers collecting, cleaning, analysing, modelling and explaining. Machine Learning is just one tool inside it."
+            },
+            {
+              "q": "Ice cream sales and drowning both rise in summer. What should a data scientist conclude?",
+              "options": [
+                "Correlation is not causation; something else (hot weather) drives both",
+                "Ice cream causes drowning",
+                "The data must be wrong",
+                "Drowning causes people to buy ice cream"
+              ],
+              "answer": 0,
+              "explain": "Two things moving together doesn't mean one causes the other. Here summer heat causes both."
+            },
+            {
+              "q": "A model scores 99% on training data but 60% on new test data. What is happening?",
+              "options": [
+                "The test data is too small to matter",
+                "The model is perfect",
+                "This is called feature engineering",
+                "Overfitting: the model memorized the training data instead of learning"
+              ],
+              "answer": 3,
+              "explain": "Doing great on seen data but badly on unseen data is overfitting. That's why we keep a separate test set."
+            }
+          ]
+        },
+        {
           "id": "cse-6-7",
           "title": "Final Year Project / Thesis",
           "minutes": 14,
@@ -3159,6 +3210,57 @@
               ],
               "answer": 2,
               "explain": "Good fault tolerant design finds these parts and adds backups for them."
+            }
+          ]
+        },
+        {
+          "id": "cse-7-11",
+          "title": "Data Engineering",
+          "minutes": 14,
+          "content": "What is it? Data Engineering is about building the pipes that carry data from where it is born to where it is used. Think of a city's water system. Water comes from rivers, gets cleaned at a treatment plant, is stored in tanks and flows through pipes to every house. Data engineers do the same with data: they collect it from apps, databases and sensors, clean it, store it in the right place and deliver it so analysts and data scientists can open the tap and use it.\n\nWhy learn it? A data scientist cannot analyze data that never arrives, arrives broken or arrives a week late. Companies say that for every data scientist they need two or three data engineers. The difference is simple. Data Science asks questions and finds answers in data. Data Engineering makes sure the data is there, correct and on time. Big Data is about the size problem itself, the volume, speed and variety of data and the tools for it. Data Engineering uses Big Data tools when data is huge, but it is also needed for small and medium data, which is most companies.\n\nWhat's in the course? You learn data pipelines, ETL and ELT, batch versus streaming processing, data warehouses, data lakes and lakehouses, data modeling with the star schema, workflow orchestration with tools like Apache Airflow, processing engines like Spark and Kafka, data quality and governance, and how cloud data platforms work.\n\nData pipelines: A pipeline is a series of steps that moves data automatically. For example: every night, copy yesterday's orders from the shop's database, remove test orders, convert all prices to taka, join them with customer details and save the result in a reporting table. Each step takes the output of the step before it, like a factory line. A good pipeline runs by itself, shouts when it fails, and can be rerun safely without creating duplicate data.\n\nETL and ELT: ETL means Extract, Transform, Load. You extract data from sources, transform it (clean, join, calculate) on a separate server, then load the finished result into the warehouse. ELT flips the last two steps: you load raw data first into a powerful warehouse and transform it there using SQL. ELT became popular because modern cloud warehouses are fast and cheap enough to do the heavy work, and keeping the raw data lets you redo transformations later if you made a mistake.\n\nBatch versus streaming: Batch processing handles data in chunks at set times, like processing all of today's sales at 2 AM. It is simple and efficient when you can wait. Streaming processes each event the moment it happens, within seconds, like detecting a suspicious transaction while it is still happening. Streaming is harder to build, so you use it only when you really need answers right now.\n\nWarehouses, lakes and lakehouses: A data warehouse stores clean, structured tables made for fast reports, like a well organized library. A data lake stores everything in its raw form, including logs, images and JSON files, cheaply, like a big storeroom where you throw things to sort later. A lakehouse tries to give both: cheap storage like a lake with the tables and reliability of a warehouse. On the cloud, services like Amazon Redshift, Google BigQuery, Snowflake and Databricks give you these without buying servers.\n\nData modeling and the star schema: How you arrange tables decides how easy reports are. The star schema puts one fact table in the middle, holding events with numbers, like each sale with its amount. Around it sit dimension tables that describe the who, what, where and when: customer, product, store and date. Draw it and it looks like a star. A question like \"total sales of rice in Chattogram in Ramadan\" becomes one simple query joining the fact table to a few dimensions.\n\nOrchestration with Airflow: A company may have hundreds of pipelines, and many depend on each other: the sales report must wait for the orders pipeline to finish. An orchestrator like Apache Airflow lets you describe these tasks and their order as a graph called a DAG (directed acyclic graph), schedule them, retry failed ones and send alerts. It is like a cricket captain deciding who bowls when, so the team works in the right order.\n\nSpark and Kafka: When data is too big for one computer, Apache Spark splits the work across many machines and runs it in parallel, so a job that would take a day on a laptop finishes in minutes. Apache Kafka is a system for streaming. Apps write events, like \"ride requested\", into Kafka topics, and many other systems read them in real time. Kafka acts like a super fast, never-forgetting post office for events.\n\nData quality and governance: Bad data spreads like a rumor. If a pipeline silently doubles every order, every report and every model downstream becomes wrong. So data engineers add checks: no empty customer IDs, no negative prices, today's row count close to yesterday's. Governance means knowing who owns each dataset, who may see sensitive data like phone numbers, how long data is kept, and where each number came from, which is called data lineage.\n\nReal life example 1, bKash daily reports: Millions of transactions happen every day. A batch pipeline runs after midnight. It extracts the day's transactions from the main database, removes failed ones, groups them by type (send money, cash out, payment) and by district, and loads the summary into a warehouse. By morning, managers open a dashboard showing how much money moved and where. Quality checks flag it if the total suddenly drops by half, which usually means a broken pipeline, not a real crash.\n\nReal life example 2, Pathao trip streaming: Every few seconds, each rider's phone sends its location. These events flow into Kafka. A streaming job reads them, works out where demand is high right now, and updates the surge map and the estimated arrival times within seconds. The same events are also saved into the data lake, so later a batch job can study which areas need more riders during rain.\n\nWhere people go wrong and what exams ask: Students mix up ETL and ELT, think streaming is always better than batch, or confuse a warehouse with a lake. Many forget that pipelines must be safe to rerun. Exams ask you to draw a star schema for a shop, explain ETL versus ELT, compare batch and streaming with examples, explain what a DAG is in Airflow, and say how Data Engineering differs from Data Science and Big Data.\n\nAfter this course you can design a pipeline that moves data reliably from apps into a warehouse, model it for easy reporting and choose between batch and streaming. Practise by building a small pipeline with Python and SQL on your own computer, then learn a cloud platform. Next, look at Cloud Computing and Distributed Systems.",
+          "key_points": [
+            "Data Engineering builds pipelines that move data from sources to where it's used, clean and on time.",
+            "Data Science finds answers in data; Data Engineering makes sure the data is there and correct.",
+            "ETL transforms before loading; ELT loads raw data first and transforms inside the warehouse.",
+            "Batch processes data in chunks on a schedule; streaming handles each event within seconds.",
+            "Warehouses hold clean tables, lakes hold raw everything, lakehouses mix both; the star schema makes reporting easy.",
+            "Airflow orchestrates pipelines as DAGs; Spark processes big data in parallel; Kafka streams events."
+          ],
+          "tip": "Draw every pipeline as boxes and arrows before writing any code. If you can't draw where data comes from and goes, you can't build it.",
+          "task": "Pick a small shop near you. Draw a star schema for its sales: one fact table in the middle and at least four dimension tables around it, with 3 columns each.",
+          "quiz": [
+            {
+              "q": "How is ELT different from ETL?",
+              "options": [
+                "ELT doesn't extract data",
+                "ELT loads raw data into the warehouse first and transforms it there",
+                "ELT only works with streaming",
+                "There is no difference"
+              ],
+              "answer": 1,
+              "explain": "ETL transforms on a separate server before loading. ELT loads raw data first and uses the powerful warehouse to transform it."
+            },
+            {
+              "q": "Which job needs streaming instead of batch processing?",
+              "options": [
+                "A monthly salary report",
+                "A yearly tax summary",
+                "Counting last week's orders",
+                "Flagging a suspicious transaction while it is happening"
+              ],
+              "answer": 3,
+              "explain": "Streaming is for answers within seconds. Reports that can wait are simpler and cheaper as batch jobs."
+            },
+            {
+              "q": "In a star schema, what sits in the middle?",
+              "options": [
+                "A fact table holding events with numbers, like each sale",
+                "A dimension table of customers",
+                "The data lake",
+                "The Airflow DAG"
+              ],
+              "answer": 0,
+              "explain": "The fact table holds measurable events. Dimension tables like customer, product, store and date surround it."
             }
           ]
         }
