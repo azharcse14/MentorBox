@@ -86,7 +86,7 @@ class _TodayPageState extends State<TodayPage> {
           ),
         for (final overview in missions)
           LessonRow(
-            lesson: overview.nextLesson!,
+            title: overview.nextLesson!.title,
             category: overview.category,
             subtitle: overview.nextLesson!.task.isEmpty
                 ? l.lessonsDone(overview.completedCount, overview.total)
@@ -100,14 +100,14 @@ class _TodayPageState extends State<TodayPage> {
             style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w600),
           ),
           const SizedBox(height: 10),
+          // Opens the mentor page, so the row names the mentor, not a lesson.
           for (final overview in notStarted)
-            if (overview.lessons.isNotEmpty)
-              LessonRow(
-                lesson: overview.lessons.first,
-                category: overview.category,
-                subtitle: overview.category.tagline,
-                onTap: () => _push(MentorPage(categoryId: overview.category.id)),
-              ),
+            LessonRow(
+              title: overview.category.mentorName,
+              category: overview.category,
+              subtitle: overview.category.tagline,
+              onTap: () => _push(MentorPage(categoryId: overview.category.id)),
+            ),
         ],
       ],
     );

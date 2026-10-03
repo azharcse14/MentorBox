@@ -254,12 +254,6 @@ abstract class AppLocalizations {
   /// **'{percent}% done'**
   String percentDone(int percent);
 
-  /// No description provided for @cardStats.
-  ///
-  /// In en, this message translates to:
-  /// **'{done} of {total} lessons, {levels} levels'**
-  String cardStats(int done, int total, int levels);
-
   /// No description provided for @lockedLessonHint.
   ///
   /// In en, this message translates to:
@@ -415,12 +409,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'What did you learn? Where will you use it this week?'**
   String get notesHint;
-
-  /// No description provided for @saveNote.
-  ///
-  /// In en, this message translates to:
-  /// **'Save note'**
-  String get saveNote;
 
   /// No description provided for @markComplete.
   ///
@@ -661,6 +649,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Not yet. Read the explanations above, review the lesson, and try again.'**
   String get quizFail;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @dailyReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily reminder'**
+  String get dailyReminder;
+
+  /// No description provided for @dailyReminderHint.
+  ///
+  /// In en, this message translates to:
+  /// **'At 8 PM, only if you haven\'t studied that day'**
+  String get dailyReminderHint;
+
+  /// No description provided for @reminderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your mentors are waiting'**
+  String get reminderTitle;
+
+  /// No description provided for @reminderBody.
+  ///
+  /// In en, this message translates to:
+  /// **'One short lesson keeps your streak alive.'**
+  String get reminderBody;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get retry;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @undo.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get undo;
+
+  /// No description provided for @lessonCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesson complete! Nice work.'**
+  String get lessonCompleted;
+
+  /// No description provided for @leaveQuizTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave the quiz?'**
+  String get leaveQuizTitle;
+
+  /// No description provided for @leaveQuizBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answers so far will be lost.'**
+  String get leaveQuizBody;
+
+  /// No description provided for @leaveQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave'**
+  String get leaveQuiz;
+
+  /// No description provided for @stayInQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay'**
+  String get stayInQuiz;
 }
 
 class _AppLocalizationsDelegate

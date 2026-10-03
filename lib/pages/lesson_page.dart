@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../components/widgets.dart';
@@ -26,6 +28,8 @@ class _LessonPageState extends State<LessonPage> {
   Lesson? _nextLesson;
   int _quizCount = 0;
   bool _notesDirty = false;
+  bool _notesSaved = false;
+  Timer? _notesTimer;
   bool _missing = false;
 
   @override
@@ -37,6 +41,7 @@ class _LessonPageState extends State<LessonPage> {
   @override
   void dispose() {
     // Never lose a note: save unsaved text when leaving the page.
+    _notesTimer?.cancel();
     final lesson = _lesson;
     if (_notesDirty && lesson != null) {
       _repo.saveNotes(lesson.id, _notesController.text.trim());
@@ -97,23 +102,31 @@ class _LessonPageState extends State<LessonPage> {
     await _refreshProgress();
   }
 
+  /// Notes save themselves a moment after you stop typing.
+  void _onNotesChanged(String _) {
+    _notesDirty = true;
+    if (_notesSaved) setState(() => _notesSaved = false);
+    _notesTimer?.cancel();
+    _notesTimer = Timer(const Duration(milliseconds: 800), _saveNotes);
+  }
+
   Future<void> _saveNotes() async {
     final lesson = _lesson;
     if (lesson == null) return;
-    FocusScope.of(context).unfocus();
     await _repo.saveNotes(lesson.id, _notesController.text.trim());
     _notesDirty = false;
-    await _refreshProgress();
     if (!mounted) return;
-    _toast(AppLocalizations.of(context).noteSaved);
+    setState(() => _notesSaved = true);
   }
 
   Future<void> _openQuiz() async {
     final lesson = _lesson;
     if (lesson == null) return;
-    await Navigator.of(context).push<bool>(
-      MaterialPageRoute(builder: (_) => QuizPage(lessonId: lesson.id)),
+    final passed = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(builder: (_) => QuizPage(lessonId: lesson.id, nextLesson: _nextLesson)),
     );
+    // The quiz result screen already offered "Next lesson", so go there.
+    if (passed == true && _nextLesson != null) return _goToNext();
     await _load();
   }
 
@@ -122,6 +135,8 @@ class _LessonPageState extends State<LessonPage> {
     if (lesson == null) return;
     await _repo.markCompleted(lesson.id, lesson.categoryId);
     await _load();
+    if (!mounted) return;
+    _toast(AppLocalizations.of(context).lessonCompleted);
   }
 
   void _goToNext() {
@@ -263,7 +278,7 @@ class _LessonPageState extends State<LessonPage> {
                   controller: _notesController,
                   minLines: 3,
                   maxLines: 6,
-                  onChanged: (_) => _notesDirty = true,
+                  onChanged: _onNotesChanged,
                   style: AppTheme.body(14),
                   decoration: InputDecoration(
                     hintText: l.notesHint,
@@ -276,8 +291,12 @@ class _LessonPageState extends State<LessonPage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 4),
-                TextButton(onPressed: _saveNotes, child: Text(l.saveNote)),
+                const SizedBox(height: 6),
+                AnimatedOpacity(
+                  opacity: _notesSaved ? 1 : 0,
+                  duration: const Duration(milliseconds: 200),
+                  child: Text('✓ ${l.noteSaved}', style: AppTheme.mono(13, color: AppTheme.kSuccess)),
+                ),
               ],
             ),
           ),

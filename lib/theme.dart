@@ -33,9 +33,12 @@ class AppTheme {
   static const String shareTech = 'ShareTech';
   static const String poppins = 'Poppins';
 
+  /// The fonts above have no Bangla letters, so Bangla text uses this one.
+  static const List<String> fallback = ['HindSiliguri'];
+
   /// Big condensed headings (Bebas Neue).
   static TextStyle display(double size, {Color? color}) =>
-      TextStyle(fontFamily: bebas, fontSize: size, color: color ?? kText, height: 1.05);
+      TextStyle(fontFamily: bebas, fontFamilyFallback: fallback, fontSize: size, color: color ?? kText, height: 1.05);
 
   /// Short UI text such as greetings and small facts (Share Tech).
   static TextStyle mono(
@@ -43,7 +46,13 @@ class AppTheme {
     Color? color,
     FontWeight weight = FontWeight.w400,
   }) =>
-      TextStyle(fontFamily: shareTech, fontSize: size, color: color ?? kText, fontWeight: weight);
+      TextStyle(
+        fontFamily: shareTech,
+        fontFamilyFallback: fallback,
+        fontSize: size,
+        color: color ?? kText,
+        fontWeight: weight,
+      );
 
   /// Reading text for lessons (Poppins).
   static TextStyle body(
@@ -55,6 +64,7 @@ class AppTheme {
   }) =>
       TextStyle(
         fontFamily: poppins,
+        fontFamilyFallback: fallback,
         fontSize: size,
         color: color ?? kText,
         fontWeight: weight,
@@ -79,6 +89,7 @@ class AppTheme {
         brightness: brightness,
       ),
       fontFamily: poppins,
+      fontFamilyFallback: fallback,
       appBarTheme: AppBarTheme(
         backgroundColor: background,
         foregroundColor: text,

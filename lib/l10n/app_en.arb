@@ -56,23 +56,6 @@
       }
     }
   },
-  "cardStats": "{done} of {total} lessons, {levels} levels",
-  "@cardStats": {
-    "placeholders": {
-      "done": {
-        "type": "int",
-        "format": "decimalPattern"
-      },
-      "total": {
-        "type": "int",
-        "format": "decimalPattern"
-      },
-      "levels": {
-        "type": "int",
-        "format": "decimalPattern"
-      }
-    }
-  },
   "lockedLessonHint": "Finish the lesson before this one to unlock it.",
   "progressLabel": "Progress : ",
   "percent": "{value}%",
@@ -174,7 +157,6 @@
   "iDidTask": "I did this task",
   "myNotes": "My notes",
   "notesHint": "What did you learn? Where will you use it this week?",
-  "saveNote": "Save note",
   "markComplete": "Mark lesson as complete",
   "takeQuiz": "Take the quiz",
   "retakeQuiz": "Retake the quiz",
@@ -301,5 +283,18 @@
   },
   "quizPassed": "Well done, you passed this lesson.",
   "quizTricky": "This one is tricky, and that is normal. Read only the key points again, then try once more. Slow progress is still progress.",
-  "quizFail": "Not yet. Read the explanations above, review the lesson, and try again."
+  "quizFail": "Not yet. Read the explanations above, review the lesson, and try again.",
+  "settings": "Settings",
+  "dailyReminder": "Daily reminder",
+  "dailyReminderHint": "At 8 PM, only if you haven't studied that day",
+  "reminderTitle": "Your mentors are waiting",
+  "reminderBody": "One short lesson keeps your streak alive.",
+  "retry": "Try again",
+  "skip": "Skip",
+  "undo": "Undo",
+  "lessonCompleted": "Lesson complete! Nice work.",
+  "leaveQuizTitle": "Leave the quiz?",
+  "leaveQuizBody": "Your answers so far will be lost.",
+  "leaveQuiz": "Leave",
+  "stayInQuiz": "Stay"
 }

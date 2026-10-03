@@ -6,6 +6,7 @@ import '../components/widgets.dart';
 import '../data/mentor_repository.dart';
 import '../l10n/app_localizations.dart';
 import '../logic/mentor_engine.dart';
+import '../logic/reminder.dart';
 import '../theme.dart';
 import 'lesson_page.dart';
 import 'mentor_page.dart';
@@ -21,7 +22,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final _repo = MentorRepository.instance;
-  final _pageController = PageController(viewportFraction: 0.86);
 
   bool _loading = true;
   String? _error;
@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _askedForName = false;
   List<CategoryOverview> _overviews = [];
   int _streak = 0;
-  int _page = 0;
+  bool _reminderOn = false;
 
   @override
   void initState() {
@@ -38,26 +38,23 @@ class _HomeScreenState extends State<HomeScreen> {
     _load();
   }
 
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
-
   Future<void> _load() async {
     try {
       final name = await _repo.getUserName();
       final overviews = await _repo.getAllOverviews();
       final days = await _repo.getActivityDays();
+      final reminderOn = await _repo.getReminderOn();
       if (!mounted) return;
       setState(() {
         _userName = name;
         _hasName = name != null;
         _overviews = overviews;
         _streak = MentorEngine.streak(days);
+        _reminderOn = reminderOn;
         _loading = false;
         _error = null;
       });
+      if (reminderOn) _scheduleReminder(days);
       if (name == null && !_askedForName) {
         _askedForName = true;
         WidgetsBinding.instance.addPostFrameCallback((_) => _editName());
@@ -71,18 +68,102 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  void _retry() {
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    _load();
+  }
+
+  Future<void> _scheduleReminder(Set<String> days) async {
+    final l = AppLocalizations.of(context);
+    try {
+      await Reminder.schedule(
+        studiedToday: days.contains(MentorEngine.dayKey(DateTime.now())),
+        title: l.reminderTitle,
+        body: l.reminderBody,
+      );
+    } catch (_) {
+      // A reminder that fails to schedule must never break the home screen.
+    }
+  }
+
+  Future<void> _toggleReminder() async {
+    final on = !_reminderOn;
+    if (on && !await Reminder.requestPermission()) return;
+    if (!on) await Reminder.cancel();
+    await _repo.setReminderOn(on);
+    if (!mounted) return;
+    setState(() => _reminderOn = on);
+    if (on) _scheduleReminder(await _repo.getActivityDays());
+  }
+
+  /// Theme, language and the daily reminder, in one sheet.
+  Future<void> _openSettings() async {
+    final l = AppLocalizations.of(context);
+    final picked = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: AppTheme.kSurface,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(l.settings, style: AppTheme.mono(22, weight: FontWeight.w700)),
+              ),
+            ),
+            ListTile(
+              leading: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
+              title: Text(l.theme, style: AppTheme.body(16)),
+              onTap: () => Navigator.of(context).pop('theme'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.translate),
+              title: Text(l.language, style: AppTheme.body(16)),
+              onTap: () => Navigator.of(context).pop('language'),
+            ),
+            if (Reminder.supported)
+              SwitchListTile(
+                secondary: const Icon(Icons.alarm),
+                title: Text(l.dailyReminder, style: AppTheme.body(16)),
+                subtitle: Text(l.dailyReminderHint, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
+                value: _reminderOn,
+                activeThumbColor: AppTheme.kPrimaryColor,
+                onChanged: (_) => Navigator.of(context).pop('reminder'),
+              ),
+          ],
+        ),
+      ),
+    );
+    switch (picked) {
+      case 'theme':
+        await _pickTheme();
+      case 'language':
+        await _pickLanguage();
+      case 'reminder':
+        await _toggleReminder();
+    }
+  }
+
   Future<void> _editName() async {
     final name = await showDialog<String>(
       context: context,
       barrierDismissible: _hasName,
       builder: (_) => _NameDialog(initial: _hasName ? _userName ?? '' : '', firstTime: !_hasName),
     );
+    if (!mounted) return;
+    // Skipping on first launch keeps the default name, so we don't ask again.
     final trimmed = name?.trim() ?? '';
-    if (trimmed.isEmpty) return;
-    await _repo.setUserName(trimmed);
+    if (trimmed.isEmpty && _hasName) return;
+    final saved = trimmed.isEmpty ? AppLocalizations.of(context).defaultName : trimmed;
+    await _repo.setUserName(saved);
     if (!mounted) return;
     setState(() {
-      _userName = trimmed;
+      _userName = saved;
       _hasName = true;
     });
   }
@@ -167,8 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onNameTap: _editName,
         onSavedTap: () => _push(const SavedPage()),
         onTodayTap: () => _push(const TodayPage()),
-        onLanguageTap: _pickLanguage,
-        onThemeTap: _pickTheme,
+        onSettingsTap: _openSettings,
       ),
       body: SafeArea(top: false, child: _buildBody(inProgress)),
     );
@@ -183,10 +263,17 @@ class _HomeScreenState extends State<HomeScreen> {
       return Center(
         child: Padding(
           padding: const EdgeInsets.all(24),
-          child: Text(
-            l.loadError(_error!),
-            textAlign: TextAlign.center,
-            style: AppTheme.body(14),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                l.loadError(_error!),
+                textAlign: TextAlign.center,
+                style: AppTheme.body(14),
+              ),
+              const SizedBox(height: 16),
+              FilledButton(onPressed: _retry, child: Text(l.retry)),
+            ],
           ),
         ),
       );
@@ -235,23 +322,25 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           const SizedBox(height: 16),
-          SizedBox(
-            height: 400,
-            child: PageView.builder(
-              controller: _pageController,
-              itemCount: _overviews.length,
-              onPageChanged: (index) => setState(() => _page = index),
-              itemBuilder: (context, index) {
-                final overview = _overviews[index];
-                return MentorCard(
-                  overview: overview,
-                  onTap: () => _push(MentorPage(categoryId: overview.category.id)),
-                );
-              },
+          GridView.builder(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: _overviews.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              mainAxisSpacing: 14,
+              crossAxisSpacing: 14,
+              childAspectRatio: 0.72,
             ),
+            itemBuilder: (context, index) {
+              final overview = _overviews[index];
+              return MentorCard(
+                overview: overview,
+                onTap: () => _push(MentorPage(categoryId: overview.category.id)),
+              );
+            },
           ),
-          const SizedBox(height: 14),
-          _PageDots(count: _overviews.length, index: _page),
         ],
       ),
     );
@@ -437,33 +526,6 @@ class _ContinueCard extends StatelessWidget {
   }
 }
 
-class _PageDots extends StatelessWidget {
-  final int count;
-  final int index;
-
-  const _PageDots({required this.count, required this.index});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (var i = 0; i < count; i++)
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 250),
-            margin: const EdgeInsets.symmetric(horizontal: 3),
-            width: i == index ? 22 : 8,
-            height: 8,
-            decoration: BoxDecoration(
-              color: i == index ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor.withAlpha(0x55),
-              borderRadius: BorderRadius.circular(8),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
 /// Asks for the learner's name the first time, and lets them change it later.
 class _NameDialog extends StatefulWidget {
   final String initial;
@@ -509,11 +571,10 @@ class _NameDialogState extends State<_NameDialog> {
         decoration: InputDecoration(hintText: l.nameHint),
       ),
       actions: [
-        if (!widget.firstTime)
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
-          ),
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: Text(widget.firstTime ? l.skip : MaterialLocalizations.of(context).cancelButtonLabel),
+        ),
         FilledButton(onPressed: _save, child: Text(l.saveName)),
       ],
     );

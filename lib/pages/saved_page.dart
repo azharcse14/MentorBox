@@ -55,6 +55,28 @@ class _SavedPageState extends State<SavedPage> {
     await _load();
   }
 
+  /// Swipe a saved lesson away to unsave it, with undo.
+  Future<void> _unsave(Lesson lesson) async {
+    setState(() => _saved.remove(lesson));
+    await _repo.setBookmarked(lesson.id, false);
+    if (!mounted) return;
+    final l = AppLocalizations.of(context);
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(l.lessonUnsaved),
+          action: SnackBarAction(
+            label: l.undo,
+            onPressed: () async {
+              await _repo.setBookmarked(lesson.id, true);
+              await _load();
+            },
+          ),
+        ),
+      );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -68,17 +90,23 @@ class _SavedPageState extends State<SavedPage> {
                 _Heading(l.savedLessons),
                 if (_saved.isEmpty) _Empty(l.savedEmpty),
                 for (final lesson in _saved)
-                  LessonRow(
-                    lesson: lesson,
-                    category: _categories[lesson.categoryId],
-                    onTap: () => _open(lesson),
+                  Dismissible(
+                    key: ValueKey(lesson.id),
+                    onDismissed: (_) => _unsave(lesson),
+                    background: const _UnsaveBackground(Alignment.centerLeft),
+                    secondaryBackground: const _UnsaveBackground(Alignment.centerRight),
+                    child: LessonRow(
+                      title: lesson.title,
+                      category: _categories[lesson.categoryId],
+                      onTap: () => _open(lesson),
+                    ),
                   ),
                 const SizedBox(height: 20),
                 _Heading(l.yourNotes),
                 if (_withNotes.isEmpty) _Empty(l.notesEmpty),
                 for (final lesson in _withNotes)
                   LessonRow(
-                    lesson: lesson,
+                    title: lesson.title,
                     category: _categories[lesson.categoryId],
                     subtitle: _notes[lesson.id],
                     onTap: () => _open(lesson),
@@ -117,6 +145,26 @@ class _Empty extends StatelessWidget {
         borderRadius: BorderRadius.circular(14),
       ),
       child: Text(text, style: AppTheme.body(14, color: AppTheme.kSubheadingColor)),
+    );
+  }
+}
+
+class _UnsaveBackground extends StatelessWidget {
+  final Alignment alignment;
+
+  const _UnsaveBackground(this.alignment);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      alignment: alignment,
+      decoration: BoxDecoration(
+        color: AppTheme.kDanger,
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: const Icon(Icons.bookmark_remove, color: Colors.white),
     );
   }
 }

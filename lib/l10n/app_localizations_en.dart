@@ -109,21 +109,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String cardStats(int done, int total, int levels) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String doneString = doneNumberFormat.format(done);
-    final intl.NumberFormat totalNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String totalString = totalNumberFormat.format(total);
-    final intl.NumberFormat levelsNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String levelsString = levelsNumberFormat.format(levels);
-
-    return '$doneString of $totalString lessons, $levelsString levels';
-  }
-
-  @override
   String get lockedLessonHint =>
       'Finish the lesson before this one to unlock it.';
 
@@ -255,9 +240,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get notesHint =>
       'What did you learn? Where will you use it this week?';
-
-  @override
-  String get saveNote => 'Save note';
 
   @override
   String get markComplete => 'Mark lesson as complete';
@@ -437,4 +419,44 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get quizFail =>
       'Not yet. Read the explanations above, review the lesson, and try again.';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get dailyReminder => 'Daily reminder';
+
+  @override
+  String get dailyReminderHint =>
+      'At 8 PM, only if you haven\'t studied that day';
+
+  @override
+  String get reminderTitle => 'Your mentors are waiting';
+
+  @override
+  String get reminderBody => 'One short lesson keeps your streak alive.';
+
+  @override
+  String get retry => 'Try again';
+
+  @override
+  String get skip => 'Skip';
+
+  @override
+  String get undo => 'Undo';
+
+  @override
+  String get lessonCompleted => 'Lesson complete! Nice work.';
+
+  @override
+  String get leaveQuizTitle => 'Leave the quiz?';
+
+  @override
+  String get leaveQuizBody => 'Your answers so far will be lost.';
+
+  @override
+  String get leaveQuiz => 'Leave';
+
+  @override
+  String get stayInQuiz => 'Stay';
 }

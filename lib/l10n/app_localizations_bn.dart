@@ -109,21 +109,6 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String cardStats(int done, int total, int levels) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String doneString = doneNumberFormat.format(done);
-    final intl.NumberFormat totalNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String totalString = totalNumberFormat.format(total);
-    final intl.NumberFormat levelsNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
-    final String levelsString = levelsNumberFormat.format(levels);
-
-    return '$totalStringটি লেসনের $doneStringটি, $levelsStringটি লেভেল';
-  }
-
-  @override
   String get lockedLessonHint => 'এটা খুলতে আগের লেসনটা শেষ করো।';
 
   @override
@@ -253,9 +238,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get notesHint => 'কী শিখলে? এই সপ্তাহে কোথায় কাজে লাগাবে?';
-
-  @override
-  String get saveNote => 'নোট সেভ করো';
 
   @override
   String get markComplete => 'লেসন সম্পন্ন করো';
@@ -433,4 +415,43 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get quizFail =>
       'এখনো হয়নি। উপরের ব্যাখ্যাগুলো পড়ো, লেসনটা আবার দেখো, তারপর আবার চেষ্টা করো।';
+
+  @override
+  String get settings => 'সেটিংস';
+
+  @override
+  String get dailyReminder => 'রোজকার রিমাইন্ডার';
+
+  @override
+  String get dailyReminderHint => 'রাত ৮টায়, শুধু যেদিন এখনো পড়োনি';
+
+  @override
+  String get reminderTitle => 'তোমার মেন্টররা অপেক্ষা করছে';
+
+  @override
+  String get reminderBody => 'একটা ছোট লেসন করলেই স্ট্রিক টিকে থাকবে।';
+
+  @override
+  String get retry => 'আবার চেষ্টা করো';
+
+  @override
+  String get skip => 'এখন না';
+
+  @override
+  String get undo => 'ফিরিয়ে আনো';
+
+  @override
+  String get lessonCompleted => 'লেসন শেষ! দারুণ।';
+
+  @override
+  String get leaveQuizTitle => 'কুইজ ছেড়ে যাবে?';
+
+  @override
+  String get leaveQuizBody => 'এ পর্যন্ত দেওয়া উত্তরগুলো হারিয়ে যাবে।';
+
+  @override
+  String get leaveQuiz => 'ছেড়ে যাও';
+
+  @override
+  String get stayInQuiz => 'থাকো';
 }

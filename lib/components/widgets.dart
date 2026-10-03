@@ -65,9 +65,10 @@ class PrimaryButton extends StatelessWidget {
                   label,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
+                  // Dark text: the light beige was hard to read on orange.
                   style: AppTheme.body(
                     18,
-                    color: AppTheme.kScaffoldBackgroundColor,
+                    color: const Color(0xFF2B2A26),
                     weight: FontWeight.w600,
                     height: 1.2,
                   ),
@@ -178,16 +179,16 @@ class SectionCard extends StatelessWidget {
   }
 }
 
-/// A tappable row for one lesson, used in the saved and today lists.
+/// A tappable row for one lesson or mentor, used in the saved and today lists.
 class LessonRow extends StatelessWidget {
-  final Lesson lesson;
+  final String title;
   final MentorCategory? category;
   final String? subtitle;
   final VoidCallback onTap;
 
   const LessonRow({
     super.key,
-    required this.lesson,
+    required this.title,
     required this.category,
     required this.onTap,
     this.subtitle,
@@ -219,7 +220,7 @@ class LessonRow extends StatelessWidget {
                     children: [
                       Text(category?.name ?? '', style: AppTheme.mono(14, color: accent, weight: FontWeight.w700)),
                       const SizedBox(height: 2),
-                      Text(lesson.title, style: AppTheme.body(15, weight: FontWeight.w600, height: 1.3)),
+                      Text(title, style: AppTheme.body(15, weight: FontWeight.w600, height: 1.3)),
                       if (subtitle != null && subtitle!.isNotEmpty) ...[
                         const SizedBox(height: 4),
                         Text(

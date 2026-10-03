@@ -9,8 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onNameTap;
   final VoidCallback onSavedTap;
   final VoidCallback onTodayTap;
-  final VoidCallback onLanguageTap;
-  final VoidCallback onThemeTap;
+  final VoidCallback onSettingsTap;
 
   const CustomAppBar({
     super.key,
@@ -19,8 +18,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.onNameTap,
     required this.onSavedTap,
     required this.onTodayTap,
-    required this.onLanguageTap,
-    required this.onThemeTap,
+    required this.onSettingsTap,
   });
 
   @override
@@ -61,21 +59,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             IconButton(
-              tooltip: l.theme,
-              onPressed: onThemeTap,
-              icon: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined,
-                  size: 26, color: AppTheme.kText),
-            ),
-            IconButton(
-              tooltip: l.language,
-              onPressed: onLanguageTap,
-              icon: Icon(Icons.translate, size: 26, color: AppTheme.kText),
-            ),
-            const SizedBox(width: 6),
-            IconButton(
               tooltip: l.savedLessons,
               onPressed: onSavedTap,
-              icon: Icon(Icons.favorite_border, size: 26, color: AppTheme.kText),
+              icon: Icon(Icons.bookmark_border, size: 26, color: AppTheme.kText),
             ),
             const SizedBox(width: 6),
             IconButton(
@@ -84,7 +70,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               icon: Stack(
                 clipBehavior: Clip.none,
                 children: [
-                  Icon(Icons.notifications_none, size: 26, color: AppTheme.kText),
+                  Icon(Icons.flag_outlined, size: 26, color: AppTheme.kText),
                   if (hasMissions)
                     Positioned(
                       right: -2,
@@ -100,6 +86,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                 ],
               ),
+            ),
+            IconButton(
+              tooltip: l.settings,
+              onPressed: onSettingsTap,
+              icon: Icon(Icons.settings_outlined, size: 26, color: AppTheme.kText),
             ),
           ],
         ),

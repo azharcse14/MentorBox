@@ -50,6 +50,16 @@ class MentorRepository {
     ContentSeeder.appTheme.value = mode;
   }
 
+  static const String _reminderKey = 'daily_reminder';
+
+  Future<bool> getReminderOn() async {
+    final db = await _db;
+    final rows = await db.query('meta', where: 'key = ?', whereArgs: [_reminderKey]);
+    return rows.isNotEmpty;
+  }
+
+  Future<void> setReminderOn(bool on) => _setMeta(_reminderKey, on ? '1' : null);
+
   /// Stores [value] under [key], or removes the key when [value] is null.
   Future<void> _setMeta(String key, String? value) async {
     final db = await _db;
@@ -92,15 +102,31 @@ class MentorRepository {
   }
 
   /// Every category with its levels, lessons and the learner's progress.
-  Future<List<CategoryOverview>> getAllOverviews() async {
+  Future<List<CategoryOverview>> getAllOverviews() => _overviews();
+
+  /// Same as [getAllOverviews] for one category, without loading the others.
+  Future<CategoryOverview?> getOverview(String categoryId) async {
+    final list = await _overviews(categoryId);
+    return list.isEmpty ? null : list.first;
+  }
+
+  Future<List<CategoryOverview>> _overviews([String? categoryId]) async {
     final db = await _db;
-    final categories = await getCategories();
-    final levelRows = await db.query('levels', orderBy: 'sort_order');
+    final where = categoryId == null ? '' : 'WHERE l.category_id = ?';
+    final args = [if (categoryId != null) categoryId];
+    final categories = (await getCategories()).where((c) => categoryId == null || c.id == categoryId);
+    final levelRows = await db.query(
+      'levels',
+      where: categoryId == null ? null : 'category_id = ?',
+      whereArgs: args,
+      orderBy: 'sort_order',
+    );
     final lessonRows = await db.rawQuery('''
       SELECT l.* FROM lessons l
       JOIN levels v ON v.id = l.level_id
+      $where
       ORDER BY v.sort_order, l.sort_order
-    ''');
+    ''', args);
     final progress = await _progressMap(db);
     final states = await _categoryStates(db);
 
@@ -117,14 +143,6 @@ class MentorRepository {
           state: states[category.id],
         ),
     ];
-  }
-
-  Future<CategoryOverview?> getOverview(String categoryId) async {
-    final all = await getAllOverviews();
-    for (final overview in all) {
-      if (overview.category.id == categoryId) return overview;
-    }
-    return null;
   }
 
   Future<List<Lesson>> getBookmarkedLessons() async {

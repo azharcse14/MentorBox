@@ -15,7 +15,10 @@ import '../theme.dart';
 class QuizPage extends StatefulWidget {
   final String lessonId;
 
-  const QuizPage({super.key, required this.lessonId});
+  /// Offered on the result screen when the quiz is passed.
+  final Lesson? nextLesson;
+
+  const QuizPage({super.key, required this.lessonId, this.nextLesson});
 
   @override
   State<QuizPage> createState() => _QuizPageState();
@@ -143,19 +146,45 @@ class _QuizPageState extends State<QuizPage> {
     }
 
     final result = _result;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(l.quizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
-      ),
-      body: result == null ? _questionView(category) : _resultView(category, lesson, result),
-      bottomNavigationBar: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
-          child: result == null ? _questionAction() : _resultAction(result),
+    // Mid-quiz, ask before leaving so answers are not lost by a stray swipe.
+    final inProgress = result == null && (_index > 0 || _checked);
+    return PopScope(
+      canPop: !inProgress,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (didPop) return;
+        if (await _confirmLeave() && context.mounted) Navigator.of(context).pop();
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(l.quizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        ),
+        body: result == null ? _questionView(category) : _resultView(category, lesson, result),
+        bottomNavigationBar: SafeArea(
+          top: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+            child: result == null ? _questionAction() : _resultAction(result),
+          ),
         ),
       ),
     );
+  }
+
+  Future<bool> _confirmLeave() async {
+    final l = AppLocalizations.of(context);
+    final leave = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.kSurface,
+        title: Text(l.leaveQuizTitle, style: AppTheme.mono(22, weight: FontWeight.w700)),
+        content: Text(l.leaveQuizBody, style: AppTheme.body(14)),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l.stayInQuiz)),
+          TextButton(onPressed: () => Navigator.of(context).pop(true), child: Text(l.leaveQuiz)),
+        ],
+      ),
+    );
+    return leave ?? false;
   }
 
   Widget _questionView(MentorCategory category) {
@@ -268,7 +297,11 @@ class _QuizPageState extends State<QuizPage> {
   Widget _resultAction(QuizResult result) {
     final l = AppLocalizations.of(context);
     if (result.passed) {
-      return PrimaryButton(label: l.continueButton, onTap: () => Navigator.of(context).pop(true));
+      final next = widget.nextLesson;
+      return PrimaryButton(
+        label: next == null ? l.continueButton : l.nextLesson(next.title),
+        onTap: () => Navigator.of(context).pop(true),
+      );
     }
     return Column(
       mainAxisSize: MainAxisSize.min,

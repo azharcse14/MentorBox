@@ -150,7 +150,7 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
           ),
         ),
         const SizedBox(height: 20),
-        Text(category.description, style: AppTheme.body(15, color: Colors.grey, height: 1.6)),
+        Text(category.description, style: AppTheme.body(15, color: Colors.white70, height: 1.6)),
         const SizedBox(height: 28),
         for (var i = 0; i < overview.levels.length; i++)
           _LevelSection(
@@ -217,30 +217,37 @@ class _LevelSection extends StatelessWidget {
     final l = AppLocalizations.of(context);
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 24),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      padding: const EdgeInsets.only(bottom: 8),
+      // Only the level you are working on starts open, so the current
+      // lesson is near the top instead of at the end of a long list.
+      child: ExpansionTile(
+        initiallyExpanded: lessons.contains(overview.nextLesson),
+        tilePadding: EdgeInsets.zero,
+        childrenPadding: const EdgeInsets.only(top: 4),
+        shape: const Border(),
+        collapsedShape: const Border(),
+        iconColor: Colors.white70,
+        collapsedIconColor: Colors.white70,
+        title: Row(
+          children: [
+            Text(
+              l.levelNumber(number),
+              style: AppTheme.display(24, color: unlocked ? AppTheme.kPrimaryColor : Colors.white54),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                level.title,
+                style: AppTheme.body(15, color: unlocked ? Colors.white : Colors.white54, weight: FontWeight.w600),
+              ),
+            ),
+            Text(
+              unlocked ? l.fraction(done, lessons.length) : l.locked,
+              style: AppTheme.mono(14, color: Colors.white70),
+            ),
+          ],
+        ),
         children: [
-          Row(
-            children: [
-              Text(
-                l.levelNumber(number),
-                style: AppTheme.display(24, color: unlocked ? AppTheme.kPrimaryColor : Colors.white38),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  level.title,
-                  style: AppTheme.body(15, color: unlocked ? Colors.white : Colors.white38, weight: FontWeight.w600),
-                ),
-              ),
-              Text(
-                unlocked ? l.fraction(done, lessons.length) : l.locked,
-                style: AppTheme.mono(14, color: Colors.white54),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
           for (final lesson in lessons)
             _LessonTile(
               lesson: lesson,
@@ -282,7 +289,7 @@ class _LessonTile extends StatelessWidget {
       iconColor = accent;
     } else {
       icon = Icons.lock_outline;
-      iconColor = Colors.white38;
+      iconColor = Colors.white54;
     }
 
     final locked = state == LessonState.locked;
@@ -317,13 +324,13 @@ class _LessonTile extends StatelessWidget {
                         lesson.title,
                         style: AppTheme.body(
                           15,
-                          color: locked ? Colors.white38 : Colors.white,
+                          color: locked ? Colors.white60 : Colors.white,
                           weight: FontWeight.w600,
                           height: 1.3,
                         ),
                       ),
                       const SizedBox(height: 2),
-                      Text(detail, style: AppTheme.mono(13, color: Colors.white54)),
+                      Text(detail, style: AppTheme.mono(13, color: Colors.white70)),
                     ],
                   ),
                 ),
