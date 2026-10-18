@@ -51,8 +51,8 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 17 | cse-3-5 | Theory of Computation | done |
 | 18 | cse-3-6 | Data Communication | done |
 | 19 | cse-3-7 | Signals & Systems | done |
-| 20 | cse-3-8 | Computer Peripherals & Interfacing | todo |
-| 21 | cse-3-9 | Graph Theory | todo |
+| 20 | cse-3-8 | Computer Peripherals & Interfacing | done |
+| 21 | cse-3-9 | Graph Theory | done |
 
 ## 3rd Year
 
