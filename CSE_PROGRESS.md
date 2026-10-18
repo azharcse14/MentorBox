@@ -49,8 +49,8 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 15 | cse-3-3 | Microprocessors & Assembly Language | done |
 | 16 | cse-3-4 | Numerical Methods | done |
 | 17 | cse-3-5 | Theory of Computation | done |
-| 18 | cse-3-6 | Data Communication | todo |
-| 19 | cse-3-7 | Signals & Systems | todo |
+| 18 | cse-3-6 | Data Communication | done |
+| 19 | cse-3-7 | Signals & Systems | done |
 | 20 | cse-3-8 | Computer Peripherals & Interfacing | todo |
 | 21 | cse-3-9 | Graph Theory | todo |
 
