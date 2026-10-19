@@ -1,5 +1,5 @@
 {
-  "content_version": 35,
+  "content_version": 36,
   "categories": [
     "programming",
     "career",
@@ -20,6 +20,14 @@
     "de",
     "cloud",
     "mnc",
-    "it"
+    "it",
+    "robo",
+    "iot",
+    "web3",
+    "hci",
+    "bio",
+    "mis",
+    "ba",
+    "pm"
   ]
 }

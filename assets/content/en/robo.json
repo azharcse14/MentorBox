@@ -1,0 +1,432 @@
+{
+ "id": "robo",
+ "name": "Robotics & Mechatronics",
+ "mentor": "Robotics Mentor",
+ "tagline": "Every BSc and MSc Robotics & Mechatronics course, from your first circuit to the MSc thesis.",
+ "description": "The full Robotics & Mechatronics degree, grouped by year: programming, electronics, mechanics, control systems, sensors, ROS and autonomous robots.",
+ "messages": {
+  "welcome": "Hi! This is the whole Robotics & Mechatronics degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Robotics & Mechatronics degree. Now go build a robot!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#A0522D",
+ "levels": [
+  {
+   "id": "robo-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "robo-1-1",
+     "title": "Introduction to Robotics & Mechatronics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-3",
+     "title": "Structured Programming (C)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-4",
+     "title": "Calculus",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-5",
+     "title": "Linear Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-6",
+     "title": "Physics: Mechanics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-7",
+     "title": "Engineering Drawing & CAD",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-8",
+     "title": "Electrical Circuits",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-9",
+     "title": "Workshop Practice",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "robo-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-2",
+     "title": "Data Structures & Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-3",
+     "title": "Differential Equations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-4",
+     "title": "Probability & Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-5",
+     "title": "Electronic Devices & Circuits",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-6",
+     "title": "Digital Logic Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-7",
+     "title": "Engineering Mechanics (Statics & Dynamics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-8",
+     "title": "Strength of Materials",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-9",
+     "title": "Thermodynamics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-10",
+     "title": "Microcontrollers (Arduino & ARM)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-11",
+     "title": "Signals & Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-12",
+     "title": "Linux Fundamentals & Command Line",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "robo-3-1",
+     "title": "Robot Kinematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-2",
+     "title": "Robot Dynamics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-3",
+     "title": "Control Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-4",
+     "title": "Sensors & Actuators",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-5",
+     "title": "Electric Motors & Drives",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-6",
+     "title": "Power Electronics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-7",
+     "title": "Embedded Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-8",
+     "title": "Machine Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-9",
+     "title": "Hydraulics & Pneumatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-10",
+     "title": "Manufacturing Processes & CNC",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-11",
+     "title": "Robot Operating System (ROS)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-12",
+     "title": "Computer Vision for Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-13",
+     "title": "Digital Signal Processing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-14",
+     "title": "Machine Learning",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "robo-4-1",
+     "title": "Mobile Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-2",
+     "title": "Robot Motion Planning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-3",
+     "title": "SLAM & Robot Localization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-4",
+     "title": "Industrial Robotics & Automation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-5",
+     "title": "PLC & SCADA",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-6",
+     "title": "Autonomous Vehicles & Drones",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-7",
+     "title": "Human-Robot Interaction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-8",
+     "title": "Soft Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-9",
+     "title": "Medical & Assistive Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-10",
+     "title": "Robot Learning & Reinforcement Learning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-11",
+     "title": "Real-Time Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-12",
+     "title": "Mechatronic System Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-13",
+     "title": "3D Printing & Rapid Prototyping",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-14",
+     "title": "Safety & Ethics in Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-15",
+     "title": "Final Year Project / Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "robo-5-1",
+     "title": "Advanced Robot Kinematics & Dynamics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-2",
+     "title": "Nonlinear & Robust Control",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-3",
+     "title": "Optimal Control",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-4",
+     "title": "Advanced Robot Perception",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-5",
+     "title": "Probabilistic Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-6",
+     "title": "Multi-Robot & Swarm Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-7",
+     "title": "Legged & Humanoid Robots",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-8",
+     "title": "Robot Manipulation & Grasping",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-9",
+     "title": "Deep Learning for Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-10",
+     "title": "Micro & Nano Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-11",
+     "title": "Space & Underwater Robotics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-12",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-13",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

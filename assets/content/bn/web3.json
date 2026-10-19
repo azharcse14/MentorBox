@@ -1,0 +1,420 @@
+{
+ "id": "web3",
+ "name": "ব্লকচেইন ও ওয়েব৩",
+ "mentor": "ওয়েব৩ মেন্টর",
+ "tagline": "BSc আর MSc ব্লকচেইন ও ওয়েব৩-এর সব কোর্স, প্রথম হ্যাশ থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ব্লকচেইন ও ওয়েব৩ ডিগ্রি, বছর ধরে সাজানো: প্রোগ্রামিং, ক্রিপ্টোগ্রাফি, ডিস্ট্রিবিউটেড সিস্টেম, স্মার্ট কন্ট্র্যাক্ট, DeFi আর ব্লকচেইন রিসার্চ।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ব্লকচেইন ও ওয়েব৩ ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ব্লকচেইন ও ওয়েব৩ ডিগ্রি ঘুরে আসলা। এবার একটা dApp বানায় ফেলো!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#5A4FCF",
+ "levels": [
+  {
+   "id": "web3-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "web3-1-1",
+     "title": "ব্লকচেইন ও ওয়েব৩-এর পরিচিতি (Introduction to Blockchain & Web3)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-8",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-9",
+     "title": "Git দিয়ে ভার্সন কন্ট্রোল (Version Control with Git)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "web3-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "web3-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-5",
+     "title": "ক্রিপ্টোগ্রাফির জন্য নাম্বার থিওরি (Number Theory for Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-6",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-7",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-8",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-9",
+     "title": "ওয়েব ডেভেলপমেন্ট (Web Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-10",
+     "title": "JavaScript ও TypeScript (JavaScript & TypeScript)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-11",
+     "title": "অর্থনীতি ও টাকার বেসিক (Economics & Money Basics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-2-12",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "web3-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "web3-3-1",
+     "title": "ক্রিপ্টোগ্রাফি (Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-2",
+     "title": "ডিস্ট্রিবিউটেড সিস্টেম (Distributed Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-3",
+     "title": "পিয়ার-টু-পিয়ার নেটওয়ার্ক (Peer-to-Peer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-4",
+     "title": "কনসেনসাস অ্যালগরিদম (Consensus Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-5",
+     "title": "বিটকয়েন ও ক্রিপ্টোকারেন্সি (Bitcoin & Cryptocurrencies)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-6",
+     "title": "ইথেরিয়াম ও EVM (Ethereum & the EVM)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-7",
+     "title": "স্মার্ট কন্ট্র্যাক্ট প্রোগ্রামিং (Solidity) (Smart Contract Programming (Solidity))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-8",
+     "title": "ডিসেন্ট্রালাইজড অ্যাপ্লিকেশন (dApp) (Decentralized Applications (dApps))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-9",
+     "title": "ওয়ালেট ও কি ম্যানেজমেন্ট (Wallets & Key Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-10",
+     "title": "টোকেন স্ট্যান্ডার্ড ও NFT (Token Standards & NFTs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-11",
+     "title": "গেম থিওরি ও মেকানিজম ডিজাইন (Game Theory & Mechanism Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-12",
+     "title": "ইনফরমেশন সিকিউরিটি (Information Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-13",
+     "title": "ব্যাকএন্ড ডেভেলপমেন্ট ও API (Backend Development & APIs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-3-14",
+     "title": "ক্লাউড কম্পিউটিং (Cloud Computing)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "web3-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "web3-4-1",
+     "title": "স্মার্ট কন্ট্র্যাক্ট সিকিউরিটি ও অডিটিং (Smart Contract Security & Auditing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-2",
+     "title": "ডিসেন্ট্রালাইজড ফিন্যান্স (DeFi) (Decentralized Finance (DeFi))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-3",
+     "title": "লেয়ার 2 ও স্কেলিং সলিউশন (Layer 2 & Scaling Solutions)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-4",
+     "title": "ক্রস-চেইন ইন্টারঅপারেবিলিটি (Cross-Chain Interoperability)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-5",
+     "title": "ডিসেন্ট্রালাইজড স্টোরেজ (IPFS) (Decentralized Storage (IPFS))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-6",
+     "title": "DAO ও অন-চেইন গভর্নেন্স (DAOs & On-Chain Governance)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-7",
+     "title": "টোকেনোমিক্স (Tokenomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-8",
+     "title": "সাপ্লাই চেইন ও এন্টারপ্রাইজে ব্লকচেইন (Blockchain for Supply Chain & Enterprise)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-9",
+     "title": "Rust ও Solana প্রোগ্রামিং (Rust & Solana Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-10",
+     "title": "ব্লকচেইন ওরাকল (Blockchain Oracles)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-11",
+     "title": "ওয়েব৩ ফ্রন্টএন্ড ডেভেলপমেন্ট (Web3 Frontend Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-12",
+     "title": "ব্লকচেইন ডেটা অ্যানালিটিক্স (Blockchain Data Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-13",
+     "title": "ক্রিপ্টো রেগুলেশন, আইন ও এথিক্স (Crypto Regulation, Law & Ethics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-4-14",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "web3-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "web3-5-1",
+     "title": "অ্যাডভান্সড ক্রিপ্টোগ্রাফি (Advanced Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-2",
+     "title": "জিরো-নলেজ প্রুফ (Zero-Knowledge Proofs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-3",
+     "title": "স্মার্ট কন্ট্র্যাক্টের ফর্মাল ভেরিফিকেশন (Formal Verification of Smart Contracts)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-4",
+     "title": "বাইজেন্টাইন ফল্ট টলারেন্স ও অ্যাডভান্সড কনসেনসাস (Byzantine Fault Tolerance & Advanced Consensus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-5",
+     "title": "ব্লকচেইন স্কেলেবিলিটি রিসার্চ (Blockchain Scalability Research)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-6",
+     "title": "প্রাইভেসি-প্রিজার্ভিং ব্লকচেইন (Privacy-Preserving Blockchains)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-7",
+     "title": "ক্রিপ্টোইকোনমিক্স (Cryptoeconomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-8",
+     "title": "ডিসেন্ট্রালাইজড আইডেন্টিটি (Decentralized Identity)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-9",
+     "title": "MEV ও ট্রানজ্যাকশন অর্ডারিং (MEV & Transaction Ordering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-10",
+     "title": "পোস্ট-কোয়ান্টাম ব্লকচেইন (Post-Quantum Blockchain)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-11",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "web3-5-12",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

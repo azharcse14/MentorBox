@@ -1,0 +1,408 @@
+{
+ "id": "mis",
+ "name": "Management Information Systems",
+ "mentor": "MIS Mentor",
+ "tagline": "Every BSc and MSc Management Information Systems course, from your first business spreadsheet to the MSc thesis.",
+ "description": "The full Management Information Systems degree, grouped by year: business basics, accounting, databases, ERP, business intelligence, IT strategy and digital transformation.",
+ "messages": {
+  "welcome": "Hi! This is the whole Management Information Systems degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Management Information Systems degree. Now go help a business run smarter!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#6D6875",
+ "levels": [
+  {
+   "id": "mis-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "mis-1-1",
+     "title": "Introduction to Management Information Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-3",
+     "title": "Principles of Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-4",
+     "title": "Principles of Accounting",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-5",
+     "title": "Microeconomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-6",
+     "title": "Business Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-7",
+     "title": "Business Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-8",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-9",
+     "title": "Office Productivity Tools",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-1-10",
+     "title": "Business Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mis-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "mis-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-3",
+     "title": "Macroeconomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-4",
+     "title": "Financial Accounting",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-5",
+     "title": "Principles of Marketing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-6",
+     "title": "Organizational Behavior",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-7",
+     "title": "Database Management Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-8",
+     "title": "Computer Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-9",
+     "title": "Web Technologies",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-10",
+     "title": "System Analysis & Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-11",
+     "title": "Business Law",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-2-12",
+     "title": "Operations Management",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mis-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "mis-3-1",
+     "title": "Enterprise Resource Planning (ERP)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-2",
+     "title": "Customer Relationship Management (CRM)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-3",
+     "title": "Supply Chain Management Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-4",
+     "title": "Decision Support Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-5",
+     "title": "Business Intelligence & Data Warehousing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-6",
+     "title": "E-Commerce",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-7",
+     "title": "IT Project Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-8",
+     "title": "Information Security Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-9",
+     "title": "Business Process Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-10",
+     "title": "Human Resource Information Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-11",
+     "title": "Accounting Information Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-12",
+     "title": "Financial Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-13",
+     "title": "Cloud Computing for Business",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-3-14",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mis-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "mis-4-1",
+     "title": "IT Strategy & Governance",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-2",
+     "title": "Business Analytics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-3",
+     "title": "Digital Marketing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-4",
+     "title": "Knowledge Management Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-5",
+     "title": "IT Audit & Control",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-6",
+     "title": "Enterprise Architecture",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-7",
+     "title": "Digital Transformation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-8",
+     "title": "Technology & Innovation Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-9",
+     "title": "Entrepreneurship",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-10",
+     "title": "Strategic Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-11",
+     "title": "Business Ethics & Cyber Law",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-4-12",
+     "title": "Internship / Final Year Project",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mis-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "mis-5-1",
+     "title": "Advanced Management Information Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-2",
+     "title": "Big Data Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-3",
+     "title": "Data-Driven Decision Making",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-4",
+     "title": "IT Risk Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-5",
+     "title": "Information Systems Research",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-6",
+     "title": "AI in Business",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-7",
+     "title": "Fintech",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-8",
+     "title": "Advanced Enterprise Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-9",
+     "title": "IT Service Management (ITIL)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-10",
+     "title": "Change Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-11",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mis-5-12",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "id": "iot",
+ "name": "ইন্টারনেট অফ থিংস",
+ "mentor": "আইওটি মেন্টর",
+ "tagline": "BSc আর MSc ইন্টারনেট অফ থিংস-এর সব কোর্স, প্রথম জ্বলা-নেভা LED থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ইন্টারনেট অফ থিংস ডিগ্রি, বছর ধরে সাজানো: ইলেকট্রনিক্স, মাইক্রোকন্ট্রোলার, এমবেডেড সিস্টেম, ওয়্যারলেস নেটওয়ার্ক, ক্লাউড আর স্মার্ট ডিভাইস।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ইন্টারনেট অফ থিংস ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ইন্টারনেট অফ থিংস ডিগ্রি ঘুরে আসলা। এবার কিছু একটা স্মার্ট বানায় ফেলো!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#2A7F7F",
+ "levels": [
+  {
+   "id": "iot-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "iot-1-1",
+     "title": "ইন্টারনেট অফ থিংসের পরিচিতি (Introduction to the Internet of Things)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-6",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-7",
+     "title": "ইলেকট্রিক্যাল সার্কিট (Electrical Circuits)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-8",
+     "title": "বেসিক ইলেকট্রনিক্স (Basic Electronics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-9",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "iot-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-5",
+     "title": "ডিজিটাল লজিক ডিজাইন (Digital Logic Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-6",
+     "title": "মাইক্রোকন্ট্রোলার (Arduino ও ESP32) (Microcontrollers (Arduino & ESP32))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-7",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-8",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-9",
+     "title": "ডেটা কমিউনিকেশন (Data Communication)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-10",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-11",
+     "title": "ওয়েব টেকনোলজি (Web Technologies)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-12",
+     "title": "সিগন্যালস ও সিস্টেমস (Signals & Systems)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "iot-3-1",
+     "title": "এমবেডেড সিস্টেম প্রোগ্রামিং (Embedded Systems Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-2",
+     "title": "সেন্সর ও অ্যাকচুয়েটর (Sensors & Actuators)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-3",
+     "title": "ওয়্যারলেস কমিউনিকেশন (Wireless Communication)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-4",
+     "title": "IoT প্রোটোকল (MQTT, CoAP, HTTP) (IoT Protocols (MQTT, CoAP, HTTP))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-5",
+     "title": "লো-পাওয়ার নেটওয়ার্ক (LoRa, Zigbee, BLE) (Low-Power Networks (LoRa, Zigbee, BLE))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-6",
+     "title": "রিয়েল-টাইম অপারেটিং সিস্টেম (Real-Time Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-7",
+     "title": "PCB ডিজাইন (PCB Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-8",
+     "title": "সিঙ্গেল-বোর্ড কম্পিউটার (Raspberry Pi) (Single-Board Computers (Raspberry Pi))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-9",
+     "title": "IoT-এর জন্য ক্লাউড কম্পিউটিং (Cloud Computing for IoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-10",
+     "title": "IoT ডেটা অ্যানালিটিক্স (IoT Data Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-11",
+     "title": "IoT-এর জন্য মোবাইল অ্যাপ ডেভেলপমেন্ট (Mobile App Development for IoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-12",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-13",
+     "title": "এজ কম্পিউটিং (Edge Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-14",
+     "title": "ডিজিটাল সিগন্যাল প্রসেসিং (Digital Signal Processing)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "iot-4-1",
+     "title": "IoT সিকিউরিটি (IoT Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-2",
+     "title": "ওয়্যারলেস সেন্সর নেটওয়ার্ক (Wireless Sensor Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-3",
+     "title": "ইন্ডাস্ট্রিয়াল IoT (IIoT) (Industrial IoT (IIoT))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-4",
+     "title": "স্মার্ট হোম ও বিল্ডিং অটোমেশন (Smart Home & Building Automation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-5",
+     "title": "স্মার্ট সিটি (Smart Cities)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-6",
+     "title": "স্মার্ট কৃষি (Smart Agriculture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-7",
+     "title": "হেলথকেয়ার IoT ও ওয়্যারেবল (Healthcare IoT & Wearables)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-8",
+     "title": "কানেক্টেড ভেহিকল ও ট্রান্সপোর্টেশন (Connected Vehicles & Transportation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-9",
+     "title": "IoT-এর জন্য মেশিন লার্নিং (TinyML) (Machine Learning for IoT (TinyML))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-10",
+     "title": "ডিজিটাল টুইন (Digital Twins)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-11",
+     "title": "IoT ডিভাইস ম্যানেজমেন্ট ও ফার্মওয়্যার আপডেট (IoT Device Management & Firmware Updates)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-12",
+     "title": "5G ও IoT (5G & IoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-13",
+     "title": "IoT প্রোডাক্ট ডিজাইন (IoT Product Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-14",
+     "title": "IoT স্ট্যান্ডার্ড, প্রাইভেসি ও আইন (IoT Standards, Privacy & Law)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-15",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "iot-5-1",
+     "title": "অ্যাডভান্সড এমবেডেড সিস্টেম (Advanced Embedded Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-2",
+     "title": "অ্যাডভান্সড ওয়্যারলেস নেটওয়ার্ক (Advanced Wireless Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-3",
+     "title": "সাইবার-ফিজিক্যাল সিস্টেম (Cyber-Physical Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-4",
+     "title": "অ্যাডভান্সড IoT সিকিউরিটি (Advanced IoT Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-5",
+     "title": "ডিস্ট্রিবিউটেড এজ ইন্টেলিজেন্স (Distributed Edge Intelligence)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-6",
+     "title": "এনার্জি হারভেস্টিং ও লো-পাওয়ার ডিজাইন (Energy Harvesting & Low-Power Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-7",
+     "title": "IoT-এর জন্য ব্লকচেইন (Blockchain for IoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-8",
+     "title": "লার্জ-স্কেল IoT আর্কিটেকচার (Large-Scale IoT Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-9",
+     "title": "সেন্সর ডেটা ফিউশন (Sensor Data Fusion)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-10",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-11",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,426 @@
+{
+ "id": "bio",
+ "name": "Bioinformatics & Computational Biology",
+ "mentor": "Bioinformatics Mentor",
+ "tagline": "Every BSc and MSc Bioinformatics & Computational Biology course, from your first DNA sequence to the MSc thesis.",
+ "description": "The full Bioinformatics & Computational Biology degree, grouped by year: biology, chemistry, programming, statistics, genomics, protein structures and computational drug discovery.",
+ "messages": {
+  "welcome": "Hi! This is the whole Bioinformatics & Computational Biology degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Bioinformatics & Computational Biology degree. Now go decode some DNA!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#3E8E41",
+ "levels": [
+  {
+   "id": "bio-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "bio-1-1",
+     "title": "Introduction to Bioinformatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-3",
+     "title": "R Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-4",
+     "title": "General Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-5",
+     "title": "Cell Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-6",
+     "title": "General Chemistry",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-7",
+     "title": "Organic Chemistry",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-8",
+     "title": "Calculus",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-9",
+     "title": "Discrete Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "bio-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-3",
+     "title": "Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-4",
+     "title": "Probability & Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-5",
+     "title": "Linear Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-6",
+     "title": "Biochemistry",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-7",
+     "title": "Genetics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-8",
+     "title": "Molecular Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-9",
+     "title": "Microbiology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-10",
+     "title": "Biostatistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-11",
+     "title": "Database Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-12",
+     "title": "Linux & Shell Scripting for Biology",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "bio-3-1",
+     "title": "Sequence Analysis & Alignment",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-2",
+     "title": "Algorithms in Bioinformatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-3",
+     "title": "Genomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-4",
+     "title": "Transcriptomics & RNA-Seq",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-5",
+     "title": "Proteomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-6",
+     "title": "Phylogenetics & Molecular Evolution",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-7",
+     "title": "Structural Bioinformatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-8",
+     "title": "Biological Databases",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-9",
+     "title": "Next-Generation Sequencing Data Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-10",
+     "title": "Systems Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-11",
+     "title": "Population Genetics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-12",
+     "title": "Machine Learning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-13",
+     "title": "Data Visualization for Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-14",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "bio-4-1",
+     "title": "Computational Drug Discovery",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-2",
+     "title": "Molecular Modeling & Simulation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-3",
+     "title": "Metagenomics & Microbiome",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-4",
+     "title": "Epigenomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-5",
+     "title": "Single-Cell Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-6",
+     "title": "Cancer Genomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-7",
+     "title": "Immunoinformatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-8",
+     "title": "Mathematical Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-9",
+     "title": "Network Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-10",
+     "title": "Deep Learning for Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-11",
+     "title": "Precision Medicine & Clinical Bioinformatics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-12",
+     "title": "Bioinformatics Pipelines & Workflows",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-13",
+     "title": "Cloud & HPC for Genomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-14",
+     "title": "Bioethics & Genetic Data Privacy",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-15",
+     "title": "Final Year Project / Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "bio-5-1",
+     "title": "Advanced Genomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-2",
+     "title": "Protein Structure Prediction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-3",
+     "title": "Computational Neuroscience",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-4",
+     "title": "Statistical Genetics & GWAS",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-5",
+     "title": "Multi-Omics Integration",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-6",
+     "title": "Advanced Machine Learning for Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-7",
+     "title": "Synthetic Biology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-8",
+     "title": "Evolutionary Genomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-9",
+     "title": "Pharmacogenomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-10",
+     "title": "Biomedical Text Mining",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-11",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-12",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}
