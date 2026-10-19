@@ -1,0 +1,468 @@
+{
+ "id": "cyber",
+ "name": "সাইবার সিকিউরিটি",
+ "mentor": "সাইবার সিকিউরিটি মেন্টর",
+ "tagline": "BSc আর MSc সাইবার সিকিউরিটির সব কোর্স, প্রথম লিনাক্স কমান্ড থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো সাইবার সিকিউরিটি ডিগ্রি, বছর ধরে সাজানো: প্রোগ্রামিং, নেটওয়ার্ক, ক্রিপ্টোগ্রাফি, এথিক্যাল হ্যাকিং, ফরেনসিক্স আর সিকিউরিটি রিসার্চ।",
+ "image": "assets/images/cse.jpg",
+ "color": "#2E8B6E",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো সাইবার সিকিউরিটি ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো সাইবার সিকিউরিটি ডিগ্রি ঘুরে আসলা। এবার কিছু একটা সুরক্ষিত করো!"
+ },
+ "levels": [
+  {
+   "id": "cyber-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "cyber-1-1",
+     "title": "সাইবার সিকিউরিটির পরিচিতি (Introduction to Cyber Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-8",
+     "title": "ডিজিটাল লজিক ডিজাইন (Digital Logic Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-9",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cyber-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "cyber-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-5",
+     "title": "ক্রিপ্টোগ্রাফির জন্য নাম্বার থিওরি (Number Theory for Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-6",
+     "title": "কম্পিউটার আর্কিটেকচার ও অর্গানাইজেশন (Computer Architecture & Organization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-7",
+     "title": "অ্যাসেম্বলি ল্যাঙ্গুয়েজ ও লো-লেভেল প্রোগ্রামিং (Assembly Language & Low-Level Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-8",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-9",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-10",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-11",
+     "title": "ওয়েব টেকনোলজি (Web Technologies)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-2-12",
+     "title": "সিকিউরিটির জন্য স্ক্রিপ্টিং (Bash ও PowerShell) (Scripting for Security (Bash & PowerShell))",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cyber-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "cyber-3-1",
+     "title": "ক্রিপ্টোগ্রাফি (Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-2",
+     "title": "নেটওয়ার্ক সিকিউরিটি (Network Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-3",
+     "title": "অপারেটিং সিস্টেম সিকিউরিটি (Operating System Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-4",
+     "title": "ওয়েব অ্যাপ্লিকেশন সিকিউরিটি (Web Application Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-5",
+     "title": "সিকিউর সফটওয়্যার ডেভেলপমেন্ট (Secure Software Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-6",
+     "title": "ডেটাবেস সিকিউরিটি (Database Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-7",
+     "title": "আইডেন্টিটি ও অ্যাক্সেস ম্যানেজমেন্ট (Identity & Access Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-8",
+     "title": "এথিক্যাল হ্যাকিং ও পেনিট্রেশন টেস্টিং (Ethical Hacking & Penetration Testing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-9",
+     "title": "ভালনারেবিলিটি অ্যাসেসমেন্ট (Vulnerability Assessment)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-10",
+     "title": "ম্যালওয়্যার অ্যানালাইসিস (Malware Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-11",
+     "title": "রিভার্স ইঞ্জিনিয়ারিং (Reverse Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-12",
+     "title": "ওয়্যারলেস ও মোবাইল সিকিউরিটি (Wireless & Mobile Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-13",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-3-14",
+     "title": "সিকিউরিটি পলিসি ও রিস্ক ম্যানেজমেন্ট (Security Policy & Risk Management)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cyber-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "cyber-4-1",
+     "title": "ডিজিটাল ফরেনসিক্স (Digital Forensics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-2",
+     "title": "ইনসিডেন্ট রেসপন্স ও থ্রেট হান্টিং (Incident Response & Threat Hunting)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-3",
+     "title": "সিকিউরিটি অপারেশনস সেন্টার (SOC) ও SIEM (Security Operations Center (SOC) & SIEM)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-4",
+     "title": "ইনট্রুশন ডিটেকশন ও প্রিভেনশন সিস্টেম (Intrusion Detection & Prevention Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-5",
+     "title": "ক্লাউড সিকিউরিটি (Cloud Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-6",
+     "title": "DevSecOps (DevSecOps)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-7",
+     "title": "IoT ও এমবেডেড সিস্টেম সিকিউরিটি (IoT & Embedded Systems Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-8",
+     "title": "ইন্ডাস্ট্রিয়াল কন্ট্রোল সিস্টেম (SCADA) সিকিউরিটি (Industrial Control Systems (SCADA) Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-9",
+     "title": "থ্রেট ইন্টেলিজেন্স (Threat Intelligence)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-10",
+     "title": "সোশ্যাল ইঞ্জিনিয়ারিং ও হিউম্যান ফ্যাক্টর (Social Engineering & Human Factors)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-11",
+     "title": "সিকিউরিটির জন্য মেশিন লার্নিং (Machine Learning for Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-12",
+     "title": "ব্লকচেইন সিকিউরিটি (Blockchain Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-13",
+     "title": "সিকিউরিটি অডিটিং ও কমপ্লায়েন্স (Security Auditing & Compliance)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-14",
+     "title": "সাইবার আইন, এথিক্স ও প্রাইভেসি (Cyber Law, Ethics & Privacy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-15",
+     "title": "বিজনেস কন্টিনিউইটি ও ডিজাস্টার রিকভারি (Business Continuity & Disaster Recovery)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-4-16",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cyber-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "cyber-5-1",
+     "title": "অ্যাডভান্সড ক্রিপ্টোগ্রাফি (Advanced Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-2",
+     "title": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি (Post-Quantum Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-3",
+     "title": "অ্যাডভান্সড নেটওয়ার্ক সিকিউরিটি (Advanced Network Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-4",
+     "title": "অ্যাডভান্সড পেনিট্রেশন টেস্টিং ও রেড টিমিং (Advanced Penetration Testing & Red Teaming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-5",
+     "title": "এক্সপ্লয়েট ডেভেলপমেন্ট (Exploit Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-6",
+     "title": "অ্যাডভান্সড ম্যালওয়্যার অ্যানালাইসিস (Advanced Malware Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-7",
+     "title": "অ্যাডভান্সড ডিজিটাল ফরেনসিক্স (Advanced Digital Forensics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-8",
+     "title": "সিকিউরিটি আর্কিটেকচার ও জিরো ট্রাস্ট (Security Architecture & Zero Trust)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-9",
+     "title": "ফর্মাল মেথডস ও প্রোগ্রাম ভেরিফিকেশন (Formal Methods & Program Verification)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-10",
+     "title": "হার্ডওয়্যার সিকিউরিটি (Hardware Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-11",
+     "title": "AI সিকিউরিটি ও অ্যাডভারসারিয়াল মেশিন লার্নিং (AI Security & Adversarial Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-12",
+     "title": "প্রাইভেসি-এনহ্যান্সিং টেকনোলজি (Privacy-Enhancing Technologies)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-13",
+     "title": "সাইবার থ্রেট ইন্টেলিজেন্স ও অ্যাট্রিবিউশন (Cyber Threat Intelligence & Attribution)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-14",
+     "title": "ক্রিটিক্যাল ইনফ্রাস্ট্রাকচার প্রোটেকশন (Critical Infrastructure Protection)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-15",
+     "title": "সিকিউরিটি ইকোনমিক্স ও গভর্নেন্স (Security Economics & Governance)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-16",
+     "title": "সাইবার ওয়ারফেয়ার ও জাতীয় নিরাপত্তা (Cyber Warfare & National Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-17",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cyber-5-18",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}
