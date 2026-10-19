@@ -1,5 +1,5 @@
 {
-  "content_version": 32,
+  "content_version": 33,
   "categories": [
     "programming",
     "career",
@@ -17,6 +17,7 @@
     "ds",
     "cyber",
     "swe",
-    "de"
+    "de",
+    "cloud"
   ]
 }
