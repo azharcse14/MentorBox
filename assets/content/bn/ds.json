@@ -1,0 +1,480 @@
+{
+ "id": "ds",
+ "name": "ডেটা সায়েন্স",
+ "mentor": "ডেটা সায়েন্স মেন্টর",
+ "tagline": "BSc আর MSc ডেটা সায়েন্সের সব কোর্স, প্রথম স্প্রেডশিট থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ডেটা সায়েন্স ডিগ্রি, বছর ধরে সাজানো: ম্যাথ, স্ট্যাটিস্টিকস, প্রোগ্রামিং, মেশিন লার্নিং, বিগ ডেটা আর অ্যানালিটিক্স।",
+ "image": "assets/images/cse.jpg",
+ "color": "#2E8B6E",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ডেটা সায়েন্স ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ডেটা সায়েন্স ডিগ্রি ঘুরে আসলা। এবার একটা ডেটাসেট নিয়ে খোঁড়াখুঁড়ি শুরু করো!"
+ },
+ "levels": [
+  {
+   "id": "ds-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "ds-1-1",
+     "title": "ডেটা সায়েন্সের পরিচিতি (Introduction to Data Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-3",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-4",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-5",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-6",
+     "title": "স্ট্যাটিস্টিকসের পরিচিতি (Introduction to Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-8",
+     "title": "ডেটা লিটারেসি ও স্প্রেডশিট (Data Literacy & Spreadsheets)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-1-9",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ds-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "ds-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-4",
+     "title": "প্রোবাবিলিটি থিওরি (Probability Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-5",
+     "title": "স্ট্যাটিস্টিক্যাল ইনফারেন্স (Statistical Inference)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-6",
+     "title": "মাল্টিভেরিয়েবল ক্যালকুলাস ও অপটিমাইজেশন (Multivariable Calculus & Optimization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-7",
+     "title": "নিউমেরিক্যাল মেথডস (Numerical Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-8",
+     "title": "ডেটাবেস সিস্টেম ও SQL (Database Systems & SQL)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-9",
+     "title": "R প্রোগ্রামিং (R Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-10",
+     "title": "ডেটা র‍্যাংলিং ও ক্লিনিং (Data Wrangling & Cleaning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-11",
+     "title": "এক্সপ্লোরেটরি ডেটা অ্যানালাইসিস (Exploratory Data Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-2-12",
+     "title": "ডেটা ভিজুয়ালাইজেশন (Data Visualization)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ds-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "ds-3-1",
+     "title": "মেশিন লার্নিং (Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-2",
+     "title": "রিগ্রেশন অ্যানালাইসিস (Regression Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-3",
+     "title": "মাল্টিভেরিয়েট স্ট্যাটিস্টিকস (Multivariate Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-4",
+     "title": "বেইজিয়ান স্ট্যাটিস্টিকস (Bayesian Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-5",
+     "title": "স্যাম্পলিং ও সার্ভে মেথডস (Sampling & Survey Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-6",
+     "title": "ডিজাইন অফ এক্সপেরিমেন্টস ও A/B টেস্টিং (Design of Experiments & A/B Testing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-7",
+     "title": "টাইম সিরিজ অ্যানালাইসিস ও ফোরকাস্টিং (Time Series Analysis & Forecasting)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-8",
+     "title": "ডেটা মাইনিং (Data Mining)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-9",
+     "title": "বিগ ডেটা টেকনোলজি (Hadoop ও Spark) (Big Data Technologies (Hadoop & Spark))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-10",
+     "title": "ডেটা ওয়্যারহাউজিং ও বিজনেস ইন্টেলিজেন্স (Data Warehousing & Business Intelligence)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-11",
+     "title": "ওয়েব স্ক্র্যাপিং ও API (Web Scraping & APIs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-12",
+     "title": "অপারেশনস রিসার্চ (Operations Research)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-13",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-14",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-3-15",
+     "title": "ডেটা সায়েন্সের জন্য সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering for Data Science)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ds-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "ds-4-1",
+     "title": "ডিপ লার্নিং (Deep Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-2",
+     "title": "ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (Natural Language Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-3",
+     "title": "কম্পিউটার ভিশন (Computer Vision)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-4",
+     "title": "ডেটা ইঞ্জিনিয়ারিং ও পাইপলাইন (Data Engineering & Pipelines)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-5",
+     "title": "ডেটার জন্য ক্লাউড কম্পিউটিং (Cloud Computing for Data)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-6",
+     "title": "MLOps ও মডেল ডিপ্লয়মেন্ট (MLOps & Model Deployment)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-7",
+     "title": "রিকমেন্ডার সিস্টেম (Recommender Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-8",
+     "title": "সোশ্যাল নেটওয়ার্ক ও গ্রাফ অ্যানালিটিক্স (Social Network & Graph Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-9",
+     "title": "ইনফরমেশন রিট্রিভাল ও সার্চ (Information Retrieval & Search)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-10",
+     "title": "স্প্যাশিয়াল ও ভৌগোলিক ডেটা অ্যানালাইসিস (Spatial & Geographic Data Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-11",
+     "title": "বিজনেস অ্যানালিটিক্স (Business Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-12",
+     "title": "মার্কেটিং ও কাস্টমার অ্যানালিটিক্স (Marketing & Customer Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-13",
+     "title": "ফিন্যান্সিয়াল অ্যানালিটিক্স (Financial Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-14",
+     "title": "ডেটা স্টোরিটেলিং ও কমিউনিকেশন (Data Storytelling & Communication)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-15",
+     "title": "ডেটা এথিক্স, প্রাইভেসি ও আইন (Data Ethics, Privacy & Law)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-4-16",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / ক্যাপস্টোন (Final Year Project / Capstone)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ds-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "ds-5-1",
+     "title": "অ্যাডভান্সড মেশিন লার্নিং (Advanced Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-2",
+     "title": "স্ট্যাটিস্টিক্যাল লার্নিং থিওরি (Statistical Learning Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-3",
+     "title": "অ্যাডভান্সড স্ট্যাটিস্টিক্যাল ইনফারেন্স (Advanced Statistical Inference)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-4",
+     "title": "বেইজিয়ান ডেটা অ্যানালাইসিস (Bayesian Data Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-5",
+     "title": "কজাল ইনফারেন্স (Causal Inference)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-6",
+     "title": "ডেটা সায়েন্সের জন্য অপটিমাইজেশন (Optimization for Data Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-7",
+     "title": "অ্যাডভান্সড ডিপ লার্নিং (Advanced Deep Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-8",
+     "title": "রিইনফোর্সমেন্ট লার্নিং (Reinforcement Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-9",
+     "title": "গ্রাফ নিউরাল নেটওয়ার্ক (Graph Neural Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-10",
+     "title": "ডেটা সায়েন্সের জন্য জেনারেটিভ AI (Generative AI for Data Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-11",
+     "title": "এক্সপ্লেইনেবল ও ফেয়ার মেশিন লার্নিং (Explainable & Fair Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-12",
+     "title": "লার্জ-স্কেল ডেটা প্রসেসিং (Large-Scale Data Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-13",
+     "title": "স্ট্রিম ও রিয়েল-টাইম অ্যানালিটিক্স (Stream & Real-Time Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-14",
+     "title": "অ্যাডভান্সড ডেটা ভিজুয়ালাইজেশন (Advanced Data Visualization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-15",
+     "title": "প্রাইভেসি-প্রিজার্ভিং ডেটা অ্যানালাইসিস (Privacy-Preserving Data Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-16",
+     "title": "ইকোনোমেট্রিক্স (Econometrics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-17",
+     "title": "স্বাস্থ্যসেবা ও বায়োমেডিক্যাল ডেটা সায়েন্স (Healthcare & Biomedical Data Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-18",
+     "title": "বায়োইনফরমেটিক্স (Bioinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-19",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ds-5-20",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

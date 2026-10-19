@@ -1,5 +1,5 @@
 {
-  "content_version": 28,
+  "content_version": 29,
   "categories": [
     "programming",
     "career",
@@ -13,6 +13,7 @@
     "creativity",
     "cse",
     "cse-courses",
-    "ai"
+    "ai",
+    "ds"
   ]
 }
