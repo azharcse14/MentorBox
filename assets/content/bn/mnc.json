@@ -1,0 +1,456 @@
+{
+ "id": "mnc",
+ "name": "ম্যাথমেটিক্স ও কম্পিউটিং",
+ "mentor": "ম্যাথমেটিক্স ও কম্পিউটিং মেন্টর",
+ "tagline": "BSc আর MSc ম্যাথমেটিক্স ও কম্পিউটিংয়ের সব কোর্স, প্রথম প্রুফ থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ম্যাথমেটিক্স ও কম্পিউটিং ডিগ্রি, বছর ধরে সাজানো: ক্যালকুলাস, অ্যালজেব্রা, অ্যানালাইসিস, প্রোবাবিলিটি, অ্যালগরিদম, নিউমেরিক্যাল মেথড আর কম্পিউটারের পেছনের ম্যাথ।",
+ "image": "assets/images/cse.jpg",
+ "color": "#8C3F5E",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ম্যাথমেটিক্স ও কম্পিউটিং ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ম্যাথমেটিক্স ও কম্পিউটিং ডিগ্রি ঘুরে আসলা। এবার একটা কঠিন প্রবলেম সলভ করে ফেলো!"
+ },
+ "levels": [
+  {
+   "id": "mnc-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "mnc-1-1",
+     "title": "ম্যাথমেটিক্স ও কম্পিউটিংয়ের পরিচিতি (Introduction to Mathematics & Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-4",
+     "title": "ক্যালকুলাস I (সিঙ্গেল ভেরিয়েবল) (Calculus I (Single Variable))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-5",
+     "title": "ক্যালকুলাস II (মাল্টিভেরিয়েবল) (Calculus II (Multivariable))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-7",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-8",
+     "title": "ম্যাথমেটিক্যাল লজিক ও প্রুফ (Mathematical Logic & Proofs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-9",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "mnc-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-4",
+     "title": "রিয়েল অ্যানালাইসিস (Real Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-5",
+     "title": "অ্যাবস্ট্রাক্ট অ্যালজেব্রা (গ্রুপ, রিং ও ফিল্ড) (Abstract Algebra (Groups, Rings & Fields))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-6",
+     "title": "অর্ডিনারি ডিফারেনশিয়াল ইকুয়েশন (Ordinary Differential Equations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-7",
+     "title": "প্রোবাবিলিটি থিওরি (Probability Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-8",
+     "title": "স্ট্যাটিস্টিকস (Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-9",
+     "title": "নিউমেরিক্যাল অ্যানালাইসিস (Numerical Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-10",
+     "title": "নাম্বার থিওরি (Number Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-11",
+     "title": "কম্পিউটার আর্কিটেকচার ও অর্গানাইজেশন (Computer Architecture & Organization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-12",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "mnc-3-1",
+     "title": "কমপ্লেক্স অ্যানালাইসিস (Complex Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-2",
+     "title": "পার্শিয়াল ডিফারেনশিয়াল ইকুয়েশন (Partial Differential Equations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-3",
+     "title": "গ্রাফ থিওরি (Graph Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-4",
+     "title": "কম্বিনেটরিক্স (Combinatorics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-5",
+     "title": "থিওরি অফ কম্পিউটেশন (Theory of Computation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-6",
+     "title": "লিনিয়ার প্রোগ্রামিং ও অপটিমাইজেশন (Linear Programming & Optimization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-7",
+     "title": "স্টোকাস্টিক প্রসেস (Stochastic Processes)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-8",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-9",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-10",
+     "title": "সায়েন্টিফিক কম্পিউটিং (Scientific Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-11",
+     "title": "ম্যাথমেটিক্যাল মডেলিং (Mathematical Modeling)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-12",
+     "title": "টপোলজি (Topology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-13",
+     "title": "মেশিন লার্নিং (Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-14",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "mnc-4-1",
+     "title": "ক্রিপ্টোগ্রাফি (Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-2",
+     "title": "কোডিং থিওরি (Coding Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-3",
+     "title": "ইনফরমেশন থিওরি (Information Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-4",
+     "title": "কম্পিউটেশনাল জিওমেট্রি (Computational Geometry)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-5",
+     "title": "ফাংশনাল অ্যানালাইসিস (Functional Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-6",
+     "title": "মেজার থিওরি (Measure Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-7",
+     "title": "নিউমেরিক্যাল লিনিয়ার অ্যালজেব্রা (Numerical Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-8",
+     "title": "ডিফারেনশিয়াল ইকুয়েশনের নিউমেরিক্যাল মেথড (Numerical Methods for Differential Equations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-9",
+     "title": "ফিন্যান্সিয়াল ম্যাথমেটিক্স (Financial Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-10",
+     "title": "গেম থিওরি (Game Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-11",
+     "title": "সিমুলেশন ও মন্টে কার্লো মেথড (Simulation & Monte Carlo Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-12",
+     "title": "প্যারালাল কম্পিউটিং (Parallel Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-13",
+     "title": "ডেটা সায়েন্স ও স্ট্যাটিস্টিক্যাল লার্নিং (Data Science & Statistical Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-14",
+     "title": "সিম্বলিক কম্পিউটেশন ও কম্পিউটার অ্যালজেব্রা (Symbolic Computation & Computer Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-15",
+     "title": "প্রফেশনাল এথিক্স (Professional Ethics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-16",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "mnc-5-1",
+     "title": "অ্যাডভান্সড অ্যালগরিদম (Advanced Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-2",
+     "title": "কম্পিউটেশনাল কমপ্লেক্সিটি থিওরি (Computational Complexity Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-3",
+     "title": "র‍্যান্ডমাইজড ও অ্যাপ্রক্সিমেশন অ্যালগরিদম (Randomized & Approximation Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-4",
+     "title": "কনভেক্স অপটিমাইজেশন (Convex Optimization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-5",
+     "title": "অ্যাডভান্সড নিউমেরিক্যাল অ্যানালাইসিস (Advanced Numerical Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-6",
+     "title": "ফাইনাইট এলিমেন্ট মেথড (Finite Element Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-7",
+     "title": "কম্পিউটেশনাল ফ্লুইড ডাইনামিক্স (Computational Fluid Dynamics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-8",
+     "title": "অ্যাডভান্সড প্রোবাবিলিটি ও স্টোকাস্টিক ক্যালকুলাস (Advanced Probability & Stochastic Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-9",
+     "title": "মেশিন লার্নিংয়ের ম্যাথমেটিক্স (Mathematics of Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-10",
+     "title": "অ্যালজেব্রিক গ্রাফ থিওরি ও নেটওয়ার্ক সায়েন্স (Algebraic Graph Theory & Network Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-11",
+     "title": "ইলিপটিক কার্ভ ও অ্যাডভান্সড ক্রিপ্টোগ্রাফি (Elliptic Curves & Advanced Cryptography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-12",
+     "title": "কোয়ান্টাম কম্পিউটিং (Quantum Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-13",
+     "title": "কম্পিউটেশনাল ফিন্যান্স (Computational Finance)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-14",
+     "title": "ফর্মাল ভেরিফিকেশন ও কম্পিউটার সায়েন্সে লজিক (Formal Verification & Logic in Computer Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-15",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-16",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

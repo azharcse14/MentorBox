@@ -1,0 +1,456 @@
+{
+ "id": "mnc",
+ "name": "Mathematics & Computing",
+ "mentor": "Mathematics & Computing Mentor",
+ "tagline": "Every BSc and MSc Mathematics & Computing course, from your first proof to the MSc thesis.",
+ "description": "The full Mathematics & Computing degree, grouped by year: calculus, algebra, analysis, probability, algorithms, numerical methods and the math behind computers.",
+ "image": "assets/images/cse.jpg",
+ "color": "#8C3F5E",
+ "messages": {
+  "welcome": "Hi! This is the whole Mathematics & Computing degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Mathematics & Computing degree. Now go solve something hard!"
+ },
+ "levels": [
+  {
+   "id": "mnc-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "mnc-1-1",
+     "title": "Introduction to Mathematics & Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-3",
+     "title": "Structured Programming (C)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-4",
+     "title": "Calculus I (Single Variable)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-5",
+     "title": "Calculus II (Multivariable)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-6",
+     "title": "Linear Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-7",
+     "title": "Discrete Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-8",
+     "title": "Mathematical Logic & Proofs",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-9",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "mnc-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-3",
+     "title": "Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-4",
+     "title": "Real Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-5",
+     "title": "Abstract Algebra (Groups, Rings & Fields)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-6",
+     "title": "Ordinary Differential Equations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-7",
+     "title": "Probability Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-8",
+     "title": "Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-9",
+     "title": "Numerical Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-10",
+     "title": "Number Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-11",
+     "title": "Computer Architecture & Organization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-2-12",
+     "title": "Database Systems",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "mnc-3-1",
+     "title": "Complex Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-2",
+     "title": "Partial Differential Equations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-3",
+     "title": "Graph Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-4",
+     "title": "Combinatorics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-5",
+     "title": "Theory of Computation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-6",
+     "title": "Linear Programming & Optimization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-7",
+     "title": "Stochastic Processes",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-8",
+     "title": "Operating Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-9",
+     "title": "Computer Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-10",
+     "title": "Scientific Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-11",
+     "title": "Mathematical Modeling",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-12",
+     "title": "Topology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-13",
+     "title": "Machine Learning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-3-14",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "mnc-4-1",
+     "title": "Cryptography",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-2",
+     "title": "Coding Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-3",
+     "title": "Information Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-4",
+     "title": "Computational Geometry",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-5",
+     "title": "Functional Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-6",
+     "title": "Measure Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-7",
+     "title": "Numerical Linear Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-8",
+     "title": "Numerical Methods for Differential Equations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-9",
+     "title": "Financial Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-10",
+     "title": "Game Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-11",
+     "title": "Simulation & Monte Carlo Methods",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-12",
+     "title": "Parallel Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-13",
+     "title": "Data Science & Statistical Learning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-14",
+     "title": "Symbolic Computation & Computer Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-15",
+     "title": "Professional Ethics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-4-16",
+     "title": "Final Year Project / Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "mnc-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "mnc-5-1",
+     "title": "Advanced Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-2",
+     "title": "Computational Complexity Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-3",
+     "title": "Randomized & Approximation Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-4",
+     "title": "Convex Optimization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-5",
+     "title": "Advanced Numerical Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-6",
+     "title": "Finite Element Methods",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-7",
+     "title": "Computational Fluid Dynamics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-8",
+     "title": "Advanced Probability & Stochastic Calculus",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-9",
+     "title": "Mathematics of Machine Learning",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-10",
+     "title": "Algebraic Graph Theory & Network Science",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-11",
+     "title": "Elliptic Curves & Advanced Cryptography",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-12",
+     "title": "Quantum Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-13",
+     "title": "Computational Finance",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-14",
+     "title": "Formal Verification & Logic in Computer Science",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-15",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "mnc-5-16",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}
