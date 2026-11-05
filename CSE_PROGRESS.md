@@ -82,7 +82,7 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 |---|---|---|---|
 | 39 | cse-6-1 | Machine Learning | done |
 | 40 | cse-6-2 | Computer Security & Cryptography | done |
-| 41 | cse-6-3 | Distributed Systems | todo |
+| 41 | cse-6-3 | Distributed Systems | done |
 | 42 | cse-6-4 | Digital Image Processing | todo |
 | 43 | cse-6-5 | Simulation & Modeling | todo |
 | 44 | cse-6-6 | Professional Ethics & Cyber Law | todo |
