@@ -1,6 +1,7 @@
 # Usage: python3 assemble_course.py <course id from CSE_PROGRESS.md, e.g. cse-1-1>
 # Joins the lessons in parts/deep_<id>/ into one level of the "Computer Science" category
-# (assets/content/<lang>/cse-courses.json) under its year section, in course order.
+# (assets/content/<lang>/cse/cse-courses.json lists the level ids in course order; each course is
+# its own file, assets/content/<lang>/cse/deep-<id>.json).
 # Bumps content_version and refreshes CSE_PROGRESS.md.
 import glob, json, os, re, sys
 
@@ -15,7 +16,7 @@ SECTION = {'en': {'y1': '1st Year', 'y2': '2nd Year', 'y3': '3rd Year', 'y4': '4
            'bn': {'y1': '১ম বছর', 'y2': '২য় বছর', 'y3': '৩য় বছর', 'y4': '৪র্থ বছর', 'msc': 'MSc'}}
 CAT_ID = 'cse-courses'
 
-overview = {lang: json.load(open(f'{content}{lang}/cse.json', encoding='utf-8')) for lang in ('en', 'bn')}
+overview = {lang: json.load(open(f'{content}{lang}/cse/cse.json', encoding='utf-8')) for lang in ('en', 'bn')}
 courses = {lang: [(l['id'], s) for l in overview[lang]['levels'] for s in l['lessons']] for lang in overview}
 n = [s['id'] for _, s in courses['en']].index(cid)
 level_of, course_en = courses['en'][n]
@@ -37,16 +38,16 @@ for lang in ('en', 'bn'):
     course = courses[lang][n][1]
     level = {'id': f"deep-{course['id']}", 'title': course['title'], 'section': SECTION[lang][section],
              'lessons': lessons[lang]}
-    path = f'{content}{lang}/{CAT_ID}.json'
+    open(f"{content}{lang}/cse/{level['id']}.json", 'w', encoding='utf-8').write(json.dumps(level, ensure_ascii=False, indent=2) + '\n')
+    path = f'{content}{lang}/cse/{CAT_ID}.json'
     cat = json.load(open(path, encoding='utf-8'))
-    cat['levels'] = [l for l in cat['levels'] if l['id'] != level['id']] + [level]
-    # keep levels in course order
+    # level ids in course order
     rank = {f"deep-{s['id']}": i for i, (_, s) in enumerate(courses[lang])}
-    cat['levels'].sort(key=lambda l: rank[l['id']])
+    cat['levels'] = sorted(set(cat['levels']) | {level['id']}, key=rank.__getitem__)
     open(path, 'w', encoding='utf-8').write(json.dumps(cat, ensure_ascii=False, indent=2) + '\n')
 
 index = json.load(open(content + 'index.json'))
-assert CAT_ID in index['categories'], f'{CAT_ID} missing from index.json'
+assert f'cse/{CAT_ID}' in index['categories'], f'{CAT_ID} missing from index.json'
 index['content_version'] += 1
 open(content + 'index.json', 'w').write(json.dumps(index, indent=2) + '\n')
 

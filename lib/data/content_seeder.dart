@@ -7,8 +7,11 @@ import 'package:sqflite/sqflite.dart';
 
 /// Copies the mentoring content from assets/content/ into SQLite.
 ///
-/// assets/content/index.json holds "content_version" and the category ids in
-/// display order; each category lives in `assets/content/<language>/<id>.json`.
+/// assets/content/index.json holds "content_version" and the category files in
+/// display order, as paths under `assets/content/<language>/` without ".json"
+/// (e.g. "finance" or "cse/cse-courses"). A category's "levels" holds level
+/// objects, or level ids whose file sits next to the category file
+/// (`cse/deep-cse-1-1.json`), so big categories load one course at a time.
 /// It runs on every app start but only reads the small index unless
 /// content_version is higher than the version already stored, or the app
 /// language changed. To ship new lessons, edit both language files of a
@@ -54,10 +57,7 @@ class ContentSeeder {
     final currentVersion = int.tryParse(meta[_versionKey] ?? '') ?? 0;
     if (currentVersion >= newVersion && meta[_languageKey] == language) return;
 
-    final categories = [
-      for (final id in index['categories'] as List<dynamic>)
-        jsonDecode(await rootBundle.loadString('assets/content/$language/$id.json')) as Map<String, dynamic>,
-    ];
+    final paths = (index['categories'] as List<dynamic>).cast<String>();
 
     await db.transaction((txn) async {
       // Only content tables are cleared. Learner progress is keyed by lesson
@@ -67,11 +67,11 @@ class ContentSeeder {
       await txn.delete('levels');
       await txn.delete('categories');
 
-      final batch = txn.batch();
-
-      for (var ci = 0; ci < categories.length; ci++) {
-        final category = categories[ci];
+      for (var ci = 0; ci < paths.length; ci++) {
+        final category = await _load(language, paths[ci]);
         final categoryId = category['id'] as String;
+        final dir = paths[ci].contains('/') ? paths[ci].substring(0, paths[ci].lastIndexOf('/') + 1) : '';
+        var batch = txn.batch();
 
         batch.insert('categories', {
           'id': categoryId,
@@ -87,7 +87,8 @@ class ContentSeeder {
 
         final levels = category['levels'] as List<dynamic>;
         for (var li = 0; li < levels.length; li++) {
-          final level = levels[li] as Map<String, dynamic>;
+          final ref = levels[li];
+          final level = ref is String ? await _load(language, '$dir$ref') : ref as Map<String, dynamic>;
           final levelId = level['id'] as String;
 
           batch.insert('levels', {
@@ -129,9 +130,15 @@ class ContentSeeder {
               });
             }
           }
+          // One course at a time: a single batch for all content would hold
+          // every lesson in memory at once.
+          await batch.commit(noResult: true);
+          batch = txn.batch();
         }
+        await batch.commit(noResult: true);
       }
 
+      final batch = txn.batch();
       batch.insert(
         'meta',
         {'key': _versionKey, 'value': '$newVersion'},
@@ -145,6 +152,9 @@ class ContentSeeder {
       await batch.commit(noResult: true);
     });
   }
+
+  static Future<Map<String, dynamic>> _load(String language, String path) async =>
+      jsonDecode(await rootBundle.loadString('assets/content/$language/$path.json')) as Map<String, dynamic>;
 
   /// "#5E8C8A" -> 0xFF5E8C8A
   static int _parseColor(String hex) {

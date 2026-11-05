@@ -1,5 +1,5 @@
 {
-  "content_version": 60,
+  "content_version": 61,
   "categories": [
     "programming",
     "career",
@@ -11,8 +11,8 @@
     "leadership",
     "study",
     "creativity",
-    "cse",
-    "cse-courses",
+    "cse/cse",
+    "cse/cse-courses",
     "ai",
     "ds",
     "cyber",

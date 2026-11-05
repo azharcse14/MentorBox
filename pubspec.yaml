@@ -32,6 +32,8 @@ flutter:
     - assets/content/
     - assets/content/en/
     - assets/content/bn/
+    - assets/content/en/cse/
+    - assets/content/bn/cse/
 
   # Fonts are bundled so the app works fully offline (no runtime download).
   fonts:

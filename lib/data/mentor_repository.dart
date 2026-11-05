@@ -146,8 +146,12 @@ class MentorRepository {
       whereArgs: args,
       orderBy: 'sort_order',
     );
+    // Everything but the lesson text: overviews list every lesson, and the
+    // text is read per lesson by getLesson.
     final lessonRows = await db.rawQuery('''
-      SELECT l.* FROM lessons l
+      SELECT l.id, l.level_id, l.category_id, l.title, l.duration_min, '' AS content,
+             l.key_points, l.mentor_tip, l.task, l.sort_order
+      FROM lessons l
       JOIN levels v ON v.id = l.level_id
       $where
       ORDER BY v.sort_order, l.sort_order

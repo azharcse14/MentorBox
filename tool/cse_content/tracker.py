@@ -5,9 +5,9 @@ here = os.path.dirname(os.path.abspath(__file__))
 repo = os.path.dirname(os.path.dirname(here)) + '/'
 YEAR = {'cse-1': '1st Year', 'cse-2': '2nd Year', 'cse-3': '2nd Year', 'cse-4': '3rd Year', 'cse-5': '3rd Year',
         'cse-6': '4th Year', 'cse-7': 'MSc', 'cse-8': 'MSc', 'cse-9': 'MSc'}
-done = {l['id'][len('deep-'):] for f in [repo + 'assets/content/en/cse-courses.json'] if os.path.exists(f)
+done = {l[len('deep-'):] for f in [repo + 'assets/content/en/cse/cse-courses.json'] if os.path.exists(f)
         for l in json.load(open(f, encoding='utf-8'))['levels']}
-c = json.load(open(repo + 'assets/content/en/cse.json', encoding='utf-8'))
+c = json.load(open(repo + 'assets/content/en/cse/cse.json', encoding='utf-8'))
 out = ['# CSE full courses: progress', '',
        'Goal: every CSE course as its own level of ~25 lessons (~100 A4 pages), English and Bangla.',
        'Full courses live in the "Computer Science" category (`cse-courses`), grouped by year sections. The short overview lessons are',
