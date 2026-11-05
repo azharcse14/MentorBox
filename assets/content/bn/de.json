@@ -1,0 +1,450 @@
+{
+ "id": "de",
+ "name": "ডেটা ইঞ্জিনিয়ারিং",
+ "mentor": "ডেটা ইঞ্জিনিয়ারিং মেন্টর",
+ "tagline": "BSc আর MSc ডেটা ইঞ্জিনিয়ারিংয়ের সব কোর্স, প্রথম SQL কোয়েরি থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ডেটা ইঞ্জিনিয়ারিং ডিগ্রি, বছর ধরে সাজানো: প্রোগ্রামিং, ডেটাবেস, পাইপলাইন, বিগ ডেটা, ক্লাউড প্ল্যাটফর্ম আর ডেটা আর্কিটেকচার।",
+ "image": "assets/images/cse.jpg",
+ "color": "#B5651D",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ডেটা ইঞ্জিনিয়ারিং ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ডেটা ইঞ্জিনিয়ারিং ডিগ্রি ঘুরে আসলা। এবার একটা পাইপলাইন বানায় ফেলো!"
+ },
+ "levels": [
+  {
+   "id": "de-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "de-1-1",
+     "title": "ডেটা ইঞ্জিনিয়ারিংয়ের পরিচিতি (Introduction to Data Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-8",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-9",
+     "title": "Git দিয়ে ভার্সন কন্ট্রোল (Version Control with Git)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "de-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "de-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-5",
+     "title": "কম্পিউটার আর্কিটেকচার ও অর্গানাইজেশন (Computer Architecture & Organization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-6",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-7",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-8",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-9",
+     "title": "SQL ও রিলেশনাল ডেটা মডেলিং (SQL & Relational Data Modeling)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-10",
+     "title": "শেল স্ক্রিপ্টিং ও অটোমেশন (Shell Scripting & Automation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-11",
+     "title": "ডেটা ফরম্যাট ও সিরিয়ালাইজেশন (CSV, JSON, Parquet, Avro) (Data Formats & Serialization (CSV, JSON, Parquet, Avro))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-2-12",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "de-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "de-3-1",
+     "title": "ডেটা ওয়্যারহাউজিং ও ডাইমেনশনাল মডেলিং (Data Warehousing & Dimensional Modeling)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-2",
+     "title": "ETL ও ELT পাইপলাইন (ETL & ELT Pipelines)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-3",
+     "title": "NoSQL ডেটাবেস (NoSQL Databases)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-4",
+     "title": "ডিস্ট্রিবিউটেড সিস্টেম (Distributed Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-5",
+     "title": "বিগ ডেটা প্রসেসিং (Hadoop ও Spark) (Big Data Processing (Hadoop & Spark))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-6",
+     "title": "স্ট্রিম প্রসেসিং (Kafka ও Flink) (Stream Processing (Kafka & Flink))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-7",
+     "title": "ওয়ার্কফ্লো অর্কেস্ট্রেশন (Airflow) (Workflow Orchestration (Airflow))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-8",
+     "title": "ক্লাউড কম্পিউটিং (Cloud Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-9",
+     "title": "ডেটাবেস ইন্টার্নালস ও স্টোরেজ ইঞ্জিন (Database Internals & Storage Engines)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-10",
+     "title": "কোয়েরি প্রসেসিং ও অপটিমাইজেশন (Query Processing & Optimization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-11",
+     "title": "ডেটা কোয়ালিটি ও টেস্টিং (Data Quality & Testing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-12",
+     "title": "API ও ডেটা ইন্টিগ্রেশন (APIs & Data Integration)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-13",
+     "title": "ডেটা সায়েন্সের পরিচিতি (Introduction to Data Science)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-3-14",
+     "title": "ডেটা ভিজুয়ালাইজেশন ও BI টুলস (Data Visualization & BI Tools)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "de-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "de-4-1",
+     "title": "ডেটা লেক ও লেকহাউস আর্কিটেকচার (Data Lakes & Lakehouse Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-2",
+     "title": "ক্লাউড ডেটা প্ল্যাটফর্ম (BigQuery, Snowflake, Redshift) (Cloud Data Platforms (BigQuery, Snowflake, Redshift))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-3",
+     "title": "dbt দিয়ে ডেটা ট্রান্সফরমেশন (Data Transformation with dbt)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-4",
+     "title": "কন্টেইনার ও Kubernetes (Containers & Kubernetes)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-5",
+     "title": "ইনফ্রাস্ট্রাকচার অ্যাজ কোড (Infrastructure as Code)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-6",
+     "title": "DataOps ও ডেটার জন্য CI/CD (DataOps & CI/CD for Data)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-7",
+     "title": "ডেটা গভর্নেন্স ও মেটাডেটা ম্যানেজমেন্ট (Data Governance & Metadata Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-8",
+     "title": "ডেটা সিকিউরিটি ও প্রাইভেসি (Data Security & Privacy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-9",
+     "title": "রিয়েল-টাইম অ্যানালিটিক্স (Real-Time Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-10",
+     "title": "মেশিন লার্নিং ফান্ডামেন্টালস (Machine Learning Fundamentals)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-11",
+     "title": "MLOps ও ফিচার স্টোর (MLOps & Feature Stores)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-12",
+     "title": "ডেটা অবজারভেবিলিটি ও মনিটরিং (Data Observability & Monitoring)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-13",
+     "title": "ডেটা সিস্টেমের খরচ অপটিমাইজেশন (Cost Optimization for Data Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-14",
+     "title": "সার্চ ইঞ্জিন ও ইনডেক্সিং (Elasticsearch) (Search Engines & Indexing (Elasticsearch))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-15",
+     "title": "ডেটা এথিক্স ও আইন (Data Ethics & Law)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-4-16",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / ক্যাপস্টোন (Final Year Project / Capstone)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "de-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "de-5-1",
+     "title": "অ্যাডভান্সড ডেটাবেস সিস্টেম (Advanced Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-2",
+     "title": "ডিস্ট্রিবিউটেড ডেটা ম্যানেজমেন্ট (Distributed Data Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-3",
+     "title": "লার্জ-স্কেল ডেটা প্রসেসিং সিস্টেম (Large-Scale Data Processing Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-4",
+     "title": "অ্যাডভান্সড স্ট্রিম প্রসেসিং (Advanced Stream Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-5",
+     "title": "ডেটা-ইনটেনসিভ অ্যাপ্লিকেশন ডিজাইন (Data-Intensive Application Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-6",
+     "title": "ক্লাউড-নেটিভ ডেটা আর্কিটেকচার (Cloud-Native Data Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-7",
+     "title": "ডেটা মেশ ও ডেটা প্রোডাক্ট (Data Mesh & Data Products)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-8",
+     "title": "গ্রাফ ডেটাবেস ও নলেজ গ্রাফ (Graph Databases & Knowledge Graphs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-9",
+     "title": "টাইম-সিরিজ ডেটাবেস (Time-Series Databases)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-10",
+     "title": "ভেক্টর ডেটাবেস ও AI-এর জন্য ডেটা (Vector Databases & Data for AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-11",
+     "title": "প্যারালাল ও হাই পারফরম্যান্স কম্পিউটিং (Parallel & High Performance Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-12",
+     "title": "প্রাইভেসি-প্রিজার্ভিং ডেটা সিস্টেম (Privacy-Preserving Data Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-13",
+     "title": "ডেটা ইঞ্জিনিয়ারিং লিডারশিপ (Data Engineering Leadership)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-14",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "de-5-15",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

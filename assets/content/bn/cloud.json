@@ -1,0 +1,450 @@
+{
+ "id": "cloud",
+ "name": "ক্লাউড কম্পিউটিং",
+ "mentor": "ক্লাউড কম্পিউটিং মেন্টর",
+ "tagline": "BSc আর MSc ক্লাউড কম্পিউটিংয়ের সব কোর্স, প্রথম লিনাক্স কমান্ড থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো ক্লাউড কম্পিউটিং ডিগ্রি, বছর ধরে সাজানো: প্রোগ্রামিং, নেটওয়ার্ক, ভার্চুয়ালাইজেশন, AWS, Azure, GCP, Kubernetes, DevOps আর ক্লাউড আর্কিটেকচার।",
+ "image": "assets/images/cse.jpg",
+ "color": "#2F7FB8",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো ক্লাউড কম্পিউটিং ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো ক্লাউড কম্পিউটিং ডিগ্রি ঘুরে আসলা। এবার কিছু একটা ডিপ্লয় করে ফেলো!"
+ },
+ "levels": [
+  {
+   "id": "cloud-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "cloud-1-1",
+     "title": "ক্লাউড কম্পিউটিংয়ের পরিচিতি (Introduction to Cloud Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-8",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-9",
+     "title": "Git দিয়ে ভার্সন কন্ট্রোল (Version Control with Git)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cloud-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "cloud-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-5",
+     "title": "কম্পিউটার আর্কিটেকচার ও অর্গানাইজেশন (Computer Architecture & Organization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-6",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-7",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-8",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-9",
+     "title": "লিনাক্স সিস্টেম অ্যাডমিনিস্ট্রেশন (Linux System Administration)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-10",
+     "title": "শেল স্ক্রিপ্টিং ও অটোমেশন (Shell Scripting & Automation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-11",
+     "title": "ওয়েব টেকনোলজি ও HTTP (Web Technologies & HTTP)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-2-12",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cloud-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "cloud-3-1",
+     "title": "ভার্চুয়ালাইজেশন ও হাইপারভাইজার (Virtualization & Hypervisors)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-2",
+     "title": "ডিস্ট্রিবিউটেড সিস্টেম (Distributed Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-3",
+     "title": "ক্লাউড সার্ভিস মডেল (IaaS, PaaS, SaaS) (Cloud Service Models (IaaS, PaaS, SaaS))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-4",
+     "title": "ক্লাউড নেটওয়ার্কিং (VPC, DNS, লোড ব্যালান্সিং) (Cloud Networking (VPC, DNS, Load Balancing))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-5",
+     "title": "ক্লাউড স্টোরেজ ও ডেটাবেস (Cloud Storage & Databases)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-6",
+     "title": "কন্টেইনার ও Docker (Containers & Docker)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-7",
+     "title": "কন্টেইনার অর্কেস্ট্রেশন (Kubernetes) (Container Orchestration (Kubernetes))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-8",
+     "title": "অ্যামাজন ওয়েব সার্ভিসেস (AWS) (Amazon Web Services (AWS))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-9",
+     "title": "মাইক্রোসফট Azure (Microsoft Azure)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-10",
+     "title": "গুগল ক্লাউড প্ল্যাটফর্ম (GCP) (Google Cloud Platform (GCP))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-11",
+     "title": "ইনফ্রাস্ট্রাকচার অ্যাজ কোড (Terraform) (Infrastructure as Code (Terraform))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-12",
+     "title": "কনফিগারেশন ম্যানেজমেন্ট (Ansible) (Configuration Management (Ansible))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-13",
+     "title": "আইডেন্টিটি ও অ্যাক্সেস ম্যানেজমেন্ট (Identity & Access Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-3-14",
+     "title": "ব্যাকএন্ড ডেভেলপমেন্ট ও API (Backend Development & APIs)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cloud-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "cloud-4-1",
+     "title": "ক্লাউড আর্কিটেকচার ও ডিজাইন প্যাটার্ন (Cloud Architecture & Design Patterns)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-2",
+     "title": "ক্লাউড-নেটিভ অ্যাপ্লিকেশন ও মাইক্রোসার্ভিস (Cloud-Native Applications & Microservices)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-3",
+     "title": "সার্ভারলেস কম্পিউটিং (Serverless Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-4",
+     "title": "DevOps ও CI/CD (DevOps & CI/CD)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-5",
+     "title": "মনিটরিং, লগিং ও অবজারভেবিলিটি (Monitoring, Logging & Observability)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-6",
+     "title": "ক্লাউড সিকিউরিটি (Cloud Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-7",
+     "title": "হাই অ্যাভেইলেবিলিটি ও ডিজাস্টার রিকভারি (High Availability & Disaster Recovery)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-8",
+     "title": "স্কেলেবিলিটি ও পারফরম্যান্স ইঞ্জিনিয়ারিং (Scalability & Performance Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-9",
+     "title": "ক্লাউড খরচ ম্যানেজমেন্ট (FinOps) (Cloud Cost Management (FinOps))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-10",
+     "title": "ক্লাউড মাইগ্রেশন (Cloud Migration)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-11",
+     "title": "হাইব্রিড ও মাল্টি-ক্লাউড (Hybrid & Multi-Cloud)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-12",
+     "title": "এজ ও ফগ কম্পিউটিং (Edge & Fog Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-13",
+     "title": "ক্লাউডে বিগ ডেটা (Big Data in the Cloud)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-14",
+     "title": "ক্লাউডে মেশিন লার্নিং (Machine Learning in the Cloud)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-15",
+     "title": "ক্লাউড গভর্নেন্স, কমপ্লায়েন্স ও আইন (Cloud Governance, Compliance & Law)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-4-16",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / ক্যাপস্টোন (Final Year Project / Capstone)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "cloud-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "cloud-5-1",
+     "title": "অ্যাডভান্সড ডিস্ট্রিবিউটেড সিস্টেম (Advanced Distributed Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-2",
+     "title": "অ্যাডভান্সড ক্লাউড আর্কিটেকচার (Advanced Cloud Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-3",
+     "title": "ডেটাসেন্টার ডিজাইন ও অপারেশনস (Datacenter Design & Operations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-4",
+     "title": "সফটওয়্যার-ডিফাইনড নেটওয়ার্কিং (Software-Defined Networking)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-5",
+     "title": "সাইট রিলায়েবিলিটি ইঞ্জিনিয়ারিং (Site Reliability Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-6",
+     "title": "প্ল্যাটফর্ম ইঞ্জিনিয়ারিং (Platform Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-7",
+     "title": "অ্যাডভান্সড Kubernetes ও সার্ভিস মেশ (Advanced Kubernetes & Service Mesh)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-8",
+     "title": "ক্লাউড রিসোর্স শিডিউলিং ও অটোস্কেলিং (Cloud Resource Scheduling & Autoscaling)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-9",
+     "title": "অ্যাডভান্সড ক্লাউড সিকিউরিটি ও জিরো ট্রাস্ট (Advanced Cloud Security & Zero Trust)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-10",
+     "title": "প্যারালাল ও হাই পারফরম্যান্স কম্পিউটিং (Parallel & High Performance Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-11",
+     "title": "AI-এর জন্য ক্লাউড ইনফ্রাস্ট্রাকচার (GPU ক্লাস্টার) (Cloud Infrastructure for AI (GPU Clusters))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-12",
+     "title": "গ্রিন ও সাসটেইনেবল ক্লাউড কম্পিউটিং (Green & Sustainable Cloud Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-13",
+     "title": "ক্লাউড ইকোনমিক্স (Cloud Economics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-14",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "cloud-5-15",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

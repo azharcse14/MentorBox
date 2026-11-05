@@ -1,0 +1,414 @@
+{
+ "id": "hci",
+ "name": "HCI & UX Design",
+ "mentor": "UX Mentor",
+ "tagline": "Every BSc and MSc HCI & UX Design course, from your first sketch to the MSc thesis.",
+ "description": "The full HCI & UX Design degree, grouped by year: design basics, psychology, user research, interaction design, prototyping, accessibility and new interfaces.",
+ "messages": {
+  "welcome": "Hi! This is the whole HCI & UX Design degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole HCI & UX Design degree. Now go design something people love!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#C2185B",
+ "levels": [
+  {
+   "id": "hci-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "hci-1-1",
+     "title": "Introduction to HCI & UX Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-3",
+     "title": "Design Fundamentals (Color, Type & Layout)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-4",
+     "title": "Sketching for Designers",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-5",
+     "title": "Introduction to Psychology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-6",
+     "title": "Discrete Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-7",
+     "title": "Introduction to Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-8",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-9",
+     "title": "Visual Communication",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "hci-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-3",
+     "title": "Web Development (HTML, CSS & JavaScript)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-4",
+     "title": "Cognitive Psychology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-5",
+     "title": "User Research Methods",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-6",
+     "title": "Interaction Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-7",
+     "title": "Information Architecture",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-8",
+     "title": "Typography",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-9",
+     "title": "Graphic Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-10",
+     "title": "Wireframing & Prototyping (Figma)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-11",
+     "title": "Design Thinking",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-12",
+     "title": "Database Systems",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "hci-3-1",
+     "title": "Usability Testing & Evaluation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-2",
+     "title": "UI Design & Design Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-3",
+     "title": "Mobile UX Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-4",
+     "title": "Accessibility & Inclusive Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-5",
+     "title": "Frontend Development (React)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-6",
+     "title": "Motion & Animation Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-7",
+     "title": "Data Visualization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-8",
+     "title": "Design of Experiments & A/B Testing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-9",
+     "title": "Quantitative UX Research",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-10",
+     "title": "UX Writing & Content Strategy",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-11",
+     "title": "Service Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-12",
+     "title": "Human Factors & Ergonomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-13",
+     "title": "Social Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-14",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "hci-4-1",
+     "title": "Conversational & Voice Interfaces",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-2",
+     "title": "AR, VR & Spatial Interfaces",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-3",
+     "title": "Game UX",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-4",
+     "title": "Designing for AI",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-5",
+     "title": "Wearables & Ubiquitous Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-6",
+     "title": "Product Design & Strategy",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-7",
+     "title": "Behavioral Design & Ethics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-8",
+     "title": "Cross-Cultural Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-9",
+     "title": "Design Leadership & Critique",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-10",
+     "title": "Design Operations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-11",
+     "title": "Portfolio Development",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-12",
+     "title": "UX Professional Practice",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-13",
+     "title": "Final Year Project / Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "hci-5-1",
+     "title": "Advanced HCI Theory",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-2",
+     "title": "Advanced User Research",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-3",
+     "title": "Computational Interaction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-4",
+     "title": "Human-AI Interaction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-5",
+     "title": "Brain-Computer Interfaces",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-6",
+     "title": "Tangible & Embodied Interaction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-7",
+     "title": "Advanced Information Visualization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-8",
+     "title": "Computer-Supported Cooperative Work (CSCW)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-9",
+     "title": "Accessibility Research",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-10",
+     "title": "Eye Tracking & Physiological Measurement",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-11",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-12",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

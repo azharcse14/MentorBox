@@ -1,28 +1,28 @@
-# Course: Numerical Methods  (level id "deep-cse-3-4", lesson ids "deep-cse-3-4-01".."-26")
-Builds on Calculus (deep-cse-1-4), Linear Algebra (deep-cse-2-5) and Math III (deep-cse-2-7): derivatives, Taylor series, integrals, Ax = b, matrices and determinants are assumed, only recapped briefly.
-01 What numerical methods are: analytic vs numerical answers, approximation and iteration, convergence and stopping, algorithm thinking, brief recap of the calculus and linear algebra we use, course map
-02 Errors I: true and approximate values, absolute, relative and percentage error, significant digits, rounding vs chopping, sources of error (data, modelling, truncation, round-off, blunders), approximate relative error between iterations
-03 Errors II: error propagation in sums, differences, products and quotients, general error formula with derivatives, Taylor series and truncation error, order of error O(h^n), well and ill conditioned problems, stability (intro)
-04 Floating point arithmetic: binary fractions, normalized floating point, IEEE 754 single and double (sign, exponent, mantissa, bias), machine epsilon, 0.1 + 0.2, overflow and underflow, loss of significance, catastrophic cancellation, stable quadratic formula
-05 Root finding and the bisection method: f(x) = 0, intermediate value theorem, bracketing vs open methods, finding a starting interval by tabulation, bisection algorithm, worked example, iteration count formula, linear convergence, stopping criteria
-06 False position (regula falsi): chord idea and formula, worked example, comparison with bisection, one-sided (stuck endpoint) behaviour, Illinois modification idea
-07 Newton-Raphson method: tangent derivation, Taylor derivation, worked examples, square root and reciprocal by Newton, quadratic convergence, failure cases (zero derivative, cycling, bad start), multiple roots
-08 Secant method: replacing the derivative with a chord, formula, worked example, order about 1.618, comparison with Newton and false position
-09 Fixed-point iteration: rewriting f(x) = 0 as x = g(x), convergence condition |g'(x)| < 1, worked examples (good and bad g), cobweb picture, order of convergence definition, comparison table of all root methods
-10 Polynomials and nonlinear systems: Horner's method (nested multiplication, synthetic division), Newton on polynomials with Horner, deflation, Newton's method for two nonlinear equations with the Jacobian
-11 Gauss elimination: Ax = b recap, forward elimination with multipliers, back substitution, full 3x3 worked example, operation count about n^3/3, when it breaks (zero pivot)
-12 Pivoting, Gauss-Jordan and conditioning: tiny pivot example, partial pivoting, scaled partial pivoting idea, Gauss-Jordan to reduced form, matrix inverse by Gauss-Jordan, ill-conditioned systems, condition number idea, residual check
-13 LU decomposition: A = LU, Doolittle and Crout, worked 3x3 factorization, forward and back substitution, why LU pays off for many right-hand sides, determinant from LU, Cholesky for symmetric positive definite (intro)
-14 Jacobi iteration: idea of iterative solving, rearranging equations, worked example, diagonal dominance as a convergence test, stopping criteria, sparse systems
-15 Gauss-Seidel and SOR: using new values immediately, worked example and comparison with Jacobi, convergence condition, successive over-relaxation idea, direct vs iterative methods
-16 Finite differences: equally spaced tables, forward, backward and central differences, difference tables, operators delta, nabla, E and their relations, differences of polynomials, spotting an error in a table
-17 Newton forward and backward interpolation: interpolation idea, the p = (x - x0)/h variable, forward formula, backward formula, worked examples, which formula to choose, extrapolation warning
-18 Divided differences and Lagrange interpolation: unequal spacing, divided difference table, Newton's divided difference formula, Lagrange basis polynomials and formula, worked examples, inverse interpolation, comparison
-19 Interpolation error and splines: interpolation error term, uniqueness of the interpolating polynomial, Runge phenomenon, piecewise linear interpolation, cubic splines idea (smooth joins, natural spline)
-20 Least squares line fitting: interpolation vs fitting, residuals, sum of squared errors, normal equations for y = a + bx, worked example, goodness of fit (sum of squares), link to linear algebra least squares
-21 Nonlinear and polynomial curve fitting: fitting a parabola (3 normal equations), linearising y = a e^(bx) and y = a x^b with logarithms, worked example, choosing a model, overfitting warning
-22 Numerical differentiation: derivatives from difference formulas, forward, backward and central differences with error order, second derivative formula, derivatives from interpolation tables, step size trade-off with round-off, Richardson extrapolation
-23 Numerical integration I, trapezoidal rule: Newton-Cotes idea, single trapezoid, composite trapezoidal rule, worked example, error term O(h^2), integrating tabulated data
-24 Numerical integration II, Simpson's rules: Simpson's 1/3 rule (even number of strips), 3/8 rule, worked examples, error O(h^4), comparison with trapezoidal, Romberg integration idea, Gaussian quadrature (2-point) idea
-25 ODEs I, Euler and Taylor methods: initial value problems, direction fields, Euler's method, worked example, local and global error, Taylor series method, modified Euler (Heun) as predictor-corrector
-26 ODEs II, Runge-Kutta and wrap-up: RK2 and classical RK4 formulas, worked RK4 step, accuracy vs step size, systems and higher-order ODEs, predictor-corrector and stiffness (idea), course recap and what next
+# Course: Numerical Methods  (level id "deep-cse-3-4", lesson ids "deep-cse-3-4-01".."-25")
+Builds on Calculus (deep-cse-1-4: derivatives, integrals, Taylor series, ODEs) and Linear Algebra (deep-cse-2-5: matrices,
+elimination by hand). Those are only recapped; here the focus is how a computer gets approximate answers, step by step, and how wrong they are.
+01 Why numerical methods exist: problems with no formula (x = cos x, integral of e^(-x^2)), exact vs approximate, iterate-and-improve idea, history (Babylonian sqrt, log tables), course map
+02 Errors I: true value vs approximation, absolute/relative/percentage error, significant digits, accurate vs precise, sources of error (data, model, round-off, truncation, blunders)
+03 Errors II: Taylor series as the engine of methods, truncation error and the remainder term, big-O of step size h, error propagation through + - x /, loss of significance (subtracting near-equal numbers) and rewriting formulas
+04 Floating point: binary fractions, IEEE 754 single/double layout (sign, exponent, mantissa), machine epsilon, why 0.1+0.2 != 0.3, overflow/underflow, never compare floats with ==
+05 Root finding basics + bisection: what a root is, sign change and intermediate value theorem, bracketing, bisection algorithm worked, number of iterations formula, stopping criteria
+06 False position (regula falsi): secant line through bracket ends, formula, worked example, comparison with bisection, one-sided stagnation, Illinois fix idea
+07 Newton-Raphson: tangent line idea, derivation from Taylor, worked sqrt and cube examples, quadratic convergence (digits double), failure cases (f'=0, cycling, bad start)
+08 Secant method: replacing the derivative with a difference, formula, worked example, order about 1.618, secant vs false position vs Newton
+09 Fixed-point iteration: rewriting f(x)=0 as x=g(x), cobweb picture, convergence condition |g'(x)|<1, good vs bad rearrangements, rate of convergence and order comparison table
+10 Roots of polynomials and systems: Horner's method, deflation, multiple roots slow Newton down, Newton for two equations (Jacobian) idea
+11 Linear systems + Gauss elimination: Ax=b, why not Cramer/inverse, forward elimination, back substitution, worked 3x3, operation count about (2/3)n^3
+12 Pivoting and ill-conditioning: zero/tiny pivot problem, partial pivoting worked, scaling, condition number idea, residual vs error
+13 Gauss-Jordan and matrix inverse: reduced form, inverse by [A|I], when inverse is actually needed, cost comparison
+14 LU decomposition: A=LU, Doolittle worked 3x3, solve Ly=b then Ux=y, reuse for many b, Crout and Cholesky mention, determinant from LU
+15 Iterative methods: Gauss-Jacobi and Gauss-Seidel, worked iterations, diagonal dominance for convergence, Seidel usually faster, when iterative beats direct (large sparse)
+16 Finite differences: forward, backward, central difference operators, difference table, error spotting in tables, shift operator E idea
+17 Newton forward and backward interpolation: equal spacing, p = (x-x0)/h, worked examples, which to use where
+18 Unequal spacing: Lagrange interpolation and Newton divided differences, worked examples, uniqueness of the interpolating polynomial, inverse interpolation idea
+19 Interpolation error and splines: error term, Runge phenomenon, piecewise linear, cubic spline idea (smooth joins), natural spline
+20 Curve fitting by least squares: interpolation vs fitting, residuals, normal equations for a straight line worked, parabola, exponential fit via logs, r^2 idea
+21 Numerical differentiation: derivatives from difference formulas, forward/central errors O(h) vs O(h^2), second derivative, step size trade-off (truncation vs round-off), Richardson idea
+22 Numerical integration: trapezoidal rule and Simpson's 1/3 rule, composite forms, worked integral, error orders, Simpson's 3/8 mention
+23 More integration: Romberg idea, Gaussian quadrature 2-point worked, when to use what
+24 ODEs I: initial value problems, Euler's method worked, local vs global error, modified Euler (Heun) worked
+25 ODEs II + wrap-up: Runge-Kutta 4th order worked, comparison table, stability and step size, stiff equations idea, convergence vs stability vs accuracy, course recap and what next

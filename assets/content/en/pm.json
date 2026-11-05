@@ -1,0 +1,408 @@
+{
+ "id": "pm",
+ "name": "Product Management",
+ "mentor": "Product Mentor",
+ "tagline": "Every BSc and MSc Product Management course, from your first product idea to the MSc thesis.",
+ "description": "The full Product Management degree, grouped by year: business, tech, design, user research, product strategy, analytics, growth and product leadership.",
+ "messages": {
+  "welcome": "Hi! This is the whole Product Management degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Product Management degree. Now go ship a product people need!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#7B5E3B",
+ "levels": [
+  {
+   "id": "pm-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "pm-1-1",
+     "title": "Introduction to Product Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-3",
+     "title": "Principles of Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-4",
+     "title": "Microeconomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-5",
+     "title": "Introduction to Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-6",
+     "title": "Business Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-7",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-8",
+     "title": "Design Fundamentals (Color, Type & Layout)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-9",
+     "title": "Introduction to Psychology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-10",
+     "title": "Business Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "pm-2-1",
+     "title": "Web Development",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-2",
+     "title": "Database Systems & SQL",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-3",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-4",
+     "title": "Principles of Marketing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-5",
+     "title": "Principles of Accounting",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-6",
+     "title": "Macroeconomics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-7",
+     "title": "Organizational Behavior",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-8",
+     "title": "Design Thinking",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-9",
+     "title": "User Research Methods",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-10",
+     "title": "UI & UX Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-11",
+     "title": "Spreadsheet Modeling (Excel)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-12",
+     "title": "Business Law",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "pm-3-1",
+     "title": "Product Discovery",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-2",
+     "title": "Product Strategy & Vision",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-3",
+     "title": "Roadmapping & Prioritization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-4",
+     "title": "Agile Methods & Scrum",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-5",
+     "title": "Writing Requirements (PRDs & User Stories)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-6",
+     "title": "Product Analytics & Metrics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-7",
+     "title": "Design of Experiments & A/B Testing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-8",
+     "title": "Pricing & Monetization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-9",
+     "title": "Go-to-Market Strategy",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-10",
+     "title": "Growth & Retention",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-11",
+     "title": "Technical Foundations for PMs (APIs, Cloud & Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-12",
+     "title": "Stakeholder Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-13",
+     "title": "Customer Success & Support",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-14",
+     "title": "Financial Management",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "pm-4-1",
+     "title": "Platform & API Products",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-2",
+     "title": "B2B & SaaS Product Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-3",
+     "title": "Mobile Product Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-4",
+     "title": "AI & Data Products",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-5",
+     "title": "Hardware Products",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-6",
+     "title": "Product Marketing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-7",
+     "title": "Market Research & Competitive Analysis",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-8",
+     "title": "Product Operations",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-9",
+     "title": "Negotiation & Influence",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-10",
+     "title": "Product Leadership",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-11",
+     "title": "Entrepreneurship",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-12",
+     "title": "Product Ethics & Responsible Tech",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-13",
+     "title": "Final Year Project / Capstone",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "pm-5-1",
+     "title": "Advanced Product Strategy",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-2",
+     "title": "Innovation Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-3",
+     "title": "Business Model Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-4",
+     "title": "Behavioral Economics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-5",
+     "title": "Advanced Product Analytics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-6",
+     "title": "Product Portfolio Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-7",
+     "title": "Product Management for AI",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-8",
+     "title": "Organizational Design & Scaling",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-9",
+     "title": "Corporate Finance for PMs",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-10",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-11",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

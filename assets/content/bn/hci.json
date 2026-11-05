@@ -1,0 +1,414 @@
+{
+ "id": "hci",
+ "name": "HCI ও UX ডিজাইন",
+ "mentor": "ইউএক্স মেন্টর",
+ "tagline": "BSc আর MSc HCI ও UX ডিজাইন-এর সব কোর্স, প্রথম স্কেচ থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো HCI ও UX ডিজাইন ডিগ্রি, বছর ধরে সাজানো: ডিজাইনের বেসিক, সাইকোলজি, ইউজার রিসার্চ, ইন্টারঅ্যাকশন ডিজাইন, প্রোটোটাইপিং, অ্যাক্সেসিবিলিটি আর নতুন ইন্টারফেস।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো HCI ও UX ডিজাইন ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো HCI ও UX ডিজাইন ডিগ্রি ঘুরে আসলা। এবার এমন কিছু ডিজাইন করো যেটা মানুষ ভালোবাসবে!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#C2185B",
+ "levels": [
+  {
+   "id": "hci-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "hci-1-1",
+     "title": "HCI ও UX ডিজাইনের পরিচিতি (Introduction to HCI & UX Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-3",
+     "title": "ডিজাইন ফান্ডামেন্টালস (কালার, টাইপ ও লেআউট) (Design Fundamentals (Color, Type & Layout))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-4",
+     "title": "ডিজাইনারদের জন্য স্কেচিং (Sketching for Designers)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-5",
+     "title": "সাইকোলজির পরিচিতি (Introduction to Psychology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-6",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-7",
+     "title": "স্ট্যাটিস্টিকসের পরিচিতি (Introduction to Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-8",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-9",
+     "title": "ভিজুয়াল কমিউনিকেশন (Visual Communication)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "hci-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-3",
+     "title": "ওয়েব ডেভেলপমেন্ট (HTML, CSS ও JavaScript) (Web Development (HTML, CSS & JavaScript))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-4",
+     "title": "কগনিটিভ সাইকোলজি (Cognitive Psychology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-5",
+     "title": "ইউজার রিসার্চ মেথডস (User Research Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-6",
+     "title": "ইন্টারঅ্যাকশন ডিজাইন (Interaction Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-7",
+     "title": "ইনফরমেশন আর্কিটেকচার (Information Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-8",
+     "title": "টাইপোগ্রাফি (Typography)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-9",
+     "title": "গ্রাফিক ডিজাইন (Graphic Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-10",
+     "title": "ওয়্যারফ্রেমিং ও প্রোটোটাইপিং (Figma) (Wireframing & Prototyping (Figma))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-11",
+     "title": "ডিজাইন থিংকিং (Design Thinking)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-2-12",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "hci-3-1",
+     "title": "ইউজেবিলিটি টেস্টিং ও ইভ্যালুয়েশন (Usability Testing & Evaluation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-2",
+     "title": "UI ডিজাইন ও ডিজাইন সিস্টেম (UI Design & Design Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-3",
+     "title": "মোবাইল UX ডিজাইন (Mobile UX Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-4",
+     "title": "অ্যাক্সেসিবিলিটি ও ইনক্লুসিভ ডিজাইন (Accessibility & Inclusive Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-5",
+     "title": "ফ্রন্টএন্ড ডেভেলপমেন্ট (React) (Frontend Development (React))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-6",
+     "title": "মোশন ও অ্যানিমেশন ডিজাইন (Motion & Animation Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-7",
+     "title": "ডেটা ভিজুয়ালাইজেশন (Data Visualization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-8",
+     "title": "ডিজাইন অফ এক্সপেরিমেন্টস ও A/B টেস্টিং (Design of Experiments & A/B Testing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-9",
+     "title": "কোয়ান্টিটেটিভ UX রিসার্চ (Quantitative UX Research)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-10",
+     "title": "UX রাইটিং ও কনটেন্ট স্ট্র্যাটেজি (UX Writing & Content Strategy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-11",
+     "title": "সার্ভিস ডিজাইন (Service Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-12",
+     "title": "হিউম্যান ফ্যাক্টর ও এরগোনমিক্স (Human Factors & Ergonomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-13",
+     "title": "সোশ্যাল কম্পিউটিং (Social Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-3-14",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "hci-4-1",
+     "title": "কনভারসেশনাল ও ভয়েস ইন্টারফেস (Conversational & Voice Interfaces)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-2",
+     "title": "AR, VR ও স্প্যাশিয়াল ইন্টারফেস (AR, VR & Spatial Interfaces)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-3",
+     "title": "গেম UX (Game UX)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-4",
+     "title": "AI-এর জন্য ডিজাইন (Designing for AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-5",
+     "title": "ওয়্যারেবল ও ইউবিকুইটাস কম্পিউটিং (Wearables & Ubiquitous Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-6",
+     "title": "প্রোডাক্ট ডিজাইন ও স্ট্র্যাটেজি (Product Design & Strategy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-7",
+     "title": "বিহেভিয়েরাল ডিজাইন ও এথিক্স (Behavioral Design & Ethics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-8",
+     "title": "ক্রস-কালচারাল ডিজাইন (Cross-Cultural Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-9",
+     "title": "ডিজাইন লিডারশিপ ও ক্রিটিক (Design Leadership & Critique)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-10",
+     "title": "ডিজাইন অপারেশনস (Design Operations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-11",
+     "title": "পোর্টফোলিও ডেভেলপমেন্ট (Portfolio Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-12",
+     "title": "UX প্রফেশনাল প্র্যাকটিস (UX Professional Practice)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-4-13",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "hci-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "hci-5-1",
+     "title": "অ্যাডভান্সড HCI থিওরি (Advanced HCI Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-2",
+     "title": "অ্যাডভান্সড ইউজার রিসার্চ (Advanced User Research)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-3",
+     "title": "কম্পিউটেশনাল ইন্টারঅ্যাকশন (Computational Interaction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-4",
+     "title": "হিউম্যান-AI ইন্টারঅ্যাকশন (Human-AI Interaction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-5",
+     "title": "ব্রেইন-কম্পিউটার ইন্টারফেস (Brain-Computer Interfaces)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-6",
+     "title": "ট্যানজিবল ও এমবডিড ইন্টারঅ্যাকশন (Tangible & Embodied Interaction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-7",
+     "title": "অ্যাডভান্সড ইনফরমেশন ভিজুয়ালাইজেশন (Advanced Information Visualization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-8",
+     "title": "কম্পিউটার-সাপোর্টেড কোঅপারেটিভ ওয়ার্ক (CSCW) (Computer-Supported Cooperative Work (CSCW))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-9",
+     "title": "অ্যাক্সেসিবিলিটি রিসার্চ (Accessibility Research)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-10",
+     "title": "আই ট্র্যাকিং ও ফিজিওলজিক্যাল মেজারমেন্ট (Eye Tracking & Physiological Measurement)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-11",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "hci-5-12",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

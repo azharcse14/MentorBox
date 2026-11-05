@@ -1,0 +1,408 @@
+{
+ "id": "pm",
+ "name": "প্রোডাক্ট ম্যানেজমেন্ট",
+ "mentor": "প্রোডাক্ট মেন্টর",
+ "tagline": "BSc আর MSc প্রোডাক্ট ম্যানেজমেন্ট-এর সব কোর্স, প্রথম প্রোডাক্ট আইডিয়া থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো প্রোডাক্ট ম্যানেজমেন্ট ডিগ্রি, বছর ধরে সাজানো: বিজনেস, টেক, ডিজাইন, ইউজার রিসার্চ, প্রোডাক্ট স্ট্র্যাটেজি, অ্যানালিটিক্স, গ্রোথ আর প্রোডাক্ট লিডারশিপ।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো প্রোডাক্ট ম্যানেজমেন্ট ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো প্রোডাক্ট ম্যানেজমেন্ট ডিগ্রি ঘুরে আসলা। এবার এমন একটা প্রোডাক্ট লঞ্চ করো যেটা মানুষের দরকার!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#7B5E3B",
+ "levels": [
+  {
+   "id": "pm-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "pm-1-1",
+     "title": "প্রোডাক্ট ম্যানেজমেন্টের পরিচিতি (Introduction to Product Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-3",
+     "title": "ম্যানেজমেন্টের মূলনীতি (Principles of Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-4",
+     "title": "মাইক্রোইকোনমিক্স (Microeconomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-5",
+     "title": "স্ট্যাটিস্টিকসের পরিচিতি (Introduction to Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-6",
+     "title": "বিজনেস ম্যাথমেটিক্স (Business Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-8",
+     "title": "ডিজাইন ফান্ডামেন্টালস (কালার, টাইপ ও লেআউট) (Design Fundamentals (Color, Type & Layout))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-9",
+     "title": "সাইকোলজির পরিচিতি (Introduction to Psychology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-1-10",
+     "title": "বিজনেস কমিউনিকেশন (Business Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "pm-2-1",
+     "title": "ওয়েব ডেভেলপমেন্ট (Web Development)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-2",
+     "title": "ডেটাবেস সিস্টেম ও SQL (Database Systems & SQL)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-3",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-4",
+     "title": "মার্কেটিংয়ের মূলনীতি (Principles of Marketing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-5",
+     "title": "অ্যাকাউন্টিংয়ের মূলনীতি (Principles of Accounting)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-6",
+     "title": "ম্যাক্রোইকোনমিক্স (Macroeconomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-7",
+     "title": "অর্গানাইজেশনাল বিহেভিয়ার (Organizational Behavior)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-8",
+     "title": "ডিজাইন থিংকিং (Design Thinking)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-9",
+     "title": "ইউজার রিসার্চ মেথডস (User Research Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-10",
+     "title": "UI ও UX ডিজাইন (UI & UX Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-11",
+     "title": "স্প্রেডশিট মডেলিং (Excel) (Spreadsheet Modeling (Excel))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-2-12",
+     "title": "বিজনেস ল (Business Law)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "pm-3-1",
+     "title": "প্রোডাক্ট ডিসকভারি (Product Discovery)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-2",
+     "title": "প্রোডাক্ট স্ট্র্যাটেজি ও ভিশন (Product Strategy & Vision)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-3",
+     "title": "রোডম্যাপিং ও প্রায়োরিটাইজেশন (Roadmapping & Prioritization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-4",
+     "title": "অ্যাজাইল মেথড ও স্ক্রাম (Agile Methods & Scrum)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-5",
+     "title": "রিকোয়ারমেন্ট লেখা (PRD ও ইউজার স্টোরি) (Writing Requirements (PRDs & User Stories))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-6",
+     "title": "প্রোডাক্ট অ্যানালিটিক্স ও মেট্রিক্স (Product Analytics & Metrics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-7",
+     "title": "ডিজাইন অফ এক্সপেরিমেন্টস ও A/B টেস্টিং (Design of Experiments & A/B Testing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-8",
+     "title": "প্রাইসিং ও মনিটাইজেশন (Pricing & Monetization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-9",
+     "title": "গো-টু-মার্কেট স্ট্র্যাটেজি (Go-to-Market Strategy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-10",
+     "title": "গ্রোথ ও রিটেনশন (Growth & Retention)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-11",
+     "title": "PM-দের জন্য টেকনিক্যাল বেসিক (API, ক্লাউড ও আর্কিটেকচার) (Technical Foundations for PMs (APIs, Cloud & Architecture))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-12",
+     "title": "স্টেকহোল্ডার ম্যানেজমেন্ট (Stakeholder Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-13",
+     "title": "কাস্টমার সাকসেস ও সাপোর্ট (Customer Success & Support)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-3-14",
+     "title": "ফিন্যান্সিয়াল ম্যানেজমেন্ট (Financial Management)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "pm-4-1",
+     "title": "প্ল্যাটফর্ম ও API প্রোডাক্ট (Platform & API Products)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-2",
+     "title": "B2B ও SaaS প্রোডাক্ট ম্যানেজমেন্ট (B2B & SaaS Product Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-3",
+     "title": "মোবাইল প্রোডাক্ট ম্যানেজমেন্ট (Mobile Product Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-4",
+     "title": "AI ও ডেটা প্রোডাক্ট (AI & Data Products)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-5",
+     "title": "হার্ডওয়্যার প্রোডাক্ট (Hardware Products)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-6",
+     "title": "প্রোডাক্ট মার্কেটিং (Product Marketing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-7",
+     "title": "মার্কেট রিসার্চ ও কম্পিটিটিভ অ্যানালাইসিস (Market Research & Competitive Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-8",
+     "title": "প্রোডাক্ট অপারেশনস (Product Operations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-9",
+     "title": "নেগোসিয়েশন ও ইনফ্লুয়েন্স (Negotiation & Influence)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-10",
+     "title": "প্রোডাক্ট লিডারশিপ (Product Leadership)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-11",
+     "title": "উদ্যোক্তা হওয়া (Entrepreneurship) (Entrepreneurship)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-12",
+     "title": "প্রোডাক্ট এথিক্স ও দায়িত্বশীল টেক (Product Ethics & Responsible Tech)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-4-13",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / ক্যাপস্টোন (Final Year Project / Capstone)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "pm-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "pm-5-1",
+     "title": "অ্যাডভান্সড প্রোডাক্ট স্ট্র্যাটেজি (Advanced Product Strategy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-2",
+     "title": "ইনোভেশন ম্যানেজমেন্ট (Innovation Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-3",
+     "title": "বিজনেস মডেল ডিজাইন (Business Model Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-4",
+     "title": "বিহেভিয়েরাল ইকোনমিক্স (Behavioral Economics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-5",
+     "title": "অ্যাডভান্সড প্রোডাক্ট অ্যানালিটিক্স (Advanced Product Analytics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-6",
+     "title": "প্রোডাক্ট পোর্টফোলিও ম্যানেজমেন্ট (Product Portfolio Management)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-7",
+     "title": "AI-এর জন্য প্রোডাক্ট ম্যানেজমেন্ট (Product Management for AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-8",
+     "title": "অর্গানাইজেশনাল ডিজাইন ও স্কেলিং (Organizational Design & Scaling)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-9",
+     "title": "PM-দের জন্য কর্পোরেট ফিন্যান্স (Corporate Finance for PMs)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-10",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "pm-5-11",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,444 @@
+{
+ "id": "it",
+ "name": "Information Technology",
+ "mentor": "IT Mentor",
+ "tagline": "Every BSc and MSc IT course, from fixing your first PC to the MSc thesis.",
+ "description": "The full Information Technology degree, grouped by year: programming, hardware, networks, system administration, security, cloud and IT management.",
+ "image": "assets/images/cse.jpg",
+ "color": "#4F6D3A",
+ "messages": {
+  "welcome": "Hi! This is the whole IT degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole IT degree. Now go keep some systems running!"
+ },
+ "levels": [
+  {
+   "id": "it-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "it-1-1",
+     "title": "Introduction to Information Technology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-3",
+     "title": "Structured Programming (C)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-4",
+     "title": "Discrete Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-5",
+     "title": "Calculus",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-6",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-7",
+     "title": "Computer Hardware & Troubleshooting",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-8",
+     "title": "Office Productivity Tools",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-9",
+     "title": "Linux Fundamentals & Command Line",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "it-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "it-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-3",
+     "title": "Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-4",
+     "title": "Linear Algebra",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-5",
+     "title": "Probability & Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-6",
+     "title": "Digital Logic Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-7",
+     "title": "Operating Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-8",
+     "title": "Database Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-9",
+     "title": "Data Communication",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-10",
+     "title": "Computer Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-11",
+     "title": "Web Technologies",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-2-12",
+     "title": "Windows Server Administration",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "it-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "it-3-1",
+     "title": "Linux System Administration",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-2",
+     "title": "Network Administration (Routing & Switching)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-3",
+     "title": "Database Administration",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-4",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-5",
+     "title": "System Analysis & Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-6",
+     "title": "Information Security",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-7",
+     "title": "Wireless & Mobile Communication",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-8",
+     "title": "Web Application Development",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-9",
+     "title": "Mobile Application Development",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-10",
+     "title": "Human Computer Interaction",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-11",
+     "title": "Scripting & Automation (Bash & PowerShell)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-12",
+     "title": "Virtualization",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-13",
+     "title": "Management Information Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-3-14",
+     "title": "Multimedia Systems",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "it-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "it-4-1",
+     "title": "Cloud Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-2",
+     "title": "IT Infrastructure Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-3",
+     "title": "IT Service Management (ITIL)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-4",
+     "title": "IT Project Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-5",
+     "title": "Enterprise Systems & ERP",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-6",
+     "title": "E-Commerce & E-Governance",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-7",
+     "title": "Network Security & Firewalls",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-8",
+     "title": "Data Center Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-9",
+     "title": "Backup, Storage & Disaster Recovery",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-10",
+     "title": "IT Audit & Compliance",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-11",
+     "title": "Internet of Things (IoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-12",
+     "title": "Data Analytics & Business Intelligence",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-13",
+     "title": "DevOps Fundamentals",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-14",
+     "title": "IT Entrepreneurship",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-15",
+     "title": "Cyber Law & Professional Ethics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-4-16",
+     "title": "Final Year Project / Internship",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "it-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "it-5-1",
+     "title": "Advanced Computer Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-2",
+     "title": "Advanced Information Security",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-3",
+     "title": "Enterprise Architecture",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-4",
+     "title": "IT Strategy & Governance",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-5",
+     "title": "Advanced Database Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-6",
+     "title": "Cloud Infrastructure & Services",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-7",
+     "title": "Distributed Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-8",
+     "title": "Software-Defined Networking",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-9",
+     "title": "Big Data Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-10",
+     "title": "Machine Learning for IT Operations (AIOps)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-11",
+     "title": "Digital Transformation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-12",
+     "title": "IT Risk Management",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-13",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "it-5-14",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

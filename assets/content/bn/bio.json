@@ -1,0 +1,426 @@
+{
+ "id": "bio",
+ "name": "বায়োইনফরমেটিক্স ও কম্পিউটেশনাল বায়োলজি",
+ "mentor": "বায়োইনফরমেটিক্স মেন্টর",
+ "tagline": "BSc আর MSc বায়োইনফরমেটিক্স ও কম্পিউটেশনাল বায়োলজি-এর সব কোর্স, প্রথম DNA সিকোয়েন্স থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো বায়োইনফরমেটিক্স ও কম্পিউটেশনাল বায়োলজি ডিগ্রি, বছর ধরে সাজানো: বায়োলজি, কেমিস্ট্রি, প্রোগ্রামিং, স্ট্যাটিস্টিকস, জিনোমিক্স, প্রোটিন স্ট্রাকচার আর কম্পিউটেশনাল ড্রাগ ডিসকভারি।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো বায়োইনফরমেটিক্স ও কম্পিউটেশনাল বায়োলজি ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো বায়োইনফরমেটিক্স ও কম্পিউটেশনাল বায়োলজি ডিগ্রি ঘুরে আসলা। এবার কিছু DNA ডিকোড করে ফেলো!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#3E8E41",
+ "levels": [
+  {
+   "id": "bio-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "bio-1-1",
+     "title": "বায়োইনফরমেটিক্সের পরিচিতি (Introduction to Bioinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-3",
+     "title": "R প্রোগ্রামিং (R Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-4",
+     "title": "জেনারেল বায়োলজি (General Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-5",
+     "title": "সেল বায়োলজি (Cell Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-6",
+     "title": "জেনারেল কেমিস্ট্রি (General Chemistry)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-7",
+     "title": "অর্গানিক কেমিস্ট্রি (Organic Chemistry)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-8",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-9",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "bio-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-5",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-6",
+     "title": "বায়োকেমিস্ট্রি (Biochemistry)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-7",
+     "title": "জেনেটিক্স (Genetics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-8",
+     "title": "মলিকুলার বায়োলজি (Molecular Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-9",
+     "title": "মাইক্রোবায়োলজি (Microbiology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-10",
+     "title": "বায়োস্ট্যাটিস্টিকস (Biostatistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-11",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-2-12",
+     "title": "বায়োলজির জন্য লিনাক্স ও শেল স্ক্রিপ্টিং (Linux & Shell Scripting for Biology)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "bio-3-1",
+     "title": "সিকোয়েন্স অ্যানালাইসিস ও অ্যালাইনমেন্ট (Sequence Analysis & Alignment)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-2",
+     "title": "বায়োইনফরমেটিক্সে অ্যালগরিদম (Algorithms in Bioinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-3",
+     "title": "জিনোমিক্স (Genomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-4",
+     "title": "ট্রান্সক্রিপ্টোমিক্স ও RNA-Seq (Transcriptomics & RNA-Seq)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-5",
+     "title": "প্রোটিওমিক্স (Proteomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-6",
+     "title": "ফাইলোজেনেটিক্স ও মলিকুলার ইভোলিউশন (Phylogenetics & Molecular Evolution)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-7",
+     "title": "স্ট্রাকচারাল বায়োইনফরমেটিক্স (Structural Bioinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-8",
+     "title": "বায়োলজিক্যাল ডেটাবেস (Biological Databases)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-9",
+     "title": "নেক্সট-জেনারেশন সিকোয়েন্সিং ডেটা অ্যানালাইসিস (Next-Generation Sequencing Data Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-10",
+     "title": "সিস্টেমস বায়োলজি (Systems Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-11",
+     "title": "পপুলেশন জেনেটিক্স (Population Genetics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-12",
+     "title": "মেশিন লার্নিং (Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-13",
+     "title": "বায়োলজির জন্য ডেটা ভিজুয়ালাইজেশন (Data Visualization for Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-3-14",
+     "title": "সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "bio-4-1",
+     "title": "কম্পিউটেশনাল ড্রাগ ডিসকভারি (Computational Drug Discovery)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-2",
+     "title": "মলিকুলার মডেলিং ও সিমুলেশন (Molecular Modeling & Simulation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-3",
+     "title": "মেটাজিনোমিক্স ও মাইক্রোবায়োম (Metagenomics & Microbiome)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-4",
+     "title": "এপিজিনোমিক্স (Epigenomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-5",
+     "title": "সিঙ্গেল-সেল অ্যানালাইসিস (Single-Cell Analysis)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-6",
+     "title": "ক্যান্সার জিনোমিক্স (Cancer Genomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-7",
+     "title": "ইমিউনোইনফরমেটিক্স (Immunoinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-8",
+     "title": "ম্যাথমেটিক্যাল বায়োলজি (Mathematical Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-9",
+     "title": "নেটওয়ার্ক বায়োলজি (Network Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-10",
+     "title": "বায়োলজির জন্য ডিপ লার্নিং (Deep Learning for Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-11",
+     "title": "প্রিসিশন মেডিসিন ও ক্লিনিক্যাল বায়োইনফরমেটিক্স (Precision Medicine & Clinical Bioinformatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-12",
+     "title": "বায়োইনফরমেটিক্স পাইপলাইন ও ওয়ার্কফ্লো (Bioinformatics Pipelines & Workflows)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-13",
+     "title": "জিনোমিক্সের জন্য ক্লাউড ও HPC (Cloud & HPC for Genomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-14",
+     "title": "বায়োএথিক্স ও জেনেটিক ডেটা প্রাইভেসি (Bioethics & Genetic Data Privacy)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-4-15",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "bio-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "bio-5-1",
+     "title": "অ্যাডভান্সড জিনোমিক্স (Advanced Genomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-2",
+     "title": "প্রোটিন স্ট্রাকচার প্রেডিকশন (Protein Structure Prediction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-3",
+     "title": "কম্পিউটেশনাল নিউরোসায়েন্স (Computational Neuroscience)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-4",
+     "title": "স্ট্যাটিস্টিক্যাল জেনেটিক্স ও GWAS (Statistical Genetics & GWAS)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-5",
+     "title": "মাল্টি-ওমিক্স ইন্টিগ্রেশন (Multi-Omics Integration)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-6",
+     "title": "বায়োলজির জন্য অ্যাডভান্সড মেশিন লার্নিং (Advanced Machine Learning for Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-7",
+     "title": "সিন্থেটিক বায়োলজি (Synthetic Biology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-8",
+     "title": "ইভোলিউশনারি জিনোমিক্স (Evolutionary Genomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-9",
+     "title": "ফার্মাকোজিনোমিক্স (Pharmacogenomics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-10",
+     "title": "বায়োমেডিক্যাল টেক্সট মাইনিং (Biomedical Text Mining)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-11",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "bio-5-12",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

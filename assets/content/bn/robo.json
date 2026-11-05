@@ -1,0 +1,432 @@
+{
+ "id": "robo",
+ "name": "রোবোটিক্স ও মেকাট্রনিক্স",
+ "mentor": "রোবোটিক্স মেন্টর",
+ "tagline": "BSc আর MSc রোবোটিক্স ও মেকাট্রনিক্স-এর সব কোর্স, প্রথম সার্কিট থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো রোবোটিক্স ও মেকাট্রনিক্স ডিগ্রি, বছর ধরে সাজানো: প্রোগ্রামিং, ইলেকট্রনিক্স, মেকানিক্স, কন্ট্রোল সিস্টেম, সেন্সর, ROS আর অটোনোমাস রোবট।",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো রোবোটিক্স ও মেকাট্রনিক্স ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো রোবোটিক্স ও মেকাট্রনিক্স ডিগ্রি ঘুরে আসলা। এবার একটা রোবট বানায় ফেলো!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#A0522D",
+ "levels": [
+  {
+   "id": "robo-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "robo-1-1",
+     "title": "রোবোটিক্স ও মেকাট্রনিক্সের পরিচিতি (Introduction to Robotics & Mechatronics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-4",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-5",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-6",
+     "title": "ফিজিক্স: মেকানিক্স (Physics: Mechanics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-7",
+     "title": "ইঞ্জিনিয়ারিং ড্রয়িং ও CAD (Engineering Drawing & CAD)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-8",
+     "title": "ইলেকট্রিক্যাল সার্কিট (Electrical Circuits)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-9",
+     "title": "ওয়ার্কশপ প্র্যাকটিস (Workshop Practice)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-1-10",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "robo-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-2",
+     "title": "ডেটা স্ট্রাকচার ও অ্যালগরিদম (Data Structures & Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-3",
+     "title": "ডিফারেনশিয়াল ইকুয়েশন (Differential Equations)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-5",
+     "title": "ইলেকট্রনিক ডিভাইস ও সার্কিট (Electronic Devices & Circuits)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-6",
+     "title": "ডিজিটাল লজিক ডিজাইন (Digital Logic Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-7",
+     "title": "ইঞ্জিনিয়ারিং মেকানিক্স (স্ট্যাটিক্স ও ডাইনামিক্স) (Engineering Mechanics (Statics & Dynamics))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-8",
+     "title": "স্ট্রেংথ অফ ম্যাটেরিয়ালস (Strength of Materials)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-9",
+     "title": "থার্মোডাইনামিক্স (Thermodynamics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-10",
+     "title": "মাইক্রোকন্ট্রোলার (Arduino ও ARM) (Microcontrollers (Arduino & ARM))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-11",
+     "title": "সিগন্যালস ও সিস্টেমস (Signals & Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-2-12",
+     "title": "লিনাক্স ফান্ডামেন্টালস ও কমান্ড লাইন (Linux Fundamentals & Command Line)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "robo-3-1",
+     "title": "রোবট কাইনেমেটিক্স (Robot Kinematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-2",
+     "title": "রোবট ডাইনামিক্স (Robot Dynamics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-3",
+     "title": "কন্ট্রোল সিস্টেম (Control Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-4",
+     "title": "সেন্সর ও অ্যাকচুয়েটর (Sensors & Actuators)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-5",
+     "title": "ইলেকট্রিক মোটর ও ড্রাইভ (Electric Motors & Drives)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-6",
+     "title": "পাওয়ার ইলেকট্রনিক্স (Power Electronics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-7",
+     "title": "এমবেডেড সিস্টেম (Embedded Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-8",
+     "title": "মেশিন ডিজাইন (Machine Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-9",
+     "title": "হাইড্রলিক্স ও নিউমেটিক্স (Hydraulics & Pneumatics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-10",
+     "title": "ম্যানুফ্যাকচারিং প্রসেস ও CNC (Manufacturing Processes & CNC)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-11",
+     "title": "রোবট অপারেটিং সিস্টেম (ROS) (Robot Operating System (ROS))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-12",
+     "title": "রোবোটিক্সের জন্য কম্পিউটার ভিশন (Computer Vision for Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-13",
+     "title": "ডিজিটাল সিগন্যাল প্রসেসিং (Digital Signal Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-3-14",
+     "title": "মেশিন লার্নিং (Machine Learning)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "robo-4-1",
+     "title": "মোবাইল রোবোটিক্স (Mobile Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-2",
+     "title": "রোবট মোশন প্ল্যানিং (Robot Motion Planning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-3",
+     "title": "SLAM ও রোবট লোকালাইজেশন (SLAM & Robot Localization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-4",
+     "title": "ইন্ডাস্ট্রিয়াল রোবোটিক্স ও অটোমেশন (Industrial Robotics & Automation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-5",
+     "title": "PLC ও SCADA (PLC & SCADA)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-6",
+     "title": "অটোনোমাস ভেহিকল ও ড্রোন (Autonomous Vehicles & Drones)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-7",
+     "title": "হিউম্যান-রোবট ইন্টারঅ্যাকশন (Human-Robot Interaction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-8",
+     "title": "সফট রোবোটিক্স (Soft Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-9",
+     "title": "মেডিক্যাল ও অ্যাসিস্টিভ রোবোটিক্স (Medical & Assistive Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-10",
+     "title": "রোবট লার্নিং ও রিইনফোর্সমেন্ট লার্নিং (Robot Learning & Reinforcement Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-11",
+     "title": "রিয়েল-টাইম সিস্টেম (Real-Time Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-12",
+     "title": "মেকাট্রনিক সিস্টেম ডিজাইন (Mechatronic System Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-13",
+     "title": "3D প্রিন্টিং ও র‍্যাপিড প্রোটোটাইপিং (3D Printing & Rapid Prototyping)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-14",
+     "title": "রোবোটিক্সে সেফটি ও এথিক্স (Safety & Ethics in Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-4-15",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "robo-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "robo-5-1",
+     "title": "অ্যাডভান্সড রোবট কাইনেমেটিক্স ও ডাইনামিক্স (Advanced Robot Kinematics & Dynamics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-2",
+     "title": "ননলিনিয়ার ও রোবাস্ট কন্ট্রোল (Nonlinear & Robust Control)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-3",
+     "title": "অপটিমাল কন্ট্রোল (Optimal Control)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-4",
+     "title": "অ্যাডভান্সড রোবট পারসেপশন (Advanced Robot Perception)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-5",
+     "title": "প্রোবাবিলিস্টিক রোবোটিক্স (Probabilistic Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-6",
+     "title": "মাল্টি-রোবট ও সোয়ার্ম রোবোটিক্স (Multi-Robot & Swarm Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-7",
+     "title": "পা-ওয়ালা ও হিউম্যানয়েড রোবট (Legged & Humanoid Robots)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-8",
+     "title": "রোবট ম্যানিপুলেশন ও গ্র্যাস্পিং (Robot Manipulation & Grasping)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-9",
+     "title": "রোবোটিক্সের জন্য ডিপ লার্নিং (Deep Learning for Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-10",
+     "title": "মাইক্রো ও ন্যানো রোবোটিক্স (Micro & Nano Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-11",
+     "title": "স্পেস ও আন্ডারওয়াটার রোবোটিক্স (Space & Underwater Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-12",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "robo-5-13",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

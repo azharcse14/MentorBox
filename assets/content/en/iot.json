@@ -1,0 +1,420 @@
+{
+ "id": "iot",
+ "name": "Internet of Things",
+ "mentor": "IoT Mentor",
+ "tagline": "Every BSc and MSc Internet of Things course, from your first blinking LED to the MSc thesis.",
+ "description": "The full Internet of Things degree, grouped by year: electronics, microcontrollers, embedded systems, wireless networks, cloud and smart devices.",
+ "messages": {
+  "welcome": "Hi! This is the whole Internet of Things degree, one course at a time.",
+  "comeback": "Your next course is waiting. Just open it.",
+  "pass": "Nice! One more course done.",
+  "fail": "No problem. Look at it again and try once more.",
+  "finished": "You went through the whole Internet of Things degree. Now go make something smart!"
+ },
+ "image": "assets/images/cse.jpg",
+ "color": "#2A7F7F",
+ "levels": [
+  {
+   "id": "iot-1",
+   "title": "BSc 1st Year",
+   "lessons": [
+    {
+     "id": "iot-1-1",
+     "title": "Introduction to the Internet of Things",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-2",
+     "title": "Programming Fundamentals (Python)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-3",
+     "title": "Structured Programming (C)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-4",
+     "title": "Discrete Mathematics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-5",
+     "title": "Calculus",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-6",
+     "title": "Introduction to Computer Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-7",
+     "title": "Electrical Circuits",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-8",
+     "title": "Basic Electronics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-9",
+     "title": "Linux Fundamentals & Command Line",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-1-10",
+     "title": "Technical Communication",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-2",
+   "title": "BSc 2nd Year",
+   "lessons": [
+    {
+     "id": "iot-2-1",
+     "title": "Object Oriented Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-2",
+     "title": "Data Structures",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-3",
+     "title": "Algorithms",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-4",
+     "title": "Probability & Statistics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-5",
+     "title": "Digital Logic Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-6",
+     "title": "Microcontrollers (Arduino & ESP32)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-7",
+     "title": "Operating Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-8",
+     "title": "Computer Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-9",
+     "title": "Data Communication",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-10",
+     "title": "Database Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-11",
+     "title": "Web Technologies",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-2-12",
+     "title": "Signals & Systems",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-3",
+   "title": "BSc 3rd Year",
+   "lessons": [
+    {
+     "id": "iot-3-1",
+     "title": "Embedded Systems Programming",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-2",
+     "title": "Sensors & Actuators",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-3",
+     "title": "Wireless Communication",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-4",
+     "title": "IoT Protocols (MQTT, CoAP, HTTP)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-5",
+     "title": "Low-Power Networks (LoRa, Zigbee, BLE)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-6",
+     "title": "Real-Time Operating Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-7",
+     "title": "PCB Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-8",
+     "title": "Single-Board Computers (Raspberry Pi)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-9",
+     "title": "Cloud Computing for IoT",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-10",
+     "title": "IoT Data Analytics",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-11",
+     "title": "Mobile App Development for IoT",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-12",
+     "title": "Software Engineering",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-13",
+     "title": "Edge Computing",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-3-14",
+     "title": "Digital Signal Processing",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-4",
+   "title": "BSc 4th Year",
+   "lessons": [
+    {
+     "id": "iot-4-1",
+     "title": "IoT Security",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-2",
+     "title": "Wireless Sensor Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-3",
+     "title": "Industrial IoT (IIoT)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-4",
+     "title": "Smart Home & Building Automation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-5",
+     "title": "Smart Cities",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-6",
+     "title": "Smart Agriculture",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-7",
+     "title": "Healthcare IoT & Wearables",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-8",
+     "title": "Connected Vehicles & Transportation",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-9",
+     "title": "Machine Learning for IoT (TinyML)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-10",
+     "title": "Digital Twins",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-11",
+     "title": "IoT Device Management & Firmware Updates",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-12",
+     "title": "5G & IoT",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-13",
+     "title": "IoT Product Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-14",
+     "title": "IoT Standards, Privacy & Law",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-4-15",
+     "title": "Final Year Project / Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "iot-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "iot-5-1",
+     "title": "Advanced Embedded Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-2",
+     "title": "Advanced Wireless Networks",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-3",
+     "title": "Cyber-Physical Systems",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-4",
+     "title": "Advanced IoT Security",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-5",
+     "title": "Distributed Edge Intelligence",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-6",
+     "title": "Energy Harvesting & Low-Power Design",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-7",
+     "title": "Blockchain for IoT",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-8",
+     "title": "Large-Scale IoT Architecture",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-9",
+     "title": "Sensor Data Fusion",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-10",
+     "title": "Research Methodology",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "iot-5-11",
+     "title": "MSc Thesis",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}

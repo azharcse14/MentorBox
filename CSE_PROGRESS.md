@@ -58,8 +58,8 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 
 | # | Id | Course | Status |
 |---|---|---|---|
-| 22 | cse-4-1 | Operating Systems | todo |
-| 23 | cse-4-2 | Database Management Systems | todo |
+| 22 | cse-4-1 | Operating Systems | done |
+| 23 | cse-4-2 | Database Management Systems | done |
 | 24 | cse-4-3 | Computer Networks | todo |
 | 25 | cse-4-4 | Software Engineering | todo |
 | 26 | cse-4-5 | Compiler Design | todo |

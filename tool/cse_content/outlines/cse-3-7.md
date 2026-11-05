@@ -1,28 +1,31 @@
 # Course: Signals & Systems  (level id "deep-cse-3-7", lesson ids "deep-cse-3-7-01".."-25")
-Builds on Math III (deep-cse-2-7): complex numbers, Euler's formula, Fourier series/transform maths, Laplace transform maths and partial fractions are assumed, only recapped in a few lines. Here the focus is the signals-and-systems view: what a system does to a signal.
-Left for later courses: filter design methods (Butterworth/FIR/IIR design), the DFT/FFT in depth and windowing go to Digital Signal Processing (deep-cse-5-7); modulation, line coding and channels go to Data Communication (deep-cse-3-6). Mention and move on.
-01 What signals and systems are: signal as a function of time, system as input-to-output box, examples (voice, ECG, stock price, image), continuous vs discrete time, analog vs digital, block diagrams, course map
-02 Classifying signals: deterministic vs random, periodic vs aperiodic (fundamental period, sum of periodic signals, discrete periodicity rule), even and odd parts, energy vs power signals with worked energy/power calculations
-03 Basic continuous-time signals: unit step u(t), unit ramp r(t), rectangular pulse, unit impulse δ(t) (area 1, sifting property, δ = du/dt), real and complex exponentials, sinusoids (amplitude, frequency, phase), sinc
-04 Basic discrete-time signals: unit sample δ[n], unit step u[n], δ[n] = u[n] - u[n-1], exponentials a^n (growing/decaying/alternating), discrete sinusoids, why discrete frequency repeats every 2π, writing sequences as sums of shifted impulses
-05 Operations on signals: amplitude scaling, addition, multiplication, time shifting, time reversal, time scaling (and decimation/expansion in discrete time), combined operations in the correct order, worked sketches
-06 System properties I: memory vs memoryless, causality, invertibility, with tests and counter-examples for each
-07 System properties II: linearity (additivity + homogeneity, zero-in zero-out), time invariance (shift test), BIBO stability, worked tests on y = x², y = t x(t), y[n] = x[2n], y = x(t) + 1
-08 LTI systems and the impulse response: why linear + time invariant is special, impulse response h, any input as a sum of impulses, the output as a sum of shifted scaled h's
-09 Discrete convolution: y[n] = Σ x[k] h[n-k], flip-and-slide method, table (multiplication-like) method, worked examples, length of the result, moving average
-10 Continuous convolution: y(t) = ∫ x(τ) h(t-τ) dτ, graphical flip-and-slide, worked examples (step * exponential, rect * rect = triangle), convolution with δ
-11 Properties of convolution and LTI systems: commutative, associative, distributive, series and parallel connections, causality and stability from h (h = 0 for t < 0, ∫|h| finite), step response
-12 Differential and difference equations: RC circuit as an LTI system, order, zero-input and zero-state response, natural and forced response, recursive difference equations, FIR vs IIR, block diagrams with delays
-13 Eigenfunctions and the Fourier series view: complex exponentials pass through LTI systems unchanged except for a gain, recap of Fourier series, line spectrum of a square wave, response of an LTI system to a periodic input
-14 The continuous-time Fourier transform: from series to transform (recap), spectrum of rect (sinc), exponential, impulse, constant; magnitude and phase spectra, bandwidth
-15 Fourier transform properties in the systems view: linearity, time shift (phase only), scaling, duality, convolution property (Y = H X), multiplication property, Parseval energy, a quick table
-16 Frequency response: H(jω), magnitude and phase, the RC low-pass example, cutoff frequency, decibels and the -3 dB point, Bode plot idea, ideal vs real filters, group delay idea, distortionless transmission
-17 Sampling: why we sample, the ideal sampler (impulse train), spectrum of a sampled signal (copies every fs), sampling theorem (fs > 2 fmax), Nyquist rate, worked numbers (CD 44.1 kHz, phone 8 kHz)
-18 Aliasing and reconstruction: what aliasing is (wagon-wheel effect, worked alias frequencies), anti-aliasing filter, ideal sinc reconstruction, zero-order hold, quantization pointer (ADC/DAC)
-19 The discrete-time Fourier transform: definition, periodic in 2π, DTFT of δ[n], a^n u[n], a rectangular pulse, properties, frequency response of a moving average, link to DFT/FFT (pointer to DSP)
-20 The Laplace transform for systems: bilateral vs unilateral, region of convergence (right-sided, left-sided, two-sided examples), why the ROC matters (same formula, two signals), link s = jω to Fourier
-21 Poles and zeros: the transfer function H(s) as a ratio of polynomials, finding poles and zeros, pole-zero plot, what each pole location means in time (decay, growth, oscillation), worked RLC example
-22 Transfer functions and system analysis with Laplace: solving differential equations into H(s), impulse and step response by partial fractions, series/parallel/feedback blocks, first and second order systems (damping ratio, natural frequency)
-23 The Z-transform and its ROC: definition, z-transform of δ[n], u[n], a^n u[n], -a^n u[-n-1], ROC rings, properties (linearity, time shift z^(-1) as a delay, convolution), inverse by partial fractions and long division
-24 Discrete-time transfer functions and stability in s and z: H(z) from a difference equation, poles and zeros in the z-plane, stability rules (left half-plane for s, inside unit circle for z), causality and ROC, marginal stability, the s-to-z map z = e^(sT)
-25 Introduction to filters and wrap-up: low-pass, high-pass, band-pass, band-stop, all-pass; ideal vs practical; simple first-order RC and moving-average examples; pole-zero intuition for filters; where this goes next (DSP, communication, control, image processing); course recap
+Builds on Calculus (deep-cse-1-4), Electrical Circuits (deep-cse-1-5: RC circuits) and Math III (deep-cse-2-7: complex numbers,
+Euler's formula, Fourier series/transform maths, Laplace maths). Those are only recapped; here the focus is the engineering view:
+what a signal is, what a system does to it, LTI systems, convolution, spectra, sampling, and the Laplace/Z tools used to analyse
+real systems. Deep DFT/FFT and filter design are left to Digital Signal Processing (deep-cse-5-7); modulation details to
+Data Communication (deep-cse-3-6). Every idea is shown with small numbers worked step by step.
+01 What signals and systems are: signal = quantity changing with time/space, system = box that changes a signal, examples (voice, ECG, stock price, image), input-output picture, where the course is used (audio, phones, control, ML), course map
+02 Continuous-time vs discrete-time, analog vs digital: x(t) vs x[n], sampling as taking samples, quantization, why computers need discrete digital signals, notation, plotting stems
+03 Classifying signals: deterministic vs random, periodic vs aperiodic (fundamental period, sum of periodic signals, DT periodicity rule), even and odd parts, causal/anti-causal, energy and power signals with worked examples
+04 Operations on the time axis: time shift, time reversal, time scaling (CT and DT decimation/expansion), combined operations in the right order, amplitude scaling, addition, multiplication, worked sketches
+05 Elementary signals: unit step, unit impulse (CT delta, DT delta), sifting property, ramp, rectangular pulse, real and complex exponentials, sinusoids, relations between step/impulse/ramp, DT sinusoid frequency only up to 2π
+06 System properties: memory/memoryless, causality, linearity (additivity + homogeneity), time invariance, BIBO stability, invertibility, testing each on example systems
+07 Interconnecting and describing systems: series, parallel, feedback, block diagrams with adder/multiplier/delay, input-output equations, why LTI is the star of the course
+08 LTI systems and impulse response: any DT signal as a sum of shifted impulses, superposition, h[n] describes the whole system, deriving the convolution sum
+09 Convolution sum worked: flip-and-slide method, table method, length of output, finite sequences, moving average and echo examples
+10 Convolution integral (CT): derivation idea, graphical method, rectangle with rectangle (triangle), exponential input to RC-like system, step response
+11 Properties of convolution and LTI systems: commutative, associative, distributive, identity, causality from h, stability from absolute sum/integral, step response as running sum/integral, FIR vs IIR
+12 Differential and difference equation systems: linear constant-coefficient equations, recursive vs non-recursive, initial rest, solving a first-order difference equation by iteration, direct form block diagrams
+13 Fourier series of CT periodic signals (signals view): complex exponentials as eigenfunctions of LTI systems, harmonics, spectrum lines, square wave spectrum, what an LTI system does to each harmonic
+14 Discrete-time Fourier series: N-periodic sequences, only N distinct harmonics, computing coefficients for a small N worked, link to DFT (pointer to DSP)
+15 Continuous-time Fourier transform (signals view): from series to transform, spectrum of a pulse (sinc), bandwidth, key pairs, time-frequency trade-off
+16 Fourier transform properties in action: linearity, time shift (phase), scaling, convolution becomes multiplication, multiplication becomes convolution, Parseval energy, duality idea
+17 Discrete-time Fourier transform (DTFT): definition, periodic in ω with period 2π, low vs high frequency in DT, DTFT of a pulse and of a^n u[n], convolution property
+18 Frequency response and filters: H(jω) and H(e^jω), magnitude and phase, ideal low/high/band-pass/band-stop, why ideal is impossible (non-causal), simple RC low-pass and moving average, decibels, linear phase idea
+19 Sampling theorem: sampling as multiplication by impulse train, spectrum copies, Nyquist rate, aliasing (wagon wheel, 44.1 kHz audio), anti-aliasing filter, reconstruction, zero-order hold
+20 Modulation as a signals idea: multiplying by a cosine shifts the spectrum, AM and DSB-SC, synchronous demodulation, frequency-division multiplexing (radio stations), pointer to Data Communication
+21 Laplace transform for systems: s = σ + jω, bilateral vs unilateral, region of convergence, poles and zeros, s-plane plot, link to Fourier (jω axis)
+22 Transfer function and stability with Laplace: H(s) from a differential equation, poles in left half-plane, causality and ROC, first and second order systems, step response, RLC example
+23 Z-transform: definition, z = re^jω, ROC, common pairs (δ, u, a^n u), properties (linearity, shift = multiply by z^-1, convolution), relation to DTFT on the unit circle
+24 Inverse Z-transform and DT system analysis: partial fractions, long division, H(z) from difference equation, poles inside unit circle for stability, solving a difference equation, FIR vs IIR in z
+25 Correlation, spectra and wrap-up: cross- and auto-correlation (radar, finding a signal in noise), energy/power spectral density idea, noise, real applications (audio, image, communication, control, ML), course recap, what next (DSP, communication, control)

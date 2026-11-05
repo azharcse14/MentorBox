@@ -1,0 +1,504 @@
+{
+ "id": "ai",
+ "name": "আর্টিফিশিয়াল ইন্টেলিজেন্স",
+ "mentor": "এআই মেন্টর",
+ "tagline": "BSc আর MSc AI-এর সব কোর্স, প্রথম পাইথন প্রোগ্রাম থেকে MSc থিসিস পর্যন্ত।",
+ "description": "পুরো AI ডিগ্রি, বছর ধরে সাজানো: ম্যাথ, প্রোগ্রামিং, মেশিন লার্নিং, ডিপ লার্নিং, রোবোটিক্স আর একদম নতুন AI রিসার্চের টপিক।",
+ "image": "assets/images/cse.jpg",
+ "color": "#6B4E9B",
+ "messages": {
+  "welcome": "হাই! এখানে পুরো AI ডিগ্রিটা আছে, এক এক কোর্স করে।",
+  "comeback": "তোমার পরের কোর্সটা বসে আছে। শুধু খুলে ফেলো।",
+  "pass": "জোস! আরেকটা কোর্স শেষ।",
+  "fail": "সমস্যা নাই। আরেকবার দেখো, তারপর আবার ট্রাই করো।",
+  "finished": "তুমি পুরো AI ডিগ্রি ঘুরে আসলা। এবার এটা দিয়ে কিছু একটা বানায় ফেলো!"
+ },
+ "levels": [
+  {
+   "id": "ai-1",
+   "title": "BSc ১ম বছর",
+   "lessons": [
+    {
+     "id": "ai-1-1",
+     "title": "আর্টিফিশিয়াল ইন্টেলিজেন্সের পরিচিতি (Introduction to Artificial Intelligence)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-2",
+     "title": "প্রোগ্রামিং ফান্ডামেন্টালস (পাইথন) (Programming Fundamentals (Python))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-3",
+     "title": "স্ট্রাকচার্ড প্রোগ্রামিং (C) (Structured Programming (C))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-4",
+     "title": "ডিসক্রিট ম্যাথ (Discrete Mathematics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-5",
+     "title": "ক্যালকুলাস (Calculus)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-6",
+     "title": "লিনিয়ার অ্যালজেব্রা (Linear Algebra)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-7",
+     "title": "কম্পিউটার সিস্টেমের পরিচিতি (Introduction to Computer Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-8",
+     "title": "ডিজিটাল লজিক ডিজাইন (Digital Logic Design)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-1-9",
+     "title": "টেকনিক্যাল কমিউনিকেশন (Technical Communication)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ai-2",
+   "title": "BSc ২য় বছর",
+   "lessons": [
+    {
+     "id": "ai-2-1",
+     "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (Object Oriented Programming)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-2",
+     "title": "ডেটা স্ট্রাকচার (Data Structures)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-3",
+     "title": "অ্যালগরিদম (Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-4",
+     "title": "প্রোবাবিলিটি ও স্ট্যাটিস্টিকস (Probability & Statistics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-5",
+     "title": "মাল্টিভেরিয়েবল ক্যালকুলাস ও অপটিমাইজেশন (Multivariable Calculus & Optimization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-6",
+     "title": "নিউমেরিক্যাল মেথডস (Numerical Methods)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-7",
+     "title": "ডেটাবেস সিস্টেম (Database Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-8",
+     "title": "থিওরি অফ কম্পিউটেশন (Theory of Computation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-9",
+     "title": "কম্পিউটার আর্কিটেকচার (Computer Architecture)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-10",
+     "title": "লজিক ও নলেজ রিপ্রেজেন্টেশন (Logic & Knowledge Representation)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-11",
+     "title": "সার্চ ও প্রবলেম সলভিং (Search & Problem Solving)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-2-12",
+     "title": "ডেটা সায়েন্সের পরিচিতি (Introduction to Data Science)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ai-3",
+   "title": "BSc ৩য় বছর",
+   "lessons": [
+    {
+     "id": "ai-3-1",
+     "title": "মেশিন লার্নিং (Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-2",
+     "title": "নিউরাল নেটওয়ার্ক (Neural Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-3",
+     "title": "ডেটা মাইনিং ও ডেটা ভিজুয়ালাইজেশন (Data Mining & Data Visualization)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-4",
+     "title": "প্রোবাবিলিস্টিক গ্রাফিক্যাল মডেল (Probabilistic Graphical Models)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-5",
+     "title": "প্ল্যানিং ও ডিসিশন মেকিং (Planning & Decision Making)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-6",
+     "title": "কম্পিউটার ভিশন (Computer Vision)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-7",
+     "title": "ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (Natural Language Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-8",
+     "title": "অপারেটিং সিস্টেম (Operating Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-9",
+     "title": "কম্পিউটার নেটওয়ার্ক (Computer Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-10",
+     "title": "AI-এর জন্য সফটওয়্যার ইঞ্জিনিয়ারিং (Software Engineering for AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-11",
+     "title": "ইনফরমেশন থিওরি (Information Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-12",
+     "title": "সিগন্যালস ও সিস্টেমস (Signals & Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-13",
+     "title": "ফাজি লজিক ও সফট কম্পিউটিং (Fuzzy Logic & Soft Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-14",
+     "title": "ইভোলিউশনারি কম্পিউটেশন ও জেনেটিক অ্যালগরিদম (Evolutionary Computation & Genetic Algorithms)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-3-15",
+     "title": "কগনিটিভ সায়েন্স (Cognitive Science)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ai-4",
+   "title": "BSc ৪র্থ বছর",
+   "lessons": [
+    {
+     "id": "ai-4-1",
+     "title": "ডিপ লার্নিং (Deep Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-2",
+     "title": "রিইনফোর্সমেন্ট লার্নিং (Reinforcement Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-3",
+     "title": "জেনারেটিভ AI ও লার্জ ল্যাঙ্গুয়েজ মডেল (Generative AI & Large Language Models)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-4",
+     "title": "রোবোটিক্স (Robotics)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-5",
+     "title": "স্পিচ ও অডিও প্রসেসিং (Speech & Audio Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-6",
+     "title": "মাল্টি-এজেন্ট সিস্টেম (Multi-Agent Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-7",
+     "title": "বিগ ডেটা ও ডিস্ট্রিবিউটেড মেশিন লার্নিং (Big Data & Distributed Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-8",
+     "title": "MLOps ও AI ডিপ্লয়মেন্ট (MLOps & AI Deployment)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-9",
+     "title": "AI-এর জন্য ক্লাউড কম্পিউটিং (Cloud Computing for AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-10",
+     "title": "এজ AI ও TinyML (Edge AI & TinyML)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-11",
+     "title": "রিকমেন্ডার সিস্টেম (Recommender Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-12",
+     "title": "টাইম সিরিজ অ্যানালাইসিস ও ফোরকাস্টিং (Time Series Analysis & Forecasting)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-13",
+     "title": "নলেজ গ্রাফ ও সিমান্টিক ওয়েব (Knowledge Graphs & Semantic Web)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-14",
+     "title": "AI সিকিউরিটি (AI Security)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-15",
+     "title": "হিউম্যান-AI ইন্টারঅ্যাকশন (Human-AI Interaction)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-16",
+     "title": "AI এথিক্স, আইন ও সমাজ (AI Ethics, Law & Society)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-4-17",
+     "title": "ফাইনাল ইয়ার প্রজেক্ট / থিসিস (Final Year Project / Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  },
+  {
+   "id": "ai-5",
+   "title": "MSc",
+   "lessons": [
+    {
+     "id": "ai-5-1",
+     "title": "অ্যাডভান্সড মেশিন লার্নিং (Advanced Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-2",
+     "title": "স্ট্যাটিস্টিক্যাল লার্নিং থিওরি (Statistical Learning Theory)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-3",
+     "title": "মেশিন লার্নিংয়ের জন্য অপটিমাইজেশন (Optimization for Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-4",
+     "title": "বেইজিয়ান মেশিন লার্নিং (Bayesian Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-5",
+     "title": "কজাল ইনফারেন্স (Causal Inference)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-6",
+     "title": "অ্যাডভান্সড ডিপ লার্নিং (Advanced Deep Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-7",
+     "title": "জেনারেটিভ মডেল (GAN, VAE, ডিফিউশন) (Generative Models (GANs, VAEs, Diffusion))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-8",
+     "title": "লার্জ ল্যাঙ্গুয়েজ মডেল (অ্যাডভান্সড) (Large Language Models (Advanced))",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-9",
+     "title": "অ্যাডভান্সড কম্পিউটার ভিশন (Advanced Computer Vision)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-10",
+     "title": "অ্যাডভান্সড ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (Advanced Natural Language Processing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-11",
+     "title": "মাল্টিমোডাল AI (Multimodal AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-12",
+     "title": "ডিপ রিইনফোর্সমেন্ট লার্নিং (Deep Reinforcement Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-13",
+     "title": "AI এজেন্ট ও অটোনোমাস সিস্টেম (AI Agents & Autonomous Systems)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-14",
+     "title": "গ্রাফ নিউরাল নেটওয়ার্ক (Graph Neural Networks)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-15",
+     "title": "ফেডারেটেড ও প্রাইভেসি-প্রিজার্ভিং ML (Federated & Privacy-Preserving ML)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-16",
+     "title": "এক্সপ্লেইনেবল AI (Explainable AI)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-17",
+     "title": "AI সেফটি ও অ্যালাইনমেন্ট (AI Safety & Alignment)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-18",
+     "title": "প্যারালাল ও GPU কম্পিউটিং (Parallel & GPU Computing)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-19",
+     "title": "কোয়ান্টাম মেশিন লার্নিং (Quantum Machine Learning)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-20",
+     "title": "স্বাস্থ্যসেবায় AI (AI in Healthcare)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-21",
+     "title": "অটোনোমাস ভেহিকল (Autonomous Vehicles)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-22",
+     "title": "রিসার্চ মেথডোলজি (Research Methodology)",
+     "content": "",
+     "quiz": []
+    },
+    {
+     "id": "ai-5-23",
+     "title": "MSc থিসিস (MSc Thesis)",
+     "content": "",
+     "quiz": []
+    }
+   ]
+  }
+ ]
+}
