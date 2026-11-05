@@ -80,8 +80,8 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 
 | # | Id | Course | Status |
 |---|---|---|---|
-| 39 | cse-6-1 | Machine Learning | todo |
-| 40 | cse-6-2 | Computer Security & Cryptography | todo |
+| 39 | cse-6-1 | Machine Learning | done |
+| 40 | cse-6-2 | Computer Security & Cryptography | done |
 | 41 | cse-6-3 | Distributed Systems | todo |
 | 42 | cse-6-4 | Digital Image Processing | todo |
 | 43 | cse-6-5 | Simulation & Modeling | todo |
