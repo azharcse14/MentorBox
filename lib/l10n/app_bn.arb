@@ -117,5 +117,7 @@
   "notifLastCallBody": "মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!",
   "layoutGrid": "গ্রিড",
   "layoutCarousel": "ক্যারোসেল",
-  "layoutList": "লিস্ট"
+  "layoutList": "লিস্ট",
+  "tabCseCourses": "ফুল কোর্স",
+  "tabCseRoadmap": "রোডম্যাপ"
 }

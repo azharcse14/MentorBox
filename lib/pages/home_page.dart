@@ -391,6 +391,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildMentors() {
     void open(CategoryOverview o) => _push(MentorPage(categoryId: o.category.id));
+    // Tab-only categories (e.g. the CSE roadmap) open from their host card.
+    final cards = _overviews.where((o) => !MentorPage.isTabOnly(o.category.id)).toList();
     switch (_layout) {
       case 'carousel':
         return Column(
@@ -399,17 +401,17 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 400,
               child: PageView.builder(
                 controller: _pageController,
-                itemCount: _overviews.length,
+                itemCount: cards.length,
                 onPageChanged: (index) => setState(() => _page = index),
                 itemBuilder: (context, index) => MentorCard(
-                  overview: _overviews[index],
+                  overview: cards[index],
                   large: true,
-                  onTap: () => open(_overviews[index]),
+                  onTap: () => open(cards[index]),
                 ),
               ),
             ),
             const SizedBox(height: 14),
-            _PageDots(count: _overviews.length, index: _page),
+            _PageDots(count: cards.length, index: _page),
           ],
         );
       case 'list':
@@ -417,11 +419,11 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          itemCount: _overviews.length,
+          itemCount: cards.length,
           separatorBuilder: (_, __) => const SizedBox(height: 12),
           itemBuilder: (context, index) => MentorListTile(
-            overview: _overviews[index],
-            onTap: () => open(_overviews[index]),
+            overview: cards[index],
+            onTap: () => open(cards[index]),
           ),
         );
       default:
@@ -429,7 +431,7 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          itemCount: _overviews.length,
+          itemCount: cards.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisSpacing: 14,
@@ -437,8 +439,8 @@ class _HomeScreenState extends State<HomeScreen> {
             childAspectRatio: 0.72,
           ),
           itemBuilder: (context, index) => MentorCard(
-            overview: _overviews[index],
-            onTap: () => open(_overviews[index]),
+            overview: cards[index],
+            onTap: () => open(cards[index]),
           ),
         );
     }

@@ -11,20 +11,37 @@ import 'lesson_page.dart';
 /// One mentor's page: what it teaches, how far you are, and the roadmap of
 /// levels and lessons. Keeps the dark, slowly zooming photo of the original
 /// detail page.
+///
+/// Categories listed together in [tabGroups] share one page with a tab per
+/// category; only the first of each group gets a card on the home screen.
 class MentorPage extends StatefulWidget {
   final String categoryId;
 
   const MentorPage({super.key, required this.categoryId});
 
+  static const tabGroups = [
+    ['cse-courses', 'cse'],
+  ];
+
+  static List<String> groupOf(String id) => tabGroups.firstWhere((g) => g.contains(id), orElse: () => [id]);
+
+  static bool isTabOnly(String id) => groupOf(id).first != id;
+
   @override
   State<MentorPage> createState() => _MentorPageState();
 }
 
-class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateMixin {
+class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
   final _repo = MentorRepository.instance;
   late final AnimationController _zoom;
   late final Animation<double> _scale;
   CategoryOverview? _overview;
+  late final List<String> _group = MentorPage.groupOf(widget.categoryId);
+  late String _categoryId = widget.categoryId;
+  late final TabController? _tabs = _group.length < 2
+      ? null
+      : (TabController(length: _group.length, vsync: this, initialIndex: _group.indexOf(widget.categoryId))
+        ..addListener(_onTab));
 
   @override
   void initState() {
@@ -39,14 +56,30 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
   @override
   void dispose() {
     _zoom.dispose();
+    _tabs?.dispose();
     super.dispose();
   }
 
+  void _onTab() {
+    final id = _group[_tabs!.index];
+    if (id == _categoryId) return;
+    _categoryId = id;
+    _load();
+  }
+
   Future<void> _load() async {
-    final overview = await _repo.getOverview(widget.categoryId);
-    if (!mounted) return;
+    final id = _categoryId;
+    final overview = await _repo.getOverview(id);
+    // Ignore a slow load for a tab the user already left.
+    if (!mounted || id != _categoryId) return;
     setState(() => _overview = overview);
   }
+
+  String _tabLabel(String id, AppLocalizations l) => switch (id) {
+        'cse-courses' => l.tabCseCourses,
+        'cse' => l.tabCseRoadmap,
+        _ => id,
+      };
 
   Future<void> _openLesson(Lesson lesson) async {
     await Navigator.of(context).push(
@@ -78,6 +111,17 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
           overview?.category.mentorName ?? '',
           style: AppTheme.mono(24, color: AppTheme.kPrimaryColor, weight: FontWeight.w700),
         ),
+        bottom: _tabs == null
+            ? null
+            : TabBar(
+                controller: _tabs,
+                indicatorColor: AppTheme.kPrimaryColor,
+                labelColor: AppTheme.kPrimaryColor,
+                unselectedLabelColor: Colors.white70,
+                dividerColor: Colors.transparent,
+                labelStyle: AppTheme.mono(15, weight: FontWeight.w700),
+                tabs: [for (final id in _group) Tab(text: _tabLabel(id, AppLocalizations.of(context)))],
+              ),
       ),
       body: overview == null
           ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
@@ -105,7 +149,9 @@ class _MentorPageState extends State<MentorPage> with SingleTickerProviderStateM
     final l = AppLocalizations.of(context);
 
     return ListView(
-      padding: EdgeInsets.fromLTRB(20, kToolbarHeight + MediaQuery.of(context).size.height * 0.12, 20, 24),
+      // New key per category: scroll position and open levels reset on tab switch.
+      key: ValueKey(category.id),
+      padding: EdgeInsets.fromLTRB(20, kToolbarHeight + (_tabs == null ? 0 : kTextTabBarHeight) + MediaQuery.of(context).size.height * 0.12, 20, 24),
       children: [
         Text(category.name, style: AppTheme.display(44, color: AppTheme.kScaffoldBackgroundColor)),
         const SizedBox(height: 6),

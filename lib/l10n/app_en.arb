@@ -346,5 +346,7 @@
   "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!",
   "layoutGrid": "Grid",
   "layoutCarousel": "Carousel",
-  "layoutList": "List"
+  "layoutList": "List",
+  "tabCseCourses": "Full Courses",
+  "tabCseRoadmap": "Roadmap"
 }

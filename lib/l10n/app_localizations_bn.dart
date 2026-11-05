@@ -1,5 +1,6 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -125,8 +126,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String lessonsOf(int done, int total) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat doneNumberFormat = intl.NumberFormat.decimalPattern(
+      localeName,
+    );
     final String doneString = doneNumberFormat.format(done);
     final intl.NumberFormat totalNumberFormat =
         intl.NumberFormat.decimalPattern(localeName);
@@ -157,8 +159,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String fraction(int done, int total) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat doneNumberFormat = intl.NumberFormat.decimalPattern(
+      localeName,
+    );
     final String doneString = doneNumberFormat.format(done);
     final intl.NumberFormat totalNumberFormat =
         intl.NumberFormat.decimalPattern(localeName);
@@ -349,8 +352,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String lessonsDone(int done, int total) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat doneNumberFormat = intl.NumberFormat.decimalPattern(
+      localeName,
+    );
     final String doneString = doneNumberFormat.format(done);
     final intl.NumberFormat totalNumberFormat =
         intl.NumberFormat.decimalPattern(localeName);
@@ -387,8 +391,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String greetProgress(int done, int total, String title) {
-    final intl.NumberFormat doneNumberFormat =
-        intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat doneNumberFormat = intl.NumberFormat.decimalPattern(
+      localeName,
+    );
     final String doneString = doneNumberFormat.format(done);
     final intl.NumberFormat totalNumberFormat =
         intl.NumberFormat.decimalPattern(localeName);
@@ -504,4 +509,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get layoutList => 'লিস্ট';
+
+  @override
+  String get tabCseCourses => 'ফুল কোর্স';
+
+  @override
+  String get tabCseRoadmap => 'রোডম্যাপ';
 }
