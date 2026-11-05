@@ -72,9 +72,9 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 33 | cse-5-5 | Human Computer Interaction | done |
 | 34 | cse-5-6 | Embedded Systems | done |
 | 35 | cse-5-7 | Digital Signal Processing | done |
-| 36 | cse-5-8 | Software Testing & Quality Assurance | todo |
-| 37 | cse-5-9 | Multimedia Systems | todo |
-| 38 | cse-5-10 | Game Development | todo |
+| 36 | cse-5-8 | Software Testing & Quality Assurance | done |
+| 37 | cse-5-9 | Multimedia Systems | done |
+| 38 | cse-5-10 | Game Development | done |
 
 ## 4th Year
 
