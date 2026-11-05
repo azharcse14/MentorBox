@@ -60,12 +60,12 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 |---|---|---|---|
 | 22 | cse-4-1 | Operating Systems | done |
 | 23 | cse-4-2 | Database Management Systems | done |
-| 24 | cse-4-3 | Computer Networks | todo |
-| 25 | cse-4-4 | Software Engineering | todo |
-| 26 | cse-4-5 | Compiler Design | todo |
-| 27 | cse-4-6 | System Analysis & Design | todo |
-| 28 | cse-4-7 | Management Information Systems | todo |
-| 29 | cse-5-1 | Artificial Intelligence | todo |
+| 24 | cse-4-3 | Computer Networks | done |
+| 25 | cse-4-4 | Software Engineering | done |
+| 26 | cse-4-5 | Compiler Design | done |
+| 27 | cse-4-6 | System Analysis & Design | done |
+| 28 | cse-4-7 | Management Information Systems | done |
+| 29 | cse-5-1 | Artificial Intelligence | done |
 | 30 | cse-5-2 | Computer Graphics | todo |
 | 31 | cse-5-3 | Web Engineering | todo |
 | 32 | cse-5-4 | Mobile Application Development | todo |
