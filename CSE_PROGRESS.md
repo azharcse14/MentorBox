@@ -66,12 +66,12 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 27 | cse-4-6 | System Analysis & Design | done |
 | 28 | cse-4-7 | Management Information Systems | done |
 | 29 | cse-5-1 | Artificial Intelligence | done |
-| 30 | cse-5-2 | Computer Graphics | todo |
-| 31 | cse-5-3 | Web Engineering | todo |
-| 32 | cse-5-4 | Mobile Application Development | todo |
-| 33 | cse-5-5 | Human Computer Interaction | todo |
-| 34 | cse-5-6 | Embedded Systems | todo |
-| 35 | cse-5-7 | Digital Signal Processing | todo |
+| 30 | cse-5-2 | Computer Graphics | done |
+| 31 | cse-5-3 | Web Engineering | done |
+| 32 | cse-5-4 | Mobile Application Development | done |
+| 33 | cse-5-5 | Human Computer Interaction | done |
+| 34 | cse-5-6 | Embedded Systems | done |
+| 35 | cse-5-7 | Digital Signal Processing | done |
 | 36 | cse-5-8 | Software Testing & Quality Assurance | todo |
 | 37 | cse-5-9 | Multimedia Systems | todo |
 | 38 | cse-5-10 | Game Development | todo |
