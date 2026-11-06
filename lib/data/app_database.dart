@@ -22,6 +22,16 @@ class AppDatabase {
   Future<Database> get database => _database ??= _open();
 
   Future<Database> _open() async {
+    try {
+      return await _openAndSeed();
+    } catch (_) {
+      // Forget the failure, so "Try again" really tries again.
+      _database = null;
+      rethrow;
+    }
+  }
+
+  Future<Database> _openAndSeed() async {
     final directory = await getDatabasesPath();
     final db = await openDatabase(
       p.join(directory, _fileName),

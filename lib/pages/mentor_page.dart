@@ -36,6 +36,7 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
   late final AnimationController _zoom;
   late final Animation<double> _scale;
   CategoryOverview? _overview;
+  bool _failed = false;
   late final List<String> _group = MentorPage.groupOf(widget.categoryId);
   late String _categoryId = widget.categoryId;
   late final TabController? _tabs = _group.length < 2
@@ -80,10 +81,19 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
 
   Future<void> _load() async {
     final id = _categoryId;
-    final overview = await _repo.getOverview(id);
+    CategoryOverview? overview;
+    try {
+      overview = await _repo.getOverview(id);
+    } catch (e) {
+      debugPrint('Mentor load failed: $e');
+    }
     // Ignore a slow load for a tab the user already left.
     if (!mounted || id != _categoryId) return;
-    setState(() => _overview = overview);
+    setState(() {
+      _failed = overview == null;
+      // A failed reload keeps this category's page, never another tab's.
+      if (overview != null || _overview?.category.id != id) _overview = overview;
+    });
   }
 
   String _tabLabel(String id, AppLocalizations l) => switch (id) {
@@ -127,7 +137,11 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
               ),
       ),
       body: overview == null
-          ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
+          ? Center(
+              child: _failed
+                  ? Text(AppLocalizations.of(context).loadError, style: AppTheme.body(15))
+                  : const CircularProgressIndicator(color: AppTheme.kPrimaryColor),
+            )
           : Stack(
               children: [
                 Positioned.fill(

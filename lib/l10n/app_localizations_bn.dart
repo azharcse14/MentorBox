@@ -45,6 +45,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get loadError => 'লেসনগুলো লোড করা যায়নি। আবার চেষ্টা করো।';
 
   @override
+  String get saveError => 'তোমার রেজাল্ট সেভ করা যায়নি। আবার চেষ্টা করো।';
+
+  @override
   String get exploreLabel => 'ঘুরে দেখো :';
 
   @override

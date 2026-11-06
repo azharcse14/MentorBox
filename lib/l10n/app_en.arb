@@ -12,6 +12,7 @@
   "todaysMissions": "Today's missions",
   "defaultName": "Learner",
   "loadError": "The lessons could not be loaded. Please try again.",
+  "saveError": "Your result could not be saved. Please try again.",
   "exploreLabel": "Explore :",
   "exploreTagline": "Pick a mentor, grow one skill a day",
   "heroBefore": "Your Personal\n",

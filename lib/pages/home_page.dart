@@ -400,7 +400,8 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> _buildSections(AppLocalizations l) {
     // Tab-only categories (e.g. the CSE roadmap) open from their host card.
     final cards = _overviews.where((o) {
-      if (MentorPage.isTabOnly(o.category.id)) return false;
+      // No lessons written yet: nothing to open.
+      if (MentorPage.isTabOnly(o.category.id) || o.total == 0) return false;
       if (_query.isEmpty) return true;
       final c = o.category;
       return '${c.name} ${c.mentorName} ${c.tagline}'.toLowerCase().contains(_query);

@@ -47,15 +47,18 @@ class ContentSeeder {
       for (final row in await db.query('meta')) row['key'] as String: row['value'] as String,
     };
     final picked = languages.contains(meta[appLanguageKey]) ? meta[appLanguageKey] : null;
-    appLocale.value = picked == null ? null : Locale(picked);
     appTheme.value = meta[appThemeKey];
     final language = picked ?? deviceLanguage();
+    // A new language is switched to only once its content is in, so UI and
+    // lessons never differ; the same language is set at once.
+    void applyLocale() => appLocale.value = picked == null ? null : Locale(picked);
+    if (meta[_languageKey] == language) applyLocale();
 
-    final index = jsonDecode(await rootBundle.loadString(_indexAsset)) as Map<String, dynamic>;
+    final index = jsonDecode(await rootBundle.loadString(_indexAsset, cache: false)) as Map<String, dynamic>;
     final newVersion = index['content_version'] as int;
 
     final currentVersion = int.tryParse(meta[_versionKey] ?? '') ?? 0;
-    if (currentVersion >= newVersion && meta[_languageKey] == language) return;
+    if (currentVersion >= newVersion && meta[_languageKey] == language) return applyLocale();
 
     final paths = (index['categories'] as List<dynamic>).cast<String>();
 
@@ -90,6 +93,12 @@ class ContentSeeder {
           final ref = levels[li];
           final level = ref is String ? await _load(language, '$dir$ref') : ref as Map<String, dynamic>;
           final levelId = level['id'] as String;
+          // Lessons without text are placeholders for courses not written yet.
+          final lessons = [
+            for (final lesson in level['lessons'] as List<dynamic>)
+              if ((lesson['content'] as String? ?? '').trim().isNotEmpty) lesson as Map<String, dynamic>,
+          ];
+          if (lessons.isEmpty) continue;
 
           batch.insert('levels', {
             'id': levelId,
@@ -99,9 +108,8 @@ class ContentSeeder {
             'sort_order': li,
           });
 
-          final lessons = level['lessons'] as List<dynamic>;
           for (var si = 0; si < lessons.length; si++) {
-            final lesson = lessons[si] as Map<String, dynamic>;
+            final lesson = lessons[si];
             final lessonId = lesson['id'] as String;
 
             batch.insert('lessons', {
@@ -151,12 +159,14 @@ class ContentSeeder {
       );
       await batch.commit(noResult: true);
     });
+    applyLocale();
   }
 
   // Parsed on a background isolate: course files are up to ~1.3 MB and the
   // full seed is 20-37 MB, which would freeze the UI on the main isolate.
+  // Not cached: each file is read once, and cached text would stay in memory.
   static Future<Map<String, dynamic>> _load(String language, String path) async =>
-      await compute(jsonDecode, await rootBundle.loadString('assets/content/$language/$path.json'))
+      await compute(jsonDecode, await rootBundle.loadString('assets/content/$language/$path.json', cache: false))
           as Map<String, dynamic>;
 
   /// "#5E8C8A" -> 0xFF5E8C8A

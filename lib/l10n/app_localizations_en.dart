@@ -45,6 +45,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get loadError => 'The lessons could not be loaded. Please try again.';
 
   @override
+  String get saveError => 'Your result could not be saved. Please try again.';
+
+  @override
   String get exploreLabel => 'Explore :';
 
   @override

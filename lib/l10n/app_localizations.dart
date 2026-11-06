@@ -170,6 +170,12 @@ abstract class AppLocalizations {
   /// **'The lessons could not be loaded. Please try again.'**
   String get loadError;
 
+  /// No description provided for @saveError.
+  ///
+  /// In en, this message translates to:
+  /// **'Your result could not be saved. Please try again.'**
+  String get saveError;
+
   /// No description provided for @exploreLabel.
   ///
   /// In en, this message translates to:

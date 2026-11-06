@@ -174,11 +174,11 @@ class MentorRepository {
       whereArgs: args,
       orderBy: 'sort_order',
     );
-    // Everything but the lesson text: overviews list every lesson, and the
-    // text is read per lesson by getLesson.
+    // Only what lists need (task is shown on Today): overviews list every
+    // lesson, and the rest is read per lesson by getLesson.
     final lessonRows = await db.rawQuery('''
       SELECT l.id, l.level_id, l.category_id, l.title, l.duration_min, '' AS content,
-             l.key_points, l.mentor_tip, l.task, l.sort_order
+             '[]' AS key_points, '' AS mentor_tip, l.task, l.sort_order
       FROM lessons l
       JOIN levels v ON v.id = l.level_id
       $where
@@ -207,8 +207,10 @@ class MentorRepository {
     final rows = await db.rawQuery('''
       SELECT l.* FROM lessons l
       JOIN lesson_progress p ON p.lesson_id = l.id
+      JOIN levels v ON v.id = l.level_id
+      JOIN categories c ON c.id = l.category_id
       WHERE p.bookmarked = 1
-      ORDER BY l.category_id, l.level_id, l.sort_order
+      ORDER BY c.sort_order, v.sort_order, l.sort_order
     ''');
     return rows.map((r) => Lesson.fromRow(r)).toList();
   }
@@ -219,8 +221,10 @@ class MentorRepository {
     final rows = await db.rawQuery('''
       SELECT l.*, p.notes AS notes FROM lessons l
       JOIN lesson_progress p ON p.lesson_id = l.id
+      JOIN levels v ON v.id = l.level_id
+      JOIN categories c ON c.id = l.category_id
       WHERE p.notes <> ''
-      ORDER BY l.category_id, l.level_id, l.sort_order
+      ORDER BY c.sort_order, v.sort_order, l.sort_order
     ''');
     return [for (final r in rows) (Lesson.fromRow(r), r['notes'] as String)];
   }

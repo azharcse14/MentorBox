@@ -59,7 +59,7 @@ class _TodayPageState extends State<TodayPage> {
     final missions = _overviews.where((o) => o.started && !o.finished && o.nextLesson != null).toList()
       ..sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
     // A different pair each day, instead of always the first two.
-    final fresh = _overviews.where((o) => !o.started && !MentorPage.isTabOnly(o.category.id)).toList();
+    final fresh = _overviews.where((o) => !o.started && o.total > 0 && !MentorPage.isTabOnly(o.category.id)).toList();
     final shift = fresh.isEmpty ? 0 : DateTime.now().difference(DateTime(2024)).inDays % fresh.length;
     final notStarted = [...fresh.skip(shift), ...fresh.take(shift)].take(2).toList();
     final todayDone = _days.contains(MentorEngine.dayKey(DateTime.now()));

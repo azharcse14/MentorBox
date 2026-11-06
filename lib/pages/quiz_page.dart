@@ -40,6 +40,7 @@ class _QuizPageState extends State<QuizPage> {
   bool _saving = false;
   QuizResult? _result;
   String _feedback = '';
+  bool _missing = false;
 
   @override
   void initState() {
@@ -49,7 +50,10 @@ class _QuizPageState extends State<QuizPage> {
 
   Future<void> _load() async {
     final lesson = await _repo.getLesson(widget.lessonId);
-    if (lesson == null) return;
+    if (lesson == null) {
+      if (mounted) setState(() => _missing = true);
+      return;
+    }
     final category = await _repo.getCategory(lesson.categoryId);
     final questions = await _repo.getQuiz(lesson.id);
     if (!mounted) return;
@@ -96,12 +100,22 @@ class _QuizPageState extends State<QuizPage> {
     setState(() => _saving = true);
 
     final result = QuizResult(_correct, _questions.length);
-    final progress = await _repo.recordQuizAttempt(
-      lessonId: lesson.id,
-      categoryId: lesson.categoryId,
-      score: _correct,
-      passed: result.passed,
-    );
+    final LessonProgress progress;
+    try {
+      progress = await _repo.recordQuizAttempt(
+        lessonId: lesson.id,
+        categoryId: lesson.categoryId,
+        score: _correct,
+        passed: result.passed,
+      );
+    } catch (e) {
+      // Not saved: let the learner press the button again.
+      debugPrint('Quiz save failed: $e');
+      if (!mounted) return;
+      setState(() => _saving = false);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).saveError)));
+      return;
+    }
     if (!mounted) return;
     setState(() {
       _result = result;
@@ -131,6 +145,12 @@ class _QuizPageState extends State<QuizPage> {
   Widget build(BuildContext context) {
     final lesson = _lesson;
     final category = _category;
+    if (_missing) {
+      return Scaffold(
+        appBar: AppBar(),
+        body: Center(child: Text(AppLocalizations.of(context).lessonMissing, style: AppTheme.body(15))),
+      );
+    }
     if (lesson == null || category == null) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor)),
