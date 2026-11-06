@@ -115,6 +115,29 @@ class MentorRepository {
     return rows.isEmpty ? null : Lesson.fromRow(rows.first);
   }
 
+  /// The lesson after [lessonId] in learning order (level, then lesson).
+  Future<Lesson?> getLessonAfter(String lessonId) async {
+    final db = await _db;
+    final rows = await db.rawQuery('''
+      SELECT l.* FROM lessons c
+      JOIN levels cv ON cv.id = c.level_id
+      JOIN lessons l ON l.category_id = c.category_id
+      JOIN levels v ON v.id = l.level_id
+      WHERE c.id = ?
+        AND (v.sort_order > cv.sort_order OR (v.sort_order = cv.sort_order AND l.sort_order > c.sort_order))
+      ORDER BY v.sort_order, l.sort_order
+      LIMIT 1
+    ''', [lessonId]);
+    return rows.isEmpty ? null : Lesson.fromRow(rows.first);
+  }
+
+  /// Started categories, most recently active first.
+  Future<List<String>> getRecentCategoryIds() async {
+    final db = await _db;
+    final rows = await db.query('category_state', columns: ['category_id'], orderBy: 'last_active_at DESC');
+    return [for (final r in rows) r['category_id'] as String];
+  }
+
   Future<List<QuizQuestion>> getQuiz(String lessonId) async {
     final db = await _db;
     final rows = await db.query(
@@ -185,15 +208,16 @@ class MentorRepository {
     return rows.map((r) => Lesson.fromRow(r)).toList();
   }
 
-  Future<List<Lesson>> getLessonsWithNotes() async {
+  /// Lessons with notes, each with its note text.
+  Future<List<(Lesson, String)>> getLessonsWithNotes() async {
     final db = await _db;
     final rows = await db.rawQuery('''
-      SELECT l.* FROM lessons l
+      SELECT l.*, p.notes AS notes FROM lessons l
       JOIN lesson_progress p ON p.lesson_id = l.id
       WHERE p.notes <> ''
       ORDER BY l.category_id, l.level_id, l.sort_order
     ''');
-    return rows.map((r) => Lesson.fromRow(r)).toList();
+    return [for (final r in rows) (Lesson.fromRow(r), r['notes'] as String)];
   }
 
   // --------------------------------------------------------------- progress
@@ -293,16 +317,6 @@ class MentorRepository {
     final db = await _db;
     final rows = await db.query('activity_days');
     return rows.map((r) => r['day'] as String).toSet();
-  }
-
-  /// Clears all learner data but keeps the lessons.
-  Future<void> resetProgress() async {
-    final db = await _db;
-    await db.transaction((txn) async {
-      await txn.delete('lesson_progress');
-      await txn.delete('category_state');
-      await txn.delete('activity_days');
-    });
   }
 
   // ---------------------------------------------------------------- helpers

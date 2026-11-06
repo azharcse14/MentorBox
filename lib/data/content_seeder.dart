@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:ui' show Locale, PlatformDispatcher;
 
-import 'package:flutter/foundation.dart' show ValueNotifier;
+import 'package:flutter/foundation.dart' show ValueNotifier, compute;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sqflite/sqflite.dart';
 
@@ -153,8 +153,11 @@ class ContentSeeder {
     });
   }
 
+  // Parsed on a background isolate: course files are up to ~1.3 MB and the
+  // full seed is 20-37 MB, which would freeze the UI on the main isolate.
   static Future<Map<String, dynamic>> _load(String language, String path) async =>
-      jsonDecode(await rootBundle.loadString('assets/content/$language/$path.json')) as Map<String, dynamic>;
+      await compute(jsonDecode, await rootBundle.loadString('assets/content/$language/$path.json'))
+          as Map<String, dynamic>;
 
   /// "#5E8C8A" -> 0xFF5E8C8A
   static int _parseColor(String hex) {

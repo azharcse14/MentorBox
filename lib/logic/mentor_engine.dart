@@ -57,13 +57,6 @@ class CategoryOverview {
   }
 
   int completedIn(Level level) => lessonsOf(level).where(_isCompleted).length;
-
-  /// The lesson right after [lesson], if there is one.
-  Lesson? lessonAfter(Lesson lesson) {
-    final index = lessons.indexWhere((l) => l.id == lesson.id);
-    if (index < 0 || index + 1 >= lessons.length) return null;
-    return lessons[index + 1];
-  }
 }
 
 class QuizResult {

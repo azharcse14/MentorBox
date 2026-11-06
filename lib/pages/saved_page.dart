@@ -34,16 +34,12 @@ class _SavedPageState extends State<SavedPage> {
     final saved = await _repo.getBookmarkedLessons();
     final withNotes = await _repo.getLessonsWithNotes();
     final categories = await _repo.getCategories();
-    final notes = <String, String>{};
-    for (final lesson in withNotes) {
-      notes[lesson.id] = (await _repo.getProgress(lesson.id)).notes;
-    }
     if (!mounted) return;
     setState(() {
       _saved = saved;
-      _withNotes = withNotes;
+      _withNotes = [for (final (lesson, _) in withNotes) lesson];
       _categories = {for (final c in categories) c.id: c};
-      _notes = notes;
+      _notes = {for (final (lesson, note) in withNotes) lesson.id: note};
       _loading = false;
     });
   }

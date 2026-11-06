@@ -58,7 +58,7 @@ class _TodayPageState extends State<TodayPage> {
   Widget _content() {
     final missions = _overviews.where((o) => o.started && !o.finished && o.nextLesson != null).toList()
       ..sort((a, b) => b.state!.lastActiveAt.compareTo(a.state!.lastActiveAt));
-    final notStarted = _overviews.where((o) => !o.started).take(2).toList();
+    final notStarted = _overviews.where((o) => !o.started && !MentorPage.isTabOnly(o.category.id)).take(2).toList();
     final todayDone = _days.contains(MentorEngine.dayKey(DateTime.now()));
     final l = AppLocalizations.of(context);
 

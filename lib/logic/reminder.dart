@@ -134,10 +134,15 @@ class Reminder {
       );
 
       // The mentor you worked with last, and where you stopped.
-      final current = (await repo.getAllOverviews())
-          .where((o) => o.started && !o.finished && o.nextLesson != null)
-          .fold<CategoryOverview?>(
-              null, (best, o) => best == null || o.state!.lastActiveAt.isAfter(best.state!.lastActiveAt) ? o : best);
+      // Loads one category, not all of them: this runs after every quiz.
+      CategoryOverview? current;
+      for (final id in await repo.getRecentCategoryIds()) {
+        final o = await repo.getOverview(id);
+        if (o != null && !o.finished && o.nextLesson != null) {
+          current = o;
+          break;
+        }
+      }
       final mentor = current?.category.mentorName;
       final lesson = current?.nextLesson;
 

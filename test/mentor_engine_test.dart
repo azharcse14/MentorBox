@@ -67,7 +67,6 @@ void main() {
       final o = _overview({'a', 'b', 'c'});
       expect(o.finished, isTrue);
       expect(o.nextLesson, isNull);
-      expect(o.lessonAfter(o.lessons[2]), isNull);
     });
 
     test('paragraphs split on blank lines', () {

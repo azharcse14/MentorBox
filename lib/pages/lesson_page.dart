@@ -60,14 +60,14 @@ class _LessonPageState extends State<LessonPage> {
     final category = await _repo.getCategory(lesson.categoryId);
     final progress = await _repo.getProgress(lesson.id);
     final quiz = await _repo.getQuiz(lesson.id);
-    final overview = await _repo.getOverview(lesson.categoryId);
+    final next = await _repo.getLessonAfter(lesson.id);
     if (!mounted) return;
     setState(() {
       _lesson = lesson;
       _category = category;
       _progress = progress;
       _quizCount = quiz.length;
-      _nextLesson = overview?.lessonAfter(lesson);
+      _nextLesson = next;
       if (!_notesDirty) _notesController.text = progress.notes;
     });
   }
