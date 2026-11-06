@@ -83,17 +83,17 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 39 | cse-6-1 | Machine Learning | done |
 | 40 | cse-6-2 | Computer Security & Cryptography | done |
 | 41 | cse-6-3 | Distributed Systems | done |
-| 42 | cse-6-4 | Digital Image Processing | todo |
-| 43 | cse-6-5 | Simulation & Modeling | todo |
-| 44 | cse-6-6 | Professional Ethics & Cyber Law | todo |
-| 45 | cse-6-8 | Technical Writing | todo |
-| 46 | cse-6-9 | VLSI Design | todo |
-| 47 | cse-6-10 | Operations Research | todo |
-| 48 | cse-6-11 | Software Project Management | todo |
-| 49 | cse-6-12 | Pattern Recognition | todo |
-| 50 | cse-6-13 | System Design | todo |
-| 51 | cse-6-14 | Data Science | todo |
-| 52 | cse-6-7 | Final Year Project / Thesis | todo |
+| 42 | cse-6-4 | Digital Image Processing | done |
+| 43 | cse-6-5 | Simulation & Modeling | done |
+| 44 | cse-6-6 | Professional Ethics & Cyber Law | done |
+| 45 | cse-6-8 | Technical Writing | done |
+| 46 | cse-6-9 | VLSI Design | done |
+| 47 | cse-6-10 | Operations Research | done |
+| 48 | cse-6-11 | Software Project Management | in progress |
+| 49 | cse-6-12 | Pattern Recognition | in progress |
+| 50 | cse-6-13 | System Design | in progress |
+| 51 | cse-6-14 | Data Science | in progress |
+| 52 | cse-6-7 | Final Year Project / Thesis | in progress |
 
 ## MSc
 
