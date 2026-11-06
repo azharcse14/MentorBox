@@ -42,9 +42,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get defaultName => 'Learner';
 
   @override
-  String loadError(String error) {
-    return 'The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n$error';
-  }
+  String get loadError => 'The lessons could not be loaded. Please try again.';
 
   @override
   String get exploreLabel => 'Explore :';
@@ -110,7 +108,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lockedLessonHint =>
-      'Finish the lesson before this one to unlock it.';
+      'Finish the previous lesson to unlock this one';
 
   @override
   String get progressLabel => 'Progress : ';
@@ -503,9 +501,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get layoutGrid => 'Grid';
 
   @override
-  String get layoutCarousel => 'Carousel';
-
-  @override
   String get layoutList => 'List';
 
   @override
@@ -513,4 +508,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tabCseRoadmap => 'Roadmap';
+
+  @override
+  String get preview => 'Preview';
+
+  @override
+  String get searchMentors => 'Search mentors';
+
+  @override
+  String get noMentorFound => 'No mentor found';
+
+  @override
+  String get sectionLifeSkills => 'Life skills';
+
+  @override
+  String get sectionCourses => 'Tech courses';
 }

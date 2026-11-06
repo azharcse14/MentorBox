@@ -11,7 +11,7 @@
   "darkTheme": "ডার্ক",
   "todaysMissions": "আজকের মিশন",
   "defaultName": "শিক্ষার্থী",
-  "loadError": "লেসনগুলো লোড করা যায়নি। assets/content/-এর ফাইলগুলো ঠিকঠাক JSON কিনা আর pubspec.yaml-এ আছে কিনা দেখো।\n\n{error}",
+  "loadError": "লেসনগুলো লোড করা যায়নি। আবার চেষ্টা করো।",
   "exploreLabel": "ঘুরে দেখো :",
   "exploreTagline": "একজন মেন্টর বেছে নাও, রোজ একটু করে শেখো",
   "heroBefore": "প্রতিটি দক্ষতার জন্য\nতোমার নিজের ",
@@ -26,7 +26,7 @@
   "saveName": "নাম সেভ করো",
   "finished": "শেষ",
   "percentDone": "{percent}% শেষ",
-  "lockedLessonHint": "এটা খুলতে আগের লেসনটা শেষ করো।",
+  "lockedLessonHint": "আগের লেসনটা শেষ করলে এটা খুলবে",
   "progressLabel": "অগ্রগতি : ",
   "percent": "{value}%",
   "lessonsOf": "{total}টির মধ্যে {done}টি লেসন",
@@ -116,8 +116,12 @@
   "notifLastCallTitle": "রিমাইন্ডার আপাতত বন্ধ রাখছি",
   "notifLastCallBody": "মনে হচ্ছে রিমাইন্ডারগুলো কাজে আসছে না, তাই আপাতত থামছি। যখন খুশি ফিরে এসো!",
   "layoutGrid": "গ্রিড",
-  "layoutCarousel": "ক্যারোসেল",
   "layoutList": "লিস্ট",
   "tabCseCourses": "ফুল কোর্স",
-  "tabCseRoadmap": "রোডম্যাপ"
+  "tabCseRoadmap": "রোডম্যাপ",
+  "preview": "প্রিভিউ",
+  "searchMentors": "মেন্টর খোঁজো",
+  "noMentorFound": "কোনো মেন্টর পাওয়া যায়নি",
+  "sectionLifeSkills": "জীবনের দক্ষতা",
+  "sectionCourses": "টেক কোর্স"
 }

@@ -9,8 +9,8 @@ import '../theme.dart';
 import 'lesson_page.dart';
 
 /// One mentor's page: what it teaches, how far you are, and the roadmap of
-/// levels and lessons. Keeps the dark, slowly zooming photo of the original
-/// detail page.
+/// levels and lessons, over the slowly zooming photo of the original detail
+/// page. Follows the light/dark theme like the rest of the app.
 ///
 /// Categories listed together in [tabGroups] share one page with a tab per
 /// category; only the first of each group gets a card on the home screen.
@@ -46,11 +46,22 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _zoom = AnimationController(vsync: this, duration: const Duration(seconds: 6))..repeat(reverse: true);
+    _zoom = AnimationController(vsync: this, duration: const Duration(seconds: 6));
     _scale = Tween<double>(begin: 1.0, end: 1.06).animate(
       CurvedAnimation(parent: _zoom, curve: Curves.easeInOut),
     );
     _load();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // "Remove animations" in the phone settings stops the endless zoom.
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _zoom.stop();
+    } else if (!_zoom.isAnimating) {
+      _zoom.repeat(reverse: true);
+    }
   }
 
   @override
@@ -88,19 +99,11 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
     await _load();
   }
 
-  void _showLocked() {
-    ScaffoldMessenger.of(context)
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).lockedLessonHint)),
-      );
-  }
-
   @override
   Widget build(BuildContext context) {
     final overview = _overview;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppTheme.kBackground,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -117,7 +120,7 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
                 controller: _tabs,
                 indicatorColor: AppTheme.kPrimaryColor,
                 labelColor: AppTheme.kPrimaryColor,
-                unselectedLabelColor: Colors.white70,
+                unselectedLabelColor: AppTheme.kSubheadingColor,
                 dividerColor: Colors.transparent,
                 labelStyle: AppTheme.mono(15, weight: FontWeight.w700),
                 tabs: [for (final id in _group) Tab(text: _tabLabel(id, AppLocalizations.of(context)))],
@@ -131,7 +134,7 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
                   child: ScaleTransition(
                     scale: _scale,
                     child: Opacity(
-                      opacity: 0.3,
+                      opacity: AppTheme.isDark ? 0.3 : 0.15,
                       child: Image.asset(overview.category.image, fit: BoxFit.cover),
                     ),
                   ),
@@ -148,75 +151,79 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
     final percent = (overview.ratio * 100).round();
     final l = AppLocalizations.of(context);
 
-    return ListView(
+    final header = <Widget>[
+      Text(category.name, style: AppTheme.display(44)),
+      const SizedBox(height: 6),
+      Text(category.tagline, style: AppTheme.body(16, height: 1.4)),
+      const SizedBox(height: 20),
+      MentorBubble(category: category, message: MentorEngine.greeting(overview, l), dark: AppTheme.isDark),
+      const SizedBox(height: 24),
+      Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: AppTheme.kSurface.withAlpha(0xCC),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  l.progressLabel,
+                  style: AppTheme.mono(20, color: AppTheme.kSubheadingColor, weight: FontWeight.w700),
+                ),
+                // Counts up once, like the price animation in the original design.
+                TweenAnimationBuilder<double>(
+                  tween: Tween<double>(begin: 0, end: percent.toDouble()),
+                  duration: const Duration(milliseconds: 900),
+                  curve: Curves.easeOut,
+                  builder: (context, value, _) => Text(
+                    l.percent(value.round()),
+                    style: AppTheme.display(35),
+                  ),
+                ),
+                const Spacer(),
+                Text(
+                  l.lessonsOf(overview.completedCount, overview.total),
+                  style: AppTheme.mono(15, color: AppTheme.kSubheadingColor),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            ProgressBar(value: overview.ratio, color: category.color),
+          ],
+        ),
+      ),
+      const SizedBox(height: 20),
+      Text(category.description, style: AppTheme.body(15, height: 1.6)),
+      const SizedBox(height: 28),
+    ];
+    final levels = overview.levels;
+
+    // Built lazily: the CSE courses have 50+ levels.
+    return ListView.builder(
       // New key per category: scroll position and open levels reset on tab switch.
       key: ValueKey(category.id),
-      padding: EdgeInsets.fromLTRB(20, kToolbarHeight + (_tabs == null ? 0 : kTextTabBarHeight) + MediaQuery.of(context).size.height * 0.12, 20, 24),
-      children: [
-        Text(category.name, style: AppTheme.display(44, color: AppTheme.kScaffoldBackgroundColor)),
-        const SizedBox(height: 6),
-        Text(category.tagline, style: AppTheme.body(16, color: AppTheme.kScaffoldBackgroundColor, height: 1.4)),
-        const SizedBox(height: 20),
-        MentorBubble(category: category, message: MentorEngine.greeting(overview, l), dark: true),
-        const SizedBox(height: 24),
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: const Color(0x33DEDDD2),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Text(
-                    l.progressLabel,
-                    style: AppTheme.mono(20, color: Colors.grey.shade500, weight: FontWeight.w700),
-                  ),
-                  // Counts up once, like the price animation in the original design.
-                  TweenAnimationBuilder<double>(
-                    tween: Tween<double>(begin: 0, end: percent.toDouble()),
-                    duration: const Duration(milliseconds: 900),
-                    curve: Curves.easeOut,
-                    builder: (context, value, _) => Text(
-                      l.percent(value.round()),
-                      style: AppTheme.display(35, color: Colors.white70),
-                    ),
-                  ),
-                  const Spacer(),
-                  Text(
-                    l.lessonsOf(overview.completedCount, overview.total),
-                    style: AppTheme.mono(15, color: Colors.white70),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              ProgressBar(value: overview.ratio, color: category.color),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20),
-        Text(category.description, style: AppTheme.body(15, color: Colors.white70, height: 1.6)),
-        const SizedBox(height: 28),
-        for (var i = 0; i < overview.levels.length; i++) ...[
-          if (overview.levels[i].section.isNotEmpty &&
-              (i == 0 || overview.levels[i - 1].section != overview.levels[i].section))
+      padding: EdgeInsets.fromLTRB(20,
+          kToolbarHeight + (_tabs == null ? 0 : kTextTabBarHeight) + MediaQuery.of(context).size.height * 0.12, 20, 24),
+      itemCount: header.length + levels.length,
+      itemBuilder: (context, index) {
+        if (index < header.length) return header[index];
+        final i = index - header.length;
+        final newSection = levels[i].section.isNotEmpty && (i == 0 || levels[i - 1].section != levels[i].section);
+        final level = _LevelSection(number: i + 1, level: levels[i], overview: overview, onOpen: _openLesson);
+        if (!newSection) return level;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             Padding(
               padding: EdgeInsets.only(top: i == 0 ? 0 : 20, bottom: 8),
-              child: Text(
-                overview.levels[i].section.toUpperCase(),
-                style: AppTheme.mono(14, color: category.color),
-              ),
+              child: Text(levels[i].section.toUpperCase(), style: AppTheme.mono(14, color: category.color)),
             ),
-          _LevelSection(
-            number: i + 1,
-            level: overview.levels[i],
-            overview: overview,
-            onOpen: _openLesson,
-            onLocked: _showLocked,
-          ),
-        ],
-      ],
+            level,
+          ],
+        );
+      },
     );
   }
 
@@ -238,7 +245,7 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
     }
 
     return Container(
-      color: Colors.black,
+      color: AppTheme.kBackground,
       child: SafeArea(
         top: false,
         child: Padding(
@@ -255,14 +262,12 @@ class _LevelSection extends StatelessWidget {
   final Level level;
   final CategoryOverview overview;
   final void Function(Lesson lesson) onOpen;
-  final VoidCallback onLocked;
 
   const _LevelSection({
     required this.number,
     required this.level,
     required this.overview,
     required this.onOpen,
-    required this.onLocked,
   });
 
   @override
@@ -282,24 +287,25 @@ class _LevelSection extends StatelessWidget {
         childrenPadding: const EdgeInsets.only(top: 4),
         shape: const Border(),
         collapsedShape: const Border(),
-        iconColor: Colors.white70,
-        collapsedIconColor: Colors.white70,
+        iconColor: AppTheme.kSubheadingColor,
+        collapsedIconColor: AppTheme.kSubheadingColor,
         title: Row(
           children: [
             Text(
               l.levelNumber(number),
-              style: AppTheme.display(24, color: unlocked ? AppTheme.kPrimaryColor : Colors.white54),
+              style: AppTheme.display(24, color: unlocked ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor),
             ),
             const SizedBox(width: 10),
             Expanded(
               child: Text(
                 level.title,
-                style: AppTheme.body(15, color: unlocked ? Colors.white : Colors.white54, weight: FontWeight.w600),
+                style: AppTheme.body(15,
+                    color: unlocked ? AppTheme.kText : AppTheme.kSubheadingColor, weight: FontWeight.w600),
               ),
             ),
             Text(
               unlocked ? l.fraction(done, lessons.length) : l.locked,
-              style: AppTheme.mono(14, color: Colors.white70),
+              style: AppTheme.mono(14, color: AppTheme.kSubheadingColor),
             ),
           ],
         ),
@@ -310,7 +316,8 @@ class _LevelSection extends StatelessWidget {
               state: overview.stateOf(lesson),
               progress: overview.progress[lesson.id],
               accent: overview.category.color,
-              onTap: () => overview.stateOf(lesson) == LessonState.locked ? onLocked() : onOpen(lesson),
+              // Locked lessons open as a read-only preview; the quiz stays locked.
+              onTap: () => onOpen(lesson),
             ),
         ],
       ),
@@ -345,7 +352,7 @@ class _LessonTile extends StatelessWidget {
       iconColor = accent;
     } else {
       icon = Icons.lock_outline;
-      iconColor = Colors.white54;
+      iconColor = AppTheme.kSubheadingColor;
     }
 
     final locked = state == LessonState.locked;
@@ -361,7 +368,7 @@ class _LessonTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Material(
-        color: locked ? const Color(0x0FFFFFFF) : const Color(0x1FFFFFFF),
+        color: AppTheme.kCard.withAlpha(locked ? 0x66 : 0xCC),
         borderRadius: BorderRadius.circular(12),
         child: InkWell(
           onTap: onTap,
@@ -370,7 +377,7 @@ class _LessonTile extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Row(
               children: [
-                Icon(icon, color: iconColor, size: 28),
+                Icon(icon, color: iconColor, size: 28, semanticLabel: locked ? l.locked : null),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
@@ -380,13 +387,13 @@ class _LessonTile extends StatelessWidget {
                         lesson.title,
                         style: AppTheme.body(
                           15,
-                          color: locked ? Colors.white60 : Colors.white,
+                          color: locked ? AppTheme.kSubheadingColor : AppTheme.kText,
                           weight: FontWeight.w600,
                           height: 1.3,
                         ),
                       ),
                       const SizedBox(height: 2),
-                      Text(detail, style: AppTheme.mono(13, color: Colors.white70)),
+                      Text(detail, style: AppTheme.mono(13, color: AppTheme.kSubheadingColor)),
                     ],
                   ),
                 ),

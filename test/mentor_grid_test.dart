@@ -6,55 +6,57 @@ import 'package:mentor_app_flutter/l10n/app_localizations.dart';
 import 'package:mentor_app_flutter/logic/mentor_engine.dart';
 
 void main() {
-  // The home grid uses a fixed card ratio; make sure a card's text still fits
-  // on a small phone with large text.
-  testWidgets('mentor card fits the home grid on a small phone', (tester) async {
-    tester.view.physicalSize = const Size(320, 640);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.reset);
-    const category = MentorCategory(
-      id: 'cse',
-      name: 'Computer Science and Engineering',
-      mentorName: 'Professor Byte the Long Named',
-      tagline: '',
-      description: '',
-      image: 'assets/images/career.jpg',
-      color: Colors.teal,
-      sortOrder: 0,
-      messages: {},
-    );
-    await tester.pumpWidget(MaterialApp(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: MediaQuery(
-        data: const MediaQueryData(size: Size(320, 640), textScaler: TextScaler.linear(1.3)),
-        child: Scaffold(
-          body: GridView.count(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            crossAxisCount: 2,
-            mainAxisSpacing: 14,
-            crossAxisSpacing: 14,
-            childAspectRatio: 0.72,
-            children: [
-              MentorCard(
-                overview: const CategoryOverview(
-                  category: category,
-                  levels: [],
-                  lessons: [],
-                  progress: {},
-                  state: null,
+  // The home grid grows its cards with the text size (same formula as
+  // home_page.dart); make sure a card's text still fits on a small phone.
+  for (final scale in [1.0, 1.3, 2.0]) {
+    testWidgets('mentor card fits the home grid on a small phone at text x$scale', (tester) async {
+      tester.view.physicalSize = const Size(320, 640);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      const category = MentorCategory(
+        id: 'cse',
+        name: 'Computer Science and Engineering',
+        mentorName: 'Professor Byte the Long Named',
+        tagline: '',
+        description: '',
+        image: 'assets/images/career.jpg',
+        color: Colors.teal,
+        sortOrder: 0,
+        messages: {},
+      );
+      await tester.pumpWidget(MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: MediaQuery(
+          data: MediaQueryData(size: const Size(320, 640), textScaler: TextScaler.linear(scale)),
+          child: Scaffold(
+            body: GridView.count(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              crossAxisCount: 2,
+              mainAxisSpacing: 14,
+              crossAxisSpacing: 14,
+              mainAxisExtent: 130 + TextScaler.linear(scale).scale(100),
+              children: [
+                MentorCard(
+                  overview: const CategoryOverview(
+                    category: category,
+                    levels: [],
+                    lessons: [],
+                    progress: {},
+                    state: null,
+                  ),
+                  onTap: () {},
                 ),
-                onTap: () {},
-              ),
-            ],
+              ],
+            ),
           ),
         ),
-      ),
-    ));
-    expect(tester.takeException(), isNull);
-  });
+      ));
+      expect(tester.takeException(), isNull);
+    });
+  }
 
-  testWidgets('list row and carousel card fit on a small phone', (tester) async {
+  testWidgets('list row fit on a small phone', (tester) async {
     tester.view.physicalSize = const Size(320, 640);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
@@ -85,7 +87,6 @@ void main() {
             padding: const EdgeInsets.symmetric(horizontal: 24),
             children: [
               MentorListTile(overview: overview, onTap: () {}),
-              SizedBox(height: 400, child: MentorCard(overview: overview, large: true, onTap: () {})),
             ],
           ),
         ),

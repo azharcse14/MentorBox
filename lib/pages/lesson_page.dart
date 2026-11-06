@@ -19,8 +19,15 @@ class LessonPage extends StatefulWidget {
 }
 
 class _LessonPageState extends State<LessonPage> {
+  // ponytail: in memory only, so reading spots reset when the app restarts.
+  static final Map<String, double> _scrollMemory = {};
+
+  /// Most paragraphs start with a short "Heading: " label; it is shown bold.
+  static final _label = RegExp(r'^([^:\n.?!]{2,40}):\s');
+
   final _repo = MentorRepository.instance;
   final _notesController = TextEditingController();
+  final _scroll = ScrollController();
 
   Lesson? _lesson;
   MentorCategory? _category;
@@ -31,6 +38,9 @@ class _LessonPageState extends State<LessonPage> {
   bool _notesSaved = false;
   Timer? _notesTimer;
   bool _missing = false;
+
+  /// The lesson before this one is not done: readable, but no quiz yet.
+  bool _locked = false;
 
   @override
   void initState() {
@@ -47,6 +57,8 @@ class _LessonPageState extends State<LessonPage> {
       _repo.saveNotes(lesson.id, _notesController.text.trim());
     }
     _notesController.dispose();
+    if (_scroll.hasClients) _scrollMemory[widget.lessonId] = _scroll.offset;
+    _scroll.dispose();
     super.dispose();
   }
 
@@ -61,8 +73,12 @@ class _LessonPageState extends State<LessonPage> {
     final progress = await _repo.getProgress(lesson.id);
     final quiz = await _repo.getQuiz(lesson.id);
     final next = await _repo.getLessonAfter(lesson.id);
+    final before = await _repo.getLessonBefore(lesson.id);
+    final locked = !progress.completed && before != null && !(await _repo.getProgress(before.id)).completed;
     if (!mounted) return;
+    final firstLoad = _lesson == null;
     setState(() {
+      _locked = locked;
       _lesson = lesson;
       _category = category;
       _progress = progress;
@@ -70,6 +86,13 @@ class _LessonPageState extends State<LessonPage> {
       _nextLesson = next;
       if (!_notesDirty) _notesController.text = progress.notes;
     });
+    // Come back to where you stopped reading.
+    final offset = _scrollMemory[widget.lessonId];
+    if (firstLoad && offset != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (_scroll.hasClients) _scroll.jumpTo(offset.clamp(0, _scroll.position.maxScrollExtent));
+      });
+    }
   }
 
   Future<void> _refreshProgress() async {
@@ -182,8 +205,25 @@ class _LessonPageState extends State<LessonPage> {
             ),
           ),
         ],
+        // How far through the lesson you have read.
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(3),
+          child: ListenableBuilder(
+            listenable: _scroll,
+            builder: (context, _) {
+              final max = _scroll.hasClients ? _scroll.position.maxScrollExtent : 0.0;
+              return LinearProgressIndicator(
+                value: max <= 0 ? 0 : _scroll.offset / max,
+                minHeight: 3,
+                color: accent,
+                backgroundColor: Colors.transparent,
+              );
+            },
+          ),
+        ),
       ),
       body: ListView(
+        controller: _scroll,
         padding: const EdgeInsets.fromLTRB(24, 4, 24, 32),
         children: [
           Wrap(
@@ -194,15 +234,16 @@ class _LessonPageState extends State<LessonPage> {
               _Tag(text: category.name, color: accent),
               _Tag(text: l.minutesRead(lesson.durationMin), color: AppTheme.kSubheadingColor),
               if (progress.completed) _Tag(text: l.completed, color: AppTheme.kSuccess),
+              if (_locked) _Tag(text: l.preview, color: AppTheme.kSubheadingColor),
             ],
           ),
           const SizedBox(height: 14),
-          Text(lesson.title, style: AppTheme.display(38)),
+          Text(lesson.title, style: AppTheme.body(26, weight: FontWeight.w600, height: 1.25)),
           const SizedBox(height: 16),
           for (final paragraph in lesson.paragraphs)
             Padding(
               padding: const EdgeInsets.only(bottom: 14),
-              child: Text(paragraph, style: AppTheme.body(15, height: 1.65)),
+              child: _paragraph(paragraph),
             ),
           const SizedBox(height: 8),
           if (lesson.keyPoints.isNotEmpty)
@@ -257,7 +298,7 @@ class _LessonPageState extends State<LessonPage> {
                     type: MaterialType.transparency,
                     child: CheckboxListTile(
                       value: progress.taskDone,
-                      onChanged: _setTaskDone,
+                      onChanged: _locked ? null : _setTaskDone,
                       activeColor: accent,
                       contentPadding: EdgeInsets.zero,
                       controlAffinity: ListTileControlAffinity.leading,
@@ -312,8 +353,24 @@ class _LessonPageState extends State<LessonPage> {
     );
   }
 
+  Widget _paragraph(String text) {
+    final style = AppTheme.body(15, height: 1.65);
+    final label = _label.firstMatch(text);
+    if (label == null) return Text(text, style: style);
+    return Text.rich(
+      TextSpan(
+        style: style,
+        children: [
+          TextSpan(text: label.group(0), style: const TextStyle(fontWeight: FontWeight.w600)),
+          TextSpan(text: text.substring(label.end)),
+        ],
+      ),
+    );
+  }
+
   Widget _bottomAction(LessonProgress progress) {
     final l = AppLocalizations.of(context);
+    if (_locked) return PrimaryButton(label: l.lockedLessonHint, onTap: null);
     if (!progress.completed) {
       if (_quizCount == 0) {
         return PrimaryButton(label: l.markComplete, onTap: _markComplete);

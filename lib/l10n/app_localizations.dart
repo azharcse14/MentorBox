@@ -167,8 +167,8 @@ abstract class AppLocalizations {
   /// No description provided for @loadError.
   ///
   /// In en, this message translates to:
-  /// **'The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n{error}'**
-  String loadError(String error);
+  /// **'The lessons could not be loaded. Please try again.'**
+  String get loadError;
 
   /// No description provided for @exploreLabel.
   ///
@@ -257,7 +257,7 @@ abstract class AppLocalizations {
   /// No description provided for @lockedLessonHint.
   ///
   /// In en, this message translates to:
-  /// **'Finish the lesson before this one to unlock it.'**
+  /// **'Finish the previous lesson to unlock this one'**
   String get lockedLessonHint;
 
   /// No description provided for @progressLabel.
@@ -794,12 +794,6 @@ abstract class AppLocalizations {
   /// **'Grid'**
   String get layoutGrid;
 
-  /// No description provided for @layoutCarousel.
-  ///
-  /// In en, this message translates to:
-  /// **'Carousel'**
-  String get layoutCarousel;
-
   /// No description provided for @layoutList.
   ///
   /// In en, this message translates to:
@@ -817,6 +811,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Roadmap'**
   String get tabCseRoadmap;
+
+  /// No description provided for @preview.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get preview;
+
+  /// No description provided for @searchMentors.
+  ///
+  /// In en, this message translates to:
+  /// **'Search mentors'**
+  String get searchMentors;
+
+  /// No description provided for @noMentorFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No mentor found'**
+  String get noMentorFound;
+
+  /// No description provided for @sectionLifeSkills.
+  ///
+  /// In en, this message translates to:
+  /// **'Life skills'**
+  String get sectionLifeSkills;
+
+  /// No description provided for @sectionCourses.
+  ///
+  /// In en, this message translates to:
+  /// **'Tech courses'**
+  String get sectionCourses;
 }
 
 class _AppLocalizationsDelegate

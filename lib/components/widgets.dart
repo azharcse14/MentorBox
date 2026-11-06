@@ -55,15 +55,16 @@ class PrimaryButton extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           borderRadius: BorderRadius.circular(10),
-          child: SizedBox(
-            height: 60,
-            width: double.infinity,
+          // Min height, not fixed: grows with the phone's text size.
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 60, minWidth: double.infinity),
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 child: Text(
                   label,
-                  maxLines: 1,
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
                   overflow: TextOverflow.ellipsis,
                   // Dark text: the light beige was hard to read on orange.
                   style: AppTheme.body(

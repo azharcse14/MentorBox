@@ -11,14 +11,7 @@
   "darkTheme": "Dark",
   "todaysMissions": "Today's missions",
   "defaultName": "Learner",
-  "loadError": "The lessons could not be loaded. Check that the files in assets/content/ are valid JSON and listed in pubspec.yaml.\n\n{error}",
-  "@loadError": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
+  "loadError": "The lessons could not be loaded. Please try again.",
   "exploreLabel": "Explore :",
   "exploreTagline": "Pick a mentor, grow one skill a day",
   "heroBefore": "Your Personal\n",
@@ -56,7 +49,7 @@
       }
     }
   },
-  "lockedLessonHint": "Finish the lesson before this one to unlock it.",
+  "lockedLessonHint": "Finish the previous lesson to unlock this one",
   "progressLabel": "Progress : ",
   "percent": "{value}%",
   "@percent": {
@@ -345,8 +338,12 @@
   "notifLastCallTitle": "We'll pause your reminders",
   "notifLastCallBody": "These reminders don't seem to be working, so we'll stop for now. Come back any time!",
   "layoutGrid": "Grid",
-  "layoutCarousel": "Carousel",
   "layoutList": "List",
   "tabCseCourses": "Full Courses",
-  "tabCseRoadmap": "Roadmap"
+  "tabCseRoadmap": "Roadmap",
+  "preview": "Preview",
+  "searchMentors": "Search mentors",
+  "noMentorFound": "No mentor found",
+  "sectionLifeSkills": "Life skills",
+  "sectionCourses": "Tech courses"
 }

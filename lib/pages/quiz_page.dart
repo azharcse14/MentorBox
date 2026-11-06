@@ -324,6 +324,7 @@ class _OptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     Color border = Colors.transparent;
     Color background = AppTheme.kCard;
     Color textColor = AppTheme.kText;
@@ -368,7 +369,8 @@ class _OptionTile extends StatelessWidget {
                 Expanded(child: Text(text, style: AppTheme.body(15, color: textColor, height: 1.4))),
                 if (icon != null) ...[
                   const SizedBox(width: 8),
-                  Icon(icon, color: border),
+                  Icon(icon,
+                      color: border, semanticLabel: look == _OptionLook.correct ? l.answerCorrect : l.answerWrong),
                 ],
               ],
             ),

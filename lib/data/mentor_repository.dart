@@ -76,7 +76,7 @@ class MentorRepository {
 
   static const String _homeLayoutKey = 'home_layout';
 
-  /// How mentors are shown on home: 'grid', 'carousel' or 'list'.
+  /// How mentors are shown on home: 'grid' or 'list' (old 'carousel' reads as grid).
   Future<String> getHomeLayout() async {
     final db = await _db;
     final rows = await db.query('meta', where: 'key = ?', whereArgs: [_homeLayoutKey]);
@@ -116,7 +116,12 @@ class MentorRepository {
   }
 
   /// The lesson after [lessonId] in learning order (level, then lesson).
-  Future<Lesson?> getLessonAfter(String lessonId) async {
+  Future<Lesson?> getLessonAfter(String lessonId) => _neighbor(lessonId, '>', 'ASC');
+
+  /// The lesson before [lessonId] in learning order, or null for the first.
+  Future<Lesson?> getLessonBefore(String lessonId) => _neighbor(lessonId, '<', 'DESC');
+
+  Future<Lesson?> _neighbor(String lessonId, String cmp, String dir) async {
     final db = await _db;
     final rows = await db.rawQuery('''
       SELECT l.* FROM lessons c
@@ -124,8 +129,8 @@ class MentorRepository {
       JOIN lessons l ON l.category_id = c.category_id
       JOIN levels v ON v.id = l.level_id
       WHERE c.id = ?
-        AND (v.sort_order > cv.sort_order OR (v.sort_order = cv.sort_order AND l.sort_order > c.sort_order))
-      ORDER BY v.sort_order, l.sort_order
+        AND (v.sort_order $cmp cv.sort_order OR (v.sort_order = cv.sort_order AND l.sort_order $cmp c.sort_order))
+      ORDER BY v.sort_order $dir, l.sort_order $dir
       LIMIT 1
     ''', [lessonId]);
     return rows.isEmpty ? null : Lesson.fromRow(rows.first);

@@ -6,13 +6,11 @@ import '../theme.dart';
 import 'widgets.dart';
 
 /// One mentor on the home screen, showing the category and the learner's
-/// progress in it. [large] is the carousel look: bigger name plus the tagline.
+/// progress in it.
 class MentorCard extends StatelessWidget {
   final CategoryOverview overview;
   final VoidCallback onTap;
-  final bool large;
-
-  const MentorCard({super.key, required this.overview, required this.onTap, this.large = false});
+  const MentorCard({super.key, required this.overview, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +22,7 @@ class MentorCard extends StatelessWidget {
 
     return Card(
       elevation: 5,
-      margin: large ? const EdgeInsets.symmetric(horizontal: 8, vertical: 6) : EdgeInsets.zero,
+      margin: EdgeInsets.zero,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       color: category.color,
@@ -59,7 +57,7 @@ class MentorCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: large ? const EdgeInsets.fromLTRB(14, 12, 14, 14) : const EdgeInsets.fromLTRB(12, 10, 12, 12),
+                padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -73,17 +71,8 @@ class MentorCard extends StatelessWidget {
                       category.mentorName,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.display(large ? 28 : 22, color: fg),
+                      style: AppTheme.display(22, color: fg),
                     ),
-                    if (large) ...[
-                      const SizedBox(height: 4),
-                      Text(
-                        category.tagline,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTheme.body(12, color: fgSoft, height: 1.35),
-                      ),
-                    ],
                     const SizedBox(height: 8),
                     ProgressBar(value: overview.ratio, color: fg, background: fg.withAlpha(0x33)),
                     const SizedBox(height: 6),
@@ -91,7 +80,7 @@ class MentorCard extends StatelessWidget {
                       l.lessonsOf(overview.completedCount, overview.total),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(12, color: fgSoft),
+                      style: AppTheme.mono(13, color: fgSoft),
                     ),
                   ],
                 ),
@@ -150,7 +139,7 @@ class MentorListTile extends StatelessWidget {
                       category.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(12, color: fgSoft, weight: FontWeight.w700),
+                      style: AppTheme.mono(13, color: fgSoft, weight: FontWeight.w700),
                     ),
                     const SizedBox(height: 6),
                     ProgressBar(value: overview.ratio, color: fg, background: fg.withAlpha(0x33)),
@@ -159,7 +148,7 @@ class MentorListTile extends StatelessWidget {
                       l.lessonsOf(overview.completedCount, overview.total),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(11, color: fgSoft),
+                      style: AppTheme.mono(13, color: fgSoft),
                     ),
                   ],
                 ),

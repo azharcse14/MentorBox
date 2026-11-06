@@ -42,9 +42,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get defaultName => 'শিক্ষার্থী';
 
   @override
-  String loadError(String error) {
-    return 'লেসনগুলো লোড করা যায়নি। assets/content/-এর ফাইলগুলো ঠিকঠাক JSON কিনা আর pubspec.yaml-এ আছে কিনা দেখো।\n\n$error';
-  }
+  String get loadError => 'লেসনগুলো লোড করা যায়নি। আবার চেষ্টা করো।';
 
   @override
   String get exploreLabel => 'ঘুরে দেখো :';
@@ -109,7 +107,7 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get lockedLessonHint => 'এটা খুলতে আগের লেসনটা শেষ করো।';
+  String get lockedLessonHint => 'আগের লেসনটা শেষ করলে এটা খুলবে';
 
   @override
   String get progressLabel => 'অগ্রগতি : ';
@@ -500,9 +498,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get layoutGrid => 'গ্রিড';
 
   @override
-  String get layoutCarousel => 'ক্যারোসেল';
-
-  @override
   String get layoutList => 'লিস্ট';
 
   @override
@@ -510,4 +505,19 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tabCseRoadmap => 'রোডম্যাপ';
+
+  @override
+  String get preview => 'প্রিভিউ';
+
+  @override
+  String get searchMentors => 'মেন্টর খোঁজো';
+
+  @override
+  String get noMentorFound => 'কোনো মেন্টর পাওয়া যায়নি';
+
+  @override
+  String get sectionLifeSkills => 'জীবনের দক্ষতা';
+
+  @override
+  String get sectionCourses => 'টেক কোর্স';
 }

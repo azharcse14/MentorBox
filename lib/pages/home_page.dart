@@ -24,7 +24,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final _repo = MentorRepository.instance;
-  final _pageController = PageController(viewportFraction: 0.86);
 
   bool _loading = true;
   String? _error;
@@ -33,21 +32,16 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _askedForName = false;
   List<CategoryOverview> _overviews = [];
   int _streak = 0;
+  bool _todayDone = false;
   bool _reminderOn = false;
   String _layout = 'grid';
-  int _page = 0;
+  String _query = '';
   TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
   void initState() {
     super.initState();
     _load();
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
   }
 
   Future<void> _load() async {
@@ -64,8 +58,9 @@ class _HomeScreenState extends State<HomeScreen> {
         _hasName = name != null;
         _overviews = overviews;
         _streak = MentorEngine.streak(days);
+        _todayDone = days.contains(MentorEngine.dayKey(DateTime.now()));
         _reminderOn = reminderOn;
-        _layout = layout;
+        _layout = layout == 'list' ? 'list' : 'grid';
         _reminderTime = TimeOfDay(hour: hour, minute: minute);
         _loading = false;
         _error = null;
@@ -77,6 +72,8 @@ class _HomeScreenState extends State<HomeScreen> {
         WidgetsBinding.instance.addPostFrameCallback((_) => _editName());
       }
     } catch (e) {
+      // The learner sees a plain message; the details go to the log.
+      debugPrint('Home load failed: $e');
       if (!mounted) return;
       setState(() {
         _loading = false;
@@ -119,59 +116,89 @@ class _HomeScreenState extends State<HomeScreen> {
   /// Theme, language and the daily reminder, in one sheet.
   Future<void> _openSettings() async {
     final l = AppLocalizations.of(context);
-    final picked = await showModalBottomSheet<String>(
+    // Theme and language repaint the whole app, so picking one closes the
+    // sheet first. The reminder settings change in place.
+    final picked = await showModalBottomSheet<({String kind, String? value})>(
       context: context,
+      isScrollControlled: true,
       backgroundColor: AppTheme.kSurface,
-      builder: (context) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(l.settings, style: AppTheme.mono(22, weight: FontWeight.w700)),
+      builder: (sheetContext) => StatefulBuilder(
+        builder: (sheetContext, setSheet) {
+          void refreshSheet() {
+            if (sheetContext.mounted) setSheet(() {});
+          }
+
+          Widget choices(String kind, String? current, List<(String?, String)> options) => Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final (value, label) in options)
+                      ChoiceChip(
+                        label: Text(label, style: AppTheme.body(14, height: 1.2)),
+                        selected: value == current,
+                        onSelected: (_) => Navigator.of(sheetContext).pop((kind: kind, value: value)),
+                      ),
+                  ],
+                ),
+              );
+
+          return SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
+                    child: Text(l.settings, style: AppTheme.mono(22, weight: FontWeight.w700)),
+                  ),
+                  ListTile(
+                    leading: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
+                    title: Text(l.theme, style: AppTheme.body(16)),
+                  ),
+                  choices(
+                      'theme', _repo.theme, [(null, l.deviceTheme), ('light', l.lightTheme), ('dark', l.darkTheme)]),
+                  ListTile(
+                    leading: const Icon(Icons.translate),
+                    title: Text(l.language, style: AppTheme.body(16)),
+                  ),
+                  choices('language', _repo.language, [(null, l.deviceLanguage), ('en', 'English'), ('bn', 'বাংলা')]),
+                  if (Reminder.supported)
+                    SwitchListTile(
+                      secondary: const Icon(Icons.alarm),
+                      title: Text(l.dailyReminder, style: AppTheme.body(16)),
+                      subtitle: Text(l.dailyReminderHint, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
+                      value: _reminderOn,
+                      activeThumbColor: AppTheme.kPrimaryColor,
+                      onChanged: (_) async {
+                        await _toggleReminder();
+                        refreshSheet();
+                      },
+                    ),
+                  if (Reminder.supported && _reminderOn)
+                    ListTile(
+                      leading: const Icon(Icons.schedule),
+                      title: Text(l.reminderTime, style: AppTheme.body(16)),
+                      trailing: Text(_reminderTime.format(context), style: AppTheme.mono(16)),
+                      onTap: () async {
+                        await _pickReminderTime();
+                        refreshSheet();
+                      },
+                    ),
+                ],
               ),
             ),
-            ListTile(
-              leading: Icon(AppTheme.isDark ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
-              title: Text(l.theme, style: AppTheme.body(16)),
-              onTap: () => Navigator.of(context).pop('theme'),
-            ),
-            ListTile(
-              leading: const Icon(Icons.translate),
-              title: Text(l.language, style: AppTheme.body(16)),
-              onTap: () => Navigator.of(context).pop('language'),
-            ),
-            if (Reminder.supported)
-              SwitchListTile(
-                secondary: const Icon(Icons.alarm),
-                title: Text(l.dailyReminder, style: AppTheme.body(16)),
-                subtitle: Text(l.dailyReminderHint, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
-                value: _reminderOn,
-                activeThumbColor: AppTheme.kPrimaryColor,
-                onChanged: (_) => Navigator.of(context).pop('reminder'),
-              ),
-            if (Reminder.supported && _reminderOn)
-              ListTile(
-                leading: const Icon(Icons.schedule),
-                title: Text(l.reminderTime, style: AppTheme.body(16)),
-                trailing: Text(_reminderTime.format(context), style: AppTheme.mono(16)),
-                onTap: () => Navigator.of(context).pop('time'),
-              ),
-          ],
-        ),
+          );
+        },
       ),
     );
     switch (picked) {
-      case 'theme':
-        await _pickTheme();
-      case 'language':
-        await _pickLanguage();
-      case 'reminder':
-        await _toggleReminder();
-      case 'time':
-        await _pickReminderTime();
+      case (kind: 'theme', :final value):
+        await _setTheme(value);
+      case (kind: 'language', :final value):
+        await _setLanguage(value);
     }
   }
 
@@ -194,35 +221,18 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  Future<void> _pickLanguage() async {
-    final l = AppLocalizations.of(context);
+  Future<void> _setLanguage(String? code) async {
     final current = _repo.language;
-    // Wrapped so "phone's language" (null) is not the same as dismissing.
-    final picked = await showDialog<({String? code})>(
-      context: context,
-      builder: (context) => SimpleDialog(
-        backgroundColor: AppTheme.kSurface,
-        title: Text(l.language, style: AppTheme.mono(22, weight: FontWeight.w700)),
-        children: [
-          for (final (code, label) in [(null, l.deviceLanguage), ('en', 'English'), ('bn', 'বাংলা')])
-            ListTile(
-              title: Text(label, style: AppTheme.body(16)),
-              trailing: code == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
-              onTap: () => Navigator.of(context).pop((code: code)),
-            ),
-        ],
-      ),
-    );
-    if (!mounted || picked == null || picked.code == current) return;
+    if (!mounted || code == current) return;
     final fromCode = current ?? ContentSeeder.deviceLanguage();
-    final toCode = picked.code ?? ContentSeeder.deviceLanguage();
+    final toCode = code ?? ContentSeeder.deviceLanguage();
     try {
       if (fromCode == toCode) {
-        await _repo.setLanguage(picked.code);
+        await _repo.setLanguage(code);
       } else {
         // The reseed runs while the letter flips, behind the overlay.
         await playLanguageSwitch(context, fromCode: fromCode, toCode: toCode, change: () async {
-          await _repo.setLanguage(picked.code);
+          await _repo.setLanguage(code);
           await _load();
         });
         return;
@@ -239,33 +249,16 @@ class _HomeScreenState extends State<HomeScreen> {
     await _load();
   }
 
-  Future<void> _pickTheme() async {
-    final l = AppLocalizations.of(context);
+  Future<void> _setTheme(String? mode) async {
     final current = _repo.theme;
-    // Wrapped so "phone's theme" (null) is not the same as dismissing.
-    final picked = await showDialog<({String? mode})>(
-      context: context,
-      builder: (context) => SimpleDialog(
-        backgroundColor: AppTheme.kSurface,
-        title: Text(l.theme, style: AppTheme.mono(22, weight: FontWeight.w700)),
-        children: [
-          for (final (mode, label) in [(null, l.deviceTheme), ('light', l.lightTheme), ('dark', l.darkTheme)])
-            ListTile(
-              title: Text(label, style: AppTheme.body(16)),
-              trailing: mode == current ? const Icon(Icons.check, color: AppTheme.kPrimaryColor) : null,
-              onTap: () => Navigator.of(context).pop((mode: mode)),
-            ),
-        ],
-      ),
-    );
-    if (!mounted || picked == null || picked.mode == current) return;
-    final toDark = switch (picked.mode) {
+    if (!mounted || mode == current) return;
+    final toDark = switch (mode) {
       'dark' => true,
       'light' => false,
       _ => MediaQuery.platformBrightnessOf(context) == Brightness.dark,
     };
-    if (toDark == AppTheme.isDark) return _repo.setTheme(picked.mode);
-    await playThemeSwitch(context, toDark: toDark, change: () => _repo.setTheme(picked.mode));
+    if (toDark == AppTheme.isDark) return _repo.setTheme(mode);
+    await playThemeSwitch(context, toDark: toDark, change: () => _repo.setTheme(mode));
   }
 
   Future<void> _push(Widget page) async {
@@ -286,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: CustomAppBar(
         userName: _userName ?? AppLocalizations.of(context).defaultName,
-        hasMissions: inProgress.isNotEmpty,
+        hasMissions: inProgress.isNotEmpty && !_todayDone,
         onNameTap: _editName,
         onSavedTap: () => _push(const SavedPage()),
         onTodayTap: () => _push(const TodayPage()),
@@ -309,7 +302,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                l.loadError(_error!),
+                l.loadError,
                 textAlign: TextAlign.center,
                 style: AppTheme.body(14),
               ),
@@ -367,7 +360,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 for (final (layout, icon, tooltip) in [
                   ('grid', Icons.grid_view, l.layoutGrid),
-                  ('carousel', Icons.view_carousel_outlined, l.layoutCarousel),
                   ('list', Icons.view_list, l.layoutList),
                 ])
                   IconButton(
@@ -382,94 +374,105 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const SizedBox(height: 12),
-          _buildMentors(),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 12, 24, 0),
+            child: TextField(
+              onChanged: (value) => setState(() => _query = value.trim().toLowerCase()),
+              style: AppTheme.body(15, height: 1.3),
+              decoration: InputDecoration(
+                hintText: l.searchMentors,
+                hintStyle: AppTheme.body(15, color: AppTheme.kSubheadingColor, height: 1.3),
+                prefixIcon: Icon(Icons.search, color: AppTheme.kSubheadingColor),
+                filled: true,
+                fillColor: AppTheme.kSurface,
+                isDense: true,
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: BorderSide.none),
+              ),
+            ),
+          ),
+          ..._buildSections(l),
         ],
       ),
     );
   }
 
-  Widget _buildMentors() {
-    void open(CategoryOverview o) => _push(MentorPage(categoryId: o.category.id));
+  /// Mentors split into life skills and tech courses, filtered by search.
+  List<Widget> _buildSections(AppLocalizations l) {
     // Tab-only categories (e.g. the CSE roadmap) open from their host card.
-    final cards = _overviews.where((o) => !MentorPage.isTabOnly(o.category.id)).toList();
-    switch (_layout) {
-      case 'carousel':
-        return Column(
-          children: [
-            SizedBox(
-              height: 400,
-              child: PageView.builder(
-                controller: _pageController,
-                itemCount: cards.length,
-                onPageChanged: (index) => setState(() => _page = index),
-                itemBuilder: (context, index) => MentorCard(
-                  overview: cards[index],
-                  large: true,
-                  onTap: () => open(cards[index]),
-                ),
-              ),
-            ),
-            const SizedBox(height: 14),
-            _PageDots(count: cards.length, index: _page),
-          ],
-        );
-      case 'list':
-        return ListView.separated(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: cards.length,
-          separatorBuilder: (_, __) => const SizedBox(height: 12),
-          itemBuilder: (context, index) => MentorListTile(
-            overview: cards[index],
-            onTap: () => open(cards[index]),
-          ),
-        );
-      default:
-        return GridView.builder(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: cards.length,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            mainAxisSpacing: 14,
-            crossAxisSpacing: 14,
-            childAspectRatio: 0.72,
-          ),
-          itemBuilder: (context, index) => MentorCard(
-            overview: cards[index],
-            onTap: () => open(cards[index]),
-          ),
-        );
+    final cards = _overviews.where((o) {
+      if (MentorPage.isTabOnly(o.category.id)) return false;
+      if (_query.isEmpty) return true;
+      final c = o.category;
+      return '${c.name} ${c.mentorName} ${c.tagline}'.toLowerCase().contains(_query);
+    }).toList();
+    if (cards.isEmpty) {
+      return [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
+          child: Text(l.noMentorFound, style: AppTheme.body(14, color: AppTheme.kSubheadingColor)),
+        ),
+      ];
     }
-  }
-}
-
-class _PageDots extends StatelessWidget {
-  final int count;
-  final int index;
-
-  const _PageDots({required this.count, required this.index});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (var i = 0; i < count; i++)
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 250),
-            margin: const EdgeInsets.symmetric(horizontal: 3),
-            width: i == index ? 22 : 8,
-            height: 8,
-            decoration: BoxDecoration(
-              color: i == index ? AppTheme.kPrimaryColor : AppTheme.kSubheadingColor.withAlpha(0x55),
-              borderRadius: BorderRadius.circular(8),
-            ),
+    final life = cards.where((o) => _lifeSkills.contains(o.category.id)).toList();
+    final courses = cards.where((o) => !_lifeSkills.contains(o.category.id)).toList();
+    return [
+      for (final (title, list) in [(l.sectionLifeSkills, life), (l.sectionCourses, courses)])
+        if (list.isNotEmpty) ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 20, 24, 10),
+            child: Text(title.toUpperCase(),
+                style: AppTheme.mono(15, color: AppTheme.kPrimaryColor, weight: FontWeight.w700)),
           ),
-      ],
+          _buildMentors(list),
+        ],
+    ];
+  }
+
+  // ponytail: hardcoded split; move to a "group" field in index.json if more groups come.
+  static const _lifeSkills = {
+    'programming',
+    'career',
+    'communication',
+    'productivity',
+    'finance',
+    'mindset',
+    'health',
+    'leadership',
+    'study',
+    'creativity',
+  };
+
+  Widget _buildMentors(List<CategoryOverview> cards) {
+    void open(CategoryOverview o) => _push(MentorPage(categoryId: o.category.id));
+    if (_layout == 'list') {
+      return ListView.separated(
+        padding: const EdgeInsets.symmetric(horizontal: 24),
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: cards.length,
+        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        itemBuilder: (context, index) => MentorListTile(
+          overview: cards[index],
+          onTap: () => open(cards[index]),
+        ),
+      );
+    }
+    return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      itemCount: cards.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 14,
+        crossAxisSpacing: 14,
+        // Photo plus a text block that grows with the phone's text size.
+        mainAxisExtent: 130 + MediaQuery.textScalerOf(context).scale(100),
+      ),
+      itemBuilder: (context, index) => MentorCard(
+        overview: cards[index],
+        onTap: () => open(cards[index]),
+      ),
     );
   }
 }
@@ -570,6 +573,13 @@ class _OverlappingAvatarsState extends State<_OverlappingAvatars> with SingleTic
     );
     _pop = CurvedAnimation(parent: _controller, curve: Curves.easeOutBack);
     _controller.forward();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // "Remove animations" in the phone settings: show the photos at once.
+    if (MediaQuery.disableAnimationsOf(context)) _controller.value = 1;
   }
 
   @override
