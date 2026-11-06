@@ -89,11 +89,11 @@ Regenerate with `python3 tool/cse_content/tracker.py`.
 | 45 | cse-6-8 | Technical Writing | done |
 | 46 | cse-6-9 | VLSI Design | done |
 | 47 | cse-6-10 | Operations Research | done |
-| 48 | cse-6-11 | Software Project Management | in progress |
-| 49 | cse-6-12 | Pattern Recognition | in progress |
-| 50 | cse-6-13 | System Design | in progress |
-| 51 | cse-6-14 | Data Science | in progress |
-| 52 | cse-6-7 | Final Year Project / Thesis | in progress |
+| 48 | cse-6-11 | Software Project Management | done |
+| 49 | cse-6-12 | Pattern Recognition | done |
+| 50 | cse-6-13 | System Design | done |
+| 51 | cse-6-14 | Data Science | done |
+| 52 | cse-6-7 | Final Year Project / Thesis | done |
 
 ## MSc
 
