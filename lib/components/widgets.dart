@@ -233,7 +233,7 @@ class LessonRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Icon(Icons.chevron_right, color: AppTheme.kSubheadingColor),
+                Icon(Icons.chevron_right, color: AppTheme.kSubheadingColor),
               ],
             ),
           ),

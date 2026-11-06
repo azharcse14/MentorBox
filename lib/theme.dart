@@ -6,7 +6,6 @@ class AppTheme {
   static const Color kPrimaryColor = Color(0xFFED8664);
   static const Color kScaffoldBackgroundColor = Color(0xFFDEDDD2);
   static const Color kAppBarBackgroundColor = Color(0xFFED8664);
-  static const Color kSubheadingColor = Color(0xFF999999);
   static const Color kWhite70 = Colors.white70;
   static const Color kGreyShade800 = Color(0xFF424242);
   static const Color kSuccess = Color(0xFF5FA97A);
@@ -28,6 +27,19 @@ class AppTheme {
   static Color get kSurface => isDark ? _darkSurface : const Color(0xFFF4F3EC);
   static Color get kCard => isDark ? _darkCard : Colors.white;
   static Color get kText => isDark ? _darkText : kGreyShade800;
+
+  /// Secondary text. #999 was only ~2:1 on the light beige; this is ~4.8:1.
+  static Color get kSubheadingColor => isDark ? const Color(0xFF999999) : const Color(0xFF5E5D57);
+
+  /// Readable text color on [background]: dark or white, whichever has more
+  /// contrast (WCAG). Used on the category-colored mentor cards.
+  static Color onColor(Color background) {
+    final l = background.computeLuminance();
+    // Dark wins when (L+0.05)/(Ld+0.05) > 1.05/(L+0.05), the two WCAG ratios.
+    return (l + 0.05) * (l + 0.05) > 1.05 * (_onLight.computeLuminance() + 0.05) ? _onLight : Colors.white;
+  }
+
+  static const Color _onLight = Color(0xFF2B2A26);
 
   static const String bebas = 'BebasNeue';
   static const String shareTech = 'ShareTech';
@@ -99,7 +111,7 @@ class AppTheme {
       ),
       textTheme: TextTheme(
         displayLarge: TextStyle(fontFamily: bebas, fontSize: 36, color: text),
-        displayMedium: const TextStyle(fontFamily: bebas, fontSize: 24, color: kSubheadingColor),
+        displayMedium: TextStyle(fontFamily: bebas, fontSize: 24, color: dark ? const Color(0xFF999999) : const Color(0xFF5E5D57)),
         displaySmall: const TextStyle(fontFamily: bebas, fontSize: 20, color: kPrimaryColor),
         bodyLarge: TextStyle(fontFamily: poppins, fontSize: 16, color: dark ? _darkText : Colors.black),
         bodyMedium: TextStyle(fontFamily: poppins, fontSize: 14, color: text),

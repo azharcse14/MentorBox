@@ -17,6 +17,8 @@ class MentorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final category = overview.category;
+    final fg = AppTheme.onColor(category.color);
+    final fgSoft = fg.withAlpha(0xB3);
     final percent = (overview.ratio * 100).round();
     final l = AppLocalizations.of(context);
 
@@ -65,13 +67,13 @@ class MentorCard extends StatelessWidget {
                       category.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(13, color: AppTheme.kGreyShade800, weight: FontWeight.w700),
+                      style: AppTheme.mono(13, color: fgSoft, weight: FontWeight.w700),
                     ),
                     Text(
                       category.mentorName,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.display(large ? 28 : 22, color: Colors.white),
+                      style: AppTheme.display(large ? 28 : 22, color: fg),
                     ),
                     if (large) ...[
                       const SizedBox(height: 4),
@@ -79,17 +81,17 @@ class MentorCard extends StatelessWidget {
                         category.tagline,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: AppTheme.body(12, color: Colors.white70, height: 1.35),
+                        style: AppTheme.body(12, color: fgSoft, height: 1.35),
                       ),
                     ],
                     const SizedBox(height: 8),
-                    ProgressBar(value: overview.ratio, color: Colors.white),
+                    ProgressBar(value: overview.ratio, color: fg, background: fg.withAlpha(0x33)),
                     const SizedBox(height: 6),
                     Text(
                       l.lessonsOf(overview.completedCount, overview.total),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(12, color: Colors.white70),
+                      style: AppTheme.mono(12, color: fgSoft),
                     ),
                   ],
                 ),
@@ -118,6 +120,8 @@ class MentorListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final category = overview.category;
+    final fg = AppTheme.onColor(category.color);
+    final fgSoft = fg.withAlpha(0xB3);
     final l = AppLocalizations.of(context);
     return Card(
       elevation: 3,
@@ -140,22 +144,22 @@ class MentorListTile extends StatelessWidget {
                       category.mentorName,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.display(20, color: Colors.white),
+                      style: AppTheme.display(20, color: fg),
                     ),
                     Text(
                       category.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(12, color: AppTheme.kGreyShade800, weight: FontWeight.w700),
+                      style: AppTheme.mono(12, color: fgSoft, weight: FontWeight.w700),
                     ),
                     const SizedBox(height: 6),
-                    ProgressBar(value: overview.ratio, color: Colors.white),
+                    ProgressBar(value: overview.ratio, color: fg, background: fg.withAlpha(0x33)),
                     const SizedBox(height: 4),
                     Text(
                       l.lessonsOf(overview.completedCount, overview.total),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTheme.mono(11, color: Colors.white70),
+                      style: AppTheme.mono(11, color: fgSoft),
                     ),
                   ],
                 ),
