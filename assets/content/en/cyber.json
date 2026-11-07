@@ -4,8 +4,8 @@
  "mentor": "Cyber Security Mentor",
  "tagline": "Every BSc and MSc Cyber Security course, from your first Linux command to the MSc thesis.",
  "description": "The full Cyber Security degree, grouped by year: programming, networks, cryptography, ethical hacking, forensics and security research.",
- "image": "assets/images/cse.jpg",
- "color": "#2E8B6E",
+ "image": "assets/images/cyber.jpg",
+ "color": "#455A64",
  "messages": {
   "welcome": "Hi! This is the whole Cyber Security degree, one course at a time.",
   "comeback": "Your next course is waiting. Just open it.",

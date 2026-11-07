@@ -4,7 +4,7 @@
  "mentor": "IT Mentor",
  "tagline": "Every BSc and MSc IT course, from fixing your first PC to the MSc thesis.",
  "description": "The full Information Technology degree, grouped by year: programming, hardware, networks, system administration, security, cloud and IT management.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/it.jpg",
  "color": "#4F6D3A",
  "messages": {
   "welcome": "Hi! This is the whole IT degree, one course at a time.",

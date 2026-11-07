@@ -4,7 +4,7 @@
  "mentor": "AI Mentor",
  "tagline": "Every BSc and MSc AI course, from your first Python program to the MSc thesis.",
  "description": "The full AI degree, grouped by year: math, programming, machine learning, deep learning, robotics and the newest AI research topics.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/ai.jpg",
  "color": "#6B4E9B",
  "messages": {
   "welcome": "Hi! This is the whole AI degree, one course at a time.",

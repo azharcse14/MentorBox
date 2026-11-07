@@ -4,7 +4,7 @@
  "mentor": "Data Engineering Mentor",
  "tagline": "Every BSc and MSc Data Engineering course, from your first SQL query to the MSc thesis.",
  "description": "The full Data Engineering degree, grouped by year: programming, databases, pipelines, big data, cloud platforms and data architecture.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/de.jpg",
  "color": "#B5651D",
  "messages": {
   "welcome": "Hi! This is the whole Data Engineering degree, one course at a time.",

@@ -4,7 +4,7 @@
  "mentor": "Mathematics & Computing Mentor",
  "tagline": "Every BSc and MSc Mathematics & Computing course, from your first proof to the MSc thesis.",
  "description": "The full Mathematics & Computing degree, grouped by year: calculus, algebra, analysis, probability, algorithms, numerical methods and the math behind computers.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/mnc.jpg",
  "color": "#8C3F5E",
  "messages": {
   "welcome": "Hi! This is the whole Mathematics & Computing degree, one course at a time.",

@@ -4,7 +4,7 @@
  "mentor": "Data Science Mentor",
  "tagline": "Every BSc and MSc Data Science course, from your first spreadsheet to the MSc thesis.",
  "description": "The full Data Science degree, grouped by year: math, statistics, programming, machine learning, big data and analytics.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/ds.jpg",
  "color": "#2E8B6E",
  "messages": {
   "welcome": "Hi! This is the whole Data Science degree, one course at a time.",

@@ -4,7 +4,7 @@
  "mentor": "Cloud Computing Mentor",
  "tagline": "Every BSc and MSc Cloud Computing course, from your first Linux command to the MSc thesis.",
  "description": "The full Cloud Computing degree, grouped by year: programming, networks, virtualization, AWS, Azure, GCP, Kubernetes, DevOps and cloud architecture.",
- "image": "assets/images/cse.jpg",
+ "image": "assets/images/cloud.jpg",
  "color": "#2F7FB8",
  "messages": {
   "welcome": "Hi! This is the whole Cloud Computing degree, one course at a time.",

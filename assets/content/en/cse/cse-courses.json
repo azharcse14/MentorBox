@@ -4,7 +4,7 @@
   "mentor": "CSE Mentor",
   "tagline": "Every BSc and MSc CSE course in full, about 100 pages each.",
   "description": "The full CSE degree, grouped by year: one course per level, about 25 lessons each, from Introduction to Computer Systems to the MSc thesis. Courses open one after another.",
-  "image": "assets/images/cse.jpg",
+  "image": "assets/images/cse-courses.jpg",
   "color": "#3F6E8C",
   "messages": {
     "welcome": "This is the full course, one topic per lesson. Take one lesson a day and you'll finish a course in about a month.",

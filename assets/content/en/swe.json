@@ -4,8 +4,8 @@
  "mentor": "Software Engineering Mentor",
  "tagline": "Every BSc and MSc Software Engineering course, from your first program to the MSc thesis.",
  "description": "The full Software Engineering degree, grouped by year: programming, design, architecture, testing, DevOps and building software in teams.",
- "image": "assets/images/cse.jpg",
- "color": "#2E8B6E",
+ "image": "assets/images/swe.jpg",
+ "color": "#3D5A99",
  "messages": {
   "welcome": "Hi! This is the whole Software Engineering degree, one course at a time.",
   "comeback": "Your next course is waiting. Just open it.",
