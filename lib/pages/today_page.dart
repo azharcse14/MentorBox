@@ -164,7 +164,8 @@ class _WeekCard extends StatelessWidget {
               const Icon(Icons.local_fire_department, color: AppTheme.kPrimaryColor, size: 34),
               const SizedBox(width: 8),
               Text(
-                l.streakDays(streak),
+                // "0 day streak" reads oddly; same words as the home chip.
+                streak > 0 ? l.streakDays(streak) : l.noStreak,
                 style: AppTheme.display(32, color: Colors.white),
               ),
             ],
@@ -194,6 +195,8 @@ class _WeekCard extends StatelessWidget {
                           color: days.contains(MentorEngine.dayKey(day))
                               ? AppTheme.kPrimaryColor
                               : const Color(0x22FFFFFF),
+                          // Ring today (always the last day), so the row has a "you are here".
+                          border: identical(day, week.last) ? Border.all(color: Colors.white70, width: 2) : null,
                         ),
                         child: days.contains(MentorEngine.dayKey(day))
                             ? const Icon(Icons.check, size: 18, color: Colors.white)

@@ -48,7 +48,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get saveError => 'তোমার রেজাল্ট সেভ করা যায়নি। আবার চেষ্টা করো।';
 
   @override
-  String get exploreLabel => 'ঘুরে দেখো :';
+  String get exploreLabel => 'ঘুরে দেখো';
 
   @override
   String get exploreTagline => 'একজন মেন্টর বেছে নাও, রোজ একটু করে শেখো';
@@ -113,7 +113,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lockedLessonHint => 'আগের লেসনটা শেষ করলে এটা খুলবে';
 
   @override
-  String get progressLabel => 'অগ্রগতি : ';
+  String get progressLabel => 'অগ্রগতি: ';
 
   @override
   String percent(int value) {

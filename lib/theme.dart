@@ -41,6 +41,23 @@ class AppTheme {
 
   static const Color _onLight = Color(0xFF2B2A26);
 
+  static double _contrast(Color a, Color b) {
+    final la = a.computeLuminance(), lb = b.computeLuminance();
+    return (la > lb ? la + 0.05 : lb + 0.05) / (la > lb ? lb + 0.05 : la + 0.05);
+  }
+
+  /// [color] used as text on [background], nudged darker (light background)
+  /// or lighter (dark background) just enough to reach 4.5:1 (WCAG).
+  /// Most category colors are only 2-3:1 as text on the beige or grey.
+  static Color readable(Color color, Color background) {
+    final toward = background.computeLuminance() > 0.18 ? Colors.black : Colors.white;
+    for (var t = 0.0; t < 1; t += 0.05) {
+      final c = Color.lerp(color, toward, t)!;
+      if (_contrast(c, background) >= 4.5) return c;
+    }
+    return toward;
+  }
+
   static const String bebas = 'BebasNeue';
   static const String shareTech = 'ShareTech';
   static const String poppins = 'Poppins';
@@ -111,7 +128,8 @@ class AppTheme {
       ),
       textTheme: TextTheme(
         displayLarge: TextStyle(fontFamily: bebas, fontSize: 36, color: text),
-        displayMedium: TextStyle(fontFamily: bebas, fontSize: 24, color: dark ? const Color(0xFF999999) : const Color(0xFF5E5D57)),
+        displayMedium:
+            TextStyle(fontFamily: bebas, fontSize: 24, color: dark ? const Color(0xFF999999) : const Color(0xFF5E5D57)),
         displaySmall: const TextStyle(fontFamily: bebas, fontSize: 20, color: kPrimaryColor),
         bodyLarge: TextStyle(fontFamily: poppins, fontSize: 16, color: dark ? _darkText : Colors.black),
         bodyMedium: TextStyle(fontFamily: poppins, fontSize: 14, color: text),

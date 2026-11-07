@@ -258,7 +258,7 @@ class _LessonPageState extends State<LessonPage> {
             runSpacing: 8,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              _Tag(text: category.name, color: accent),
+              _Tag(text: category.name, color: AppTheme.readable(accent, AppTheme.kBackground)),
               _Tag(text: l.minutesRead(lesson.durationMin), color: AppTheme.kSubheadingColor),
               if (progress.completed) _Tag(text: l.completed, color: AppTheme.kSuccess),
               if (_locked) _Tag(text: l.preview, color: AppTheme.kSubheadingColor),
@@ -370,11 +370,18 @@ class _LessonPageState extends State<LessonPage> {
           ),
         ],
       ),
-      bottomNavigationBar: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
-          child: _bottomAction(progress),
+      // A thin line on top, so the text does not just get cut off.
+      bottomNavigationBar: DecoratedBox(
+        decoration: BoxDecoration(
+          color: AppTheme.kBackground,
+          border: Border(top: BorderSide(color: AppTheme.kText.withAlpha(0x1F))),
+        ),
+        child: SafeArea(
+          top: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+            child: _bottomAction(progress),
+          ),
         ),
       ),
     );

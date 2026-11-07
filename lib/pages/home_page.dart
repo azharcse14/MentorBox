@@ -655,7 +655,8 @@ class _ContinueCard extends StatelessWidget {
                   children: [
                     Text(
                       AppLocalizations.of(context).continueWith(category.mentorName),
-                      style: AppTheme.mono(14, color: category.color, weight: FontWeight.w700),
+                      style: AppTheme.mono(14,
+                          color: AppTheme.readable(category.color, AppTheme.kGreyShade800), weight: FontWeight.w700),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -665,7 +666,8 @@ class _ContinueCard extends StatelessWidget {
                       style: AppTheme.body(16, color: Colors.white, weight: FontWeight.w600, height: 1.3),
                     ),
                     const SizedBox(height: 8),
-                    ProgressBar(value: overview.ratio, color: category.color, height: 5),
+                    ProgressBar(
+                        value: overview.ratio, color: category.color, height: 5, background: const Color(0x33FFFFFF)),
                   ],
                 ),
               ),

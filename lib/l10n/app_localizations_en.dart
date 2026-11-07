@@ -48,7 +48,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get saveError => 'Your result could not be saved. Please try again.';
 
   @override
-  String get exploreLabel => 'Explore :';
+  String get exploreLabel => 'Explore';
 
   @override
   String get exploreTagline => 'Pick a mentor, grow one skill a day';
@@ -114,7 +114,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Finish the previous lesson to unlock this one';
 
   @override
-  String get progressLabel => 'Progress : ';
+  String get progressLabel => 'Progress: ';
 
   @override
   String percent(int value) {

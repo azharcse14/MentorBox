@@ -41,7 +41,7 @@ class MentorCard extends StatelessWidget {
                       fit: StackFit.expand,
                       children: [
                         Image.asset(category.image, fit: BoxFit.cover),
-                        if (overview.started)
+                        if (overview.completedCount > 0)
                           Positioned(
                             top: 8,
                             right: 8,

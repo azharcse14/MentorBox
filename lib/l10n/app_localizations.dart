@@ -179,7 +179,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreLabel.
   ///
   /// In en, this message translates to:
-  /// **'Explore :'**
+  /// **'Explore'**
   String get exploreLabel;
 
   /// No description provided for @exploreTagline.
@@ -269,7 +269,7 @@ abstract class AppLocalizations {
   /// No description provided for @progressLabel.
   ///
   /// In en, this message translates to:
-  /// **'Progress : '**
+  /// **'Progress: '**
   String get progressLabel;
 
   /// No description provided for @percent.

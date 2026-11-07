@@ -8,14 +8,17 @@ import '../theme.dart';
 class ProgressBar extends StatelessWidget {
   final double value;
   final Color color;
-  final Color background;
+
+  /// Track color. Defaults to a faint text color, so the bar shows on the
+  /// light theme too (white at 20% vanished on beige).
+  final Color? background;
   final double height;
 
   const ProgressBar({
     super.key,
     required this.value,
     this.color = AppTheme.kPrimaryColor,
-    this.background = const Color(0x33FFFFFF),
+    this.background,
     this.height = 6,
   });
 
@@ -27,7 +30,7 @@ class ProgressBar extends StatelessWidget {
         value: value.clamp(0.0, 1.0).toDouble(),
         minHeight: height,
         color: color,
-        backgroundColor: background,
+        backgroundColor: background ?? AppTheme.kText.withAlpha(0x26),
       ),
     );
   }
@@ -129,7 +132,9 @@ class MentorBubble extends StatelessWidget {
               children: [
                 Text(
                   category.mentorName,
-                  style: AppTheme.mono(15, color: category.color, weight: FontWeight.w700),
+                  style: AppTheme.mono(15,
+                      color: AppTheme.readable(category.color, dark ? AppTheme.kBackground : AppTheme.kCard),
+                      weight: FontWeight.w700),
                 ),
                 const SizedBox(height: 4),
                 Text(message, style: AppTheme.body(14, color: textColor, height: 1.5)),
@@ -224,7 +229,9 @@ class LessonRow extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(category?.name ?? '', style: AppTheme.mono(14, color: accent, weight: FontWeight.w700)),
+                      Text(category?.name ?? '',
+                          style: AppTheme.mono(14,
+                              color: AppTheme.readable(accent, AppTheme.kCard), weight: FontWeight.w700)),
                       const SizedBox(height: 2),
                       Text(title, style: AppTheme.body(15, weight: FontWeight.w600, height: 1.3)),
                       if (subtitle != null && subtitle!.isNotEmpty) ...[

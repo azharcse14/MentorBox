@@ -218,7 +218,7 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
       // New key per category: scroll position and open levels reset on tab switch.
       key: ValueKey(category.id),
       padding: EdgeInsets.fromLTRB(20,
-          kToolbarHeight + (_tabs == null ? 0 : kTextTabBarHeight) + MediaQuery.of(context).size.height * 0.12, 20, 24),
+          kToolbarHeight + (_tabs == null ? 0 : kTextTabBarHeight) + MediaQuery.of(context).size.height * 0.04, 20, 24),
       itemCount: header.length + levels.length,
       itemBuilder: (context, index) {
         if (index < header.length) return header[index];
@@ -231,7 +231,8 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
           children: [
             Padding(
               padding: EdgeInsets.only(top: i == 0 ? 0 : 20, bottom: 8),
-              child: Text(levels[i].section.toUpperCase(), style: AppTheme.mono(14, color: category.color)),
+              child: Text(levels[i].section.toUpperCase(),
+                  style: AppTheme.mono(14, color: AppTheme.readable(category.color, AppTheme.kBackground))),
             ),
             level,
           ],
@@ -257,8 +258,8 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
       target = overview.nextLesson!;
     }
 
-    return Container(
-      color: AppTheme.kBackground,
+    return DecoratedBox(
+      decoration: _bottomBarLine(),
       child: SafeArea(
         top: false,
         child: Padding(
@@ -419,3 +420,10 @@ class _LessonTile extends StatelessWidget {
     );
   }
 }
+
+/// Background plus a thin top line, so scrolled text does not just get cut
+/// off under the bottom button.
+BoxDecoration _bottomBarLine() => BoxDecoration(
+      color: AppTheme.kBackground,
+      border: Border(top: BorderSide(color: AppTheme.kText.withAlpha(0x1F))),
+    );
