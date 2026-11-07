@@ -59,7 +59,11 @@ class PrimaryButton extends StatelessWidget {
           // Min height, not fixed: grows with the phone's text size.
           child: ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 60, minWidth: double.infinity),
+            // heightFactor 1: hug the text (at least 60 high). A plain Center
+            // grows to fill all the height it gets, e.g. the whole screen
+            // inside bottomNavigationBar.
             child: Center(
+              heightFactor: 1,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 child: Text(

@@ -236,7 +236,9 @@ class _LessonPageState extends State<LessonPage> {
           child: ListenableBuilder(
             listenable: _scroll,
             builder: (context, _) {
-              final max = _scroll.hasClients ? _scroll.position.maxScrollExtent : 0.0;
+              // No size before the first layout; reading it then throws.
+              final ready = _scroll.hasClients && _scroll.position.hasContentDimensions;
+              final max = ready ? _scroll.position.maxScrollExtent : 0.0;
               return LinearProgressIndicator(
                 value: max <= 0 ? 0 : _scroll.offset / max,
                 minHeight: 3,
