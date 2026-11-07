@@ -38,6 +38,10 @@ class _LessonPageState extends State<LessonPage> {
   bool _notesSaved = false;
   Timer? _notesTimer;
   bool _missing = false;
+  bool _failed = false;
+
+  /// The lesson before this one, to jump back to when this one is locked.
+  Lesson? _previous;
 
   /// The lesson before this one is not done: readable, but no quiz yet.
   bool _locked = false;
@@ -63,6 +67,21 @@ class _LessonPageState extends State<LessonPage> {
   }
 
   Future<void> _load() async {
+    try {
+      await _loadData();
+    } catch (e) {
+      debugPrint('Lesson load failed: $e');
+      // Keep showing the lesson if it was already loaded once.
+      if (mounted && _lesson == null) setState(() => _failed = true);
+    }
+  }
+
+  void _retry() {
+    setState(() => _failed = false);
+    _load();
+  }
+
+  Future<void> _loadData() async {
     final lesson = await _repo.getLesson(widget.lessonId);
     if (lesson == null) {
       if (mounted) setState(() => _missing = true);
@@ -79,6 +98,7 @@ class _LessonPageState extends State<LessonPage> {
     final firstLoad = _lesson == null;
     setState(() {
       _locked = locked;
+      _previous = before;
       _lesson = lesson;
       _category = category;
       _progress = progress;
@@ -162,11 +182,12 @@ class _LessonPageState extends State<LessonPage> {
     _toast(AppLocalizations.of(context).lessonCompleted);
   }
 
-  void _goToNext() {
-    final next = _nextLesson;
-    if (next == null) return;
+  void _goToNext() => _replaceWith(_nextLesson);
+
+  void _replaceWith(Lesson? lesson) {
+    if (lesson == null) return;
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => LessonPage(lessonId: next.id)),
+      MaterialPageRoute(builder: (_) => LessonPage(lessonId: lesson.id)),
     );
   }
 
@@ -180,6 +201,10 @@ class _LessonPageState extends State<LessonPage> {
           child: Text(l.lessonMissing, style: AppTheme.body(15)),
         ),
       );
+    }
+
+    if (_failed) {
+      return Scaffold(appBar: AppBar(), body: LoadError(onRetry: _retry));
     }
 
     final lesson = _lesson;
@@ -370,7 +395,20 @@ class _LessonPageState extends State<LessonPage> {
 
   Widget _bottomAction(LessonProgress progress) {
     final l = AppLocalizations.of(context);
-    if (_locked) return PrimaryButton(label: l.lockedLessonHint, onTap: null);
+    if (_locked) {
+      // Say why it is locked, and give a way forward instead of a dead button.
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Text(l.lockedLessonHint,
+                textAlign: TextAlign.center, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
+          ),
+          PrimaryButton(label: l.openPreviousLesson, onTap: () => _replaceWith(_previous)),
+        ],
+      );
+    }
     if (!progress.completed) {
       if (_quizCount == 0) {
         return PrimaryButton(label: l.markComplete, onTap: _markComplete);

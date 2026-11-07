@@ -22,6 +22,7 @@ class _TodayPageState extends State<TodayPage> {
   final _repo = MentorRepository.instance;
 
   bool _loading = true;
+  bool _failed = false;
   List<CategoryOverview> _overviews = [];
   Set<String> _days = {};
 
@@ -32,6 +33,20 @@ class _TodayPageState extends State<TodayPage> {
   }
 
   Future<void> _load() async {
+    try {
+      await _loadData();
+    } catch (e) {
+      debugPrint('Load failed: $e');
+      if (mounted) setState(() => _failed = true);
+    }
+  }
+
+  void _retry() {
+    setState(() => _failed = false);
+    _load();
+  }
+
+  Future<void> _loadData() async {
     final overviews = await _repo.getAllOverviews();
     final days = await _repo.getActivityDays();
     if (!mounted) return;
@@ -39,6 +54,7 @@ class _TodayPageState extends State<TodayPage> {
       _overviews = overviews;
       _days = days;
       _loading = false;
+      _failed = false;
     });
   }
 
@@ -51,7 +67,11 @@ class _TodayPageState extends State<TodayPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(AppLocalizations.of(context).todayTitle, style: AppTheme.display(32))),
-      body: _loading ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor)) : _content(),
+      body: _failed
+          ? LoadError(onRetry: _retry)
+          : _loading
+              ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
+              : _content(),
     );
   }
 
@@ -129,6 +149,7 @@ class _WeekCard extends StatelessWidget {
     final week = MentorEngine.lastSevenDays();
     final l = AppLocalizations.of(context);
     final weekdayLetter = DateFormat('EEEEE', l.localeName);
+    final weekdayName = DateFormat('EEEE', l.localeName);
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
@@ -158,23 +179,31 @@ class _WeekCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               for (final day in week)
-                Column(
-                  children: [
-                    Container(
-                      width: 30,
-                      height: 30,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color:
-                            days.contains(MentorEngine.dayKey(day)) ? AppTheme.kPrimaryColor : const Color(0x22FFFFFF),
+                // The circles are color only; read the day and whether it was done.
+                Semantics(
+                  label: '${weekdayName.format(day)}, '
+                      '${days.contains(MentorEngine.dayKey(day)) ? l.completed : l.dayMissed}',
+                  excludeSemantics: true,
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: days.contains(MentorEngine.dayKey(day))
+                              ? AppTheme.kPrimaryColor
+                              : const Color(0x22FFFFFF),
+                        ),
+                        child: days.contains(MentorEngine.dayKey(day))
+                            ? const Icon(Icons.check, size: 18, color: Colors.white)
+                            : null,
                       ),
-                      child: days.contains(MentorEngine.dayKey(day))
-                          ? const Icon(Icons.check, size: 18, color: Colors.white)
-                          : null,
-                    ),
-                    const SizedBox(height: 4),
-                    Text(weekdayLetter.format(day), style: AppTheme.mono(13, color: Colors.white54)),
-                  ],
+                      const SizedBox(height: 4),
+                      // white54 was ~3.9:1 on the grey card; white70 passes 4.5:1.
+                      Text(weekdayLetter.format(day), style: AppTheme.mono(13, color: Colors.white70)),
+                    ],
+                  ),
                 ),
             ],
           ),

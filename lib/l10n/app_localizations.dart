@@ -847,6 +847,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tech courses'**
   String get sectionCourses;
+
+  /// No description provided for @openPreviousLesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to the previous lesson'**
+  String get openPreviousLesson;
+
+  /// No description provided for @clearSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get clearSearch;
+
+  /// No description provided for @swipeToUnsave.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe a lesson sideways to remove it.'**
+  String get swipeToUnsave;
+
+  /// No description provided for @dayMissed.
+  ///
+  /// In en, this message translates to:
+  /// **'Not studied'**
+  String get dayMissed;
+
+  /// No description provided for @missionsPending.
+  ///
+  /// In en, this message translates to:
+  /// **'missions waiting'**
+  String get missionsPending;
 }
 
 class _AppLocalizationsDelegate

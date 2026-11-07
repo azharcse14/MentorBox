@@ -526,4 +526,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sectionCourses => 'Tech courses';
+
+  @override
+  String get openPreviousLesson => 'Go to the previous lesson';
+
+  @override
+  String get clearSearch => 'Clear search';
+
+  @override
+  String get swipeToUnsave => 'Swipe a lesson sideways to remove it.';
+
+  @override
+  String get dayMissed => 'Not studied';
+
+  @override
+  String get missionsPending => 'missions waiting';
 }

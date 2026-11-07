@@ -346,5 +346,10 @@
   "searchMentors": "Search mentors",
   "noMentorFound": "No mentor found",
   "sectionLifeSkills": "Life skills",
-  "sectionCourses": "Tech courses"
+  "sectionCourses": "Tech courses",
+  "openPreviousLesson": "Go to the previous lesson",
+  "clearSearch": "Clear search",
+  "swipeToUnsave": "Swipe a lesson sideways to remove it.",
+  "dayMissed": "Not studied",
+  "missionsPending": "missions waiting"
 }

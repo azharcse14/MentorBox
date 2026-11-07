@@ -160,6 +160,8 @@ Future<void> _play(
   required double changeAt,
   required Future<void> Function() change,
 }) async {
+  // "Remove animations" in the phone settings: switch at once.
+  if (MediaQuery.disableAnimationsOf(context)) return change();
   final overlay = Overlay.of(context, rootOverlay: true);
   final done = _SwitchOverlay(scene: scene, changeAt: changeAt, change: change);
   final entry = OverlayEntry(builder: (_) => done);
@@ -184,7 +186,7 @@ class _SwitchOverlay extends StatefulWidget {
 }
 
 class _SwitchOverlayState extends State<_SwitchOverlay> with SingleTickerProviderStateMixin {
-  late final _controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 2600));
+  late final _controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 1400));
 
   @override
   void initState() {

@@ -124,5 +124,10 @@
   "searchMentors": "মেন্টর খোঁজো",
   "noMentorFound": "কোনো মেন্টর পাওয়া যায়নি",
   "sectionLifeSkills": "জীবনের দক্ষতা",
-  "sectionCourses": "টেক কোর্স"
+  "sectionCourses": "টেক কোর্স",
+  "openPreviousLesson": "আগের লেসনে যাও",
+  "clearSearch": "খোঁজা মুছে ফেলো",
+  "swipeToUnsave": "সরাতে চাইলে লেসনটা পাশে টেনে দাও।",
+  "dayMissed": "পড়া হয়নি",
+  "missionsPending": "মিশন বাকি আছে"
 }

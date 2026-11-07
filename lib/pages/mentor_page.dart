@@ -138,9 +138,8 @@ class _MentorPageState extends State<MentorPage> with TickerProviderStateMixin {
       ),
       body: overview == null
           ? Center(
-              child: _failed
-                  ? Text(AppLocalizations.of(context).loadError, style: AppTheme.body(15))
-                  : const CircularProgressIndicator(color: AppTheme.kPrimaryColor),
+              child:
+                  _failed ? LoadError(onRetry: _load) : const CircularProgressIndicator(color: AppTheme.kPrimaryColor),
             )
           : Stack(
               children: [
@@ -318,7 +317,7 @@ class _LevelSection extends StatelessWidget {
               ),
             ),
             Text(
-              unlocked ? l.fraction(done, lessons.length) : l.locked,
+              unlocked ? l.fraction(done, lessons.length) : l.preview,
               style: AppTheme.mono(14, color: AppTheme.kSubheadingColor),
             ),
           ],
@@ -391,7 +390,7 @@ class _LessonTile extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Row(
               children: [
-                Icon(icon, color: iconColor, size: 28, semanticLabel: locked ? l.locked : null),
+                Icon(icon, color: iconColor, size: 28, semanticLabel: locked ? l.preview : null),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(

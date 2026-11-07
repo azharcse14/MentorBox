@@ -27,6 +27,10 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
   final _repo = MentorRepository.instance;
   final _random = Random();
+  final _scroll = ScrollController();
+
+  /// The "why" box under the options, scrolled into view after checking.
+  final _feedbackKey = GlobalKey();
 
   Lesson? _lesson;
   MentorCategory? _category;
@@ -41,6 +45,7 @@ class _QuizPageState extends State<QuizPage> {
   QuizResult? _result;
   String _feedback = '';
   bool _missing = false;
+  bool _failed = false;
 
   @override
   void initState() {
@@ -48,7 +53,27 @@ class _QuizPageState extends State<QuizPage> {
     _load();
   }
 
+  @override
+  void dispose() {
+    _scroll.dispose();
+    super.dispose();
+  }
+
   Future<void> _load() async {
+    try {
+      await _loadData();
+    } catch (e) {
+      debugPrint('Quiz load failed: $e');
+      if (mounted) setState(() => _failed = true);
+    }
+  }
+
+  void _retry() {
+    setState(() => _failed = false);
+    _load();
+  }
+
+  Future<void> _loadData() async {
     final lesson = await _repo.getLesson(widget.lessonId);
     if (lesson == null) {
       if (mounted) setState(() => _missing = true);
@@ -79,6 +104,16 @@ class _QuizPageState extends State<QuizPage> {
       _checked = true;
       if (selected == _questions[_index].answerIndex) _correct++;
     });
+    // On small phones the explanation lands below the screen; bring it up.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final box = _feedbackKey.currentContext;
+      if (box == null || !box.mounted) return;
+      Scrollable.ensureVisible(
+        box,
+        alignmentPolicy: ScrollPositionAlignmentPolicy.keepVisibleAtEnd,
+        duration: MediaQuery.disableAnimationsOf(context) ? Duration.zero : const Duration(milliseconds: 300),
+      );
+    });
   }
 
   Future<void> _next() async {
@@ -88,6 +123,7 @@ class _QuizPageState extends State<QuizPage> {
         _selected = null;
         _checked = false;
       });
+      if (_scroll.hasClients) _scroll.jumpTo(0);
       return;
     }
     await _finish();
@@ -145,6 +181,7 @@ class _QuizPageState extends State<QuizPage> {
   Widget build(BuildContext context) {
     final lesson = _lesson;
     final category = _category;
+    if (_failed) return Scaffold(appBar: AppBar(), body: LoadError(onRetry: _retry));
     if (_missing) {
       return Scaffold(
         appBar: AppBar(),
@@ -200,7 +237,12 @@ class _QuizPageState extends State<QuizPage> {
         content: Text(l.leaveQuizBody, style: AppTheme.body(14)),
         actions: [
           TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l.stayInQuiz)),
-          TextButton(onPressed: () => Navigator.of(context).pop(true), child: Text(l.leaveQuiz)),
+          // Leaving loses the answers, so it is marked in the danger color.
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: TextButton.styleFrom(foregroundColor: AppTheme.kDanger),
+            child: Text(l.leaveQuiz),
+          ),
         ],
       ),
     );
@@ -214,6 +256,7 @@ class _QuizPageState extends State<QuizPage> {
     final l = AppLocalizations.of(context);
 
     return ListView(
+      controller: _scroll,
       padding: const EdgeInsets.fromLTRB(24, 4, 24, 24),
       children: [
         Text(
@@ -238,6 +281,7 @@ class _QuizPageState extends State<QuizPage> {
         if (_checked) ...[
           const SizedBox(height: 8),
           Container(
+            key: _feedbackKey,
             padding: const EdgeInsets.all(14),
             decoration: BoxDecoration(
               color: wasRight ? const Color(0x225FA97A) : const Color(0x22D9645F),
@@ -373,26 +417,30 @@ class _OptionTile extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
-      child: Material(
-        color: background,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-          side: BorderSide(color: border, width: 2),
-        ),
-        child: InkWell(
-          onTap: onTap,
-          customBorder: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            child: Row(
-              children: [
-                Expanded(child: Text(text, style: AppTheme.body(15, color: textColor, height: 1.4))),
-                if (icon != null) ...[
-                  const SizedBox(width: 8),
-                  Icon(icon,
-                      color: border, semanticLabel: look == _OptionLook.correct ? l.answerCorrect : l.answerWrong),
+      child: Semantics(
+        selected: look == _OptionLook.selected,
+        inMutuallyExclusiveGroup: true,
+        child: Material(
+          color: background,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+            side: BorderSide(color: border, width: 2),
+          ),
+          child: InkWell(
+            onTap: onTap,
+            customBorder: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+              child: Row(
+                children: [
+                  Expanded(child: Text(text, style: AppTheme.body(15, color: textColor, height: 1.4))),
+                  if (icon != null) ...[
+                    const SizedBox(width: 8),
+                    Icon(icon,
+                        color: border, semanticLabel: look == _OptionLook.correct ? l.answerCorrect : l.answerWrong),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
         ),

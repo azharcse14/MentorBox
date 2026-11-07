@@ -80,7 +80,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
               const SizedBox(width: 6),
               IconButton(
-                tooltip: l.todaysMissions,
+                // The dot is color only, so the label says it too.
+                tooltip: hasMissions ? '${l.todaysMissions}, ${l.missionsPending}' : l.todaysMissions,
                 onPressed: onTodayTap,
                 icon: Stack(
                   clipBehavior: Clip.none,

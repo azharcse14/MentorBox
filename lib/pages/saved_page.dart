@@ -19,6 +19,7 @@ class _SavedPageState extends State<SavedPage> {
   final _repo = MentorRepository.instance;
 
   bool _loading = true;
+  bool _failed = false;
   List<Lesson> _saved = [];
   List<Lesson> _withNotes = [];
   Map<String, MentorCategory> _categories = {};
@@ -31,6 +32,20 @@ class _SavedPageState extends State<SavedPage> {
   }
 
   Future<void> _load() async {
+    try {
+      await _loadData();
+    } catch (e) {
+      debugPrint('Load failed: $e');
+      if (mounted) setState(() => _failed = true);
+    }
+  }
+
+  void _retry() {
+    setState(() => _failed = false);
+    _load();
+  }
+
+  Future<void> _loadData() async {
     final saved = await _repo.getBookmarkedLessons();
     final withNotes = await _repo.getLessonsWithNotes();
     final categories = await _repo.getCategories();
@@ -41,6 +56,7 @@ class _SavedPageState extends State<SavedPage> {
       _categories = {for (final c in categories) c.id: c};
       _notes = {for (final (lesson, note) in withNotes) lesson.id: note};
       _loading = false;
+      _failed = false;
     });
   }
 
@@ -78,37 +94,45 @@ class _SavedPageState extends State<SavedPage> {
     final l = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(l.savedTitle, style: AppTheme.display(32))),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
-          : ListView(
-              padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
-              children: [
-                _Heading(l.savedLessons),
-                if (_saved.isEmpty) _Empty(l.savedEmpty),
-                for (final lesson in _saved)
-                  Dismissible(
-                    key: ValueKey(lesson.id),
-                    onDismissed: (_) => _unsave(lesson),
-                    background: const _UnsaveBackground(Alignment.centerLeft),
-                    secondaryBackground: const _UnsaveBackground(Alignment.centerRight),
-                    child: LessonRow(
-                      title: lesson.title,
-                      category: _categories[lesson.categoryId],
-                      onTap: () => _open(lesson),
-                    ),
-                  ),
-                const SizedBox(height: 20),
-                _Heading(l.yourNotes),
-                if (_withNotes.isEmpty) _Empty(l.notesEmpty),
-                for (final lesson in _withNotes)
-                  LessonRow(
-                    title: lesson.title,
-                    category: _categories[lesson.categoryId],
-                    subtitle: _notes[lesson.id],
-                    onTap: () => _open(lesson),
-                  ),
-              ],
-            ),
+      body: _failed
+          ? LoadError(onRetry: _retry)
+          : _loading
+              ? const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor))
+              : ListView(
+                  padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
+                  children: [
+                    _Heading(l.savedLessons),
+                    if (_saved.isEmpty) _Empty(l.savedEmpty),
+                    // Swiping is otherwise invisible, so say it once above the list.
+                    if (_saved.isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Text(l.swipeToUnsave, style: AppTheme.body(13, color: AppTheme.kSubheadingColor)),
+                      ),
+                    for (final lesson in _saved)
+                      Dismissible(
+                        key: ValueKey(lesson.id),
+                        onDismissed: (_) => _unsave(lesson),
+                        background: const _UnsaveBackground(Alignment.centerLeft),
+                        secondaryBackground: const _UnsaveBackground(Alignment.centerRight),
+                        child: LessonRow(
+                          title: lesson.title,
+                          category: _categories[lesson.categoryId],
+                          onTap: () => _open(lesson),
+                        ),
+                      ),
+                    const SizedBox(height: 20),
+                    _Heading(l.yourNotes),
+                    if (_withNotes.isEmpty) _Empty(l.notesEmpty),
+                    for (final lesson in _withNotes)
+                      LessonRow(
+                        title: lesson.title,
+                        category: _categories[lesson.categoryId],
+                        subtitle: _notes[lesson.id],
+                        onTap: () => _open(lesson),
+                      ),
+                  ],
+                ),
     );
   }
 }

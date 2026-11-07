@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
+import '../l10n/app_localizations.dart';
 import '../theme.dart';
 
 /// Rounded progress bar used on cards, mentor pages and the quiz.
@@ -238,6 +239,31 @@ class LessonRow extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "Could not load" with a retry button, for every page that loads data.
+class LoadError extends StatelessWidget {
+  final VoidCallback onRetry;
+
+  const LoadError({super.key, required this.onRetry});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(l.loadError, textAlign: TextAlign.center, style: AppTheme.body(14)),
+            const SizedBox(height: 16),
+            FilledButton(onPressed: onRetry, child: Text(l.retry)),
+          ],
         ),
       ),
     );

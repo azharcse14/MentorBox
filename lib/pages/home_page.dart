@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _reminderOn = false;
   String _layout = 'grid';
   String _query = '';
+  final _search = TextEditingController();
   TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
@@ -43,6 +44,15 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     _load();
   }
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
+
+  /// Categories with lessons that get their own card (not tab-only).
+  bool _openable(CategoryOverview o) => !MentorPage.isTabOnly(o.category.id) && o.total > 0;
 
   Future<void> _load() async {
     try {
@@ -294,25 +304,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (_loading) {
       return const Center(child: CircularProgressIndicator(color: AppTheme.kPrimaryColor));
     }
-    if (_error != null) {
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                l.loadError,
-                textAlign: TextAlign.center,
-                style: AppTheme.body(14),
-              ),
-              const SizedBox(height: 16),
-              FilledButton(onPressed: _retry, child: Text(l.retry)),
-            ],
-          ),
-        ),
-      );
-    }
+    if (_error != null) return LoadError(onRetry: _retry);
 
     final current = inProgress.isEmpty ? null : inProgress.first;
 
@@ -321,12 +313,19 @@ class _HomeScreenState extends State<HomeScreen> {
       onRefresh: _load,
       child: ListView(
         padding: const EdgeInsets.only(bottom: 32),
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: _Hero(
-              avatars: _overviews.map((o) => o.category.image).toList(),
+              avatars: [
+                for (final o in _overviews)
+                  if (_openable(o)) o.category.image
+              ],
               streak: _streak,
+              // Once learning has started the big welcome line only pushes
+              // the lessons down, so it is left out.
+              compact: _overviews.any((o) => o.started),
             ),
           ),
           const SizedBox(height: 24),
@@ -377,12 +376,23 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.fromLTRB(24, 12, 24, 0),
             child: TextField(
+              controller: _search,
               onChanged: (value) => setState(() => _query = value.trim().toLowerCase()),
               style: AppTheme.body(15, height: 1.3),
               decoration: InputDecoration(
                 hintText: l.searchMentors,
                 hintStyle: AppTheme.body(15, color: AppTheme.kSubheadingColor, height: 1.3),
                 prefixIcon: Icon(Icons.search, color: AppTheme.kSubheadingColor),
+                suffixIcon: _query.isEmpty
+                    ? null
+                    : IconButton(
+                        tooltip: l.clearSearch,
+                        icon: Icon(Icons.close, color: AppTheme.kSubheadingColor),
+                        onPressed: () => setState(() {
+                          _search.clear();
+                          _query = '';
+                        }),
+                      ),
                 filled: true,
                 fillColor: AppTheme.kSurface,
                 isDense: true,
@@ -401,10 +411,12 @@ class _HomeScreenState extends State<HomeScreen> {
     // Tab-only categories (e.g. the CSE roadmap) open from their host card.
     final cards = _overviews.where((o) {
       // No lessons written yet: nothing to open.
-      if (MentorPage.isTabOnly(o.category.id) || o.total == 0) return false;
+      if (!_openable(o)) return false;
       if (_query.isEmpty) return true;
       final c = o.category;
-      return '${c.name} ${c.mentorName} ${c.tagline}'.toLowerCase().contains(_query);
+      // Lesson titles too, so "budget" finds the finance mentor.
+      return '${c.name} ${c.mentorName} ${c.tagline}'.toLowerCase().contains(_query) ||
+          o.lessons.any((lesson) => lesson.title.toLowerCase().contains(_query));
     }).toList();
     if (cards.isEmpty) {
       return [
@@ -481,8 +493,9 @@ class _HomeScreenState extends State<HomeScreen> {
 class _Hero extends StatelessWidget {
   final List<String> avatars;
   final int streak;
+  final bool compact;
 
-  const _Hero({required this.avatars, required this.streak});
+  const _Hero({required this.avatars, required this.streak, required this.compact});
 
   @override
   Widget build(BuildContext context) {
@@ -490,20 +503,22 @@ class _Hero extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RichText(
-          text: TextSpan(
-            style: AppTheme.mono(35, weight: FontWeight.w600),
-            children: [
-              TextSpan(text: l.heroBefore),
-              TextSpan(
-                text: l.heroHighlight,
-                style: AppTheme.display(42, color: AppTheme.kPrimaryColor),
-              ),
-              TextSpan(text: l.heroAfter),
-            ],
+        if (!compact) ...[
+          RichText(
+            text: TextSpan(
+              style: AppTheme.mono(35, weight: FontWeight.w600),
+              children: [
+                TextSpan(text: l.heroBefore),
+                TextSpan(
+                  text: l.heroHighlight,
+                  style: AppTheme.display(42, color: AppTheme.kPrimaryColor),
+                ),
+                TextSpan(text: l.heroAfter),
+              ],
+            ),
           ),
-        ),
-        const SizedBox(height: 16),
+          const SizedBox(height: 16),
+        ],
         Row(
           children: [
             _OverlappingAvatars(images: avatars.take(4).toList()),

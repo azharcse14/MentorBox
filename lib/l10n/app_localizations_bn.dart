@@ -523,4 +523,19 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get sectionCourses => 'টেক কোর্স';
+
+  @override
+  String get openPreviousLesson => 'আগের লেসনে যাও';
+
+  @override
+  String get clearSearch => 'খোঁজা মুছে ফেলো';
+
+  @override
+  String get swipeToUnsave => 'সরাতে চাইলে লেসনটা পাশে টেনে দাও।';
+
+  @override
+  String get dayMissed => 'পড়া হয়নি';
+
+  @override
+  String get missionsPending => 'মিশন বাকি আছে';
 }
